@@ -23,11 +23,23 @@
     ]
   },
   {
-    "id": "connective",
-    "spanishName": "Tendones, ligamentos y fascias",
+    "id": "tendons",
+    "spanishName": "Tendones",
     "kinds": [
-      "tendon",
-      "ligament",
+      "tendon"
+    ]
+  },
+  {
+    "id": "ligaments",
+    "spanishName": "Ligamentos",
+    "kinds": [
+      "ligament"
+    ]
+  },
+  {
+    "id": "fascias",
+    "spanishName": "Fascias",
+    "kinds": [
       "fascia"
     ]
   },
