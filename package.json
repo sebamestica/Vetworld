@@ -16,7 +16,9 @@
     "test:contracts": "vitest run tests/contracts",
     "validate:data": "tsx scripts/validate-anatomy.ts",
     "test:smoke": "tsx scripts/smoke-api.ts",
-    "docs:api": "tsx scripts/generate-openapi.ts"
+    "docs:api": "tsx scripts/generate-openapi.ts",
+    "test:smoke:local": "tsx scripts/smoke-local.ts",
+    "test:smoke:production": "tsx scripts/smoke-local.ts --production"
   },
   "dependencies": {
     "next": "16.4.0",
@@ -28,7 +30,7 @@
     "@types/node": "24.19.1",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "eslint": "10.12.0",
+    "eslint": "9.39.5",
     "eslint-config-next": "16.4.0",
     "tsx": "4.23.15",
     "typescript": "5.9.3",

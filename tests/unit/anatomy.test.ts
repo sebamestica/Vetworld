@@ -21,14 +21,16 @@ describe('Catálogo científico e integridad',()=>{
 });
 
 // Activos sintéticos exclusivos de pruebas, fuera del catálogo de producción.
-import { mkdtempSync, writeFileSync, rmSync } from 'node:fs';
-import { join } from 'node:path';
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
+import { join, relative, isAbsolute } from 'node:path';
 import { createHash } from 'node:crypto';
 import { modelSchema } from '../../src/modules/anatomy/schemas/catalog';
 
 describe('Evidencia de activos y referencias anidadas', () => {
  it('verifica archivo local sintético y rechaza hash/tamaño incorrectos', () => {
-  const root=mkdtempSync(resolve('tests/.asset-fixture-'));
+  const fixtureBase=resolve('tests/fixtures');
+  mkdirSync(fixtureBase,{recursive:true});
+  const root=mkdtempSync(join(fixtureBase,'.asset-fixture-'));
   try {
    const bytes=Buffer.from('synthetic-test-only');
    writeFileSync(join(root,'synthetic.glb'),bytes);
@@ -39,7 +41,11 @@ describe('Evidencia de activos y referencias anidadas', () => {
    const result=validateCatalogAssets(c,{publicRoot:root});
    expect(result.errors.join()).toContain('SHA-256');expect(result.errors.join()).toContain('tamaño');
    expect(validateCatalog(c).errors).toEqual([]);
-  } finally {rmSync(root,{recursive:true,force:true});}
+  } finally {
+   const target=relative(fixtureBase,resolve(root));
+   if(!target||target.startsWith('..')||isAbsolute(target))throw new Error('Fixture fuera del directorio de pruebas');
+   rmSync(root,{recursive:true,force:true});
+  }
  });
  it('sin IO conserva contención de rutas',()=>{const c=load();c.models[0]!.resourceUrl='/../../secret.glb';expect(validateCatalog(c).errors.join()).toContain('fuera de public');});
  it('exige reciprocidad y región compatible del modelo',()=>{const c=load();const m=c.models[0]!;m.structureIds=['canine:scapula'];expect(validateCatalog(c).errors.join()).toContain('no recíproca');expect(validateCatalog(c).errors.join()).toContain('estructura incompatible');m.regionId='thoracic-limb';c.structures[0]!.modelIds=[m.id];expect(validateCatalog(c).errors).toEqual([]);});

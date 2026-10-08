@@ -1,0 +1,37 @@
+name: Backend
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      api_base_url:
+        description: URL HTTPS opcional para smoke remoto (sin despliegue)
+        required: false
+        default: ''
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run validate:data
+      - run: npm run test
+      - run: npm run test:integration
+      - run: npm run test:contracts
+      - run: npm run build
+      - name: Smoke remoto opcional
+        if: github.event_name == 'workflow_dispatch' && inputs.api_base_url != ''
+        run: npm run test:smoke
+        env:
+          API_BASE_URL: ${{ inputs.api_base_url }}
