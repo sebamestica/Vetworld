@@ -1,0 +1,6063 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Atlas Veterinario 3D API",
+    "version": "1.0.0",
+    "description": "Catálogo de lectura. Revisión humana y activos pendientes se declaran explícitamente. Parámetros desconocidos o repetidos: 400."
+  },
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "operationId": "health",
+        "summary": "Consultar health",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/health"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/species": {
+      "get": {
+        "operationId": "species",
+        "summary": "Consultar species",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/species"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/regions": {
+      "get": {
+        "operationId": "regions",
+        "summary": "Consultar regions",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/regions"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/regions/{id}": {
+      "get": {
+        "operationId": "region",
+        "summary": "Consultar region",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/region"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/structures": {
+      "get": {
+        "operationId": "structures",
+        "summary": "Consultar structures",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "kind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "bone",
+                "muscle",
+                "tendon",
+                "ligament",
+                "joint",
+                "nerve",
+                "artery",
+                "vein",
+                "fascia",
+                "cartilage",
+                "organ"
+              ]
+            }
+          },
+          {
+            "name": "system",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/structures"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "kind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "bone",
+                "muscle",
+                "tendon",
+                "ligament",
+                "joint",
+                "nerve",
+                "artery",
+                "vein",
+                "fascia",
+                "cartilage",
+                "organ"
+              ]
+            }
+          },
+          {
+            "name": "system",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/structures/{id}": {
+      "get": {
+        "operationId": "structure",
+        "summary": "Consultar structure",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/structure"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/structures/{id}/relations": {
+      "get": {
+        "operationId": "relations",
+        "summary": "Consultar relations",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "origin",
+                "insertion",
+                "innervated_by",
+                "associated_tendon",
+                "adjacent_to",
+                "articulates_with"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/relations"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "origin",
+                "insertion",
+                "innervated_by",
+                "associated_tendon",
+                "adjacent_to",
+                "articulates_with"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/search": {
+      "get": {
+        "operationId": "search",
+        "summary": "Consultar search",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "kind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "bone",
+                "muscle",
+                "tendon",
+                "ligament",
+                "joint",
+                "nerve",
+                "artery",
+                "vein",
+                "fascia",
+                "cartilage",
+                "organ"
+              ]
+            }
+          },
+          {
+            "name": "system",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/search"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "kind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "bone",
+                "muscle",
+                "tendon",
+                "ligament",
+                "joint",
+                "nerve",
+                "artery",
+                "vein",
+                "fascia",
+                "cartilage",
+                "organ"
+              ]
+            }
+          },
+          {
+            "name": "system",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/systems": {
+      "get": {
+        "operationId": "systems",
+        "summary": "Consultar systems",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/systems"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/layers": {
+      "get": {
+        "operationId": "layers",
+        "summary": "Consultar layers",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/layers"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models": {
+      "get": {
+        "operationId": "models",
+        "summary": "Consultar models",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/models"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models/{id}": {
+      "get": {
+        "operationId": "model",
+        "summary": "Consultar model",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/model"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sources": {
+      "get": {
+        "operationId": "sources",
+        "summary": "Consultar sources",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/sources"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sources/{id}": {
+      "get": {
+        "operationId": "source",
+        "summary": "Consultar source",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/source"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/taxonomy": {
+      "get": {
+        "operationId": "taxonomy",
+        "summary": "Consultar taxonomy",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/taxonomy"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stats": {
+      "get": {
+        "operationId": "stats",
+        "summary": "Consultar stats",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Consulta correcta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/stats"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error JSON estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "summary": "Cabeceras de GET, sin cuerpo",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Mismas cabeceras que GET"
+          },
+          "400": {
+            "description": "Parámetros inválidos"
+          },
+          "404": {
+            "description": "Recurso inexistente"
+          },
+          "500": {
+            "description": "Fallo interno"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "Métodos permitidos: GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "API de solo lectura",
+            "headers": {
+              "Allow": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "health": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "const": "ok"
+              },
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "catalogStatus": {
+                "type": "string",
+                "const": "readable"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "status",
+              "apiVersion",
+              "catalogStatus",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "species": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "scientificName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "spanishName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "aliases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "regions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "regionId": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      },
+                      "contentAvailability": {
+                        "type": "string",
+                        "enum": [
+                          "complete",
+                          "partial",
+                          "pending"
+                        ]
+                      },
+                      "modelAvailability": {
+                        "type": "string",
+                        "enum": [
+                          "available",
+                          "pending",
+                          "unavailable"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "regionId",
+                      "contentAvailability",
+                      "modelAvailability"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "structureCount": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "id",
+                "scientificName",
+                "spanishName",
+                "aliases",
+                "regions",
+                "structureCount"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "regions": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "spanishName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "parentId": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "speciesIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "subdivisionIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "structureIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "contentAvailability": {
+                  "type": "string",
+                  "enum": [
+                    "complete",
+                    "partial",
+                    "pending"
+                  ]
+                },
+                "modelAvailability": {
+                  "type": "string",
+                  "enum": [
+                    "available",
+                    "pending",
+                    "unavailable"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "spanishName",
+                "parentId",
+                "speciesIds",
+                "subdivisionIds",
+                "structureIds",
+                "contentAvailability",
+                "modelAvailability"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "region": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "spanishName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "parentId": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "speciesIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "subdivisionIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "structureIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "contentAvailability": {
+                "type": "string",
+                "enum": [
+                  "complete",
+                  "partial",
+                  "pending"
+                ]
+              },
+              "modelAvailability": {
+                "type": "string",
+                "enum": [
+                  "available",
+                  "pending",
+                  "unavailable"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "spanishName",
+              "parentId",
+              "speciesIds",
+              "subdivisionIds",
+              "structureIds",
+              "contentAvailability",
+              "modelAvailability"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "structures": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "speciesId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "regionId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "systemId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "bone",
+                    "muscle",
+                    "tendon",
+                    "ligament",
+                    "joint",
+                    "nerve",
+                    "artery",
+                    "vein",
+                    "fascia",
+                    "cartilage",
+                    "organ"
+                  ]
+                },
+                "canonicalLatinName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "spanishName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "aliases": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "summary": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "detailedDescription": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "morphology": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "location": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "origin": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "insertion": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "action": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "function": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "innervation": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "vascularSupply": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "attachments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "landmarks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "speciesDifferences": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "sourceIds": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "modelIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "photoRefs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      },
+                      "url": {
+                        "type": "string",
+                        "format": "uri"
+                      },
+                      "sourceId": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      },
+                      "license": {
+                        "type": "object",
+                        "properties": {
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "verified": {
+                            "type": "boolean"
+                          },
+                          "redistributionAllowed": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "label",
+                          "verified",
+                          "redistributionAllowed"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "url",
+                      "sourceId",
+                      "license"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "review": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "reviewed",
+                        "validated"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reviewedAt": {
+                      "type": "string",
+                      "format": "date-time",
+                      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                    },
+                    "notes": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ],
+                  "additionalProperties": false
+                },
+                "completeness": {
+                  "type": "string",
+                  "enum": [
+                    "complete",
+                    "partial"
+                  ]
+                },
+                "missingFields": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "speciesId",
+                "regionId",
+                "systemId",
+                "kind",
+                "canonicalLatinName",
+                "spanishName",
+                "aliases",
+                "summary",
+                "sourceIds",
+                "modelIds",
+                "photoRefs",
+                "review",
+                "completeness",
+                "missingFields"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "structure": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "speciesId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "regionId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "systemId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "bone",
+                  "muscle",
+                  "tendon",
+                  "ligament",
+                  "joint",
+                  "nerve",
+                  "artery",
+                  "vein",
+                  "fascia",
+                  "cartilage",
+                  "organ"
+                ]
+              },
+              "canonicalLatinName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "spanishName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "summary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "detailedDescription": {
+                "type": "string",
+                "minLength": 1
+              },
+              "morphology": {
+                "type": "string",
+                "minLength": 1
+              },
+              "location": {
+                "type": "string",
+                "minLength": 1
+              },
+              "origin": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "insertion": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "action": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "function": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "innervation": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "vascularSupply": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "attachments": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "landmarks": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "speciesDifferences": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "sourceIds": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "modelIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "photoRefs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri"
+                    },
+                    "sourceId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "license": {
+                      "type": "object",
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "verified": {
+                          "type": "boolean"
+                        },
+                        "redistributionAllowed": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "label",
+                        "verified",
+                        "redistributionAllowed"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "url",
+                    "sourceId",
+                    "license"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "review": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "pending",
+                      "reviewed",
+                      "validated"
+                    ]
+                  },
+                  "reviewer": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reviewedAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                  },
+                  "notes": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "status"
+                ],
+                "additionalProperties": false
+              },
+              "completeness": {
+                "type": "string",
+                "enum": [
+                  "complete",
+                  "partial"
+                ]
+              },
+              "missingFields": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "id",
+              "speciesId",
+              "regionId",
+              "systemId",
+              "kind",
+              "canonicalLatinName",
+              "spanishName",
+              "aliases",
+              "summary",
+              "sourceIds",
+              "modelIds",
+              "photoRefs",
+              "review",
+              "completeness",
+              "missingFields"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "relations": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "fromId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "toId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "origin",
+                    "insertion",
+                    "innervated_by",
+                    "associated_tendon",
+                    "adjacent_to",
+                    "articulates_with"
+                  ]
+                },
+                "sourceIds": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "fromId",
+                "toId",
+                "type",
+                "sourceIds"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "search": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "structure": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "speciesId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "regionId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "systemId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "bone",
+                        "muscle",
+                        "tendon",
+                        "ligament",
+                        "joint",
+                        "nerve",
+                        "artery",
+                        "vein",
+                        "fascia",
+                        "cartilage",
+                        "organ"
+                      ]
+                    },
+                    "canonicalLatinName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "spanishName": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "aliases": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "summary": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "detailedDescription": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "morphology": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "location": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "origin": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "insertion": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "action": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "function": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "innervation": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "vascularSupply": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "attachments": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "landmarks": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "speciesDifferences": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "sourceIds": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      }
+                    },
+                    "modelIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      }
+                    },
+                    "photoRefs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                          },
+                          "url": {
+                            "type": "string",
+                            "format": "uri"
+                          },
+                          "sourceId": {
+                            "type": "string",
+                            "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                          },
+                          "license": {
+                            "type": "object",
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "minLength": 1
+                              },
+                              "verified": {
+                                "type": "boolean"
+                              },
+                              "redistributionAllowed": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "label",
+                              "verified",
+                              "redistributionAllowed"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "id",
+                          "url",
+                          "sourceId",
+                          "license"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "review": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "pending",
+                            "reviewed",
+                            "validated"
+                          ]
+                        },
+                        "reviewer": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "reviewedAt": {
+                          "type": "string",
+                          "format": "date-time",
+                          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                        },
+                        "notes": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "status"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "completeness": {
+                      "type": "string",
+                      "enum": [
+                        "complete",
+                        "partial"
+                      ]
+                    },
+                    "missingFields": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "speciesId",
+                    "regionId",
+                    "systemId",
+                    "kind",
+                    "canonicalLatinName",
+                    "spanishName",
+                    "aliases",
+                    "summary",
+                    "sourceIds",
+                    "modelIds",
+                    "photoRefs",
+                    "review",
+                    "completeness",
+                    "missingFields"
+                  ],
+                  "additionalProperties": false
+                },
+                "score": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              },
+              "required": [
+                "structure",
+                "score"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "systems": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "spanishName": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "spanishName"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "layers": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "spanishName": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "kinds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "bone",
+                      "muscle",
+                      "tendon",
+                      "ligament",
+                      "joint",
+                      "nerve",
+                      "artery",
+                      "vein",
+                      "fascia",
+                      "cartilage",
+                      "organ"
+                    ]
+                  }
+                },
+                "structureIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "modelIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "available": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "spanishName",
+                "kinds",
+                "structureIds",
+                "modelIds",
+                "available"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "models": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "speciesId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "regionId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "format": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "glb",
+                        "gltf",
+                        "obj",
+                        "stl"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "resourceUrl": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "landingPageUrl": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "structureIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "meshMappings": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "nodeId": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "structureId": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      },
+                      "layerId": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      }
+                    },
+                    "required": [
+                      "nodeId",
+                      "structureId",
+                      "layerId"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "layerIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "lod": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "evidenceType": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "license": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "verified": {
+                      "type": "boolean"
+                    },
+                    "redistributionAllowed": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "verified",
+                    "redistributionAllowed"
+                  ],
+                  "additionalProperties": false
+                },
+                "authors": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "sourceIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "review": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "reviewed",
+                        "validated"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reviewedAt": {
+                      "type": "string",
+                      "format": "date-time",
+                      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                    },
+                    "notes": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ],
+                  "additionalProperties": false
+                },
+                "availability": {
+                  "type": "string",
+                  "enum": [
+                    "pending",
+                    "available",
+                    "unavailable"
+                  ]
+                },
+                "fileEvidence": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "sha256": {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{64}$"
+                        },
+                        "verifiedAt": {
+                          "type": "string",
+                          "format": "date-time",
+                          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                        },
+                        "byteSize": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "required": [
+                        "sha256",
+                        "verifiedAt",
+                        "byteSize"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "notes": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "speciesId",
+                "regionId",
+                "format",
+                "resourceUrl",
+                "landingPageUrl",
+                "structureIds",
+                "meshMappings",
+                "layerIds",
+                "lod",
+                "evidenceType",
+                "license",
+                "authors",
+                "sourceIds",
+                "review",
+                "availability",
+                "fileEvidence",
+                "notes"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "model": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "speciesId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "regionId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "format": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "glb",
+                      "gltf",
+                      "obj",
+                      "stl"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "resourceUrl": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "landingPageUrl": {
+                "type": "string",
+                "format": "uri"
+              },
+              "structureIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "meshMappings": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "nodeId": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "structureId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "layerId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    }
+                  },
+                  "required": [
+                    "nodeId",
+                    "structureId",
+                    "layerId"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "layerIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "lod": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "evidenceType": {
+                "type": "string",
+                "minLength": 1
+              },
+              "license": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "verified": {
+                    "type": "boolean"
+                  },
+                  "redistributionAllowed": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "label",
+                  "verified",
+                  "redistributionAllowed"
+                ],
+                "additionalProperties": false
+              },
+              "authors": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "sourceIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "review": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "pending",
+                      "reviewed",
+                      "validated"
+                    ]
+                  },
+                  "reviewer": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reviewedAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                  },
+                  "notes": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "status"
+                ],
+                "additionalProperties": false
+              },
+              "availability": {
+                "type": "string",
+                "enum": [
+                  "pending",
+                  "available",
+                  "unavailable"
+                ]
+              },
+              "fileEvidence": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "sha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                      },
+                      "verifiedAt": {
+                        "type": "string",
+                        "format": "date-time",
+                        "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                      },
+                      "byteSize": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      }
+                    },
+                    "required": [
+                      "sha256",
+                      "verifiedAt",
+                      "byteSize"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "speciesId",
+              "regionId",
+              "format",
+              "resourceUrl",
+              "landingPageUrl",
+              "structureIds",
+              "meshMappings",
+              "layerIds",
+              "lod",
+              "evidenceType",
+              "license",
+              "authors",
+              "sourceIds",
+              "review",
+              "availability",
+              "fileEvidence",
+              "notes"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "sources": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "authors": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "institution": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "year": {
+                  "type": "integer",
+                  "minimum": 1500,
+                  "maximum": 2100
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "doi": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "publicationType": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "license": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "verified": {
+                      "type": "boolean"
+                    },
+                    "redistributionAllowed": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "verified",
+                    "redistributionAllowed"
+                  ],
+                  "additionalProperties": false
+                },
+                "supportedStructureIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "authors",
+                "publicationType",
+                "license",
+                "supportedStructureIds"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "source": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "authors": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "institution": {
+                "type": "string",
+                "minLength": 1
+              },
+              "year": {
+                "type": "integer",
+                "minimum": 1500,
+                "maximum": 2100
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "doi": {
+                "type": "string",
+                "minLength": 1
+              },
+              "publicationType": {
+                "type": "string",
+                "minLength": 1
+              },
+              "license": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "verified": {
+                    "type": "boolean"
+                  },
+                  "redistributionAllowed": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "label",
+                  "verified",
+                  "redistributionAllowed"
+                ],
+                "additionalProperties": false
+              },
+              "supportedStructureIds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "authors",
+              "publicationType",
+              "license",
+              "supportedStructureIds"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "taxonomy": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "structureKinds": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "bone",
+                    "muscle",
+                    "tendon",
+                    "ligament",
+                    "joint",
+                    "nerve",
+                    "artery",
+                    "vein",
+                    "fascia",
+                    "cartilage",
+                    "organ"
+                  ]
+                }
+              },
+              "relationTypes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "origin",
+                    "insertion",
+                    "innervated_by",
+                    "associated_tendon",
+                    "adjacent_to",
+                    "articulates_with"
+                  ]
+                }
+              },
+              "reviewStatuses": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "pending",
+                    "reviewed",
+                    "validated"
+                  ]
+                }
+              },
+              "modelAvailability": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "available",
+                    "pending",
+                    "unavailable"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "structureKinds",
+              "relationTypes",
+              "reviewStatuses",
+              "modelAvailability"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "stats": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "species": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "regions": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "structures": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "modelsAvailable": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "modelsPending": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "structuresScientificallyVerified": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "incompleteRecords": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "species",
+              "regions",
+              "structures",
+              "modelsAvailable",
+              "modelsPending",
+              "structuresScientificallyVerified",
+              "incompleteRecords"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "error": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "enum": [
+                  "VALIDATION_ERROR",
+                  "NOT_FOUND",
+                  "METHOD_NOT_ALLOWED",
+                  "INTERNAL_ERROR"
+                ]
+              },
+              "message": {
+                "type": "string",
+                "minLength": 1
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "field",
+                    "message"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "code",
+              "message"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "error"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -11,3 +11,13 @@
 - Delegar solo tareas independientes cuyo beneficio justifique el costo, con contexto mínimo y archivos asignados. No reinvocar agentes para trabajo completado ni afirmar tarifas/modelos no comprobados.
 - Ejecutar verificaciones pertinentes y registrar evidencia, pendientes y bloqueos en `docs/PROGRESO.md`; decisiones en `docs/DECISIONES.md` y fuentes en `docs/FUENTES_ANATOMICAS.md`. No avanzar de fase sin aceptación del usuario.
 - Hacer commits locales después de cada cambio importante verificado para recuperar versiones funcionales. No enviar cambios que puedan disparar despliegues públicos sin autorización.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
