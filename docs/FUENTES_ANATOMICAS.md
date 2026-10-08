@@ -33,3 +33,7 @@ Se consultó la guía primaria de [University of Minnesota: Part 3, Proximal Tho
 | [3D-Cat-Anatomy](https://github.com/ezrahmae/3D-Cat-Anatomy) | ezrahmae | Código/activos abiertos | Extremidad torácica felina (7 huesos ensamblados) y Cráneo felino con mandíbula y dientes (3 huesos). | Integrados en `public/anatomy/feline/...` (52.104 tris y 64.496 tris). Revisión humana pendiente. |
 | [Nomina Anatomica Veterinaria (NAV), 6.ª ed.](https://wava-amav.org/wava-documents/) | ICVGAN / WAVA | Estándar internacional libre | Nomenclatura anatómica canónica en latín para las 43 estructuras del catálogo y sus relaciones. | Respaldado en `data/anatomy/sources.json`. |
 
+
+## Rectificación y fuentes para maestros, 2026-10-08
+
+Consultar [auditoría primaria de activos](phase3/source-audit.md): InNervateVR y 3D-Cat-Anatomy no muestran licencia aplicable a los archivos auditados; retirar la interpretación anterior de «activos educativos abiertos». NIH exige licencia por entrada. NAV sirve como referencia terminológica; disponibilidad de lectura no concede redistribución del PDF. Plantillas documentan referencias NAV, AVDC, extracto editorial Wiley y fuentes específicas por especie. Candidatos completos LMU canino y Tavernier felino no están adquiridos ni segmentados; descarga felina oficial sin credenciales devolvió 401. No se repitieron 403 ni se extrajo geometría de visores protegidos.

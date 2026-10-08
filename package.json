@@ -27,7 +27,10 @@
     "anatomy:inspect": "tsx scripts/anatomy/inspect-assets.ts",
     "anatomy:convert": "tsx scripts/anatomy/convert-assets.ts",
     "anatomy:reconcile": "tsx scripts/anatomy/reconcile-structures.ts",
-    "anatomy:validate": "tsx scripts/anatomy/validate-assets.ts"
+    "anatomy:validate": "tsx scripts/anatomy/validate-assets.ts",
+    "osteology:inventory": "tsx scripts/osteology/generate-reference-inventories.ts",
+    "osteology:validate": "tsx scripts/osteology/validate-inventories.ts",
+    "osteology:coverage": "tsx scripts/osteology/validate-inventories.ts --report"
   },
   "dependencies": {
     "@react-three/drei": "10.7.9",

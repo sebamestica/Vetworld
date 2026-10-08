@@ -140,3 +140,15 @@ Objetivo: Adquisición, procesamiento 3D headless, validación científica e int
 - `npm run lint`: 0 errores, 0 advertencias ESLint.
 - `npm run build`: Compilación de producción Next.js exitosa.
 
+
+## Fase 3 — continuación auditada, 2026-10-08
+
+Estado: EN CURSO / construcción bloqueada por geometría autorizada y espécimen. No existen todavía dos esqueletos completos construidos. Esta actualización corrige las generalizaciones y permisos declarados en la sección anterior: no se ha probado inexistencia universal de modelos completos; los repositorios educativos inspeccionados no contienen una licencia aplicable comprobada para sus activos, y el alojamiento NIH no convierte automáticamente un archivo en dominio público. Los indicadores históricos de licencia y disponibilidad de los catálogos regionales requieren corrección antes de publicar o admitir esas piezas en maestros; no se modificaron silenciosamente los cambios previos del usuario.
+
+Completado: inventarios de referencia canino (335 entradas) y felino (323), dientes de referencia 42/30, jerarquías, componentes fusionados, lateralidad y series variables sin total universal. Todos not_located/pending; no son huesos adquiridos. Generador determinista, esquema Zod y reporte de cobertura por región: cero mallas admitidas y cero huesos ensamblados para ambas especies; conteo específico del espécimen desconocido. Auditoría y candidatos en docs/phase3/source-audit.md y data/osteology/source-candidates.json. Nueva skill skeleton-master-assembly con encabezado/instrucciones inspeccionados; no se ejecutó validador oficial de skills.
+
+Blender portable 4.5.14 LTS descargado de Blender.org: checksum SHA-256 b9533d2397ac1984db4466fb23a7a4649391cca93f6e84209f9bcc60d071c8b9 coincide con archivo oficial. Ambos borradores workbench/masters/drafts/canine_master.blend y feline_master.blend guardados y reabiertos realmente con Blender, unidades métricas, colecciones regionales, cero objetos/mallas. No son maestros anatómicos completos; no hay GLB derivados nuevos ni capturas de animales ensamblados. Herramientas, PDF privado y borradores permanecen fuera de Git.
+
+Verificaciones nuevas: Zod dos inventarios aprobado; 7/7 pruebas nuevas, conjunto unitario 106/106, TypeScript y ESLint de archivos nuevos aprobados. No se volvieron a ejecutar HTTP, contratos, build, smoke o pruebas visuales en este hito; sus resultados anteriores son históricos. No cambió frontend, API ni HTML aprobado.
+
+Bloqueos: canino completo LMU sin descarga/licencia comprobada; felino completo Tavernier BY-NC-SA 4.0 con descarga oficial HTTP 401 sin credenciales. No evasión ni nuevas peticiones a páginas con 403. Faltan archivo autorizado, espécimen/escala, segmentación e identificación y revisión humana. Los inventarios aún necesitan cotejo de cantidades osteológicas y variantes; NAV aporta nomenclatura, no certificación de presencia. Pendientes: admisión geométrica, ensamblajes completos, correspondencias definitivas, exportación y flujo de selección de ambos animales. Ver docs/phase3/master-pipeline.md. No despliegue ni publicación de activos nuevos.

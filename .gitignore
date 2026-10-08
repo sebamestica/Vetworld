@@ -10,3 +10,5 @@ workbench/
 *.log
 test-results/
 playwright-report/
+.tools/
+assets-source/

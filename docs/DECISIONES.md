@@ -48,3 +48,7 @@ Cuestiones abiertas: revisor anatómico cualificado y acceso bibliográfico; for
 - **Normalización PBR y escala métrica:** Factor $0{,}01$ aplicado a fuentes FBX en centímetros. Materiales neutros sin texturas fotográficas ficticias.
 - **Expansión estricta del catálogo:** Incorporación de 35 nuevas estructuras con terminología NAV 6.ª edición respaldada, conservando `reviewStatus: 'pending'` hasta revisión veterinaria humana.
 
+
+## Fase 3 — maestros completos, 2026-10-08
+
+La autorización actual exige dos animales ensamblados; carga regional previa no sustituye este objetivo. Se separan plantilla de referencia y espécimen: solo el segundo determina cobertura esperada. No se incorporan nombres propuestos automáticamente al catálogo científico. Los maestros Blender conservan originales y se exportan desde copias; un borrador sin mallas no es un ensamblaje. Permisos educativos genéricos y normalización métrica previa requieren evidencia específica, no se consideran aprobados. Se preservó el árbol sucio previo en workbench/phase3/preexisting antes de este hito.

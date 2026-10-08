@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "reports": [
+    {
+      "speciesId": "canine",
+      "specimenId": null,
+      "expectedSpecimenBoneCount": null,
+      "referenceEntries": 335,
+      "admittedMeshes": 0,
+      "assembledBones": 0,
+      "anatomicallyValidatedBones": 0,
+      "status": "blocked_missing_authorized_geometry",
+      "regions": [
+        {
+          "regionId": "head",
+          "referenceEntries": 106,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "axial",
+          "referenceEntries": 73,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "thoracic-limb",
+          "referenceEntries": 76,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "pelvic-limb",
+          "referenceEntries": 78,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "accessory",
+          "referenceEntries": 2,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        }
+      ]
+    },
+    {
+      "speciesId": "feline",
+      "specimenId": null,
+      "expectedSpecimenBoneCount": null,
+      "referenceEntries": 323,
+      "admittedMeshes": 0,
+      "assembledBones": 0,
+      "anatomicallyValidatedBones": 0,
+      "status": "blocked_missing_authorized_geometry",
+      "regions": [
+        {
+          "regionId": "head",
+          "referenceEntries": 94,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "axial",
+          "referenceEntries": 73,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "thoracic-limb",
+          "referenceEntries": 76,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "pelvic-limb",
+          "referenceEntries": 78,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        },
+        {
+          "regionId": "accessory",
+          "referenceEntries": 2,
+          "admittedMeshes": 0,
+          "assembledBones": 0
+        }
+      ]
+    }
+  ]
+}
