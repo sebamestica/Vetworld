@@ -1,5 +1,7 @@
 # Arquitectura resumida
 
+Actualización 2026-10-08: el usuario redefinió la fase 1 como backend REST completo de lectura antes del frontend. El [diseño de API](api/design.md) prevalece sobre el alcance anterior de demo. Next.js Route Handlers, Zod, Vitest y JSON local; sin servicios externos ni escrituras en runtime. Three.js/R3F/Drei quedan para la fase visual futura y no se instalan ahora.
+
 Referencia: [documento maestro](../ARQUITECTURA_ATLAS_VETERINARIO_3D_CODEX.md), secciones 1–3, 5–7. Este resumen permite retomar sin cargar el documento completo.
 
 Atlas educativo canino/felino, adaptable a móvil y escritorio. Prioridad: precisión científica y procedencia sobre apariencia. Región inicial prevista: cabeza; geometría anatómica solo cuando exista y tenga permisos comprobados.

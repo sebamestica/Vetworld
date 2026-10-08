@@ -3,13 +3,15 @@
 | Fase | Alcance | Criterio de aceptación | Estado |
 |---|---|---|---|
 | 0 | Auditoría, reglas, seguimiento y skills | Archivos comprobados; fuentes y límites explícitos; sin aplicación ni dependencias | Documentación completada; fuentes parcialmente verificadas |
-| 1 | Esqueleto Next.js y visor con activo técnico no anatómico licenciado | Build, lint, tipos; selección de nodos/ficha «DEMO técnica»; controles táctiles y fallback | Espera autorización |
+| 1 | Backend REST `/api/v1`, catálogo semilla, contratos, validación, CI | Build, lint, tipos, unidad, integración HTTP, contratos y smoke producción local | Autorizada y en implementación |
 | 2 | Cráneos reales de perro/gato y región cabeza | Permisos, atribuciones, escala/nodos, aislamiento por especie y prueba móvil | Pendiente; adquisición requiere autorización |
 | 3 | Una estructura muscular individualizada y ficha rastreable | Fuente legítima, revisión humana, selección correcta; sin geometría si no existe | Pendiente de fuente científica |
 | 4 | Tejidos profundos y capas disponibles | Solo estructuras conseguidas/revisadas; filtros y referencias autorizadas | Pendiente |
 | 5 | Rendimiento, accesibilidad y producción | Pruebas en equipos reales, permisos y despliegue autorizado | Pendiente |
 
-## Plan de fase 1 para revisión
+## Plan anterior de fase 1 (sustituido)
+
+La solicitud explícita del usuario del 2026-10-08 sustituye este plan por [backend autorizado](api/design.md). No implementar el visor en la fase actual. Las siguientes líneas conservan el contexto de fase 0.
 
 1. Comprobar versiones compatibles y estrategia de inicialización en esta carpeta no vacía, preservando documentos. Configurar TypeScript estricto, ESLint y un solo lockfile npm.
 2. Crear pantalla adaptable y contenedor cliente del visor con carga diferida.

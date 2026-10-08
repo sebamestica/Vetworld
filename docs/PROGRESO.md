@@ -1,6 +1,6 @@
 # Progreso — fase 0
 
-Actualizado: 2026-10-08. Estado: documentación de fase 0 completada; fase 1 no autorizada. Verificación de activos anatómicos parcial, explícitamente pendiente antes de adquisición/publicación.
+Actualizado: 2026-10-08. Estado: documentación de fase 0 completada; fase 1 backend autorizada y en implementación. Verificación de activos anatómicos parcial, explícitamente pendiente antes de adquisición/publicación.
 
 ## Estado recuperado
 
@@ -33,4 +33,8 @@ Verificación ejecutada: inventario/tamaño y enlaces locales mediante PowerShel
 - No hay mediciones de rendimiento, pruebas en dispositivos ni validación científica realizadas.
 - Compatibilidad exacta de versiones y fixture técnico se comprobarán al comenzar fase 1, tras autorización.
 
-Siguiente paso: revisar el plan de [fase 1](roadmap.md) y esperar autorización expresa del usuario. No comenzar automáticamente.
+## Fase 1 autorizada — backend
+
+El usuario redefinió fase 1: API REST de lectura Next.js/Zod, catálogo JSON, Vitest, validador de integridad, CI y producción local. Visor/UI completa y despliegue público excluidos. [Diseño y secuencia](api/design.md). Commits locales por hitos comprobados.
+
+Trabajo independiente: agente `domain` (esquemas, fuentes/semilla y validación), agente `services` (repositorio/servicios/búsqueda), agente `http_tests` (HTTP real, contratos, smoke y CI); coordinador (inicialización, contratos HTTP, rutas, integración y documentación). Modelos heredados de esta sesión; no se seleccionaron ni afirmaron modelos económicos o tarifas. Resultados reales se registrarán después de ejecutar comprobaciones.

@@ -1,5 +1,7 @@
 # Decisiones — 2026-10-08
 
+Actualización fase 1: por solicitud explícita del usuario se implementa backend REST de lectura antes del visor, en un único Next.js con JSON/Zod/Vitest y presupuesto cero. El alcance anterior de fase 1 y la decisión inicial de no backend quedan sustituidos. Commits locales por hitos; sin despliegue público. Ver [diseño](api/design.md).
+
 | Decisión | Motivo / estado |
 |---|---|
 | Ejecutar únicamente fase 0 | Autorización actual: terminar documentación sin instalación ni aplicación |
