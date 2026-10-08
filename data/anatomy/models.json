@@ -1,0 +1,58 @@
+[
+  {
+    "id": "canine:skull-candidate",
+    "speciesId": "canine",
+    "regionId": "head",
+    "format": null,
+    "resourceUrl": null,
+    "landingPageUrl": "https://sketchfab.com/3d-models/dog-skull-d55bb38a6b584176a3930d2b7657930b",
+    "structureIds": [],
+    "meshMappings": [],
+    "layerIds": [],
+    "lod": null,
+    "evidenceType": "indexed-candidate",
+    "license": {
+      "label": "CC Attribution indicada por índice; versión y archivo sin verificar",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "authors": [
+      "SusanElaineJones"
+    ],
+    "sourceIds": [],
+    "review": {
+      "status": "pending"
+    },
+    "availability": "pending",
+    "fileEvidence": null,
+    "notes": "Modelo 3D no disponible. Evidencia fase 0 reutilizada; no archivo descargado ni mallas verificadas."
+  },
+  {
+    "id": "feline:skull-candidate",
+    "speciesId": "feline",
+    "regionId": "head",
+    "format": null,
+    "resourceUrl": null,
+    "landingPageUrl": "https://sketchfab.com/3d-models/craneo-gato-cat-skull-c23e1a1ce78e462da2981eb6ca6825af",
+    "structureIds": [],
+    "meshMappings": [],
+    "layerIds": [],
+    "lod": null,
+    "evidenceType": "indexed-candidate",
+    "license": {
+      "label": "CC Attribution indicada por índice; versión y archivo sin verificar",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "authors": [
+      "Sergiogocar"
+    ],
+    "sourceIds": [],
+    "review": {
+      "status": "pending"
+    },
+    "availability": "pending",
+    "fileEvidence": null,
+    "notes": "Modelo 3D no disponible. Evidencia fase 0 reutilizada; no archivo descargado ni mallas verificadas."
+  }
+]

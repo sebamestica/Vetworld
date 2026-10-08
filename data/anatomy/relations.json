@@ -1,0 +1,56 @@
+[
+  {
+    "id": "canine:biceps-brachii:origin",
+    "fromId": "canine:biceps-brachii",
+    "toId": "canine:scapula",
+    "type": "origin",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "canine:biceps-brachii:innervated-by",
+    "fromId": "canine:biceps-brachii",
+    "toId": "canine:musculocutaneous-nerve",
+    "type": "innervated_by",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "canine:biceps-brachii:associated-tendon",
+    "fromId": "canine:biceps-brachii",
+    "toId": "canine:biceps-origin-tendon",
+    "type": "associated_tendon",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "feline:biceps-brachii:origin",
+    "fromId": "feline:biceps-brachii",
+    "toId": "feline:scapula",
+    "type": "origin",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "feline:biceps-brachii:innervated-by",
+    "fromId": "feline:biceps-brachii",
+    "toId": "feline:musculocutaneous-nerve",
+    "type": "innervated_by",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "feline:biceps-brachii:associated-tendon",
+    "fromId": "feline:biceps-brachii",
+    "toId": "feline:biceps-origin-tendon",
+    "type": "associated_tendon",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  }
+]

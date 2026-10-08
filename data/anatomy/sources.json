@@ -1,0 +1,27 @@
+[
+  {
+    "id": "umn-proximal-thoracic-limb",
+    "title": "Dissection Lab Guide for Dog and Cat Anatomy - Part 3: Proximal Thoracic Limb",
+    "authors": [
+      "Abby Brown"
+    ],
+    "institution": "University of Minnesota",
+    "url": "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+    "publicationType": "university-dissection-guide",
+    "license": {
+      "label": "CC BY-NC-ND 4.0; excepto indicación contraria. Sin reproducción de medios ni adaptación textual en este catálogo.",
+      "verified": true,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "canine:scapula",
+      "canine:biceps-brachii",
+      "canine:musculocutaneous-nerve",
+      "canine:biceps-origin-tendon",
+      "feline:scapula",
+      "feline:biceps-brachii",
+      "feline:musculocutaneous-nerve",
+      "feline:biceps-origin-tendon"
+    ]
+  }
+]

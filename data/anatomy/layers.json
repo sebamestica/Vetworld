@@ -1,0 +1,56 @@
+[
+  {
+    "id": "skeleton",
+    "spanishName": "Esqueleto",
+    "kinds": [
+      "bone",
+      "joint",
+      "cartilage"
+    ]
+  },
+  {
+    "id": "superficial-muscles",
+    "spanishName": "Musculatura superficial",
+    "kinds": [
+      "muscle"
+    ]
+  },
+  {
+    "id": "deep-muscles",
+    "spanishName": "Musculatura profunda",
+    "kinds": [
+      "muscle"
+    ]
+  },
+  {
+    "id": "connective",
+    "spanishName": "Tendones, ligamentos y fascias",
+    "kinds": [
+      "tendon",
+      "ligament",
+      "fascia"
+    ]
+  },
+  {
+    "id": "nerves",
+    "spanishName": "Nervios",
+    "kinds": [
+      "nerve"
+    ]
+  },
+  {
+    "id": "vessels",
+    "spanishName": "Vasos",
+    "kinds": [
+      "artery",
+      "vein"
+    ]
+  },
+  {
+    "id": "organs",
+    "spanishName": "Órganos",
+    "kinds": [
+      "organ"
+    ]
+  }
+]

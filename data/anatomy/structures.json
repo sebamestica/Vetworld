@@ -1,0 +1,266 @@
+[
+  {
+    "id": "canine:scapula",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Scapula",
+    "spanishName": "Escápula",
+    "aliases": [
+      "omóplato"
+    ],
+    "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:biceps-brachii",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus biceps brachii",
+    "spanishName": "Bíceps braquial",
+    "aliases": [],
+    "summary": "Músculo craneomedial del brazo con una cabeza.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "insertion"
+    ],
+    "origin": [
+      "Tubérculo supraglenoideo de la escápula"
+    ],
+    "action": [
+      "Flexión del codo",
+      "Extensión del hombro"
+    ],
+    "innervation": [
+      "Nervio musculocutáneo"
+    ]
+  },
+  {
+    "id": "canine:musculocutaneous-nerve",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus musculocutaneus",
+    "spanishName": "Nervio musculocutáneo",
+    "aliases": [],
+    "summary": "Nervio que inerva el bíceps braquial.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:biceps-origin-tendon",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "muscular",
+    "kind": "tendon",
+    "canonicalLatinName": "Tendo originis musculi bicipitis brachii",
+    "spanishName": "Tendón de origen del bíceps braquial",
+    "aliases": [],
+    "summary": "Tendón proximal asociado al bíceps braquial.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ],
+    "attachments": [
+      "Tubérculo supraglenoideo de la escápula"
+    ]
+  },
+  {
+    "id": "feline:scapula",
+    "speciesId": "feline",
+    "regionId": "shoulder",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Scapula",
+    "spanishName": "Escápula",
+    "aliases": [
+      "omóplato"
+    ],
+    "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:biceps-brachii",
+    "speciesId": "feline",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus biceps brachii",
+    "spanishName": "Bíceps braquial",
+    "aliases": [],
+    "summary": "Músculo craneomedial del brazo con una cabeza.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "insertion"
+    ],
+    "origin": [
+      "Tubérculo supraglenoideo de la escápula"
+    ],
+    "action": [
+      "Flexión del codo",
+      "Extensión del hombro"
+    ],
+    "innervation": [
+      "Nervio musculocutáneo"
+    ]
+  },
+  {
+    "id": "feline:musculocutaneous-nerve",
+    "speciesId": "feline",
+    "regionId": "brachium",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus musculocutaneus",
+    "spanishName": "Nervio musculocutáneo",
+    "aliases": [],
+    "summary": "Nervio que inerva el bíceps braquial.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:biceps-origin-tendon",
+    "speciesId": "feline",
+    "regionId": "shoulder",
+    "systemId": "muscular",
+    "kind": "tendon",
+    "canonicalLatinName": "Tendo originis musculi bicipitis brachii",
+    "spanishName": "Tendón de origen del bíceps braquial",
+    "aliases": [],
+    "summary": "Tendón proximal asociado al bíceps braquial.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ],
+    "attachments": [
+      "Tubérculo supraglenoideo de la escápula"
+    ]
+  }
+]

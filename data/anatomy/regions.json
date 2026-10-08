@@ -1,0 +1,47 @@
+[
+  {
+    "id": "head",
+    "spanishName": "Cabeza",
+    "parentId": null
+  },
+  {
+    "id": "neck",
+    "spanishName": "Cuello",
+    "parentId": null
+  },
+  {
+    "id": "thorax",
+    "spanishName": "Tórax",
+    "parentId": null
+  },
+  {
+    "id": "abdomen",
+    "spanishName": "Abdomen",
+    "parentId": null
+  },
+  {
+    "id": "pelvis",
+    "spanishName": "Pelvis",
+    "parentId": null
+  },
+  {
+    "id": "thoracic-limb",
+    "spanishName": "Extremidad torácica",
+    "parentId": null
+  },
+  {
+    "id": "pelvic-limb",
+    "spanishName": "Extremidad pélvica",
+    "parentId": null
+  },
+  {
+    "id": "shoulder",
+    "spanishName": "Hombro",
+    "parentId": "thoracic-limb"
+  },
+  {
+    "id": "brachium",
+    "spanishName": "Brazo",
+    "parentId": "thoracic-limb"
+  }
+]

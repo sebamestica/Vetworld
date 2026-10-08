@@ -1,0 +1,18 @@
+[
+  {
+    "id": "canine",
+    "scientificName": "Canis lupus familiaris",
+    "spanishName": "Perro",
+    "aliases": [
+      "canino"
+    ]
+  },
+  {
+    "id": "feline",
+    "scientificName": "Felis catus",
+    "spanishName": "Gato",
+    "aliases": [
+      "felino"
+    ]
+  }
+]

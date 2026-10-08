@@ -1,0 +1,22 @@
+[
+  {
+    "id": "skeletal",
+    "spanishName": "Esquelético"
+  },
+  {
+    "id": "muscular",
+    "spanishName": "Muscular"
+  },
+  {
+    "id": "nervous",
+    "spanishName": "Nervioso"
+  },
+  {
+    "id": "cardiovascular",
+    "spanishName": "Cardiovascular"
+  },
+  {
+    "id": "visceral",
+    "spanishName": "Visceral"
+  }
+]
