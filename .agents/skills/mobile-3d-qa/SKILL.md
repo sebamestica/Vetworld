@@ -5,6 +5,8 @@ description: Comprobar selección táctil, accesibilidad y rendimiento del visor
 
 # QA móvil del visor
 
+Activar al modificar controles, layout o calidad gráfica. Probar giro con un dedo, zoom con dos/paneo, selección de estructuras pequeñas y panel inferior cerrable; usar presets de DPR/calidad en vez de eliminar detalle científico indiscriminadamente. Ante pérdida de contexto WebGL, ofrecer recuperación y ficha textual. Memoria estimada no equivale a una medición GPU.
+
 Consultar `docs/roadmap.md` y `docs/PROGRESO.md` desde la raíz para conocer fase y pruebas disponibles. No instalar herramientas por ejecutar esta skill.
 
 1. Revisar carga diferida y alternativas textuales ante WebGL ausente, error de descarga o contexto perdido. Comprobar que la ficha puede consultarse sin depender exclusivamente del lienzo.
