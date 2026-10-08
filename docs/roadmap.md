@@ -3,7 +3,7 @@
 | Fase | Alcance | Criterio de aceptación | Estado |
 |---|---|---|---|
 | 0 | Auditoría, reglas, seguimiento y skills | Archivos comprobados; fuentes y límites explícitos; sin aplicación ni dependencias | Documentación completada; fuentes parcialmente verificadas |
-| 1 | Backend REST `/api/v1`, catálogo semilla, contratos, validación, CI | Build, lint, tipos, unidad, integración HTTP, contratos y smoke producción local | Autorizada y en implementación |
+| 1 | Backend REST `/api/v1`, catálogo semilla, contratos, validación, CI | Build, lint, tipos, unidad, integración HTTP, contratos y smoke producción local | Completada localmente; espera revisión del usuario |
 | 2 | Cráneos reales de perro/gato y región cabeza | Permisos, atribuciones, escala/nodos, aislamiento por especie y prueba móvil | Pendiente; adquisición requiere autorización |
 | 3 | Una estructura muscular individualizada y ficha rastreable | Fuente legítima, revisión humana, selección correcta; sin geometría si no existe | Pendiente de fuente científica |
 | 4 | Tejidos profundos y capas disponibles | Solo estructuras conseguidas/revisadas; filtros y referencias autorizadas | Pendiente |
@@ -20,4 +20,4 @@ La solicitud explícita del usuario del 2026-10-08 sustituye este plan por [back
 5. Ejecutar build, lint, typecheck y comprobaciones de selección/ocultamiento, toque y pantallas pequeñas. Diferenciar emulación de equipos reales.
 6. Registrar resultados y entregar para aceptación. Preparar para Vercel no autoriza desplegar ni subir a GitHub.
 
-Pendientes científicos de los cráneos no impiden la demo técnica; sí impiden tratarlos como activos publicables en fase 2. Cada fase requiere nueva autorización.
+Pendientes científicos de los cráneos no impiden este backend; sí impiden tratarlos como activos publicables. El siguiente alcance visual debe acordarse con el usuario antes de implementar: el plan antiguo de visor no se ejecuta automáticamente. Cada fase requiere nueva autorización.

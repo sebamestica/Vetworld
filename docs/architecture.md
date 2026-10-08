@@ -30,4 +30,4 @@ docs/
   mobile-3d-qa/SKILL.md
 ```
 
-En fase 1 se crearán únicamente los directorios/configuraciones necesarios para la demo técnica, sin sobrescribir esta documentación. La compatibilidad concreta Next.js/React/R3F se comprobará al elegir versiones; disponer de Node no prueba por sí solo esa compatibilidad.
+La fase 1 actual implementa backend Node.js/Route Handlers, no la demo del visor. El código separa contratos/HTTP (`src/lib/api`), dominio/esquemas/validación y repositorio (`src/modules/anatomy`), servicios (`src/modules/catalog`), búsqueda (`src/modules/search`) y JSON (`data/anatomy`). Archivos/sha256 se verifican fuera de runtime mediante scripts/CI. Los modelos candidatos permanecen sin recurso público. La selección de librerías del visor se comprobará en la futura fase visual.

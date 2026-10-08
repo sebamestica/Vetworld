@@ -1,6 +1,6 @@
-# Progreso — fase 0
+# Progreso — Atlas Veterinario 3D
 
-Actualizado: 2026-10-08. Estado: documentación de fase 0 completada; fase 1 backend autorizada y en implementación. Verificación de activos anatómicos parcial, explícitamente pendiente antes de adquisición/publicación.
+Actualizado: 2026-10-08. Estado: fase 0 completada; fase 1 backend implementada y verificada localmente, pendiente de revisión del usuario. Verificación científica humana y activos anatómicos pendientes; ninguna publicación o fase visual iniciada.
 
 ## Estado recuperado
 
@@ -37,4 +37,39 @@ Verificación ejecutada: inventario/tamaño y enlaces locales mediante PowerShel
 
 El usuario redefinió fase 1: API REST de lectura Next.js/Zod, catálogo JSON, Vitest, validador de integridad, CI y producción local. Visor/UI completa y despliegue público excluidos. [Diseño y secuencia](api/design.md). Commits locales por hitos comprobados.
 
-Trabajo independiente: agente `domain` (esquemas, fuentes/semilla y validación), agente `services` (repositorio/servicios/búsqueda), agente `http_tests` (HTTP real, contratos, smoke y CI); coordinador (inicialización, contratos HTTP, rutas, integración y documentación). Modelos heredados de esta sesión; no se seleccionaron ni afirmaron modelos económicos o tarifas. Resultados reales se registrarán después de ejecutar comprobaciones.
+Trabajo independiente: agente `domain` (esquemas, fuentes/semilla y validación), agente `services` (repositorio/servicios/búsqueda), agente `http_tests` (HTTP real, contratos, smoke y CI); coordinador (inicialización, contratos HTTP, rutas, integración y documentación). Modelos heredados de esta sesión; no se seleccionaron ni afirmaron modelos económicos o tarifas. Resultados reales registrados a continuación.
+
+### Entrega y resultados reales
+
+Implementados: Next.js App Router/Node.js, TypeScript estricto, Zod, repositorio JSON con snapshot aislado, servicios y búsqueda local, 16 operaciones GET documentadas, contratos OpenAPI 3.1 y errores consistentes. Regiones/capas no afirman cobertura o profundidad que no está documentada. Sin escritura ni procesamiento de activos en peticiones; SHA-256/archivos únicamente en CLI/CI.
+
+Catálogo real: 2 especies (`canine`, `feline`), 9 regiones, 8 estructuras, 6 relaciones, 1 referencia universitaria, 2 modelos candidatos pendientes y 0 modelos disponibles. Todas las fichas son parciales y `review.status=pending`; no hay estructuras con revisión humana `validated`. [Evidencia científica](api/scientific-seed.md).
+
+| Comprobación ejecutada | Resultado |
+|---|---|
+| `npm ci` | Instalación reproducible completada; aviso de deprecación ESLint 9 documentado |
+| `npm run lint` | Aprobado, sin errores |
+| `npm run typecheck` | Aprobado, incluidos tipos generados de rutas Next |
+| `npm run validate:data` | 0 errores, 18 advertencias explícitas (8 fichas parciales + 8 revisión pendiente + 2 modelos pendientes) |
+| `npm run test` | 38/38 pruebas, 4 archivos |
+| `npm run test:integration` | 59/59, 2 archivos; también ejecutadas contra producción local |
+| `npm run test:contracts` | 35/35; HTTP real y baseline OpenAPI, también contra producción local |
+| `npm run test:smoke:local` | 18/18 peticiones correctas contra `next dev` propio |
+| `npm run build` | Producción compilada, sin errores ni avisos de rastreo dinámico de archivos |
+| `npm run test:smoke:production` | 18/18 peticiones correctas contra `next start` del build final |
+| `npm audit --omit=dev` | 0 vulnerabilidades reportadas |
+| Integridad del maestro | SHA-256 conservado: `C4EF42D2CC1456D8F78B14D9705E8032470051EDE52A8D568ECACDB23EE27197` |
+
+Las 59 pruebas de integración incluyen 57 sobre Next.js y dos fallos 500 inducidos por HTTP contra un adaptador temporal del mismo handler (lectura fallida/salida inválida), sin endpoint de fallos en producción. Las suites cierran sus propios servidores. Fixtures sintéticas se limitan a pruebas y se eliminan después; no se incorporan al catálogo científico.
+
+El build inicial detectó incompatibilidad de contexto en rutas estáticas y rastreo de filesystem por el validador de activos: ambos corregidos antes del build final. El trace local mayor de las rutas enumera 122 archivos y 1.948.482 bytes; es una medición local de dependencias trazadas, no del bundle final de Vercel.
+
+GitHub Actions configurado para npm ci, tipos, lint, integridad, unidad, integración, contratos y build; smoke remoto manual opcional. Workflow remoto **no ejecutado**. Vercel Preview/producción **no desplegados ni probados**. Compatibilidad prevista con Hobby y límites oficiales documentados en [deployment.md](api/deployment.md).
+
+### Commits y pendientes
+
+Commits locales por hitos: `b44200e` diseño autorizado, `ec7af94` scaffold/herramientas, `529ef94` dominio/datos/servicios, `c8bce2f` API/contratos, `5a1db03` capas independientes y `83af881` pruebas/CI. Consultar `git log --oneline` para el cierre documental. No se hizo push de fase 1 ni se vinculó Vercel: enviar cambios a un repositorio conectado podría disparar despliegues no autorizados.
+
+Pendientes: revisión veterinaria humana/NAV; adquisición y derechos completos de modelos; contenido anatómico adicional y campos opcionales; frontend/visor en una fase posterior autorizada; publicación y smoke remoto. Auditoría completa mantiene cinco avisos altos transitivos de desarrollo por `braces`, sin parche publicado al consultar. ESLint 9 es compatible con los plugins instalados, pero deprecated; actualizar conjuntamente cuando sea viable. No hay un fallo funcional local pendiente ni un servicio pago contratado.
+
+Para continuar: revisar [API y ejemplos](api/README.md), [pruebas](api/testing.md) y [despliegue futuro](api/deployment.md). El frontend podrá consumir especies, regiones, fichas/relaciones, búsqueda, capas, licencias y manifiestos con disponibilidad real. No se autoriza automáticamente implementar la siguiente fase.

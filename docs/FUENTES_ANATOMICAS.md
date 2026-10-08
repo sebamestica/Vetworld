@@ -20,3 +20,7 @@ Las búsquedas por identificador exacto de los cráneos no devolvieron resultado
 Para fase 2: inspeccionar mediante navegador/cuenta autorizada las condiciones y opciones reales de descarga; guardar evidencia de licencia/versión y autor; registrar archivo/formato y revisar nodos/escala tras adquisición autorizada. Si sigue inaccesible, mantener candidato y buscar otra fuente con permisos comprobables.
 
 Fuentes admitidas ahora: referencias y enlaces para investigar, sin autorización de redistribución de medios. Fuentes descartadas: Z-PIG para especies objetivo, anatomía humana trasladada sin validación y material comercial/institucional sin permiso. No se ha verificado cobertura completa de músculos, tendones o ligamentos de ambas especies. La revisión humana permanece pendiente.
+
+## Semilla de fase 1
+
+Se consultó la guía primaria de [University of Minnesota: Part 3, Proximal Thoracic Limb](https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/) para ocho fichas y seis relaciones explícitas de perro/gato. Se registró la bibliografía y su licencia separadamente de modelos; no se incorporaron medios, textos extensos ni geometría de la guía. [Evidencia, apartados y límites](api/scientific-seed.md). Revisión humana y cotejo NAV pendientes; ninguna ficha marcada validated. Los candidatos Sketchfab se reutilizaron sin nuevos accesos directos o descargas.
