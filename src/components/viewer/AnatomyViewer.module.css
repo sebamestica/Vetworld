@@ -1,0 +1,12 @@
+.viewer { height: 100%; min-height: 0; display: flex; flex-direction: column; background: #e8eef2; border-radius: 14px; overflow: hidden; position: relative; }
+.notice { padding: 12px 16px; background: #fff4e5; color: #704416; font-size: 13px; line-height: 1.5; }
+.status { padding: 8px 16px; color: #355269; font-size: 12px; }
+.canvas { flex: 1; min-height: 0; position: relative; }
+.retry { position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); min-height: 44px; padding: 10px 20px; border: 1px solid #183d57; border-radius: 7px; color: #183d57; background: white; cursor: pointer; }
+.meshButtons { display: flex; justify-content: center; gap: 8px; padding: 8px; flex-wrap: wrap; }
+.meshButtons button { min-height: 44px; padding: 8px 14px; background: white; color: #183d57; border: 1px solid #a8b8c2; border-radius: 6px; cursor: pointer; }
+.meshButtons button[aria-pressed="true"] { border: 2px solid #087e83; background: #d7eeed; }
+.meshButtons button:disabled { opacity: .45; cursor: default; }
+.meshButtons button:focus-visible,.retry:focus-visible { outline: 3px solid #087e83; outline-offset: 2px; }
+.help { margin: 0; padding: 8px 12px 14px; text-align: center; color: #465e6c; font-size: 12px; }
+@media(max-width: 640px) { .notice { font-size: 11px; padding: 8px 12px; } .status { padding: 5px 12px; }.meshButtons { gap: 5px; padding: 5px; }.meshButtons button { padding: 8px 11px; }.help { font-size: 10px; padding: 5px 10px 8px; } }

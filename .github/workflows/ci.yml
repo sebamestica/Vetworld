@@ -1,4 +1,4 @@
-name: Backend
+name: Atlas
 on:
   push:
   pull_request:
@@ -26,10 +26,20 @@ jobs:
       - run: npm run typecheck
       - run: npm run lint
       - run: npm run validate:data
+      - run: npm run validate:media
+      - run: npm run validate:viewer
       - run: npm run test
       - run: npm run test:integration
       - run: npm run test:contracts
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-failures
+          path: test-results/
+          retention-days: 3
       - name: Smoke remoto opcional
         if: github.event_name == 'workflow_dispatch' && inputs.api_base_url != ''
         run: npm run test:smoke

@@ -1,0 +1,18 @@
+// @vitest-environment happy-dom
+import { afterEach, describe, expect, it } from 'vitest';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import ReferenceGallery from '@/components/media/ReferenceGallery';
+import type { VisualReference } from '@/modules/media/schemas';
+
+// Metadatos sintéticos exclusivamente para probar controles de licencia.
+const reference: VisualReference = { id: 'test:reference', title: 'Imagen sintética de prueba', kind: 'illustration', speciesId: 'canine', regionId: 'shoulder', structureIds: ['canine:scapula'], sourceId: 'test:source', authors: ['Autor de la fixture'], sourceUrl: 'https://open.lib.umn.edu/test', license: { label: 'Fixture propia', verified: true, redistributionAllowed: true }, displayMode: 'internal', imagePath: '/reference-images/test.png', thumbnailPath: '/reference-images/test-thumb.png', review: { status: 'pending' }, verifiedAt: '2026-10-08' };
+afterEach(cleanup);
+describe('Galería de referencias', () => {
+  it('comunica la ausencia de imágenes sin inventar contenido', () => { render(<ReferenceGallery references={[]} speciesName="Perro" />); expect(screen.getByText(/No hay referencias visuales curadas/)).toBeTruthy(); expect(screen.queryByRole('img')).toBeNull(); });
+  it('presenta imágenes internas solo con licencia y rutas locales válidas', () => { render(<ReferenceGallery references={[reference]} speciesName="Perro" />); expect(screen.getByRole('img').getAttribute('src')).toBe('/reference-images/test-thumb.png'); expect(screen.getByText('Ilustración')).toBeTruthy(); expect(screen.getAllByText(/Autor de la fixture/).length).toBeGreaterThan(0); });
+  it('rechaza rutas remotas y permisos revocados', () => { render(<ReferenceGallery references={[{ ...reference, imagePath: 'https://example.com/test.png', sourceUrl: 'javascript:alert(1)', license: { ...reference.license, verified: false } }]} speciesName="Perro" />); expect(screen.queryByRole('img')).toBeNull(); expect(screen.queryByRole('link')).toBeNull(); });
+  it('mantiene el enlace académico ante error de imagen', () => { render(<ReferenceGallery references={[reference]} speciesName="Perro" />); fireEvent.error(screen.getByRole('img')); expect(screen.queryByRole('img')).toBeNull(); expect(screen.getByRole('status').textContent).toContain('Imagen no disponible'); expect(screen.getByRole('link').getAttribute('href')).toBe(reference.sourceUrl); });
+  it('construye una búsqueda externa codificada con advertencia de procedencia', () => { render(<ReferenceGallery references={[]} speciesName="Perro" scientificName="Scapula" />); const link = screen.getByRole('link'); expect(new URL(link.getAttribute('href')!).searchParams.get('q')).toBe('Scapula Perro anatomía veterinaria'); expect(link.getAttribute('rel')).toContain('noreferrer'); });
+  it('muestra región desde sus etiquetas y utiliza la especie científica en la búsqueda', () => { render(<ReferenceGallery references={[reference]} speciesName="Perro" scientificSpeciesName="Canis lupus familiaris" scientificName="Scapula" regionNames={{ shoulder: 'Hombro' }} />); expect(screen.getByText('Perro · Hombro')).toBeTruthy(); const link = screen.getByRole('link', { name: /Buscar más imágenes/ }); expect(new URL(link.getAttribute('href')!).searchParams.get('q')).toBe('Scapula Canis lupus familiaris anatomía veterinaria'); });
+  it('abre y cierra la ampliación con el diálogo nativo', () => { render(<ReferenceGallery references={[reference]} speciesName="Perro" />); fireEvent.click(screen.getByRole('button', { name: /Ampliar/ })); expect(screen.getByRole('dialog')).toBeTruthy(); fireEvent.click(screen.getByRole('button', { name: 'Cerrar ampliación' })); expect(screen.queryByRole('dialog')).toBeNull(); });
+});

@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Atlas Veterinario 3D API",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Catálogo de lectura. Revisión humana y activos pendientes se declaran explícitamente. Parámetros desconocidos o repetidos: 400."
   },
   "paths": {
@@ -3325,6 +3325,304 @@
           }
         }
       }
+    },
+    "/api/v1/references": {
+      "get": {
+        "operationId": "references",
+        "summary": "Consultar referencias científicas curadas sin hotlink",
+        "parameters": [
+          {
+            "name": "structure",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            },
+            "description": "ID de catálogo existente"
+          },
+          {
+            "name": "species",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            },
+            "description": "ID de catálogo existente"
+          },
+          {
+            "name": "region",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9:-]*$"
+            },
+            "description": "ID de catálogo existente"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            },
+            "description": "1–1.000.000; defecto 1"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            },
+            "description": "1–100; defecto 20"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Referencia(s) curada(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/references"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "responses": {
+          "200": {
+            "description": "Cabeceras, sin cuerpo"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/references/{id}": {
+      "get": {
+        "operationId": "reference",
+        "summary": "Consultar referencias científicas curadas sin hotlink",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Referencia(s) curada(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/reference"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error estructurado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "responses": {
+          "200": {
+            "description": "Cabeceras, sin cuerpo"
+          }
+        }
+      },
+      "options": {
+        "responses": {
+          "204": {
+            "description": "GET, HEAD, OPTIONS"
+          }
+        }
+      },
+      "post": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "405": {
+            "description": "Solo lectura",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -5978,6 +6276,404 @@
               "modelsPending",
               "structuresScientificallyVerified",
               "incompleteRecords"
+            ],
+            "additionalProperties": false
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "references": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "dissection_photo",
+                    "ct",
+                    "mri",
+                    "illustration",
+                    "dissection_video",
+                    "academic_reference"
+                  ]
+                },
+                "speciesId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "regionId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "structureIds": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                  }
+                },
+                "sourceId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                },
+                "authors": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "sourceUrl": {
+                  "type": "string"
+                },
+                "license": {
+                  "type": "object",
+                  "properties": {
+                    "label": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "verified": {
+                      "type": "boolean"
+                    },
+                    "redistributionAllowed": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "label",
+                    "verified",
+                    "redistributionAllowed"
+                  ],
+                  "additionalProperties": false
+                },
+                "displayMode": {
+                  "type": "string",
+                  "enum": [
+                    "external",
+                    "internal"
+                  ]
+                },
+                "imagePath": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "thumbnailPath": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "review": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "reviewed",
+                        "validated"
+                      ]
+                    },
+                    "reviewer": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "reviewedAt": {
+                      "type": "string",
+                      "format": "date-time",
+                      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                    },
+                    "notes": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "status"
+                  ],
+                  "additionalProperties": false
+                },
+                "caption": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "verifiedAt": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "kind",
+                "speciesId",
+                "regionId",
+                "structureIds",
+                "sourceId",
+                "authors",
+                "sourceUrl",
+                "license",
+                "displayMode",
+                "imagePath",
+                "thumbnailPath",
+                "review",
+                "verifiedAt"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "meta": {
+            "type": "object",
+            "properties": {
+              "apiVersion": {
+                "type": "string",
+                "const": "v1"
+              },
+              "dataVersion": {
+                "type": "string",
+                "minLength": 1
+              },
+              "pagination": {
+                "type": "object",
+                "properties": {
+                  "page": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9007199254740991
+                  },
+                  "limit": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 100
+                  },
+                  "total": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "totalPages": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "page",
+                  "limit",
+                  "total",
+                  "totalPages"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "apiVersion",
+              "dataVersion",
+              "pagination"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "data",
+          "meta"
+        ],
+        "additionalProperties": false
+      },
+      "reference": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "dissection_photo",
+                  "ct",
+                  "mri",
+                  "illustration",
+                  "dissection_video",
+                  "academic_reference"
+                ]
+              },
+              "speciesId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "regionId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "structureIds": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                }
+              },
+              "sourceId": {
+                "type": "string",
+                "pattern": "^[a-z0-9][a-z0-9:-]*$"
+              },
+              "authors": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "sourceUrl": {
+                "type": "string"
+              },
+              "license": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "verified": {
+                    "type": "boolean"
+                  },
+                  "redistributionAllowed": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "label",
+                  "verified",
+                  "redistributionAllowed"
+                ],
+                "additionalProperties": false
+              },
+              "displayMode": {
+                "type": "string",
+                "enum": [
+                  "external",
+                  "internal"
+                ]
+              },
+              "imagePath": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "thumbnailPath": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "review": {
+                "type": "object",
+                "properties": {
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "pending",
+                      "reviewed",
+                      "validated"
+                    ]
+                  },
+                  "reviewer": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reviewedAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                  },
+                  "notes": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "status"
+                ],
+                "additionalProperties": false
+              },
+              "caption": {
+                "type": "string",
+                "minLength": 1
+              },
+              "verifiedAt": {
+                "type": "string",
+                "format": "date",
+                "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+              }
+            },
+            "required": [
+              "id",
+              "title",
+              "kind",
+              "speciesId",
+              "regionId",
+              "structureIds",
+              "sourceId",
+              "authors",
+              "sourceUrl",
+              "license",
+              "displayMode",
+              "imagePath",
+              "thumbnailPath",
+              "review",
+              "verifiedAt"
             ],
             "additionalProperties": false
           },

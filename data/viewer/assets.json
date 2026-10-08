@@ -1,0 +1,130 @@
+[
+  {
+    "id": "canine-technical-demo",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "title": "Demostración técnica — formas geométricas",
+    "purpose": "technical_demo",
+    "format": "glb",
+    "resourceUrl": "/models/technical/interaction-demo.glb",
+    "unit": "m",
+    "scaleToMeters": 1,
+    "orientation": "+Y arriba; +Z hacia cámara; colocación sin significado anatómico",
+    "byteSize": 55732,
+    "triangleCount": 2572,
+    "estimatedGpuBytes": 52512,
+    "sha256": "15430ca1ecda34771f0e20981ade9019142da4c2edc99a24efd2995f9b1f479b",
+    "license": {
+      "label": "Geometría original del proyecto; uso, modificación y redistribución autorizados para esta fixture técnica",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "reviewStatus": "pending",
+    "availability": "available",
+    "meshMappings": [
+      {
+        "nodeId": "demo-sphere",
+        "structureId": "canine:scapula",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "demo-box",
+        "structureId": "canine:biceps-brachii",
+        "layerId": "muscles-unclassified"
+      },
+      {
+        "nodeId": "demo-torus",
+        "structureId": "canine:musculocutaneous-nerve",
+        "layerId": "nerves"
+      },
+      {
+        "nodeId": "demo-cone",
+        "structureId": "canine:biceps-origin-tendon",
+        "layerId": "tendons"
+      }
+    ],
+    "layers": [
+      {
+        "id": "skeleton",
+        "label": "Esqueleto"
+      },
+      {
+        "id": "muscles-unclassified",
+        "label": "Músculos sin profundidad asignada"
+      },
+      {
+        "id": "nerves",
+        "label": "Nervios"
+      },
+      {
+        "id": "tendons",
+        "label": "Tendones"
+      }
+    ],
+    "specimen": null
+  },
+  {
+    "id": "feline-technical-demo",
+    "speciesId": "feline",
+    "regionId": "thoracic-limb",
+    "title": "Demostración técnica — formas geométricas",
+    "purpose": "technical_demo",
+    "format": "glb",
+    "resourceUrl": "/models/technical/interaction-demo.glb",
+    "unit": "m",
+    "scaleToMeters": 1,
+    "orientation": "+Y arriba; +Z hacia cámara; colocación sin significado anatómico",
+    "byteSize": 55732,
+    "triangleCount": 2572,
+    "estimatedGpuBytes": 52512,
+    "sha256": "15430ca1ecda34771f0e20981ade9019142da4c2edc99a24efd2995f9b1f479b",
+    "license": {
+      "label": "Geometría original del proyecto; uso, modificación y redistribución autorizados para esta fixture técnica",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "reviewStatus": "pending",
+    "availability": "available",
+    "meshMappings": [
+      {
+        "nodeId": "demo-sphere",
+        "structureId": "feline:scapula",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "demo-box",
+        "structureId": "feline:biceps-brachii",
+        "layerId": "muscles-unclassified"
+      },
+      {
+        "nodeId": "demo-torus",
+        "structureId": "feline:musculocutaneous-nerve",
+        "layerId": "nerves"
+      },
+      {
+        "nodeId": "demo-cone",
+        "structureId": "feline:biceps-origin-tendon",
+        "layerId": "tendons"
+      }
+    ],
+    "layers": [
+      {
+        "id": "skeleton",
+        "label": "Esqueleto"
+      },
+      {
+        "id": "muscles-unclassified",
+        "label": "Músculos sin profundidad asignada"
+      },
+      {
+        "id": "nerves",
+        "label": "Nervios"
+      },
+      {
+        "id": "tendons",
+        "label": "Tendones"
+      }
+    ],
+    "specimen": null
+  }
+]

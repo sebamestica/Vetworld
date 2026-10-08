@@ -1,0 +1,122 @@
+[
+    {
+        "id":  "umn-canine-shoulder",
+        "title":  "Guía de disección: miembro torácico proximal",
+        "kind":  "academic_reference",
+        "speciesId":  "canine",
+        "regionId":  "shoulder",
+        "structureIds":  [
+                             "canine:scapula",
+                             "canine:biceps-origin-tendon"
+                         ],
+        "sourceId":  "umn-proximal-thoracic-limb",
+        "authors":  [
+                        "Abby Brown"
+                    ],
+        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license":  {
+                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+                        "verified":  true,
+                        "redistributionAllowed":  false
+                    },
+        "displayMode":  "external",
+        "imagePath":  null,
+        "thumbnailPath":  null,
+        "review":  {
+                       "status":  "pending",
+                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+                   },
+        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt":  "2026-10-08"
+    },
+    {
+        "id":  "umn-canine-brachium",
+        "title":  "Guía de disección: miembro torácico proximal",
+        "kind":  "academic_reference",
+        "speciesId":  "canine",
+        "regionId":  "brachium",
+        "structureIds":  [
+                             "canine:biceps-brachii",
+                             "canine:musculocutaneous-nerve"
+                         ],
+        "sourceId":  "umn-proximal-thoracic-limb",
+        "authors":  [
+                        "Abby Brown"
+                    ],
+        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license":  {
+                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+                        "verified":  true,
+                        "redistributionAllowed":  false
+                    },
+        "displayMode":  "external",
+        "imagePath":  null,
+        "thumbnailPath":  null,
+        "review":  {
+                       "status":  "pending",
+                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+                   },
+        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt":  "2026-10-08"
+    },
+    {
+        "id":  "umn-feline-shoulder",
+        "title":  "Guía de disección: miembro torácico proximal",
+        "kind":  "academic_reference",
+        "speciesId":  "feline",
+        "regionId":  "shoulder",
+        "structureIds":  [
+                             "feline:scapula",
+                             "feline:biceps-origin-tendon"
+                         ],
+        "sourceId":  "umn-proximal-thoracic-limb",
+        "authors":  [
+                        "Abby Brown"
+                    ],
+        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license":  {
+                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+                        "verified":  true,
+                        "redistributionAllowed":  false
+                    },
+        "displayMode":  "external",
+        "imagePath":  null,
+        "thumbnailPath":  null,
+        "review":  {
+                       "status":  "pending",
+                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+                   },
+        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt":  "2026-10-08"
+    },
+    {
+        "id":  "umn-feline-brachium",
+        "title":  "Guía de disección: miembro torácico proximal",
+        "kind":  "academic_reference",
+        "speciesId":  "feline",
+        "regionId":  "brachium",
+        "structureIds":  [
+                             "feline:biceps-brachii",
+                             "feline:musculocutaneous-nerve"
+                         ],
+        "sourceId":  "umn-proximal-thoracic-limb",
+        "authors":  [
+                        "Abby Brown"
+                    ],
+        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license":  {
+                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+                        "verified":  true,
+                        "redistributionAllowed":  false
+                    },
+        "displayMode":  "external",
+        "imagePath":  null,
+        "thumbnailPath":  null,
+        "review":  {
+                       "status":  "pending",
+                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+                   },
+        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt":  "2026-10-08"
+    }
+]

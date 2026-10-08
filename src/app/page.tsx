@@ -1,5 +1,7 @@
-import Link from 'next/link';
+import AtlasWorkspace from '@/components/atlas/AtlasWorkspace';
+
+export const dynamic = 'force-dynamic';
 
 export default function Home() {
-  return <main><h1>Atlas Veterinario 3D</h1><p>Backend de catálogo. Interfaz visual pendiente.</p><Link href="/api/v1/health">Estado de la API v1</Link></main>;
+  return <main><AtlasWorkspace/></main>;
 }

@@ -1,0 +1,12 @@
+import { createReferencesHandler } from '@/modules/media/handler';
+import { createHeadHandler } from '@/lib/api/handler';
+import { methodNotAllowed, options } from '@/lib/api/http';
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+export const GET = createReferencesHandler(true);
+export const HEAD = createHeadHandler(GET);
+export const OPTIONS = options;
+export const POST = methodNotAllowed;
+export const PUT = methodNotAllowed;
+export const PATCH = methodNotAllowed;
+export const DELETE = methodNotAllowed;

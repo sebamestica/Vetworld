@@ -1,0 +1,12 @@
+:root { --navy: #183d57; --ink: #203542; --muted: #526b7b; --teal: #087e83; --surface: #f2f5f7; }
+* { box-sizing: border-box; }
+html { margin: 0; padding: 0; }
+body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; line-height: 1.5; }
+button, input, select { font: inherit; }
+button, select, input[type=checkbox], input[type=range] { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+a { color: #086f78; text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid #087e83; outline-offset: 3px; }
+button { color: inherit; }
+img { max-width: 100%; }
+::selection { background: #cce9e8; }
