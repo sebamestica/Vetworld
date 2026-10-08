@@ -1,6 +1,6 @@
 # Atlas Veterinario 3D — reglas de trabajo
 
-- Trabajar únicamente dentro de este proyecto y sobre la fase autorizada. Fase 1 aprobada; fase 2 autorizada: visor 3D, frontend responsive, referencias curadas, dependencias gratuitas y pruebas locales. No contratar servicios ni desplegar públicamente. Ver [diseño de fase 2](docs/phase2/design.md).
+- Trabajar únicamente dentro de este proyecto y sobre la fase autorizada. Fases 1/2 integradas; migración UI V2 autorizada. Conservar exactamente la identidad visual y el archivo `atlas_veterinario_ui_v2.html`, sin importar su anatomía simulada. No contratar servicios ni desplegar públicamente. Ver [diseño de UI V2](docs/ui-v2/design.md).
 - Para retomar, leer primero [progreso](docs/PROGRESO.md), [roadmap](docs/roadmap.md) y [arquitectura](docs/architecture.md). Consultar solo los apartados pertinentes del [documento maestro](ARQUITECTURA_ATLAS_VETERINARIO_3D_CODEX.md); no releerlo íntegramente en cada turno.
 - Mantener documentación en español, nombres latinos y sinónimos, TypeScript estricto y módulos simples. MVP con archivos versionados y Route Handlers; sin base externa, servidor dedicado ni escrituras de runtime.
 - Nunca inventar anatomía, activos, fuentes, licencias o resultados de pruebas. Separar perro y gato. Cuando falte geometría, indicar «Modelo 3D no disponible».

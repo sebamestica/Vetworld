@@ -1,5 +1,7 @@
 # Arquitectura resumida
 
+Estado vigente: UI V2 integrada sobre backend y visor de fases 1/2; [arquitectura de migración](ui-v2/design.md). AppShell/Topbar/hook de contexto, ToolsPanel/tema/i18n, GlobalSearch/VoiceSearch y panel científico reutilizan API/contratos y Canvas. Se conserva el HTML aprobado como referencia, no como aplicación ni catálogo anatómico.
+
 Actualización 2026-10-08: el usuario redefinió la fase 1 como backend REST completo de lectura antes del frontend. El [diseño de API](api/design.md) prevalece sobre el alcance anterior de demo. Next.js Route Handlers, Zod, Vitest y JSON local; sin servicios externos ni escrituras en runtime. Three.js/R3F/Drei quedan para la fase visual futura y no se instalan ahora.
 
 Referencia: [documento maestro](../ARQUITECTURA_ATLAS_VETERINARIO_3D_CODEX.md), secciones 1–3, 5–7. Este resumen permite retomar sin cargar el documento completo.
@@ -31,3 +33,9 @@ docs/
 ```
 
 La fase 1 actual implementa backend Node.js/Route Handlers, no la demo del visor. El código separa contratos/HTTP (`src/lib/api`), dominio/esquemas/validación y repositorio (`src/modules/anatomy`), servicios (`src/modules/catalog`), búsqueda (`src/modules/search`) y JSON (`data/anatomy`). Archivos/sha256 se verifican fuera de runtime mediante scripts/CI. Los modelos candidatos permanecen sin recurso público. La selección de librerías del visor se comprobará en la futura fase visual.
+
+## Fase 2 visual
+
+Fase 1 aprobada; el [visor de fase 2](phase2/README.md) reutiliza esa API. `AtlasWorkspace` consume listas/fichas sin duplicarlas; `StructurePanel` solicita detalle, relaciones, fuentes y referencias con abort. Canvas se importa solo en cliente, renderizado R3F/Three.js, controles Drei. Selección, ocultamiento, aislamiento y opacidad utilizan mappings explícitos por especie.
+
+`data/viewer/` separa fixtures/manifiestos visuales del catálogo científico. `src/modules/viewer` concentra contratos/guardas de recursos; `src/modules/media` y nuevos endpoints `/api/v1/references` gestionan referencias curadas. No se cambiaron esquemas de respuestas antiguas. Nonce CSP obliga render dinámico del atlas, sin almacenamiento externo ni cálculo gráfico en serverless. La primera región visual es miembro torácico, donde están las fichas verificables, no cabeza sin archivo.

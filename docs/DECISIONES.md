@@ -1,5 +1,7 @@
 # Decisiones — 2026-10-08
 
+UI V2: diseño HTML obligatorio preservado y migrado a React. No reutilizar SVG/diccionario anatómico simulado; conservar backend, fixture y referencias legales. Tema/ajustes persistidos localmente, voz nativa con aviso, búsqueda aproximada compatible con contrato v1. Calidad y cortes afectan Three.js; no aplicar filtros CSS al Canvas. [Detalle](ui-v2/README.md).
+
 Actualización fase 1: por solicitud explícita del usuario se implementa backend REST de lectura antes del visor, en un único Next.js con JSON/Zod/Vitest y presupuesto cero. El alcance anterior de fase 1 y la decisión inicial de no backend quedan sustituidos. Commits locales por hitos; sin despliegue público. Ver [diseño](api/design.md).
 
 ## Registro histórico de fase 0
@@ -27,3 +29,13 @@ Cuestiones abiertas: revisor anatómico cualificado y acceso bibliográfico; for
 - Revisión anatómica humana nunca sustituida por tests. Semilla bibliográfica reducida, modelos pendientes con recurso nulo.
 - Pruebas HTTP dev y producción local ejecutadas; contratos comparan OpenAPI versionado sin regenerarlo en CI. Revisor debe evaluar cambios del baseline.
 - Commits locales por hitos. CI sin deploy; no push ni Vercel público de esta fase hasta autorización. El fixture del visor queda fuera del backend actual.
+
+## Fase 2
+
+- Usuario aprobó backend y autorizó visor responsive completo con commits/push. No autorizó publicar aplicación ni material científico restringido.
+- Región inicial miembro torácico: reutiliza ocho fichas reales; cabeza continúa sin geometría. No rediseñar backend ni inventar descripciones pendientes.
+- R3F/Three.js/Drei con Canvas diferido, mappings explícitos, metros y presupuestos. Un GLB propio de cuatro formas técnicas permanece fuera de estadísticas científicas.
+- Referencias en catálogo adicional y endpoints aditivos; ninguna modificación incompatible de contratos v1. Cuatro asociaciones académicas externas, cero fotografías internas.
+- Reutilizar anatomy-integrity como veterinary-anatomy-accuracy; ampliar pipeline/QA móvil, añadir renderizado, derechos de medios y testing frontend sin duplicados.
+- CSP con nonces y estilos controlados permitidos; página dinámica, API/estáticos conservan caché. Sin imágenes remotas ni proxy.
+- Chromium con WebGL software y touch emulado para E2E; no representa mediciones en dispositivos físicos. Capturas guardadas con datos de API y modelo temporal explícito.

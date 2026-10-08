@@ -1,4 +1,4 @@
-import AtlasWorkspace from '@/components/atlas/AtlasWorkspace';
+import AtlasWorkspace from '@/components/layout/AppShell';
 
 export const dynamic = 'force-dynamic';
 

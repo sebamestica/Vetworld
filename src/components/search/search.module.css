@@ -1,0 +1,20 @@
+.area { position:relative; width:min(460px,41vw); margin-left:auto; color:var(--text); }
+.bar { height:45px; border-radius:17px; background:var(--surface); border:1px solid var(--line,rgba(255,255,255,.085)); display:flex; align-items:center; padding:0 7px 0 15px; gap:10px; color:var(--muted); }
+.bar:focus-within { border-color:var(--accent); }
+.bar input { flex:1; min-width:0; outline:none; border:0; background:transparent; color:var(--text); font:inherit; font-size:.89em; }
+.bar input::placeholder { color:var(--muted); }
+.popover,.voiceNotice,.voiceMessage { position:absolute; top:calc(100% + 9px); left:0; right:0; background:var(--panel); border:1px solid var(--line,rgba(255,255,255,.085)); border-radius:19px; padding:9px; z-index:40; box-shadow:0 22px 60px rgba(0,0,0,.3); backdrop-filter:blur(28px); max-height:350px; overflow:auto; }
+.heading { font-size:.72em; color:var(--muted); padding:9px 11px 10px; letter-spacing:.03em; }
+.option { width:100%; border:0; background:transparent; color:var(--text); text-align:left; padding:10px 11px; border-radius:12px; cursor:pointer; display:flex; flex-direction:column; gap:4px; }
+.option:hover,.option[aria-selected=true] { background:var(--surface); }
+.option small { color:var(--muted); }
+.message { color:var(--muted); padding:5px 11px; font-size:.85em; }
+.voice { display:flex; }
+.mic { display:grid; place-items:center; width:31px; height:31px; padding:0; border:0; border-radius:10px; background:transparent; color:var(--muted); cursor:pointer; }
+.mic:hover,.mic[aria-pressed=true] { color:var(--accent); background:var(--panel); }
+.voiceNotice,.voiceMessage { z-index:45; font-size:.85em; color:var(--text); }
+.voiceNotice p { margin:4px 4px 12px; line-height:1.5; }
+.voiceNotice button { padding:7px 10px; border:1px solid var(--accent); border-radius:9px; background:var(--surface); color:var(--text); margin:3px; cursor:pointer; }
+.mic:focus-visible,.voiceNotice button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+@media(max-width:1100px) { .area { width:min(340px,32vw); } }
+@media(max-width:700px) { .area { width:auto; flex:1; min-width:0; } .bar { height:41px; border-radius:13px; padding-left:9px; gap:5px; } .bar input { font-size:.78em; } }

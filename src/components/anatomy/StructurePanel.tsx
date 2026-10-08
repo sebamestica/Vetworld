@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { X } from 'lucide-react';
+import { t, type Language } from '@/lib/ui/i18n';
 import { fetchApi } from '@/lib/client/api';
 import { responseSchemas } from '@/lib/api/contracts';
 import type { Structure, Relation, Source } from '@/modules/anatomy/schemas/catalog';
@@ -9,7 +11,7 @@ import { isSafeExternalUrl } from '@/modules/media/safety';
 import ReferenceGallery from '@/components/media/ReferenceGallery';
 import styles from './StructurePanel.module.css';
 
-export interface StructurePanelProps { structureId: string | null; speciesName: string; regionName: string; scientificSpeciesName?: string; regionNames?: Record<string, string>; onClose: () => void; onSelectRelated: (id: string) => void; relatedNames?: Record<string, string> }
+export interface StructurePanelProps { language?: Language; structureId: string | null; speciesName: string; regionName: string; scientificSpeciesName?: string; regionNames?: Record<string, string>; onClose: () => void; onSelectRelated: (id: string) => void; relatedNames?: Record<string, string> }
 type PanelData = { structure: Structure; relations: Relation[]; sources: Source[]; references: VisualReference[] };
 const fields = { detailedDescription: 'Descripción detallada', morphology: 'Morfología', location: 'Localización', origin: 'Origen', insertion: 'Inserción', action: 'Acción', function: 'Función', innervation: 'Inervación', vascularSupply: 'Irrigación', attachments: 'Inserciones y fijaciones', landmarks: 'Referencias anatómicas', speciesDifferences: 'Diferencias entre especies' } as const;
 const kindLabels = { bone: 'Hueso', muscle: 'Músculo', tendon: 'Tendón', ligament: 'Ligamento', joint: 'Articulación', nerve: 'Nervio', artery: 'Arteria', vein: 'Vena', fascia: 'Fascia', cartilage: 'Cartílago', organ: 'Órgano' };
@@ -19,9 +21,10 @@ export default function StructurePanel(props: StructurePanelProps) {
   return <SelectedStructurePanel key={props.structureId ?? 'no-selection'} {...props} />;
 }
 
-function SelectedStructurePanel({ structureId, speciesName, regionName, scientificSpeciesName, regionNames, onClose, onSelectRelated, relatedNames }: StructurePanelProps) {
+function SelectedStructurePanel({ structureId, speciesName, regionName, scientificSpeciesName, regionNames, onClose, onSelectRelated, relatedNames, language = 'es' }: StructurePanelProps) {
   const [result, setResult] = useState<{ id: string; data?: PanelData; error?: string } | null>(null);
   const [retry, setRetry] = useState(0);
+  const [tab, setTab] = useState<'detail' | 'images' | 'sources'>('detail');
   useEffect(() => {
     if (!structureId) return;
     const controller = new AbortController();
@@ -41,21 +44,26 @@ function SelectedStructurePanel({ structureId, speciesName, regionName, scientif
   const data = current?.data;
   const structure = data?.structure;
   return <aside className={styles.panel} aria-label="Ficha anatómica" aria-busy={Boolean(structureId && !current)}>
-    <header className={styles.header}><span>Ficha anatómica</span><button onClick={onClose} aria-label="Cerrar ficha">Cerrar ×</button></header>
+    <div className={styles.head}>
+      <div className={styles.heading}><span className={styles.tag}><i />{structure?.review.status === 'pending' ? (language === 'en' ? 'Human review pending' : 'Revisión humana pendiente') : t(language, 'anatomy')}</span><button type="button" className={styles.close} onClick={onClose} aria-label={t(language, 'closePanel')}><X size={15} aria-hidden="true" /></button></div>
+      {structure && <><h2>{structure.spanishName}</h2><p className={styles.latin}>{structure.canonicalLatinName}</p><div className={styles.chips}><span>{speciesName}</span><span>{regionNames?.[structure.regionId] ?? regionName}</span><span>{kindLabels[structure.kind]}</span></div></>}
+    </div>
+    {structure && <div className={styles.tabs} role="tablist" aria-label={t(language, 'anatomy')}>{(['detail', 'images', 'sources'] as const).map(value => <button type="button" key={value} role="tab" id={`structure-tab-${value}`} aria-selected={tab === value} aria-controls={`structure-page-${value}`} className={tab === value ? styles.active : ''} onClick={() => setTab(value)}>{t(language, value)}</button>)}</div>}
     <div className={styles.content}>
       {!structureId && <p>Seleccione una estructura para consultar su ficha y sus referencias.</p>}
       {structureId && !current && <p role="status">Cargando ficha anatómica…</p>}
       {current?.error && <div role="alert"><p>{current.error}</p><button className={styles.retry} onClick={() => { setResult(null); setRetry(value => value + 1); }}>Reintentar</button></div>}
       {structure && data && <>
-        <p className={styles.context}>{speciesName} · {regionNames?.[structure.regionId] ?? regionName} · {kindLabels[structure.kind]}</p>
-        <h2>{structure.spanishName}</h2><p className={styles.latin}>{structure.canonicalLatinName}</p>
+        {language === 'en' && <p className={styles.notice}>{t(language, 'translationNotice')}</p>}
+        <section role="tabpanel" id="structure-page-detail" aria-labelledby="structure-tab-detail" hidden={tab !== 'detail'}>
         {structure.aliases.length > 0 && <p className={styles.aliases}>Sinónimos: {structure.aliases.join(', ')}</p>}
         <p className={styles.summary}>{structure.summary}</p>
         {Object.entries(fields).map(([key, label]) => { const value = structure[key as keyof typeof fields]; if (!value || (Array.isArray(value) && !value.length)) return null; return <section className={styles.field} key={key}><h3>{label}</h3>{Array.isArray(value) ? <ul>{value.map(text => <li key={text}>{text}</li>)}</ul> : <p>{value}</p>}</section>; })}
         <section className={styles.review}><h3>{structure.review.status === 'pending' ? 'Revisión humana pendiente' : structure.review.status === 'validated' ? 'Validación humana documentada' : 'Revisión humana documentada'}</h3>{structure.review.notes && <p>{structure.review.notes}</p>}{structure.review.reviewer && <p>Responsable: {structure.review.reviewer}</p>}{structure.review.reviewedAt && <p>Fecha: {structure.review.reviewedAt}</p>}{structure.missingFields.length > 0 && <><p>Campos pendientes de documentación:</p><ul>{structure.missingFields.map(key => <li key={key}>{fields[key as keyof typeof fields] ?? key}</li>)}</ul></>}</section>
         {data.relations.length > 0 && <section className={styles.field}><h3>Estructuras relacionadas</h3><ul className={styles.relations}>{data.relations.map(relation => { const outgoing = relation.fromId === structure.id; const other = outgoing ? relation.toId : relation.fromId; return <li key={relation.id}><button onClick={() => onSelectRelated(other)}>{relatedNames?.[other] ?? other}<span>{relationLabels[relation.type][outgoing ? 0 : 1]}</span></button></li>; })}</ul></section>}
-        <section className={styles.field}><h3>Fuentes bibliográficas</h3>{data.sources.map(source => <article key={source.id} className={styles.source}>{source.url && isSafeExternalUrl(source.url) ? <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a> : <p>{source.title}</p>}<p>{source.authors.join('; ')}{source.year ? ` · ${source.year}` : ''}</p><p>{source.license.label}</p></article>)}</section>
-        <ReferenceGallery references={data.references} speciesName={speciesName} scientificSpeciesName={scientificSpeciesName} regionNames={regionNames} scientificName={structure.canonicalLatinName} />
+        </section>
+        <section role="tabpanel" id="structure-page-sources" aria-labelledby="structure-tab-sources" hidden={tab !== 'sources'} className={styles.field}><h3>{language === 'en' ? 'Bibliographic sources' : 'Fuentes bibliográficas'}</h3>{data.sources.map(source => <article key={source.id} className={styles.source}>{source.url && isSafeExternalUrl(source.url) ? <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a> : <p>{source.title}</p>}<p>{source.authors.join('; ')}{source.year ? ` · ${source.year}` : ''}</p><p>{source.license.label}</p></article>)}</section>
+        <section role="tabpanel" id="structure-page-images" aria-labelledby="structure-tab-images" hidden={tab !== 'images'}><ReferenceGallery language={language} references={data.references} speciesName={speciesName} scientificSpeciesName={scientificSpeciesName} regionNames={regionNames} scientificName={structure.canonicalLatinName} /></section>
       </>}
     </div>
   </aside>;

@@ -24,6 +24,8 @@ Todos los ejemplos son sufijos de `http://localhost:3000/api/v1`.
 | `/sources/{id}` | `/sources/umn-proximal-thoracic-limb` | Fuente y estructuras que respalda |
 | `/taxonomy` | `/taxonomy` | Tipos, relaciones, estados de revisión y disponibilidad |
 | `/stats` | `/stats` | Cantidades reales; verificadas solo las fichas con revisión `validated` |
+| `/references` | `/references?structure=canine:biceps-brachii` | Referencias curadas; filtros `structure`, `species`, `region` y paginación |
+| `/references/{id}` | `/references/umn-canine-brachium` | Tipo de medio, autor, licencia, revisión y modo externo/interno |
 
 Listas admiten `page` desde 1 (máximo 1.000.000), `limit` entre 1 y 100 (defecto 20). Todas las listas usan orden estable por ID; búsqueda ordena por relevancia y luego ID. Página posterior al total retorna lista vacía con total real. No se admite notación decimal/exponencial ni parámetros repetidos.
 
@@ -62,3 +64,5 @@ Catálogos exitosos: `Cache-Control: public, max-age=60, s-maxage=300, stale-whi
 Consultar species → regions → structures/modelos; seleccionar estructura por ID y pedir ficha/relaciones. Solo cargar un recurso cuando `availability==='available'` y `resourceUrl` exista. `meshMappings` enlaza nodos reales con estructuras y capas. El visor no debe inventar mallas donde solo hay una ficha ni tomar una licencia bibliográfica como permiso de archivo 3D. La API ya permite filtros, búsqueda paginada, atribución y estados de revisión sin requerir geometría.
 
 El acceso a datos se concentra en `CatalogRepository.read()`, con snapshot JSON validado y copias aisladas. Servicios no conocen HTTP. Una migración futura puede sustituir ese repositorio sin múltiples adaptadores ahora ni cambiar los contratos de v1. Cambios incompatibles requieren revisión y versión de API, nunca regeneración silenciosa del baseline.
+
+Fase 2 añade referencias sin cambiar los contratos aprobados: OpenAPI 1.1.0 incorpora dos operaciones y esquemas nuevos, API sigue v1. Las cuatro referencias actuales son asociaciones al mismo capítulo universitario, no cuatro fotografías. `displayMode=external` siempre devuelve imagen y miniatura nulas; `internal` exige licencia verificada, redistribución admitida y rutas locales comprobadas. Whitelist HTTPS de dominios académicos, sin proxy ni parámetros de URL arbitraria. `/stats` sigue contando solo modelos científicos; la fixture técnica del visor se mantiene en `data/viewer/`.

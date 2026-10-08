@@ -21,7 +21,13 @@ describe('Ficha anatómica desde API', () => {
     await screen.findByRole('heading', { name: 'Escápula' });
     expect(screen.getByText('Scapula')).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Revisión humana pendiente' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('tab', { name: 'Imágenes reales' }));
     expect(screen.getByRole('heading', { name: 'Referencias anatómicas reales' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('tab', { name: 'Anatomía' }));
+    fireEvent.click(screen.getByRole('tab', { name: 'Fuentes' }));
+    expect(screen.getByRole('heading', { name: 'Fuentes bibliográficas' })).toBeTruthy();
+    expect(screen.getByRole('link').getAttribute('href')).toMatch(/^https:/);
+    fireEvent.click(screen.getByRole('tab', { name: 'Anatomía' }));
     expect(screen.queryByRole('heading', { name: 'Origen' })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Cerrar ficha' })); expect(props.onClose).toHaveBeenCalledOnce();
   });
@@ -30,6 +36,16 @@ describe('Ficha anatómica desde API', () => {
     render(<StructurePanel {...props} />);
     expect((await screen.findByRole('alert')).textContent).toContain('500');
     expect(screen.queryByRole('heading', { name: 'Escápula' })).toBeNull();
+  });
+  it('traduce controles manteniendo el nombre científico y la revisión en español', async () => {
+    vi.stubGlobal('fetch', vi.fn(async (path: string) => new Response(JSON.stringify(respond(path)))));
+    render(<StructurePanel {...props} language="en" />);
+    await screen.findByRole('heading', { name: 'Escápula' });
+    expect(screen.getByText('Scapula')).toBeTruthy();
+    expect(screen.getByText(/Veterinary content remains in Spanish/)).toBeTruthy();
+    expect(screen.getByRole('tab', { name: 'Anatomy' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Close record' }));
+    expect(props.onClose).toHaveBeenCalledOnce();
   });
   it('aborta la selección anterior y elimina su contenido al cambiar especie', async () => {
     const signals: AbortSignal[] = [];

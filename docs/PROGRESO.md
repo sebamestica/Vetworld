@@ -1,6 +1,6 @@
 # Progreso — Atlas Veterinario 3D
 
-Actualizado: 2026-10-08. Estado: fase 0 completada; fase 1 backend implementada y verificada localmente, pendiente de revisión del usuario. Verificación científica humana y activos anatómicos pendientes; ninguna publicación o fase visual iniciada.
+Actualizado: 2026-10-08. Fases 0 y 1 aprobadas; fase 2 funcional con fixture técnica; UI V2 integrada y comprobada localmente. Activos anatómicos y revisión humana pendientes; aplicación no publicada.
 
 ## Estado recuperado
 
@@ -73,3 +73,25 @@ Commits locales por hitos: `b44200e` diseño autorizado, `ec7af94` scaffold/herr
 Pendientes: revisión veterinaria humana/NAV; adquisición y derechos completos de modelos; contenido anatómico adicional y campos opcionales; frontend/visor en una fase posterior autorizada; publicación y smoke remoto. Auditoría completa mantiene cinco avisos altos transitivos de desarrollo por `braces`, sin parche publicado al consultar. ESLint 9 es compatible con los plugins instalados, pero deprecated; actualizar conjuntamente cuando sea viable. No hay un fallo funcional local pendiente ni un servicio pago contratado.
 
 Para continuar: revisar [API y ejemplos](api/README.md), [pruebas](api/testing.md) y [despliegue futuro](api/deployment.md). El frontend podrá consumir especies, regiones, fichas/relaciones, búsqueda, capas, licencias y manifiestos con disponibilidad real. No se autoriza automáticamente implementar la siguiente fase.
+
+## Cierre de fase 2
+
+Visor R3F/Three.js con GLB propio técnico, raycasting/mapping, resaltado, órbita/zoom/paneo, capas/opacidad/aislamiento, reset y recuperación WebGL. Fichas y relaciones reales de API, galería segura y cuatro enlaces académicos curados. Cero modelos científicos y cero fotografías internas autorizadas. [Entrega y capturas](phase2/README.md).
+
+Resultados locales ejecutados: lint/tipos/build aprobados; unidad 75/75, integración HTTP 69/69, contratos 38/38, Playwright 21/21 (desktop/tablet/teléfono emulados), smoke de producción 18/18. Validadores de catálogo (0 errores/18 advertencias), referencias (4 externas/0 internas) y GLB/mappings aprobados. Skills: tres existentes ampliadas y tres nuevas; validador oficial no pudo ejecutarse por falta de PyYAML, comprobación alternativa de encabezados aplicada a seis skills.
+
+Commits/push: `2b8bb02` preparación, `1294d9b` implementación y `38bdea3` incluye el GLB omitido en el commit anterior. CI `37776082982` falló en validate:viewer por esa omisión; corregido y [CI 37776169180](https://github.com/sebamestica/Vetworld/actions/runs/37776169180) completó success sobre `38bdea3`. No hay despliegue Vercel. Capturas desktop/móvil inspeccionadas; no se probaron teléfonos físicos ni se midieron FPS/GPU total. Fixture: 55.732 bytes, 2.572 triángulos, buffers estimados 52.512 bytes.
+
+## Integración del HTML aprobado UI V2
+
+Referencia recibida: `atlas_veterinario_ui_v2.html`; SHA-256 inicial `2412B2DF1DCCDD76821A7E663C7B7921152B769B0D4112792FFDFFD597A650BB`. Conservar íntegro. Migrar diseño grafito, búsqueda superior, menú flotante, panel translúcido y ajustes a React; no copiar diccionario anatómico ni SVG ilustrativo del boceto como anatomía real. Reutilizar API y visor existentes. Añadir búsqueda aproximada/voz nativa, preferencias locales/contraste/i18n, presets/clipping reales y QA comparativa. Sin publicación; commits y push autorizados por hitos.
+
+### Resultado UI V2
+
+Implementados AppShell/Topbar/orientación, menú flotante con capas/vistas/ajustes, panel contextual con pestañas y datos reales, búsqueda global con similitud acotada/abort/debounce, voz nativa con aviso y activación explícita, temas por variables/contraste, persistencia local, ES/EN de interfaz y tipografía. Renderer reutilizado: presets/zoom/clipping efectivos sobre fixture, exposición, DPR y calidad real de sombras/antialias. No se importó el diccionario o SVG anatómico ficticio del HTML. Archivo original conservó el SHA-256 indicado.
+
+Verificaciones nuevas: lint, TypeScript y build aprobados; 99/99 unitarias, 69/69 HTTP, 38/38 contratos; validadores de datos/medios/GLB aprobados; auditoría runtime 0 vulnerabilidades. E2E general ejecutó 33/36 aprobadas y detectó tres errores de recorrido en móviles (selector de región dentro de menú y orientación tras reload). Corregidos los recorridos: rerun de cuatro casos tablet/móvil aprobado 4/4; cobertura final de las 36 combinaciones aprobada entre ambas ejecuciones. No se presenta la primera corrida con fallos como aprobada. Capturas de referencia HTML y resultado en [UI V2](ui-v2/README.md).
+
+Se corrigieron dos fallos reales detectados por navegador: aviso de listo antes del primer frame y falsa pérdida de WebGL al cambiar calidad por desmontaje intencional. Selección sobre Canvas, temas, persistencia, clipping, galerías y navegación volvieron a pasar. Voz se verificó con pruebas sintéticas y fallback; no se grabó audio real ni se probaron teléfonos físicos.
+
+Pendientes científicos: cero mallas anatómicas aprobadas, cero fotografías internas; las fichas siguen parciales/revisión humana pendiente. Presets/cortes usan ejes cartesianos de la fixture, no acreditan planos de un animal real. Archivo GLB técnico y cuatro referencias académicas conservados. No despliegue público.
