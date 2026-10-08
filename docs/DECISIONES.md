@@ -39,3 +39,12 @@ Cuestiones abiertas: revisor anatómico cualificado y acceso bibliográfico; for
 - Reutilizar anatomy-integrity como veterinary-anatomy-accuracy; ampliar pipeline/QA móvil, añadir renderizado, derechos de medios y testing frontend sin duplicados.
 - CSP con nonces y estilos controlados permitidos; página dinámica, API/estáticos conservan caché. Sin imágenes remotas ni proxy.
 - Chromium con WebGL software y touch emulado para E2E; no representa mediciones en dispositivos físicos. Capturas guardadas con datos de API y modelo temporal explícito.
+
+## Decisiones implementadas en Fase 3
+
+- **Segmentación regional vs. Cuerpo monolítico:** No fusionar activos anatómicos no correlacionados morfológicamente para forzar un "perro completo" artificial. Se implementa arquitectura de visor con carga y montaje regional dinámico (`canine:thoracic-limb`), declarando «Modelo 3D no disponible» en regiones pendientes.
+- **Pipeline Three.js headless en Node.js:** Conversor binario automatizado en `scripts/anatomy/convert-assets.ts` con polyfill de `FileReader` para generar GLB estándar sin requerir ejecutable de Blender instalado ni servidores de renderizado.
+- **Preservación de identificadores de malla:** Cada nodo en la jerarquía del glTF conserva el identificador original del escaneo/diseño; la correspondencia con las estructuras del catálogo se realiza a través de `meshMappings` auditables.
+- **Normalización PBR y escala métrica:** Factor $0{,}01$ aplicado a fuentes FBX en centímetros. Materiales neutros sin texturas fotográficas ficticias.
+- **Expansión estricta del catálogo:** Incorporación de 35 nuevas estructuras con terminología NAV 6.ª edición respaldada, conservando `reviewStatus: 'pending'` hasta revisión veterinaria humana.
+

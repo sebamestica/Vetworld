@@ -5,12 +5,14 @@ import { meshPresentation } from "../../src/modules/viewer/visibility";
 import { readBoundedBody, safeResourceUri, validateLoadedScene } from "../../src/modules/viewer/loading";
 import { Group, Mesh, BoxGeometry, MeshStandardMaterial } from "three";
 
+const asset = viewerAssets.find(a => a.id === "canine-technical-demo")!;
+
 describe("manifiestos y selección del visor", () => {
-  const asset = viewerAssets[0];
   it("mantiene separados mappings caninos/felinos del mismo archivo técnico", () => {
-    expect(viewerAssets).toHaveLength(2);
-    expect(viewerAssets[1].resourceUrl).toBe(asset.resourceUrl);
-    for (const entry of viewerAssets) { expect(entry.purpose).toBe("technical_demo"); expect(entry.reviewStatus).toBe("pending"); expect(entry.meshMappings.every((mapping) => mapping.structureId.startsWith(`${entry.speciesId}:`))).toBe(true); }
+    const demos = viewerAssets.filter(a => a.purpose === "technical_demo");
+    expect(demos).toHaveLength(2);
+    expect(demos[1].resourceUrl).toBe(demos[0].resourceUrl);
+    for (const entry of demos) { expect(entry.purpose).toBe("technical_demo"); expect(entry.reviewStatus).toBe("pending"); expect(entry.meshMappings.every((mapping) => mapping.structureId.startsWith(`${entry.speciesId}:`))).toBe(true); }
   });
   it.each(["https://evil.example/model.glb", "/models/../secret.glb", "/models/%2e%2e/secret.glb", "/models/demo.glb?url=x"])("rechaza ruta insegura %s", (resourceUrl) => expect(viewerAssetSchema.safeParse({ ...asset, resourceUrl }).success).toBe(false));
   it("rechaza presupuestos excesivos y mappings mezclados", () => {
@@ -45,10 +47,10 @@ describe("carga limitada y recursos del visor", () => {
   });
   it("rechaza escena con conteo falso, nodo ausente o coordenadas no finitas", () => {
     const scene = new Group(), geometry = new BoxGeometry(), mesh = new Mesh(geometry, new MeshStandardMaterial()); mesh.name = "demo-box"; scene.add(mesh);
-    expect(() => validateLoadedScene(scene, viewerAssets[0])).toThrow("triángulos");
-    const asset = { ...viewerAssets[0], triangleCount: 12 };
-    expect(() => validateLoadedScene(scene, asset)).toThrow("Mapping");
-    const mapped = { ...asset, meshMappings: [asset.meshMappings[1]] };
+    expect(() => validateLoadedScene(scene, asset)).toThrow("triángulos");
+    const mappedAsset = { ...asset, triangleCount: 12 };
+    expect(() => validateLoadedScene(scene, mappedAsset)).toThrow("Mapping");
+    const mapped = { ...mappedAsset, meshMappings: [mappedAsset.meshMappings[1]] };
     expect(() => validateLoadedScene(scene, mapped)).not.toThrow();
     geometry.getAttribute("position").setX(0, NaN);
     expect(() => validateLoadedScene(scene, mapped)).toThrow("no finitas");

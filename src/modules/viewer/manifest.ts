@@ -5,7 +5,7 @@ export const viewerAssetSchema = z.object({
   id: z.string().min(1), speciesId: z.enum(["canine", "feline"]), regionId: z.string().min(1),
   title: z.string().min(1), purpose: z.enum(["technical_demo", "scientific"]),
   format: z.enum(["glb", "gltf"]),
-  resourceUrl: z.string().regex(/^\/models\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.(glb|gltf)$/),
+  resourceUrl: z.string().regex(/^\/(?:models|anatomy)\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.(glb|gltf)$/),
   unit: z.literal("m"), scaleToMeters: z.number().positive().finite(), orientation: z.string().min(1),
   byteSize: z.number().int().positive().max(VIEWER_BUDGET.bytes),
   triangleCount: z.number().int().positive().max(VIEWER_BUDGET.triangles),

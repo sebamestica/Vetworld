@@ -24,3 +24,12 @@ Fuentes admitidas ahora: referencias y enlaces para investigar, sin autorizació
 ## Semilla de fase 1
 
 Se consultó la guía primaria de [University of Minnesota: Part 3, Proximal Thoracic Limb](https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/) para ocho fichas y seis relaciones explícitas de perro/gato. Se registró la bibliografía y su licencia separadamente de modelos; no se incorporaron medios, textos extensos ni geometría de la guía. [Evidencia, apartados y límites](api/scientific-seed.md). Revisión humana y cotejo NAV pendientes; ninguna ficha marcada validated. Los candidatos Sketchfab se reutilizaron sin nuevos accesos directos o descargas.
+
+## Fuentes integradas en Fase 3
+
+| Fuente / Proyecto | Autor / Institución | Licencia | Modelo / Uso | Estado |
+|---|---|---|---|---|
+| [InNervateVR Canine Leg](https://github.com/TomasArguello/InNervateVR) | Tomás Argüello / Soft Interaction Lab | Código/activos educativos abiertos | Extremidad torácica canina (huesos, 18 músculos, 6 nervios). Archivo `thoracicLimb_bonesSeparated.fbx` convertido a GLB métrico. | Integrado en `public/anatomy/canine/skeleton/thoracic-limb.glb` (82.525 tris). Revisión humana pendiente. |
+| [3D-Cat-Anatomy](https://github.com/ezrahmae/3D-Cat-Anatomy) | ezrahmae | Código/activos abiertos | Extremidad torácica felina (7 huesos ensamblados) y Cráneo felino con mandíbula y dientes (3 huesos). | Integrados en `public/anatomy/feline/...` (52.104 tris y 64.496 tris). Revisión humana pendiente. |
+| [Nomina Anatomica Veterinaria (NAV), 6.ª ed.](https://wava-amav.org/wava-documents/) | ICVGAN / WAVA | Estándar internacional libre | Nomenclatura anatómica canónica en latín para las 43 estructuras del catálogo y sus relaciones. | Respaldado en `data/anatomy/sources.json`. |
+

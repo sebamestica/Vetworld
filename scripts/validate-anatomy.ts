@@ -10,6 +10,10 @@ try {
  const metadataResult=validateCatalog(catalog);
  const assetsResult=validateCatalogAssets(catalog);
  const result={errors:[...metadataResult.errors,...assetsResult.errors],warnings:[...metadataResult.warnings,...assetsResult.warnings]};
- console.log(JSON.stringify({dataVersion:catalog.dataVersion,structures:catalog.structures.length,...result},null,2));
+ if (result.errors.length) {
+   console.error("ERRORES DETECTADOS:", JSON.stringify(result.errors, null, 2));
+ } else {
+   console.log(JSON.stringify({ dataVersion: catalog.dataVersion, structures: catalog.structures.length, errors: [], warningsCount: result.warnings.length }, null, 2));
+ }
  if(result.errors.length)process.exitCode=1;
 } catch(error){console.error('Catálogo inválido:',error instanceof Error?error.message:'error desconocido');process.exitCode=1;}

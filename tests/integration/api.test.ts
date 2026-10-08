@@ -14,14 +14,15 @@ describe('HTTP real del catálogo', () => {
     expect(body).toHaveProperty('data');
   });
 
-  it('semilla real contiene ambas especies y estructuras; no promete modelos disponibles', async () => {
+  it('semilla real contiene ambas especies y estructuras; declara modelos disponibles y pendientes', async () => {
     const species = (await (await api('species')).json()).data as { id: string }[];
     expect(species.length).toBeGreaterThanOrEqual(2);
     expect(new Set(species.map(item => item.id)).size).toBe(species.length);
     const structures = (await (await api('structures')).json()).data;
     expect(structures.length).toBeGreaterThan(0);
     const models = (await (await api('models')).json()).data as { availability: string }[];
-    expect(models.filter(model => model.availability === 'available')).toHaveLength(0);
+    expect(models.filter(model => model.availability === 'available').length).toBeGreaterThan(0);
+    expect(models.filter(model => model.availability === 'pending').length).toBeGreaterThan(0);
   });
 
   it.each(['regions', 'structures', 'models', 'sources'])('detalle y referencias de %s coinciden con lista', async path => {

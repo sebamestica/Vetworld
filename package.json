@@ -22,7 +22,12 @@
     "test:e2e": "playwright test",
     "test:e2e:desktop": "playwright test --project=desktop",
     "validate:media": "tsx scripts/validate-media.ts",
-    "validate:viewer": "tsx scripts/validate-viewer-assets.ts"
+    "validate:viewer": "tsx scripts/validate-viewer-assets.ts",
+    "anatomy:index": "tsx scripts/anatomy/build-search-index.ts",
+    "anatomy:inspect": "tsx scripts/anatomy/inspect-assets.ts",
+    "anatomy:convert": "tsx scripts/anatomy/convert-assets.ts",
+    "anatomy:reconcile": "tsx scripts/anatomy/reconcile-structures.ts",
+    "anatomy:validate": "tsx scripts/anatomy/validate-assets.ts"
   },
   "dependencies": {
     "@react-three/drei": "10.7.9",

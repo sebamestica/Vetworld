@@ -20,6 +20,12 @@ async function freePort(): Promise<number> {
 }
 
 export async function startLocalServer(mode: 'dev' | 'start' = 'dev'): Promise<{ baseUrl: string; stop: () => Promise<void> }> {
+  try {
+    const existing = await fetch('http://127.0.0.1:3000/api/v1/health', { signal: AbortSignal.timeout(1000) });
+    if (existing.status === 200) {
+      return { baseUrl: 'http://127.0.0.1:3000', stop: async () => {} };
+    }
+  } catch { /* No running dev server, spawn isolated instance */ }
   const port = await freePort();
   const baseUrl = `http://127.0.0.1:${port}`;
   const child = spawn(process.execPath, ['node_modules/next/dist/bin/next', mode, '--hostname', '127.0.0.1', '--port', String(port)], {

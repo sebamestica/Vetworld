@@ -1,4 +1,4 @@
-﻿import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 
 async function ready(page: Page) {
   await page.goto('/'); await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
@@ -11,8 +11,8 @@ test('menú inicialmente cerrado, capas reales y navegación por teclado', async
   const trigger = page.getByRole('button', { name: 'Abrir herramientas' }); await trigger.click();
   const tools = page.getByRole('complementary', { name: 'Herramientas' }); await expect(tools).toBeVisible();
   await expect(tools.getByRole('checkbox')).toHaveCount(8);
-  for (const name of ['Huesos', 'Músculos', 'Tendones', 'Nervios']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeEnabled();
-  for (const name of ['Piel', 'Ligamentos', 'Vasos', 'Órganos']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeDisabled();
+  for (const name of ['Huesos', 'Músculos', 'Nervios']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeEnabled();
+  for (const name of ['Piel', 'Tendones', 'Ligamentos', 'Vasos', 'Órganos']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeDisabled();
   const layers = tools.getByRole('tab', { name: 'Capas', exact: true }); await layers.focus(); await layers.press('ArrowRight');
   await expect(tools.getByRole('tab', { name: 'Vistas', exact: true })).toHaveAttribute('aria-selected', 'true');
   await page.keyboard.press('Escape'); await expect(tools).toHaveCount(0); await expect(trigger).toBeFocused();
@@ -68,7 +68,7 @@ test('voz sin soporte mantiene búsqueda escrita y orientación es recomendació
   await page.getByRole('button', { name: 'Buscar por voz' }).click(); await expect(page.getByText(/puede enviar audio/)).toBeVisible(); await page.getByRole('button', { name: 'Iniciar escucha' }).click();
   await expect(page.getByText(/La búsqueda por voz no está disponible/)).toBeVisible(); const search = page.getByRole('combobox', { name: 'Buscar estructuras anatómicas' }); await search.fill('biceps');
   const list = page.getByRole('listbox', { name: 'Resultados de búsqueda' });
-  await expect(list.getByRole('option')).toHaveCount(4);
+  await expect(list.getByRole('option')).toHaveCount(8);
   await expect(list.getByRole('group', { name: 'Canino', exact: true }).getByRole('option', { name: /^Bíceps braquial/ })).toBeVisible();
   await expect(list.getByRole('group', { name: 'Felino', exact: true }).getByRole('option', { name: /^Bíceps braquial/ })).toBeVisible();
   await search.press('ArrowDown'); await search.press('Enter');

@@ -95,3 +95,48 @@ Verificaciones nuevas: lint, TypeScript y build aprobados; 99/99 unitarias, 69/6
 Se corrigieron dos fallos reales detectados por navegador: aviso de listo antes del primer frame y falsa pérdida de WebGL al cambiar calidad por desmontaje intencional. Selección sobre Canvas, temas, persistencia, clipping, galerías y navegación volvieron a pasar. Voz se verificó con pruebas sintéticas y fallback; no se grabó audio real ni se probaron teléfonos físicos.
 
 Pendientes científicos: cero mallas anatómicas aprobadas, cero fotografías internas; las fichas siguen parciales/revisión humana pendiente. Presets/cortes usan ejes cartesianos de la fixture, no acreditan planos de un animal real. Archivo GLB técnico y cuatro referencias académicas conservados. No despliegue público.
+
+## Fase 3: Adquisición e Integración de Anatomía 3D Real
+
+Objetivo: Adquisición, procesamiento 3D headless, validación científica e integración de modelos anatómicos tridimensionales caninos y felinos reales, conservando intacto el frontend UI V2 aprobado.
+
+### Estado del Cuerpo Completo Canino vs. Segmentación Regional Rigurosa
+- En repositorios anatómicos abiertos (Z-Anatomy, MorphoSource, Sketchfab), no existe un espécimen canino completo escaneado con despiece individualizado de músculos, nervios y vísceras bajo licencia abierta directa en un solo archivo volumétrico.
+- Conforme a la regla de oro del proyecto (*«Nunca inventar anatomía»* y *«No mezclar cráneos ni escalarlos arbitrariamente para hacerlos coincidir con un esqueleto de otro espécimen»*), el atlas adopta una **arquitectura multi-modelo por región anatómica**:
+  - **Extremidad Torácica Canina (`canine:thoracic-limb`):** Integrada con 29 estructuras individualizadas (5 huesos, 18 músculos en planos superficial y profundo, 6 troncos nerviosos).
+  - **Otras regiones caninas (Cabeza, Columna/Tórax, Abdomen, Extremidad Pélvica):** Las estructuras están catalogadas con su terminología NAV y relaciones fisiológicas en el backend. Cuando el usuario selecciona una región sin activo 3D adquirido, el visor y panel declaran de forma transparente **«Modelo 3D no disponible»**, en lugar de renderizar mallas fusionadas inexactas o aproximaciones ficticias.
+  - El soporte para renderizar cuerpos articulados completos se encuentra diseñado modularmente para montar escenas compuestas conforme se liberen y validen piezas de un mismo espécimen o estándares morfométricos certificados.
+
+### Activos 3D Integrados y Optimizados
+1. **Extremidad Torácica Canina (`canine:thoracic-limb-model`):**
+   - Fuente: *TomasArguello / InNervateVR* (`assets-source/canine/thoracicLimb_bonesSeparated.fbx`).
+   - Binario: `public/anatomy/canine/skeleton/thoracic-limb.glb` (7.965.716 bytes, 82.525 triángulos, GPU ~7,55 MB).
+   - 29 nodos mapeados a estructuras NAV caninas individuales.
+2. **Extremidad Torácica Felina (`feline:thoracic-limb-model`):**
+   - Fuente: *ezrahmae / 3D-Cat-Anatomy* (7 escaneos óseos independientes ensamblados).
+   - Binario: `public/anatomy/feline/skeleton/thoracic-limb.glb` (4.071.588 bytes, 52.104 triángulos, GPU ~3,87 MB).
+   - 7 nodos óseos articulados individualmente seleccionables.
+3. **Cráneo y Mandíbula Felinos (`feline:skull-model`):**
+   - Fuente: *ezrahmae / 3D-Cat-Anatomy* (Cráneo, mandíbula y dentición carnívora).
+   - Binario: `public/anatomy/feline/skeleton/skull.glb` (5.319.424 bytes, 64.496 triángulos, GPU ~5,07 MB).
+   - 3 nodos óseos individualizados.
+
+### Pipeline Automatizado en `scripts/anatomy/`
+- `inspect-assets.ts`: Auditoría binaria de cabeceras glTF/GLB, buffers, vértices y cómputo de GPU estimada.
+- `convert-assets.ts`: Conversor y ensamblador headless Three.js en Node.js con polyfill de `FileReader`, escala métrica y materiales PBR sobrios.
+- `reconcile-structures.ts`: Conciliación automática de identificadores con el catálogo, terminología NAV y reciprocidad.
+- `validate-assets.ts`: Validador integral de hashes SHA-256, tamaños, límites poligonales y licencias.
+- `build-search-index.ts`: Reconstrucción determinista del índice de búsqueda en `data/anatomy/search-index.json`.
+
+### Verificaciones Ejecutadas
+- `npm run validate:data`: 0 errores, 88 advertencias controladas de revisión pendiente.
+- `npm run validate:viewer`: 5/5 modelos aprobados (3 científicos + 2 demos técnicos).
+- `npm run anatomy:validate`: APROBADO (199.125 triángulos totales, 16,50 MB VRAM estimada).
+- `npm test`: 14 suites pasadas, 99/99 pruebas unitarias aprobadas.
+- `npm run test:integration`: 3 suites pasadas, 69/69 pruebas HTTP reales aprobadas.
+- `npm run test:contracts`: 2 suites pasadas, 38/38 contratos OpenAPI aprobados.
+- `npm run test:smoke`: 18/18 endpoints HTTP aprobados.
+- `npm run typecheck`: 0 errores TypeScript.
+- `npm run lint`: 0 errores, 0 advertencias ESLint.
+- `npm run build`: Compilación de producción Next.js exitosa.
+

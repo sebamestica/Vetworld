@@ -1,0 +1,1189 @@
+[
+  {
+    "id": "canine:axillary-nerve",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus axillaris",
+    "spanishName": "Nervio axilar",
+    "aliases": [
+      "axilar"
+    ],
+    "summary": "Inerva los músculos flexores del hombro: teres major, teres minor y deltoides.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "axilar",
+      "axillaris",
+      "nervio",
+      "nervio axilar",
+      "nervus",
+      "nervus axillaris"
+    ]
+  },
+  {
+    "id": "canine:biceps-brachii",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus biceps brachii",
+    "spanishName": "Bíceps braquial",
+    "aliases": [],
+    "summary": "Músculo craneomedial del brazo con una cabeza.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "biceps",
+      "biceps braquial",
+      "brachii",
+      "braquial",
+      "musculus",
+      "musculus biceps brachii"
+    ]
+  },
+  {
+    "id": "canine:biceps-origin-tendon",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "tendon",
+    "canonicalLatinName": "Tendo originis musculi bicipitis brachii",
+    "spanishName": "Tendón de origen del bíceps braquial",
+    "aliases": [],
+    "summary": "Tendón proximal asociado al bíceps braquial.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "biceps",
+      "bicipitis",
+      "brachii",
+      "braquial",
+      "del",
+      "musculi",
+      "origen",
+      "originis",
+      "tendo",
+      "tendo originis musculi bicipitis brachii",
+      "tendon",
+      "tendon de origen del biceps braquial"
+    ]
+  },
+  {
+    "id": "canine:brachialis",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus brachialis",
+    "spanishName": "Músculo braquial",
+    "aliases": [
+      "braquial anterior"
+    ],
+    "summary": "Músculo flexor del codo que se origina en la cara caudal del húmero y rodea el surco del músculo braquial.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "anterior",
+      "brachialis",
+      "braquial",
+      "braquial anterior",
+      "musculo",
+      "musculo braquial",
+      "musculus",
+      "musculus brachialis"
+    ]
+  },
+  {
+    "id": "canine:common-digital-extensor",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus extensor digitorum communis",
+    "spanishName": "Músculo extensor digital común",
+    "aliases": [
+      "extensor digital común"
+    ],
+    "summary": "Músculo del antebrazo craneolateral cuyos cuatro tendones se insertan en las falanges distales de los dedos II a V.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "communis",
+      "comun",
+      "digital",
+      "digitorum",
+      "extensor",
+      "extensor digital comun",
+      "musculo",
+      "musculo extensor digital comun",
+      "musculus",
+      "musculus extensor digitorum communis"
+    ]
+  },
+  {
+    "id": "canine:deep-digital-flexor",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor digitorum profundus",
+    "spanishName": "Músculo flexor digital profundo",
+    "aliases": [
+      "flexor digital profundo"
+    ],
+    "summary": "El flexor más potente del antebrazo con cabezas humeral, radial y ulnar; se inserta en las falanges distales.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "digital",
+      "digitorum",
+      "flexor",
+      "flexor digital profundo",
+      "musculo",
+      "musculo flexor digital profundo",
+      "musculus",
+      "musculus flexor digitorum profundus",
+      "profundo",
+      "profundus"
+    ]
+  },
+  {
+    "id": "canine:extensor-carpi-radialis",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus extensor carpi radialis",
+    "spanishName": "Músculo extensor radial del carpo",
+    "aliases": [
+      "extensor radial del carpo"
+    ],
+    "summary": "El músculo extensor craneal más voluminoso del antebrazo; extiende el carpo y fija la articulación.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "carpi",
+      "carpo",
+      "del",
+      "extensor",
+      "extensor radial del carpo",
+      "musculo",
+      "musculo extensor radial del carpo",
+      "musculus",
+      "musculus extensor carpi radialis",
+      "radial",
+      "radialis"
+    ]
+  },
+  {
+    "id": "canine:flexor-carpi-radialis",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor carpi radialis",
+    "spanishName": "Músculo flexor radial del carpo",
+    "aliases": [
+      "flexor radial del carpo"
+    ],
+    "summary": "Músculo de la cara medial del antebrazo que flexiona la articulación del carpo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "carpi",
+      "carpo",
+      "del",
+      "flexor",
+      "flexor radial del carpo",
+      "musculo",
+      "musculo flexor radial del carpo",
+      "musculus",
+      "musculus flexor carpi radialis",
+      "radial",
+      "radialis"
+    ]
+  },
+  {
+    "id": "canine:flexor-carpi-ulnaris",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor carpi ulnaris",
+    "spanishName": "Músculo flexor ulnar del carpo",
+    "aliases": [
+      "flexor carpi ulnaris"
+    ],
+    "summary": "Músculo con dos cabezas (humeral y ulnar) que se inserta en el hueso carpo accesorio para flexionar el carpo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "carpi",
+      "carpo",
+      "del",
+      "flexor",
+      "flexor carpi ulnaris",
+      "musculo",
+      "musculo flexor ulnar del carpo",
+      "musculus",
+      "musculus flexor carpi ulnaris",
+      "ulnar",
+      "ulnaris"
+    ]
+  },
+  {
+    "id": "canine:humerus",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "bone",
+    "canonicalLatinName": "Humerus",
+    "spanishName": "Húmero",
+    "aliases": [
+      "hueso braquial"
+    ],
+    "summary": "Hueso largo del brazo canino que articula proximalmente con la escápula y distalmente con el radio y cúbito.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "braquial",
+      "hueso",
+      "hueso braquial",
+      "humero",
+      "humerus"
+    ]
+  },
+  {
+    "id": "canine:infraspinatus",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus infraspinatus",
+    "spanishName": "Músculo infraespinoso",
+    "aliases": [
+      "infraespinoso"
+    ],
+    "summary": "Músculo que ocupa la fosa infraespinosa; actúa como ligamento colateral lateral funcional del hombro y abduce el brazo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "infraespinoso",
+      "infraspinatus",
+      "musculo",
+      "musculo infraespinoso",
+      "musculus",
+      "musculus infraspinatus"
+    ]
+  },
+  {
+    "id": "canine:lateral-digital-extensor",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus extensor digitorum lateralis",
+    "spanishName": "Músculo extensor digital lateral",
+    "aliases": [
+      "extensor digital lateral"
+    ],
+    "summary": "Músculo situado lateralmente al extensor común que asiste en la extensión de los dedos III a V.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "digital",
+      "digitorum",
+      "extensor",
+      "extensor digital lateral",
+      "lateral",
+      "lateralis",
+      "musculo",
+      "musculo extensor digital lateral",
+      "musculus",
+      "musculus extensor digitorum lateralis"
+    ]
+  },
+  {
+    "id": "canine:manus",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Skeleton manus",
+    "spanishName": "Esqueleto de la mano",
+    "aliases": [
+      "huesos del carpo y metacarpo",
+      "mano canina"
+    ],
+    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro anterior canino.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "canina",
+      "carpo",
+      "del",
+      "esqueleto",
+      "esqueleto de la mano",
+      "huesos",
+      "huesos del carpo y metacarpo",
+      "mano",
+      "mano canina",
+      "manus",
+      "metacarpo",
+      "skeleton",
+      "skeleton manus"
+    ]
+  },
+  {
+    "id": "canine:median-ulnar-nerve",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus medianus et nervus ulnaris",
+    "spanishName": "Nervio mediano y ulnar",
+    "aliases": [
+      "tronco mediano-ulnar"
+    ],
+    "summary": "Vía nerviosa caudal que provee inervación motora a los músculos flexores del carpo y de los dedos.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "mediano",
+      "mediano-ulnar",
+      "medianus",
+      "nervio",
+      "nervio mediano y ulnar",
+      "nervus",
+      "nervus medianus et nervus ulnaris",
+      "tronco",
+      "tronco mediano-ulnar",
+      "ulnar",
+      "ulnaris"
+    ]
+  },
+  {
+    "id": "canine:musculocutaneous-nerve",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus musculocutaneus",
+    "spanishName": "Nervio musculocutáneo",
+    "aliases": [],
+    "summary": "Nervio que inerva el bíceps braquial.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "musculocutaneo",
+      "musculocutaneus",
+      "nervio",
+      "nervio musculocutaneo",
+      "nervus",
+      "nervus musculocutaneus"
+    ]
+  },
+  {
+    "id": "canine:radial-nerve",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus radialis",
+    "spanishName": "Nervio radial",
+    "aliases": [
+      "radial"
+    ],
+    "summary": "Nervio motor principal de todos los músculos extensores del codo, carpo y dedos en el miembro torácico canino.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "nervio",
+      "nervio radial",
+      "nervus",
+      "nervus radialis",
+      "radial",
+      "radialis"
+    ]
+  },
+  {
+    "id": "canine:radius",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Radius",
+    "spanishName": "Radio",
+    "aliases": [
+      "hueso del antebrazo"
+    ],
+    "summary": "Hueso craneal y medial del antebrazo canino que soporta la mayor parte del peso corporal en la extremidad torácica.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "antebrazo",
+      "del",
+      "hueso",
+      "hueso del antebrazo",
+      "radio",
+      "radius"
+    ]
+  },
+  {
+    "id": "canine:scapula",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "bone",
+    "canonicalLatinName": "Scapula",
+    "spanishName": "Escápula",
+    "aliases": [
+      "omóplato"
+    ],
+    "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "escapula",
+      "omoplato",
+      "scapula"
+    ]
+  },
+  {
+    "id": "canine:subscapular-nerve",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus subscapularis",
+    "spanishName": "Nervio subescapular",
+    "aliases": [
+      "subescapular"
+    ],
+    "summary": "Inerva directamente las diferentes porciones del músculo subescapular en la cara medial de la escápula.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "nervio",
+      "nervio subescapular",
+      "nervus",
+      "nervus subscapularis",
+      "subescapular",
+      "subscapularis"
+    ]
+  },
+  {
+    "id": "canine:subscapularis",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus subscapularis",
+    "spanishName": "Músculo subescapular",
+    "aliases": [
+      "subescapular"
+    ],
+    "summary": "Músculo medial ancho que ocupa la fosa subescapular y aduce el brazo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "musculo",
+      "musculo subescapular",
+      "musculus",
+      "musculus subscapularis",
+      "subescapular",
+      "subscapularis"
+    ]
+  },
+  {
+    "id": "canine:superficial-digital-flexor",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor digitorum superficialis",
+    "spanishName": "Músculo flexor digital superficial",
+    "aliases": [
+      "flexor digital superficial"
+    ],
+    "summary": "Músculo flexor palmar cuyos tendones forman manguitos perforados en las falanges medias de los dedos II-V.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "digital",
+      "digitorum",
+      "flexor",
+      "flexor digital superficial",
+      "musculo",
+      "musculo flexor digital superficial",
+      "musculus",
+      "musculus flexor digitorum superficialis",
+      "superficial",
+      "superficialis"
+    ]
+  },
+  {
+    "id": "canine:suprascapular-nerve",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus suprascapularis",
+    "spanishName": "Nervio supraescapular",
+    "aliases": [
+      "supraescapular"
+    ],
+    "summary": "Inerva los músculos supraespinoso e infraespinoso al cruzar el cuello de la escápula.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "nervio",
+      "nervio supraescapular",
+      "nervus",
+      "nervus suprascapularis",
+      "supraescapular",
+      "suprascapularis"
+    ]
+  },
+  {
+    "id": "canine:supraspinatus",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus supraspinatus",
+    "spanishName": "Músculo supraespinoso",
+    "aliases": [
+      "supraespinoso"
+    ],
+    "summary": "Músculo que ocupa la fosa supraespinosa de la escápula y extiende la articulación del hombro.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "musculo",
+      "musculo supraespinoso",
+      "musculus",
+      "musculus supraspinatus",
+      "supraespinoso",
+      "supraspinatus"
+    ]
+  },
+  {
+    "id": "canine:teres-major",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus teres major",
+    "spanishName": "Músculo redondo mayor",
+    "aliases": [
+      "redondo mayor"
+    ],
+    "summary": "Músculo ubicado en el borde caudal de la escápula que flexiona el hombro.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "major",
+      "mayor",
+      "musculo",
+      "musculo redondo mayor",
+      "musculus",
+      "musculus teres major",
+      "redondo",
+      "redondo mayor",
+      "teres"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-accessory-head",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput accessorium",
+    "spanishName": "Cabeza accesoria del tríceps braquial",
+    "aliases": [
+      "cabeza accesoria del tríceps"
+    ],
+    "summary": "Pequeña cabeza profunda del tríceps situada entre las cabezas medial y lateral.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "accesoria",
+      "accessorium",
+      "brachii,",
+      "braquial",
+      "cabeza",
+      "cabeza accesoria del triceps",
+      "cabeza accesoria del triceps braquial",
+      "caput",
+      "del",
+      "musculus",
+      "musculus triceps brachii, caput accessorium",
+      "triceps"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-lateral-head",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput laterale",
+    "spanishName": "Cabeza lateral del tríceps braquial",
+    "aliases": [
+      "cabeza lateral del tríceps"
+    ],
+    "summary": "Cabeza lateral potente del tríceps situada sobre la superficie lateral del brazo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "brachii,",
+      "braquial",
+      "cabeza",
+      "cabeza lateral del triceps",
+      "cabeza lateral del triceps braquial",
+      "caput",
+      "del",
+      "lateral",
+      "laterale",
+      "musculus",
+      "musculus triceps brachii, caput laterale",
+      "triceps"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-long-head",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput longum",
+    "spanishName": "Cabeza larga del tríceps braquial",
+    "aliases": [
+      "cabeza larga del tríceps"
+    ],
+    "summary": "La cabeza más grande del tríceps; cruza dos articulaciones: flexiona el hombro y extiende el codo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "brachii,",
+      "braquial",
+      "cabeza",
+      "cabeza larga del triceps",
+      "cabeza larga del triceps braquial",
+      "caput",
+      "del",
+      "larga",
+      "longum",
+      "musculus",
+      "musculus triceps brachii, caput longum",
+      "triceps"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-medial-head",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput mediale",
+    "spanishName": "Cabeza medial del tríceps braquial",
+    "aliases": [
+      "cabeza medial del tríceps"
+    ],
+    "summary": "Cabeza medial profunda del tríceps braquial situada en la cara interna del húmero.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "brachii,",
+      "braquial",
+      "cabeza",
+      "cabeza medial del triceps",
+      "cabeza medial del triceps braquial",
+      "caput",
+      "del",
+      "medial",
+      "mediale",
+      "musculus",
+      "musculus triceps brachii, caput mediale",
+      "triceps"
+    ]
+  },
+  {
+    "id": "canine:ulna",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Ulna",
+    "spanishName": "Cúbito",
+    "aliases": [
+      "ulna"
+    ],
+    "summary": "Hueso caudal y lateral del antebrazo canino con un olécranon prominente que actúa como palanca para los extensores del codo.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "cubito",
+      "ulna"
+    ]
+  },
+  {
+    "id": "canine:ulnaris-lateralis",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus ulnaris lateralis",
+    "spanishName": "Músculo ulnar lateral",
+    "aliases": [
+      "extensor carpi ulnaris"
+    ],
+    "summary": "Músculo con origen en el epicóndilo lateral que actúa como flexor funcional y abductor del carpo en carnívoros.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "carpi",
+      "extensor",
+      "extensor carpi ulnaris",
+      "lateral",
+      "lateralis",
+      "musculo",
+      "musculo ulnar lateral",
+      "musculus",
+      "musculus ulnaris lateralis",
+      "ulnar",
+      "ulnaris"
+    ]
+  },
+  {
+    "id": "feline:biceps-brachii",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus biceps brachii",
+    "spanishName": "Bíceps braquial",
+    "aliases": [],
+    "summary": "Músculo craneomedial del brazo con una cabeza.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "biceps",
+      "biceps braquial",
+      "brachii",
+      "braquial",
+      "musculus",
+      "musculus biceps brachii"
+    ]
+  },
+  {
+    "id": "feline:biceps-origin-tendon",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "tendon",
+    "canonicalLatinName": "Tendo originis musculi bicipitis brachii",
+    "spanishName": "Tendón de origen del bíceps braquial",
+    "aliases": [],
+    "summary": "Tendón proximal asociado al bíceps braquial.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "biceps",
+      "bicipitis",
+      "brachii",
+      "braquial",
+      "del",
+      "musculi",
+      "origen",
+      "originis",
+      "tendo",
+      "tendo originis musculi bicipitis brachii",
+      "tendon",
+      "tendon de origen del biceps braquial"
+    ]
+  },
+  {
+    "id": "feline:carpus",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa carpi",
+    "spanishName": "Huesos del carpo",
+    "aliases": [
+      "carpo felino"
+    ],
+    "summary": "Conjunto de siete pequeños huesos carpianos dispuestos en dos filas en la muñeca felina.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "carpi",
+      "carpo",
+      "carpo felino",
+      "del",
+      "felino",
+      "huesos",
+      "huesos del carpo",
+      "ossa",
+      "ossa carpi"
+    ]
+  },
+  {
+    "id": "feline:humerus",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "bone",
+    "canonicalLatinName": "Humerus",
+    "spanishName": "Húmero",
+    "aliases": [
+      "hueso braquial felino"
+    ],
+    "summary": "Hueso del brazo felino que presenta característicamente un foramen supracondilar en su extremo distal.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "braquial",
+      "felino",
+      "hueso",
+      "hueso braquial felino",
+      "humero",
+      "humerus"
+    ]
+  },
+  {
+    "id": "feline:mandible",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Mandibula",
+    "spanishName": "Mandíbula",
+    "aliases": [
+      "mandíbula inferior felina"
+    ],
+    "summary": "Mandíbula felina corta y robusta con cóndilos orientados para movimientos bisagra potentes durante la masticación.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:skull-model"
+    ],
+    "searchTokens": [
+      "felina",
+      "inferior",
+      "mandibula",
+      "mandibula inferior felina"
+    ]
+  },
+  {
+    "id": "feline:metacarpus",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa metacarpalia",
+    "spanishName": "Huesos metacarpianos",
+    "aliases": [
+      "metacarpo felino"
+    ],
+    "summary": "Cinco huesos metacarpianos cilíndricos del miembro anterior del gato.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "felino",
+      "huesos",
+      "huesos metacarpianos",
+      "metacarpalia",
+      "metacarpianos",
+      "metacarpo",
+      "metacarpo felino",
+      "ossa",
+      "ossa metacarpalia"
+    ]
+  },
+  {
+    "id": "feline:musculocutaneous-nerve",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "brachium",
+    "regionSpanish": "Brazo",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus musculocutaneus",
+    "spanishName": "Nervio musculocutáneo",
+    "aliases": [],
+    "summary": "Nervio que inerva el bíceps braquial.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "musculocutaneo",
+      "musculocutaneus",
+      "nervio",
+      "nervio musculocutaneo",
+      "nervus",
+      "nervus musculocutaneus"
+    ]
+  },
+  {
+    "id": "feline:phalanges",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa digitorum manus",
+    "spanishName": "Falanges de la mano",
+    "aliases": [
+      "falanges de los dedos felinos"
+    ],
+    "summary": "Falanges proximales, medias y distales de los dedos felinos; las distales alojan las garras retráctiles.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "dedos",
+      "digitorum",
+      "falanges",
+      "falanges de la mano",
+      "falanges de los dedos felinos",
+      "felinos",
+      "los",
+      "mano",
+      "manus",
+      "ossa",
+      "ossa digitorum manus"
+    ]
+  },
+  {
+    "id": "feline:radius",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Radius",
+    "spanishName": "Radio",
+    "aliases": [
+      "radio felino"
+    ],
+    "summary": "Hueso del antebrazo felino que permite una amplia pronación y supinación de la mano.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "felino",
+      "radio",
+      "radio felino",
+      "radius"
+    ]
+  },
+  {
+    "id": "feline:scapula",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "bone",
+    "canonicalLatinName": "Scapula",
+    "spanishName": "Escápula",
+    "aliases": [
+      "omóplato"
+    ],
+    "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "escapula",
+      "omoplato",
+      "scapula"
+    ]
+  },
+  {
+    "id": "feline:skull",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Cranium",
+    "spanishName": "Cráneo",
+    "aliases": [
+      "cabeza ósea",
+      "calavera felina"
+    ],
+    "summary": "Cráneo felino redondeado caracterizado por órbitas oculares muy amplias y crestas reducidas.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:skull-model"
+    ],
+    "searchTokens": [
+      "cabeza",
+      "cabeza osea",
+      "calavera",
+      "calavera felina",
+      "craneo",
+      "cranium",
+      "felina",
+      "osea"
+    ]
+  },
+  {
+    "id": "feline:teeth",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Dentes",
+    "spanishName": "Dientes",
+    "aliases": [
+      "dentición felina",
+      "dientes y muelas"
+    ],
+    "summary": "Dentadura carnívora altamente especializada de 30 dientes en el adulto, con colmillos prensiles y muelas carniceras afiladas.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:skull-model"
+    ],
+    "searchTokens": [
+      "dentes",
+      "denticion",
+      "denticion felina",
+      "dientes",
+      "dientes y muelas",
+      "felina",
+      "muelas"
+    ]
+  },
+  {
+    "id": "feline:ulna",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Ulna",
+    "spanishName": "Cúbito",
+    "aliases": [
+      "ulna felina"
+    ],
+    "summary": "Hueso caudal del antebrazo felino con escotadura troclear amplia para la articulación del codo.",
+    "has3DModel": true,
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "searchTokens": [
+      "cubito",
+      "felina",
+      "ulna",
+      "ulna felina"
+    ]
+  }
+]

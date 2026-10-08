@@ -1,24 +1,28 @@
 [
   {
-    "id": "canine:scapula",
+    "id": "canine:axillary-nerve",
     "speciesId": "canine",
     "regionId": "shoulder",
-    "systemId": "skeletal",
-    "kind": "bone",
-    "canonicalLatinName": "Scapula",
-    "spanishName": "Escápula",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus axillaris",
+    "spanishName": "Nervio axilar",
     "aliases": [
-      "omóplato"
+      "axilar"
     ],
-    "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
+    "summary": "Inerva los músculos flexores del hombro: teres major, teres minor y deltoides.",
     "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
       "umn-proximal-thoracic-limb"
     ],
-    "modelIds": [],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
     "photoRefs": [],
     "review": {
       "status": "pending",
-      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
     },
     "completeness": "partial",
     "missingFields": [
@@ -41,7 +45,1234 @@
     "aliases": [],
     "summary": "Músculo craneomedial del brazo con una cabeza.",
     "sourceIds": [
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "insertion"
+    ],
+    "origin": [
+      "Tubérculo supraglenoideo de la escápula"
+    ],
+    "action": [
+      "Flexión del codo",
+      "Extensión del hombro"
+    ],
+    "innervation": [
+      "Nervio musculocutáneo"
+    ]
+  },
+  {
+    "id": "canine:biceps-origin-tendon",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "muscular",
+    "kind": "tendon",
+    "canonicalLatinName": "Tendo originis musculi bicipitis brachii",
+    "spanishName": "Tendón de origen del bíceps braquial",
+    "aliases": [],
+    "summary": "Tendón proximal asociado al bíceps braquial.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ],
+    "attachments": [
+      "Tubérculo supraglenoideo de la escápula"
+    ]
+  },
+  {
+    "id": "canine:brachialis",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus brachialis",
+    "spanishName": "Músculo braquial",
+    "aliases": [
+      "braquial anterior"
+    ],
+    "summary": "Músculo flexor del codo que se origina en la cara caudal del húmero y rodea el surco del músculo braquial.",
+    "origin": [
+      "Surco del húmero proximal caudal"
+    ],
+    "insertion": [
+      "Tuberosidad del radio y cúbito"
+    ],
+    "action": [
+      "Flexión de la articulación del codo"
+    ],
+    "innervation": [
+      "Nervio musculocutáneo"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
       "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:common-digital-extensor",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus extensor digitorum communis",
+    "spanishName": "Músculo extensor digital común",
+    "aliases": [
+      "extensor digital común"
+    ],
+    "summary": "Músculo del antebrazo craneolateral cuyos cuatro tendones se insertan en las falanges distales de los dedos II a V.",
+    "origin": [
+      "Epicóndilo lateral del húmero"
+    ],
+    "insertion": [
+      "Procesos extensores de las falanges distales II-V"
+    ],
+    "action": [
+      "Extensión de los dedos II a V y del carpo"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:deep-digital-flexor",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor digitorum profundus",
+    "spanishName": "Músculo flexor digital profundo",
+    "aliases": [
+      "flexor digital profundo"
+    ],
+    "summary": "El flexor más potente del antebrazo con cabezas humeral, radial y ulnar; se inserta en las falanges distales.",
+    "origin": [
+      "Epicóndilo medial del húmero, radio y cúbito"
+    ],
+    "insertion": [
+      "Tubérculos flexores de las falanges distales I-V"
+    ],
+    "action": [
+      "Flexión de los dedos y del carpo"
+    ],
+    "innervation": [
+      "Nervios mediano y ulnar"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:extensor-carpi-radialis",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus extensor carpi radialis",
+    "spanishName": "Músculo extensor radial del carpo",
+    "aliases": [
+      "extensor radial del carpo"
+    ],
+    "summary": "El músculo extensor craneal más voluminoso del antebrazo; extiende el carpo y fija la articulación.",
+    "origin": [
+      "Cresta supracondilar lateral del húmero"
+    ],
+    "insertion": [
+      "Bases de los metacarpianos II y III"
+    ],
+    "action": [
+      "Extensión del carpo"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:flexor-carpi-radialis",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor carpi radialis",
+    "spanishName": "Músculo flexor radial del carpo",
+    "aliases": [
+      "flexor radial del carpo"
+    ],
+    "summary": "Músculo de la cara medial del antebrazo que flexiona la articulación del carpo.",
+    "origin": [
+      "Epicóndilo medial del húmero"
+    ],
+    "insertion": [
+      "Bases de los metacarpianos II y III palmar"
+    ],
+    "action": [
+      "Flexión del carpo"
+    ],
+    "innervation": [
+      "Nervio mediano"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:flexor-carpi-ulnaris",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor carpi ulnaris",
+    "spanishName": "Músculo flexor ulnar del carpo",
+    "aliases": [
+      "flexor carpi ulnaris"
+    ],
+    "summary": "Músculo con dos cabezas (humeral y ulnar) que se inserta en el hueso carpo accesorio para flexionar el carpo.",
+    "origin": [
+      "Epicóndilo medial del húmero y olécranon"
+    ],
+    "insertion": [
+      "Hueso carpo accesorio"
+    ],
+    "action": [
+      "Flexión del carpo"
+    ],
+    "innervation": [
+      "Nervio ulnar"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:humerus",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Humerus",
+    "spanishName": "Húmero",
+    "aliases": [
+      "hueso braquial"
+    ],
+    "summary": "Hueso largo del brazo canino que articula proximalmente con la escápula y distalmente con el radio y cúbito.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:infraspinatus",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus infraspinatus",
+    "spanishName": "Músculo infraespinoso",
+    "aliases": [
+      "infraespinoso"
+    ],
+    "summary": "Músculo que ocupa la fosa infraespinosa; actúa como ligamento colateral lateral funcional del hombro y abduce el brazo.",
+    "origin": [
+      "Fosa infraespinosa de la escápula"
+    ],
+    "insertion": [
+      "Área muscular sobre el tubérculo mayor del húmero"
+    ],
+    "action": [
+      "Abducción y rotación externa del brazo"
+    ],
+    "innervation": [
+      "Nervio supraescapular"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:lateral-digital-extensor",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus extensor digitorum lateralis",
+    "spanishName": "Músculo extensor digital lateral",
+    "aliases": [
+      "extensor digital lateral"
+    ],
+    "summary": "Músculo situado lateralmente al extensor común que asiste en la extensión de los dedos III a V.",
+    "origin": [
+      "Epicóndilo lateral del húmero"
+    ],
+    "insertion": [
+      "Falanges distales de los dígitos III, IV y V"
+    ],
+    "action": [
+      "Extensión de los dígitos laterales"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:manus",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Skeleton manus",
+    "spanishName": "Esqueleto de la mano",
+    "aliases": [
+      "mano canina",
+      "huesos del carpo y metacarpo"
+    ],
+    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro anterior canino.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:median-ulnar-nerve",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus medianus et nervus ulnaris",
+    "spanishName": "Nervio mediano y ulnar",
+    "aliases": [
+      "tronco mediano-ulnar"
+    ],
+    "summary": "Vía nerviosa caudal que provee inervación motora a los músculos flexores del carpo y de los dedos.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:musculocutaneous-nerve",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus musculocutaneus",
+    "spanishName": "Nervio musculocutáneo",
+    "aliases": [],
+    "summary": "Nervio que inerva el bíceps braquial.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:radial-nerve",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus radialis",
+    "spanishName": "Nervio radial",
+    "aliases": [
+      "radial"
+    ],
+    "summary": "Nervio motor principal de todos los músculos extensores del codo, carpo y dedos en el miembro torácico canino.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:radius",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Radius",
+    "spanishName": "Radio",
+    "aliases": [
+      "hueso del antebrazo"
+    ],
+    "summary": "Hueso craneal y medial del antebrazo canino que soporta la mayor parte del peso corporal en la extremidad torácica.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:scapula",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Scapula",
+    "spanishName": "Escápula",
+    "aliases": [
+      "omóplato"
+    ],
+    "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:subscapular-nerve",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus subscapularis",
+    "spanishName": "Nervio subescapular",
+    "aliases": [
+      "subescapular"
+    ],
+    "summary": "Inerva directamente las diferentes porciones del músculo subescapular en la cara medial de la escápula.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:subscapularis",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus subscapularis",
+    "spanishName": "Músculo subescapular",
+    "aliases": [
+      "subescapular"
+    ],
+    "summary": "Músculo medial ancho que ocupa la fosa subescapular y aduce el brazo.",
+    "origin": [
+      "Fosa subescapular de la escápula"
+    ],
+    "insertion": [
+      "Tubérculo menor del húmero"
+    ],
+    "action": [
+      "Aducción, extensión y rotación medial del hombro"
+    ],
+    "innervation": [
+      "Nervios subescapulares"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:superficial-digital-flexor",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus flexor digitorum superficialis",
+    "spanishName": "Músculo flexor digital superficial",
+    "aliases": [
+      "flexor digital superficial"
+    ],
+    "summary": "Músculo flexor palmar cuyos tendones forman manguitos perforados en las falanges medias de los dedos II-V.",
+    "origin": [
+      "Epicóndilo medial del húmero"
+    ],
+    "insertion": [
+      "Falanges medias de los dedos II a V palmar"
+    ],
+    "action": [
+      "Flexión del carpo y falanges proximales/medias"
+    ],
+    "innervation": [
+      "Nervio mediano"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:suprascapular-nerve",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus suprascapularis",
+    "spanishName": "Nervio supraescapular",
+    "aliases": [
+      "supraescapular"
+    ],
+    "summary": "Inerva los músculos supraespinoso e infraespinoso al cruzar el cuello de la escápula.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:supraspinatus",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus supraspinatus",
+    "spanishName": "Músculo supraespinoso",
+    "aliases": [
+      "supraespinoso"
+    ],
+    "summary": "Músculo que ocupa la fosa supraespinosa de la escápula y extiende la articulación del hombro.",
+    "origin": [
+      "Fosa supraespinosa de la escápula"
+    ],
+    "insertion": [
+      "Tubérculo mayor del húmero"
+    ],
+    "action": [
+      "Extensión y fijación de la articulación del hombro"
+    ],
+    "innervation": [
+      "Nervio supraescapular"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:teres-major",
+    "speciesId": "canine",
+    "regionId": "shoulder",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus teres major",
+    "spanishName": "Músculo redondo mayor",
+    "aliases": [
+      "redondo mayor"
+    ],
+    "summary": "Músculo ubicado en el borde caudal de la escápula que flexiona el hombro.",
+    "origin": [
+      "Borde caudal proximal de la escápula"
+    ],
+    "insertion": [
+      "Tuberosidad del redondo mayor en el húmero medial"
+    ],
+    "action": [
+      "Flexión de la articulación del hombro"
+    ],
+    "innervation": [
+      "Nervio axilar"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-accessory-head",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput accessorium",
+    "spanishName": "Cabeza accesoria del tríceps braquial",
+    "aliases": [
+      "cabeza accesoria del tríceps"
+    ],
+    "summary": "Pequeña cabeza profunda del tríceps situada entre las cabezas medial y lateral.",
+    "origin": [
+      "Cuello del húmero caudal"
+    ],
+    "insertion": [
+      "Tuberosidad del olécranon"
+    ],
+    "action": [
+      "Extensión del codo"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-lateral-head",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput laterale",
+    "spanishName": "Cabeza lateral del tríceps braquial",
+    "aliases": [
+      "cabeza lateral del tríceps"
+    ],
+    "summary": "Cabeza lateral potente del tríceps situada sobre la superficie lateral del brazo.",
+    "origin": [
+      "Línea tricipital del húmero"
+    ],
+    "insertion": [
+      "Tuberosidad del olécranon"
+    ],
+    "action": [
+      "Extensión del codo"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-long-head",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput longum",
+    "spanishName": "Cabeza larga del tríceps braquial",
+    "aliases": [
+      "cabeza larga del tríceps"
+    ],
+    "summary": "La cabeza más grande del tríceps; cruza dos articulaciones: flexiona el hombro y extiende el codo.",
+    "origin": [
+      "Borde caudal de la escápula"
+    ],
+    "insertion": [
+      "Tuberosidad del olécranon"
+    ],
+    "action": [
+      "Extensión del codo y flexión del hombro"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:triceps-brachii-medial-head",
+    "speciesId": "canine",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus triceps brachii, caput mediale",
+    "spanishName": "Cabeza medial del tríceps braquial",
+    "aliases": [
+      "cabeza medial del tríceps"
+    ],
+    "summary": "Cabeza medial profunda del tríceps braquial situada en la cara interna del húmero.",
+    "origin": [
+      "Cresta del tubérculo menor del húmero"
+    ],
+    "insertion": [
+      "Tuberosidad del olécranon"
+    ],
+    "action": [
+      "Extensión del codo"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "canine:ulna",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Ulna",
+    "spanishName": "Cúbito",
+    "aliases": [
+      "ulna"
+    ],
+    "summary": "Hueso caudal y lateral del antebrazo canino con un olécranon prominente que actúa como palanca para los extensores del codo.",
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "canine:ulnaris-lateralis",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus ulnaris lateralis",
+    "spanishName": "Músculo ulnar lateral",
+    "aliases": [
+      "extensor carpi ulnaris"
+    ],
+    "summary": "Músculo con origen en el epicóndilo lateral que actúa como flexor funcional y abductor del carpo en carnívoros.",
+    "origin": [
+      "Epicóndilo lateral del húmero"
+    ],
+    "insertion": [
+      "Hueso accesorio del carpo y quinto metacarpiano"
+    ],
+    "action": [
+      "Flexión y abducción del carpo"
+    ],
+    "innervation": [
+      "Nervio radial"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks",
+      "attachments"
+    ]
+  },
+  {
+    "id": "feline:biceps-brachii",
+    "speciesId": "feline",
+    "regionId": "brachium",
+    "systemId": "muscular",
+    "kind": "muscle",
+    "canonicalLatinName": "Musculus biceps brachii",
+    "spanishName": "Bíceps braquial",
+    "aliases": [],
+    "summary": "Músculo craneomedial del brazo con una cabeza.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
     ],
     "modelIds": [],
     "photoRefs": [],
@@ -71,37 +1302,8 @@
     ]
   },
   {
-    "id": "canine:musculocutaneous-nerve",
-    "speciesId": "canine",
-    "regionId": "brachium",
-    "systemId": "nervous",
-    "kind": "nerve",
-    "canonicalLatinName": "Nervus musculocutaneus",
-    "spanishName": "Nervio musculocutáneo",
-    "aliases": [],
-    "summary": "Nervio que inerva el bíceps braquial.",
-    "sourceIds": [
-      "umn-proximal-thoracic-limb"
-    ],
-    "modelIds": [],
-    "photoRefs": [],
-    "review": {
-      "status": "pending",
-      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
-    },
-    "completeness": "partial",
-    "missingFields": [
-      "detailedDescription",
-      "vascularSupply",
-      "speciesDifferences",
-      "morphology",
-      "location",
-      "landmarks"
-    ]
-  },
-  {
-    "id": "canine:biceps-origin-tendon",
-    "speciesId": "canine",
+    "id": "feline:biceps-origin-tendon",
+    "speciesId": "feline",
     "regionId": "shoulder",
     "systemId": "muscular",
     "kind": "tendon",
@@ -110,7 +1312,8 @@
     "aliases": [],
     "summary": "Tendón proximal asociado al bíceps braquial.",
     "sourceIds": [
-      "umn-proximal-thoracic-limb"
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
     ],
     "modelIds": [],
     "photoRefs": [],
@@ -129,6 +1332,241 @@
     ],
     "attachments": [
       "Tubérculo supraglenoideo de la escápula"
+    ]
+  },
+  {
+    "id": "feline:carpus",
+    "speciesId": "feline",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa carpi",
+    "spanishName": "Huesos del carpo",
+    "aliases": [
+      "carpo felino"
+    ],
+    "summary": "Conjunto de siete pequeños huesos carpianos dispuestos en dos filas en la muñeca felina.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:humerus",
+    "speciesId": "feline",
+    "regionId": "brachium",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Humerus",
+    "spanishName": "Húmero",
+    "aliases": [
+      "hueso braquial felino"
+    ],
+    "summary": "Hueso del brazo felino que presenta característicamente un foramen supracondilar en su extremo distal.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition",
+      "umn-proximal-thoracic-limb"
+    ],
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:mandible",
+    "speciesId": "feline",
+    "regionId": "head",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Mandibula",
+    "spanishName": "Mandíbula",
+    "aliases": [
+      "mandíbula inferior felina"
+    ],
+    "summary": "Mandíbula felina corta y robusta con cóndilos orientados para movimientos bisagra potentes durante la masticación.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:skull-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:metacarpus",
+    "speciesId": "feline",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa metacarpalia",
+    "spanishName": "Huesos metacarpianos",
+    "aliases": [
+      "metacarpo felino"
+    ],
+    "summary": "Cinco huesos metacarpianos cilíndricos del miembro anterior del gato.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:musculocutaneous-nerve",
+    "speciesId": "feline",
+    "regionId": "brachium",
+    "systemId": "nervous",
+    "kind": "nerve",
+    "canonicalLatinName": "Nervus musculocutaneus",
+    "spanishName": "Nervio musculocutáneo",
+    "aliases": [],
+    "summary": "Nervio que inerva el bíceps braquial.",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:phalanges",
+    "speciesId": "feline",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa digitorum manus",
+    "spanishName": "Falanges de la mano",
+    "aliases": [
+      "falanges de los dedos felinos"
+    ],
+    "summary": "Falanges proximales, medias y distales de los dedos felinos; las distales alojan las garras retráctiles.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
+    "id": "feline:radius",
+    "speciesId": "feline",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Radius",
+    "spanishName": "Radio",
+    "aliases": [
+      "radio felino"
+    ],
+    "summary": "Hueso del antebrazo felino que permite una amplia pronación y supinación de la mano.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
     ]
   },
   {
@@ -144,9 +1582,12 @@
     ],
     "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
     "sourceIds": [
-      "umn-proximal-thoracic-limb"
+      "umn-proximal-thoracic-limb",
+      "nav-6th-edition"
     ],
-    "modelIds": [],
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
     "photoRefs": [],
     "review": {
       "status": "pending",
@@ -163,63 +1604,29 @@
     ]
   },
   {
-    "id": "feline:biceps-brachii",
+    "id": "feline:skull",
     "speciesId": "feline",
-    "regionId": "brachium",
-    "systemId": "muscular",
-    "kind": "muscle",
-    "canonicalLatinName": "Musculus biceps brachii",
-    "spanishName": "Bíceps braquial",
-    "aliases": [],
-    "summary": "Músculo craneomedial del brazo con una cabeza.",
-    "sourceIds": [
-      "umn-proximal-thoracic-limb"
+    "regionId": "head",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Cranium",
+    "spanishName": "Cráneo",
+    "aliases": [
+      "calavera felina",
+      "cabeza ósea"
     ],
-    "modelIds": [],
+    "summary": "Cráneo felino redondeado caracterizado por órbitas oculares muy amplias y crestas reducidas.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:skull-model"
+    ],
     "photoRefs": [],
     "review": {
       "status": "pending",
-      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
-    },
-    "completeness": "partial",
-    "missingFields": [
-      "detailedDescription",
-      "vascularSupply",
-      "speciesDifferences",
-      "morphology",
-      "location",
-      "landmarks",
-      "insertion"
-    ],
-    "origin": [
-      "Tubérculo supraglenoideo de la escápula"
-    ],
-    "action": [
-      "Flexión del codo",
-      "Extensión del hombro"
-    ],
-    "innervation": [
-      "Nervio musculocutáneo"
-    ]
-  },
-  {
-    "id": "feline:musculocutaneous-nerve",
-    "speciesId": "feline",
-    "regionId": "brachium",
-    "systemId": "nervous",
-    "kind": "nerve",
-    "canonicalLatinName": "Nervus musculocutaneus",
-    "spanishName": "Nervio musculocutáneo",
-    "aliases": [],
-    "summary": "Nervio que inerva el bíceps braquial.",
-    "sourceIds": [
-      "umn-proximal-thoracic-limb"
-    ],
-    "modelIds": [],
-    "photoRefs": [],
-    "review": {
-      "status": "pending",
-      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
     },
     "completeness": "partial",
     "missingFields": [
@@ -232,23 +1639,29 @@
     ]
   },
   {
-    "id": "feline:biceps-origin-tendon",
+    "id": "feline:teeth",
     "speciesId": "feline",
-    "regionId": "shoulder",
-    "systemId": "muscular",
-    "kind": "tendon",
-    "canonicalLatinName": "Tendo originis musculi bicipitis brachii",
-    "spanishName": "Tendón de origen del bíceps braquial",
-    "aliases": [],
-    "summary": "Tendón proximal asociado al bíceps braquial.",
-    "sourceIds": [
-      "umn-proximal-thoracic-limb"
+    "regionId": "head",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Dentes",
+    "spanishName": "Dientes",
+    "aliases": [
+      "dentición felina",
+      "dientes y muelas"
     ],
-    "modelIds": [],
+    "summary": "Dentadura carnívora altamente especializada de 30 dientes en el adulto, con colmillos prensiles y muelas carniceras afiladas.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:skull-model"
+    ],
     "photoRefs": [],
     "review": {
       "status": "pending",
-      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
     },
     "completeness": "partial",
     "missingFields": [
@@ -258,9 +1671,40 @@
       "morphology",
       "location",
       "landmarks"
+    ]
+  },
+  {
+    "id": "feline:ulna",
+    "speciesId": "feline",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Ulna",
+    "spanishName": "Cúbito",
+    "aliases": [
+      "ulna felina"
     ],
-    "attachments": [
-      "Tubérculo supraglenoideo de la escápula"
+    "summary": "Hueso caudal del antebrazo felino con escotadura troclear amplia para la articulación del codo.",
+    "sourceIds": [
+      "feline-skeletal-3d",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "feline:thoracic-limb-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
     ]
   }
 ]

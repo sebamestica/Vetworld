@@ -1,9 +1,9 @@
 [
   {
-    "id": "canine:biceps-brachii:origin",
+    "id": "canine:biceps-brachii:associated-tendon",
     "fromId": "canine:biceps-brachii",
-    "toId": "canine:scapula",
-    "type": "origin",
+    "toId": "canine:biceps-origin-tendon",
+    "type": "associated_tendon",
     "sourceIds": [
       "umn-proximal-thoracic-limb"
     ]
@@ -18,19 +18,19 @@
     ]
   },
   {
-    "id": "canine:biceps-brachii:associated-tendon",
+    "id": "canine:biceps-brachii:origin",
     "fromId": "canine:biceps-brachii",
-    "toId": "canine:biceps-origin-tendon",
-    "type": "associated_tendon",
+    "toId": "canine:scapula",
+    "type": "origin",
     "sourceIds": [
       "umn-proximal-thoracic-limb"
     ]
   },
   {
-    "id": "feline:biceps-brachii:origin",
+    "id": "feline:biceps-brachii:associated-tendon",
     "fromId": "feline:biceps-brachii",
-    "toId": "feline:scapula",
-    "type": "origin",
+    "toId": "feline:biceps-origin-tendon",
+    "type": "associated_tendon",
     "sourceIds": [
       "umn-proximal-thoracic-limb"
     ]
@@ -45,12 +45,129 @@
     ]
   },
   {
-    "id": "feline:biceps-brachii:associated-tendon",
+    "id": "feline:biceps-brachii:origin",
     "fromId": "feline:biceps-brachii",
-    "toId": "feline:biceps-origin-tendon",
-    "type": "associated_tendon",
+    "toId": "feline:scapula",
+    "type": "origin",
     "sourceIds": [
       "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "rel:canine:biceps-innervated-musculocutaneous",
+    "fromId": "canine:biceps-brachii",
+    "toId": "canine:musculocutaneous-nerve",
+    "type": "innervated_by",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "rel:canine:biceps-insertion-radius",
+    "fromId": "canine:biceps-brachii",
+    "toId": "canine:radius",
+    "type": "insertion",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:canine:biceps-origin-scapula",
+    "fromId": "canine:biceps-brachii",
+    "toId": "canine:scapula",
+    "type": "origin",
+    "sourceIds": [
+      "umn-proximal-thoracic-limb"
+    ]
+  },
+  {
+    "id": "rel:canine:brachialis-innervated-musculocutaneous",
+    "fromId": "canine:brachialis",
+    "toId": "canine:musculocutaneous-nerve",
+    "type": "innervated_by",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:canine:brachialis-insertion-radius",
+    "fromId": "canine:brachialis",
+    "toId": "canine:radius",
+    "type": "insertion",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:canine:brachialis-origin-humerus",
+    "fromId": "canine:brachialis",
+    "toId": "canine:humerus",
+    "type": "origin",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:canine:humerus-articulates-radius",
+    "fromId": "canine:humerus",
+    "toId": "canine:radius",
+    "type": "articulates_with",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:canine:humerus-articulates-ulna",
+    "fromId": "canine:humerus",
+    "toId": "canine:ulna",
+    "type": "articulates_with",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:canine:scapula-articulates-humerus",
+    "fromId": "canine:scapula",
+    "toId": "canine:humerus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:feline:humerus-articulates-radius",
+    "fromId": "feline:humerus",
+    "toId": "feline:radius",
+    "type": "articulates_with",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:feline:humerus-articulates-ulna",
+    "fromId": "feline:humerus",
+    "toId": "feline:ulna",
+    "type": "articulates_with",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:feline:scapula-articulates-humerus",
+    "fromId": "feline:scapula",
+    "toId": "feline:humerus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "nav-6th-edition"
+    ]
+  },
+  {
+    "id": "rel:feline:skull-articulates-mandible",
+    "fromId": "feline:skull",
+    "toId": "feline:mandible",
+    "type": "articulates_with",
+    "sourceIds": [
+      "nav-6th-edition"
     ]
   }
 ]

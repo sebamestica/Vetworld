@@ -37,7 +37,7 @@ export function useAnatomyWorkspace() {
   const currentSpecies = species.find(s => s.id === speciesId), currentRegion = regions.find(r => r.id === regionId);
   const knownIds = new Set(currentRegion?.structureIds ?? structures.map(s => s.id));
   const baseAsset = viewerAssets.find(a => a.speciesId === speciesId && a.availability === 'available' && a.meshMappings.some(m => knownIds.has(m.structureId)) && (a.purpose === 'technical_demo' || modelQuery?.data?.data.some(m => m.id === a.id && m.availability === 'available')));
-  const asset = baseAsset ? { ...baseAsset, meshMappings: baseAsset.meshMappings.filter(m => knownIds.has(m.structureId)) } : null;
+  const asset = baseAsset ? (baseAsset.purpose === 'scientific' ? baseAsset : { ...baseAsset, meshMappings: baseAsset.meshMappings.filter(m => knownIds.has(m.structureId)) }) : null;
   const activeLayers: ViewerLayers = Object.fromEntries((asset?.layers ?? []).map(l => [l.id, layers[l.id] ?? { visible: true, opacity: 1 }]));
   function reset() {
     setLayers({}); setIsolatedId(null); setSelectedId(null); setPanelOpen(false); setPreset('free'); setCutPlane('none'); setClipOffset(0); setResetToken(n => n + 1);

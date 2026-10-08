@@ -9,7 +9,7 @@ describe('Servicios del catálogo real', () => {
     expect(rows.length).toBeGreaterThan(0);
     expect(rows.every(row => row.speciesId === 'canine' && row.kind === 'muscle')).toBe(true);
     expect(catalogService.regions({species:'feline'}).every(row => row.speciesIds.includes('feline'))).toBe(true);
-    expect(catalogService.structures({species:'feline',region:'head'})).toEqual([]);
+    expect(catalogService.structures({species:'feline',region:'pelvic-limb'})).toEqual([]);
   });
   it('rechaza filtros desconocidos y distingue recurso inexistente', () => {
     expect(() => catalogService.structures({species:'missing'})).toThrow('Filtro species desconocido');
@@ -36,10 +36,11 @@ describe('Servicios del catálogo real', () => {
     expect(stats.structures).toBe(catalog.structures.length);
     expect(stats.incompleteRecords).toBe(catalog.structures.filter(row => row.completeness === 'partial').length);
     expect(stats.structuresScientificallyVerified).toBe(0);
-    expect(stats.modelsAvailable).toBe(0);
-    expect(catalogService.region('head').contentAvailability).toBe('pending');
-    expect(catalogService.layers().every(row => !row.available)).toBe(true);
-    expect(catalogService.layers().filter(row => ['superficial-muscles','deep-muscles'].includes(row.id)).every(row => row.structureIds.length === 0)).toBe(true);
+    expect(stats.modelsAvailable).toBe(3);
+    expect(catalogService.region('neck').contentAvailability).toBe('pending');
+    expect(catalogService.layers().some(row => row.available)).toBe(true);
+    expect(catalogService.layers().some(row => !row.available)).toBe(true);
+    expect(catalogService.layers().filter(row => ['ligaments', 'fascias'].includes(row.id)).every(row => row.structureIds.length === 0)).toBe(true);
   });
   it('las modificaciones de consumidores no alteran el repositorio', () => {
     const catalog = catalogRepository.read();

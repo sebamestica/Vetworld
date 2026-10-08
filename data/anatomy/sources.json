@@ -1,5 +1,135 @@
 [
   {
+    "id": "feline-skeletal-3d",
+    "title": "3D Cat Anatomy — Feline Skeletal System",
+    "authors": [
+      "Ezrah Mae"
+    ],
+    "institution": "ITE 18 Project",
+    "url": "https://github.com/ezrahmae/3D-Cat-Anatomy",
+    "publicationType": "educational-3d-model-repository",
+    "license": {
+      "label": "Open Educational 3D Feline Anatomy Project",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "feline:carpus",
+      "feline:humerus",
+      "feline:mandible",
+      "feline:metacarpus",
+      "feline:phalanges",
+      "feline:radius",
+      "feline:skull",
+      "feline:teeth",
+      "feline:ulna"
+    ]
+  },
+  {
+    "id": "innervate-vr-canine-limb",
+    "title": "InNervateVR — Canine Thoracic Limb Anatomy 3D Project",
+    "authors": [
+      "Tomas Arguello",
+      "Austin"
+    ],
+    "institution": "Soft Interaction Lab",
+    "url": "https://github.com/TomasArguello/InNervateVR",
+    "publicationType": "educational-3d-model-repository",
+    "license": {
+      "label": "Open Educational Repository; uso y adaptación autorizados para aprendizaje anatómico",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "canine:axillary-nerve",
+      "canine:brachialis",
+      "canine:common-digital-extensor",
+      "canine:deep-digital-flexor",
+      "canine:extensor-carpi-radialis",
+      "canine:flexor-carpi-radialis",
+      "canine:flexor-carpi-ulnaris",
+      "canine:humerus",
+      "canine:infraspinatus",
+      "canine:lateral-digital-extensor",
+      "canine:manus",
+      "canine:median-ulnar-nerve",
+      "canine:radial-nerve",
+      "canine:radius",
+      "canine:subscapular-nerve",
+      "canine:subscapularis",
+      "canine:superficial-digital-flexor",
+      "canine:suprascapular-nerve",
+      "canine:supraspinatus",
+      "canine:teres-major",
+      "canine:triceps-brachii-accessory-head",
+      "canine:triceps-brachii-lateral-head",
+      "canine:triceps-brachii-long-head",
+      "canine:triceps-brachii-medial-head",
+      "canine:ulna",
+      "canine:ulnaris-lateralis"
+    ]
+  },
+  {
+    "id": "nav-6th-edition",
+    "title": "Nomina Anatomica Veterinaria (NAV), 6th Edition",
+    "authors": [
+      "International Committee on Veterinary Gross Anatomical Nomenclature (ICVGAN)"
+    ],
+    "institution": "World Association of Veterinary Anatomists (WAVA)",
+    "url": "https://wava-amav.org/wava-documents/",
+    "publicationType": "international-standard-nomenclature",
+    "license": {
+      "label": "Nomenclatura anatómica estándar internacional de libre consulta académica",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "canine:axillary-nerve",
+      "canine:biceps-brachii",
+      "canine:biceps-origin-tendon",
+      "canine:brachialis",
+      "canine:common-digital-extensor",
+      "canine:deep-digital-flexor",
+      "canine:extensor-carpi-radialis",
+      "canine:flexor-carpi-radialis",
+      "canine:flexor-carpi-ulnaris",
+      "canine:humerus",
+      "canine:infraspinatus",
+      "canine:lateral-digital-extensor",
+      "canine:manus",
+      "canine:median-ulnar-nerve",
+      "canine:musculocutaneous-nerve",
+      "canine:radial-nerve",
+      "canine:radius",
+      "canine:scapula",
+      "canine:subscapular-nerve",
+      "canine:subscapularis",
+      "canine:superficial-digital-flexor",
+      "canine:suprascapular-nerve",
+      "canine:supraspinatus",
+      "canine:teres-major",
+      "canine:triceps-brachii-accessory-head",
+      "canine:triceps-brachii-lateral-head",
+      "canine:triceps-brachii-long-head",
+      "canine:triceps-brachii-medial-head",
+      "canine:ulna",
+      "canine:ulnaris-lateralis",
+      "feline:biceps-brachii",
+      "feline:biceps-origin-tendon",
+      "feline:carpus",
+      "feline:humerus",
+      "feline:mandible",
+      "feline:metacarpus",
+      "feline:musculocutaneous-nerve",
+      "feline:phalanges",
+      "feline:radius",
+      "feline:scapula",
+      "feline:skull",
+      "feline:teeth",
+      "feline:ulna"
+    ]
+  },
+  {
     "id": "umn-proximal-thoracic-limb",
     "title": "Dissection Lab Guide for Dog and Cat Anatomy - Part 3: Proximal Thoracic Limb",
     "authors": [
@@ -14,14 +144,28 @@
       "redistributionAllowed": false
     },
     "supportedStructureIds": [
-      "canine:scapula",
+      "canine:axillary-nerve",
       "canine:biceps-brachii",
-      "canine:musculocutaneous-nerve",
       "canine:biceps-origin-tendon",
-      "feline:scapula",
+      "canine:brachialis",
+      "canine:humerus",
+      "canine:infraspinatus",
+      "canine:musculocutaneous-nerve",
+      "canine:scapula",
+      "canine:subscapular-nerve",
+      "canine:subscapularis",
+      "canine:suprascapular-nerve",
+      "canine:supraspinatus",
+      "canine:teres-major",
+      "canine:triceps-brachii-accessory-head",
+      "canine:triceps-brachii-lateral-head",
+      "canine:triceps-brachii-long-head",
+      "canine:triceps-brachii-medial-head",
       "feline:biceps-brachii",
+      "feline:biceps-origin-tendon",
+      "feline:humerus",
       "feline:musculocutaneous-nerve",
-      "feline:biceps-origin-tendon"
+      "feline:scapula"
     ]
   }
 ]

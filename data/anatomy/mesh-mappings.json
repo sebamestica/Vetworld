@@ -1,0 +1,275 @@
+[
+  {
+    "nodeId": "scaplula_bne",
+    "structureId": "canine:scapula",
+    "layerId": "skeleton",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "humerus_bne",
+    "structureId": "canine:humerus",
+    "layerId": "skeleton",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "radius_bne",
+    "structureId": "canine:radius",
+    "layerId": "skeleton",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "ulna_bne",
+    "structureId": "canine:ulna",
+    "layerId": "skeleton",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "manus_bne",
+    "structureId": "canine:manus",
+    "layerId": "skeleton",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_BicepsBrachii",
+    "structureId": "canine:biceps-brachii",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_Brachialis",
+    "structureId": "canine:brachialis",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_Supraspinatus",
+    "structureId": "canine:supraspinatus",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_Infraspinatus",
+    "structureId": "canine:infraspinatus",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_Subscapularis",
+    "structureId": "canine:subscapularis",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_TeresMajor",
+    "structureId": "canine:teres-major",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_LongHeadTriceps",
+    "structureId": "canine:triceps-brachii-long-head",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_LateralHeadTriceps",
+    "structureId": "canine:triceps-brachii-lateral-head",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_MedialHeadTriceps",
+    "structureId": "canine:triceps-brachii-medial-head",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_AccessoryHeadTriceps",
+    "structureId": "canine:triceps-brachii-accessory-head",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_ExtensorCarpiRad",
+    "structureId": "canine:extensor-carpi-radialis",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_CommonDigitalExtensor",
+    "structureId": "canine:common-digital-extensor",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_LateralDigitalExtensor",
+    "structureId": "canine:lateral-digital-extensor",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_UlnarisLateralis",
+    "structureId": "canine:ulnaris-lateralis",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_FlexorCarpiRad_Low",
+    "structureId": "canine:flexor-carpi-radialis",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_FlexorCarpiUlnaris",
+    "structureId": "canine:flexor-carpi-ulnaris",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_SuperficialDigitalFlexor",
+    "structureId": "canine:superficial-digital-flexor",
+    "layerId": "superficial-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_DeepDigitalFlexor",
+    "structureId": "canine:deep-digital-flexor",
+    "layerId": "deep-muscles",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_MusculocutaneousNerve",
+    "structureId": "canine:musculocutaneous-nerve",
+    "layerId": "nerves",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_RadialNerve",
+    "structureId": "canine:radial-nerve",
+    "layerId": "nerves",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_AxillaryNerve",
+    "structureId": "canine:axillary-nerve",
+    "layerId": "nerves",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_MedianUlnarNerve",
+    "structureId": "canine:median-ulnar-nerve",
+    "layerId": "nerves",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_SuprascapularNerve",
+    "structureId": "canine:suprascapular-nerve",
+    "layerId": "nerves",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "L_SubscapularNerve",
+    "structureId": "canine:subscapular-nerve",
+    "layerId": "nerves",
+    "modelId": "canine:thoracic-limb-model",
+    "speciesId": "canine"
+  },
+  {
+    "nodeId": "feline_scapula",
+    "structureId": "feline:scapula",
+    "layerId": "skeleton",
+    "modelId": "feline:thoracic-limb-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_humerus",
+    "structureId": "feline:humerus",
+    "layerId": "skeleton",
+    "modelId": "feline:thoracic-limb-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_radius",
+    "structureId": "feline:radius",
+    "layerId": "skeleton",
+    "modelId": "feline:thoracic-limb-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_ulna",
+    "structureId": "feline:ulna",
+    "layerId": "skeleton",
+    "modelId": "feline:thoracic-limb-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_carpus",
+    "structureId": "feline:carpus",
+    "layerId": "skeleton",
+    "modelId": "feline:thoracic-limb-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_metacarpus",
+    "structureId": "feline:metacarpus",
+    "layerId": "skeleton",
+    "modelId": "feline:thoracic-limb-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_phalanges",
+    "structureId": "feline:phalanges",
+    "layerId": "skeleton",
+    "modelId": "feline:thoracic-limb-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_skull",
+    "structureId": "feline:skull",
+    "layerId": "skeleton",
+    "modelId": "feline:skull-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_mandible",
+    "structureId": "feline:mandible",
+    "layerId": "skeleton",
+    "modelId": "feline:skull-model",
+    "speciesId": "feline"
+  },
+  {
+    "nodeId": "feline_teeth",
+    "structureId": "feline:teeth",
+    "layerId": "skeleton",
+    "modelId": "feline:skull-model",
+    "speciesId": "feline"
+  }
+]

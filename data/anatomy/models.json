@@ -28,6 +28,223 @@
     "notes": "Modelo 3D no disponible. Evidencia fase 0 reutilizada; no archivo descargado ni mallas verificadas."
   },
   {
+    "id": "canine:thoracic-limb-model",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "format": "glb",
+    "resourceUrl": "/models/canine/thoracic-limb.glb",
+    "landingPageUrl": "https://github.com/TomasArguello/InNervateVR",
+    "structureIds": [
+      "canine:scapula",
+      "canine:humerus",
+      "canine:radius",
+      "canine:ulna",
+      "canine:manus",
+      "canine:biceps-brachii",
+      "canine:brachialis",
+      "canine:supraspinatus",
+      "canine:infraspinatus",
+      "canine:subscapularis",
+      "canine:teres-major",
+      "canine:triceps-brachii-long-head",
+      "canine:triceps-brachii-lateral-head",
+      "canine:triceps-brachii-medial-head",
+      "canine:triceps-brachii-accessory-head",
+      "canine:extensor-carpi-radialis",
+      "canine:common-digital-extensor",
+      "canine:lateral-digital-extensor",
+      "canine:ulnaris-lateralis",
+      "canine:flexor-carpi-radialis",
+      "canine:flexor-carpi-ulnaris",
+      "canine:superficial-digital-flexor",
+      "canine:deep-digital-flexor",
+      "canine:musculocutaneous-nerve",
+      "canine:radial-nerve",
+      "canine:axillary-nerve",
+      "canine:median-ulnar-nerve",
+      "canine:suprascapular-nerve",
+      "canine:subscapular-nerve"
+    ],
+    "meshMappings": [
+      {
+        "nodeId": "scaplula_bne",
+        "structureId": "canine:scapula",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "humerus_bne",
+        "structureId": "canine:humerus",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "radius_bne",
+        "structureId": "canine:radius",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "ulna_bne",
+        "structureId": "canine:ulna",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "manus_bne",
+        "structureId": "canine:manus",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "L_BicepsBrachii",
+        "structureId": "canine:biceps-brachii",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_Brachialis",
+        "structureId": "canine:brachialis",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_Supraspinatus",
+        "structureId": "canine:supraspinatus",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_Infraspinatus",
+        "structureId": "canine:infraspinatus",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_Subscapularis",
+        "structureId": "canine:subscapularis",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_TeresMajor",
+        "structureId": "canine:teres-major",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_LongHeadTriceps",
+        "structureId": "canine:triceps-brachii-long-head",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_LateralHeadTriceps",
+        "structureId": "canine:triceps-brachii-lateral-head",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_MedialHeadTriceps",
+        "structureId": "canine:triceps-brachii-medial-head",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_AccessoryHeadTriceps",
+        "structureId": "canine:triceps-brachii-accessory-head",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_ExtensorCarpiRad",
+        "structureId": "canine:extensor-carpi-radialis",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_CommonDigitalExtensor",
+        "structureId": "canine:common-digital-extensor",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_LateralDigitalExtensor",
+        "structureId": "canine:lateral-digital-extensor",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_UlnarisLateralis",
+        "structureId": "canine:ulnaris-lateralis",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_FlexorCarpiRad_Low",
+        "structureId": "canine:flexor-carpi-radialis",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_FlexorCarpiUlnaris",
+        "structureId": "canine:flexor-carpi-ulnaris",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_SuperficialDigitalFlexor",
+        "structureId": "canine:superficial-digital-flexor",
+        "layerId": "superficial-muscles"
+      },
+      {
+        "nodeId": "L_DeepDigitalFlexor",
+        "structureId": "canine:deep-digital-flexor",
+        "layerId": "deep-muscles"
+      },
+      {
+        "nodeId": "L_MusculocutaneousNerve",
+        "structureId": "canine:musculocutaneous-nerve",
+        "layerId": "nerves"
+      },
+      {
+        "nodeId": "L_RadialNerve",
+        "structureId": "canine:radial-nerve",
+        "layerId": "nerves"
+      },
+      {
+        "nodeId": "L_AxillaryNerve",
+        "structureId": "canine:axillary-nerve",
+        "layerId": "nerves"
+      },
+      {
+        "nodeId": "L_MedianUlnarNerve",
+        "structureId": "canine:median-ulnar-nerve",
+        "layerId": "nerves"
+      },
+      {
+        "nodeId": "L_SuprascapularNerve",
+        "structureId": "canine:suprascapular-nerve",
+        "layerId": "nerves"
+      },
+      {
+        "nodeId": "L_SubscapularNerve",
+        "structureId": "canine:subscapular-nerve",
+        "layerId": "nerves"
+      }
+    ],
+    "layerIds": [
+      "skeleton",
+      "superficial-muscles",
+      "deep-muscles",
+      "nerves"
+    ],
+    "lod": "standard",
+    "evidenceType": "academic-3d-model",
+    "license": {
+      "label": "Open Educational Repository; uso y adaptación en proyectos de aprendizaje anatómico",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "authors": [
+      "Tomas Arguello",
+      "Austin"
+    ],
+    "sourceIds": [
+      "innervate-vr-canine-limb"
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Modelo 3D verificado en pipeline y escalas métricas; revisión veterinaria anatómica pendiente."
+    },
+    "availability": "available",
+    "fileEvidence": {
+      "sha256": "b11172969e59fe9a54bca5406daca1c0d886f17cc0856d79eb6c725f4fbe77cc",
+      "verifiedAt": "2026-10-08T14:47:48.813Z",
+      "byteSize": 7965716
+    },
+    "notes": "Modelo 3D anatómico real de extremidad torácica canina con huesos, músculos y nervios individualizados."
+  },
+  {
     "id": "feline:skull-candidate",
     "speciesId": "feline",
     "regionId": "head",
@@ -54,5 +271,143 @@
     "availability": "pending",
     "fileEvidence": null,
     "notes": "Modelo 3D no disponible. Evidencia fase 0 reutilizada; no archivo descargado ni mallas verificadas."
+  },
+  {
+    "id": "feline:skull-model",
+    "speciesId": "feline",
+    "regionId": "head",
+    "format": "glb",
+    "resourceUrl": "/models/feline/skull.glb",
+    "landingPageUrl": "https://github.com/ezrahmae/3D-Cat-Anatomy",
+    "structureIds": [
+      "feline:skull",
+      "feline:mandible",
+      "feline:teeth"
+    ],
+    "meshMappings": [
+      {
+        "nodeId": "feline_skull",
+        "structureId": "feline:skull",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_mandible",
+        "structureId": "feline:mandible",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_teeth",
+        "structureId": "feline:teeth",
+        "layerId": "skeleton"
+      }
+    ],
+    "layerIds": [
+      "skeleton"
+    ],
+    "lod": "standard",
+    "evidenceType": "educational-3d-scan",
+    "license": {
+      "label": "Open Educational 3D Feline Anatomy Project",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "authors": [
+      "Ezrah Mae"
+    ],
+    "sourceIds": [
+      "feline-skeletal-3d"
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Cráneo y mandíbula felina; revisión anatómica humana pendiente."
+    },
+    "availability": "available",
+    "fileEvidence": {
+      "sha256": "5f2f23be7a506d7e82e789aac28dd63005c57d0d74544a44e0251d2a83b5529b",
+      "verifiedAt": "2026-10-08T14:47:48.814Z",
+      "byteSize": 5319424
+    },
+    "notes": "Cráneo felino interactivo compuesto por neurocráneo/viscerocráneo, mandíbula y dentición diferenciable."
+  },
+  {
+    "id": "feline:thoracic-limb-model",
+    "speciesId": "feline",
+    "regionId": "thoracic-limb",
+    "format": "glb",
+    "resourceUrl": "/models/feline/thoracic-limb.glb",
+    "landingPageUrl": "https://github.com/ezrahmae/3D-Cat-Anatomy",
+    "structureIds": [
+      "feline:scapula",
+      "feline:humerus",
+      "feline:radius",
+      "feline:ulna",
+      "feline:carpus",
+      "feline:metacarpus",
+      "feline:phalanges"
+    ],
+    "meshMappings": [
+      {
+        "nodeId": "feline_scapula",
+        "structureId": "feline:scapula",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_humerus",
+        "structureId": "feline:humerus",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_radius",
+        "structureId": "feline:radius",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_ulna",
+        "structureId": "feline:ulna",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_carpus",
+        "structureId": "feline:carpus",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_metacarpus",
+        "structureId": "feline:metacarpus",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "feline_phalanges",
+        "structureId": "feline:phalanges",
+        "layerId": "skeleton"
+      }
+    ],
+    "layerIds": [
+      "skeleton"
+    ],
+    "lod": "standard",
+    "evidenceType": "educational-3d-scan",
+    "license": {
+      "label": "Open Educational 3D Feline Anatomy Project",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "authors": [
+      "Ezrah Mae"
+    ],
+    "sourceIds": [
+      "feline-skeletal-3d"
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Escaneos 3D óseos individuales ensamblados; revisión veterinaria anatómica pendiente."
+    },
+    "availability": "available",
+    "fileEvidence": {
+      "sha256": "7d96e651bcca05975a498477dec9001e134ed10c2f3a1ec862a2b758b7d2aa88",
+      "verifiedAt": "2026-10-08T14:47:48.814Z",
+      "byteSize": 4071588
+    },
+    "notes": "Esqueleto de la extremidad anterior felina compuesto por escápula, húmero, radio, cúbito, carpo, metacarpo y falanges."
   }
 ]

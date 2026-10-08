@@ -26,7 +26,7 @@ describe('Ficha anatómica desde API', () => {
     fireEvent.click(screen.getByRole('tab', { name: 'Anatomía' }));
     fireEvent.click(screen.getByRole('tab', { name: 'Fuentes' }));
     expect(screen.getByRole('heading', { name: 'Fuentes bibliográficas' })).toBeTruthy();
-    expect(screen.getByRole('link').getAttribute('href')).toMatch(/^https:/);
+    expect(screen.getAllByRole('link')[0].getAttribute('href')).toMatch(/^https:/);
     fireEvent.click(screen.getByRole('tab', { name: 'Anatomía' }));
     expect(screen.queryByRole('heading', { name: 'Origen' })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Cerrar ficha' })); expect(props.onClose).toHaveBeenCalledOnce();
