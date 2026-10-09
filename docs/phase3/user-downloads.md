@@ -41,3 +41,9 @@ npx vitest run tests/unit/osteology.test.ts
 Los dos primeros scripts protegen escenas existentes y se niegan a sobrescribirlas. Fueron ejecutados con éxito durante la primera importación. Reporte técnico completo en `workbench/inspection/user-models/inspection.json`. Las siete pruebas de inventario volvieron a pasar. No cambió la aplicación y no se volvió a ejecutar build/HTTP en este hito.
 
 Siguiente trabajo: confirmar fuente/licencia del canino y correspondencia exacta del felino, verificar orientación y escala contra medidas, segmentación defendible e identificación ósea. No exponer recursos dudosos en `public/`, inventar huesos para rellenar huecos ni asignar nombres científicos por cercanía aproximada.
+
+## Procedencia canina confirmada por el usuario
+
+Página: https://3dexport.com/3d-model-esqueleto-de-perro-dog-skeleton-285869 ; producto 285869, autor hidden.art8, publicado 2020-04-07, STL gratuito. Verificada el 2026-10-08. El proveedor indica 3D Scan: No. El autor describe modificaciones para impresión y duplicación/reflejo de columna y patas para completar el lado izquierdo; no es evidencia de escaneo íntegro ni bilateralidad independiente. Cualquier reflejo futuro debe documentarse como aproximación, no hueso escaneado.
+
+La página condiciona el uso Royalty Free a incorporación en un producto del que terceros no puedan recuperar el recurso por separado. https://help.3dexport.com/item/royalty-free-license/ prohíbe entregar el producto en su forma descargada. No se acredita autorización para distribuir GLB recuperables en un visor web o subir STL a GitHub. Mantener originales/candidatos privados y no integrar en public/ sin permiso compatible específico. El enlace suministrado resuelve procedencia declarada, no escala, precisión anatómica ni autorización de redistribución web. No se contactó al autor.
