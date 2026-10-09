@@ -1,0 +1,34 @@
+import { test, expect } from '@playwright/test';
+
+test('felino corporal: carga, capas, ficha sin selección falsa y canino no disponible', async ({page}) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/');
+  const portrait = page.getByRole('button', {name: 'Continuar en vertical'});
+  if (await portrait.isVisible()) await portrait.click();
+  await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
+  await expect(page.getByLabel('Especie', {exact: true})).toHaveValue('feline');
+  await expect(page.getByTestId('asset-attribution')).toContainText('CC BY-NC-SA 4.0');
+  await expect(page.getByRole('button', {name: 'Aislar', exact: true})).toBeDisabled();
+  const modelResponse = await page.request.get('/api/v1/models/feline:tavernier-skeleton');
+  expect(modelResponse.status()).toBe(200);
+  expect((await modelResponse.json()).data.structureIds).toEqual([]);
+  await page.getByRole('button', {name: 'Abrir herramientas'}).click();
+  const bones = page.getByRole('checkbox', {name: 'Huesos', exact: true});
+  await expect(bones).toBeChecked(); await bones.uncheck(); await bones.check();
+  const opacity = page.getByLabel('Opacidad · Huesos');
+  await opacity.focus(); await opacity.press('End');
+  for (let i = 0; i < 10; i++) await opacity.press('ArrowLeft');
+  await page.getByRole('button', {name: 'Cerrar herramientas'}).click();
+  const search = page.getByRole('combobox', {name: 'Buscar estructuras anatómicas'});
+  await search.fill('scapula');
+  await page.getByRole('group', {name: 'Felino', exact: true}).getByRole('option').click();
+  await expect(page.getByTestId('detail-panel')).toBeVisible();
+  await expect(page.getByRole('button', {name: 'Aislar', exact: true})).toBeDisabled();
+  await page.getByRole('button', {name: 'Cerrar ficha'}).click();
+  await page.getByRole('button', {name: 'Restaurar', exact: true}).click();
+  await page.screenshot({path: `workbench/inspection/feline-viewer-${test.info().project.name}.png`});
+  await page.getByLabel('Especie', {exact: true}).selectOption('canine');
+  await expect(page.getByTestId('viewer-status')).toHaveText('Modelo 3D no disponible');
+  expect(errors).toEqual([]);
+});

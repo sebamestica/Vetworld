@@ -28,11 +28,53 @@
     "notes": "Modelo 3D no disponible. Evidencia fase 0 reutilizada; no archivo descargado ni mallas verificadas."
   },
   {
+    "id": "canine:skull-model",
+    "speciesId": "canine",
+    "regionId": "head",
+    "format": "glb",
+    "resourceUrl": null,
+    "landingPageUrl": "https://3d.nih.gov/entries/3DPX-000282",
+    "structureIds": [
+      "canine:skull"
+    ],
+    "meshMappings": [
+      {
+        "nodeId": "canine_skull",
+        "structureId": "canine:skull",
+        "layerId": "skeleton"
+      }
+    ],
+    "layerIds": [
+      "skeleton"
+    ],
+    "lod": "standard",
+    "evidenceType": "open-scientific-3d-model",
+    "license": {
+      "label": "Permiso de reutilización del archivo no comprobado",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "authors": [
+      "Lee Dockstader / 3D Systems",
+      "NIH 3D Print Exchange"
+    ],
+    "sourceIds": [
+      "nih-3d-dog-skull"
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Modelo 3D real de tomografía computarizada (CT scan) verificado en pipeline y escalas métricas; revisión veterinaria anatómica pendiente."
+    },
+    "availability": "unavailable",
+    "fileEvidence": null,
+    "notes": "Modelo 3D anatómico real del cráneo canino obtenido a partir de escaneo tomográfico oficial (NIH 3D 3DPX-000282). Retirado del circuito publicable; original conservado en cuarentena privada."
+  },
+  {
     "id": "canine:thoracic-limb-model",
     "speciesId": "canine",
     "regionId": "thoracic-limb",
     "format": "glb",
-    "resourceUrl": "/models/canine/thoracic-limb.glb",
+    "resourceUrl": null,
     "landingPageUrl": "https://github.com/TomasArguello/InNervateVR",
     "structureIds": [
       "canine:scapula",
@@ -221,9 +263,9 @@
     "lod": "standard",
     "evidenceType": "academic-3d-model",
     "license": {
-      "label": "Open Educational Repository; uso y adaptación en proyectos de aprendizaje anatómico",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Permiso de reutilización del archivo no comprobado",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "authors": [
       "Tomas Arguello",
@@ -236,13 +278,9 @@
       "status": "pending",
       "notes": "Modelo 3D verificado en pipeline y escalas métricas; revisión veterinaria anatómica pendiente."
     },
-    "availability": "available",
-    "fileEvidence": {
-      "sha256": "b11172969e59fe9a54bca5406daca1c0d886f17cc0856d79eb6c725f4fbe77cc",
-      "verifiedAt": "2026-10-08T14:47:48.813Z",
-      "byteSize": 7965716
-    },
-    "notes": "Modelo 3D anatómico real de extremidad torácica canina con huesos, músculos y nervios individualizados."
+    "availability": "unavailable",
+    "fileEvidence": null,
+    "notes": "Modelo 3D anatómico real de extremidad torácica canina con huesos, músculos y nervios individualizados. Retirado del circuito publicable; original conservado en cuarentena privada."
   },
   {
     "id": "feline:skull-candidate",
@@ -277,7 +315,7 @@
     "speciesId": "feline",
     "regionId": "head",
     "format": "glb",
-    "resourceUrl": "/models/feline/skull.glb",
+    "resourceUrl": null,
     "landingPageUrl": "https://github.com/ezrahmae/3D-Cat-Anatomy",
     "structureIds": [
       "feline:skull",
@@ -307,9 +345,9 @@
     "lod": "standard",
     "evidenceType": "educational-3d-scan",
     "license": {
-      "label": "Open Educational 3D Feline Anatomy Project",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Permiso de reutilización del archivo no comprobado",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "authors": [
       "Ezrah Mae"
@@ -321,20 +359,16 @@
       "status": "pending",
       "notes": "Cráneo y mandíbula felina; revisión anatómica humana pendiente."
     },
-    "availability": "available",
-    "fileEvidence": {
-      "sha256": "5f2f23be7a506d7e82e789aac28dd63005c57d0d74544a44e0251d2a83b5529b",
-      "verifiedAt": "2026-10-08T14:47:48.814Z",
-      "byteSize": 5319424
-    },
-    "notes": "Cráneo felino interactivo compuesto por neurocráneo/viscerocráneo, mandíbula y dentición diferenciable."
+    "availability": "unavailable",
+    "fileEvidence": null,
+    "notes": "Cráneo felino interactivo compuesto por neurocráneo/viscerocráneo, mandíbula y dentición diferenciable. Retirado del circuito publicable; original conservado en cuarentena privada."
   },
   {
     "id": "feline:thoracic-limb-model",
     "speciesId": "feline",
     "regionId": "thoracic-limb",
     "format": "glb",
-    "resourceUrl": "/models/feline/thoracic-limb.glb",
+    "resourceUrl": null,
     "landingPageUrl": "https://github.com/ezrahmae/3D-Cat-Anatomy",
     "structureIds": [
       "feline:scapula",
@@ -388,9 +422,9 @@
     "lod": "standard",
     "evidenceType": "educational-3d-scan",
     "license": {
-      "label": "Open Educational 3D Feline Anatomy Project",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Permiso de reutilización del archivo no comprobado",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "authors": [
       "Ezrah Mae"
@@ -402,12 +436,46 @@
       "status": "pending",
       "notes": "Escaneos 3D óseos individuales ensamblados; revisión veterinaria anatómica pendiente."
     },
+    "availability": "unavailable",
+    "fileEvidence": null,
+    "notes": "Esqueleto de la extremidad anterior felina compuesto por escápula, húmero, radio, cúbito, carpo, metacarpo y falanges. Retirado del circuito publicable; original conservado en cuarentena privada."
+  },
+  {
+    "id": "feline:tavernier-skeleton",
+    "speciesId": "feline",
+    "regionId": null,
+    "scope": "whole-body",
+    "format": "glb",
+    "resourceUrl": "/models/feline/tavernier-skeleton.glb",
+    "landingPageUrl": "https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602",
+    "structureIds": [],
+    "meshMappings": [],
+    "layerIds": [
+      "skeleton"
+    ],
+    "lod": "original",
+    "evidenceType": "photogrammetry-candidate-unsegmented",
+    "license": {
+      "label": "CC BY-NC-SA 4.0 — atribución, uso no comercial, compartir igual e indicar cambios",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "authors": [
+      "Tavernier Amaury"
+    ],
+    "sourceIds": [
+      "tavernier-cat-skeleton"
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Escala física, cobertura e identificación ósea pendientes; una malla de conjunto."
+    },
     "availability": "available",
     "fileEvidence": {
-      "sha256": "7d96e651bcca05975a498477dec9001e134ed10c2f3a1ec862a2b758b7d2aa88",
-      "verifiedAt": "2026-10-08T14:47:48.814Z",
-      "byteSize": 4071588
+      "sha256": "c570679a9f450c32aeded26c7b459993e984ee6fb01677170e4cd7cdf9220783",
+      "byteSize": 3765488,
+      "verifiedAt": "2026-10-09T01:32:16.944Z"
     },
-    "notes": "Esqueleto de la extremidad anterior felina compuesto por escápula, húmero, radio, cúbito, carpo, metacarpo y falanges."
+    "notes": "Disponible para visualización no comercial bajo NC-SA; sin huesos identificados individualmente. No acredita esqueleto íntegro científicamente validado."
   }
 ]

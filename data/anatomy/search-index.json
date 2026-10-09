@@ -504,6 +504,40 @@
     ]
   },
   {
+    "id": "canine:skull",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Cranium",
+    "spanishName": "Cráneo",
+    "aliases": [
+      "cabeza ósea",
+      "calavera canina",
+      "esqueleto cefálico canino"
+    ],
+    "summary": "Estructura ósea de la cabeza canina derivada de tomografía computarizada (CT scan) que aloja el encéfalo y los órganos de los sentidos.",
+    "has3DModel": true,
+    "modelIds": [
+      "canine:skull-model"
+    ],
+    "searchTokens": [
+      "cabeza",
+      "cabeza osea",
+      "calavera",
+      "calavera canina",
+      "canina",
+      "canino",
+      "cefalico",
+      "craneo",
+      "cranium",
+      "esqueleto",
+      "esqueleto cefalico canino",
+      "osea"
+    ]
+  },
+  {
     "id": "canine:subscapular-nerve",
     "speciesId": "canine",
     "speciesSpanish": "Perro",

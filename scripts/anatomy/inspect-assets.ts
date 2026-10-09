@@ -101,36 +101,39 @@ export async function inspectGlbAsset(targetPath: string): Promise<AssetInspecti
 
 // Ejecución directa por CLI
 if (process.argv[1]?.endsWith("inspect-assets.ts")) {
-  const args = process.argv.slice(2);
-  const paths = args.length > 0 ? args : [
-    "public/models/technical/interaction-demo.glb",
-    "public/anatomy/canine/skeleton/thoracic-limb.glb",
-    "public/anatomy/feline/skeleton/thoracic-limb.glb",
-    "public/anatomy/feline/skeleton/skull.glb"
-  ];
+  async function main() {
+    const args = process.argv.slice(2);
+    const paths = args.length > 0 ? args : [
+      "public/models/technical/interaction-demo.glb",
+      "public/anatomy/canine/skeleton/thoracic-limb.glb",
+      "public/anatomy/feline/skeleton/thoracic-limb.glb",
+      "public/anatomy/feline/skeleton/skull.glb"
+    ];
 
-  console.log("=== INSPECCIÓN DE ACTIVOS 3D VETWORLD ===");
-  for (const p of paths) {
-    try {
-      const stats = await stat(p).catch(() => null);
-      if (!stats) {
-        console.log(`\n[-] Archivo no existe aún: ${p}`);
-        continue;
+    console.log("=== INSPECCIÓN DE ACTIVOS 3D VETWORLD ===");
+    for (const p of paths) {
+      try {
+        const stats = await stat(p).catch(() => null);
+        if (!stats) {
+          console.log(`\n[-] Archivo no existe aún: ${p}`);
+          continue;
+        }
+        const res = await inspectGlbAsset(p);
+        console.log(`\n[+] Activo: ${res.filePath}`);
+        console.log(`    Tamaño: ${res.byteSize.toLocaleString()} bytes (${(res.byteSize / 1024 / 1024).toFixed(2)} MB)`);
+        console.log(`    SHA-256: ${res.sha256}`);
+        console.log(`    Triángulos: ${res.triangleCount.toLocaleString()}`);
+        console.log(`    Vértices: ${res.vertexCount.toLocaleString()}`);
+        console.log(`    Mallas: ${res.meshCount}`);
+        console.log(`    GPU estimada: ${(res.estimatedGpuBytes / 1024 / 1024).toFixed(2)} MB`);
+        console.log(`    Nodos (${res.nodeNames.length}): ${res.nodeNames.slice(0, 10).join(", ")}${res.nodeNames.length > 10 ? "..." : ""}`);
+        if (res.warnings.length) {
+          console.log(`    Avisos: ${res.warnings.join("; ")}`);
+        }
+      } catch (e) {
+        console.error(`    Error al inspeccionar ${p}:`, e instanceof Error ? e.message : e);
       }
-      const res = await inspectGlbAsset(p);
-      console.log(`\n[+] Activo: ${res.filePath}`);
-      console.log(`    Tamaño: ${res.byteSize.toLocaleString()} bytes (${(res.byteSize / 1024 / 1024).toFixed(2)} MB)`);
-      console.log(`    SHA-256: ${res.sha256}`);
-      console.log(`    Triángulos: ${res.triangleCount.toLocaleString()}`);
-      console.log(`    Vértices: ${res.vertexCount.toLocaleString()}`);
-      console.log(`    Mallas: ${res.meshCount}`);
-      console.log(`    GPU estimada: ${(res.estimatedGpuBytes / 1024 / 1024).toFixed(2)} MB`);
-      console.log(`    Nodos (${res.nodeNames.length}): ${res.nodeNames.slice(0, 10).join(", ")}${res.nodeNames.length > 10 ? "..." : ""}`);
-      if (res.warnings.length) {
-        console.log(`    Avisos: ${res.warnings.join("; ")}`);
-      }
-    } catch (e) {
-      console.error(`    Error al inspeccionar ${p}:`, e instanceof Error ? e.message : e);
     }
   }
+  main().catch(console.error);
 }

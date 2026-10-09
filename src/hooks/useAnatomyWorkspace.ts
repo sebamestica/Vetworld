@@ -19,8 +19,8 @@ function useApi<T extends z.ZodType>(path: string, schema: T, retry: number) {
   return result?.path === path && result.retry === retry ? result : null;
 }
 
-export function useAnatomyWorkspace() {
-  const [speciesId, setSpecies] = useState('canine'), [regionId, setRegion] = useState('thoracic-limb');
+export function useAnatomyWorkspace(technicalDemo = false) {
+  const [speciesId, setSpecies] = useState(technicalDemo ? 'canine' : 'feline'), [regionId, setRegion] = useState(technicalDemo ? 'thoracic-limb' : 'all');
   const [retry, setRetry] = useState(0), [selectedId, setSelectedId] = useState<string | null>(null);
   const [panelOpen, setPanelOpen] = useState(false), [layers, setLayers] = useState<ViewerLayers>({});
   const [isolatedId, setIsolatedId] = useState<string | null>(null), [resetToken, setResetToken] = useState(0);
@@ -30,19 +30,23 @@ export function useAnatomyWorkspace() {
   const [navigationError, setNavigationError] = useState('');
   const speciesQuery = useApi('/api/v1/species?limit=100', responseSchemas.species, retry);
   const regionQuery = useApi(`/api/v1/regions?species=${encodeURIComponent(speciesId)}&limit=100`, responseSchemas.regions, retry);
-  const params = new URLSearchParams({ species: speciesId, region: regionId, limit: '100' });
+  const params = new URLSearchParams({ species: speciesId, limit: '100' });
+  if (regionId !== 'all') params.set('region', regionId);
   const structureQuery = useApi(`/api/v1/structures?${params}`, responseSchemas.structures, retry);
-  const modelQuery = useApi(`/api/v1/models?${params}`, responseSchemas.models, retry);
+  const modelQuery = useApi(`/api/v1/models?species=${encodeURIComponent(speciesId)}&limit=100`, responseSchemas.models, retry);
   const species = speciesQuery?.data?.data ?? [], regions = regionQuery?.data?.data ?? [], structures = structureQuery?.data?.data ?? [];
   const currentSpecies = species.find(s => s.id === speciesId), currentRegion = regions.find(r => r.id === regionId);
   const knownIds = new Set(currentRegion?.structureIds ?? structures.map(s => s.id));
-  const baseAsset = viewerAssets.find(a => a.speciesId === speciesId && a.availability === 'available' && a.meshMappings.some(m => knownIds.has(m.structureId)) && (a.purpose === 'technical_demo' || modelQuery?.data?.data.some(m => m.id === a.id && m.availability === 'available')));
+  const baseAsset = technicalDemo
+    ? viewerAssets.find(a => a.speciesId === speciesId && a.purpose === 'technical_demo' && a.meshMappings.some(m => knownIds.has(m.structureId)))
+    : viewerAssets.find(a => a.speciesId === speciesId && a.scope === 'whole-body' && a.availability === 'available' && modelQuery?.data?.data.some(m => m.id === a.id && m.availability === 'available'));
   const asset = baseAsset ? (baseAsset.purpose === 'scientific' ? baseAsset : { ...baseAsset, meshMappings: baseAsset.meshMappings.filter(m => knownIds.has(m.structureId)) }) : null;
   const activeLayers: ViewerLayers = Object.fromEntries((asset?.layers ?? []).map(l => [l.id, layers[l.id] ?? { visible: true, opacity: 1 }]));
   function reset() {
+    if (!technicalDemo) setRegion('all');
     setLayers({}); setIsolatedId(null); setSelectedId(null); setPanelOpen(false); setPreset('free'); setCutPlane('none'); setClipOffset(0); setResetToken(n => n + 1);
   }
-  function changeSpecies(id: string) { if (id !== speciesId) { reset(); setSpecies(id); } }
+  function changeSpecies(id: string) { if (id !== speciesId) { reset(); setSpecies(id); setRegion('all'); } }
   function changeRegion(id: string) { if (id !== regionId) { reset(); setRegion(id); } }
   function selectKnown(id: string) {
     const mapping = asset?.meshMappings.find(m => m.structureId === id);

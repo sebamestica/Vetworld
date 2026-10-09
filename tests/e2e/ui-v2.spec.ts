@@ -1,7 +1,7 @@
 import { test, expect, type Page } from '@playwright/test';
 
 async function ready(page: Page) {
-  await page.goto('/'); await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
+  await page.goto('/technical-demo'); await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
   const portrait = page.getByRole('button', { name: 'Continuar en vertical' }); if (await portrait.isVisible()) await portrait.click();
 }
 async function settings(page: Page) { const portrait = page.getByRole('button', { name: 'Continuar en vertical' }); if (await portrait.isVisible()) await portrait.click(); await page.getByRole('button', { name: 'Abrir herramientas' }).click(); await page.getByRole('tab', { name: 'Ajustes', exact: true }).click(); }
@@ -11,8 +11,8 @@ test('menú inicialmente cerrado, capas reales y navegación por teclado', async
   const trigger = page.getByRole('button', { name: 'Abrir herramientas' }); await trigger.click();
   const tools = page.getByRole('complementary', { name: 'Herramientas' }); await expect(tools).toBeVisible();
   await expect(tools.getByRole('checkbox')).toHaveCount(8);
-  for (const name of ['Huesos', 'Músculos', 'Nervios']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeEnabled();
-  for (const name of ['Piel', 'Tendones', 'Ligamentos', 'Vasos', 'Órganos']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeDisabled();
+  for (const name of ['Huesos', 'Músculos', 'Nervios', 'Tendones']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeEnabled();
+  for (const name of ['Piel', 'Ligamentos', 'Vasos', 'Órganos']) await expect(tools.getByRole('checkbox', { name, exact: true })).toBeDisabled();
   const layers = tools.getByRole('tab', { name: 'Capas', exact: true }); await layers.focus(); await layers.press('ArrowRight');
   await expect(tools.getByRole('tab', { name: 'Vistas', exact: true })).toHaveAttribute('aria-selected', 'true');
   await page.keyboard.press('Escape'); await expect(tools).toHaveCount(0); await expect(trigger).toBeFocused();
@@ -63,7 +63,7 @@ test('vistas y cortes cambian geometría técnica, sin afirmar anatomía interna
 
 test('voz sin soporte mantiene búsqueda escrita y orientación es recomendación', async ({ page }, info) => {
   await page.addInitScript(() => { Object.defineProperty(window, 'SpeechRecognition', { value: undefined }); Object.defineProperty(window, 'webkitSpeechRecognition', { value: undefined }); });
-  await page.goto('/'); await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
+  await page.goto('/technical-demo'); await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
   const portrait = page.getByRole('button', { name: 'Continuar en vertical' }); if (info.project.name === 'mobile') await expect(portrait).toBeVisible(); if (await portrait.isVisible()) await portrait.click();
   await page.getByRole('button', { name: 'Buscar por voz' }).click(); await expect(page.getByText(/puede enviar audio/)).toBeVisible(); await page.getByRole('button', { name: 'Iniciar escucha' }).click();
   await expect(page.getByText(/La búsqueda por voz no está disponible/)).toBeVisible(); const search = page.getByRole('combobox', { name: 'Buscar estructuras anatómicas' }); await search.fill('biceps');

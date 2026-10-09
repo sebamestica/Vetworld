@@ -1,4 +1,4 @@
-﻿import { readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { test, expect, type Page } from '@playwright/test';
 import { Box3, Vector3 } from 'three';
 import { cameraFrame } from '../../src/modules/viewer/controls';
@@ -8,7 +8,7 @@ async function dismissOrientation(page: Page) {
   if (await button.isVisible()) await button.click();
 }
 async function ready(page: Page) {
-  await page.goto('/');
+  await page.goto('/technical-demo');
   await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
   await dismissOrientation(page);
   await expect(page.getByTestId('viewer-canvas').locator('canvas')).toBeVisible();
@@ -65,7 +65,7 @@ test('recorrido real Canvas → ficha → referencias → visor', async ({ page 
 });
 
 test('cámara cambia al girar y acercar; CSP permanece local', async ({ page }, info) => {
-  const response = await page.goto('/'); const csp = response!.headers()['content-security-policy'];
+  const response = await page.goto('/technical-demo'); const csp = response!.headers()['content-security-policy'];
   expect(csp).toContain("script-src 'self' 'nonce-"); expect(csp).not.toContain('unsafe-eval'); expect(csp).toContain("connect-src 'self';");
   await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo'); await dismissOrientation(page);
   const canvas = page.getByTestId('viewer-canvas').locator('canvas'); const before = await canvas.screenshot();
@@ -125,11 +125,11 @@ test('cambio de especie y región limpia ficha y muestra disponibilidad real', a
   const closeTools = page.getByRole('button', { name: 'Cerrar herramientas' });
   if (await closeTools.isVisible()) await closeTools.click();
   await expect(page.getByTestId('viewer-status')).toHaveText('Modelo 3D no disponible'); await expect(page.getByTestId('viewer-canvas').locator('canvas')).toHaveCount(0);
-  await expect(page.getByText('Todavía no hay fichas registradas en esta región.')).toBeVisible();
+  await expect(page.getByRole('combobox', {name: 'Consultar estructura'})).toBeVisible();
 });
 
 test('archivo fallido conserva acceso textual y permite reintento', async ({ page }) => {
-  await page.route('**/models/technical/*.glb*', route => route.abort()); await page.goto('/'); await dismissOrientation(page);
+  await page.route('**/models/technical/*.glb*', route => route.abort()); await page.goto('/technical-demo'); await dismissOrientation(page);
   await expect(page.getByTestId('viewer-status')).toContainText('No se pudo abrir'); await choose(page, 'biceps');
   await expect(page.getByTestId('detail-panel').getByRole('heading', { name: 'Bíceps braquial', exact: true })).toBeVisible(); await page.getByRole('button', { name: 'Cerrar ficha' }).click();
   await page.unroute('**/models/technical/*.glb*'); await page.getByRole('button', { name: 'Reintentar visor' }).click(); await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');

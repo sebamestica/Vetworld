@@ -16,6 +16,7 @@ export interface ToolsPanelProps {
   cutPlane: CutPlane; onCutPlane: (plane: CutPlane) => void; clipOffset: number; onClipOffset: (value: number) => void;
   settings: UISettings; onSettingsChange: (settings: Partial<UISettings>) => void; onResetSettings: () => void;
   regionOptions?: { id: string; label: string }[]; regionId?: string; onRegionChange?: (id: string) => void;
+  anatomicalViewsAvailable?: boolean;
 }
 const layerKeys = ['skin', 'muscles', 'tendons', 'ligaments', 'vessels', 'nerves', 'bones', 'organs'] as const;
 const layerColors = ['#bd9e8e', '#bd7b72', '#ddccb3', '#ccb47b', '#ba6672', '#dab66d', '#e8dccc', '#ac667f'];
@@ -47,8 +48,8 @@ export function ToolsPanel(p: ToolsPanelProps) {
         {p.regionOptions && p.onRegionChange && <label className={styles.box}>{tx('region')}<select aria-label={tx('region')} value={p.regionId} onChange={e => p.onRegionChange?.(e.target.value)}>{p.regionOptions.map(region => <option key={region.id} value={region.id}>{region.label}</option>)}</select></label>}
       </section>
       <section role="tabpanel" id="tools-page-views" aria-labelledby="tools-tab-views" hidden={p.tab !== 'views'}>
-        <p className={styles.label}>{tx('perspective')}</p><div className={styles.segment}>{views.map(view => <button key={view} type="button" aria-pressed={p.viewPreset === view} className={p.viewPreset === view ? styles.active : ''} onClick={() => p.onViewPreset(view)}>{tx(view)}</button>)}</div>
-        <p className={`${styles.label} ${styles.heading}`}>{tx('anatomicalPlanes')}</p><div className={styles.segment}>{planes.map(plane => <button key={plane} type="button" aria-pressed={p.cutPlane === plane} className={p.cutPlane === plane ? styles.active : ''} onClick={() => p.onCutPlane(plane)}>{tx(plane)}</button>)}</div>
+        <p className={styles.label}>{tx('perspective')}</p><div className={styles.segment}>{views.map(view => <button key={view} type="button" disabled={p.anatomicalViewsAvailable === false && view !== 'free'} aria-pressed={p.viewPreset === view} className={p.viewPreset === view ? styles.active : ''} onClick={() => p.onViewPreset(view)}>{tx(view)}</button>)}</div>
+        <p className={`${styles.label} ${styles.heading}`}>{tx('anatomicalPlanes')}</p><div className={styles.segment}>{planes.map(plane => <button key={plane} type="button" disabled={p.anatomicalViewsAvailable === false && plane !== 'none'} aria-pressed={p.cutPlane === plane} className={p.cutPlane === plane ? styles.active : ''} onClick={() => p.onCutPlane(plane)}>{tx(plane)}</button>)}</div>
         {p.cutPlane !== 'none' && <label className={styles.range}>{tx('clipOffset')}<input type="range" aria-label={tx('clipOffset')} min="-1" max="1" step="0.05" value={p.clipOffset} onChange={e => p.onClipOffset(Number(e.target.value))} /></label>}<p className={styles.note}>{tx('clippingNotice')}</p>
       </section>
       <section role="tabpanel" id="tools-page-settings" aria-labelledby="tools-tab-settings" hidden={p.tab !== 'settings'}>

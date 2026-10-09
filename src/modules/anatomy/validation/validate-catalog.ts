@@ -59,7 +59,7 @@ export function validateCatalog(catalog: Catalog): { errors: string[]; warnings:
     for (const id of structure.modelIds) {
       const model = models.get(id);
       check(!!model, `${label}: modelo inexistente ${id}`);
-      if (model) check(model.speciesId === structure.speciesId && model.structureIds.includes(label) && containsRegion(model.regionId, structure.regionId), `${label}: modelo incompatible ${id}`);
+      if (model) check(model.speciesId === structure.speciesId && model.structureIds.includes(label) && (model.scope === 'whole-body' || (model.regionId !== null && containsRegion(model.regionId, structure.regionId))), `${label}: modelo incompatible ${id}`);
     }
     for (const photo of structure.photoRefs) {
       check(sources.has(photo.sourceId), `${label}: fuente de fotografía inexistente`);
@@ -92,14 +92,14 @@ export function validateCatalog(catalog: Catalog): { errors: string[]; warnings:
     for (const id of relation.sourceIds) check(sources.get(id)?.supportedStructureIds.includes(relation.fromId) === true && sources.get(id)?.supportedStructureIds.includes(relation.toId) === true, `${relation.id}: fuente no respalda ambos extremos ${id}`);
   }
   for (const model of catalog.models) {
-    check(species.has(model.speciesId) && regions.has(model.regionId), `${model.id}: especie o región inexistente`);
+    check(species.has(model.speciesId) && (model.regionId !== null ? regions.has(model.regionId) : model.scope === 'whole-body'), `${model.id}: especie o región inexistente`);
     for (const field of ['sourceIds', 'structureIds', 'layerIds'] as const) unique(model[field], `${model.id}.${field}`);
     for (const id of model.sourceIds) check(sources.has(id), `${model.id}: fuente inexistente ${id}`);
     for (const id of model.structureIds) {
       const structure = structures.get(id);
       check(!!structure, `${model.id}: estructura inexistente ${id}`);
       if (structure) {
-        check(structure.speciesId === model.speciesId && containsRegion(model.regionId, structure.regionId), `${model.id}: estructura incompatible ${id}`);
+        check(structure.speciesId === model.speciesId && (model.scope === 'whole-body' || (model.regionId !== null && containsRegion(model.regionId, structure.regionId))), `${model.id}: estructura incompatible ${id}`);
         check(structure.modelIds.includes(model.id), `${model.id}: asociación de modelo no recíproca ${id}`);
       }
     }

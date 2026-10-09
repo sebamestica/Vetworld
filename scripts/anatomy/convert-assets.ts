@@ -24,6 +24,7 @@ import * as THREE from "three";
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { GLTFExporter } from "three/examples/jsm/exporters/GLTFExporter.js";
+import { SimplifyModifier } from "three/examples/jsm/modifiers/SimplifyModifier.js";
 
 async function fetchOrCache(url: string, destination: string): Promise<Buffer> {
   const destPath = resolve(destination);
@@ -306,11 +307,116 @@ export async function convertFelineSkull(): Promise<ConvertedModelInfo> {
   };
 }
 
+export async function convertCanineSkull(): Promise<ConvertedModelInfo> {
+  console.log("\n--- Procesando Cráneo Canino (NIH 3D) ---");
+  await mkdir("assets-source/canine", { recursive: true });
+  await mkdir("public/anatomy/canine/skeleton", { recursive: true });
+  await mkdir("public/models/canine", { recursive: true });
+
+  const url = "https://3d.nih.gov/api/submissions/674e2d3122c54cb4d2716ef9/runs/674e2d3522c54cb4d2716f00/output-files/674e2d3922c54cb4d2716f16";
+  const rawBuffer = await fetchOrCache(url, "assets-source/canine/dog_skull_nih.glb");
+
+  const gltfLoader = new GLTFLoader();
+  const gltf = await new Promise<{ scene: THREE.Group }>((resolve, reject) => {
+    gltfLoader.parse(
+      rawBuffer.buffer.slice(rawBuffer.byteOffset, rawBuffer.byteOffset + rawBuffer.byteLength) as ArrayBuffer,
+      "",
+      resolve,
+      reject
+    );
+  });
+
+  let originalMesh: THREE.Mesh | null = null;
+  gltf.scene.traverse((child) => {
+    if ((child as THREE.Mesh).isMesh && !originalMesh) {
+      originalMesh = child as THREE.Mesh;
+    }
+  });
+
+  if (!originalMesh) {
+    throw new Error("No se encontró malla en dog_skull_nih.glb");
+  }
+
+  // Optimización y simplificación LOD para ajustarse al presupuesto (< 250k triángulos)
+  const modifier = new SimplifyModifier();
+  const originalGeom = (originalMesh as THREE.Mesh).geometry;
+  const verticesToRemove = Math.floor(originalGeom.attributes.position.count * 0.65);
+  const simplifiedGeom = await modifier.modify(originalGeom, verticesToRemove);
+
+  // 1. Centrado en el origen (0, 0, 0)
+  simplifiedGeom.computeBoundingBox();
+  const center = new THREE.Vector3();
+  simplifiedGeom.boundingBox!.getCenter(center);
+  simplifiedGeom.translate(-center.x, -center.y, -center.z);
+
+  // 2. Normalización de orientación: +Y dorsal/arriba; +Z rostral/frente; +X lateral
+  // Matriz de rotación propia (+1 det): X_new = Y, Y_new = Z, Z_new = X
+  const rotMat = new THREE.Matrix4().set(
+    0, 1, 0, 0,
+    0, 0, 1, 0,
+    1, 0, 0, 0,
+    0, 0, 0, 1
+  );
+  simplifiedGeom.applyMatrix4(rotMat);
+  simplifiedGeom.computeVertexNormals();
+
+  if (simplifiedGeom.getAttribute("color")) {
+    simplifiedGeom.deleteAttribute("color");
+  }
+
+  const skullMesh = new THREE.Mesh(
+    simplifiedGeom,
+    new THREE.MeshStandardMaterial({
+      color: 0xdcd6cd,
+      roughness: 0.75,
+      metalness: 0.05
+    })
+  );
+  skullMesh.name = "canine_skull";
+
+  const assembledScene = new THREE.Scene();
+  assembledScene.name = "Canine_Skull_Complex";
+  assembledScene.add(skullMesh);
+
+  const triangleCount = simplifiedGeom.index ? simplifiedGeom.index.count / 3 : simplifiedGeom.attributes.position.count / 3;
+
+  const glbBuffer = await exportSceneToGlb(assembledScene);
+  const sha256 = createHash("sha256").update(glbBuffer).digest("hex");
+
+  const out1 = "public/anatomy/canine/skeleton/skull.glb";
+  const out2 = "public/models/canine/skull.glb";
+  await writeFile(out1, glbBuffer);
+  await writeFile(out2, glbBuffer);
+
+  const jsonLen = glbBuffer.readUInt32LE(12);
+  const binLen = glbBuffer.readUInt32LE(20 + jsonLen);
+
+  console.log(`[Canino Cráneo] Exportado con éxito: ${glbBuffer.length.toLocaleString()} bytes; ${Math.round(triangleCount)} triángulos; 1 malla.`);
+  return {
+    id: "canine:skull-model",
+    speciesId: "canine",
+    regionId: "head",
+    outputPath: "/anatomy/canine/skeleton/skull.glb",
+    mirrorPath: "/models/canine/skull.glb",
+    byteSize: glbBuffer.length,
+    sha256,
+    triangleCount: Math.round(triangleCount),
+    estimatedGpuBytes: binLen,
+    meshNodes: ["canine_skull"]
+  };
+}
+
 export async function runAllConversions(): Promise<ConvertedModelInfo[]> {
-  const canine = await convertCanineThoracicLimb();
+  const models = JSON.parse(await readFile(resolve('data/anatomy/models.json'), 'utf8')) as {id: string; license: {verified: boolean; redistributionAllowed: boolean}}[];
+  const required = ['canine:thoracic-limb-model', 'canine:skull-model', 'feline:thoracic-limb-model', 'feline:skull-model'];
+  if (required.some(id => !models.some(model => model.id === id && model.license.verified && model.license.redistributionAllowed))) {
+    throw new Error('Conversión regional bloqueada: faltan permisos de reutilización por archivo. No descargar ni publicar fuentes en cuarentena.');
+  }
+  const canineThoracic = await convertCanineThoracicLimb();
+  const canineSkull = await convertCanineSkull();
   const felineThoracic = await convertFelineThoracicLimb();
   const felineSkull = await convertFelineSkull();
-  return [canine, felineThoracic, felineSkull];
+  return [canineThoracic, canineSkull, felineThoracic, felineSkull];
 }
 
 if (process.argv[1]?.endsWith("convert-assets.ts")) {

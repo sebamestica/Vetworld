@@ -727,6 +727,42 @@
     ]
   },
   {
+    "id": "canine:skull",
+    "speciesId": "canine",
+    "regionId": "head",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Cranium",
+    "spanishName": "Cráneo",
+    "aliases": [
+      "calavera canina",
+      "cabeza ósea",
+      "esqueleto cefálico canino"
+    ],
+    "summary": "Estructura ósea de la cabeza canina derivada de tomografía computarizada (CT scan) que aloja el encéfalo y los órganos de los sentidos.",
+    "sourceIds": [
+      "nih-3d-dog-skull",
+      "nav-6th-edition"
+    ],
+    "modelIds": [
+      "canine:skull-model"
+    ],
+    "photoRefs": [],
+    "review": {
+      "status": "pending",
+      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "vascularSupply",
+      "speciesDifferences",
+      "morphology",
+      "location",
+      "landmarks"
+    ]
+  },
+  {
     "id": "canine:subscapular-nerve",
     "speciesId": "canine",
     "regionId": "shoulder",

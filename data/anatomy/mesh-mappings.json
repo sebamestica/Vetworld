@@ -203,6 +203,13 @@
     "speciesId": "canine"
   },
   {
+    "nodeId": "canine_skull",
+    "structureId": "canine:skull",
+    "layerId": "skeleton",
+    "modelId": "canine:skull-model",
+    "speciesId": "canine"
+  },
+  {
     "nodeId": "feline_scapula",
     "structureId": "feline:scapula",
     "layerId": "skeleton",

@@ -39,7 +39,7 @@ export function createCatalogService(repository: CatalogRepository) {
   };
   const filterModels = (catalog: Catalog, query: CatalogQuery) => {
     const regions = query.region ? regionIds(catalog, query.region) : undefined;
-    return sorted(catalog.models.filter(row => (!query.species || row.speciesId === query.species) && (!regions || regions.has(row.regionId))));
+    return sorted(catalog.models.filter(row => (!query.species || row.speciesId === query.species) && (!regions || (row.regionId !== null && regions.has(row.regionId)))));
   };
   const availability = (catalog: Catalog, query: CatalogQuery): {contentAvailability: ContentAvailability; modelAvailability: ModelAvailability} => {
     const structures = filterStructures(catalog, query);

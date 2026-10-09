@@ -36,7 +36,7 @@ const mediaPaths = Object.fromEntries([['references', '/api/v1/references'], ['r
 }]));
 
 writeFileSync('docs/api/openapi.json', JSON.stringify({
-  openapi: '3.1.0', info: { title: 'Atlas Veterinario 3D API', version: '1.1.0', description: 'Catálogo de lectura. Revisión humana y activos pendientes se declaran explícitamente. Parámetros desconocidos o repetidos: 400.' },
+  openapi: '3.1.0', info: { title: 'Atlas Veterinario 3D API', version: '1.2.0', description: 'Catálogo de lectura. Modelos corporales: scope whole-body y regionId null; geometría disponible no implica identificación ni revisión anatómica. Parámetros desconocidos o repetidos: 400.' },
   paths: { ...operations, ...mediaPaths }, components: { schemas: { ...components, references: schemaJson(referencesResponseSchema), reference: schemaJson(referenceResponseSchema), error: schemaJson(errorSchema) } },
 }, null, 2) + '\n');
 console.log('OpenAPI generado en docs/api/openapi.json; revisar diff antes de aceptar cambios contractuales.');

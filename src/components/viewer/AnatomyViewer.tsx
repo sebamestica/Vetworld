@@ -151,7 +151,7 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
       try {
         await Promise.resolve();
         if (cancelled) return;
-        setScene(null); setFailed(false); setStatus("Cargando demostración técnica…");
+        setScene(null); setFailed(false); setStatus(props.asset?.purpose === "technical_demo" ? "Cargando demostración técnica…" : "Cargando modelo 3D…");
         const asset = viewerAssetSchema.parse(props.asset);
         const response = await fetch(`${asset.resourceUrl}?v=${asset.sha256}`, { cache: "force-cache", signal: AbortSignal.any([controller.signal, AbortSignal.timeout(15_000)]) });
         if (!response.ok) throw new Error("Archivo no disponible");

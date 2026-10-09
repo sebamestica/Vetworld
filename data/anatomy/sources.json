@@ -9,9 +9,9 @@
     "url": "https://github.com/ezrahmae/3D-Cat-Anatomy",
     "publicationType": "educational-3d-model-repository",
     "license": {
-      "label": "Open Educational 3D Feline Anatomy Project",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Redistribución de archivos no comprobada; referencia bibliográfica conservada",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "supportedStructureIds": [
       "feline:carpus",
@@ -36,9 +36,9 @@
     "url": "https://github.com/TomasArguello/InNervateVR",
     "publicationType": "educational-3d-model-repository",
     "license": {
-      "label": "Open Educational Repository; uso y adaptación autorizados para aprendizaje anatómico",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Redistribución de archivos no comprobada; referencia bibliográfica conservada",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "supportedStructureIds": [
       "canine:axillary-nerve",
@@ -79,9 +79,9 @@
     "url": "https://wava-amav.org/wava-documents/",
     "publicationType": "international-standard-nomenclature",
     "license": {
-      "label": "Nomenclatura anatómica estándar internacional de libre consulta académica",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Redistribución del PDF no comprobada; referencia terminológica conservada",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "supportedStructureIds": [
       "canine:axillary-nerve",
@@ -102,6 +102,7 @@
       "canine:radial-nerve",
       "canine:radius",
       "canine:scapula",
+      "canine:skull",
       "canine:subscapular-nerve",
       "canine:subscapularis",
       "canine:superficial-digital-flexor",
@@ -127,6 +128,25 @@
       "feline:skull",
       "feline:teeth",
       "feline:ulna"
+    ]
+  },
+  {
+    "id": "nih-3d-dog-skull",
+    "title": "Dog Skull — NIH 3D Print Exchange (3DPX-000282)",
+    "authors": [
+      "Lee Dockstader / 3D Systems",
+      "NIH 3D Print Exchange"
+    ],
+    "institution": "National Institutes of Health (NIH)",
+    "url": "https://3d.nih.gov/entries/3DPX-000282",
+    "publicationType": "open-scientific-3d-model",
+    "license": {
+      "label": "Redistribución de archivos no comprobada; referencia bibliográfica conservada",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "canine:skull"
     ]
   },
   {
@@ -167,5 +187,20 @@
       "feline:musculocutaneous-nerve",
       "feline:scapula"
     ]
+  },
+  {
+    "id": "tavernier-cat-skeleton",
+    "title": "Cat Skeleton",
+    "authors": [
+      "Tavernier Amaury"
+    ],
+    "url": "https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602",
+    "publicationType": "photogrammetry-model",
+    "license": {
+      "label": "CC BY-NC-SA 4.0 — atribución, uso no comercial, compartir igual e indicar cambios",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": []
   }
 ]

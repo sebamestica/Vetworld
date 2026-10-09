@@ -20,7 +20,7 @@ async function freePort(): Promise<number> {
 }
 
 export async function startLocalServer(mode: 'dev' | 'start' = 'dev'): Promise<{ baseUrl: string; stop: () => Promise<void> }> {
-  try {
+  if (mode === 'dev') try {
     const existing = await fetch('http://127.0.0.1:3000/api/v1/health', { signal: AbortSignal.timeout(1000) });
     if (existing.status === 200) {
       return { baseUrl: 'http://127.0.0.1:3000', stop: async () => {} };

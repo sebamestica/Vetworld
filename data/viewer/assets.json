@@ -15,12 +15,12 @@
     "estimatedGpuBytes": 7922400,
     "sha256": "b11172969e59fe9a54bca5406daca1c0d886f17cc0856d79eb6c725f4fbe77cc",
     "license": {
-      "label": "Open Educational Repository; uso y adaptación en proyectos de aprendizaje anatómico",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Permiso de archivo no comprobado; cuarentena privada",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "reviewStatus": "pending",
-    "availability": "available",
+    "availability": "pending",
     "meshMappings": [
       {
         "nodeId": "scaplula_bne",
@@ -193,6 +193,47 @@
     }
   },
   {
+    "id": "canine:skull-model",
+    "speciesId": "canine",
+    "regionId": "head",
+    "title": "Cráneo canino — modelo óseo real (CT scan NIH 3D)",
+    "purpose": "scientific",
+    "format": "glb",
+    "resourceUrl": "/models/canine/skull.glb",
+    "unit": "m",
+    "scaleToMeters": 1,
+    "orientation": "+Y arriba (dorsal); +Z rostral/facial; cráneo canino",
+    "byteSize": 3581748,
+    "triangleCount": 150762,
+    "estimatedGpuBytes": 3580584,
+    "sha256": "455494e2084797a8a0f83dacd07572021d53bb5cee6c988b216e24b79098a789",
+    "license": {
+      "label": "Permiso de archivo no comprobado; cuarentena privada",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "reviewStatus": "pending",
+    "availability": "pending",
+    "meshMappings": [
+      {
+        "nodeId": "canine_skull",
+        "structureId": "canine:skull",
+        "layerId": "skeleton"
+      }
+    ],
+    "layers": [
+      {
+        "id": "skeleton",
+        "label": "Esqueleto"
+      }
+    ],
+    "specimen": {
+      "breed": "Canino mesocefálico mediano (Canis lupus familiaris)",
+      "sex": "No especificado",
+      "age": "Adulto"
+    }
+  },
+  {
     "id": "feline:thoracic-limb-model",
     "speciesId": "feline",
     "regionId": "thoracic-limb",
@@ -208,12 +249,12 @@
     "estimatedGpuBytes": 4063248,
     "sha256": "7d96e651bcca05975a498477dec9001e134ed10c2f3a1ec862a2b758b7d2aa88",
     "license": {
-      "label": "Open Educational 3D Feline Anatomy Project",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Permiso de archivo no comprobado; cuarentena privada",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "reviewStatus": "pending",
-    "availability": "available",
+    "availability": "pending",
     "meshMappings": [
       {
         "nodeId": "feline_scapula",
@@ -279,12 +320,12 @@
     "estimatedGpuBytes": 5315700,
     "sha256": "5f2f23be7a506d7e82e789aac28dd63005c57d0d74544a44e0251d2a83b5529b",
     "license": {
-      "label": "Open Educational 3D Feline Anatomy Project",
-      "verified": true,
-      "redistributionAllowed": true
+      "label": "Permiso de archivo no comprobado; cuarentena privada",
+      "verified": false,
+      "redistributionAllowed": false
     },
     "reviewStatus": "pending",
-    "availability": "available",
+    "availability": "pending",
     "meshMappings": [
       {
         "nodeId": "feline_skull",
@@ -438,6 +479,48 @@
       {
         "id": "tendons",
         "label": "Tendones"
+      }
+    ],
+    "specimen": null
+  },
+  {
+    "id": "feline:tavernier-skeleton",
+    "speciesId": "feline",
+    "regionId": "all",
+    "title": "Esqueleto felino — candidato fotogramétrico",
+    "purpose": "scientific",
+    "scope": "whole-body",
+    "format": "glb",
+    "resourceUrl": "/models/feline/tavernier-skeleton.glb",
+    "unit": "source-unverified",
+    "scaleToMeters": 1,
+    "physicalScaleVerified": false,
+    "orientation": "Orientación fuente conservada; ejes anatómicos pendientes",
+    "byteSize": 3765488,
+    "triangleCount": 74235,
+    "estimatedGpuBytes": 3763824,
+    "sha256": "c570679a9f450c32aeded26c7b459993e984ee6fb01677170e4cd7cdf9220783",
+    "license": {
+      "label": "CC BY-NC-SA 4.0 — atribución, uso no comercial, compartir igual e indicar cambios",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "attribution": "Cat Skeleton — Tavernier Amaury — CC BY-NC-SA 4.0 — Sketchfab",
+    "sourceUrl": "https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "reviewStatus": "pending",
+    "availability": "available",
+    "meshMappings": [],
+    "visualNodes": [
+      {
+        "nodeId": "chat",
+        "layerId": "skeleton"
+      }
+    ],
+    "layers": [
+      {
+        "id": "skeleton",
+        "label": "Esqueleto"
       }
     ],
     "specimen": null

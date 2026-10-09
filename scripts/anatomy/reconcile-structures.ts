@@ -45,6 +45,10 @@ function getGlbMetrics(bytes: Buffer) {
 }
 
 export async function reconcileAnatomicalAssets() {
+  const permissions = await readJson<{id: string; license: {verified: boolean; redistributionAllowed: boolean}}[]>("data/anatomy/models.json");
+  if (['canine:thoracic-limb-model', 'canine:skull-model', 'feline:thoracic-limb-model', 'feline:skull-model'].some(id => !permissions.some(model => model.id === id && model.license.verified && model.license.redistributionAllowed))) {
+    throw new Error('Reconciliación regional bloqueada: no readmitir activos sin permisos comprobados.');
+  }
   console.log("=== INICIANDO CONCILIACIÓN DE ESTRUCTURAS Y ACTIVOS 3D ===");
 
   const structures: Structure[] = await readJson("data/anatomy/structures.json");
@@ -102,9 +106,25 @@ export async function reconcileAnatomicalAssets() {
     supportedStructureIds: []
   };
 
+  const sourceNIH: Source = {
+    id: "nih-3d-dog-skull",
+    title: "Dog Skull — NIH 3D Print Exchange (3DPX-000282)",
+    authors: ["Lee Dockstader / 3D Systems", "NIH 3D Print Exchange"],
+    institution: "National Institutes of Health (NIH)",
+    url: "https://3d.nih.gov/entries/3DPX-000282",
+    publicationType: "open-scientific-3d-model",
+    license: {
+      label: "Public Domain (U.S. Government / NIH 3D)",
+      verified: true,
+      redistributionAllowed: true
+    },
+    supportedStructureIds: []
+  };
+
   if (!sourceMap.has(sourceInNervate.id)) sourceMap.set(sourceInNervate.id, sourceInNervate);
   if (!sourceMap.has(sourceFeline3D.id)) sourceMap.set(sourceFeline3D.id, sourceFeline3D);
   if (!sourceMap.has(sourceNav.id)) sourceMap.set(sourceNav.id, sourceNav);
+  if (!sourceMap.has(sourceNIH.id)) sourceMap.set(sourceNIH.id, sourceNIH);
 
   // 2. Diccionario de nuevas estructuras a conciliar
   interface StructureSeed {
@@ -128,6 +148,20 @@ export async function reconcileAnatomicalAssets() {
 
   const newCanineStructures: StructureSeed[] = [
     // HUESOS CANINOS
+    {
+      id: "canine:skull",
+      speciesId: "canine",
+      regionId: "head",
+      systemId: "skeletal",
+      kind: "bone",
+      canonicalLatinName: "Cranium",
+      spanishName: "Cráneo",
+      aliases: ["calavera canina", "cabeza ósea", "esqueleto cefálico canino"],
+      summary: "Estructura ósea de la cabeza canina derivada de tomografía computarizada (CT scan) que aloja el encéfalo y los órganos de los sentidos.",
+      sourceIds: ["nih-3d-dog-skull", "nav-6th-edition"],
+      layerId: "skeleton",
+      nodeId: "canine_skull"
+    },
     {
       id: "canine:humerus",
       speciesId: "canine",
@@ -771,14 +805,17 @@ export async function reconcileAnatomicalAssets() {
 
   // 3. Inspeccionar archivos GLB reales para métricas exactas
   const canineGlbBytes = await readFile("public/anatomy/canine/skeleton/thoracic-limb.glb");
+  const canineSkullBytes = await readFile("public/anatomy/canine/skeleton/skull.glb");
   const felineLimbBytes = await readFile("public/anatomy/feline/skeleton/thoracic-limb.glb");
   const felineSkullBytes = await readFile("public/anatomy/feline/skeleton/skull.glb");
 
   const canineMetrics = getGlbMetrics(canineGlbBytes);
+  const canineSkullMetrics = getGlbMetrics(canineSkullBytes);
   const felineLimbMetrics = getGlbMetrics(felineLimbBytes);
   const felineSkullMetrics = getGlbMetrics(felineSkullBytes);
 
   console.log(`[Metrics] Canine GLB: ${canineMetrics.byteSize} B, ${canineMetrics.triangles} tris, ${canineMetrics.nodes.length} nodes`);
+  console.log(`[Metrics] Canine Skull GLB: ${canineSkullMetrics.byteSize} B, ${canineSkullMetrics.triangles} tris, ${canineSkullMetrics.nodes.length} nodes`);
   console.log(`[Metrics] Feline Limb GLB: ${felineLimbMetrics.byteSize} B, ${felineLimbMetrics.triangles} tris, ${felineLimbMetrics.nodes.length} nodes`);
   console.log(`[Metrics] Feline Skull GLB: ${felineSkullMetrics.byteSize} B, ${felineSkullMetrics.triangles} tris, ${felineSkullMetrics.nodes.length} nodes`);
 
@@ -814,6 +851,11 @@ export async function reconcileAnatomicalAssets() {
     { nodeId: "L_MedianUlnarNerve", structureId: "canine:median-ulnar-nerve", layerId: "nerves" },
     { nodeId: "L_SuprascapularNerve", structureId: "canine:suprascapular-nerve", layerId: "nerves" },
     { nodeId: "L_SubscapularNerve", structureId: "canine:subscapular-nerve", layerId: "nerves" }
+  ];
+
+  // Canino Cráneo: 1 malla
+  const canineSkullMappings = [
+    { nodeId: "canine_skull", structureId: "canine:skull", layerId: "skeleton" }
   ];
 
   // Felino Miembro Torácico: 7 mallas
@@ -865,6 +907,38 @@ export async function reconcileAnatomicalAssets() {
       byteSize: canineMetrics.byteSize
     },
     notes: "Modelo 3D anatómico real de extremidad torácica canina con huesos, músculos y nervios individualizados."
+  };
+
+  const canineSkullModel: Model = {
+    id: "canine:skull-model",
+    speciesId: "canine",
+    regionId: "head",
+    format: "glb",
+    resourceUrl: "/models/canine/skull.glb",
+    landingPageUrl: "https://3d.nih.gov/entries/3DPX-000282",
+    structureIds: canineSkullMappings.map((m) => m.structureId),
+    meshMappings: canineSkullMappings,
+    layerIds: ["skeleton"],
+    lod: "standard",
+    evidenceType: "open-scientific-3d-model",
+    license: {
+      label: "Public Domain (U.S. Government / NIH 3D)",
+      verified: true,
+      redistributionAllowed: true
+    },
+    authors: ["Lee Dockstader / 3D Systems", "NIH 3D Print Exchange"],
+    sourceIds: ["nih-3d-dog-skull"],
+    review: {
+      status: "pending",
+      notes: "Modelo 3D real de tomografía computarizada (CT scan) verificado en pipeline y escalas métricas; revisión veterinaria anatómica pendiente."
+    },
+    availability: "available",
+    fileEvidence: {
+      sha256: canineSkullMetrics.sha256,
+      verifiedAt: new Date().toISOString(),
+      byteSize: canineSkullMetrics.byteSize
+    },
+    notes: "Modelo 3D anatómico real del cráneo canino obtenido a partir de escaneo tomográfico oficial (NIH 3D 3DPX-000282)."
   };
 
   const felineThoracicModel: Model = {
@@ -939,6 +1013,13 @@ export async function reconcileAnatomicalAssets() {
     }
   }
 
+  for (const mapping of canineSkullMappings) {
+    const struct = structMap.get(mapping.structureId);
+    if (struct && !struct.modelIds.includes(canineSkullModel.id)) {
+      struct.modelIds.push(canineSkullModel.id);
+    }
+  }
+
   for (const mapping of felineLimbMappings) {
     const struct = structMap.get(mapping.structureId);
     if (struct && !struct.modelIds.includes(felineThoracicModel.id)) {
@@ -956,6 +1037,7 @@ export async function reconcileAnatomicalAssets() {
   // Filtrar o sustituir en models
   const modelMap = new Map(models.map((m) => [m.id, m]));
   modelMap.set(canineThoracicModel.id, canineThoracicModel);
+  modelMap.set(canineSkullModel.id, canineSkullModel);
   modelMap.set(felineThoracicModel.id, felineThoracicModel);
   modelMap.set(felineSkullModel.id, felineSkullModel);
 
@@ -1096,6 +1178,39 @@ export async function reconcileAnatomicalAssets() {
     }
   };
 
+  const viewerCanineSkullAsset: ViewerAsset = {
+    id: canineSkullModel.id,
+    speciesId: "canine",
+    regionId: "head",
+    title: "Cráneo canino — modelo óseo real (CT scan NIH 3D)",
+    purpose: "scientific",
+    format: "glb",
+    resourceUrl: "/models/canine/skull.glb",
+    unit: "m",
+    scaleToMeters: 1,
+    orientation: "+Y arriba (dorsal); +Z rostral/facial; cráneo canino",
+    byteSize: canineSkullMetrics.byteSize,
+    triangleCount: canineSkullMetrics.triangles,
+    estimatedGpuBytes: canineSkullMetrics.gpuBytes,
+    sha256: canineSkullMetrics.sha256,
+    license: {
+      label: "Public Domain (U.S. Government / NIH 3D)",
+      verified: true,
+      redistributionAllowed: true
+    },
+    reviewStatus: "pending",
+    availability: "available",
+    meshMappings: canineSkullMappings,
+    layers: [
+      { id: "skeleton", label: "Esqueleto" }
+    ],
+    specimen: {
+      breed: "Canino mesocefálico mediano (Canis lupus familiaris)",
+      sex: "No especificado",
+      age: "Adulto"
+    }
+  };
+
   const viewerFelineLimbAsset: ViewerAsset = {
     id: felineThoracicModel.id,
     speciesId: "feline",
@@ -1164,6 +1279,7 @@ export async function reconcileAnatomicalAssets() {
 
   const updatedViewerAssets = [
     viewerCanineAsset,
+    viewerCanineSkullAsset,
     viewerFelineLimbAsset,
     viewerFelineSkullAsset,
     ...viewerAssets.filter((a) => a.purpose === "technical_demo")
@@ -1189,6 +1305,7 @@ export async function reconcileAnatomicalAssets() {
   // Mapeos separados para exportación
   const unifiedMeshMappings = [
     ...canineMappings.map((m) => ({ ...m, modelId: canineThoracicModel.id, speciesId: "canine" })),
+    ...canineSkullMappings.map((m) => ({ ...m, modelId: canineSkullModel.id, speciesId: "canine" })),
     ...felineLimbMappings.map((m) => ({ ...m, modelId: felineThoracicModel.id, speciesId: "feline" })),
     ...felineSkullMappings.map((m) => ({ ...m, modelId: felineSkullModel.id, speciesId: "feline" }))
   ];

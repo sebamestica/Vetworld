@@ -3,7 +3,7 @@ import { viewerAssets } from "../../src/modules/viewer/assets";
 import { viewerAssetSchema, VIEWER_BUDGET } from "../../src/modules/viewer/manifest";
 import { meshPresentation } from "../../src/modules/viewer/visibility";
 import { readBoundedBody, safeResourceUri, validateLoadedScene } from "../../src/modules/viewer/loading";
-import { Group, Mesh, BoxGeometry, MeshStandardMaterial } from "three";
+import { Group, Mesh, BoxGeometry, MeshStandardMaterial, Texture } from "three";
 
 const asset = viewerAssets.find(a => a.id === "canine-technical-demo")!;
 
@@ -55,5 +55,12 @@ describe("carga limitada y recursos del visor", () => {
     geometry.getAttribute("position").setX(0, NaN);
     expect(() => validateLoadedScene(scene, mapped)).toThrow("no finitas");
     geometry.dispose(); mesh.material.dispose();
+  });
+  it('rechaza texturas que exceden el límite de dimensiones', () => {
+    const scene = new Group(), material = new MeshStandardMaterial();
+    material.map = new Texture({width: 8192, height: 8192});
+    const mesh = new Mesh(new BoxGeometry(), material); mesh.name = 'demo-box'; scene.add(mesh);
+    expect(() => validateLoadedScene(scene, {...asset, triangleCount: 12, meshMappings: [asset.meshMappings[1]]})).toThrow('Textura excede');
+    mesh.geometry.dispose(); material.map.dispose(); material.dispose();
   });
 });

@@ -1,4 +1,4 @@
-import { Mesh, Object3D, Box3 } from "three";
+import { Mesh, Object3D, Box3, Texture } from "three";
 import { VIEWER_BUDGET, type ViewerAsset } from "./manifest";
 
 export async function readBoundedBody(response: Response, expectedBytes: number): Promise<ArrayBuffer> {
@@ -37,9 +37,21 @@ export function validateLoadedScene(scene: Object3D, asset: ViewerAsset) {
   let triangles = 0, gpuBytes = 0;
   const buffers = new Set<ArrayBufferLike>();
   const nodes = new Map<string, number>();
+  const textures = new Set<Texture>();
+  let textureBytes = 0;
   scene.traverse((object) => {
     if (!(object instanceof Mesh)) return;
     nodes.set(object.name, (nodes.get(object.name) ?? 0) + 1);
+    for (const material of Array.isArray(object.material) ? object.material : [object.material]) {
+      for (const value of Object.values(material)) if (value instanceof Texture && !textures.has(value)) {
+        textures.add(value);
+        const image = value.image as {width?: number; height?: number} | undefined;
+        if (image?.width && image.height) {
+          if (image.width > 4096 || image.height > 4096) throw new Error("Textura excede dimensiones admitidas");
+          textureBytes += Math.ceil(image.width * image.height * 4 * 4 / 3);
+        }
+      }
+    }
     const position = object.geometry.getAttribute("position");
     if (!position || !Number.isFinite(position.count)) throw new Error("Malla sin posiciones válidas");
     triangles += (object.geometry.index?.count ?? position.count) / 3;
@@ -51,8 +63,9 @@ export function validateLoadedScene(scene: Object3D, asset: ViewerAsset) {
     for (let i = 0; i < position.count; i++) if (![position.getX(i), position.getY(i), position.getZ(i)].every(Number.isFinite)) throw new Error("Posiciones no finitas");
   });
   if (triangles > VIEWER_BUDGET.triangles || triangles !== asset.triangleCount) throw new Error("Presupuesto real de triángulos inválido");
-  if (gpuBytes > VIEWER_BUDGET.gpuBytes) throw new Error("Presupuesto real de buffers inválido");
+  if (gpuBytes + textureBytes > VIEWER_BUDGET.gpuBytes) throw new Error("Presupuesto real de buffers y texturas inválido");
   for (const mapping of asset.meshMappings) if (nodes.get(mapping.nodeId) !== 1) throw new Error("Mapping de nodo ausente o ambiguo");
+  for (const node of asset.visualNodes ?? []) if (nodes.get(node.nodeId) !== 1) throw new Error("Nodo visual ausente o ambiguo");
   const bounds = new Box3().setFromObject(scene);
   if (bounds.isEmpty() || ![...bounds.min.toArray(), ...bounds.max.toArray()].every(Number.isFinite)) throw new Error("Límites espaciales inválidos");
 }

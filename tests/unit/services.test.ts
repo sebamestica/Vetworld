@@ -36,7 +36,8 @@ describe('Servicios del catálogo real', () => {
     expect(stats.structures).toBe(catalog.structures.length);
     expect(stats.incompleteRecords).toBe(catalog.structures.filter(row => row.completeness === 'partial').length);
     expect(stats.structuresScientificallyVerified).toBe(0);
-    expect(stats.modelsAvailable).toBe(3);
+    expect(stats.modelsAvailable).toBe(1);
+    expect(catalog.models.filter(model => model.availability === 'available').map(model => model.id)).toEqual(['feline:tavernier-skeleton']);
     expect(catalogService.region('neck').contentAvailability).toBe('pending');
     expect(catalogService.layers().some(row => row.available)).toBe(true);
     expect(catalogService.layers().some(row => !row.available)).toBe(true);
