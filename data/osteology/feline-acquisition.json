@@ -1,0 +1,27 @@
+{
+    "id":  "feline:tavernier-cat-skeleton",
+    "speciesId":  "feline",
+    "title":  "Cat Skeleton",
+    "author":  "Tavernier Amaury",
+    "sourceUrl":  "https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602",
+    "originalArchive":  "workbench/incoming/feline/originals/cat-skeleton.zip",
+    "sha256":  "eeeaf7353db4b7d7befa0432234eba37330fd368c73f055cbdeade8517cd112e",
+    "provenanceEvidence":  "user_confirmed_download_page_and_prior_provider_metadata",
+    "license":  {
+                    "spdx":  "CC-BY-NC-SA-4.0",
+                    "url":  "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                    "conditions":  [
+                                       "atribución",
+                                       "uso no comercial",
+                                       "compartir adaptaciones bajo la misma licencia",
+                                       "indicar modificaciones"
+                                   ]
+                },
+    "attribution":  "Cat Skeleton — Tavernier Amaury — CC BY-NC-SA 4.0 — Sketchfab",
+    "reviewStatus":  "pending",
+    "physicalScaleVerified":  false,
+    "individualBonesIdentified":  0,
+    "webAvailable":  false,
+    "meshCount":  1,
+    "triangles":  74235
+}
