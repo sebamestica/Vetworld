@@ -160,9 +160,12 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
         const hash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
         if (hash !== asset.sha256) throw new Error("Integridad del archivo inválida");
         const manager = new LoadingManager();
+        let resourceFailed = false;
+        manager.onError = () => { resourceFailed = true; };
         manager.setURLModifier((url) => safeResourceUri(url, window.location.origin));
         const gltf = await new GLTFLoader(manager).parseAsync(bytes, `${window.location.origin}${asset.resourceUrl.slice(0, asset.resourceUrl.lastIndexOf("/") + 1)}`);
         loaded = gltf.scene;
+        if (resourceFailed) throw new Error('No se pudieron cargar las texturas del modelo');
         validateLoadedScene(loaded, asset);
         const originals = new Set<Material>();
         loaded.traverse((object) => {

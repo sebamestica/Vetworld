@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 test('felino corporal: carga, capas, ficha sin selección falsa y canino no disponible', async ({page}) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
+  page.on('console', message => { if (message.type() === 'error' && /GLTFLoader|Content Security Policy|Fetch API cannot load blob/.test(message.text())) errors.push(message.text()); });
   await page.goto('/');
   await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
   const portrait = page.getByRole('button', {name: 'Continuar en vertical'});

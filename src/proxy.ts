@@ -8,7 +8,8 @@ export function proxy(request: NextRequest) {
     `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'${development ? " 'unsafe-eval'" : ''}`,
     "style-src 'self' 'unsafe-inline'", // R3F canvas sizing and controlled React styles.
     "img-src 'self' blob: data:", "font-src 'self'", "media-src 'self' blob:",
-    `connect-src 'self'${development ? ' ws: wss:' : ''}`,
+    // ImageBitmapLoader fetches embedded GLB images through same-origin blob URLs.
+    `connect-src 'self' blob:${development ? ' ws: wss:' : ''}`,
     "worker-src 'self' blob:", "object-src 'none'", "base-uri 'self'", "form-action 'self'", "frame-ancestors 'none'",
   ].join('; ');
   const headers = new Headers(request.headers);
