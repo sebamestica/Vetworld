@@ -15,7 +15,6 @@
     },
     "supportedStructureIds": [
       "feline:carpus",
-      "feline:humerus",
       "feline:mandible",
       "feline:metacarpus",
       "feline:phalanges",
@@ -127,7 +126,9 @@
       "feline:scapula",
       "feline:skull",
       "feline:teeth",
-      "feline:ulna"
+      "feline:ulna",
+      "feline:femur",
+      "feline:tibia"
     ]
   },
   {
@@ -183,7 +184,6 @@
       "canine:triceps-brachii-medial-head",
       "feline:biceps-brachii",
       "feline:biceps-origin-tendon",
-      "feline:humerus",
       "feline:musculocutaneous-nerve",
       "feline:scapula"
     ]
@@ -202,5 +202,68 @@
       "redistributionAllowed": true
     },
     "supportedStructureIds": []
+  },
+  {
+    "id": "reighard-jennings-cat-1901",
+    "title": "Anatomy of the Cat",
+    "authors": [
+      "Jacob Reighard",
+      "H. S. Jennings"
+    ],
+    "year": 1901,
+    "url": "https://www.gutenberg.org/cache/epub/58394/pg58394-images.html",
+    "publicationType": "historical-primary-anatomical-monograph",
+    "license": {
+      "label": "Project Gutenberg: uso bajo sus términos; comprobar jurisdicción antes de redistribuir edición o figuras",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "feline:humerus",
+      "feline:scapula",
+      "feline:femur",
+      "feline:tibia"
+    ]
+  },
+  {
+    "id": "mahoney-feline-imaging-2012",
+    "title": "Musculoskeletal Imaging in the Cat: What’s normal? What’s abnormal?",
+    "authors": [
+      "Paul Mahoney"
+    ],
+    "year": 2012,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148912/",
+    "doi": "10.1177/1098612X11432823",
+    "publicationType": "review-article",
+    "license": {
+      "label": "Copyright ISFM/AAFP 2012; acceso libre no acredita licencia de redistribución",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "feline:humerus",
+      "feline:scapula"
+    ]
+  },
+  {
+    "id": "el-ghazali-el-behery-pelvic-2018",
+    "title": "Comparative morphological interpretations on the bones of the pelvic limb of New Zealand rabbit (Oryctolagus cuniculus) and domestic cat (Felis domestica)",
+    "authors": [
+      "Hanaa Mohamed El-Ghazali",
+      "Eman Ismail El-behery"
+    ],
+    "year": 2018,
+    "url": "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+    "doi": "10.5455/javar.2018.e292",
+    "publicationType": "primary-comparative-anatomical-study",
+    "license": {
+      "label": "CC BY 4.0 explícita en p.410 del PDF editorial; requiere atribución y declaración de modificaciones",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "feline:femur",
+      "feline:tibia"
+    ]
   }
 ]

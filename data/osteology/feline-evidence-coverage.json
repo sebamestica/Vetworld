@@ -1,0 +1,2943 @@
+{
+  "speciesId": "feline",
+  "assetId": "feline:tavernier-skeleton",
+  "sourceSha256": "c570679a9f450c32aeded26c7b459993e984ee6fb01677170e4cd7cdf9220783",
+  "expectedSpecimenBoneCount": null,
+  "anatomicallyAcceptedBones": 0,
+  "referenceEntryCount": 323,
+  "rows": [
+    {
+      "referenceId": "feline:reference:head:midline:skull",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:occipital",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:sphenoid",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:ethmoid",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:vomer",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:basioccipital",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:supraoccipital",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:interparietal",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:basisphenoid",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:presphenoid",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:frontal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:parietal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:temporal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:nasal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:lacrimal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxilla",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:incisive",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:palatine",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:zygomatic",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:pterygoid",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:ventral-concha",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandible",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:exoccipital",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:temporal-squamous",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:temporal-petrous",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:temporal-tympanic",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:ossicles",
+      "kind": "group",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:malleus",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:incus",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:stapes",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:frontal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:parietal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:temporal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:nasal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:lacrimal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxilla",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:incisive",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:palatine",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:zygomatic",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:pterygoid",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:ventral-concha",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandible",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:exoccipital",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:temporal-squamous",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:temporal-petrous",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:temporal-tympanic",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:ossicles",
+      "kind": "group",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:malleus",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:incus",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:stapes",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:hyoid",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:basihyoid",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:ceratohyoid",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:thyrohyoid",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:epihyoid",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:stylohyoid",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:tympanohyoid",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:ceratohyoid",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:thyrohyoid",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:epihyoid",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:stylohyoid",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:tympanohyoid",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:adult-teeth",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-incisor-1",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-incisor-2",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-incisor-3",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-canine-1",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-premolar-2",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-premolar-3",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-premolar-4",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:maxillary-molar-1",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandibular-incisor-1",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandibular-incisor-2",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandibular-incisor-3",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandibular-canine-1",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandibular-premolar-3",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandibular-premolar-4",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:left:mandibular-molar-1",
+      "kind": "tooth",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-incisor-1",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-incisor-2",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-incisor-3",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-canine-1",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-premolar-2",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-premolar-3",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-premolar-4",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:maxillary-molar-1",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandibular-incisor-1",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandibular-incisor-2",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandibular-incisor-3",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandibular-canine-1",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandibular-premolar-3",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandibular-premolar-4",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:right:mandibular-molar-1",
+      "kind": "tooth",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:head:midline:deciduous-series",
+      "kind": "variable_series",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:cervical-vertebrae",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:c-1",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:c-2",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:c-3",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:c-4",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:c-5",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:c-6",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:c-7",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:thoracic-vertebrae",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-1",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-2",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-3",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-4",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-5",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-6",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-7",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-8",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-9",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-10",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-11",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-12",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:t-13",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:lumbar-vertebrae",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:l-1",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:l-2",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:l-3",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:l-4",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:l-5",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:l-6",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:l-7",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sacral-region",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sacrum",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:s-1",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:s-2",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:s-3",
+      "kind": "anatomical_component",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:tail",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:caudal-series",
+      "kind": "variable_series",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:hemal-series",
+      "kind": "variable_series",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:thorax",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-1",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-2",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-3",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-4",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-5",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-6",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-7",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-8",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-9",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-10",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-11",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-12",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:left:rib-13",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-1",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-2",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-3",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-4",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-5",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-6",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-7",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-8",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-9",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-10",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-11",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-12",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:right:rib-13",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-1",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-2",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-3",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-4",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-5",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-6",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-7",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:axial:midline:sternebra-8",
+      "kind": "bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:thoracic",
+      "kind": "group",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:scapula",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": "feline:scapula",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:humerus",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": "feline:humerus",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:radius",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:ulna",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:clavicle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-intermedioradial",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-ulnar",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-accessory",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-1",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-2",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-3",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-4",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-component-radial",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:carpal-component-intermediate",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:metacarpal-1",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-1-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-1-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:metacarpal-2",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-2-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-2-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-2-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:metacarpal-3",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-3-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-3-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-3-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:metacarpal-4",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-4-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-4-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-4-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:metacarpal-5",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-5-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-5-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digit-5-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:supinator",
+      "kind": "conditional_bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:abductor",
+      "kind": "conditional_bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digital-proximal-series",
+      "kind": "variable_series",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:left:digital-dorsal-series",
+      "kind": "variable_series",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:pelvic",
+      "kind": "group",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:coxal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:femur",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": "feline:femur",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:patella",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tibia",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": "feline:tibia",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:fibula",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:ilium",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:ischium",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:pubis",
+      "kind": "anatomical_component",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tarsal-talus",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tarsal-calcaneus",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tarsal-central",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tarsal-1",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tarsal-2",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tarsal-3",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:tarsal-4",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:metatarsal-2",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-2-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-2-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-2-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:metatarsal-3",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-3-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-3-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-3-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:metatarsal-4",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-4-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-4-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-4-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:metatarsal-5",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-5-proximal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-5-middle",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-5-distal",
+      "kind": "bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:metatarsal-1",
+      "kind": "conditional_bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digit-1-variant",
+      "kind": "variable_series",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:gastrocnemius-medial",
+      "kind": "conditional_bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:gastrocnemius-lateral",
+      "kind": "conditional_bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:popliteus",
+      "kind": "conditional_bone",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digital-proximal-series",
+      "kind": "variable_series",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:left:digital-dorsal-series",
+      "kind": "variable_series",
+      "side": "left",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:thoracic",
+      "kind": "group",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:scapula",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": "feline:scapula",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:humerus",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": "feline:humerus",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:radius",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:ulna",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:clavicle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-intermedioradial",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-ulnar",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-accessory",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-1",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-2",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-3",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-4",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-component-radial",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:carpal-component-intermediate",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:metacarpal-1",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-1-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-1-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:metacarpal-2",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-2-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-2-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-2-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:metacarpal-3",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-3-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-3-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-3-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:metacarpal-4",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-4-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-4-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-4-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:metacarpal-5",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-5-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-5-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digit-5-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:supinator",
+      "kind": "conditional_bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:abductor",
+      "kind": "conditional_bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digital-proximal-series",
+      "kind": "variable_series",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:thoracic-limb:right:digital-dorsal-series",
+      "kind": "variable_series",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:pelvic",
+      "kind": "group",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:coxal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:femur",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": "feline:femur",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:patella",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tibia",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": "feline:tibia",
+      "evidenceStatus": "curated_partial",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:fibula",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:ilium",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:ischium",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:pubis",
+      "kind": "anatomical_component",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tarsal-talus",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tarsal-calcaneus",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tarsal-central",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tarsal-1",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tarsal-2",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tarsal-3",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:tarsal-4",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:metatarsal-2",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-2-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-2-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-2-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:metatarsal-3",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-3-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-3-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-3-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:metatarsal-4",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-4-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-4-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-4-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:metatarsal-5",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-5-proximal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-5-middle",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-5-distal",
+      "kind": "bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:metatarsal-1",
+      "kind": "conditional_bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digit-1-variant",
+      "kind": "variable_series",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:gastrocnemius-medial",
+      "kind": "conditional_bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:gastrocnemius-lateral",
+      "kind": "conditional_bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:popliteus",
+      "kind": "conditional_bone",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digital-proximal-series",
+      "kind": "variable_series",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:pelvic-limb:right:digital-dorsal-series",
+      "kind": "variable_series",
+      "side": "right",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:accessory:midline:accessory",
+      "kind": "group",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    },
+    {
+      "referenceId": "feline:reference:accessory:midline:os-penis",
+      "kind": "conditional_bone",
+      "side": "midline",
+      "bibliographicRecordId": null,
+      "evidenceStatus": "not_curated",
+      "geometryStatus": "not_identified",
+      "reviewStatus": "pending"
+    }
+  ],
+  "pilot": [
+    {
+      "proposalId": "humeral-shaft-surface",
+      "proposedStructureId": "feline:humerus",
+      "sourceFaces": 350,
+      "side": "unknown",
+      "status": "private_roi_requires_review",
+      "publicAvailable": false
+    },
+    {
+      "proposalId": "femoral-shaft-surface",
+      "proposedStructureId": "feline:femur",
+      "sourceFaces": 369,
+      "side": "unknown",
+      "status": "private_roi_requires_review",
+      "publicAvailable": false
+    },
+    {
+      "proposalId": "tibial-shaft-surface",
+      "proposedStructureId": "feline:tibia",
+      "sourceFaces": 562,
+      "side": "unknown",
+      "status": "private_roi_requires_review",
+      "publicAvailable": false
+    }
+  ]
+}

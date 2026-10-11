@@ -1,0 +1,173 @@
+{
+  "date": "2026-10-10",
+  "purpose": "Contenido bibliográfico del piloto felino; no identificación de mallas ni revisión veterinaria humana.",
+  "records": [
+    {
+      "id": "feline:scapula",
+      "canonicalLatinName": "Scapula",
+      "spanishName": "Escápula",
+      "regionId": "shoulder",
+      "aliases": ["scapula", "escapula"],
+      "summary": "Hueso plano de la cintura torácica felina.",
+      "detailedDescription": "La espina divide la cara lateral en fosas supraespinosa e infraespinosa. La cavidad glenoidea articula con el húmero. El proceso suprahamato se proyecta caudalmente; el proceso coracoides se reconoce mejor desde medial.",
+      "morphology": "Contorno triangular; fosa subescapular en la cara medial.",
+      "location": "Lateral al tórax craneal, cubierta por músculos.",
+      "landmarks": ["Spina scapulae — espina escapular", "Fossa supraspinata — fosa supraespinosa", "Fossa infraspinata — fosa infraespinosa", "Fossa subscapularis — fosa subescapular", "Acromion — acromion", "Processus suprahamatus — proceso suprahamato", "Cavitas glenoidalis — cavidad glenoidea", "Tuberculum supraglenoidale — tubérculo supraglenoideo", "Processus coracoideus — proceso coracoides"],
+      "function": [],
+      "sourceIds": ["nav-6th-edition", "reighard-jennings-cat-1901", "mahoney-feline-imaging-2012"],
+      "fieldEvidence": [
+        {"field": "canonicalLatinName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.18; Scapula; workbench/references/nav6.txt líneas 2722–2746", "claim": "Nombre canónico y terminología escapular."},
+        {"field": "spanishName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.18; Scapula", "claim": "Traducción editorial al español del nombre latino."},
+        {"field": "aliases", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.18; Scapula", "claim": "Variantes ortográficas de búsqueda; no estructuras adicionales."},
+        {"field": "summary", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.62–64, Scapula, Figs.44–45", "claim": "Descripción general escapular."},
+        {"field": "detailedDescription", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.63–64, Scapula, Figs.44–45", "claim": "Fosas y articulación glenoidea."},
+        {"field": "detailedDescription", "sourceId": "mahoney-feline-imaging-2012", "locator": "The limbs, Figure 15, texto primario indexado", "claim": "Suprahamato caudal; coracoides medial."},
+        {"field": "morphology", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.62–63, Scapula", "claim": "Forma y superficie medial."},
+        {"field": "location", "sourceId": "reighard-jennings-cat-1901", "locator": "p.62, Scapula, párrafo inicial", "claim": "Situación torácica."},
+        {"field": "landmarks", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.18; Scapula", "claim": "Nombres de los accidentes; Processus suprahamatus marcado fe."},
+        {"field": "landmarks", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.62–64, Figs.44–45; terminología normalizada con NAV", "claim": "Accidentes descritos en gato; cotejo histórico auxiliar."},
+        {"field": "landmarks", "sourceId": "mahoney-feline-imaging-2012", "locator": "Figure 15", "claim": "Coracoides y suprahamato felinos."}
+      ],
+      "missingFields": ["function", "attachments", "vascularSupply", "speciesDifferences"],
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "feline:humerus",
+      "canonicalLatinName": "Humerus",
+      "spanishName": "Húmero",
+      "regionId": "brachium",
+      "aliases": ["humerus", "humero"],
+      "summary": "Hueso del brazo felino, entre escápula y antebrazo.",
+      "detailedDescription": "Articula proximalmente con la escápula y distalmente con radio y ulna. El foramen supracondilar medial transmite la arteria braquial y el nervio mediano. El gato carece de foramen supratroclear.",
+      "morphology": "Cuerpo casi cilíndrico, con extremos ensanchados.",
+      "location": "Región braquial de la extremidad torácica.",
+      "landmarks": ["Caput humeri — cabeza humeral", "Tuberculum majus — tubérculo mayor", "Tuberculum minus — tubérculo menor", "Sulcus intertubercularis — surco intertubercular", "Capitulum humeri — capítulo humeral", "Trochlea humeri — tróclea humeral", "Epicondylus medialis — epicóndilo medial", "Epicondylus lateralis — epicóndilo lateral", "Foramen supracondylare — foramen supracondilar"],
+      "function": [],
+      "sourceIds": ["nav-6th-edition", "reighard-jennings-cat-1901", "mahoney-feline-imaging-2012"],
+      "fieldEvidence": [
+        {"field": "canonicalLatinName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, pp.18–19; Skeleton brachii, Humerus", "claim": "Nombre y región braquial."},
+        {"field": "spanishName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.18; Humerus", "claim": "Traducción editorial al español."},
+        {"field": "aliases", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.18; Humerus", "claim": "Variantes ortográficas para búsqueda."},
+        {"field": "summary", "sourceId": "reighard-jennings-cat-1901", "locator": "p.64, Humerus, párrafo inicial", "claim": "Posición braquial."},
+        {"field": "detailedDescription", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.64–67, Humerus, Figs.47–48", "claim": "Articulaciones de ambos extremos."},
+        {"field": "detailedDescription", "sourceId": "mahoney-feline-imaging-2012", "locator": "The limbs, texto junto a Figure 16, primario indexado", "claim": "Contenido supracondilar; ausencia supratroclear."},
+        {"field": "morphology", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.64 y66, Humerus", "claim": "Configuración general."},
+        {"field": "location", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.18; Skeleton brachii", "claim": "Jerarquía regional."},
+        {"field": "landmarks", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, pp.18–19; Humerus; Foramen supracondylare (fe)", "claim": "Terminología normalizada."},
+        {"field": "landmarks", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.65–67, Figs.47–48", "claim": "Accidentes felinos cotejados con NAV."},
+        {"field": "landmarks", "sourceId": "mahoney-feline-imaging-2012", "locator": "The limbs, Figures 16–17", "claim": "Foramen y epicóndilos felinos."}
+      ],
+      "missingFields": ["function", "attachments", "vascularSupply", "speciesDifferences"],
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "feline:femur",
+      "canonicalLatinName": "Os femoris",
+      "spanishName": "Fémur",
+      "regionId": "pelvic-limb",
+      "aliases": ["Femur", "femur"],
+      "summary": "Hueso del muslo felino.",
+      "detailedDescription": "La cabeza articula con el acetábulo. Distalmente presenta superficies para tibia y patella. El estudio moderno describe una cresta intertrocantérica entre los trocánteres mayor y menor; no identifica tercer trocánter en su muestra felina.",
+      "morphology": "Cuerpo casi cilíndrico con extremos ensanchados.",
+      "location": "Entre cadera y rodilla, en la extremidad pélvica.",
+      "landmarks": ["Caput ossis femoris — cabeza femoral", "Fovea capitis — fóvea de la cabeza", "Collum ossis femoris — cuello femoral", "Trochanter major — trocánter mayor", "Trochanter minor — trocánter menor", "Fossa trochanterica — fosa trocantérica", "Crista intertrochanterica — cresta intertrocantérica", "Condylus medialis — cóndilo medial", "Condylus lateralis — cóndilo lateral", "Fossa intercondylaris — fosa intercondilar", "Trochlea ossis femoris — tróclea femoral"],
+      "function": [],
+      "sourceIds": ["nav-6th-edition", "reighard-jennings-cat-1901", "el-ghazali-el-behery-pelvic-2018"],
+      "fieldEvidence": [
+        {"field": "canonicalLatinName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.21; Skeleton femoris; Os femoris [Femur]", "claim": "Nombre canónico y alternativa NAV."},
+        {"field": "spanishName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.21; Os femoris [Femur]", "claim": "Traducción editorial al español."},
+        {"field": "aliases", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.21; Os femoris [Femur]", "claim": "Alternativa latina y variante de búsqueda."},
+        {"field": "summary", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.21; Skeleton femoris", "claim": "Identidad regional."},
+        {"field": "detailedDescription", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.79–80, Femur, Fig.56", "claim": "Superficies articulares."},
+        {"field": "detailedDescription", "sourceId": "el-ghazali-el-behery-pelvic-2018", "locator": "p.412, Femur; Fig.3B,D,G (gato), p.414", "claim": "Cresta y tercer trocánter en la muestra."},
+        {"field": "morphology", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.79–80, Femur", "claim": "Forma general."},
+        {"field": "location", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.79–80, Femur", "claim": "Situación entre articulaciones."},
+        {"field": "landmarks", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.21; Os femoris", "claim": "Nombres latinos normalizados."},
+        {"field": "landmarks", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.79–80, Fig.56; excepto cresta intertrocantérica contrastada con fuente moderna", "claim": "Accidentes de la descripción histórica felina."},
+        {"field": "landmarks", "sourceId": "el-ghazali-el-behery-pelvic-2018", "locator": "pp.412–415, Femur; Fig.3B,D,G,K (gato)", "claim": "Contraste de accidentes felinos."}
+      ],
+      "missingFields": ["function", "attachments", "vascularSupply", "speciesDifferences"],
+      "reviewStatus": "pending"
+    },
+    {
+      "id": "feline:tibia",
+      "canonicalLatinName": "Tibia",
+      "spanishName": "Tibia",
+      "regionId": "pelvic-limb",
+      "aliases": ["tibia"],
+      "summary": "Hueso de la pierna felina, medial a la fíbula.",
+      "detailedDescription": "En la muestra felina del estudio moderno, tibia y fíbula están separadas a lo largo de la pierna. Proximalmente se reconocen cóndilos medial y lateral, eminencia intercondilar y tuberosidad tibial. Distalmente presenta maléolo medial.",
+      "morphology": "Cuerpo de sección triangular; el borde craneal forma la cresta tibial.",
+      "location": "Entre rodilla y tarso, en la extremidad pélvica.",
+      "landmarks": ["Condylus medialis — cóndilo medial", "Condylus lateralis — cóndilo lateral", "Eminentia intercondylaris — eminencia intercondilar", "Tuberositas tibiae — tuberosidad tibial", "Margo cranialis — borde craneal", "Malleolus medialis — maléolo medial"],
+      "function": [],
+      "sourceIds": ["nav-6th-edition", "reighard-jennings-cat-1901", "el-ghazali-el-behery-pelvic-2018"],
+      "fieldEvidence": [
+        {"field": "canonicalLatinName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.22; Skeleton cruris; Tibia", "claim": "Nombre canónico y región."},
+        {"field": "spanishName", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.22; Tibia", "claim": "Nombre compartido por latín y español."},
+        {"field": "aliases", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.22; Tibia", "claim": "Forma de búsqueda en minúsculas."},
+        {"field": "summary", "sourceId": "reighard-jennings-cat-1901", "locator": "pp.80–82, Tibia/Fibula, Fig.57", "claim": "Posición relativa en la pierna."},
+        {"field": "detailedDescription", "sourceId": "el-ghazali-el-behery-pelvic-2018", "locator": "p.415, Tibia and fibula; Fig.4B,D,E,G (gato), p.416", "claim": "Separación y accidentes de la muestra felina."},
+        {"field": "morphology", "sourceId": "el-ghazali-el-behery-pelvic-2018", "locator": "p.415, Tibia and fibula; Fig.4B,D (gato)", "claim": "Sección y cresta."},
+        {"field": "location", "sourceId": "reighard-jennings-cat-1901", "locator": "p.80, Tibia, párrafo inicial", "claim": "Situación regional."},
+        {"field": "landmarks", "sourceId": "nav-6th-edition", "locator": "OSTEOLOGIA, p.22; Tibia", "claim": "Terminología normalizada."},
+        {"field": "landmarks", "sourceId": "el-ghazali-el-behery-pelvic-2018", "locator": "p.415, Tibia and fibula; Fig.4B,D,G (gato)", "claim": "Accidentes descritos en gato."}
+      ],
+      "missingFields": ["function", "attachments", "vascularSupply", "speciesDifferences"],
+      "reviewStatus": "pending"
+    }
+  ],
+  "sources": [
+    {
+      "id": "nav-6th-edition",
+      "title": "Nomina Anatomica Veterinaria, 6th edition",
+      "authors": ["International Committee on Veterinary Gross Anatomical Nomenclature (ICVGAN)"],
+      "year": 2017,
+      "url": "https://wava-amav.org/wava-documents/",
+      "publicationType": "international-standard-nomenclature",
+      "license": {"label": "Referencia terminológica; redistribución del PDF no comprobada", "verified": false, "redistributionAllowed": false},
+      "supportedStructureIds": ["feline:scapula", "feline:humerus", "feline:femur", "feline:tibia"]
+    },
+    {
+      "id": "reighard-jennings-cat-1901",
+      "title": "Anatomy of the Cat",
+      "authors": ["Jacob Reighard", "H. S. Jennings"],
+      "year": 1901,
+      "url": "https://www.gutenberg.org/cache/epub/58394/pg58394-images.html",
+      "publicationType": "historical-primary-anatomical-monograph",
+      "license": {"label": "Project Gutenberg: uso bajo sus términos; comprobar jurisdicción antes de redistribuir edición o figuras", "verified": false, "redistributionAllowed": false},
+      "supportedStructureIds": ["feline:scapula", "feline:humerus", "feline:femur", "feline:tibia"]
+    },
+    {
+      "id": "mahoney-feline-imaging-2012",
+      "title": "Musculoskeletal Imaging in the Cat: What’s normal? What’s abnormal?",
+      "authors": ["Paul Mahoney"],
+      "year": 2012,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148912/",
+      "doi": "10.1177/1098612X11432823",
+      "publicationType": "review-article",
+      "license": {"label": "Copyright ISFM/AAFP 2012; acceso libre no acredita licencia de redistribución", "verified": false, "redistributionAllowed": false},
+      "supportedStructureIds": ["feline:scapula", "feline:humerus"]
+    },
+    {
+      "id": "el-ghazali-el-behery-pelvic-2018",
+      "title": "Comparative morphological interpretations on the bones of the pelvic limb of New Zealand rabbit (Oryctolagus cuniculus) and domestic cat (Felis domestica)",
+      "authors": ["Hanaa Mohamed El-Ghazali", "Eman Ismail El-behery"],
+      "year": 2018,
+      "url": "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+      "doi": "10.5455/javar.2018.e292",
+      "publicationType": "primary-comparative-anatomical-study",
+      "license": {"label": "CC BY 4.0 explícita en p.410 del PDF editorial; requiere atribución y declaración de modificaciones", "verified": true, "redistributionAllowed": true},
+      "supportedStructureIds": ["feline:femur", "feline:tibia"]
+    }
+  ],
+  "limitations": [
+    "Las descripciones no identifican ninguna malla Tavernier ni establecen escala, lado o variantes de su espécimen.",
+    "La fuente histórica es auxiliar; su nomenclatura se normaliza con NAV. No se copian cifras generales ni orientaciones históricas problemáticas.",
+    "Mahoney se consultó mediante texto primario indexado y metadatos PubMed; no se repitió la apertura directa con captcha.",
+    "El estudio pélvico compara gato y conejo: solo se utilizaron pasajes y paneles identificados como gato; sus observaciones de muestra no se convierten en universales.",
+    "Campos funcionales, inserciones musculares, vascularización y diferencias entre especies quedan sin completar; no se deducen desde la forma.",
+    "Las traducciones al español y variantes ortográficas son editoriales; NAV respalda los nombres latinos, no una traducción oficial española.",
+    "No se adquirieron imágenes ni modelos. La licencia de una referencia no autoriza activos externos ni sustituye la revisión humana cualificada."
+  ]
+}

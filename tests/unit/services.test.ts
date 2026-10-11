@@ -9,7 +9,7 @@ describe('Servicios del catálogo real', () => {
     expect(rows.length).toBeGreaterThan(0);
     expect(rows.every(row => row.speciesId === 'canine' && row.kind === 'muscle')).toBe(true);
     expect(catalogService.regions({species:'feline'}).every(row => row.speciesIds.includes('feline'))).toBe(true);
-    expect(catalogService.structures({species:'feline',region:'pelvic-limb'})).toEqual([]);
+    expect(catalogService.structures({species:'feline',region:'pelvic-limb'}).map(row => row.id)).toEqual(['feline:femur','feline:tibia']);
   });
   it('rechaza filtros desconocidos y distingue recurso inexistente', () => {
     expect(() => catalogService.structures({species:'missing'})).toThrow('Filtro species desconocido');

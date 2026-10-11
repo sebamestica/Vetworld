@@ -4,9 +4,9 @@ test('felino corporal: carga, capas, ficha sin selección falsa y canino no disp
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
+  await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
   const portrait = page.getByRole('button', {name: 'Continuar en vertical'});
   if (await portrait.isVisible()) await portrait.click();
-  await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
   await expect(page.getByLabel('Especie', {exact: true})).toHaveValue('feline');
   await expect(page.getByTestId('asset-attribution')).toContainText('CC BY-NC-SA 4.0');
   await expect(page.getByRole('button', {name: 'Aislar', exact: true})).toBeDisabled();

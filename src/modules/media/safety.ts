@@ -1,4 +1,4 @@
-const academicHosts = new Set(['open.lib.umn.edu', 'www.cvmbs.colostate.edu', 'wava-amav.org', 'www.wava-amav.org', 'www.digimorph.org', 'www.morphosource.org']);
+const academicHosts = new Set(['open.lib.umn.edu', 'www.cvmbs.colostate.edu', 'wava-amav.org', 'www.wava-amav.org', 'www.digimorph.org', 'www.morphosource.org', 'www.gutenberg.org', 'pmc.ncbi.nlm.nih.gov', 'bdvets.org']);
 
 export function isSafeExternalUrl(value: string): boolean {
   if (!value.startsWith('https://') || /[\s\\]/.test(value)) return false;

@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "title": "Atlas Veterinario 3D API",
-    "version": "1.2.0",
-    "description": "Catálogo de lectura. Modelos corporales: scope whole-body y regionId null; geometría disponible no implica identificación ni revisión anatómica. Parámetros desconocidos o repetidos: 400."
+    "version": "1.3.0",
+    "description": "Catálogo de lectura con evidencia bibliográfica por campo opcional. Geometría disponible no implica identificación ni revisión anatómica. Parámetros desconocidos o repetidos: 400."
   },
   "paths": {
     "/api/v1/health": {
@@ -4257,6 +4257,51 @@
                     "additionalProperties": false
                   }
                 },
+                "fieldEvidence": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field": {
+                        "type": "string",
+                        "enum": [
+                          "canonicalLatinName",
+                          "spanishName",
+                          "aliases",
+                          "summary",
+                          "detailedDescription",
+                          "morphology",
+                          "location",
+                          "landmarks",
+                          "function",
+                          "attachments",
+                          "vascularSupply",
+                          "innervation",
+                          "speciesDifferences"
+                        ]
+                      },
+                      "sourceId": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                      },
+                      "locator": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "claim": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "field",
+                      "sourceId",
+                      "locator",
+                      "claim"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
                 "review": {
                   "type": "object",
                   "properties": {
@@ -4572,6 +4617,51 @@
                     "url",
                     "sourceId",
                     "license"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "fieldEvidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field": {
+                      "type": "string",
+                      "enum": [
+                        "canonicalLatinName",
+                        "spanishName",
+                        "aliases",
+                        "summary",
+                        "detailedDescription",
+                        "morphology",
+                        "location",
+                        "landmarks",
+                        "function",
+                        "attachments",
+                        "vascularSupply",
+                        "innervation",
+                        "speciesDifferences"
+                      ]
+                    },
+                    "sourceId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                    },
+                    "locator": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "claim": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "field",
+                    "sourceId",
+                    "locator",
+                    "claim"
                   ],
                   "additionalProperties": false
                 }
@@ -4971,6 +5061,51 @@
                           "url",
                           "sourceId",
                           "license"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "fieldEvidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "field": {
+                            "type": "string",
+                            "enum": [
+                              "canonicalLatinName",
+                              "spanishName",
+                              "aliases",
+                              "summary",
+                              "detailedDescription",
+                              "morphology",
+                              "location",
+                              "landmarks",
+                              "function",
+                              "attachments",
+                              "vascularSupply",
+                              "innervation",
+                              "speciesDifferences"
+                            ]
+                          },
+                          "sourceId": {
+                            "type": "string",
+                            "pattern": "^[a-z0-9][a-z0-9:-]*$"
+                          },
+                          "locator": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "claim": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "field",
+                          "sourceId",
+                          "locator",
+                          "claim"
                         ],
                         "additionalProperties": false
                       }

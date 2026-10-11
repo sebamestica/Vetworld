@@ -56,6 +56,11 @@ export function validateCatalog(catalog: Catalog): { errors: string[]; warnings:
       check(sources.has(id), `${label}: fuente inexistente ${id}`);
       check(sources.get(id)?.supportedStructureIds.includes(label) ?? false, `${label}: fuente sin respaldo recíproco ${id}`);
     }
+    for (const evidence of structure.fieldEvidence ?? []) {
+      const value = structure[evidence.field];
+      check(value !== undefined && (!Array.isArray(value) || value.length > 0), `${label}: evidencia de campo ausente ${evidence.field}`);
+      check(structure.sourceIds.includes(evidence.sourceId) && (sources.get(evidence.sourceId)?.supportedStructureIds.includes(label) ?? false), `${label}: evidencia de fuente no asociada ${evidence.sourceId}`);
+    }
     for (const id of structure.modelIds) {
       const model = models.get(id);
       check(!!model, `${label}: modelo inexistente ${id}`);
