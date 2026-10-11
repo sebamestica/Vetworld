@@ -1,0 +1,153 @@
+{
+    "date":  "2026-10-10",
+    "purpose":  "Guía bibliográfica; no identificación de geometría ni revisión humana",
+    "productionCatalogUpdated":  false,
+    "claims":  [
+                   {
+                       "id":  "f01",
+                       "topic":  "columna",
+                       "statement":  "Perfil habitual C7, T13, L7 y tres segmentos sacros; caudales variables.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148912/",
+                       "locator":  "The spine",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f02",
+                       "topic":  "clavícula",
+                       "statement":  "La revisión describe clavículas felinas mineralizadas; una vista del conjunto no acredita su presencia o ausencia.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148912/",
+                       "locator":  "The limbs; Figure 15",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f03",
+                       "topic":  "húmero",
+                       "statement":  "El foramen supracondilar felino transmite arteria braquial y nervio mediano.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148912/",
+                       "locator":  "The limbs; Figure 16",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f04",
+                       "topic":  "oído",
+                       "statement":  "La cadena auditiva felina comprende malleus, incus y stapes.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10822464/",
+                       "locator":  "Anatomía del oído medio, ossicles",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f05",
+                       "topic":  "carpo",
+                       "statement":  "Micro-CT identifica intermediorradial, ulnar, accesorio y carpales I–IV.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC13281358/",
+                       "locator":  "Micro CT",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f06",
+                       "topic":  "tarso",
+                       "statement":  "Tarso felino: siete unidades.",
+                       "sourceUrl":  "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+                       "locator":  "Página 415: Tarsal bones; Figure 5",
+                       "evidence":  "publisher_pdf_read",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f07",
+                       "topic":  "coxal",
+                       "statement":  "Coxal formado por ilion, isquion y pubis.",
+                       "sourceUrl":  "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+                       "locator":  "Página 412: Os coxae; Figure 2",
+                       "evidence":  "publisher_pdf_read",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f08",
+                       "topic":  "tibia-fíbula",
+                       "statement":  "Tibia y fíbula felinas separadas.",
+                       "sourceUrl":  "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+                       "locator":  "Página 415: Tibia and fibula; Figure 4",
+                       "evidence":  "publisher_pdf_read",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f09",
+                       "topic":  "pie",
+                       "statement":  "Metatarsiano I rudimentario; II–V desarrollados.",
+                       "sourceUrl":  "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+                       "locator":  "Páginas 415–417: Metatarsals and digits; Figure 5",
+                       "evidence":  "publisher_pdf_read",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f10",
+                       "topic":  "sesamoideos-pie",
+                       "statement":  "Sesamoideos proximales pares; sin distales en esa muestra.",
+                       "sourceUrl":  "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+                       "locator":  "Página 417: Sesamoid bones; Figure 5",
+                       "evidence":  "publisher_pdf_read",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f11",
+                       "topic":  "esternón",
+                       "statement":  "Ocho segmentos como referencia habitual; el estudio documenta variación numérica y fusión en gatos.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10093590/",
+                       "locator":  "Introduction, Methods y resultados felinos",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f12",
+                       "topic":  "dentición-nombres",
+                       "statement":  "Premolares felinos conservan P2 como primero maxilar y P3 como primero mandibular; no renumerar posiciones ausentes.",
+                       "sourceUrl":  "https://avdc.org/avdc-nomenclature/",
+                       "locator":  "Premolar Teeth in the Cat; Tooth Numbering",
+                       "evidence":  "primary_web_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f13",
+                       "topic":  "os-penis",
+                       "statement":  "CT identificó estructura compatible con os penis en 20 de 23 gatos de la muestra; no demuestra presencia en todo espécimen.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC10814501/",
+                       "locator":  "Abstract y Results",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   },
+                   {
+                       "id":  "f14",
+                       "topic":  "cavidad-nasal",
+                       "statement":  "La descripción del gato identifica huesos de soporte y componentes etmoidales mediante disección y CT; superficies internas no se recuperan por cortar una fotogrametría exterior.",
+                       "sourceUrl":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC11393894/",
+                       "locator":  "Resultados de Felis; Figure 2; 3.2 Trepanations",
+                       "evidence":  "primary_indexed_text",
+                       "modelObservation":  "unknown",
+                       "reviewStatus":  "pending"
+                   }
+               ],
+    "limitations":  [
+                        "No son fichas exhaustivas",
+                        "No se atribuyen medidas medias al modelo",
+                        "La publicación accesible no concede permiso genérico para redistribuir imágenes",
+                        "El detalle de cada pieza y algunas variantes requieren cotejo adicional"
+                    ]
+}

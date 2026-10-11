@@ -5,7 +5,7 @@
 | 0 | Auditoría, reglas, seguimiento y skills | Archivos comprobados; fuentes y límites explícitos; sin aplicación ni dependencias | Documentación completada; fuentes parcialmente verificadas |
 | 1 | Backend REST `/api/v1`, catálogo semilla, contratos, validación, CI | Build, lint, tipos, unidad, integración HTTP, contratos y smoke producción local | Completada localmente; espera revisión del usuario |
 | 2 | Visor, fichas y referencias curadas; región inicial miembro torácico | Flujo Canvas → selección → ficha → referencia, controles, responsive y QA | Funcional con fixture técnica; validación académica pendiente |
-| 3 | Una estructura muscular individualizada y ficha rastreable | Fuente legítima, revisión humana, selección correcta; sin geometría si no existe | Pendiente de fuente científica |
+| 3 | Esqueletos maestros canino/felino y despiece osteológico; alcance redefinido por el usuario | Dos conjuntos completos con individualización suficiente, escala/procedencia y revisión documentadas | Felino corporal visible; despiece científico pendiente. Investigación y plan ampliados 2026-10-10 |
 | 4 | Tejidos profundos y capas disponibles | Solo estructuras conseguidas/revisadas; filtros y referencias autorizadas | Pendiente |
 | 5 | Rendimiento, accesibilidad y producción | Pruebas en equipos reales, permisos y despliegue autorizado | Pendiente |
 

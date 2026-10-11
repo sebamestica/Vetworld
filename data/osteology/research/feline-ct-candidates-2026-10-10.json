@@ -1,0 +1,48 @@
+{
+    "date":  "2026-10-10",
+    "publicationDoi":  "10.1038/s41597-024-03572-x",
+    "collectionUrl":  "https://springernature.figshare.com/collections/High-resolution_computed_tomographic_HRCT_image_series_from_413_canid_and_18_felid_skulls/7296568",
+    "volumeRecord":  {
+                         "apiUrl":  "https://api.figshare.com/v2/articles/26082811",
+                         "doi":  "10.6084/m9.figshare.26082811.v1",
+                         "license":  "CC0",
+                         "licenseUrl":  "https://creativecommons.org/publicdomain/zero/1.0/",
+                         "fileName":  "Skull volumes.zip",
+                         "bytes":  51420400577,
+                         "downloaded":  false
+                     },
+    "specimenTable":  {
+                          "apiUrl":  "https://api.figshare.com/v2/articles/26076316",
+                          "license":  "CC0",
+                          "bytes":  39331,
+                          "sha256":  "1f5433357529f350f5c2f819f6f4f6c29eb6dcde35882057ad426ab8d497ba44",
+                          "domesticCatRowsRead":  14,
+                          "sex":  "NA in all 14 domestic cat rows",
+                          "localPrivateFile":  "workbench/references/feline-oct10/skull-specimens.xlsx"
+                      },
+    "candidateIds":  [
+                         "162_C_EUSH",
+                         "163_C_EUST",
+                         "164_C_BRSH",
+                         "165_C_MAIN",
+                         "165_C2_MAIN",
+                         "166_C_SIAM",
+                         "166_C2_SIAM",
+                         "167_C_SPHX",
+                         "167_C2_SPHX",
+                         "168_C_ABYS",
+                         "169_C_SCOF",
+                         "170_C_HIMA",
+                         "171_C_BURM",
+                         "171_C2_BURM"
+                     ],
+    "reviewStatus":  "pending",
+    "availability":  "metadata_only",
+    "limitations":  [
+                        "Craneal, no cuerpo entero",
+                        "No GLB descargado ni segmentación realizada",
+                        "No mezclar con Tavernier como un espécimen único",
+                        "Página web volumen HTTP403, no repetir; API pública accesible",
+                        "Publicación editorial tiene licencia distinta al registro de datos"
+                    ]
+}
