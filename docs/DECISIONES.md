@@ -54,3 +54,18 @@ Cuestiones abiertas: revisor anatómico cualificado y acceso bibliográfico; for
 La autorización actual exige dos animales ensamblados; carga regional previa no sustituye este objetivo. Se separan plantilla de referencia y espécimen: solo el segundo determina cobertura esperada. No se incorporan nombres propuestos automáticamente al catálogo científico. Los maestros Blender conservan originales y se exportan desde copias; un borrador sin mallas no es un ensamblaje. Permisos educativos genéricos y normalización métrica previa requieren evidencia específica, no se consideran aprobados. Se preservó el árbol sucio previo en workbench/phase3/preexisting antes de este hito.
 
 Integración corporal: priorizar felino autorizado como conjunto sin identificación ficticia. API modelo scope whole-body / regionId null; el estado cliente all no se envía como región científica. Separar visualNodes de meshMappings. Demo sintética en ruta explícita y dinámica por CSP; home no sustituye canino por fixture. Retirar activos de permisos inciertos preservando fuentes privadas y cambios de catálogo previos. Smoke de producción siempre crea next start aislado. Contrato y límites documentados en docs/phase3/viewer-integration.md.
+
+## F8 — cráneo canino Zenodo 10327538, 2026-10-31
+
+Se publica un derivado decimado (no el original) porque el original excede 12 MiB y 250.000 triángulos; la decimación se acepta solo con desviación medida (máx. 6,2e-4 de la diagonal) y textura intacta. Una malla fotogramétrica no recibe meshMappings ni `structureIds`: qué estructuras cubre lo decide la revisión humana. Activos científicos disponibles exigen `credit`, `attribution`, `sourceUrl` y `licenseUrl` en el manifiesto. En la home, sin modelo corporal, «Todo el animal» puede mostrar el único modelo regional disponible con aviso de cobertura parcial.
+
+## Ejecución nocturna — 2026-10-31
+
+- **Skills:** canónicas en `.agents/skills/`, copiadas a `.claude/skills/` (generado e ignorado). Las de terceros solo se aceptan de anthropics/skills, revisadas, en `vendor/` y con nota del proyecto.
+- **Sin worktrees:** `node_modules` (Windows) y `workbench/` (ignorado) no viajan a ellos. Se trabaja con propiedad estricta de archivos; solo el orquestador ejecuta build, E2E y gate:full.
+- **Fusión de lotes:** `merge-batches.ts` recalcula `supportedStructureIds` de forma recíproca y exige `review.status=pending`.
+- **Fichas de conjunto:** se aceptan fichas `kind: bone` que representan un conjunto (carpo, metacarpo, falanges, tarso, metatarso, mano), siempre que el texto diga explícitamente que son varios huesos y no fije un número universal sin fuente. Las series vertebrales siguen sin ficha.
+- **Cráneo canino Zenodo 10327538:** descarga autorizada por el plan tras verificar los 8 puntos (CC BY 4.0 en la réplica y en el origen). El derivado web se decimó a 199.997 triángulos por presupuesto, con la desviación medida; la atribución visible incluye «derivado modificado». Sin mappings óseos y con escala `unknown`.
+- **Selección de activo en la home:** prioridad corporal → regional exacto → único regional con «Todo el animal», marcado como cobertura parcial.
+- **Convención de lado:** derecha anatómica = craneal × dorsal; sin evidencia de no-reflexión, el lado queda `unknown`.
+- **Licencias:** Europe PMC y PMC (API oficial) se aceptan como canal legítimo para leer artículos CC BY; no cuentan como eludir barreras.

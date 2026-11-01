@@ -508,6 +508,11 @@
     "attribution": "Cat Skeleton — Tavernier Amaury — CC BY-NC-SA 4.0 — Sketchfab",
     "sourceUrl": "https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "credit": {
+      "work": "Cat Skeleton",
+      "author": "Tavernier Amaury",
+      "licenseName": "CC BY-NC-SA 4.0"
+    },
     "reviewStatus": "pending",
     "availability": "available",
     "meshMappings": [],
@@ -524,5 +529,55 @@
       }
     ],
     "specimen": null
+  },
+  {
+    "id": "canine:agancz-skull-scan",
+    "speciesId": "canine",
+    "regionId": "head",
+    "title": "Cráneo canino — escaneo fotogramétrico (agancz)",
+    "purpose": "scientific",
+    "scope": "regional",
+    "format": "glb",
+    "resourceUrl": "/models/canine/agancz-dog-skull.glb",
+    "unit": "source-unverified",
+    "scaleToMeters": 1,
+    "physicalScaleVerified": false,
+    "orientation": "Orientación fuente de Sketchfab conservada (nodo Sketchfab_model); ejes anatómicos pendientes",
+    "byteSize": 6678652,
+    "triangleCount": 199997,
+    "estimatedGpuBytes": 6676952,
+    "sha256": "c63227d827a8ec33a217150e0a71cc9373a4889848abe4183bfd063cf8e334e4",
+    "license": {
+      "label": "CC BY 4.0 — atribución e indicación de cambios; modificación y redistribución permitidas",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "attribution": "Canis Familiaris (Dog) Skull — Abby Gancz (agancz) — CC BY 4.0 — Zenodo DOI 10.5281/zenodo.10327538 / Sketchfab. Derivado web: fragmentos unidos, vértices soldados y decimación medida (586.612 → 199.997 triángulos); textura sin cambios.",
+    "sourceUrl": "https://zenodo.org/records/10327538",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credit": {
+      "work": "Canis Familiaris (Dog) Skull",
+      "author": "Abby Gancz (agancz)",
+      "licenseName": "CC BY 4.0",
+      "changes": "Derivado modificado: unión de 6 trozos, soldado de vértices y decimación a 199.997 triángulos"
+    },
+    "reviewStatus": "pending",
+    "availability": "available",
+    "visualNodes": [
+      {
+        "nodeId": "agancz_dog_skull_scan",
+        "layerId": "skeleton"
+      }
+    ],
+    "meshMappings": [],
+    "layers": [
+      {
+        "id": "skeleton",
+        "label": "Esqueleto"
+      }
+    ],
+    "specimen": {
+      "sex": "Macho (según la descripción del registro)"
+    }
   }
 ]

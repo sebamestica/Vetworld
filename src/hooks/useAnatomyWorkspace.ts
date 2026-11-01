@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { responseSchemas } from '@/lib/api/contracts';
 import { fetchApi } from '@/lib/client/api';
 import { viewerAssets } from '@/modules/viewer/assets';
+import { workspaceAsset } from '@/modules/viewer/selection';
 import type { Structure } from '@/modules/anatomy/schemas/catalog';
 import type { ViewerLayers } from '@/modules/viewer/visibility';
 import type { CutPlane, ViewPreset } from '@/modules/viewer/controls';
@@ -37,9 +38,11 @@ export function useAnatomyWorkspace(technicalDemo = false) {
   const species = speciesQuery?.data?.data ?? [], regions = regionQuery?.data?.data ?? [], structures = structureQuery?.data?.data ?? [];
   const currentSpecies = species.find(s => s.id === speciesId), currentRegion = regions.find(r => r.id === regionId);
   const knownIds = new Set(currentRegion?.structureIds ?? structures.map(s => s.id));
+  const choice = technicalDemo ? null : workspaceAsset(viewerAssets, speciesId, regionId, new Set((modelQuery?.data?.data ?? []).filter(m => m.availability === 'available').map(m => m.id)));
   const baseAsset = technicalDemo
     ? viewerAssets.find(a => a.speciesId === speciesId && a.purpose === 'technical_demo' && a.meshMappings.some(m => knownIds.has(m.structureId)))
-    : viewerAssets.find(a => a.speciesId === speciesId && a.scope === 'whole-body' && a.availability === 'available' && modelQuery?.data?.data.some(m => m.id === a.id && m.availability === 'available'));
+    : choice?.asset;
+  const coverage = choice?.coverage ?? null;
   const asset = baseAsset ? (baseAsset.purpose === 'scientific' ? baseAsset : { ...baseAsset, meshMappings: baseAsset.meshMappings.filter(m => knownIds.has(m.structureId)) }) : null;
   const activeLayers: ViewerLayers = Object.fromEntries((asset?.layers ?? []).map(l => [l.id, layers[l.id] ?? { visible: true, opacity: 1 }]));
   function reset() {
@@ -71,7 +74,7 @@ export function useAnatomyWorkspace(technicalDemo = false) {
     const amount = Math.min(1, Math.max(0, value)); setLayers(current => ({ ...current, [id]: { visible: amount > 0, opacity: amount } }));
     if (amount === 0 && asset?.meshMappings.some(m => m.layerId === id && m.structureId === selectedId)) { setSelectedId(null); setPanelOpen(false); setIsolatedId(null); }
   }
-  return { species, regions, speciesId, regionId, currentSpecies, currentRegion, structures, models: modelQuery?.data?.data ?? [], asset, activeLayers,
+  return { species, regions, speciesId, regionId, currentSpecies, currentRegion, structures, models: modelQuery?.data?.data ?? [], asset, coverage, activeLayers,
     selectedId, panelOpen, closePanel: () => setPanelOpen(false), selectId, selectStructure, changeSpecies, changeRegion, isolatedId, toggleIsolation: () => setIsolatedId(v => v ? null : selectedId), reset, resetToken, toggleLayer, opacity,
     viewPreset, viewToken, setViewPreset: (view: ViewPreset) => { setPreset(view); setViewToken(n => n + 1); }, zoomRequest, zoom: (delta: number) => setZoomRequest(v => ({ token: v.token + 1, delta })), cutPlane, setCutPlane, clipOffset, setClipOffset,
     loading: !structureQuery?.data || !modelQuery?.data, error: navigationError || speciesQuery?.error || regionQuery?.error || structureQuery?.error || modelQuery?.error,

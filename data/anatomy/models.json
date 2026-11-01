@@ -477,5 +477,43 @@
       "verifiedAt": "2026-10-09T01:32:16.944Z"
     },
     "notes": "Disponible para visualización no comercial bajo NC-SA; sin huesos identificados individualmente. No acredita esqueleto íntegro científicamente validado."
+  },
+  {
+    "id": "canine:agancz-skull-scan",
+    "speciesId": "canine",
+    "regionId": "head",
+    "scope": "regional",
+    "format": "glb",
+    "resourceUrl": "/models/canine/agancz-dog-skull.glb",
+    "landingPageUrl": "https://zenodo.org/records/10327538",
+    "structureIds": [],
+    "meshMappings": [],
+    "layerIds": [
+      "skeleton"
+    ],
+    "lod": "web-decimated-measured",
+    "evidenceType": "photogrammetry-scan-unsegmented",
+    "license": {
+      "label": "CC BY 4.0 — atribución e indicación de cambios; modificación y redistribución permitidas",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "authors": [
+      "Abby Gancz (agancz)"
+    ],
+    "sourceIds": [
+      "agancz-dog-skull-zenodo"
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Escala física no acreditada (unidades fuente desconocidas). Una sola malla de fotogrametría: cráneo y mandíbula no separados como mallas; sin identificación ósea. Revisión anatómica humana pendiente."
+    },
+    "availability": "available",
+    "fileEvidence": {
+      "sha256": "c63227d827a8ec33a217150e0a71cc9373a4889848abe4183bfd063cf8e334e4",
+      "byteSize": 6678652,
+      "verifiedAt": "2026-11-01T02:08:07.789Z"
+    },
+    "notes": "Derivado del GLB original (SHA-256 2fbe3164a2aa0734cee4ce6309a834575ae162e45532ecd0804fef5ee7163ea1, 19.576.476 bytes) por exceder el presupuesto del visor. Desviación medida respecto a la malla soldada de origen: media 3,7e-5 y máximo 6,2e-4 de la diagonal de la caja envolvente. Fotogrametría de un ejemplar macho de Canis familiaris; no acredita completitud ni validación científica."
   }
 ]

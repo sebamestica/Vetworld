@@ -30,7 +30,10 @@ describe('Conjunto felino sin identificación ósea ficticia', () => {
     expect(viewerAssetSchema.safeParse({...asset, licenseUrl: 'https://user:pass@example.com'}).success).toBe(false);
   });
   it('los modelos regionales de permisos inciertos permanecen indisponibles', () => {
-    expect(catalogService.models({species: 'canine'}).some(entry => entry.availability === 'available')).toBe(false);
+    // Único canino disponible: escaneo CC BY 4.0 verificado; los regionales en cuarentena siguen pendientes.
+    expect(catalogService.models({species: 'canine'}).filter(entry => entry.availability === 'available').map(entry => entry.id)).toEqual(['canine:agancz-skull-scan']);
+    expect(catalogService.model('canine:skull-model').availability).not.toBe('available');
+    expect(catalogService.model('canine:thoracic-limb-model').availability).not.toBe('available');
     expect(catalogService.models({species: 'feline', region: 'head'}).some(entry => entry.id === asset.id)).toBe(false);
     expect(catalogService.models({species: 'feline'}).filter(entry => entry.availability === 'available').map(entry => entry.id)).toEqual([asset.id]);
   });

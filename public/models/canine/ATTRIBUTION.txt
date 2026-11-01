@@ -1,0 +1,6 @@
+Canis Familiaris (Dog) Skull — Abby Gancz (agancz) — CC BY 4.0
+Zenodo: https://zenodo.org/records/10327538 (DOI 10.5281/zenodo.10327538)
+Origen: https://sketchfab.com/3d-models/canis-familiaris-dog-skull-ebb0f8bf169745b4a3757abac29694c0
+Licencia: https://creativecommons.org/licenses/by/4.0/
+agancz-dog-skull.glb es un DERIVADO modificado por Atlas Veterinario 3D (2026-10-31): seis fragmentos GLES unidos en una malla, vértices duplicados soldados (1e-6 unidades fuente) y decimación por colapso medida de 586.612 a 199.997 triángulos; normales recalculadas suaves. Textura JPEG 1024 × 1024 sin cambios. Original SHA-256 2fbe3164a2aa0734cee4ce6309a834575ae162e45532ecd0804fef5ee7163ea1.
+Escala física no acreditada; sin identificación ósea individual; revisión anatómica humana pendiente.

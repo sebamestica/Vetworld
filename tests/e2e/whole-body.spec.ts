@@ -30,6 +30,10 @@ test('felino corporal: carga, capas, ficha sin selección falsa y canino no disp
   await page.getByRole('button', {name: 'Restaurar', exact: true}).click();
   await page.screenshot({path: `workbench/inspection/feline-viewer-${test.info().project.name}.png`});
   await page.getByLabel('Especie', {exact: true}).selectOption('canine');
-  await expect(page.getByTestId('viewer-status')).toHaveText('Modelo 3D no disponible');
+  await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo', {timeout: 60_000});
+  const credit = page.getByTestId('asset-attribution');
+  await expect(credit).toContainText('Abby Gancz (agancz)'); await expect(credit).toContainText('CC BY 4.0');
+  await expect(credit).toContainText('Derivado modificado'); await expect(credit).toContainText('Cobertura parcial');
+  await expect(credit.getByRole('link', {name: 'CC BY 4.0'})).toHaveAttribute('href', /creativecommons\.org\/licenses\/by\/4\.0/);
   expect(errors).toEqual([]);
 });

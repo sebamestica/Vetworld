@@ -5,6 +5,9 @@ import { cameraFrame } from '../../src/modules/viewer/controls';
 
 async function dismissOrientation(page: Page) {
   const button = page.getByRole('button', { name: 'Continuar en vertical' });
+  // El aviso aparece tras montar el visor; en móvil vertical puede llegar con retraso.
+  const narrowPortrait = await page.evaluate(() => matchMedia('(max-width: 650px) and (orientation: portrait)').matches);
+  if (narrowPortrait) await button.waitFor({ state: 'visible', timeout: 5_000 }).catch(() => undefined);
   if (await button.isVisible()) await button.click();
 }
 async function ready(page: Page) {
@@ -129,8 +132,8 @@ test('cambio de especie y región limpia ficha y muestra disponibilidad real', a
 });
 
 test('archivo fallido conserva acceso textual y permite reintento', async ({ page }) => {
-  await page.route('**/models/technical/*.glb*', route => route.abort()); await page.goto('/technical-demo'); await dismissOrientation(page);
-  await expect(page.getByTestId('viewer-status')).toContainText('No se pudo abrir'); await choose(page, 'biceps');
+  await page.route('**/models/technical/*.glb*', route => route.abort()); await page.goto('/technical-demo');
+  await expect(page.getByTestId('viewer-status')).toContainText('No se pudo abrir'); await dismissOrientation(page); await choose(page, 'biceps');
   await expect(page.getByTestId('detail-panel').getByRole('heading', { name: 'Bíceps braquial', exact: true })).toBeVisible(); await page.getByRole('button', { name: 'Cerrar ficha' }).click();
   await page.unroute('**/models/technical/*.glb*'); await page.getByRole('button', { name: 'Reintentar visor' }).click(); await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
 });

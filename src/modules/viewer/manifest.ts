@@ -14,6 +14,7 @@ export const viewerAssetSchema = z.object({
   scope: z.enum(["regional", "whole-body"]).optional(),
   physicalScaleVerified: z.boolean().optional(),
   attribution: z.string().optional(), sourceUrl: provenanceUrl.optional(), licenseUrl: provenanceUrl.optional(),
+  credit: z.object({ work: z.string().min(1), author: z.string().min(1), licenseName: z.string().min(1), changes: z.string().min(1).optional() }).strict().optional(),
   visualNodes: z.array(z.object({ nodeId: z.string().min(1), layerId: z.string().min(1) }).strict()).optional(),
   byteSize: z.number().int().positive().max(VIEWER_BUDGET.bytes),
   triangleCount: z.number().int().positive().max(VIEWER_BUDGET.triangles),
@@ -39,6 +40,7 @@ export const viewerAssetSchema = z.object({
     nodes.add(mapping.nodeId);
   }
   if (asset.availability === "available" && (!asset.license.verified || !asset.license.redistributionAllowed)) ctx.addIssue({ code: "custom", message: "Activo disponible sin derechos verificados" });
+  if (asset.purpose === "scientific" && asset.availability === "available" && (!asset.attribution || !asset.sourceUrl || !asset.licenseUrl || !asset.credit)) ctx.addIssue({ code: "custom", message: "Activo científico disponible sin atribución completa" });
   if (!asset.resourceUrl.endsWith(`.${asset.format}`)) ctx.addIssue({ code: "custom", message: "Formato y extensión incompatibles" });
 });
 export type ViewerAsset = z.infer<typeof viewerAssetSchema>;
