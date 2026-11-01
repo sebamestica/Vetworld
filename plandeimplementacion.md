@@ -311,3 +311,49 @@ npm run test:e2e            # desktop + tablet + móvil (emulados)
 | N3 | Felino con superficies parciales seleccionables y canino privado diagnosticado; paquetes externos listos | Sí, si la segmentación da piezas defendibles |
 | N4 | Escala acreditada, canino publicable y piezas «hueso geométrico suficiente» | Requiere medidas, licencia o fuente nueva |
 | N5 | Revisión anatómica humana y despliegue público | Requiere revisor y autorización del usuario |
+
+---
+
+## 10. Estado al cierre de la sesión nocturna (2026-11-01)
+
+El usuario detuvo la ejecución en este punto. Todo lo listado como logrado está commiteado y subido a `origin/main`, con el gate completo y el E2E verificados en el último commit (`8c8088c`).
+
+### Logrado
+
+| Fase | Resultado | Commits |
+|---|---|---|
+| FS Skills | 13 skills propias (Blender headless, segmentación, glTF, visor R3F, sistema de diseño UI V2, UX del visor, WCAG 3D, i18n, evidencia por campo, NAV, Playwright WebGL, gate y commits, coordinación multiagente) y 2 oficiales de Anthropic revisadas. Índice en `.agents/skills/README.md` | 388ce11 |
+| F0/F1 | EOL normalizado, línea base medida, `merge-batches` (reciprocidad, conserva modelIds/photoRefs), `gate`, `win.sh` (node_modules de Windows) | 388ce11, d6dcb14 |
+| F2 fichas felinas | L-F1..L-F5: miembros, atlas/axis, tórax, sacro y cabeza (cráneo, mandíbula, dientes y 11 huesos craneales) | 2884467, 8c8088c |
+| F6 fichas caninas | L-C1..L-C5: miembros, columna, tórax, cráneo (13 huesos) y músculos del miembro torácico | 3ac2e20, 8c8088c |
+| F13 revisión adversarial | 2 rondas (84 y 97 evidencias muestreadas); 5 bloqueantes y 20 no bloqueantes corregidos | 1b7751e, 8c8088c |
+| F3/F4 segmentación felina | 13 superficies parciales y un remanente (suma de caras 74.235), matriz geométrica de 323 filas, ejes; lado y escala `unknown` | d982dd5 |
+| F5 selección felina | Escápula, húmero, fémur, coxal y cabeza seleccionables con aviso «superficie parcial · revisión pendiente»; aislar, ocultar y opacidad por pieza; la búsqueda encuadra la pieza | 6a49ceb |
+| F7 canino privado | Diagnóstico de los STL de 3DExport (169 componentes, 32 propuestas); nada publicado | 00c1a14 |
+| F8 canino en el visor | Cráneo de perro Zenodo 10327538 (CC BY 4.0, verificado en origen y réplica), derivado de 200k triángulos con desviación medida, atribución visible | 93f10a0 |
+| F9 capas | Filtros por sistema y tejido; capas sin geometría deshabilitadas con el motivo visible | 7ca2ab9 |
+| F10 galería | 7 imágenes locales de Wikimedia Commons (CC0/CC BY-SA, SHA verificado) y 7 enlaces abiertos; `validate:media` estricto | 8c8088c |
+| F11 a11y/i18n/rendimiento | Teclado, ARIA, aria-live, 44 px táctil, movimiento reducido, ~120 claves ES/EN, DPR adaptativo (corrige un bug de R3F) | 14c7bdd, 7ca2ab9 |
+| F14 paquetes externos | Revisión humana ampliada, solicitudes de medidas y de licencia, nota de decisión sobre el CT (nada enviado) | 96edc62 |
+
+**Cifras finales verificadas:** 109 estructuras (todas `pending`), 34 relaciones, 20 fuentes, 3 modelos 3D disponibles (gato corporal, gato con superficies seleccionables, cráneo de perro). Pruebas: lint, typecheck, 185 unitarias, 70 HTTP, 38 contratos, validadores, build y **E2E 48/48** (escritorio, tablet y móvil emulados).
+
+### Falta
+
+**Software (sin bloqueos externos):**
+1. Galería: etiqueta propia «espécimen osteológico» (hoy aparece como «Fotografía de disección») y enlace de licencia clicable en `ReferenceGallery.tsx`. También que el filtro `region=shoulder/brachium` devuelva las referencias del miembro torácico.
+2. `photoRefs` recíprocos en `structures.json` (la lista exacta está en `docs/phase3/gallery-media-2026-11-01.md`; son opcionales).
+3. Lighthouse y perfil de rendimiento: el perfil de `chrome-agente` estuvo bloqueado durante toda la sesión.
+4. Compresión de los GLB (meshopt/KTX2): propuesta en `docs/phase3/performance-2026-10-31.md`; requiere fijar la versión de `gltf-transform`.
+5. Decisiones de esquema: tipo propio para dientes (hoy `kind: bone`), enlace entre fichas de conjunto y fichas individuales (cráneo↔huesos, mano↔carpianos), `has3DModel` para superficies parciales.
+6. Clic directo en el canvas cubierto en E2E (hoy se prueba con la lista accesible equivalente); foco que se conserve al cambiar de especie.
+7. Fichas restantes: vértebras torácicas, lumbares y caudales (serie sin ficha, por decisión), lagrimal, etmoides, vómer y pterigoideo; campo `vascularSupply` en casi todas; músculos y nervios felinos; tejidos blandos.
+8. F12 (QA integral final con recorrido manual) y F15 (cierre formal y entrega).
+
+**Bloqueado por terceros o por decisión del usuario:**
+- Revisión anatómica humana cualificada (todo sigue `pending`).
+- Licencia web del esqueleto canino de 3DExport (borrador de solicitud listo, sin enviar).
+- Medidas del espécimen Tavernier, necesarias para la escala del gato.
+- Autorizar la descarga de los volúmenes CT felinos (CC0, 51 GB): ver `docs/phase3/requests/decision-ct-felino.md`.
+- Decidir la licencia en conflicto de El-Ghazali 2018 (CC BY en el PDF del editor, CC BY-NC en PMC).
+- Despliegue público (no autorizado).
