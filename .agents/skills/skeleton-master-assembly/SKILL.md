@@ -8,7 +8,7 @@ description: Construir y auditar maestros osteológicos caninos y felinos en Ble
 Activar al ensamblar un animal completo, conciliar piezas o exportar un maestro. Leer inventario por especie y auditoría de fuentes; aplicar anatomy-integrity y 3d-asset-pipeline existentes.
 
 - Elegir espécimen y marco métrico antes de colocar huesos. Una plantilla de referencia no determina su dentición, cola, sesamoideos o fusiones reales.
-- Blender usa +X derecha, -Y craneal, +Z dorsal; documentar conversión al glTF del visor. Verificar escala física contra mediciones fuente; no normalizar piezas para hacerlas encajar.
+- Ejes por espécimen, derivados de la geometría y documentados. Lado anatómico derecho = craneal × dorsal (mano derecha): con -Y craneal y +Z dorsal, la derecha del animal es -X (la +X de la vista frontal de Blender es la derecha del observador). Un archivo reflejado no se detecta por geometría: sin evidencia, lado `unknown`. Documentar la conversión al glTF del visor (+Y arriba). Verificar escala física contra mediciones fuente; no normalizar piezas para hacerlas encajar.
 - Preservar originales y separar colecciones fuente, pendientes y ensambladas. Huesos visibles quedan en objetos individualizados; grupos y empties no cuentan como geometría.
 - Registrar ID estable, espécimen, lado, serial, fuente, transformaciones y revisión. Modelos multiespécimen o reflejados deben declararlo; no clasificarlos como escaneo íntegro.
 - Componentes de huesos fusionados pueden compartir una malla con regiones verificadas; no introducir cortes geométricos falsos. Varios meshes de un hueso conservan un único ID anatómico.

@@ -1,0 +1,70 @@
+{
+  "assetId": "feline:tavernier-skeleton",
+  "sourceSha256": "c570679a9f450c32aeded26c7b459993e984ee6fb01677170e4cd7cdf9220783",
+  "date": "2026-10-31",
+  "frame": "Escena Blender tras importar el glTF (conversión glTF→Blender (x,y,z)->(x,-z,y) + transformación del nodo chat). Sin escala física.",
+  "sceneBounds": {
+    "min": [
+      -6.38955,
+      -1.50161,
+      -0.31358
+    ],
+    "max": [
+      5.51062,
+      1.61339,
+      5.88858
+    ]
+  },
+  "axes": {
+    "cranial": {
+      "sceneDirection": [
+        -1,
+        0,
+        0
+      ],
+      "status": "derived_from_geometry",
+      "evidence": [
+        "Superficie conjunta de la cabeza (head-skeleton-surface-midline) con bbox x en [-6.384, -4.525]; extremo -X de la escena es -6.38955.",
+        "Cola colgante en el extremo +X (vistas laterales survey/full-from-neg-y.png y survey-grid/ypos-hind-from-pos-y.png)."
+      ],
+      "captures": [
+        "workbench/inspection/feline-oct31/survey/full-from-neg-y.png",
+        "workbench/inspection/feline-oct31/survey/full-from-pos-z.png"
+      ],
+      "caveat": "Eje aproximado: el tronco no es exactamente paralelo a X; no se midió inclinación."
+    },
+    "dorsal": {
+      "sceneDirection": [
+        0,
+        0,
+        1
+      ],
+      "status": "derived_from_geometry",
+      "evidence": [
+        "Autopodios apoyados en el mínimo z de la escena (-0.31358); procesos espinosos y placas escapulares hacia +Z (bbox escápulas z máx 5.239 / 5.236)."
+      ],
+      "captures": [
+        "workbench/inspection/feline-oct31/survey/full-from-neg-y.png",
+        "workbench/inspection/feline-oct31/survey/full-from-pos-x.png"
+      ]
+    },
+    "right": {
+      "sceneDirection": null,
+      "status": "unknown",
+      "conditionalDerivation": "Si el archivo conserva la quiralidad del espécimen (sin reflexión en captura, reconstrucción o exportación), derecha = craneal × dorsal = (-X)×(+Z) = +Y de escena; izquierda = -Y.",
+      "whyUnknown": "Un esqueleto bilateral reflejado globalmente es geométricamente indistinguible del original: cada hueso izquierdo reflejado aparece como derecho en la posición derecha. No hay fotografías del espécimen, rótulos ni metadatos de transformación que acrediten ausencia de reflexión. Por eso side=unknown en todas las propuestas y los semiespacios se nombran yneg/ypos.",
+      "toResolve": "Confirmación del autor (orientación y transformaciones aplicadas) o evidencia externa del espécimen con lateralidad acreditada."
+    }
+  },
+  "notes": [
+    "El marco maestro declarado en skeleton-master-assembly (+X derecha, -Y craneal, +Z dorsal) no cumple derecha = craneal × dorsal en un sistema dextrógiro ((-Y)×(+Z) = -X): debe revisarse antes de usarlo para asignar lados. Observación para A0; no se modificó la skill.",
+    "Las capturas no certifican anatomía ni lateralidad."
+  ],
+  "scale": {
+    "status": "unknown",
+    "factorToMeters": null,
+    "reason": "No hay dos medidas del mismo espécimen registradas (data/osteology/feline-acquisition.json: physicalScaleVerified=false). No se usan medias poblacionales felinas. Borrador de solicitud: docs/phase3/requests/feline-measurements-tavernier.md (no enviado).",
+    "measurementsInUi": "disabled"
+  },
+  "reviewStatus": "pending"
+}
