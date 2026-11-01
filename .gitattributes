@@ -1,1 +1,11 @@
+* text=auto eol=lf
 atlas_veterinario_ui_v2.html -text
+*.glb binary
+*.gltf -text
+*.blend binary
+*.png binary
+*.jpg binary
+*.stl binary
+*.zip binary
+*.rar binary
+*.pdf binary

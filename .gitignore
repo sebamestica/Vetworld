@@ -12,3 +12,7 @@ test-results/
 playwright-report/
 .tools/
 assets-source/
+
+# Generado por scripts/qa/sync-claude-skills.sh
+.claude/skills/
+__pycache__/
