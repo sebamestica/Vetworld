@@ -66,7 +66,7 @@ test('recorrido real Canvas → ficha → referencias → visor', async ({ page 
 
 test('cámara cambia al girar y acercar; CSP permanece local', async ({ page }, info) => {
   const response = await page.goto('/technical-demo'); const csp = response!.headers()['content-security-policy'];
-  expect(csp).toContain("script-src 'self' 'nonce-"); expect(csp).not.toContain('unsafe-eval'); expect(csp).toContain("connect-src 'self';");
+  expect(csp).toContain("script-src 'self' 'nonce-"); expect(csp).not.toContain('unsafe-eval'); expect(csp).toContain("connect-src 'self' blob:;"); expect(csp).not.toMatch(/connect-src[^;]*https?:/);
   await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo'); await dismissOrientation(page);
   const canvas = page.getByTestId('viewer-canvas').locator('canvas'); const before = await canvas.screenshot();
   const box = (await canvas.boundingBox())!; const x = box.x + box.width * .5, y = box.y + box.height * .5;
