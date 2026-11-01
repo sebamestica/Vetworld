@@ -21,3 +21,14 @@ Formato de anotación: `workbench/segmentation/feline/review-template.json`. `fa
 Workspace preparado: `workbench/segmentation/feline/feline_annotation.blend`. Las 74.235 caras se asociaron por coordenadas exactas al GLB fuente, se guardó `source_face_index` y se reabrió el archivo para comprobar persistencia. Seleccionar manualmente caras en Blender; ejecutar `scripts/osteology/export-selected-faces.py` en su editor de texto para exportar solo esa selección privada. El script se niega a exportar selección vacía o el animal entero como una pieza. No se ha ejecutado sobre una selección anatómica real, porque no hay límites aprobados todavía. Añadir esos índices a un grupo de la plantilla con identificación propuesta, fuente y notas; validar/preview con el CLI antes de admitir pieza alguna.
 
 No existe revisión emitida ni firma en este paquete. No se solicita aprobación automática de un ensamblaje solo por parecer coherente.
+
+## Actualización 2026-10-31 — alcance ampliado (no enviado)
+
+Material nuevo para la persona revisora; todo sigue `pending` y nada fue aprobado por personas:
+
+1. **Fichas bibliográficas (75 estructuras, 429 fieldEvidence).** Lotes `data/anatomy/_batches/feline-L-F1..F3.json` y `canine-L-C1..C2.json`. Por cada campo: fuente, localizador y afirmación. Revisar especialmente las equivalencias de términos históricos (Reighard 1901, Sisson 1914) con NAV 6.ª y las discrepancias registradas (forma de la rótula felina, contribución del pubis al acetábulo). Revisión asistida por IA en `docs/plan/revisiones/revision-lotes-2026-10-31.md`; no sustituye esta revisión.
+2. **Superficies felinas parciales.** `data/osteology/proposals/feline/feline-surface-proposals-2026-10-31.json`, 13 propuestas + remanente (suma 74.235), capturas en `workbench/inspection/feline-oct31/proposals/`. Confirmar o rechazar la identidad de cada superficie; el lado anatómico sigue `unknown` (posible reflexión global del archivo). Ejes deducidos: craneal −X, dorsal +Z (`data/osteology/diagnostics/feline-axes-2026-10-31.json`).
+3. **Canino privado 3DExport.** 32 propuestas de identificación en `data/osteology/diagnostics/canine.json`; modelo no escaneado y modificado para impresión, solo uso privado.
+4. **Cráneo canino Zenodo 10327538** (fotogrametría, CC BY 4.0): escala `unknown`; confirmar especie y completitud de la dentición visible.
+
+Formato de veredicto por elemento: id, aceptado/rechazado/corregir, corrección, fuente, responsable, formación, fecha y hash del archivo revisado.
