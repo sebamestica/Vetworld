@@ -37,14 +37,14 @@ describe('Matriz geométrica felina separada de la bibliográfica', () => {
   it('rechaza estados inventados o incoherentes', () => {
     const reviewed = clone(); reviewed.rows[0].admissionStatus = 'revisado';
     expect(felineGeometryCoverageSchema.safeParse(reviewed).success).toBe(false);
-    const sided = clone(); const lateral = sided.rows.find((row: Row) => row.candidateProposalIds.length && row.referenceSide === 'left');
+    const sided = clone(); const lateral = sided.rows.find((row: Row) => row.candidateProposalIds.length && row.referenceSide === 'left')!;
     lateral.proposalId = lateral.candidateProposalIds[0]; lateral.candidateProposalIds = lateral.candidateProposalIds.slice(1);
     expect(felineGeometryCoverageSchema.safeParse(sided).success).toBe(false);
     const lost = clone(); lost.remainderFaces -= 1;
     expect(felineGeometryCoverageSchema.safeParse(lost).success).toBe(false);
     const ghost = clone(); ghost.rows[0].candidateProposalIds = ['inexistente'];
     expect(felineGeometryCoverageSchema.safeParse(ghost).success).toBe(false);
-    const noSurface = clone(); const hidden = noSurface.rows.find((row: Row) => row.visibility === 'oculta');
+    const noSurface = clone(); const hidden = noSurface.rows.find((row: Row) => row.visibility === 'oculta')!;
     hidden.admissionStatus = 'superficie_identificada_parcial'; hidden.surfaceIntegrity = 'superficie_parcial';
     expect(felineGeometryCoverageSchema.safeParse(noSurface).success).toBe(false);
     const scaled = clone(); scaled.scale = 1;
