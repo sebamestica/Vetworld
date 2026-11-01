@@ -5,7 +5,19 @@
 | FS Skills | verificada | 2 oficiales Anthropic (Apache-2.0, commit ca45fc4) + 13 propias; índice `.agents/skills/README.md`; sync a `.claude/skills`. Commit 388ce11 (push vía git de Windows) |
 | F0 Saneamiento | verificada | EOL: 27 archivos solo diferían en CR (diff semántico vacío), restaurados; `.gitattributes` LF. Hashes HTML/GLB intactos. Blender 4.5.14 LTS arranca desde WSL. node_modules es de Windows → `scripts/qa/win.sh` |
 | F1 Infra | verificada | `scripts/anatomy/merge-batches.ts` (3/3 pruebas), `scripts/qa/gate.ts`, `npm run gate`/`gate:full`/`anatomy:merge` |
-| F2–F15 | pendiente | |
+| F2 Fichas felinas | en curso | L-F1..F3 fusionados (2884467), corregidos tras A7 (1b7751e); L-F4/L-F5 en redacción |
+| F3/F4 Segmentación felina | verificada | 13 superficies parciales, matriz 323 filas, ejes; lado/escala unknown (d982dd5) |
+| F5 Selección felina | en curso | agente integrador |
+| F6 Fichas caninas | en curso | L-C1/L-C2 (3ac2e20) + candidatos abiertos; L-C3/L-C4 en redacción |
+| F7 Canino privado | verificada | diagnóstico 3DExport (00c1a14) |
+| F8 Canino en visor | verificada | cráneo Zenodo CC BY 4.0, derivado 200k tris (93f10a0) |
+| F9 Capas/sistemas | verificada | filtros y capas sin geometría (7ca2ab9) |
+| F10 Galería | pendiente | |
+| F11 a11y/i18n/rendimiento | verificada | 14c7bdd, 7ca2ab9; Lighthouse pendiente (perfil chrome-agente bloqueado) |
+| F12 QA integral | parcial | E2E 48/48 tras cada hito |
+| F13 Revisión adversarial | verificada (lotes 1) | 84 evidencias, 3 bloqueantes corregidos |
+| F14 Paquetes externos | verificada | 96edc62 |
+| F15 Cierre | pendiente | |
 
 ## Hallazgos para F11 (skill a11y/i18n, 2026-10-31)
 - Pestañas de StructurePanel sin navegación por flechas (ToolsPanel sí).
