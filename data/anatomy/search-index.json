@@ -106,6 +106,214 @@
     ]
   },
   {
+    "id": "canine:calcaneus",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Calcaneus",
+    "spanishName": "Calcáneo",
+    "aliases": [
+      "calcaneo",
+      "calcaneus"
+    ],
+    "summary": "Hueso proximal del tarso canino, plantar y lateral al talus, con la tuberosidad calcánea.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "calcaneo",
+      "calcaneus"
+    ]
+  },
+  {
+    "id": "canine:carpal-1",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale I",
+    "spanishName": "Hueso carpiano I",
+    "aliases": [
+      "Os trapezium"
+    ],
+    "summary": "Hueso más pequeño de la fila distal del carpo canino.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "carpale",
+      "carpiano",
+      "hueso",
+      "hueso carpiano i",
+      "os carpale i",
+      "os trapezium",
+      "trapezium"
+    ]
+  },
+  {
+    "id": "canine:carpal-2",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale II",
+    "spanishName": "Hueso carpiano II",
+    "aliases": [
+      "Os trapezoideum"
+    ],
+    "summary": "Hueso de la fila distal del carpo canino.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "carpale",
+      "carpiano",
+      "hueso",
+      "hueso carpiano ii",
+      "os carpale ii",
+      "os trapezoideum",
+      "trapezoideum"
+    ]
+  },
+  {
+    "id": "canine:carpal-3",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale III",
+    "spanishName": "Hueso carpiano III",
+    "aliases": [
+      "Os capitatum"
+    ],
+    "summary": "Hueso de la fila distal del carpo canino.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "capitatum",
+      "carpale",
+      "carpiano",
+      "hueso",
+      "hueso carpiano iii",
+      "iii",
+      "os capitatum",
+      "os carpale iii"
+    ]
+  },
+  {
+    "id": "canine:carpal-4",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale IV",
+    "spanishName": "Hueso carpiano IV",
+    "aliases": [
+      "Os hamatum"
+    ],
+    "summary": "Hueso más grande de la fila distal del carpo canino.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "carpale",
+      "carpiano",
+      "hamatum",
+      "hueso",
+      "hueso carpiano iv",
+      "os carpale iv",
+      "os hamatum"
+    ]
+  },
+  {
+    "id": "canine:carpal-accessory",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpi accessorium",
+    "spanishName": "Hueso accesorio del carpo",
+    "aliases": [
+      "Os pisiforme"
+    ],
+    "summary": "Hueso de la fila proximal del carpo canino, situado palmar al hueso ulnar.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "accesorio",
+      "accessorium",
+      "carpi",
+      "carpo",
+      "del",
+      "hueso",
+      "hueso accesorio del carpo",
+      "os carpi accessorium",
+      "os pisiforme",
+      "pisiforme"
+    ]
+  },
+  {
+    "id": "canine:carpal-intermedioradial",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpi intermedioradiale",
+    "spanishName": "Hueso intermediorradial del carpo",
+    "aliases": [
+      "Os scapholunatum",
+      "escafolunar"
+    ],
+    "summary": "Hueso mayor de la fila proximal del carpo canino, resultado de la fusión de los huesos radial e intermedio.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "carpi",
+      "carpo",
+      "del",
+      "escafolunar",
+      "hueso",
+      "hueso intermediorradial del carpo",
+      "intermedioradiale",
+      "intermediorradial",
+      "os carpi intermedioradiale",
+      "os scapholunatum",
+      "scapholunatum"
+    ]
+  },
+  {
+    "id": "canine:carpal-ulnar",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thoracic-limb",
+    "regionSpanish": "Extremidad torácica",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpi ulnare",
+    "spanishName": "Hueso ulnar del carpo",
+    "aliases": [
+      "Os triquetrum"
+    ],
+    "summary": "Hueso de la fila proximal del carpo canino, lateral al intermediorradial.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "carpi",
+      "carpo",
+      "del",
+      "hueso",
+      "hueso ulnar del carpo",
+      "os carpi ulnare",
+      "os triquetrum",
+      "triquetrum",
+      "ulnar",
+      "ulnare"
+    ]
+  },
+  {
     "id": "canine:common-digital-extensor",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -133,6 +341,30 @@
       "musculo extensor digital comun",
       "musculus",
       "musculus extensor digitorum communis"
+    ]
+  },
+  {
+    "id": "canine:coxal",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os coxae",
+    "spanishName": "Hueso coxal",
+    "aliases": [
+      "coxal",
+      "os coxae"
+    ],
+    "summary": "Hueso de la cintura pélvica canina formado por ilion, isquion y pubis, que contiene el acetábulo.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "coxae",
+      "coxal",
+      "hueso",
+      "hueso coxal",
+      "os coxae"
     ]
   },
   {
@@ -194,6 +426,50 @@
       "musculus extensor carpi radialis",
       "radial",
       "radialis"
+    ]
+  },
+  {
+    "id": "canine:femur",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os femoris",
+    "spanishName": "Fémur",
+    "aliases": [
+      "Femur",
+      "femur"
+    ],
+    "summary": "Hueso del muslo canino, entre la articulación de la cadera y la de la rodilla.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "femoris",
+      "femur",
+      "os femoris"
+    ]
+  },
+  {
+    "id": "canine:fibula",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Fibula",
+    "spanishName": "Fíbula",
+    "aliases": [
+      "fibula",
+      "perone",
+      "peroné"
+    ],
+    "summary": "Hueso delgado de la pierna canina que se extiende a lo largo de toda la región, lateral a la tibia.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "fibula",
+      "perone"
     ]
   },
   {
@@ -268,7 +544,8 @@
     "canonicalLatinName": "Humerus",
     "spanishName": "Húmero",
     "aliases": [
-      "hueso braquial"
+      "humero",
+      "humerus"
     ],
     "summary": "Hueso largo del brazo canino que articula proximalmente con la escápula y distalmente con el radio y cúbito.",
     "has3DModel": false,
@@ -276,9 +553,6 @@
       "canine:thoracic-limb-model"
     ],
     "searchTokens": [
-      "braquial",
-      "hueso",
-      "hueso braquial",
       "humero",
       "humerus"
     ]
@@ -349,26 +623,21 @@
     "canonicalLatinName": "Skeleton manus",
     "spanishName": "Esqueleto de la mano",
     "aliases": [
-      "huesos del carpo y metacarpo",
-      "mano canina"
+      "mano canina",
+      "skeleton manus"
     ],
-    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro anterior canino.",
+    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
     "has3DModel": false,
     "modelIds": [
       "canine:thoracic-limb-model"
     ],
     "searchTokens": [
       "canina",
-      "carpo",
-      "del",
       "esqueleto",
       "esqueleto de la mano",
-      "huesos",
-      "huesos del carpo y metacarpo",
       "mano",
       "mano canina",
       "manus",
-      "metacarpo",
       "skeleton",
       "skeleton manus"
     ]
@@ -429,6 +698,29 @@
     ]
   },
   {
+    "id": "canine:patella",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Patella",
+    "spanishName": "Rótula",
+    "aliases": [
+      "patela",
+      "patella",
+      "rotula"
+    ],
+    "summary": "Hueso de la rodilla canina que forma la articulación femoropatelar.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "patela",
+      "patella",
+      "rotula"
+    ]
+  },
+  {
     "id": "canine:radial-nerve",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -464,18 +756,14 @@
     "canonicalLatinName": "Radius",
     "spanishName": "Radio",
     "aliases": [
-      "hueso del antebrazo"
+      "radius"
     ],
-    "summary": "Hueso craneal y medial del antebrazo canino que soporta la mayor parte del peso corporal en la extremidad torácica.",
+    "summary": "Hueso del antebrazo canino, aplanado craneocaudalmente, que articula con el húmero y el cúbito proximalmente y con el carpo distalmente.",
     "has3DModel": false,
     "modelIds": [
       "canine:thoracic-limb-model"
     ],
     "searchTokens": [
-      "antebrazo",
-      "del",
-      "hueso",
-      "hueso del antebrazo",
       "radio",
       "radius"
     ]
@@ -490,7 +778,9 @@
     "canonicalLatinName": "Scapula",
     "spanishName": "Escápula",
     "aliases": [
-      "omóplato"
+      "escapula",
+      "omóplato",
+      "scapula"
     ],
     "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
     "has3DModel": false,
@@ -517,7 +807,7 @@
       "calavera canina",
       "esqueleto cefálico canino"
     ],
-    "summary": "Estructura ósea de la cabeza canina derivada de tomografía computarizada (CT scan) que aloja el encéfalo y los órganos de los sentidos.",
+    "summary": "Esqueleto de la cabeza canina; su forma y tamaño varían mucho entre razas dolicocéfalas, mesaticéfalas y braquicéfalas.",
     "has3DModel": false,
     "modelIds": [
       "canine:skull-model"
@@ -672,6 +962,163 @@
     ]
   },
   {
+    "id": "canine:talus",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Talus",
+    "spanishName": "Talus",
+    "aliases": [
+      "astragalo",
+      "astrágalo"
+    ],
+    "summary": "Hueso proximal del tarso canino que articula con la tibia y la fíbula.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "astragalo",
+      "talus"
+    ]
+  },
+  {
+    "id": "canine:tarsal-1",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale I",
+    "spanishName": "Hueso tarsiano I",
+    "aliases": [
+      "Os cuneiforme mediale"
+    ],
+    "summary": "Hueso de la fila distal del tarso canino.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "cuneiforme",
+      "hueso",
+      "hueso tarsiano i",
+      "mediale",
+      "os cuneiforme mediale",
+      "os tarsale i",
+      "tarsale",
+      "tarsiano"
+    ]
+  },
+  {
+    "id": "canine:tarsal-2",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale II",
+    "spanishName": "Hueso tarsiano II",
+    "aliases": [
+      "Os cuneiforme intermedium"
+    ],
+    "summary": "Hueso más pequeño del tarso canino, en la fila distal.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "cuneiforme",
+      "hueso",
+      "hueso tarsiano ii",
+      "intermedium",
+      "os cuneiforme intermedium",
+      "os tarsale ii",
+      "tarsale",
+      "tarsiano"
+    ]
+  },
+  {
+    "id": "canine:tarsal-3",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale III",
+    "spanishName": "Hueso tarsiano III",
+    "aliases": [
+      "Os cuneiforme laterale"
+    ],
+    "summary": "Hueso de la fila distal del tarso canino.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "cuneiforme",
+      "hueso",
+      "hueso tarsiano iii",
+      "iii",
+      "laterale",
+      "os cuneiforme laterale",
+      "os tarsale iii",
+      "tarsale",
+      "tarsiano"
+    ]
+  },
+  {
+    "id": "canine:tarsal-4",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale IV",
+    "spanishName": "Hueso tarsiano IV",
+    "aliases": [
+      "Os cuboideum",
+      "cuboides"
+    ],
+    "summary": "Hueso alto de la fila distal del tarso canino, lateral al central y al tarsiano III.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "cuboides",
+      "cuboideum",
+      "hueso",
+      "hueso tarsiano iv",
+      "os cuboideum",
+      "os tarsale iv",
+      "tarsale",
+      "tarsiano"
+    ]
+  },
+  {
+    "id": "canine:tarsal-central",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsi centrale",
+    "spanishName": "Hueso central del tarso",
+    "aliases": [
+      "Os naviculare",
+      "navicular"
+    ],
+    "summary": "Hueso del tarso canino situado entre el talus y los tarsianos I–III.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "central",
+      "centrale",
+      "del",
+      "hueso",
+      "hueso central del tarso",
+      "navicular",
+      "naviculare",
+      "os naviculare",
+      "os tarsi centrale",
+      "tarsi",
+      "tarso"
+    ]
+  },
+  {
     "id": "canine:teres-major",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -698,6 +1145,25 @@
       "redondo",
       "redondo mayor",
       "teres"
+    ]
+  },
+  {
+    "id": "canine:tibia",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Tibia",
+    "spanishName": "Tibia",
+    "aliases": [
+      "tibia"
+    ],
+    "summary": "Hueso mayor de la pierna canina, aproximadamente de la misma longitud que el fémur.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "tibia"
     ]
   },
   {
@@ -840,7 +1306,7 @@
     "aliases": [
       "ulna"
     ],
-    "summary": "Hueso caudal y lateral del antebrazo canino con un olécranon prominente que actúa como palanca para los extensores del codo.",
+    "summary": "Hueso del antebrazo canino, bien desarrollado, que disminuye de tamaño hacia distal y cruza la cara caudal del radio.",
     "has3DModel": false,
     "modelIds": [
       "canine:thoracic-limb-model"

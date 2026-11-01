@@ -402,30 +402,135 @@
     "canonicalLatinName": "Humerus",
     "spanishName": "Húmero",
     "aliases": [
-      "hueso braquial"
+      "humerus",
+      "humero"
     ],
     "summary": "Hueso largo del brazo canino que articula proximalmente con la escápula y distalmente con el radio y cúbito.",
+    "detailedDescription": "Hueso relativamente muy largo y algo delgado, con ligera torsión espiral. La cabeza es larga y fuertemente curvada en sentido craneocaudal; el cuello está mejor marcado que en el caballo. El tubérculo mayor, no dividido, se sitúa muy craneal y sobresale poco por encima de la cabeza; el tubérculo menor es pequeño y el surco intertubercular, no dividido, queda desplazado hacia medial. La tuberosidad deltoidea es una cresta baja; el surco del m. braquial es muy poco profundo; una ligera elevación en el tercio proximal de la cara medial representa la tuberosidad del redondo mayor. El foramen nutricio está hacia la mitad de la cara caudal. Distalmente presenta una superficie articular troclear oblicua para el radio y el cúbito, con la parte lateral más extensa; los epicóndilos son prominentes. Las fosas coronoidea y del olécranon suelen comunicar mediante un foramen supratroclear grande. En 123 húmeros de perros actuales, el foramen supratroclear apareció en el 73,17 %, más próximo al epicóndilo lateral y de forma predominantemente alargada en sentido transversal. El extremo proximal se une al cuerpo hacia el año de edad y el distal a los seis a ocho meses.",
+    "morphology": "Cuerpo comprimido lateralmente, sobre todo en sus dos tercios proximales, que se curvan en grado variable con convexidad craneal.",
+    "location": "Esqueleto del brazo, entre la articulación del hombro y la del codo.",
+    "attachments": [
+      "Epicondylus medialis: inserción del ligamento colateral medial del codo y origen de músculos flexores (rotulado en la figura de la fuente)"
+    ],
+    "landmarks": [
+      "Caput humeri — cabeza del húmero",
+      "Collum humeri — cuello del húmero",
+      "Tuberculum majus — tubérculo mayor",
+      "Tuberculum minus — tubérculo menor",
+      "Sulcus intertubercularis — surco intertubercular",
+      "Tuberositas deltoidea — tuberosidad deltoidea",
+      "Sulcus m. brachialis — surco del músculo braquial",
+      "Tuberositas teres major — tuberosidad del redondo mayor",
+      "Crista supracondylaris lateralis — cresta supracondílea lateral",
+      "Condylus humeri — cóndilo del húmero",
+      "Fossa olecrani — fosa del olécranon",
+      "Fossa coronoidea — fosa coronoidea",
+      "Foramen supratrochleare (ca) — foramen supratroclear",
+      "Epicondylus medialis — epicóndilo medial",
+      "Epicondylus lateralis — epicóndilo lateral"
+    ],
+    "speciesDifferences": [
+      "NAV restringe Foramen supratrochleare a (ca) y Foramen supracondylare a (fe); su nota 46 indica que el Capitulum humeri está presente en carnívoros, más diferenciado en el gato que en el perro."
+    ],
     "sourceIds": [
       "innervate-vr-canine-limb",
       "nav-6th-edition",
-      "umn-proximal-thoracic-limb"
+      "umn-proximal-thoracic-limb",
+      "sisson-dog-1914",
+      "batista-stf-2026"
     ],
     "modelIds": [
       "canine:thoracic-limb-model"
     ],
     "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Skeleton brachii, Humerus",
+        "claim": "Término NAV «Humerus»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Skeleton brachii, Humerus",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Humerus",
+        "claim": "Grafía latina y variante sin tilde para búsqueda."
+      },
+      {
+        "field": "summary",
+        "sourceId": "nav-6th-edition",
+        "locator": "ARTHROLOGIA, p.32; Articulatio humeri, Articulatio cubiti (humeroulnaris, humeroradialis)",
+        "claim": "Articulaciones del hombro y del codo con radio y cúbito."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.198",
+        "claim": "Superficie troclear distal para radio y cúbito en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.198; Figs.218–219 (p.199)",
+        "claim": "Forma, cabeza, cuello, tubérculos, surcos, foramen nutricio, epicóndilos, foramen supratroclear y edades de unión en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "batista-stf-2026",
+        "locator": "Abstract; J Anat 249(5):1170–1180",
+        "claim": "Prevalencia 73,17 % en 123 perros actuales, posición lateral y forma transversal del foramen supratroclear."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.198",
+        "claim": "Compresión lateral y curvatura de convexidad craneal del cuerpo."
+      },
+      {
+        "field": "location",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18 (Skeleton brachii); ARTHROLOGIA, p.32 (Articulatio humeri, Articulatio cubiti)",
+        "claim": "Hueso del esqueleto del brazo entre hombro y codo."
+      },
+      {
+        "field": "attachments",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, Fig.219, leyenda 1–2 (p.199)",
+        "claim": "Ligamento medial del codo y músculos flexores en el epicóndilo medial."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, pp.18–19; Humerus",
+        "claim": "Nombres latinos; Foramen supratrochleare marcado (ca)."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.198; Figs.218–219 (p.199)",
+        "claim": "Accidentes descritos y rotulados en húmero de perro."
+      },
+      {
+        "field": "speciesDifferences",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19 (Foramen supratrochleare (ca), Foramen supracondylare (fe)); nota 46, p.27",
+        "claim": "Comparación nomenclatural explícita perro/gato."
+      }
+    ],
     "review": {
       "status": "pending",
-      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El foramen supratroclear es variable (estudio moderno: 73,17 % en perros actuales); no afirmar su presencia en un espécimen concreto. Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
     },
     "completeness": "partial",
     "missingFields": [
-      "detailedDescription",
-      "vascularSupply",
-      "speciesDifferences",
-      "morphology",
-      "location",
-      "landmarks"
+      "function",
+      "vascularSupply"
     ]
   },
   {
@@ -533,29 +638,92 @@
     "spanishName": "Esqueleto de la mano",
     "aliases": [
       "mano canina",
-      "huesos del carpo y metacarpo"
+      "skeleton manus"
     ],
-    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro anterior canino.",
+    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
+    "detailedDescription": "El carpo comprende siete huesos, tres en la fila proximal y cuatro en la distal; la reducción de la fila proximal se atribuye a la fusión de los huesos radial e intermedio en el intermediorradial. Hay cinco metacarpianos: el primero es con mucho el más corto y el tercero y cuarto los más largos. Los cinco dedos tienen tres falanges, excepto el primero, que tiene dos; el primer dedo es muy corto y no toca el suelo al caminar. Suelen existir nueve sesamoideos palmares: dos en cada articulación metacarpofalangiana de los dedos principales y habitualmente uno, a veces dos, en la del primer dedo. La osificación de metacarpianos y falanges se completa a los cinco o seis meses.",
+    "morphology": "Los metacarpianos, juntos proximalmente y algo divergentes distalmente, forman una cara dorsal convexa y una palmar cóncava.",
+    "landmarks": [
+      "Ossa carpi — huesos del carpo",
+      "Os carpi intermedioradiale — hueso intermediorradial",
+      "Ossa metacarpalia I-V — metacarpianos I–V",
+      "Phalanx proximalis — falange proximal",
+      "Phalanx media — falange media",
+      "Phalanx distalis — falange distal",
+      "Crista unguicularis — cresta ungueal",
+      "Ossa sesamoidea proximalia — sesamoideos proximales",
+      "Ossa sesamoidea dorsalia — sesamoideos dorsales"
+    ],
     "sourceIds": [
       "innervate-vr-canine-limb",
-      "nav-6th-edition"
+      "nav-6th-edition",
+      "sisson-dog-1914"
     ],
     "modelIds": [
       "canine:thoracic-limb-model"
     ],
     "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus",
+        "claim": "Término NAV «Skeleton manus»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus",
+        "claim": "Término latino como alias; «mano canina» es variante editorial."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.200–201",
+        "claim": "Carpo, cinco metacarpianos y cinco dedos en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.200–201; Fig.221 (p.201)",
+        "claim": "Recuento del carpo, fusión intermediorradial, metacarpianos, falanges, sesamoideos y edad de osificación en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Disposición convexa dorsal y cóncava palmar de los metacarpianos."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, pp.19–20; Skeleton manus, Ossa digitorum manus",
+        "claim": "Nombres latinos de grupos y accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.200–201",
+        "claim": "Elementos descritos en mano de perro, incluida la cresta ungueal."
+      }
+    ],
     "review": {
       "status": "pending",
-      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Registro de grupo heredado (no un hueso único); los recuentos de sesamoideos y del dedo I son variables según la fuente. Se retiró el alias inexacto «huesos del carpo y metacarpo». Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
     },
     "completeness": "partial",
     "missingFields": [
-      "detailedDescription",
-      "vascularSupply",
-      "speciesDifferences",
-      "morphology",
       "location",
-      "landmarks"
+      "function",
+      "attachments",
+      "vascularSupply",
+      "speciesDifferences"
     ]
   },
   {
@@ -667,29 +835,107 @@
     "canonicalLatinName": "Radius",
     "spanishName": "Radio",
     "aliases": [
-      "hueso del antebrazo"
+      "radius"
     ],
-    "summary": "Hueso craneal y medial del antebrazo canino que soporta la mayor parte del peso corporal en la extremidad torácica.",
+    "summary": "Hueso del antebrazo canino, aplanado craneocaudalmente, que articula con el húmero y el cúbito proximalmente y con el carpo distalmente.",
+    "detailedDescription": "Radio y cúbito son relativamente largos y articulan entre sí en ambos extremos, lo que permite un ligero movimiento; un espacio interóseo estrecho separa sus cuerpos. El extremo proximal (cabeza) es relativamente pequeño, con cuello definido, fóvea cóncava para el húmero y circunferencia articular caudal para el cúbito; la tuberosidad del radio es pequeña. La cara craneal presenta en su mitad distal un surco para el tendón del extensor oblicuo del carpo (denominación de la fuente); la caudal, el foramen nutricio en el tercio proximal y una línea rugosa lateral para el ligamento interóseo. El extremo distal es mucho más ancho, con una superficie articular carpiana cóncava extensa, un proceso estiloides formado por el borde medial, una escotadura ulnar lateral para el cúbito y tres surcos craneales para tendones extensores. El extremo proximal se une al cuerpo a los seis a ocho meses y el distal hacia el año y medio.",
+    "morphology": "Aplanado craneocaudalmente y más grueso hacia distal; el cuerpo describe dos curvas, convexo cranealmente y medialmente.",
+    "location": "Antebrazo; el cúbito cruza su cara caudal de medial a lateral.",
+    "attachments": [
+      "Línea rugosa lateral de la cara caudal (Crista interossea en la fuente): ligamento interóseo"
+    ],
+    "landmarks": [
+      "Caput radii — cabeza del radio",
+      "Fovea capitis radii — fóvea de la cabeza",
+      "Circumferentia articularis — circunferencia articular",
+      "Collum radii — cuello del radio",
+      "Tuberositas radii — tuberosidad del radio",
+      "Corpus radii — cuerpo del radio",
+      "Trochlea radii — tróclea del radio",
+      "Facies articularis carpea — superficie articular carpiana",
+      "Processus styloideus — proceso estiloides",
+      "Incisura ulnaris — escotadura ulnar"
+    ],
     "sourceIds": [
       "innervate-vr-canine-limb",
-      "nav-6th-edition"
+      "nav-6th-edition",
+      "sisson-dog-1914"
     ],
     "modelIds": [
       "canine:thoracic-limb-model"
     ],
     "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii, Radius",
+        "claim": "Término NAV «Radius»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii, Radius",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Radius",
+        "claim": "Grafía latina para búsqueda."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.198–199",
+        "claim": "Aplanamiento craneocaudal y superficies para húmero, cúbito y carpo en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.198–199; edades p.200",
+        "claim": "Relación con el cúbito, extremos, caras, surcos y edades de unión en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.198",
+        "claim": "Aplanamiento, aumento distal y doble curvatura del cuerpo."
+      },
+      {
+        "field": "location",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.199",
+        "claim": "El cúbito cruza la cara caudal (volar) del radio de medial a lateral."
+      },
+      {
+        "field": "attachments",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.199",
+        "claim": "Línea rugosa lateral para el ligamento interóseo."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Radius",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.198–199; Fig.220 (p.200)",
+        "claim": "Accidentes descritos en radio de perro."
+      }
+    ],
     "review": {
       "status": "pending",
-      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Se retiró la afirmación previa sin fuente de que el radio soporta la mayor parte del peso y el alias genérico «hueso del antebrazo». Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
     },
     "completeness": "partial",
     "missingFields": [
-      "detailedDescription",
+      "function",
       "vascularSupply",
-      "speciesDifferences",
-      "morphology",
-      "location",
-      "landmarks"
+      "speciesDifferences"
     ]
   },
   {
@@ -701,29 +947,115 @@
     "canonicalLatinName": "Scapula",
     "spanishName": "Escápula",
     "aliases": [
-      "omóplato"
+      "omóplato",
+      "scapula",
+      "escapula"
     ],
     "summary": "Hueso del hombro; presenta el tubérculo supraglenoideo.",
+    "detailedDescription": "La espina escapular aumenta gradualmente de altura hacia distal y divide la cara lateral en dos fosas casi iguales (supraespinosa e infraespinosa). El acromion es corto y romo y queda a la altura del borde de la cavidad glenoidea. La fosa subescapular es muy poco profunda y presenta líneas rugosas; el área rugosa para el m. serrato ventral es amplia y cuadrilátera cranealmente y estrecha y marginal caudalmente. El cuello está bien definido. La cavidad glenoidea se continúa cranealmente sobre la cara ventral del tubérculo supraglenoideo, que es romo y se une al resto del hueso a los seis a ocho meses.",
+    "morphology": "Relativamente larga y estrecha. Borde craneal delgado, fuertemente convexo y sinuoso; borde caudal recto y grueso; borde dorsal convexo y grueso, con una banda de cartílago. Ángulo craneal redondeado; ángulo caudal grueso y cuadrado.",
+    "location": "En la posición de estación habitual, el ángulo craneal queda frente a la primera apófisis espinosa torácica, el ángulo caudal sobre el extremo vertebral de la cuarta costilla y el ángulo ventral justo craneal al extremo esternal de la primera costilla.",
+    "attachments": [
+      "Facies serrata (cara costal): área rugosa para el m. serrato ventral",
+      "Eminencia rugosa caudal del cuello: origen de la cabeza larga del m. tríceps braquial"
+    ],
+    "landmarks": [
+      "Spina scapulae — espina escapular",
+      "Fossa supraspinata — fosa supraespinosa",
+      "Fossa infraspinata — fosa infraespinosa",
+      "Fossa subscapularis — fosa subescapular",
+      "Facies serrata — cara serrata",
+      "Acromion — acromion",
+      "Margo dorsalis — borde dorsal",
+      "Margo cranialis — borde craneal",
+      "Margo caudalis — borde caudal",
+      "Angulus cranialis — ángulo craneal",
+      "Angulus caudalis — ángulo caudal",
+      "Collum scapulae — cuello de la escápula",
+      "Cavitas glenoidalis — cavidad glenoidea",
+      "Tuberculum supraglenoidale — tubérculo supraglenoideo",
+      "Cartilago scapulae — cartílago escapular"
+    ],
     "sourceIds": [
       "umn-proximal-thoracic-limb",
-      "nav-6th-edition"
+      "nav-6th-edition",
+      "sisson-dog-1914"
     ],
     "modelIds": [
       "canine:thoracic-limb-model"
     ],
     "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Cingulum membri thoracici, Scapula",
+        "claim": "Término NAV «Scapula»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Cingulum membri thoracici, Scapula",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Scapula",
+        "claim": "Grafía latina y variante sin tilde para búsqueda; «omóplato» es sinónimo editorial no respaldado por esta fuente."
+      },
+      {
+        "field": "summary",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Cingulum membri thoracici, Scapula, Tuberculum supraglenoidale",
+        "claim": "Hueso de la cintura torácica con tubérculo supraglenoideo."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.197; ossificación p.198",
+        "claim": "Espina, fosas, acromion, fosa subescapular, área serrata, cuello, cavidad glenoidea y unión del tubérculo a 6–8 meses en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.197",
+        "claim": "Forma larga y estrecha; caracteres de bordes y ángulos en perro."
+      },
+      {
+        "field": "location",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.197",
+        "claim": "Relación de los ángulos con la primera apófisis espinosa torácica y las costillas 1.ª y 4.ª."
+      },
+      {
+        "field": "attachments",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.197",
+        "claim": "Área del serrato ventral y origen de la cabeza larga del tríceps en el cuello."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.18; Scapula",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.197; Figs.216–217 (p.198)",
+        "claim": "Accidentes descritos y rotulados en escápula de perro."
+      }
+    ],
     "review": {
       "status": "pending",
-      "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Sisson afirma que el tubérculo supraglenoideo no presenta proceso coracoides, mientras NAV lista Processus coracoideus sin restricción de especie: no se incluyó como accidente hasta cotejo. Processus hamatus (NAV: or, Car) no confirmado con fuente descriptiva canina. Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
     },
     "completeness": "partial",
     "missingFields": [
-      "detailedDescription",
+      "function",
       "vascularSupply",
-      "speciesDifferences",
-      "morphology",
-      "location",
-      "landmarks"
+      "speciesDifferences"
     ]
   },
   {
@@ -739,27 +1071,86 @@
       "cabeza ósea",
       "esqueleto cefálico canino"
     ],
-    "summary": "Estructura ósea de la cabeza canina derivada de tomografía computarizada (CT scan) que aloja el encéfalo y los órganos de los sentidos.",
+    "summary": "Esqueleto de la cabeza canina; su forma y tamaño varían mucho entre razas dolicocéfalas, mesaticéfalas y braquicéfalas.",
+    "detailedDescription": "Las razas de cráneo largo y estrecho (p. ej., galgo, collie) se denominan dolicocéfalas; las de cráneo ancho y corto (p. ej., bulldog, pequeños spaniels, pug), braquicéfalas; y las intermedias (p. ej., fox terrier, teckel), mesaticéfalas. El índice cefálico (anchura × 100 / longitud) es de aproximadamente 50 en dolicocéfalos extremos, puede llegar a 90 en braquicéfalos y ronda 70 en el fox terrier. La fosa temporal es muy extensa y la órbita comunica libremente con ella porque falta la parte caudal del margen orbitario en el cráneo seco. El foramen infraorbitario se abre sobre el tercer diente yugal. La bulla timpánica es grande y redondeada, los procesos paracondilares son pequeños y el paladar duro mide aproximadamente la mitad de la longitud del cráneo. El seno frontal está confinado al hueso frontal y es muy pequeño en los braquicéfalos extremos.",
+    "landmarks": [
+      "Fossa temporalis — fosa temporal",
+      "Arcus zygomaticus — arco cigomático",
+      "Orbita — órbita",
+      "Foramen magnum — foramen magno",
+      "Condylus occipitalis — cóndilo occipital",
+      "Processus paracondylaris — proceso paracondilar",
+      "Crista nuchae — cresta nucal",
+      "Crista sagittalis externa — cresta sagital externa",
+      "Bulla tympanica — bulla timpánica",
+      "Foramen infraorbitale — foramen infraorbitario",
+      "Palatum osseum — paladar óseo"
+    ],
     "sourceIds": [
       "nih-3d-dog-skull",
-      "nav-6th-edition"
+      "nav-6th-edition",
+      "sisson-dog-1914"
     ],
     "modelIds": [
       "canine:skull-model"
     ],
     "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.11; Skeleton axiale, Cranium",
+        "claim": "Término NAV «Cranium»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.11; Skeleton axiale, Cranium",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, The skull as a whole, p.195",
+        "claim": "Variación racial dolicocéfala, mesaticéfala y braquicéfala."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, The skull as a whole, pp.195–196",
+        "claim": "Tipos raciales, índice cefálico, fosa temporal, órbita, foramen infraorbitario, bulla, procesos paramastoideos y paladar."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the skull, p.197 (frontal sinus)",
+        "claim": "Seno frontal confinado al frontal y reducido en braquicéfalos extremos."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, pp.11–12 (Fossa temporalis, Arcus zygomaticus, Palatum osseum, Orbita, Foramen magnum, Condylus occipitalis, Processus paracondylaris, Crista nuchae, Crista sagittalis externa), p.14 (Bulla tympanica), p.15 (Foramen infraorbitale)",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the skull, pp.188–197",
+        "claim": "Accidentes descritos en cráneo de perro (cresta nucal, cresta parietal, bulla, foramen infraorbitario, procesos paramastoideos)."
+      }
+    ],
     "review": {
       "status": "pending",
-      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El resumen anterior describía el modelo NIH (derivado de TC) y no el hueso; esa procedencia corresponde al registro del modelo y su licencia por archivo sigue sin comprobar. Alias coloquiales conservados sin fuente. «Paramastoid process» de la fuente normalizado a Processus paracondylaris (NAV). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
     },
     "completeness": "partial",
     "missingFields": [
-      "detailedDescription",
-      "vascularSupply",
-      "speciesDifferences",
       "morphology",
       "location",
-      "landmarks"
+      "function",
+      "attachments",
+      "vascularSupply",
+      "speciesDifferences"
     ]
   },
   {
@@ -1226,27 +1617,94 @@
     "aliases": [
       "ulna"
     ],
-    "summary": "Hueso caudal y lateral del antebrazo canino con un olécranon prominente que actúa como palanca para los extensores del codo.",
+    "summary": "Hueso del antebrazo canino, bien desarrollado, que disminuye de tamaño hacia distal y cruza la cara caudal del radio.",
+    "detailedDescription": "El cuerpo es grande y trilátero en sus dos tercios proximales y más pequeño y redondeado distalmente; su cara craneal es en general rugosa. El foramen nutricio está cerca del extremo proximal, del que desciende un surco vascular que indica el trayecto de la arteria interósea. El olécranon está surcado y presenta tres prominencias, la caudal grande y redondeada. La escotadura troclear, ancha distalmente, completa la superficie para la tróclea del húmero; bajo ella, la escotadura radial articula con la cara caudal de la cabeza del radio y, más distal, una fosa recibe una tuberosidad del radio. El extremo distal (cabeza) es pequeño, termina en un proceso estiloides romo, articula con el hueso ulnar del carpo y presenta una carilla convexa para el radio. El olécranon y el extremo distal se fusionan con el resto del hueso hacia los quince meses.",
+    "morphology": "Trilátero proximalmente y redondeado distalmente; disminuye de tamaño hacia distal.",
+    "location": "Antebrazo, caudal al radio, al que cruza de medial a lateral.",
+    "landmarks": [
+      "Olecranon — olécranon",
+      "Processus anconeus — proceso ancóneo",
+      "Incisura trochlearis — escotadura troclear",
+      "Incisura radialis — escotadura radial",
+      "Corpus ulnae — cuerpo del cúbito",
+      "Caput ulnae — cabeza del cúbito",
+      "Processus styloideus — proceso estiloides"
+    ],
     "sourceIds": [
       "innervate-vr-canine-limb",
-      "nav-6th-edition"
+      "nav-6th-edition",
+      "sisson-dog-1914"
     ],
     "modelIds": [
       "canine:thoracic-limb-model"
     ],
     "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii, Ulna",
+        "claim": "Término NAV «Ulna»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii, Ulna",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Ulna",
+        "claim": "Término latino como alias de búsqueda."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.199",
+        "claim": "Bien desarrollada, disminuye distalmente y cruza la cara volar del radio en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.199–200",
+        "claim": "Cuerpo, foramen nutricio, surco de la arteria interósea, olécranon, escotaduras, extremo distal y edad de fusión en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.199",
+        "claim": "Forma trilátera proximal y redondeada distal."
+      },
+      {
+        "field": "location",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.199",
+        "claim": "Situación respecto del radio."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Ulna",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, pp.199–200; Fig.220 (p.200)",
+        "claim": "Accidentes descritos y rotulados (Processus anconeus) en cúbito de perro."
+      }
+    ],
     "review": {
       "status": "pending",
-      "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Se retiró la afirmación previa sin fuente sobre el olécranon como palanca de los extensores. Procesos coronoideos no descritos en el texto canino consultado; no incluidos. Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
     },
     "completeness": "partial",
     "missingFields": [
-      "detailedDescription",
+      "function",
+      "attachments",
       "vascularSupply",
-      "speciesDifferences",
-      "morphology",
-      "location",
-      "landmarks"
+      "speciesDifferences"
     ]
   },
   {
@@ -3947,6 +4405,1546 @@
     "completeness": "partial",
     "missingFields": [
       "function",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:carpal-intermedioradial",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpi intermedioradiale",
+    "spanishName": "Hueso intermediorradial del carpo",
+    "aliases": [
+      "Os scapholunatum",
+      "escafolunar"
+    ],
+    "summary": "Hueso mayor de la fila proximal del carpo canino, resultado de la fusión de los huesos radial e intermedio.",
+    "detailedDescription": "Articula con casi toda la superficie distal del radio y con los huesos de la fila distal; sobresale de forma prominente en la cara palmar del carpo.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi intermedioradiale",
+        "claim": "Término NAV «Os carpi intermedioradiale»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi intermedioradiale",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi intermedioradiale",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Posición en el carpo de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma y articulaciones descritas en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "morphology",
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:carpal-ulnar",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpi ulnare",
+    "spanishName": "Hueso ulnar del carpo",
+    "aliases": [
+      "Os triquetrum"
+    ],
+    "summary": "Hueso de la fila proximal del carpo canino, lateral al intermediorradial.",
+    "detailedDescription": "Articula proximalmente con el radio y el cúbito y palmarmente con el accesorio; distalmente descansa sobre el carpiano IV y se prolonga para articular también con el metacarpiano V.",
+    "morphology": "Largo.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi ulnare",
+        "claim": "Término NAV «Os carpi ulnare»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi ulnare",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi ulnare",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Posición en el carpo de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma del hueso en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:carpal-accessory",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpi accessorium",
+    "spanishName": "Hueso accesorio del carpo",
+    "aliases": [
+      "Os pisiforme"
+    ],
+    "summary": "Hueso de la fila proximal del carpo canino, situado palmar al hueso ulnar.",
+    "detailedDescription": "Su extremo craneal articula con el cúbito y con el hueso ulnar del carpo.",
+    "morphology": "Cilíndrico, estrechado en su parte media y ensanchado en ambos extremos.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi accessorium",
+        "claim": "Término NAV «Os carpi accessorium»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi accessorium",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpi accessorium",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Posición en el carpo de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma del hueso en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:carpal-1",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale I",
+    "spanishName": "Hueso carpiano I",
+    "aliases": [
+      "Os trapezium"
+    ],
+    "summary": "Hueso más pequeño de la fila distal del carpo canino.",
+    "detailedDescription": "Articula lateralmente con el carpiano II y distalmente con el metacarpiano I.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale I",
+        "claim": "Término NAV «Os carpale I»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale I",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale I",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Posición en el carpo de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma y articulaciones descritas en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "morphology",
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:carpal-2",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale II",
+    "spanishName": "Hueso carpiano II",
+    "aliases": [
+      "Os trapezoideum"
+    ],
+    "summary": "Hueso de la fila distal del carpo canino.",
+    "detailedDescription": "Su superficie proximal es convexa y la distal cóncava, apoyada sobre el metacarpiano II.",
+    "morphology": "En cuña, con la base palmar.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale II",
+        "claim": "Término NAV «Os carpale II»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale II",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale II",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Posición en el carpo de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma del hueso en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:carpal-3",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale III",
+    "spanishName": "Hueso carpiano III",
+    "aliases": [
+      "Os capitatum"
+    ],
+    "summary": "Hueso de la fila distal del carpo canino.",
+    "detailedDescription": "Su superficie distal es cóncava y articula principalmente con el metacarpiano III.",
+    "morphology": "Semejante al carpiano II.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale III",
+        "claim": "Término NAV «Os carpale III»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale III",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale III",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Posición en el carpo de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma del hueso en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:carpal-4",
+    "speciesId": "canine",
+    "regionId": "thoracic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os carpale IV",
+    "spanishName": "Hueso carpiano IV",
+    "aliases": [
+      "Os hamatum"
+    ],
+    "summary": "Hueso más grande de la fila distal del carpo canino.",
+    "detailedDescription": "Articula distalmente con los metacarpianos IV y V.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale IV",
+        "claim": "Término NAV «Os carpale IV»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale IV",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi, Os carpale IV",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Posición en el carpo de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
+        "claim": "Forma y articulaciones descritas en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "morphology",
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:coxal",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os coxae",
+    "spanishName": "Hueso coxal",
+    "aliases": [
+      "os coxae",
+      "coxal"
+    ],
+    "summary": "Hueso de la cintura pélvica canina formado por ilion, isquion y pubis, que contiene el acetábulo.",
+    "detailedDescription": "El ilion es casi paralelo al plano medio; su cara glútea es cóncava, la sacropélvica casi plana y la auricular mira casi directamente hacia medial. La línea arcuata (ilio-pectínea en la fuente) es muy marcada. La cresta ilíaca es muy convexa, gruesa y rugosa; la tuberosidad sacra y la tuberosidad coxal presentan dos eminencias cada una. Una cresta ventrolateral del cuerpo del ilion (línea glútea ventral) termina en una tuberosidad craneal al acetábulo. Las tuberosidades isquiáticas son aplanadas y evertidas; la espina isquiática es baja y gruesa; la incisura isquiática mayor es alargada y muy poco profunda; el arco isquiático es pequeño y semielíptico. La porción sinfisaria del pubis es gruesa y se fusiona tarde con la del lado opuesto. La fosa acetabular es profunda, con un fondo tan delgado que es translúcido, y presenta una pequeña escotadura caudal. El foramen obturado semeja un triángulo equilátero de ángulos redondeados. La unión de las tres partes suele haberse producido a los seis meses, pero las epífisis del ilion y del isquion no se fusionan hasta cerca del final del segundo año.",
+    "morphology": "El isquion tiene aspecto torcido: su parte acetabular es casi sagital y la caudal casi horizontal.",
+    "location": "Cintura pélvica; el acetábulo está aproximadamente el doble de lejos de la tuberosidad coxal que de la tuberosidad isquiática.",
+    "attachments": [
+      "Tubérculo craneal al acetábulo, al final de la línea glútea ventral: inserción del m. recto femoral (rotulado en la figura de la fuente)"
+    ],
+    "landmarks": [
+      "Acetabulum — acetábulo",
+      "Fossa acetabuli — fosa acetabular",
+      "Incisura acetabuli — escotadura acetabular",
+      "Foramen obturatum — foramen obturado",
+      "Spina ischiadica — espina isquiática",
+      "Os ilium — ilion",
+      "Crista iliaca — cresta ilíaca",
+      "Tuber coxae — tuberosidad coxal",
+      "Tuber sacrale — tuberosidad sacra",
+      "Facies glutea — cara glútea",
+      "Facies auricularis — cara auricular",
+      "Linea arcuata — línea arcuata",
+      "Linea glutea ventralis — línea glútea ventral",
+      "Incisura ischiadica major — incisura isquiática mayor",
+      "Os ischii — isquion",
+      "Tuber ischiadicum — tuberosidad isquiática",
+      "Os pubis — pubis",
+      "Arcus ischiadicus — arco isquiático"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.20; Cingulum membri pelvini, Os coxae",
+        "claim": "Término NAV «Os coxae»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.20; Cingulum membri pelvini, Os coxae",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.20; Os coxae",
+        "claim": "Término latino y forma abreviada de búsqueda."
+      },
+      {
+        "field": "summary",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, pp.20–21; Os coxae, Acetabulum, Os ilium, Os ischii, Os pubis",
+        "claim": "Cintura pélvica, acetábulo y tres componentes."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.202",
+        "claim": "Ilion, isquion, pubis, acetábulo, foramen obturado y edades de unión en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.202",
+        "claim": "Orientación del ilion y forma torcida del isquion."
+      },
+      {
+        "field": "location",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.202",
+        "claim": "Posición relativa del acetábulo entre tuberosidades coxal e isquiática."
+      },
+      {
+        "field": "attachments",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, Fig.222, leyenda 9 (p.202)",
+        "claim": "Tubérculo para el recto femoral."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, pp.20–21; Os coxae, Os ilium, Os ischii, Os pubis, Pelvis",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.202; Figs.222–223 (pp.202–203)",
+        "claim": "Accidentes descritos y rotulados en coxal de perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada.Sisson indica en el texto que no hay incisura isquiática menor, pero la leyenda de su Fig.222 rotula «lesser sciatic notch» (15): no incluida hasta cotejo. Ilion, isquion y pubis siguen como componentes del inventario, sin fichas propias."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "function",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:femur",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os femoris",
+    "spanishName": "Fémur",
+    "aliases": [
+      "Femur",
+      "femur"
+    ],
+    "summary": "Hueso del muslo canino, entre la articulación de la cadera y la de la rodilla.",
+    "detailedDescription": "La cabeza es algo más que una semiesfera y tiene una fóvea poco profunda caudal y lateral a su centro; el cuello está bien definido. El trocánter mayor no alcanza la altura de la cabeza y una cresta gruesa va de su cara craneal al cuello; el trocánter menor es una tuberosidad roma y la fosa trocantérica es redonda y profunda. La cara caudal del cuerpo está limitada por dos líneas rugosas (labios lateral y medial) que divergen hacia los extremos; el foramen nutricio está en su tercio proximal. Faltan el tercer trocánter y la fosa supracondílea; hay dos crestas supracondíleas, la medial pequeña. Los labios de la tróclea son prácticamente sagitales y casi iguales, y la fosa intercondílea es ancha. Sobre cada cóndilo, caudalmente, hay una carilla para el sesamoideo del origen del m. gastrocnemio. Cuerpo y extremos se unen hacia el año y medio.",
+    "morphology": "Relativamente mucho más largo que en el caballo o el bovino. Cuerpo regularmente cilíndrico salvo cerca de los extremos, más anchos y comprimidos craneocaudalmente; fuertemente curvado en sus dos tercios distales, con convexidad craneal.",
+    "attachments": [
+      "Carillas caudales supracondíleas: articulación con los sesamoideos del m. gastrocnemio"
+    ],
+    "landmarks": [
+      "Caput ossis femoris — cabeza del fémur",
+      "Fovea capitis — fóvea de la cabeza",
+      "Collum ossis femoris — cuello del fémur",
+      "Trochanter major — trocánter mayor",
+      "Trochanter minor — trocánter menor",
+      "Fossa trochanterica — fosa trocantérica",
+      "Facies aspera, Labium laterale et mediale — labios lateral y medial",
+      "Condylus medialis — cóndilo medial",
+      "Condylus lateralis — cóndilo lateral",
+      "Facies articularis sesamoidea medialis et lateralis — carillas sesamoideas",
+      "Epicondylus medialis — epicóndilo medial",
+      "Epicondylus lateralis — epicóndilo lateral",
+      "Fossa intercondylaris — fosa intercondílea",
+      "Trochlea ossis femoris — tróclea femoral"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.21; Skeleton femoris, Os femoris [Femur]",
+        "claim": "Término NAV «Os femoris»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.21; Skeleton femoris, Os femoris [Femur]",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.21; Os femoris [Femur]",
+        "claim": "Alternativa latina NAV y variante de búsqueda."
+      },
+      {
+        "field": "summary",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.21 (Skeleton femoris); ARTHROLOGIA, p.33 (Articulatio coxae, Articulatio genus)",
+        "claim": "Identidad regional entre cadera y rodilla."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203",
+        "claim": "Cuerpo, labios, ausencia de tercer trocánter y fosa supracondílea, cabeza, trocánteres, tróclea, carillas sesamoideas y edad de unión en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203",
+        "claim": "Cuerpo cilíndrico curvado de convexidad craneal."
+      },
+      {
+        "field": "attachments",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203",
+        "claim": "Carillas para los sesamoideos del origen del gastrocnemio."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.21; Os femoris",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203; Figs.224–225 (p.204)",
+        "claim": "Accidentes descritos y rotulados en fémur de perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:patella",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Patella",
+    "spanishName": "Rótula",
+    "aliases": [
+      "patela",
+      "patella",
+      "rotula"
+    ],
+    "summary": "Hueso de la rodilla canina que forma la articulación femoropatelar.",
+    "morphology": "Larga y estrecha. La cara libre es convexa en ambos sentidos; la articular es convexa transversalmente y ligeramente cóncava en sentido proximodistal.",
+    "landmarks": [
+      "Basis patellae — base de la rótula",
+      "Apex patellae — ápice de la rótula",
+      "Facies articularis — cara articular",
+      "Facies cranialis — cara craneal"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Patella",
+        "claim": "Término NAV «Patella»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Patella",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Patella",
+        "claim": "Término latino, castellanización «patela» y variante sin tilde."
+      },
+      {
+        "field": "summary",
+        "sourceId": "nav-6th-edition",
+        "locator": "ARTHROLOGIA, p.33; Articulatio genus, Articulatio femoropatellaris",
+        "claim": "Articulación femoropatelar."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.204",
+        "claim": "Forma larga y estrecha y curvatura de sus caras en perro."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Patella",
+        "claim": "Nombres latinos de base, ápice y caras."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada.Accidentes tomados de NAV; la fuente canina solo describe las caras libre y articular."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "detailedDescription",
+      "location",
+      "function",
+      "attachments",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:tibia",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Tibia",
+    "spanishName": "Tibia",
+    "aliases": [
+      "tibia"
+    ],
+    "summary": "Hueso mayor de la pierna canina, aproximadamente de la misma longitud que el fémur.",
+    "detailedDescription": "El cuerpo describe una doble curva: la parte proximal es convexa medialmente y la distal lateralmente. La cresta es corta pero muy prominente. El foramen nutricio suele estar en el tercio proximal del borde lateral. La tuberosidad no está surcada y muestra una marca neta donde se fija el ligamento rotuliano. Una pequeña carilla para la fíbula ocupa la parte caudolateral del cóndilo lateral, y un pequeño sesamoideo del tendón de origen del m. poplíteo contacta con el ángulo caudal de ese cóndilo. El extremo distal es cuadrangular y relativamente pequeño, con surcos y cresta articulares casi sagitales, una carilla lateral para la fíbula y un surco vertical medial y otro más superficial caudal para tendones. El extremo proximal se une al cuerpo hacia los dieciocho meses y el distal a los catorce o quince meses.",
+    "morphology": "El tercio proximal es prismático, comprimido lateralmente y largo en sentido craneocaudal; el resto es casi regularmente cilíndrico.",
+    "location": "Pierna, entre la articulación de la rodilla y el tarso, medial a la fíbula.",
+    "attachments": [
+      "Tuberositas tibiae: inserción del ligamento rotuliano (Lig. patellae)"
+    ],
+    "landmarks": [
+      "Condylus medialis — cóndilo medial",
+      "Condylus lateralis — cóndilo lateral",
+      "Facies articularis fibularis — carilla fibular",
+      "Tuberositas tibiae — tuberosidad tibial",
+      "Margo cranialis — borde craneal",
+      "Corpus tibiae — cuerpo de la tibia",
+      "Cochlea tibiae — cóclea tibial",
+      "Malleolus medialis — maléolo medial",
+      "Incisura fibularis — escotadura fibular"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton cruris, Tibia",
+        "claim": "Término NAV «Tibia»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton cruris, Tibia",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Tibia",
+        "claim": "Término latino como alias de búsqueda."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203",
+        "claim": "Longitud similar a la del fémur en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, pp.203–204",
+        "claim": "Cuerpo, cresta, foramen nutricio, tuberosidad, carillas fibulares, sesamoideo del poplíteo, extremo distal, surcos y edades de unión en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203",
+        "claim": "Doble curvatura y sección del cuerpo."
+      },
+      {
+        "field": "location",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22 (Skeleton cruris); ARTHROLOGIA, p.33–34 (Articulatio femorotibialis, Articulatio tarsocruralis)",
+        "claim": "Hueso de la pierna entre rodilla y tarso."
+      },
+      {
+        "field": "attachments",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.204",
+        "claim": "Marca del ligamento rotuliano en la tuberosidad."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Tibia",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, pp.203–204; Figs.226–227 (p.205)",
+        "claim": "Accidentes descritos y rotulados en tibia de perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "function",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:fibula",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Fibula",
+    "spanishName": "Fíbula",
+    "aliases": [
+      "perone",
+      "peroné",
+      "fibula"
+    ],
+    "summary": "Hueso delgado de la pierna canina que se extiende a lo largo de toda la región, lateral a la tibia.",
+    "detailedDescription": "La parte proximal del cuerpo está separada de la tibia por un espacio interóseo considerable, mientras que la distal es aplanada y se aplica estrechamente a la tibia. El extremo proximal es aplanado y articula con el cóndilo lateral de la tibia. El extremo distal, algo más grueso, forma el maléolo lateral, articula medialmente con la tibia y el talus y presenta lateralmente dos tubérculos.",
+    "morphology": "Delgada, algo torcida y ensanchada en ambos extremos.",
+    "location": "Pierna, lateral a la tibia, desde el cóndilo lateral tibial hasta el tarso.",
+    "landmarks": [
+      "Caput fibulae — cabeza de la fíbula",
+      "Facies articularis capitis fibulae — carilla articular de la cabeza",
+      "Corpus fibulae — cuerpo de la fíbula",
+      "Malleolus lateralis (Car, su) — maléolo lateral"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton cruris, Fibula",
+        "claim": "Término NAV «Fibula»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton cruris, Fibula",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Fibula",
+        "claim": "Término latino; «peroné» es sinónimo editorial no contenido en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.204",
+        "claim": "Extensión a toda la región y relación con la tibia en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.204",
+        "claim": "Espacio interóseo, extremos, articulaciones y tubérculos del maléolo lateral en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.204",
+        "claim": "Hueso delgado, algo torcido, ensanchado en los extremos."
+      },
+      {
+        "field": "location",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.204",
+        "claim": "Relación con tibia y talus."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Fibula; Malleolus lateralis (Car, su)",
+        "claim": "Nombres latinos; maléolo lateral fibular marcado para carnívoros y cerdo."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.204; Figs.226–227 (p.205)",
+        "claim": "Cabeza, cuerpo y maléolo lateral rotulados en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "function",
+      "attachments",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:talus",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Talus",
+    "spanishName": "Talus",
+    "aliases": [
+      "astragalo",
+      "astrágalo"
+    ],
+    "summary": "Hueso proximal del tarso canino que articula con la tibia y la fíbula.",
+    "detailedDescription": "Consta de cuerpo, cuello y cabeza. El cuerpo presenta una tróclea proximal para la tibia y la fíbula; la cara plantar tiene tres carillas para el calcáneo. La cabeza se dirige algo hacia medial y articula con el hueso central del tarso.",
+    "landmarks": [
+      "Caput tali — cabeza del talus",
+      "Collum tali — cuello del talus",
+      "Corpus tali — cuerpo del talus",
+      "Trochlea tali proximalis — tróclea proximal",
+      "Facies articulares calcaneae — carillas calcáneas"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Talus",
+        "claim": "Término NAV «Talus»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Talus",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Talus",
+        "claim": "Término latino NAV; «astrágalo» es sinónimo editorial (la fuente histórica usa «tibial tarsal»)."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Posición en el tarso de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Talus",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205; Fig.228 (p.206)",
+        "claim": "Partes descritas en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "morphology",
+      "location",
+      "function",
+      "attachments",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:calcaneus",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Calcaneus",
+    "spanishName": "Calcáneo",
+    "aliases": [
+      "calcaneo",
+      "calcaneus"
+    ],
+    "summary": "Hueso proximal del tarso canino, plantar y lateral al talus, con la tuberosidad calcánea.",
+    "detailedDescription": "Presenta un proceso craneal largo («pico» en la fuente) y un sustentáculo del talus corto. La tuberosidad calcánea tiene un surco sagital y se fusiona con el cuerpo del hueso a los catorce o quince meses. Articula con el talus mediante tres carillas y distalmente con el tarsiano IV.",
+    "landmarks": [
+      "Tuber calcanei — tuberosidad calcánea",
+      "Sustentaculum tali — sustentáculo del talus"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Calcaneus",
+        "claim": "Término NAV «Calcaneus»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Calcaneus",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Calcaneus",
+        "claim": "Término latino y variante sin tilde para búsqueda (la fuente histórica usa «fibular tarsal»)."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Posición en el tarso de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Calcaneus",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205; Fig.228 (p.206)",
+        "claim": "Partes descritas en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "morphology",
+      "location",
+      "function",
+      "attachments",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:tarsal-central",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsi centrale",
+    "spanishName": "Hueso central del tarso",
+    "aliases": [
+      "Os naviculare",
+      "navicular"
+    ],
+    "summary": "Hueso del tarso canino situado entre el talus y los tarsianos I–III.",
+    "detailedDescription": "Su superficie proximal es cóncava y se adapta a la cabeza del talus; la distal articula con los tarsianos I, II y III. Presenta dos tubérculos plantares.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsi centrale",
+        "claim": "Término NAV «Os tarsi centrale»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsi centrale",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsi centrale",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Posición en el tarso de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma y articulaciones descritas en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "morphology",
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:tarsal-1",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale I",
+    "spanishName": "Hueso tarsiano I",
+    "aliases": [
+      "Os cuneiforme mediale"
+    ],
+    "summary": "Hueso de la fila distal del tarso canino.",
+    "detailedDescription": "Su superficie proximal articula con el central y la distal con el metatarsiano I, con el que en algunos casos se fusiona.",
+    "morphology": "Aplanado e irregularmente cuadrangular.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale I",
+        "claim": "Término NAV «Os tarsale I»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale I",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale I",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Posición en el tarso de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma del hueso en perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.206",
+        "claim": "Fusión ocasional con el metatarsiano I."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:tarsal-2",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale II",
+    "spanishName": "Hueso tarsiano II",
+    "aliases": [
+      "Os cuneiforme intermedium"
+    ],
+    "summary": "Hueso más pequeño del tarso canino, en la fila distal.",
+    "detailedDescription": "Articula distalmente con el metatarsiano II.",
+    "morphology": "En cuña.",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale II",
+        "claim": "Término NAV «Os tarsale II»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale II",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale II",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Posición en el tarso de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma del hueso en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:tarsal-3",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale III",
+    "spanishName": "Hueso tarsiano III",
+    "aliases": [
+      "Os cuneiforme laterale"
+    ],
+    "summary": "Hueso de la fila distal del tarso canino.",
+    "detailedDescription": "Articula distalmente con el metatarsiano III.",
+    "morphology": "En cuña, con la base craneal (dorsal).",
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale III",
+        "claim": "Término NAV «Os tarsale III»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale III",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale III",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Posición en el tarso de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma del hueso en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
+      "landmarks",
+      "vascularSupply",
+      "speciesDifferences"
+    ]
+  },
+  {
+    "id": "canine:tarsal-4",
+    "speciesId": "canine",
+    "regionId": "pelvic-limb",
+    "systemId": "skeletal",
+    "kind": "bone",
+    "canonicalLatinName": "Os tarsale IV",
+    "spanishName": "Hueso tarsiano IV",
+    "aliases": [
+      "Os cuboideum",
+      "cuboides"
+    ],
+    "summary": "Hueso alto de la fila distal del tarso canino, lateral al central y al tarsiano III.",
+    "detailedDescription": "Su superficie proximal articula con el calcáneo, la distal con los metatarsianos IV y V y la medial con el central y el tarsiano III. Un surco para el tendón del m. fibular largo (peroneus longus en la fuente) cruza sus caras lateral y plantar, y sobre él hay uno o dos tubérculos.",
+    "morphology": "Notablemente alto, semejante a un prisma cuadrangular.",
+    "landmarks": [
+      "Sulcus tendinis m. fibularis longi — surco del tendón del m. fibular largo"
+    ],
+    "sourceIds": [
+      "nav-6th-edition",
+      "sisson-dog-1914"
+    ],
+    "modelIds": [],
+    "photoRefs": [],
+    "fieldEvidence": [
+      {
+        "field": "canonicalLatinName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale IV",
+        "claim": "Término NAV «Os tarsale IV»."
+      },
+      {
+        "field": "spanishName",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale IV",
+        "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+      },
+      {
+        "field": "aliases",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale IV",
+        "claim": "Sinónimo latino entre corchetes en NAV."
+      },
+      {
+        "field": "summary",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Posición en el tarso de perro."
+      },
+      {
+        "field": "detailedDescription",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma y articulaciones descritas en perro."
+      },
+      {
+        "field": "morphology",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205",
+        "claim": "Forma del hueso en perro."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "nav-6th-edition",
+        "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi, Os tarsale IV",
+        "claim": "Nombres latinos de los accidentes."
+      },
+      {
+        "field": "landmarks",
+        "sourceId": "sisson-dog-1914",
+        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.205; Fig.228 (p.206)",
+        "claim": "Partes descritas en perro."
+      }
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+    },
+    "completeness": "partial",
+    "missingFields": [
+      "location",
+      "function",
+      "attachments",
       "vascularSupply",
       "speciesDifferences"
     ]

@@ -138,7 +138,26 @@
       "feline:metatarsus",
       "feline:pes-phalanges",
       "feline:atlas",
-      "feline:axis"
+      "feline:axis",
+      "canine:carpal-intermedioradial",
+      "canine:carpal-ulnar",
+      "canine:carpal-accessory",
+      "canine:carpal-1",
+      "canine:carpal-2",
+      "canine:carpal-3",
+      "canine:carpal-4",
+      "canine:coxal",
+      "canine:femur",
+      "canine:patella",
+      "canine:tibia",
+      "canine:fibula",
+      "canine:talus",
+      "canine:calcaneus",
+      "canine:tarsal-central",
+      "canine:tarsal-1",
+      "canine:tarsal-2",
+      "canine:tarsal-3",
+      "canine:tarsal-4"
     ]
   },
   {
@@ -343,6 +362,78 @@
       "feline:carpus",
       "feline:radius",
       "feline:ulna"
+    ]
+  },
+  {
+    "id": "sisson-dog-1914",
+    "title": "The Anatomy of the Domestic Animals (2.ª ed., revisada; reimpresión 1927): Skeleton of the Dog",
+    "authors": [
+      "Septimus Sisson"
+    ],
+    "institution": "W. B. Saunders Company; copia digitalizada de University of Toronto (Internet Archive anatomyofdomesti00sissuoft)",
+    "year": 1914,
+    "url": "https://archive.org/details/anatomyofdomesti00sissuoft",
+    "publicationType": "historical-primary-anatomical-textbook",
+    "license": {
+      "label": "Probable dominio público (copyright 1914, EE. UU.; autor fallecido en 1924); Internet Archive indica NOT_IN_COPYRIGHT. No se reproducen texto extenso ni figuras; confirmación jurídica por jurisdicción pendiente.",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "canine:scapula",
+      "canine:humerus",
+      "canine:radius",
+      "canine:ulna",
+      "canine:manus",
+      "canine:skull",
+      "canine:carpal-intermedioradial",
+      "canine:carpal-ulnar",
+      "canine:carpal-accessory",
+      "canine:carpal-1",
+      "canine:carpal-2",
+      "canine:carpal-3",
+      "canine:carpal-4",
+      "canine:coxal",
+      "canine:femur",
+      "canine:patella",
+      "canine:tibia",
+      "canine:fibula",
+      "canine:talus",
+      "canine:calcaneus",
+      "canine:tarsal-central",
+      "canine:tarsal-1",
+      "canine:tarsal-2",
+      "canine:tarsal-3",
+      "canine:tarsal-4"
+    ]
+  },
+  {
+    "id": "batista-stf-2026",
+    "title": "Morphological study of the supratrochlear foramen in Canis lupus ssp.",
+    "authors": [
+      "Mariana Batista",
+      "Maria Soares",
+      "Eduardo Marcelino",
+      "Luísa Mendes-Jorge",
+      "Graça Alexandre-Pires",
+      "Cleia Detry",
+      "Sónia Gabriel",
+      "Dulce Ferreira",
+      "Ana Elisabete Pires",
+      "Joana Catita"
+    ],
+    "institution": "Journal of Anatomy 249(5):1170–1180",
+    "year": 2026,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13398924/",
+    "doi": "10.1111/joa.70153",
+    "publicationType": "primary-morphological-study",
+    "license": {
+      "label": "CC BY 4.0 declarada en el XML de Europe PMC (PMC13398924); atribución requerida",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "canine:humerus"
     ]
   }
 ]
