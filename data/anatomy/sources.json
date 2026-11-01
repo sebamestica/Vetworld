@@ -157,7 +157,41 @@
       "canine:tarsal-1",
       "canine:tarsal-2",
       "canine:tarsal-3",
-      "canine:tarsal-4"
+      "canine:tarsal-4",
+      "canine:atlas",
+      "canine:axis",
+      "canine:cervical-vertebra-6",
+      "canine:cervical-vertebra-7",
+      "canine:sacrum",
+      "canine:sternum",
+      "canine:ribs",
+      "canine:occipital",
+      "canine:parietal",
+      "canine:frontal",
+      "canine:temporal",
+      "canine:basisphenoid",
+      "canine:presphenoid",
+      "canine:maxilla",
+      "canine:incisive",
+      "canine:nasal",
+      "canine:zygomatic",
+      "canine:palatine",
+      "canine:mandible",
+      "canine:hyoid-apparatus",
+      "feline:sternum",
+      "feline:ribs",
+      "feline:sacrum",
+      "feline:occipital",
+      "feline:parietal",
+      "feline:frontal",
+      "feline:temporal",
+      "feline:maxilla",
+      "feline:nasal",
+      "feline:zygomatic",
+      "feline:palatine",
+      "feline:basisphenoid",
+      "feline:presphenoid",
+      "feline:hyoid-apparatus"
     ]
   },
   {
@@ -266,7 +300,24 @@
       "feline:metatarsus",
       "feline:pes-phalanges",
       "feline:atlas",
-      "feline:axis"
+      "feline:axis",
+      "feline:mandible",
+      "feline:skull",
+      "feline:teeth",
+      "feline:sternum",
+      "feline:ribs",
+      "feline:sacrum",
+      "feline:occipital",
+      "feline:parietal",
+      "feline:frontal",
+      "feline:temporal",
+      "feline:maxilla",
+      "feline:nasal",
+      "feline:zygomatic",
+      "feline:palatine",
+      "feline:basisphenoid",
+      "feline:presphenoid",
+      "feline:hyoid-apparatus"
     ]
   },
   {
@@ -404,7 +455,35 @@
       "canine:tarsal-1",
       "canine:tarsal-2",
       "canine:tarsal-3",
-      "canine:tarsal-4"
+      "canine:tarsal-4",
+      "canine:biceps-brachii",
+      "canine:brachialis",
+      "canine:infraspinatus",
+      "canine:subscapularis",
+      "canine:supraspinatus",
+      "canine:teres-major",
+      "canine:triceps-brachii-accessory-head",
+      "canine:triceps-brachii-medial-head",
+      "canine:atlas",
+      "canine:axis",
+      "canine:cervical-vertebra-6",
+      "canine:cervical-vertebra-7",
+      "canine:sacrum",
+      "canine:sternum",
+      "canine:ribs",
+      "canine:occipital",
+      "canine:parietal",
+      "canine:frontal",
+      "canine:temporal",
+      "canine:basisphenoid",
+      "canine:presphenoid",
+      "canine:maxilla",
+      "canine:incisive",
+      "canine:nasal",
+      "canine:zygomatic",
+      "canine:palatine",
+      "canine:mandible",
+      "canine:hyoid-apparatus"
     ]
   },
   {
@@ -453,5 +532,141 @@
       "redistributionAllowed": true
     },
     "supportedStructureIds": []
+  },
+  {
+    "id": "kim-feline-lumbar-count-2026",
+    "title": "Radiographic comparison of lumbar vertebral morphology between cats with six and seven lumbar vertebrae",
+    "authors": [
+      "Geunah Kim",
+      "Daji Noh",
+      "Sooyoung Choi",
+      "Miori Kishimoto",
+      "Sang-Kwon Lee",
+      "Kija Lee"
+    ],
+    "year": 2026,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13280130/",
+    "doi": "10.1292/jvms.26-0017",
+    "publicationType": "primary-retrospective-radiographic-study",
+    "license": {
+      "label": "CC BY-NC-ND 4.0 declarada en el XML de Europe PMC (Journal of Veterinary Medical Science 88(6):782–788); solo hechos parafraseados con cita; sin figuras ni adaptación del texto.",
+      "verified": true,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "feline:ribs",
+      "feline:sacrum"
+    ]
+  },
+  {
+    "id": "covasa-lumbosacrocaudal-2024",
+    "title": "Transitional, fused and/or supernumerary vertebrae in the lumbosacrocaudal region of the spine – A reality in many domestic mammals",
+    "authors": [
+      "Costica Toader Covasa"
+    ],
+    "year": 2024,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148713/",
+    "doi": "10.17221/102/2023-VETMED",
+    "publicationType": "primary-comparative-osteological-radiographic-study",
+    "license": {
+      "label": "Conflicto sin resolver en el XML de Europe PMC: la declaración de permisos dice CC BY-NC 4.0 y el enlace de licencia apunta a CC BY 4.0 (Veterinární Medicína 69(5):156–168). Se aplica la más restrictiva: solo hechos parafraseados con cita, sin figuras.",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "feline:sacrum"
+    ]
+  },
+  {
+    "id": "tagliavia-persian-skull-2026",
+    "title": "Morphological and Morphometric Craniofacial Variations in Persian Cats: Anatomical Basis for Brachycephalic-Related Disorders",
+    "authors": [
+      "Claudio Tagliavia",
+      "Marco Canova",
+      "Monica Prapotnich",
+      "Giulia Salamanca",
+      "Cristiano Bombardi",
+      "Angelo Peli",
+      "Annamaria Grandis",
+      "Alessia Di Giancamillo",
+      "Margherita Pallaoro",
+      "Silvia C Modina"
+    ],
+    "year": 2026,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13359505/",
+    "doi": "10.3390/ani16132001",
+    "publicationType": "primary-morphometric-osteological-study",
+    "license": {
+      "label": "CC BY 4.0 declarada en el XML de Europe PMC (Animals 16(13):2001, MDPI); atribución requerida. No se incorporan figuras.",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "feline:skull"
+    ]
+  },
+  {
+    "id": "requicha-feline-orbit-ct-2026",
+    "title": "Tomographic Characterization of the European Shorthair Cat Orbital and Infraorbital Regions",
+    "authors": [
+      "João Filipe Requicha",
+      "Ana Rita Sousa",
+      "Nuno Proença",
+      "Ana Válega",
+      "Sofia Alves-Pimenta",
+      "Mateusz Mikiewicz"
+    ],
+    "year": 2026,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12784816/",
+    "doi": "10.3390/ani16010147",
+    "publicationType": "primary-retrospective-ct-morphometric-study",
+    "license": {
+      "label": "CC BY 4.0 declarada en el XML de Europe PMC (Animals 16(1):147, MDPI); atribución requerida. No se incorporan figuras.",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "feline:skull",
+      "feline:maxilla"
+    ]
+  },
+  {
+    "id": "delibas-van-cat-mandibular-canal-2026",
+    "title": "Morphometric Analysis of the Mandibular Canal in Van Cats: A Cone-Beam Computed Tomography (CBCT) Study",
+    "authors": [
+      "Veysel Delibaş",
+      "Sema Kaya"
+    ],
+    "year": 2026,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13663499/",
+    "doi": "10.3390/ani16193073",
+    "publicationType": "primary-cbct-morphometric-study",
+    "license": {
+      "label": "CC BY 4.0 declarada en el XML de Europe PMC (Animals 16(19):3073, MDPI); atribución requerida. No se incorporan figuras.",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "supportedStructureIds": [
+      "feline:mandible"
+    ]
+  },
+  {
+    "id": "avdc-nomenclature",
+    "title": "AVDC Nomenclature",
+    "authors": [
+      "American Veterinary Dental College (AVDC)"
+    ],
+    "institution": "American Veterinary Dental College",
+    "url": "https://avdc.org/avdc-nomenclature/",
+    "publicationType": "specialty-college-nomenclature-web",
+    "license": {
+      "label": "Página web © AVDC; no declara licencia abierta para el texto (solo permiso de uso citado para sus imágenes). Solo hechos parafraseados con cita; sin reproducir imágenes ni texto.",
+      "verified": false,
+      "redistributionAllowed": false
+    },
+    "supportedStructureIds": [
+      "feline:mandible",
+      "feline:teeth"
+    ]
   }
 ]

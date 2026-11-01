@@ -1,0 +1,437 @@
+{
+  "batchId": "feline-L-F4",
+  "speciesId": "feline",
+  "author": "A3",
+  "structures": [
+    {
+      "id": "feline:sternum",
+      "speciesId": "feline",
+      "regionId": "thorax",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Sternum",
+      "spanishName": "Esternón",
+      "aliases": [
+        "esternon",
+        "sternum",
+        "esternebras",
+        "sternebrae"
+      ],
+      "summary": "Conjunto óseo, no un hueso único: esternón felino formado por manubrio, cuerpo dividido en segmentos (esternebras) y proceso xifoides; forma el límite ventral medio del tórax.",
+      "detailedDescription": "Reighard y Jennings distinguen tres porciones. El manubrio, con forma de daga, ocupa alrededor de un quinto de la longitud total y sobresale craneal a la primera costilla; en el centro de su cara lateral, junto al margen dorsal, una superficie oval sobre una prominencia triangular recibe el primer cartílago costal; su extremo caudal se une al cuerpo por sincondrosis y presenta a cada lado una carilla poco marcada para el segundo cartílago costal. En su descripción, el cuerpo consta de seis piezas cilíndricas, ensanchadas en los extremos y unidas de forma móvil por sincondrosis; aumentan de anchura desde la primera, disminuyen ligeramente de longitud y grosor, y en el extremo caudal de cada una hay un par de carillas para los cartílagos costales. La obra no indica tamaño de muestra, por lo que esa cifra no se da como universal. El proceso xifoides es una lámina cartilaginosa ancha y delgada en su extremo caudal, ósea y cilíndrica en el craneal, unida a la última pieza del cuerpo por un intervalo cartilaginoso; su extremo libre se dirige caudoventralmente. El cartílago de la novena costilla se une a la cara lateral del cartílago entre xifoides y cuerpo y, justo caudal a él, el cartílago común de las costillas 10.ª a 12.ª, cuando existe.",
+      "morphology": "Serie de segmentos óseos en línea: manubrio en daga, segmentos del cuerpo cilíndricos ensanchados en los extremos y xifoides en lámina cartilaginosa caudal.",
+      "location": "Límite ventral medio del tórax. Su eje largo asciende dorsocranealmente desde el extremo caudal; se unen a él los extremos ventrales de las nueve primeras costillas descritas por Reighard y Jennings.",
+      "landmarks": [
+        "Manubrium sterni — manubrio del esternón",
+        "Corpus sterni — cuerpo del esternón",
+        "Sternebrae — esternebras",
+        "Processus xiphoideus — proceso xifoides",
+        "Cartilago xiphoidea — cartílago xifoides",
+        "Incisurae costales — incisuras costales (carillas costales de Reighard/Jennings; correspondencia pendiente)",
+        "Synchondrosis manubriosternalis, Synchondroses intersternebrales, Synchondrosis xiphosternalis — sincondrosis esternales",
+        "Articulationes sternocostales — articulaciones esternocostales"
+      ],
+      "attachments": [
+        "Extremo craneal del manubrio: origen del m. esternomastoideo",
+        "Cara lateral del manubrio: origen del m. pectoantibraquial",
+        "Cara ventral del manubrio y de las tres primeras piezas: origen de la porción profunda del m. pectoral mayor",
+        "Mitad lateral de las seis primeras piezas y a veces el xifoides: origen del m. pectoral menor",
+        "Rafe medio a lo largo del xifoides: origen del m. xifohumeral",
+        "Bordes laterales de la cara dorsal, frente a los cartílagos de las costillas 3.ª a 8.ª: origen del m. transverso del tórax",
+        "Proceso xifoides: origen de la parte esternocostal del diafragma"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Sternum",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Sternum",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18, Sternebrae; nota 43, p.27",
+          "claim": "Esternebras como término NAV."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.20, III. Sternum, Fig. 16",
+          "claim": "Tres porciones y límite ventral del tórax."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.20–21, III. Sternum, Fig. 16",
+          "claim": "Manubrio, piezas del cuerpo, xifoides y cartílagos costales."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.20–21",
+          "claim": "Forma de cada porción."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.20",
+          "claim": "Posición, inclinación y costillas unidas."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Sternum",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "ARTHROLOGIA, p.31; Articulationes sternocostales, Synchondroses sternales",
+          "claim": "Articulaciones del esternón."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.139–140, M. sternomastoideus; pp.145–147, Mm. pectoantibrachialis, pectoralis major, pectoralis minor, xiphihumeralis; p.151, M. transversus thoracis; p.153, Diaphragma",
+          "claim": "Orígenes musculares en el esternón."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha de conjunto rotulada (varios huesos: manubrio, esternebras y xifoides); no fija un número universal de esternebras: las seis piezas del cuerpo son la descripción de Reighard/Jennings sin muestra declarada. Nombres musculares de la obra (1901), con correspondencia NAV pendiente. Sin modelo 3D."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:ribs",
+      "speciesId": "feline",
+      "regionId": "thorax",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Costae",
+      "spanishName": "Costillas",
+      "aliases": [
+        "costillas",
+        "ribs",
+        "costae",
+        "parrilla costal"
+      ],
+      "summary": "Conjunto de las costillas felinas, no un hueso único: arcos óseos pares articulados dorsalmente con las vértebras torácicas y unidos ventralmente a cartílagos costales; Reighard y Jennings describen trece pares y el recuento puede variar entre individuos.",
+      "detailedDescription": "Reighard y Jennings toman como típica una costilla del quinto par: varilla ósea curva y aplanada, con cara lateral convexa y medial cóncava, de aspecto torcido. Su cabeza (capítulo) articula con las semicarillas costales de dos vértebras torácicas contiguas; entre la cabeza y el ángulo, el tubérculo lleva la carilla para el proceso transverso; el cuello queda entre cabeza y tubérculo y el ángulo lleva un proceso angular para un ligamento. Las costillas aumentan de longitud hasta la novena (novena y décima iguales) y luego disminuyen; los tubérculos se atenúan caudalmente y faltan en las dos o tres últimas, que no articulan con el proceso transverso. En su descripción, las nueve primeras (verdaderas) se unen por separado al esternón mediante sus cartílagos; de las cuatro falsas, los cartílagos 10.º a 12.º se unen entre sí y pueden unirse al noveno o al esternón por un cartílago común, o quedar libres; el 13.º es libre (flotante). Variación: en radiografías abdominales de 674 gatos se registró hipoplasia de la 13.ª costilla en 14 (2,1 %) y aplasia en 1 (0,1 %), y un proceso costiforme en L1 en 59 (8,8 %); la hipoplasia fue más frecuente en los gatos con seis lumbares (Kim et al., 2026).",
+      "morphology": "Varillas óseas curvas y aplanadas, de bordes anchos dorsalmente y caras anchas ventralmente; continúan ventralmente en cartílagos costales.",
+      "location": "Pared torácica. Dorsalmente articulan con las vértebras torácicas por la cabeza y el tubérculo; ventralmente, por los cartílagos costales, con el esternón o con cartílagos vecinos.",
+      "landmarks": [
+        "Costae verae [sternales] — costillas verdaderas",
+        "Costae spuriae [asternales] — costillas falsas",
+        "Costae fluctuantes — costillas flotantes",
+        "Cartilago costalis — cartílago costal",
+        "Caput costae — cabeza",
+        "Collum costae — cuello",
+        "Tuberculum costae — tubérculo",
+        "Facies articularis tuberculi costae — carilla articular del tubérculo",
+        "Angulus costae — ángulo",
+        "Articulatio capitis costae y Articulatio costotransversaria — articulaciones costovertebrales"
+      ],
+      "attachments": [
+        "Cuello y tubérculo: cápsulas articulares y pequeñas bandas ligamentosas hacia el proceso transverso",
+        "Proceso angular: fijación de un ligamento",
+        "Bordes contiguos de las costillas: músculos intercostales externos e internos",
+        "Primer cartílago costal: origen de los mm. esternohioideo y esternotiroideo",
+        "Cartílagos costales cerca de su unión con la costilla: inserción del m. transverso del tórax",
+        "Cinco últimas costillas: origen de la parte esternocostal del diafragma",
+        "Nueve o diez últimas costillas: origen del m. oblicuo externo del abdomen"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "kim-feline-lumbar-count-2026"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Costae",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Costae",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.18, II. Ribs. Costae",
+          "claim": "Variantes inglesa y latina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.18, II. Ribs",
+          "claim": "Trece pares en la descripción de la obra."
+        },
+        {
+          "field": "summary",
+          "sourceId": "kim-feline-lumbar-count-2026",
+          "locator": "Results, Table 2",
+          "claim": "Variación del 13.er par en 674 gatos."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.18–19, II. Ribs, Fig. 15; p.6",
+          "claim": "Costilla típica, longitudes, tubérculos y cartílagos."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "kim-feline-lumbar-count-2026",
+          "locator": "Abstract; Materials and methods; Results, Table 2",
+          "claim": "Hipoplasia/aplasia de la 13.ª costilla y proceso costiforme de L1."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.18",
+          "claim": "Forma de la costilla típica."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.18–19",
+          "claim": "Articulaciones dorsales y ventrales."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Costae; ARTHROLOGIA, p.31, Articulationes costovertebrales",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.19, Ligaments of the Ribs; pp.140–141; pp.150–151, Mm. intercostales, transversus thoracis; p.153, Diaphragma, M. obliquus abdominis externus",
+          "claim": "Ligamentos y músculos."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha de conjunto rotulada (todas las costillas); no se da un número universal: los trece pares son la descripción de Reighard/Jennings sin muestra y Kim et al. documentan variación del 13.er par. Kim et al. señalan T11 como vértebra anticlinal en sus figuras y Reighard/Jennings la T10: discrepancia no usada en esta ficha. Sin modelo 3D."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:sacrum",
+      "speciesId": "feline",
+      "regionId": "pelvis",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os sacrum",
+      "spanishName": "Sacro",
+      "aliases": [
+        "sacro",
+        "sacrum",
+        "hueso sacro",
+        "vertebras sacras"
+      ],
+      "summary": "Hueso único formado en el adulto por la fusión de las vértebras sacras (tres en la descripción de Reighard y Jennings), entre la última lumbar y la primera caudal, articulado lateralmente con los coxales.",
+      "detailedDescription": "En el gatito las vértebras sacras están separadas; en un animal casi adulto las dos primeras ya están unidas y la tercera sigue separada. El hueso es piramidal, con la base craneal, y lo recorre el conducto sacro, continuación del canal vertebral; tiene dos pares de forámenes dorsales y dos ventrales. La base presenta una carilla oval para el cuerpo de la última lumbar, un proceso espinoso, procesos articulares craneales prominentes y la cara craneal del «pseudoproceso transverso» expandido de la primera sacra; su borde ventral forma un arco de unos 120°. La cara ventral o pélvica, cóncava cranealmente y convexa caudalmente, la cruzan dos crestas transversales con restos osificados de los discos; los forámenes ventrales del segundo par son menores y continúan en surcos para las ramas ventrales de los nervios sacros. La masa lateral la forman los procesos transversos fusionados. En la cara dorsal hay dos pares de tubérculos (procesos articulares fusionados), forámenes dorsales para las ramas dorsales y tres procesos espinosos que disminuyen caudalmente. La cara lateral tiene un área rugosa triangular y la carilla auricular, que articula con el ilion. Variación: en una serie de gatos, Covasa (2024) halló dos con sacralización intensa de la última lumbar (L7, o L8 en un gato con ocho lumbares), fusionada con S1 y con tres forámenes ventrales por lado en lugar de dos, y un sacro de dos vértebras con la última sacra independiente; Kim et al. (2026) registraron sacralización parcial de L7 en 13 de 674 gatos (1,9 %).",
+      "morphology": "Pirámide de base craneal; cara pélvica lisa, cóncava cranealmente y convexa caudalmente; cara dorsal más estrecha cranealmente que la ventral.",
+      "location": "Entre la última vértebra lumbar y la primera caudal; articula lateralmente con los coxales (ilion) por la carilla auricular.",
+      "landmarks": [
+        "Basis ossis sacri — base del sacro",
+        "Processus articularis cranialis / caudalis — procesos articulares",
+        "Pars lateralis — porción lateral (masa lateral de Reighard/Jennings)",
+        "Facies auricularis — cara auricular",
+        "Facies dorsalis — cara dorsal",
+        "Foramina sacralia dorsalia — forámenes sacros dorsales",
+        "Facies pelvina — cara pélvica",
+        "Foramina sacralia ventralia — forámenes sacros ventrales",
+        "Lineae transversae — líneas transversas (crestas transversales de Reighard/Jennings)",
+        "Apex ossis sacri — vértice",
+        "Canalis sacralis — conducto sacro",
+        "Articulatio sacroiliaca — articulación sacroilíaca"
+      ],
+      "attachments": [
+        "Contorno de la carilla auricular: cápsula de la articulación sacroilíaca",
+        "Superficie rugosa lateral: ligamento iliosacro lateral, de fibras transversas cortas",
+        "Lados del sacro: banda ligamentosa ancha desde el borde dorsal del ilion"
+      ],
+      "speciesDifferences": [
+        "En la tabla de referencia que Covasa (2024) toma de Ferat-Postolache et al. (2021), el sacro tiene 3 vértebras en el gato y el perro, 4 en el conejo y la oveja, 5 en el bovino y el caballo y 5 (a veces 4) en el cerdo"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "covasa-lumbosacrocaudal-2024",
+        "kim-feline-lumbar-count-2026"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Os sacrum [Vertebrae sacrales]",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Os sacrum",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.8, Sacral Vertebræ (os sacrum, or sacrum)",
+          "claim": "Variantes latina e inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.8, Sacral Vertebræ, Figs. 6–7",
+          "claim": "Tres sacras unidas en el adulto, posición y articulación con los coxales."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.8–11, Sacral Vertebræ, Figs. 6–7",
+          "claim": "Desarrollo, forma, caras, forámenes y carilla auricular."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "covasa-lumbosacrocaudal-2024",
+          "locator": "Results, Results, párrafo «In the cats…», Tabla 3; Table 3",
+          "claim": "Sacralización y sacro de dos vértebras en gatos. Muestra parcialmente de animales viejos o enfermos."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "kim-feline-lumbar-count-2026",
+          "locator": "Results, Table 2",
+          "claim": "Sacralización parcial de L7 en 13 de 674 gatos."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.8–10",
+          "claim": "Pirámide de base craneal y forma de las caras."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.8; pp.10–11",
+          "claim": "Posición y articulación con el ilion."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.17–18; Os sacrum; ARTHROLOGIA, p.33, Articulatio sacroiliaca",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.86–87, Ligaments of the Pelvis; pp.10–11",
+          "claim": "Cápsula y ligamentos iliosacros."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "covasa-lumbosacrocaudal-2024",
+          "locator": "Table 2 (Ferat-Postolache et al., 2021)",
+          "claim": "Comparación del número de vértebras sacras entre especies. Muestra parcialmente de animales viejos o enfermos."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha de hueso fusionado. Las tres vértebras sacras son la descripción de Reighard/Jennings; Covasa y Kim documentan variación. En Covasa (2024), el número de gatos difiere entre los métodos (48) y la Tabla 1 (57), y los carnívoros se estudiaron sobre todo por radiografía: discrepancias registradas. Correspondencias R&J–NAV (masa lateral, crestas transversales) pendientes. Las vértebras torácicas, lumbares y caudales «tipo» no reciben ficha (decisión «series vertebrales sin ficha»). Sin modelo 3D."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel:feline:sacrum-articulates-os-coxae",
+      "fromId": "feline:sacrum",
+      "toId": "feline:os-coxae",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "kim-feline-lumbar-count-2026",
+      "title": "Radiographic comparison of lumbar vertebral morphology between cats with six and seven lumbar vertebrae",
+      "authors": [
+        "Geunah Kim",
+        "Daji Noh",
+        "Sooyoung Choi",
+        "Miori Kishimoto",
+        "Sang-Kwon Lee",
+        "Kija Lee"
+      ],
+      "year": 2026,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13280130/",
+      "doi": "10.1292/jvms.26-0017",
+      "publicationType": "primary-retrospective-radiographic-study",
+      "license": {
+        "label": "CC BY-NC-ND 4.0 declarada en el XML de Europe PMC (Journal of Veterinary Medical Science 88(6):782–788); solo hechos parafraseados con cita; sin figuras ni adaptación del texto.",
+        "verified": true,
+        "redistributionAllowed": false
+      },
+      "supportedStructureIds": [
+        "feline:ribs",
+        "feline:sacrum"
+      ]
+    },
+    {
+      "id": "covasa-lumbosacrocaudal-2024",
+      "title": "Transitional, fused and/or supernumerary vertebrae in the lumbosacrocaudal region of the spine – A reality in many domestic mammals",
+      "authors": [
+        "Costica Toader Covasa"
+      ],
+      "year": 2024,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11148713/",
+      "doi": "10.17221/102/2023-VETMED",
+      "publicationType": "primary-comparative-osteological-radiographic-study",
+      "license": {
+        "label": "Conflicto sin resolver en el XML de Europe PMC: la declaración de permisos dice CC BY-NC 4.0 y el enlace de licencia apunta a CC BY 4.0 (Veterinární Medicína 69(5):156–168). Se aplica la más restrictiva: solo hechos parafraseados con cita, sin figuras.",
+        "verified": false,
+        "redistributionAllowed": false
+      },
+      "supportedStructureIds": [
+        "feline:sacrum"
+      ]
+    }
+  ]
+}

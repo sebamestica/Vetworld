@@ -1,122 +1,573 @@
 [
     {
-        "id":  "umn-canine-shoulder",
-        "title":  "Guía de disección: miembro torácico proximal",
-        "kind":  "academic_reference",
-        "speciesId":  "canine",
-        "regionId":  "shoulder",
-        "structureIds":  [
-                             "canine:scapula",
-                             "canine:biceps-origin-tendon"
-                         ],
-        "sourceId":  "umn-proximal-thoracic-limb",
-        "authors":  [
-                        "Abby Brown"
-                    ],
-        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
-        "license":  {
-                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
-                        "verified":  true,
-                        "redistributionAllowed":  false
-                    },
-        "displayMode":  "external",
-        "imagePath":  null,
-        "thumbnailPath":  null,
-        "review":  {
-                       "status":  "pending",
-                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
-                   },
-        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
-        "verifiedAt":  "2026-10-08"
+        "id": "umn-canine-shoulder",
+        "title": "Guía de disección: miembro torácico proximal",
+        "kind": "academic_reference",
+        "speciesId": "canine",
+        "regionId": "shoulder",
+        "structureIds": [
+            "canine:scapula",
+            "canine:biceps-origin-tendon"
+        ],
+        "sourceId": "umn-proximal-thoracic-limb",
+        "authors": [
+            "Abby Brown"
+        ],
+        "sourceUrl": "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license": {
+            "label": "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+            "verified": true,
+            "redistributionAllowed": false
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt": "2026-10-08"
     },
     {
-        "id":  "umn-canine-brachium",
-        "title":  "Guía de disección: miembro torácico proximal",
-        "kind":  "academic_reference",
-        "speciesId":  "canine",
-        "regionId":  "brachium",
-        "structureIds":  [
-                             "canine:biceps-brachii",
-                             "canine:musculocutaneous-nerve"
-                         ],
-        "sourceId":  "umn-proximal-thoracic-limb",
-        "authors":  [
-                        "Abby Brown"
-                    ],
-        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
-        "license":  {
-                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
-                        "verified":  true,
-                        "redistributionAllowed":  false
-                    },
-        "displayMode":  "external",
-        "imagePath":  null,
-        "thumbnailPath":  null,
-        "review":  {
-                       "status":  "pending",
-                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
-                   },
-        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
-        "verifiedAt":  "2026-10-08"
+        "id": "umn-canine-brachium",
+        "title": "Guía de disección: miembro torácico proximal",
+        "kind": "academic_reference",
+        "speciesId": "canine",
+        "regionId": "brachium",
+        "structureIds": [
+            "canine:biceps-brachii",
+            "canine:musculocutaneous-nerve"
+        ],
+        "sourceId": "umn-proximal-thoracic-limb",
+        "authors": [
+            "Abby Brown"
+        ],
+        "sourceUrl": "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license": {
+            "label": "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+            "verified": true,
+            "redistributionAllowed": false
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt": "2026-10-08"
     },
     {
-        "id":  "umn-feline-shoulder",
-        "title":  "Guía de disección: miembro torácico proximal",
-        "kind":  "academic_reference",
-        "speciesId":  "feline",
-        "regionId":  "shoulder",
-        "structureIds":  [
-                             "feline:scapula",
-                             "feline:biceps-origin-tendon"
-                         ],
-        "sourceId":  "umn-proximal-thoracic-limb",
-        "authors":  [
-                        "Abby Brown"
-                    ],
-        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
-        "license":  {
-                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
-                        "verified":  true,
-                        "redistributionAllowed":  false
-                    },
-        "displayMode":  "external",
-        "imagePath":  null,
-        "thumbnailPath":  null,
-        "review":  {
-                       "status":  "pending",
-                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
-                   },
-        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
-        "verifiedAt":  "2026-10-08"
+        "id": "umn-feline-shoulder",
+        "title": "Guía de disección: miembro torácico proximal",
+        "kind": "academic_reference",
+        "speciesId": "feline",
+        "regionId": "shoulder",
+        "structureIds": [
+            "feline:scapula",
+            "feline:biceps-origin-tendon"
+        ],
+        "sourceId": "umn-proximal-thoracic-limb",
+        "authors": [
+            "Abby Brown"
+        ],
+        "sourceUrl": "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license": {
+            "label": "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+            "verified": true,
+            "redistributionAllowed": false
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt": "2026-10-08"
     },
     {
-        "id":  "umn-feline-brachium",
-        "title":  "Guía de disección: miembro torácico proximal",
-        "kind":  "academic_reference",
-        "speciesId":  "feline",
-        "regionId":  "brachium",
-        "structureIds":  [
-                             "feline:biceps-brachii",
-                             "feline:musculocutaneous-nerve"
-                         ],
-        "sourceId":  "umn-proximal-thoracic-limb",
-        "authors":  [
-                        "Abby Brown"
-                    ],
-        "sourceUrl":  "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
-        "license":  {
-                        "label":  "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
-                        "verified":  true,
-                        "redistributionAllowed":  false
-                    },
-        "displayMode":  "external",
-        "imagePath":  null,
-        "thumbnailPath":  null,
-        "review":  {
-                       "status":  "pending",
-                       "notes":  "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
-                   },
-        "caption":  "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
-        "verifiedAt":  "2026-10-08"
+        "id": "umn-feline-brachium",
+        "title": "Guía de disección: miembro torácico proximal",
+        "kind": "academic_reference",
+        "speciesId": "feline",
+        "regionId": "brachium",
+        "structureIds": [
+            "feline:biceps-brachii",
+            "feline:musculocutaneous-nerve"
+        ],
+        "sourceId": "umn-proximal-thoracic-limb",
+        "authors": [
+            "Abby Brown"
+        ],
+        "sourceUrl": "https://open.lib.umn.edu/dogcatanatomylabguide/chapter/part-3-proximal-limb/",
+        "license": {
+            "label": "CC BY-NC-ND 4.0; excepto indicación contraria. Enlace externo sin reproducción de medios.",
+            "verified": true,
+            "redistributionAllowed": false
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Referencia académica externa para consultar el capítulo original; no constituye una fotografía de esta estructura.",
+        "verifiedAt": "2026-10-08"
+    },
+    {
+        "id": "commons-canine-skull-mwnh",
+        "title": "Cráneo de perro en vista rostral (colección Museum Wiesbaden)",
+        "kind": "dissection_photo",
+        "speciesId": "canine",
+        "regionId": "head",
+        "structureIds": [
+            "canine:skull"
+        ],
+        "sourceId": "commons-canine-skull-mwnh",
+        "authors": [
+            "Klaus Rassinger und Gerhard Cammerer, Museum Wiesbaden"
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canis_lupus_familiaris_01_MWNH_788.jpg",
+        "license": {
+            "label": "CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · Atribución: «Canis lupus familiaris 01 MWNH 788.jpg», Klaus Rassinger und Gerhard Cammerer, Museum Wiesbaden, Wikimedia Commons, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Copia redimensionada. La copia derivada se distribuye bajo la misma licencia.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "internal",
+        "imagePath": "/media/canine/commons-canine-skull-mwnh.jpg",
+        "thumbnailPath": "/media/canine/thumbs/commons-canine-skull-mwnh.jpg",
+        "review": {
+            "status": "pending",
+            "notes": "Correspondencia especie–estructura basada en la descripción del archivo y en inspección visual no experta; pendiente de revisión veterinaria humana cualificada."
+        },
+        "caption": "Fotografía de un cráneo óseo preparado de perro doméstico (Canis lupus familiaris, ejemplar MWNH 788) en vista rostral; se ven el cráneo con la mandíbula articulada y la dentición. Espécimen osteológico preparado, no disección. No es una fotografía del espécimen ni del modelo 3D del atlas; especie según la descripción de la página del archivo.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "commons-feline-skull-lateral-fmvz",
+        "title": "Cráneo de gato en vista lateral izquierda (MAV FMVZ USP)",
+        "kind": "dissection_photo",
+        "speciesId": "feline",
+        "regionId": "head",
+        "structureIds": [
+            "feline:skull",
+            "feline:mandible",
+            "feline:teeth"
+        ],
+        "sourceId": "commons-feline-skull-lateral-fmvz",
+        "authors": [
+            "Wagner Souza e Silva / Museum of Veterinary Anatomy FMVZ USP"
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_skull._Felis_catus_01.jpg",
+        "license": {
+            "label": "CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · Atribución: «Cat skull. Felis catus 01.jpg», Wagner Souza e Silva / Museum of Veterinary Anatomy FMVZ USP, Wikimedia Commons, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Copia redimensionada. La copia derivada se distribuye bajo la misma licencia.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "internal",
+        "imagePath": "/media/feline/commons-feline-skull-lateral-fmvz.jpg",
+        "thumbnailPath": "/media/feline/thumbs/commons-feline-skull-lateral-fmvz.jpg",
+        "review": {
+            "status": "pending",
+            "notes": "Correspondencia especie–estructura basada en la descripción del archivo y en inspección visual no experta; pendiente de revisión veterinaria humana cualificada."
+        },
+        "caption": "Fotografía de un cráneo macerado de gato doméstico (Felis catus) en vista lateral izquierda, con mandíbula y dientes, junto a escala en centímetros. Espécimen osteológico preparado, no disección. No es una fotografía del espécimen ni del modelo 3D del atlas; especie según la descripción de la página del archivo.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "commons-feline-skull-gape",
+        "title": "Cráneo y mandíbula de gato en apertura máxima",
+        "kind": "dissection_photo",
+        "speciesId": "feline",
+        "regionId": "head",
+        "structureIds": [
+            "feline:skull",
+            "feline:mandible",
+            "feline:teeth"
+        ],
+        "sourceId": "commons-feline-skull-gape",
+        "authors": [
+            "Coluberssymbol"
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Felis_catus_gaping_skull_and_mandible.jpg",
+        "license": {
+            "label": "CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) · Atribución: «Felis catus gaping skull and mandible.jpg», Coluberssymbol, Wikimedia Commons, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Copia redimensionada. La copia derivada se distribuye bajo la misma licencia.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "internal",
+        "imagePath": "/media/feline/commons-feline-skull-gape.jpg",
+        "thumbnailPath": "/media/feline/thumbs/commons-feline-skull-gape.jpg",
+        "review": {
+            "status": "pending",
+            "notes": "Correspondencia especie–estructura basada en la descripción del archivo y en inspección visual no experta; pendiente de revisión veterinaria humana cualificada."
+        },
+        "caption": "Fotografía de un cráneo de gato doméstico (Felis catus) en vista lateral derecha con la mandíbula en apertura máxima; se ven los dientes superiores e inferiores. Espécimen osteológico preparado, no disección. No es una fotografía del espécimen ni del modelo 3D del atlas; especie según la descripción de la página del archivo.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "commons-canine-forelimb-msu",
+        "title": "Esqueleto del miembro torácico de perro (colección MSU)",
+        "kind": "dissection_photo",
+        "speciesId": "canine",
+        "regionId": "thoracic-limb",
+        "structureIds": [
+            "canine:scapula",
+            "canine:humerus",
+            "canine:radius",
+            "canine:ulna",
+            "canine:manus"
+        ],
+        "sourceId": "commons-canine-forelimb-msu",
+        "authors": [
+            "Kirill Tsukanov"
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_fore_limb_1.JPG",
+        "license": {
+            "label": "CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/) · Dominio público; crédito de cortesía: «Dog fore limb 1.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "internal",
+        "imagePath": "/media/canine/commons-canine-forelimb-msu.jpg",
+        "thumbnailPath": "/media/canine/thumbs/commons-canine-forelimb-msu.jpg",
+        "review": {
+            "status": "pending",
+            "notes": "Correspondencia especie–estructura basada en la descripción del archivo y en inspección visual no experta; pendiente de revisión veterinaria humana cualificada."
+        },
+        "caption": "Fotografía de un miembro torácico de perro desarticulado del tronco y montado con alambre: escápula, húmero, radio, cúbito y esqueleto de la mano en vista lateral. Espécimen osteológico preparado, no disección. No es una fotografía del espécimen ni del modelo 3D del atlas; especie según la descripción de la página del archivo.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "commons-canine-hindlimb-msu",
+        "title": "Esqueleto de los miembros pelvianos de perro (colección MSU)",
+        "kind": "dissection_photo",
+        "speciesId": "canine",
+        "regionId": "pelvic-limb",
+        "structureIds": [
+            "canine:femur",
+            "canine:tibia",
+            "canine:fibula"
+        ],
+        "sourceId": "commons-canine-hindlimb-msu",
+        "authors": [
+            "Kirill Tsukanov"
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_hind_limb_1.JPG",
+        "license": {
+            "label": "CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/) · Dominio público; crédito de cortesía: «Dog hind limb 1.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "internal",
+        "imagePath": "/media/canine/commons-canine-hindlimb-msu.jpg",
+        "thumbnailPath": "/media/canine/thumbs/commons-canine-hindlimb-msu.jpg",
+        "review": {
+            "status": "pending",
+            "notes": "Correspondencia especie–estructura basada en la descripción del archivo y en inspección visual no experta; pendiente de revisión veterinaria humana cualificada."
+        },
+        "caption": "Fotografía de dos miembros pelvianos de perro sin coxal, montados con alambre: fémur, tibia, peroné y huesos del tarso, metatarso y dedos. Espécimen osteológico preparado, no disección. No es una fotografía del espécimen ni del modelo 3D del atlas; especie según la descripción de la página del archivo.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "commons-canine-pelvis-msu",
+        "title": "Pelvis ósea de perro en vista dorsal (colección MSU)",
+        "kind": "dissection_photo",
+        "speciesId": "canine",
+        "regionId": "pelvic-limb",
+        "structureIds": [
+            "canine:coxal"
+        ],
+        "sourceId": "commons-canine-pelvis-msu",
+        "authors": [
+            "Kirill Tsukanov"
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dog_pelvis.JPG",
+        "license": {
+            "label": "CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/) · Dominio público; crédito de cortesía: «Dog pelvis.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "internal",
+        "imagePath": "/media/canine/commons-canine-pelvis-msu.jpg",
+        "thumbnailPath": "/media/canine/thumbs/commons-canine-pelvis-msu.jpg",
+        "review": {
+            "status": "pending",
+            "notes": "Correspondencia especie–estructura basada en la descripción del archivo y en inspección visual no experta; pendiente de revisión veterinaria humana cualificada."
+        },
+        "caption": "Fotografía de la pelvis ósea de un perro (ambos coxales) en vista dorsal, con sacro y vértebras lumbares y caudales adyacentes. Espécimen osteológico preparado, no disección. No es una fotografía del espécimen ni del modelo 3D del atlas; especie según la descripción de la página del archivo.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "commons-feline-skeleton-msu",
+        "title": "Esqueleto montado de gato en vista lateral (colección MSU)",
+        "kind": "dissection_photo",
+        "speciesId": "feline",
+        "regionId": "pelvic-limb",
+        "structureIds": [
+            "feline:femur",
+            "feline:tibia",
+            "feline:os-coxae"
+        ],
+        "sourceId": "commons-feline-skeleton-msu",
+        "authors": [
+            "Kirill Tsukanov"
+        ],
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Felis_catus_skeleton.JPG",
+        "license": {
+            "label": "CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/) · Dominio público; crédito de cortesía: «Felis catus skeleton.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "internal",
+        "imagePath": "/media/feline/commons-feline-skeleton-msu.jpg",
+        "thumbnailPath": "/media/feline/thumbs/commons-feline-skeleton-msu.jpg",
+        "review": {
+            "status": "pending",
+            "notes": "Correspondencia especie–estructura basada en la descripción del archivo y en inspección visual no experta; pendiente de revisión veterinaria humana cualificada."
+        },
+        "caption": "Fotografía de un esqueleto completo de gato doméstico (Felis catus) montado en vista lateral izquierda; se asocia aquí solo a coxal, fémur y tibia, visibles en el miembro pelviano. Espécimen osteológico preparado, no disección. No es una fotografía del espécimen ni del modelo 3D del atlas; especie según la descripción de la página del archivo.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "pmc-tagliavia-feline-skull",
+        "title": "Variaciones craneofaciales en gatos persas (Animals 2026)",
+        "kind": "academic_reference",
+        "speciesId": "feline",
+        "regionId": "head",
+        "structureIds": [
+            "feline:skull"
+        ],
+        "sourceId": "tagliavia-persian-skull-2026",
+        "authors": [
+            "Claudio Tagliavia",
+            "Marco Canova",
+            "Monica Prapotnich",
+            "Giulia Salamanca",
+            "Cristiano Bombardi",
+            "Angelo Peli",
+            "Annamaria Grandis",
+            "Alessia Di Giancamillo",
+            "Margherita Pallaoro",
+            "Silvia C Modina"
+        ],
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13359505/",
+        "license": {
+            "label": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) según Europe PMC (PMC13359505), consultado 2026-11-01. Enlace externo sin reproducción de figuras.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Estudio morfológico y morfométrico del cráneo de gatos persas (braquicéfalos); útil para comparar variación craneofacial felina. Referencia externa: no se reproducen figuras ni texto; no es una fotografía de esta estructura en el atlas.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "pmc-requicha-feline-orbit-ct",
+        "title": "Tomografía de las regiones orbitaria e infraorbitaria del gato (Animals 2026)",
+        "kind": "academic_reference",
+        "speciesId": "feline",
+        "regionId": "head",
+        "structureIds": [
+            "feline:skull"
+        ],
+        "sourceId": "requicha-feline-orbit-ct-2026",
+        "authors": [
+            "João Filipe Requicha",
+            "Ana Rita Sousa",
+            "Nuno Proença",
+            "Ana Válega",
+            "Sofia Alves-Pimenta",
+            "Mateusz Mikiewicz"
+        ],
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12784816/",
+        "license": {
+            "label": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) según Europe PMC (PMC12784816), consultado 2026-11-01. Enlace externo sin reproducción de figuras.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Estudio retrospectivo de tomografía computarizada de la órbita y la región infraorbitaria en gatos europeos de pelo corto. Referencia externa: no se reproducen figuras ni texto; no es una fotografía de esta estructura en el atlas.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "pmc-delibas-feline-mandibular-canal",
+        "title": "Canal mandibular en gatos Van mediante CBCT (Animals 2026)",
+        "kind": "academic_reference",
+        "speciesId": "feline",
+        "regionId": "head",
+        "structureIds": [
+            "feline:mandible"
+        ],
+        "sourceId": "delibas-van-cat-mandibular-canal-2026",
+        "authors": [
+            "Veysel Delibaş",
+            "Sema Kaya"
+        ],
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13663499/",
+        "license": {
+            "label": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) según Europe PMC (PMC13663499), consultado 2026-11-01. Enlace externo sin reproducción de figuras.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Estudio morfométrico del canal mandibular del gato con tomografía computarizada de haz cónico. Referencia externa: no se reproducen figuras ni texto; no es una fotografía de esta estructura en el atlas.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "pmc-goldstein-feline-carpus-microct",
+        "title": "Micro-TC comparativa del carpo canino y felino (Acta Vet Scand 2026)",
+        "kind": "academic_reference",
+        "speciesId": "feline",
+        "regionId": "thoracic-limb",
+        "structureIds": [
+            "feline:carpus"
+        ],
+        "sourceId": "goldstein-feline-carpus-microct-2026",
+        "authors": [
+            "Leo Goldstein",
+            "Anja-Christina Waselau",
+            "Yury Zablotski",
+            "Andrea Meyer-Lindenberg"
+        ],
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13281358/",
+        "license": {
+            "label": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) según Europe PMC (PMC13281358), consultado 2026-11-01. Enlace externo sin reproducción de figuras.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Estudio de micro-TC de la estructura ósea del carpo; compara perro y gato, aquí se asocia solo a la ficha felina. Referencia externa: no se reproducen figuras ni texto; no es una fotografía de esta estructura en el atlas.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "pmc-basa-feline-radioulnar",
+        "title": "Ligamento radiocubital distal del gato (J Feline Med Surg 2023)",
+        "kind": "academic_reference",
+        "speciesId": "feline",
+        "regionId": "thoracic-limb",
+        "structureIds": [
+            "feline:radius",
+            "feline:ulna",
+            "feline:carpus"
+        ],
+        "sourceId": "basa-feline-radioulnar-ligament-2023",
+        "authors": [
+            "Rachel M Basa",
+            "Paul J Canfield",
+            "William R Walsh",
+            "Kenneth A Johnson"
+        ],
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10812075/",
+        "license": {
+            "label": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) según Europe PMC (PMC10812075), consultado 2026-11-01. Enlace externo sin reproducción de figuras.",
+            "verified": true,
+            "redistributionAllowed": true
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Estudio anatómico e histológico del ligamento radiocubital distal y su relación con el radio, el cúbito y el carpo del gato. Referencia externa: no se reproducen figuras ni texto; no es una fotografía de esta estructura en el atlas.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "ia-sisson-canine-thoracic-limb",
+        "title": "Sisson 1914: esqueleto del perro, miembro torácico",
+        "kind": "academic_reference",
+        "speciesId": "canine",
+        "regionId": "thoracic-limb",
+        "structureIds": [
+            "canine:scapula",
+            "canine:humerus",
+            "canine:radius",
+            "canine:ulna",
+            "canine:manus"
+        ],
+        "sourceId": "sisson-dog-1914",
+        "authors": [
+            "Septimus Sisson"
+        ],
+        "sourceUrl": "https://archive.org/details/anatomyofdomesti00sissuoft",
+        "license": {
+            "label": "Internet Archive marca la obra como NOT_IN_COPYRIGHT (1914; autor fallecido en 1924); probable dominio público sin confirmación jurídica por jurisdicción. Enlace externo sin reproducción de figuras.",
+            "verified": false,
+            "redistributionAllowed": false
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Capítulo «Skeleton of the Dog» del tratado histórico de Sisson (copia digitalizada en Internet Archive); terminología anterior a la NAV. Referencia externa: no se reproducen figuras ni texto; no es una fotografía de esta estructura en el atlas.",
+        "verifiedAt": "2026-11-01"
+    },
+    {
+        "id": "ia-sisson-canine-pelvic-limb",
+        "title": "Sisson 1914: esqueleto del perro, miembro pelviano",
+        "kind": "academic_reference",
+        "speciesId": "canine",
+        "regionId": "pelvic-limb",
+        "structureIds": [
+            "canine:coxal",
+            "canine:femur",
+            "canine:patella",
+            "canine:tibia",
+            "canine:fibula",
+            "canine:talus",
+            "canine:calcaneus"
+        ],
+        "sourceId": "sisson-dog-1914",
+        "authors": [
+            "Septimus Sisson"
+        ],
+        "sourceUrl": "https://archive.org/details/anatomyofdomesti00sissuoft",
+        "license": {
+            "label": "Internet Archive marca la obra como NOT_IN_COPYRIGHT (1914; autor fallecido en 1924); probable dominio público sin confirmación jurídica por jurisdicción. Enlace externo sin reproducción de figuras.",
+            "verified": false,
+            "redistributionAllowed": false
+        },
+        "displayMode": "external",
+        "imagePath": null,
+        "thumbnailPath": null,
+        "review": {
+            "status": "pending",
+            "notes": "Asociación documental pendiente de revisión veterinaria humana y cotejo NAV."
+        },
+        "caption": "Capítulo «Skeleton of the Dog» del tratado histórico de Sisson (copia digitalizada en Internet Archive); terminología anterior a la NAV. Referencia externa: no se reproducen figuras ni texto; no es una fotografía de esta estructura en el atlas.",
+        "verifiedAt": "2026-11-01"
     }
 ]

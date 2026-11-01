@@ -61,7 +61,12 @@ describe('HTTP real del catálogo', () => {
   });
 
   it('relaciones documentadas apuntan a estructuras y fuentes existentes de una misma especie', async () => {
-    const structures = (await (await api('structures?limit=100')).json()).data as { id: string; speciesId: string }[];
+    const structures: { id: string; speciesId: string }[] = [];
+    for (let page = 1; ; page++) {
+      const rows = (await (await api(`structures?limit=100&page=${page}`)).json()).data as { id: string; speciesId: string }[];
+      structures.push(...rows);
+      if (rows.length < 100) break;
+    }
     const sources = new Set(((await (await api('sources?limit=100')).json()).data as { id: string }[]).map(row => row.id));
     const byId = new Map(structures.map(row => [row.id, row]));
     let count = 0;

@@ -1,0 +1,1768 @@
+{
+  "batchId": "feline-L-F5",
+  "speciesId": "feline",
+  "author": "A3",
+  "structures": [
+    {
+      "id": "feline:skull",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Cranium",
+      "spanishName": "Cráneo",
+      "aliases": [
+        "calavera felina",
+        "cabeza ósea",
+        "craneo",
+        "skull"
+      ],
+      "summary": "Conjunto óseo de la cabeza felina, no un hueso único: caja que contiene el encéfalo y porción facial que encierra la cavidad nasal; según Reighard y Jennings excluye mandíbula, hioides y huesecillos del oído.",
+      "detailedDescription": "Reighard y Jennings dividen el cráneo en porción craneal, con once huesos (occipital, interparietal, dos temporales, esfenoides, dos parietales, presfenoides, dos frontales y etmoides), y porción facial, con trece (dos palatinos, vómer, dos maxilares, dos lagrimales, dos premaxilares, dos nasales y dos cigomáticos); la cuenta es la de esa obra, sin tamaño de muestra. La porción craneal forma tres anillos: occipital con interparietal; esfenoides con parietales; presfenoides con frontales, cerrado cranealmente por la lámina cribosa. En vista dorsal la superficie es lisa y convexa, más ancha caudalmente, con los arcos cigomáticos separados lateralmente. La cresta lambdoidea marca el límite caudal; la cresta sagital varía mucho: no existe en el gatito y en un gato muy viejo y musculoso llega al borde craneal de los parietales. Ventralmente las bullas timpánicas convergen cranealmente; en el ángulo caudomedial de cada bulla se abre el foramen yugular (nervios IX, X y XI). Palatinos, maxilares y premaxilares forman el paladar duro. La cavidad craneal se divide en fosas cerebelosa, cerebral y olfatoria; el tentorio, formado por los parietales, separa parcialmente las dos primeras. Variación entre razas: en 15 cráneos (10 persas y 5 domésticos de pelo corto), los persas presentaron un cráneo más redondeado, una reducción marcada de la región facial, desviaciones frecuentes del eje craneofacial y, en la mayoría, prognatismo y maloclusión; el doméstico de pelo corto mostró una conformación más alargada (Tagliavia et al., 2026).",
+      "morphology": "Caja ósea prolongada cranealmente por la porción facial. En TC de 24 gatos europeos de pelo corto, la longitud del cráneo fue de 88,06 ± 3,16 mm en hembras y 94,54 ± 4,52 mm en machos (Requicha et al., 2026).",
+      "location": "Esqueleto de la cabeza. Articula con el atlas mediante los cóndilos occipitales y con cada mitad de la mandíbula en la fosa mandibular del temporal.",
+      "landmarks": [
+        "Cavum cranii — cavidad craneal",
+        "Calvaria — calvaria",
+        "Fossa temporalis — fosa temporal",
+        "Arcus zygomaticus — arco cigomático",
+        "Foramen jugulare — foramen yugular",
+        "Palatum osseum — paladar óseo",
+        "Orbita — órbita",
+        "Cavum nasi — cavidad nasal",
+        "Choanae — coanas",
+        "Cresta lambdoidea y cresta sagital — términos de Reighard/Jennings; correspondencia NAV (Crista nuchae, Crista sagittalis externa) pendiente de revisión"
+      ],
+      "function": [
+        "Contiene el encéfalo en la cavidad craneal",
+        "Encierra la cavidad nasal y forma el armazón de la cara"
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "tagliavia-persian-skull-2026",
+        "requicha-feline-orbit-ct-2026"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.11; Skeleton axiale, Cranium",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.11; Cranium",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.21, IV. The Skull",
+          "claim": "«skull» como variante inglesa de búsqueda."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.21, IV. The Skull; p.49, The Skull as a Whole",
+          "claim": "Cráneo propiamente dicho sin mandíbula, hioides ni huesecillos; caja para el encéfalo y porción facial."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.21–22, IV. The Skull",
+          "claim": "Porciones craneal y facial, tres anillos y recuento de huesos."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.49–51, dorsal view, Fig. 39",
+          "claim": "Superficie dorsal, crestas lambdoidea y sagital y su variación con la edad."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.54–56, ventral surface, Fig. 41; pp.57–58, Cavities of the Skull",
+          "claim": "Bullas, foramen yugular, paladar duro, fosas craneales y tentorio."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "tagliavia-persian-skull-2026",
+          "locator": "Abstract; Discussion, Figure 3",
+          "claim": "Comparación de 10 cráneos persas y 5 domésticos de pelo corto."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.49, The Skull as a Whole",
+          "claim": "Caja ósea prolongada cranealmente por la porción facial."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "requicha-feline-orbit-ct-2026",
+          "locator": "Abstract",
+          "claim": "Longitud craneal por sexo en 24 gatos europeos de pelo corto (TC)."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47, The Mandible; p.52, caudal surface",
+          "claim": "Articulaciones con la mandíbula y el atlas."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.11–12; Cranium, Facies, Orbita, Cavum nasi",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.50–51, Fig. 39 (a, c)",
+          "claim": "Crestas lambdoidea y sagital en el gato."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.21; p.49, The Skull as a Whole",
+          "claim": "Caja del encéfalo y armazón facial que encierra la cavidad nasal."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha de conjunto: representa varios huesos, no uno solo, y no fija un número universal; el recuento de huesos es el de Reighard/Jennings (1901). Desde L-F5 los huesos craneales grandes tienen fichas propias (occipital, parietal, frontal, temporal, maxilar, nasal, cigomático, palatino, basisfenoides, presfenoides); falta decidir si la ficha de conjunto debe enlazarlas. El resumen anterior, del pipeline de conciliación 3D y sin fuente («órbitas muy amplias y crestas reducidas»), se sustituyó por texto con evidencia. Las diferencias entre razas (Tagliavia et al.) son variación intraespecífica, no diferencias de especie. La identificación de piezas en el modelo 3D y la revisión veterinaria humana siguen pendientes."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:mandible",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Mandibula",
+      "spanishName": "Mandíbula",
+      "aliases": [
+        "mandíbula inferior felina",
+        "mandibula",
+        "lower jaw",
+        "maxilar inferior"
+      ],
+      "summary": "Mandíbula felina formada por dos mitades, cada una con un cuerpo que lleva los dientes y una rama; se unen cranealmente en la sínfisis y articulan caudalmente con el temporal.",
+      "detailedDescription": "Cada mitad tiene un cuerpo horizontal, con forma de cilindro aplanado, y una rama vertical. La cara lateral del cuerpo presenta cerca del extremo craneal un foramen mentoniano (a veces dos), terminación craneal del conducto mandibular; caudalmente, una fosa profunda (fosa coronoidea o masetérica) se continúa en la rama. En la cara medial, cerca del extremo caudal, el foramen mandibular comunica con el conducto mandibular. El borde ventral, liso y redondeado, termina caudalmente en el proceso angular, romo; el borde dorsal o alveolar lleva los alvéolos (en la figura de Reighard y Jennings: tres incisivos, un canino, dos premolares y un molar por mitad). La rama comprende el proceso coronoides, lámina delgada dirigida dorsocaudalmente, y el proceso condilar, pieza transversal semicilíndrica que articula con la fosa mandibular del temporal. Según la AVDC, en el perro y el gato la terminología AVDC nombra forámenes mentonianos rostral, medio y caudal; Reighard y Jennings describen uno o dos: discrepancia pendiente de revisión. En 14 gatos Van adultos (CBCT), el conducto mandibular discurre más cerca de la cortical lingual en la región molar y se desplaza hacia la vestibular en la premolar, sin diferencias entre lados; en machos discurre más alto respecto del borde ventral (Delibaş y Kaya, 2026).",
+      "morphology": "Cuerpo en cilindro aplanado con dos caras y dos bordes; proceso coronoides en lámina delgada; proceso condilar semicilíndrico y transversal.",
+      "location": "Mandíbula (maxilar inferior). Cada mitad articula caudalmente con la fosa mandibular del temporal y cranealmente con la opuesta en la sínfisis.",
+      "landmarks": [
+        "Corpus mandibulae — cuerpo de la mandíbula",
+        "Margo alveolaris — borde alveolar",
+        "Margo ventralis — borde ventral",
+        "Foramen mentale / Foramina mentalia — foramen mentoniano",
+        "Ramus mandibulae — rama de la mandíbula",
+        "Processus angularis — proceso angular",
+        "Fossa masseterica — fosa masetérica",
+        "Foramen mandibulae — foramen mandibular",
+        "Canalis mandibulae — conducto mandibular",
+        "Processus coronoideus — proceso coronoides",
+        "Processus condylaris — proceso condilar",
+        "Articulatio intermandibularis — articulación intermandibular (sínfisis)"
+      ],
+      "function": [
+        "Mandíbula móvil de la masticación: la elevan el masetero, el temporal y los pterigoideos y la desciende el digástrico (acciones musculares descritas por Reighard/Jennings)"
+      ],
+      "attachments": [
+        "Borde ventral, craneal al borde caudal del molar: inserción del m. digástrico",
+        "Mitad caudal del borde ventral, fosa coronoidea externa y su borde ventral: inserciones de las capas superficial, media y profunda del m. masetero",
+        "Proceso coronoides (cara externa dorsal a la fosa coronoidea, ambos bordes y toda la cara interna): inserción del m. temporal",
+        "Cara medial cerca del borde ventral, entre el foramen mandibular y la base del proceso angular: inserción del m. pterigoideo externo (denominación de Reighard/Jennings)",
+        "Cara medial del proceso angular: inserción del m. pterigoideo interno (denominación de Reighard/Jennings)",
+        "Cara interna junto a la sínfisis: origen del m. geniohioideo; cara medial del cuerpo entre el foramen mandibular y la sínfisis: origen del m. milohioideo",
+        "Proceso angular: ligamento estilomandibular hacia el meato acústico externo"
+      ],
+      "speciesDifferences": [
+        "En el hombre las dos mitades se unen cranealmente en un hueso único; en el gato permanecen separadas y se articulan estrechamente en la sínfisis mediante un fino cartílago interarticular (Reighard y Jennings)"
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "avdc-nomenclature",
+        "delibas-van-cat-mandibular-canal-2026"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Mandibula",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Mandibula",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47, The Mandible (inferior maxillary bone), lower jaw",
+          "claim": "Variantes inglesas e histórica."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47, The Mandible, Figs. 36–37",
+          "claim": "Dos mitades, sínfisis, cuerpo y rama; articulación con el temporal."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.47–49, The Mandible, Figs. 36–37 y leyenda",
+          "claim": "Cuerpo, forámenes, procesos y dientes de la figura."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "avdc-nomenclature",
+          "locator": "Jaw anatomy, Mental foramens or foramina",
+          "claim": "Forámenes mentonianos rostral, medio y caudal en perro y gato."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "delibas-van-cat-mandibular-canal-2026",
+          "locator": "Abstract; Results",
+          "claim": "Trayecto del conducto mandibular en 14 gatos Van."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.47–49",
+          "claim": "Forma del cuerpo y de los procesos."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47; p.61, Articulations of the Mandible",
+          "claim": "Articulaciones temporal y sinfisaria."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.16–17; Mandibula",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "ARTHROLOGIA, p.31, Articulatio intermandibularis; nota 3, p.36",
+          "claim": "Articulación intermandibular."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.108–112, Muscles of Mastication (Action)",
+          "claim": "Elevadores y depresor de la mandíbula."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.107–108, M. digastricus; pp.108–110, M. masseter; pp.110–111, M. temporalis; pp.111–112, Mm. pterygoidei",
+          "claim": "Inserciones de los músculos masticadores."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.113, M. geniohyoideus; p.114, M. mylohyoideus; pp.61–62, stylomandibular ligament",
+          "claim": "Orígenes musculares y ligamento."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.61, Articulations of the Mandible",
+          "claim": "Comparación explícita gato–hombre."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de la mandíbula como unidad de dos mitades; no se asigna lateralidad. El resumen anterior, del pipeline 3D y sin fuente («corta y robusta… movimientos bisagra potentes»), se sustituyó por texto con evidencia. Los nombres musculares son los de Reighard/Jennings (1901); su correspondencia NAV (p. ej. pterigoideo externo/interno) queda pendiente. Delibaş y Kaya numeran los premolares mandibulares como PM1/PM2, mientras que la AVDC los numera 407/408 (Triadan): no se mezclan esos rótulos. vascularSupply pendiente: la fuente cita el paquete neurovascular del conducto, no la irrigación del hueso."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:teeth",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Dentes",
+      "spanishName": "Dientes",
+      "aliases": [
+        "dentición felina",
+        "dientes y muelas",
+        "teeth",
+        "dentes"
+      ],
+      "summary": "Conjunto de los dientes felinos, no un hueso: según Reighard y Jennings, el gato adulto tiene 30 dientes (16 en la arcada superior y 14 en la inferior), implantados en premaxilares, maxilares y mandíbula.",
+      "detailedDescription": "Reighard y Jennings dan la fórmula permanente i 3/3, c 1/1, pm 3/2, m 1/1: 12 incisivos, 4 caninos, 10 premolares y 4 molares; no indican tamaño de muestra. Cada diente tiene raíz (una o más «fangs»), corona con una o más cúspides y un cuello estrecho. Los incisivos, seis por arcada, tienen el borde cortante con tres cúspides diminutas y una sola raíz; los laterales son los mayores y los superiores mayores que los inferiores. Los caninos son largos, fuertes y puntiagudos, con una raíz y una cúspide; sus alvéolos abultan la cara externa del hueso; con la boca cerrada el superior queda laterocaudal al inferior. Tras los caninos queda el diastema. En la arcada superior, el primer premolar es pequeño (normalmente una cúspide y una raíz), el segundo tiene cuatro cúspides y dos raíces y el tercero, el mayor diente de las arcadas, tres cúspides grandes en serie más una pequeña medial y tres raíces; el molar superior es pequeño, caudomedial al último premolar, con dos cúspides y dos raíces. En la inferior, los dos premolares son similares (cuatro cúspides y dos raíces) y el molar es el mayor diente, con dos cúspides grandes y dos raíces. Al nacer no hay dientes; después aparecen 26 deciduos (12 incisivos, 4 caninos y 10 «molares» en la terminología de la obra), que se sustituyen por los permanentes. La AVDC numera los dientes con el sistema de Triadan modificado y deja huecos para los ausentes: el primer premolar del maxilar izquierdo felino es el 206 (no el 205) y los dos premolares mandibulares derechos son el 407 y el 408. Según la AVDC, en la oclusión normal del gato los incisivos maxilares quedan labiales a los mandibulares, el canino mandibular encaja en el diastema entre el tercer incisivo y el canino maxilares, los premolares mandibulares y el primer molar quedan linguales a los maxilares y la cara bucal del primer molar mandibular ocluye con la palatina del cuarto premolar maxilar.",
+      "morphology": "Raíz, cuello y corona con cúspides; incisivos con borde tricúspide; caninos cónicos de una raíz; premolares comprimidos lateralmente.",
+      "location": "Arcadas dentales: incisivos superiores en los premaxilares; caninos, premolares y molar superiores en la maxila; dientes inferiores en el borde alveolar de la mandíbula.",
+      "landmarks": [
+        "Corona dentis — corona",
+        "Cervix dentis — cuello",
+        "Radix dentis — raíz",
+        "Cuspis [coronae] dentis — cúspide",
+        "Diastema — diastema",
+        "Dentes incisivi, canini, premolares, molares — incisivos, caninos, premolares, molares",
+        "Dentes decidui / Dentes permanentes — deciduos / permanentes",
+        "Dens sectorius (Car) — diente sectorial; NAV no indica qué pieza felina lo es: pendiente"
+      ],
+      "speciesDifferences": [
+        "La AVDC indica que la oclusión normal del gato es similar a la del perro"
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "avdc-nomenclature"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "SPLANCHNOLOGIA, p.50; Dentes",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "SPLANCHNOLOGIA, p.50; Dentes",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.224, The Teeth. Dentes",
+          "claim": "Variantes inglesa y latina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.224, The Teeth",
+          "claim": "Treinta dientes en el adulto, 16 superiores y 14 inferiores; huesos de implantación."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.224–226, The Teeth, Figs. 93–94; p.226, The Deciduous Teeth",
+          "claim": "Fórmula, clases y morfología dentaria; 26 deciduos."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "avdc-nomenclature",
+          "locator": "Triadan system (comentario sobre el gato); Normal Occlusion in a Cat",
+          "claim": "Numeración felina 206, 407 y 408; oclusión normal felina."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.224–225",
+          "claim": "Partes del diente y forma de cada clase."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.224–225; p.39, Fig. 27 (leyenda e–i)",
+          "claim": "Huesos que alojan cada grupo."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "SPLANCHNOLOGIA, p.50; Dentes",
+          "claim": "Nombres latinos normalizados y Dens sectorius (Car)."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "avdc-nomenclature",
+          "locator": "Normal Occlusion in a Cat",
+          "claim": "Comparación explícita con el perro."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha de conjunto (dentición), no un hueso; se conserva kind=\"bone\" porque el esquema no tiene un tipo para dientes: decisión pendiente para A0. La fórmula es la de Reighard/Jennings (1901). La correspondencia entre su numeración («primer, segundo y tercer premolar superior») y la de Triadan/AVDC (206–208) se infiere de los huecos que indica la AVDC y requiere revisión humana. El resumen anterior («colmillos prensiles y muelas carniceras afiladas») no tenía fuente y se sustituyó; ninguna fuente leída identifica el diente sectorial felino."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "attachments",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:occipital",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os occipitale",
+      "spanishName": "Hueso occipital",
+      "aliases": [
+        "occipital",
+        "occipital bone",
+        "hueso occipital"
+      ],
+      "summary": "Hueso impar que forma la parte más caudal del cráneo felino (pared caudal y parte de la base), une el cráneo con la columna vertebral y rodea el foramen magno.",
+      "detailedDescription": "En el gatito se distinguen cuatro piezas (basioccipital, dos exoccipitales y supraoccipital), unidas por completo en el adulto; se describe como porción basilar, dos porciones laterales y porción escamosa. La porción basilar, oblonga y aplanada, se une al cuerpo del basisfenoides por sincondrosis; su cara dorsal forma un surco donde descansan el puente y la médula oblongada, y la ventral tiene tres crestas longitudinales y, lateralmente, superficies rugosas cubiertas por el borde medial de la bulla timpánica. Las porciones laterales llevan los cóndilos occipitales, curvados en espiral y separados ventralmente por una escotadura estrecha, para el atlas; lateral a cada cóndilo, el proceso yugular cubre el extremo caudal de la bulla. Medial a la incisura yugular se abre el conducto del hipogloso y dorsal a él el conducto condilar, que transmite una vena y varía mucho de tamaño entre especímenes. La porción escamosa presenta la cresta lambdoidea, la cresta occipital externa y la protuberancia occipital externa; su cara interna tiene depresiones para el cerebelo.",
+      "morphology": "Hueso impar en anillo alrededor del foramen magno; porción basilar más ancha en la unión de sus tercios medio y caudal; escama en sector de círculo de algo más de 90°, gruesa y porosa dorsalmente y delgada y compacta junto al foramen magno.",
+      "location": "Parte caudal del cráneo. Articula con el atlas por los cóndilos, con el basisfenoides por sincondrosis, con las porciones petrosa y mastoidea del temporal y, por su borde dorsal, con los parietales y el interparietal.",
+      "landmarks": [
+        "Foramen magnum — foramen magno",
+        "Pars basilaris — porción basilar",
+        "Pars lateralis — porción lateral",
+        "Condylus occipitalis — cóndilo occipital",
+        "Processus jugularis — proceso yugular",
+        "Canalis n. hypoglossi — conducto del nervio hipogloso",
+        "Canalis condylaris — conducto condilar",
+        "Incisura jugularis — incisura yugular",
+        "Squama occipitalis — escama occipital",
+        "Protuberantia occipitalis externa — protuberancia occipital externa",
+        "Crista occipitalis externa — cresta occipital externa",
+        "Cresta lambdoidea — término de Reighard/Jennings; su correspondencia con Crista nuchae (NAV, nota 14, Carnivora) está pendiente"
+      ],
+      "function": [
+        "Une el cráneo con la columna vertebral; por el foramen magno la cavidad craneal comunica con el canal vertebral"
+      ],
+      "attachments": [
+        "Cara externa del proceso yugular: origen carnoso del m. digástrico",
+        "Borde ventral del proceso yugular: origen del m. yugulohioideo",
+        "Mitad lateral de la cresta lambdoidea: inserción del m. esternomastoideo",
+        "Ángulo ventromedial de los cóndilos: ligamentos alares desde el diente del axis"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Ossa cranii, Os occipitale",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Os occipitale",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.22, Occipital Bone. Os occipitale",
+          "claim": "Variante inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.22, Occipital Bone, Figs. 17–18",
+          "claim": "Posición caudal, unión con la columna y foramen magno."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.22–25, Occipital Bone, Figs. 17–18",
+          "claim": "Piezas del gatito, porciones, cóndilos, procesos, conductos y escama."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.58, Cavities of the Skull",
+          "claim": "Variación de tamaño del conducto condilar."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.23–24",
+          "claim": "Forma de las porciones basilar y escamosa."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.22–25",
+          "claim": "Articulaciones del hueso."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Os occipitale; nota 14, p.25",
+          "claim": "Nombres latinos normalizados; Crista nuchae en Carnivora."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.24, Fig. 17 (h)",
+          "claim": "Cresta lambdoidea en el gato."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.22",
+          "claim": "Conexión con la columna vertebral y foramen magno."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.107, M. digastricus; p.113, M. jugulohyoideus; p.140, M. sternomastoideus; p.18, ligamenta alaria",
+          "claim": "Fijaciones musculares y ligamentosas."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; hueso no identificado en el modelo 3D. Reighard/Jennings (1901) se coteja con NAV; las correspondencias de términos históricos (lambdoidal ridge, jugular process) quedan pendientes de revisión humana. Los nombres musculares son los de la obra."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:parietal",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os parietale",
+      "spanishName": "Hueso parietal",
+      "aliases": [
+        "parietal",
+        "parietal bone",
+        "hueso parietal"
+      ],
+      "summary": "Hueso par, delgado y rectangular, que forma la mayor parte de los límites lateral y dorsal de la cavidad craneal felina.",
+      "detailedDescription": "La cara externa es lisa y convexa; su parte más alta, algo caudal al centro, es la eminencia parietal, que marca el comienzo de la osificación. Una cresta curva poco marcada limita el origen del m. temporal, y cerca del borde ventral la superficie es rugosa y queda cubierta por la escama del temporal. La cara interna tiene crestas y surcos para las circunvoluciones cerebrales, un surco para el seno sagital superior al articularse ambos huesos y un surco para la arteria meníngea media. Cerca del borde caudal sobresale hacia dentro el tentorio, lámina ósea delgada y escotada que separa la fosa cerebelosa de la cerebral; entre los dos tentorios queda un gran orificio que comunica ambas fosas. El borde medial forma sutura con el opuesto; el craneal articula con el frontal, en una escotadura del cual encaja una espina del parietal; el ventral, con la escama del temporal y, cranealmente, con el ala del esfenoides; el caudal, con el interparietal y la porción mastoidea del temporal. La cresta sagital, ausente en el gatito, puede alcanzar en un gato muy viejo y musculoso el borde craneal de los parietales.",
+      "morphology": "Lámina delgada, compacta, rectangular y curvada, con el tentorio como repisa interna escotada.",
+      "location": "Bóveda craneal, lateral y dorsal: entre el frontal (cranealmente), el interparietal y la porción mastoidea del temporal (caudalmente) y la escama del temporal (ventralmente).",
+      "landmarks": [
+        "Tuber parietale — tuberosidad parietal (eminencia parietal de Reighard/Jennings)",
+        "Processus tentoricus — proceso tentórico (tentorio de Reighard/Jennings; correspondencia pendiente)",
+        "Linea temporalis — línea temporal",
+        "Crista sagittalis externa — cresta sagital externa",
+        "Sulcus sinus sagittalis dorsalis — surco del seno sagital dorsal",
+        "Margo sagittalis, frontalis, squamosus, occipitalis — bordes sagital, frontal, escamoso y occipital"
+      ],
+      "attachments": [
+        "Superficie limitada por la cresta curva de la cara externa: origen del m. temporal"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Ossa cranii, Os parietale",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Os parietale",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.36, Parietal Bone. Os parietale",
+          "claim": "Variante inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.36, Parietal Bone",
+          "claim": "Forma y posición del hueso."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.36–37, Parietal Bone, Figs. 39–40, 42–43",
+          "claim": "Caras, tentorio y bordes articulares."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.51, The Skull as a Whole",
+          "claim": "Variación de la cresta sagital con la edad."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.36",
+          "claim": "Lámina delgada, rectangular y curvada."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.36–37; p.49, Fig. 39",
+          "claim": "Posición y huesos vecinos."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Os parietale",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.36, Parietal Bone (obscure curved ridge)",
+          "claim": "Límite del origen del m. temporal."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de un hueso par; lateralidad no asignada y hueso no identificado en el modelo 3D. Las correspondencias entre términos de Reighard/Jennings y NAV (tentorio, eminencia parietal) están pendientes de revisión humana."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:frontal",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os frontale",
+      "spanishName": "Hueso frontal",
+      "aliases": [
+        "frontal",
+        "frontal bone",
+        "hueso frontal"
+      ],
+      "summary": "Hueso par que, con el opuesto, forma el techo del cráneo entre parietales y nasales y desciende a la órbita para formar gran parte de su pared medial.",
+      "detailedDescription": "Tiene dos porciones: la lámina frontal (parte craneal del techo del cráneo y parte del techo de la cavidad nasal) y la lámina orbitaria. La lámina frontal es un triángulo rectángulo de hipotenusa lateral: los dos tercios craneales de su borde lateral forman el arco o margen supraorbitario, que se prolonga caudolateralmente en el proceso cigomático (postorbitario); en el ángulo craneal, la espina frontal o nasal encaja entre el nasal y la maxila. En la cara ventral, una cresta transversal gruesa contiene el seno frontal, que comunica por un foramen oval con los espacios del etmoides; cranealmente, una zona rugosa recibe parte del laberinto etmoidal. La lámina orbitaria, cóncava por fuera, lleva cerca de su borde ventral el pequeño foramen etmoidal, para la arteria homónima, y en su cara interna una cresta para la lámina cribosa. Articula con el frontal opuesto, el nasal, el parietal, el alisfenoides, la maxila, el lagrimal, la lámina orbitaria del palatino y el cuerpo y el ala del presfenoides.",
+      "morphology": "Lámina frontal en triángulo rectángulo, convexa y lisa dorsalmente, unida en ángulo recto a la lámina orbitaria.",
+      "location": "Techo del cráneo entre parietales y nasales; pared medial de la órbita y parte de la fosa temporal.",
+      "landmarks": [
+        "Margo supraorbitalis — margen supraorbitario",
+        "Processus zygomaticus — proceso cigomático (postorbitario)",
+        "Pars orbitalis — porción orbitaria (lámina orbitaria de Reighard/Jennings)",
+        "Foramen ethmoidale — foramen etmoidal",
+        "Sinus frontalis — seno frontal",
+        "Pars nasalis — porción nasal",
+        "Facies temporalis — cara temporal"
+      ],
+      "attachments": [
+        "Proceso cigomático: unido por el ligamento orbitario al proceso frontal del cigomático",
+        "Borde caudal del proceso cigomático: fijación de la fascia temporal",
+        "Parte del frontal dentro de la fosa temporal: a veces origen del m. temporal"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Ossa cranii, Os frontale",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Os frontale",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.37, Frontal Bone. Os frontale",
+          "claim": "Variante inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.37, Frontal Bone",
+          "claim": "Techo del cráneo y pared medial de la órbita."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.37–39, Frontal Bone, Fig. 26; Figs. 39–40",
+          "claim": "Láminas, margen supraorbitario, seno frontal, foramen etmoidal y articulaciones."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.37; p.38",
+          "claim": "Forma triangular y unión en ángulo recto."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.37",
+          "claim": "Posición en el techo craneal, la órbita y la fosa temporal."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Os frontale",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47, Malar Bone (orbital ligament); pp.110–111, M. temporalis",
+          "claim": "Ligamento orbitario y relación con el temporal."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de un hueso par; lateralidad no asignada y hueso no identificado en el modelo 3D. Reighard/Jennings se coteja con NAV; los términos históricos (frontal plate, orbital plate, postorbital process) se dan como tales."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:temporal",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os temporale",
+      "spanishName": "Hueso temporal",
+      "aliases": [
+        "temporal",
+        "temporal bone",
+        "hueso temporal",
+        "bulla timpanica"
+      ],
+      "summary": "Hueso par de la pared lateral del cráneo felino, entre los segmentos occipital y esfenoidal; reúne las porciones escamosa, petrosa y timpánica y contiene el órgano auditivo.",
+      "detailedDescription": "Las tres porciones son distintas en el gatito y quedan bastante firmemente unidas en el adulto. La escamosa, delgada, origina parte del m. temporal y emite el proceso cigomático, formado por dos raíces; en la base de ese proceso, la fosa mandibular, transversalmente alargada, recibe el proceso condilar de la mandíbula; la limitan caudalmente el proceso postmandibular (postglenoideo) y cranealmente un tubérculo articular; el extremo del proceso se articula con el cigomático. La porción timpánica forma la bulla auditiva, grande, hueca y en forma de oliva, que encierra la cavidad timpánica; se desarrolla a partir de dos huesos, el ectotimpánico (alrededor del meato acústico externo) y el entotimpánico (la mayor parte de la bulla, delgado y translúcido), y un tabique óseo la divide en dos cámaras. La porción petrosa, piramidal y muy densa, encierra el laberinto auditivo y completa la pared medial de la bulla: en su cara lateral se ven la fenestra coclear, el promontorio y la fenestra vestibular; en la medial, el meato acústico interno (parte dorsal para el nervio facial y ventral para el auditivo) y una fosa para el lóbulo apendicular del cerebelo. La porción mastoidea, unida a la base de la pirámide, aparece entre el parietal y el occipital y forma el proceso mastoideo, caudal al foramen estilomastoideo. NAV registra en el gato una porción endotimpánica que forma la gran parte medial de la bulla; el tabique de la bulla felina lo forman las porciones timpánica y endotimpánica.",
+      "morphology": "Escama delgada, oval o triangular con ángulos redondeados; bulla timpánica grande, hueca, ovoidea y de sustancia muy compacta; pirámide petrosa muy densa.",
+      "location": "Pared lateral del cráneo, entre el occipital y los huesos esfenoidales; la bulla queda ventral a la escama. Articula con el parietal, el ala del esfenoides, el occipital, el cigomático y, por la fosa mandibular, con la mandíbula.",
+      "landmarks": [
+        "Pars squamosa — porción escamosa",
+        "Processus zygomaticus — proceso cigomático",
+        "Fossa mandibularis — fosa mandibular",
+        "Tuberculum articulare — tubérculo articular",
+        "Processus retroarticularis — proceso retroarticular (proceso postmandibular de Reighard/Jennings; correspondencia pendiente)",
+        "Pars tympanica — porción timpánica",
+        "Pars endotympanica — porción endotimpánica",
+        "Bulla tympanica — bulla timpánica",
+        "Septum bullae — tabique de la bulla",
+        "Meatus acusticus externus — meato acústico externo",
+        "Pars petrosa — porción petrosa",
+        "Meatus acusticus internus — meato acústico interno",
+        "Canalis facialis — conducto facial",
+        "Processus mastoideus — proceso mastoideo",
+        "Foramen stylomastoideum — foramen estilomastoideo"
+      ],
+      "attachments": [
+        "Cara externa de la escama y surco dorsal a la raíz del proceso cigomático: origen de parte del m. temporal",
+        "Punta del proceso mastoideo y cresta entre los procesos mastoideo y yugular: origen tendinoso del m. digástrico",
+        "Porción mastoidea hasta el proceso mastoideo: inserción del m. esternomastoideo",
+        "Margen interno del meato en la bulla: fijación de la membrana timpánica",
+        "Meato acústico externo: ligamento estilomandibular desde el proceso angular de la mandíbula"
+      ],
+      "speciesDifferences": [
+        "A diferencia de la porción timpánica de la mayoría de los mamíferos, la del gato se desarrolla a partir de dos huesos, ectotimpánico y entotimpánico (Reighard y Jennings)"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Ossa cranii, Os temporale",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Os temporale",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.30, Temporal Bone; p.32, auditory bulla",
+          "claim": "Variantes inglesas y bulla."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.21; pp.30–31, Temporal Bone",
+          "claim": "Posición entre segmentos, porciones y órgano auditivo."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.30–35, Temporal Bone, Figs. 22–25",
+          "claim": "Porciones escamosa, timpánica, petrosa y mastoidea."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 22, p.26",
+          "claim": "Pars endotympanica presente en el gato y Septum bullae felino."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.31–34",
+          "claim": "Forma de escama, bulla y pirámide."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.30–32; p.47",
+          "claim": "Posición y articulaciones."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.13–14; Os temporale",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.31; p.107, M. digastricus; pp.110–111, M. temporalis; p.140, M. sternomastoideus; p.33; pp.61–62",
+          "claim": "Fijaciones musculares, membrana timpánica y ligamento estilomandibular."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.32, The tympanic",
+          "claim": "Comparación explícita con la mayoría de los mamíferos."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de un hueso par; lateralidad no asignada y hueso no identificado en el modelo 3D. La interpretación de NAV (endotimpánica no forma parte de la porción timpánica) y la de Reighard/Jennings (entotimpánico como parte del timpánico) difieren en su clasificación: pendiente de revisión humana. Las estructuras del oído interno y medio no se describen en esta ficha."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:maxilla",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Maxilla",
+      "spanishName": "Maxilar",
+      "aliases": [
+        "maxila",
+        "maxilar superior",
+        "maxillary bone",
+        "maxilla"
+      ],
+      "summary": "Hueso par que forma las porciones craneal y lateral del techo de la boca felina y aloja el canino, los premolares y el molar superiores.",
+      "detailedDescription": "Consta de un cuerpo ventral, grueso y prismático, y de una lámina delgada, el proceso frontal, que asciende desde su parte craneal; los dientes se implantan en el borde alveolar. La cara lateral muestra en la base del proceso frontal el gran foramen infraorbitario, para los vasos y nervios homónimos, y una elevación cilíndrica para la raíz del canino. La mitad caudal de la cara dorsal entra en el suelo de la órbita; su borde lateral se divide en dos láminas que reciben el extremo del cigomático y se prolonga en el corto proceso cigomático. En la unión de una lámina vertical con la base del proceso frontal se abre el conducto nasolagrimal, y a la cara nasal se une la concha nasal ventral (maxiloturbinal). El tercio craneal forma el amplio proceso palatino, con la cresta nasal para el vómer. NAV indica que en Carnivora no hay un seno maxilar encerrado en la maxila, sino un receso maxilar limitado por la lámina orbitaria del etmoides, la maxila y el palatino. En TC de 24 gatos europeos de pelo corto, la longitud media del conducto infraorbitario fue de 5,23 ± 0,49 mm: 5,46 ± 0,46 mm en machos y 5,02 ± 0,42 mm en hembras (Requicha et al., 2026).",
+      "morphology": "Cuerpo en prisma triangular cuyas caras dorsal (cavidad nasal y órbita), ventral (boca) y lateral (mejilla) convergen en el borde alveolar; proceso frontal plano, grande y curvo.",
+      "location": "Cara y paladar duro. Las maxilas se encuentran cranealmente y divergen caudalmente para encerrar las láminas palatinas de los palatinos; articulan con el premaxilar, el nasal, el frontal, el lagrimal, el palatino, el cigomático y el vómer.",
+      "landmarks": [
+        "Corpus maxillae — cuerpo de la maxila",
+        "Facies orbitalis — cara orbitaria",
+        "Foramen infraorbitale — foramen infraorbitario",
+        "Canalis infraorbitalis — conducto infraorbitario",
+        "Processus frontalis (Car) — proceso frontal",
+        "Processus zygomaticus — proceso cigomático",
+        "Processus palatinus — proceso palatino",
+        "Crista nasalis — cresta nasal",
+        "Canalis lacrimalis — conducto lagrimal",
+        "Processus alveolaris y Alveoli dentales — proceso alveolar y alvéolos",
+        "Juga alveolaria — eminencias alveolares (elevación de la raíz canina de Reighard/Jennings; correspondencia pendiente)"
+      ],
+      "speciesDifferences": [
+        "La cara orbitaria de la maxila forma parte de la pared de la órbita en el gato y, en menor medida, en el caballo (NAV, nota 30)",
+        "En el perro, el receso maxilar está limitado además por el lagrimal (NAV, nota 7)"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "requicha-feline-orbit-ct-2026"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Ossa faciei, Maxilla",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Maxilla",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.39, Maxillary Bone. Maxilla",
+          "claim": "Variante inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.39, Maxillary Bone, Fig. 27 (leyenda e–i)",
+          "claim": "Techo de la boca y dientes que aloja."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.39–41, Maxillary Bone, Figs. 27–28",
+          "claim": "Cuerpo, proceso frontal, forámenes, conductos y proceso palatino."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 7, p.24",
+          "claim": "Ausencia de seno maxilar en Carnivora; límites del receso."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "requicha-feline-orbit-ct-2026",
+          "locator": "Abstract; Results",
+          "claim": "Longitud del conducto infraorbitario por sexo (24 gatos, TC)."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.39",
+          "claim": "Prisma triangular y proceso frontal."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.39–41",
+          "claim": "Posición y articulaciones."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.15–16; Maxilla",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 30, p.26; nota 7, p.24",
+          "claim": "Comparaciones explícitas gato–caballo y perro."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de un hueso par; lateralidad no asignada y hueso no identificado en el modelo 3D. Reighard/Jennings llaman «nasal process» al proceso frontal en una frase (p.40): se usa el término NAV. Los incisivos superiores van en el premaxilar (Os incisivum), que no tiene ficha en este lote."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "attachments",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:nasal",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os nasale",
+      "spanishName": "Hueso nasal",
+      "aliases": [
+        "nasal",
+        "nasal bone",
+        "hueso nasal"
+      ],
+      "summary": "Hueso par, alargado, que forma parte de la pared dorsal de la cavidad nasal felina cerca de la línea media.",
+      "detailedDescription": "Ocupa el espacio entre el proceso nasal del premaxilar, el proceso frontal de la maxila y la espina nasal del frontal. Consta de dos láminas triangulares alargadas. La vertical, algo curvada ventralmente, se aplica a la del lado opuesto y forma con ella la cresta nasal, tabique medio que se une al borde dorsal de la lámina perpendicular del etmoides y contribuye al tabique internasal. La horizontal techa la cavidad nasal y con su base limita dorsalmente la abertura de las narinas. Del borde lateral de la lámina horizontal sale una lámina ósea curvada ventromedialmente que encierra una fosa que recibe parte del etmoides: la concha nasal superior (nasoturbinal) de Reighard y Jennings.",
+      "morphology": "Dos láminas triangulares alargadas, vertical y horizontal, con el vértice dirigido cranealmente.",
+      "location": "Dorso de la cara junto a la línea media. Articula caudalmente con la espina nasal del frontal, en su parte media con el proceso frontal de la maxila y cranealmente con el proceso nasal del premaxilar; limita dorsalmente las narinas óseas.",
+      "landmarks": [
+        "Facies externa — cara externa",
+        "Facies interna — cara interna",
+        "Processus septalis — proceso septal (lámina vertical de Reighard/Jennings; correspondencia pendiente)",
+        "Crista ethmoidalis — cresta etmoidal (fijación de la concha nasal dorsal; NAV, nota 29)"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Ossa faciei, Os nasale",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Os nasale",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.42, Nasal Bone. Os nasale",
+          "claim": "Variante inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.42, Nasal Bone, Fig. 30",
+          "claim": "Posición en la pared dorsal de la cavidad nasal."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.42, Nasal Bone, Fig. 30",
+          "claim": "Láminas, cresta nasal y concha nasal superior."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.42",
+          "claim": "Dos láminas triangulares alargadas."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.42",
+          "claim": "Articulaciones y relación con las narinas."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Os nasale; nota 29, p.26",
+          "claim": "Nombres latinos normalizados."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de un hueso par; lateralidad no asignada y hueso no identificado en el modelo 3D. La correspondencia entre la «concha nasalis superior» de Reighard/Jennings y la Concha nasalis dorsalis de NAV queda pendiente de revisión humana."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:zygomatic",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os zygomaticum",
+      "spanishName": "Hueso cigomático",
+      "aliases": [
+        "cigomatico",
+        "malar",
+        "hueso malar",
+        "jugal",
+        "zygomatic bone",
+        "malar bone"
+      ],
+      "summary": "Hueso par, en lámina plana y curva, que forma la pared lateral de la órbita y, con el proceso cigomático del temporal, el arco cigomático.",
+      "detailedDescription": "Su cara externa es lisa y lleva una cresta longitudinal para la fijación del m. masetero. Caudalmente se continúa en dos procesos: el frontal u orbitario, espina triangular dirigida caudomedialmente que queda frente al proceso cigomático del frontal y se une a él por el ligamento orbitario; y el proceso cigomático del malar, dirigido ventrocaudalmente, que articula con el proceso cigomático del temporal para formar el arco. La cara interna es lisa y mira a la órbita, salvo la del proceso cigomático, que mira a la fosa temporal. El borde craneal, rugoso, articula con la maxila, que recibe el extremo del hueso entre dos láminas.",
+      "morphology": "Lámina ósea plana y curva con dos procesos caudales.",
+      "location": "Pared lateral de la órbita y parte del arco cigomático; articula con la maxila cranealmente y con el proceso cigomático del temporal caudalmente.",
+      "landmarks": [
+        "Facies lateralis — cara lateral",
+        "Facies orbitalis — cara orbitaria",
+        "Processus frontalis — proceso frontal",
+        "Processus temporalis — proceso temporal (proceso cigomático del malar en Reighard/Jennings; correspondencia pendiente)",
+        "Margo infraorbitalis — margen infraorbitario"
+      ],
+      "attachments": [
+        "Cresta longitudinal de la cara externa y superficie ventral a ella: origen de la capa superficial del m. masetero",
+        "Borde ventral: origen de la capa media del m. masetero",
+        "Cara interna del proceso cigomático del malar: origen del m. temporal; borde caudal: fijación de la fascia temporal",
+        "Proceso frontal: ligamento orbitario hacia el proceso cigomático del frontal"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os zygomaticum",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os zygomaticum",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47, Malar Bone. Jugal Bone. Os zygomaticum",
+          "claim": "Sinónimos históricos (malar, jugal)."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47, Malar Bone, Fig. 35",
+          "claim": "Pared lateral de la órbita y arco cigomático."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47, Fig. 35; p.40",
+          "claim": "Caras, procesos, ligamento orbitario y articulación con la maxila."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47",
+          "claim": "Lámina plana y curva."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47; p.51",
+          "claim": "Órbita y arco cigomático."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os zygomaticum",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.47; p.108, M. masseter; p.110, M. temporalis",
+          "claim": "Fijaciones musculares y ligamento orbitario."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de un hueso par; lateralidad no asignada y hueso no identificado en el modelo 3D. Malar y jugal son sinónimos históricos de Reighard/Jennings."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:palatine",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os palatinum",
+      "spanishName": "Hueso palatino",
+      "aliases": [
+        "palatino",
+        "palatine bone",
+        "hueso palatino"
+      ],
+      "summary": "Hueso par con una porción horizontal (palatina) y otra perpendicular (nasal), unidas en ángulo de unos 45°; forma la parte caudal y medial del techo de la boca.",
+      "detailedDescription": "Las porciones horizontales de ambos palatinos quedan entre las maxilas; cada una es irregularmente cuadrilátera, con el ángulo caudolateral prolongado en un largo proceso que continúa la porción perpendicular, una espina maxilar corta y gruesa en su borde lateral y una corta espina nasal posterior en el ángulo caudal del borde medial. El borde caudal, libre, limita las coanas. Cerca del borde craneolateral de la cara ventral se abren dos o más forámenes pequeños, terminación craneal del conducto palatino posterior. La porción perpendicular, delgada, mira con su cara externa cóncava a la fosa orbitaria y con la interna convexa a la cavidad nasal; la perforan el foramen esfenopalatino, mayor y dorsal, y la abertura caudal del conducto palatino posterior, menor y ventral. Articula con el lagrimal, la lámina orbitaria del frontal, la lámina papirácea del etmoides, el cuerpo del presfenoides y la porción pterigoidea del esfenoides.",
+      "morphology": "Porción horizontal irregularmente cuadrilátera y porción perpendicular delgada, unidas en ángulo de unos 45°.",
+      "location": "Parte caudal y medial del paladar duro, entre las maxilas; la porción perpendicular forma parte de la pared de la fosa orbitaria y de la cavidad nasal.",
+      "landmarks": [
+        "Lamina horizontalis — lámina horizontal",
+        "Lamina perpendicularis — lámina perpendicular",
+        "Foramen sphenopalatinum — foramen esfenopalatino",
+        "Canalis palatinus major — conducto palatino mayor (conducto palatino posterior de Reighard/Jennings; correspondencia pendiente)",
+        "Spina nasalis caudalis — espina nasal caudal (espina nasal posterior de Reighard/Jennings)",
+        "Margo liber — borde libre"
+      ],
+      "attachments": [
+        "Cara lateral de la lámina perpendicular (fosa pterigoidea externa): origen del m. pterigoideo externo (denominación de Reighard/Jennings)"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os palatinum",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os palatinum",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.45, Palatine Bone. Os palatinum",
+          "claim": "Variante inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.45, Palatine Bone, Fig. 33",
+          "claim": "Dos porciones a 45° y techo de la boca."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.45–46, Palatine Bone, Fig. 33",
+          "claim": "Porciones, espinas, coanas, forámenes y articulaciones."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.45–46",
+          "claim": "Forma de las porciones."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.45–46; p.56",
+          "claim": "Paladar duro, fosa orbitaria y cavidad nasal."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os palatinum",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.111, M. pterygoideus externus",
+          "claim": "Origen en la lámina perpendicular."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica de un hueso par; lateralidad no asignada y hueso no identificado en el modelo 3D. Reighard/Jennings sitúan la fosa pterigoidea externa en la lámina perpendicular del palatino (p.111) y la relacionan también con el presfenoides (p.30): pendiente de revisión."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:basisphenoid",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os basisphenoidale",
+      "spanishName": "Hueso basisfenoides",
+      "aliases": [
+        "basisfenoides",
+        "esfenoides",
+        "sphenoid bone",
+        "basisphenoid"
+      ],
+      "summary": "Hueso impar de la base del cráneo, caudal al presfenoides; corresponde al «esfenoides propiamente dicho» de Reighard y Jennings, con cuerpo, dos alas y procesos pterigoideos.",
+      "detailedDescription": "En el gatito consta de tres piezas, el basisfenoides central y dos alisfenoides, unidas en el adulto; se les añade un cuarto elemento, el pterigoideo, que forma la mayor parte del proceso pterigoideo. El cuerpo, en cuña, ocupa la línea media de la base del cráneo y articula cranealmente con el presfenoides y caudalmente con la porción basilar del occipital. Su cara dorsal presenta el tubérculo de la silla, el dorso de la silla, con dos tubérculos diminutos, y entre ambos la silla turca, que aloja la hipófisis; desde una escotadura caudal, que forma parte del foramen lacerum, un surco carotídeo llega a la silla. Las alas son láminas delgadas y cuadriláteras; su cara interna sostiene el lóbulo occipital del cerebro y lleva un surco que conduce a tres orificios: la fisura orbitaria (completada por el presfenoides), el foramen redondo y el foramen oval; un foramen diminuto entre ala y cuerpo forma con un surco el conducto pterigoideo. Por la cara externa discurre un surco para la tuba auditiva. El margen semicircular del ala articula con la escama del temporal, el craneal con el ala del presfenoides y un proceso plano con el parietal. Según la obra, el foramen oval transmite la tercera división del nervio trigémino y el redondo la segunda. El proceso pterigoideo es una lámina delgada casi cuadrada que termina en el hámulo; entre el pterigoideo y el proceso pterigoideo del esfenoides queda la fosa pterigoidea interna.",
+      "morphology": "Cuerpo en cuña con el vértice craneal; alas delgadas, cuadriláteras y curvadas dorsalmente; procesos pterigoideos laminares.",
+      "location": "Línea media de la base del cráneo, entre el presfenoides (cranealmente) y la porción basilar del occipital (caudalmente).",
+      "landmarks": [
+        "Corpus — cuerpo",
+        "Sella turcica — silla turca",
+        "Fossa hypophysialis — fosa hipofisaria",
+        "Dorsum sellae — dorso de la silla",
+        "Processus clinoideus caudalis — proceso clinoides caudal (tubérculos diminutos del dorso de la silla en Reighard/Jennings; correspondencia pendiente)",
+        "Sulcus caroticus — surco carotídeo",
+        "Ala — ala (alisfenoides)",
+        "Foramen rotundum — foramen redondo",
+        "Foramen ovale — foramen oval",
+        "Processus pterygoideus — proceso pterigoideo",
+        "Canalis pterygoideus — conducto pterigoideo",
+        "Sulcus tubae auditivae — surco de la tuba auditiva"
+      ],
+      "attachments": [
+        "Fosa pterigoidea interna: origen del m. pterigoideo interno",
+        "Superficie del proceso pterigoideo dorsal a la fosa interna: origen del m. pterigoideo externo (denominaciones de Reighard/Jennings)"
+      ],
+      "speciesDifferences": [
+        "Según NAV (nota 18), basisfenoides y presfenoides se fusionan tempranamente en el hombre y, entre los mamíferos domésticos, solo en el cerdo; en los demás quedan separados por la sincondrosis interesfenoidal",
+        "Reighard y Jennings indican que el esfenoides del hombre está representado en el gato por dos huesos enteramente distintos, presfenoides y esfenoides propiamente dicho"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Ossa cranii, Os basisphenoidale",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Os basisphenoidale",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.25, Sphenoid Bone. Os sphenoidale",
+          "claim": "Nombre usado por Reighard/Jennings para este hueso."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.25, Sphenoid Bone, Fig. 20",
+          "claim": "Hueso caudal de los dos esfenoides felinos."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.25–28, Sphenoid Bone, Fig. 20; p.54",
+          "claim": "Piezas del gatito, cuerpo, alas, forámenes, proceso pterigoideo y nervios."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.26–28",
+          "claim": "Forma del cuerpo, alas y procesos."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.26",
+          "claim": "Posición y articulaciones del cuerpo."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.12–13; Os basisphenoidale",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.28; pp.111–112, Mm. pterygoidei",
+          "claim": "Orígenes musculares en el proceso pterigoideo."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 18, p.25",
+          "claim": "Fusión en hombre y cerdo, no en otros domésticos."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.25, Sphenoid Bone",
+          "claim": "Comparación explícita gato–hombre."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica. NAV lista por separado el Os pterygoideum, mientras que Reighard/Jennings describen el elemento pterigoideo incorporado al proceso pterigoideo del adulto: falta decidir si el pterigoideo recibe ficha propia. El alias «esfenoides» refleja el uso de Reighard/Jennings; no implica un esfenoides único en el sentido humano. Hueso no identificado en el modelo 3D."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:presphenoid",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os presphenoidale",
+      "spanishName": "Hueso presfenoides",
+      "aliases": [
+        "presfenoides",
+        "presphenoid bone",
+        "orbitosfenoides"
+      ],
+      "summary": "Hueso impar de la base del cráneo, craneal al basisfenoides; en el adulto lo forman un cuerpo y dos alas (orbitosfenoides) fusionados.",
+      "detailedDescription": "En el gato joven consta de tres piezas que se fusionan en el adulto. El cuerpo es un prisma rectangular de longitud doble que su anchura, hueco y dividido por un tabique medio en dos senos esfenoidales que continúan cranealmente en las cavidades del etmoides. En su cara dorsal, el extremo caudal ayuda a formar la pared craneal de la silla turca y presenta en cada ángulo caudolateral el proceso clinoides anterior; a un tercio de su longitud desde el extremo caudal, un surco transversal (quiasmático) aloja el quiasma óptico y conduce a los dos forámenes ópticos, que transmiten el nervio óptico y la arteria oftálmica. La cara ventral, en reloj de arena, tiene una cresta media cubierta cranealmente por el vómer y zonas para el proceso pterigoideo del esfenoides y los palatinos. El extremo craneal recibe los laberintos etmoidales, la lámina cribosa y el vómer; el tabique articula con la lámina perpendicular del etmoides. Las alas forman salientes triangulares casi horizontales sobre los forámenes ópticos y articulan con la porción orbitaria del frontal y con el ala del esfenoides.",
+      "morphology": "Cuerpo en prisma rectangular hueco, aproximadamente el doble de largo que de ancho; alas triangulares casi horizontales.",
+      "location": "Línea media de la base del cráneo, craneal al basisfenoides; su cara lateral mira a la fosa orbitotemporal.",
+      "landmarks": [
+        "Corpus — cuerpo",
+        "Sulcus chiasmatis — surco quiasmático",
+        "Canalis opticus — conducto óptico (foramen óptico de Reighard/Jennings)",
+        "Processus clinoideus rostralis — proceso clinoides rostral (anterior de Reighard/Jennings)",
+        "Ala — ala (orbitosfenoides)",
+        "Sinus sphenoidalis — seno esfenoidal",
+        "Septum sinuum sphenoidalium — tabique de los senos esfenoidales"
+      ],
+      "speciesDifferences": [
+        "Según NAV (nota 18), basisfenoides y presfenoides se fusionan tempranamente en el hombre y, entre los mamíferos domésticos, solo en el cerdo; en los demás quedan separados por la sincondrosis interesfenoidal",
+        "Reighard y Jennings indican que el esfenoides del hombre está representado en el gato por dos huesos enteramente distintos, presfenoides y esfenoides propiamente dicho"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Ossa cranii, Os presphenoidale",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Os presphenoidale",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.29, The Presphenoid Bone (orbitosphenoid bones)",
+          "claim": "Variantes inglesa e histórica."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.29, The Presphenoid Bone, Fig. 21",
+          "claim": "Posición craneal al esfenoides y composición en el adulto."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.29–30, The Presphenoid Bone, Fig. 21; Figs. 42–43",
+          "claim": "Cuerpo, senos, surco quiasmático, forámenes ópticos y alas."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.29–30",
+          "claim": "Proporciones del cuerpo y forma de las alas."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.29–30",
+          "claim": "Posición en la base del cráneo."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Os presphenoidale",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 18, p.25",
+          "claim": "Fusión en hombre y cerdo, no en otros domésticos."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.25, Sphenoid Bone",
+          "claim": "Comparación explícita gato–hombre."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; hueso no identificado en el modelo 3D. En p.29 Reighard/Jennings rotulan el cuerpo del presfenoides como «(the basisphenoid)», probablemente una errata de la obra: no se usa ese rótulo. Las fijaciones musculares quedan pendientes."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "attachments",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:hyoid-apparatus",
+      "speciesId": "feline",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Apparatus hyoideus",
+      "spanishName": "Aparato hioideo",
+      "aliases": [
+        "hioides",
+        "hueso hioides",
+        "hyoid bone",
+        "os hyoideum"
+      ],
+      "summary": "Conjunto óseo, no un hueso único: aparato hioideo formado por un cuerpo transverso y dos pares de astas, que sostiene la lengua y el cartílago tiroides.",
+      "detailedDescription": "Según Reighard y Jennings, consta de una barra transversa, el cuerpo, y de dos astas en cada extremo. El asta craneal, la más larga, sale de la cara craneal del cuerpo, se curva lateral y luego caudodorsalmente y la forman cuatro piezas óseas unidas de forma móvil por cartílago: de distal a proximal, timpanohioideo, estilohioideo, epihioideo y ceratohioideo. El timpanohioideo queda incluido en la bulla timpánica, ventral al foramen estilomastoideo, en una fosita de la bulla, por lo que no sigue unido al asta cuando esta se separa del cráneo. El asta caudal es una sola pieza, el tirohioideo, dirigida caudolateralmente, cuyo extremo libre se une a un proceso del cartílago tiroides.",
+      "morphology": "Barra transversa con astas craneales largas de cuatro piezas y astas caudales de una pieza.",
+      "location": "Base de la lengua, entre las ramas de la mandíbula; el asta craneal llega a la bulla timpánica y la caudal al cartílago tiroides de la laringe.",
+      "landmarks": [
+        "Basihyoideum [Corpus] — basihioideo (cuerpo)",
+        "Ceratohyoideum — ceratohioideo",
+        "Epihyoideum — epihioideo",
+        "Stylohyoideum — estilohioideo",
+        "Tympanohyoideum — timpanohioideo",
+        "Thyrohyoideum — tirohioideo",
+        "Articulatio temporohyoidea — articulación temporohioidea"
+      ],
+      "function": [
+        "Sostiene la lengua",
+        "Da origen a músculos que van a la lengua y a la laringe",
+        "Sostiene el cartílago tiroides"
+      ],
+      "attachments": [
+        "Cara externa del estilohioideo: origen del m. estilohioideo; centro de la cara ventral del cuerpo: su inserción",
+        "Mitad externa de la cara ventral del cuerpo: inserción del m. esternohioideo",
+        "Mitad lateral de la cara ventral del cuerpo: inserción del m. geniohioideo",
+        "Parte cartilaginosa del estilohioideo: inserción del m. yugulohioideo"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Apparatus hyoideus [Os hyoideum]; nota 36, p.26",
+          "claim": "Nombre canónico y sinónimo."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Apparatus hyoideus",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.49, Hyoid Bone. Os hyoideum",
+          "claim": "Variantes histórica e inglesa."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.49, Hyoid Bone, Fig. 38",
+          "claim": "Cuerpo, astas y función de sostén."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.49, Hyoid Bone, Fig. 38; p.33",
+          "claim": "Piezas de las astas y alojamiento del timpanohioideo."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.49",
+          "claim": "Composición en cuerpo y astas."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.49; p.33",
+          "claim": "Relaciones con la bulla y el cartílago tiroides."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Apparatus hyoideus; ARTHROLOGIA, p.31",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.49",
+          "claim": "Sostén de la lengua y del cartílago tiroides; origen muscular."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.113, Mm. stylohyoideus, geniohyoideus, jugulohyoideus; p.140, M. sternohyoideus",
+          "claim": "Fijaciones musculares."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha de conjunto: varios huesos, no uno solo; rótulo «conjunto óseo». La correspondencia de piezas entre Reighard/Jennings y NAV es directa salvo el agrupamiento: la obra llama «cranial cornu (lesser cornu)» a cuatro piezas, mientras que NAV reserva [Cornu minus] al Ceratohyoideum. Pendiente de revisión humana; sin modelo 3D."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel:feline:occipital-articulates-atlas",
+      "fromId": "feline:occipital",
+      "toId": "feline:atlas",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:temporal-articulates-mandible",
+      "fromId": "feline:temporal",
+      "toId": "feline:mandible",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tagliavia-persian-skull-2026",
+      "title": "Morphological and Morphometric Craniofacial Variations in Persian Cats: Anatomical Basis for Brachycephalic-Related Disorders",
+      "authors": [
+        "Claudio Tagliavia",
+        "Marco Canova",
+        "Monica Prapotnich",
+        "Giulia Salamanca",
+        "Cristiano Bombardi",
+        "Angelo Peli",
+        "Annamaria Grandis",
+        "Alessia Di Giancamillo",
+        "Margherita Pallaoro",
+        "Silvia C Modina"
+      ],
+      "year": 2026,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13359505/",
+      "doi": "10.3390/ani16132001",
+      "publicationType": "primary-morphometric-osteological-study",
+      "license": {
+        "label": "CC BY 4.0 declarada en el XML de Europe PMC (Animals 16(13):2001, MDPI); atribución requerida. No se incorporan figuras.",
+        "verified": true,
+        "redistributionAllowed": true
+      },
+      "supportedStructureIds": [
+        "feline:skull"
+      ]
+    },
+    {
+      "id": "requicha-feline-orbit-ct-2026",
+      "title": "Tomographic Characterization of the European Shorthair Cat Orbital and Infraorbital Regions",
+      "authors": [
+        "João Filipe Requicha",
+        "Ana Rita Sousa",
+        "Nuno Proença",
+        "Ana Válega",
+        "Sofia Alves-Pimenta",
+        "Mateusz Mikiewicz"
+      ],
+      "year": 2026,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12784816/",
+      "doi": "10.3390/ani16010147",
+      "publicationType": "primary-retrospective-ct-morphometric-study",
+      "license": {
+        "label": "CC BY 4.0 declarada en el XML de Europe PMC (Animals 16(1):147, MDPI); atribución requerida. No se incorporan figuras.",
+        "verified": true,
+        "redistributionAllowed": true
+      },
+      "supportedStructureIds": [
+        "feline:skull",
+        "feline:maxilla"
+      ]
+    },
+    {
+      "id": "delibas-van-cat-mandibular-canal-2026",
+      "title": "Morphometric Analysis of the Mandibular Canal in Van Cats: A Cone-Beam Computed Tomography (CBCT) Study",
+      "authors": [
+        "Veysel Delibaş",
+        "Sema Kaya"
+      ],
+      "year": 2026,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13663499/",
+      "doi": "10.3390/ani16193073",
+      "publicationType": "primary-cbct-morphometric-study",
+      "license": {
+        "label": "CC BY 4.0 declarada en el XML de Europe PMC (Animals 16(19):3073, MDPI); atribución requerida. No se incorporan figuras.",
+        "verified": true,
+        "redistributionAllowed": true
+      },
+      "supportedStructureIds": [
+        "feline:mandible"
+      ]
+    },
+    {
+      "id": "avdc-nomenclature",
+      "title": "AVDC Nomenclature",
+      "authors": [
+        "American Veterinary Dental College (AVDC)"
+      ],
+      "institution": "American Veterinary Dental College",
+      "url": "https://avdc.org/avdc-nomenclature/",
+      "publicationType": "specialty-college-nomenclature-web",
+      "license": {
+        "label": "Página web © AVDC; no declara licencia abierta para el texto (solo permiso de uso citado para sus imágenes). Solo hechos parafraseados con cita; sin reproducir imágenes ni texto.",
+        "verified": false,
+        "redistributionAllowed": false
+      },
+      "supportedStructureIds": [
+        "feline:mandible",
+        "feline:teeth"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,669 @@
+{
+  "batchId": "canine-L-C3",
+  "speciesId": "canine",
+  "author": "A4",
+  "structures": [
+    {
+      "id": "canine:atlas",
+      "speciesId": "canine",
+      "regionId": "neck",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Atlas",
+      "spanishName": "Atlas",
+      "aliases": [
+        "atlas",
+        "primera vertebra cervical"
+      ],
+      "summary": "Vértebra cervical modificada del perro, con alas anchas, aplanadas y casi horizontales y una incisura alar en lugar del foramen alar.",
+      "detailedDescription": "El arco ventral es estrecho en sentido craneocaudal y lleva caudalmente un pequeño tubérculo. La cara dorsal del arco dorsal es muy convexa y rugosa en su centro. Las alas (procesos transversos) son anchas, aplanadas y casi horizontales, con la cara dorsal rugosa. En el borde craneal del ala hay una incisura alar en lugar del foramen alar, y existe foramen transverso. Según NAV, el arco ventral representa una pequeña parte del cuerpo del atlas; la mayor parte está incorporada al diente y a las superficies articulares craneales del axis.",
+      "landmarks": [
+        "Arcus ventralis — arco ventral",
+        "Fovea dentis — fóvea del diente",
+        "Arcus dorsalis — arco dorsal",
+        "Tuberculum dorsale — tubérculo dorsal",
+        "Massa lateralis — masa lateral",
+        "Processus transversus [Ala atlantis] — ala del atlas",
+        "Incisura alaris — incisura alar",
+        "Fossa atlantis — fosa del atlas",
+        "Fovea articularis cranialis — fóvea articular craneal",
+        "Fovea articularis caudalis — fóvea articular caudal",
+        "Foramen transversarium — foramen transverso"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Vertebrae cervicales, Atlas",
+          "claim": "Término NAV «Atlas»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Vertebrae cervicales, Atlas",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Atlas",
+          "claim": "Término latino; «primera vértebra cervical» es descripción editorial por su posición en la lista NAV, no término NAV."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.184",
+          "claim": "Alas anchas, aplanadas y casi horizontales; «alar notch… instead of the alar foramen»."
+        },
+        {
+          "field": "summary",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Atlas, Incisura alaris (Car)",
+          "claim": "Incisura alaris con marca (Car)."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.184",
+          "claim": "Arco ventral estrecho con pequeño tubérculo caudal, arco dorsal convexo y rugoso, alas, incisura alar y foramen transverso."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 37, p.27 (Arcus vertebrae, Arcus ventralis)",
+          "claim": "El arco ventral representa una pequeña parte del cuerpo del atlas; la mayor parte se incorpora al diente y superficies articulares craneales del axis."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales (Foramen transversarium), Atlas",
+          "claim": "Nombres latinos de los accidentes; Incisura alaris marcada (Car)."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Fig. 203 (Atlas of dog; dorsal view), p.186",
+          "claim": "Arco dorsal, cavidades articulares caudales, tubérculo ventral, alas, incisuras alares y forámenes transversos rotulados."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (craneal o rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson no describe en el perro fijaciones musculares ni ligamentosas del atlas en la sección osteológica. El «small tubercle» del arco ventral no se ha asignado a un término NAV (NAV lista Tuberculum ventrale bajo el proceso transverso cervical, no en el arco ventral del atlas). Las «intervertebral foramina» de la Fig. 203 no se han trasladado a NAV hasta cotejo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:axis",
+      "speciesId": "canine",
+      "regionId": "neck",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Axis",
+      "spanishName": "Axis",
+      "aliases": [
+        "axis",
+        "segunda vertebra cervical"
+      ],
+      "summary": "Vértebra cervical del perro con un diente redondeado y relativamente largo y una apófisis espinosa muy larga que se prolonga cranealmente sobre el arco dorsal del atlas.",
+      "detailedDescription": "El cuerpo está aplanado dorsoventralmente, sobre todo en su parte craneal. El diente es redondeado y relativamente largo, llega casi hasta el hueso occipital y está algo inclinado hacia dorsal. Las superficies articulares que lo flanquean tienen forma condílea y son muy oblicuas. La cara ventral es ancha y una cresta media la divide en dos fosas. Los procesos transversos son simples, puntiagudos, dirigidos caudal y lateralmente y perforados por forámenes transversos relativamente grandes. La apófisis espinosa es delgada, de altura moderada pero muy larga; se prolonga cranealmente hasta sobresalir por encima del arco dorsal del atlas y termina caudalmente en una tuberosidad unida por dos crestas a los procesos articulares caudales. Las incisuras vertebrales craneales son grandes y nunca se convierten en forámenes.",
+      "landmarks": [
+        "Dens — diente",
+        "Apex dentis — vértice del diente",
+        "Facies articularis ventralis — cara articular ventral del diente",
+        "Facies articularis dorsalis — cara articular dorsal del diente",
+        "Processus spinosus — apófisis espinosa",
+        "Processus transversus — proceso transverso",
+        "Foramen transversarium — foramen transverso",
+        "Incisura vertebralis cranialis — incisura vertebral craneal",
+        "Processus articularis caudalis — proceso articular caudal"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Vertebrae cervicales, Axis",
+          "claim": "Término NAV «Axis»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Vertebrae cervicales, Axis",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Axis",
+          "claim": "Término latino; «segunda vértebra cervical» es descripción editorial, no término NAV."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, pp.184–186",
+          "claim": "Diente redondeado y relativamente largo; apófisis espinosa muy larga que cubre el arco dorsal del atlas."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, pp.184–186",
+          "claim": "Cuerpo, diente, superficies articulares craneales, cara ventral, procesos transversos, apófisis espinosa e incisuras craneales."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis (Processus spinosus, Processus transversus, Incisura vertebralis cranialis, Processus articularis caudalis), Vertebrae cervicales (Foramen transversarium), Axis (Dens, Apex, Facies articularis ventralis, Facies articularis dorsalis)",
+          "claim": "Nombres latinos de los accidentes."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Fig. 204 (Axis of dog; left lateral view), p.186",
+          "claim": "Diente, proceso articular craneal, arco, incisura caudal, proceso transverso, foramen intervertebral, proceso articular caudal y apófisis espinosa rotulados."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (craneal o rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. «Anterior notches» de la fuente normalizado a Incisura vertebralis cranialis (NAV). Sin fijaciones musculares ni ligamentosas documentadas en esta fuente."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:cervical-vertebra-6",
+      "speciesId": "canine",
+      "regionId": "neck",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Vertebra cervicalis VI",
+      "spanishName": "Sexta vértebra cervical",
+      "aliases": [
+        "c6",
+        "sexta vertebra cervical"
+      ],
+      "summary": "Sexta vértebra cervical del perro; su proceso transverso tiene dos partes, una de ellas una lámina cuadrilátera extensa dirigida ventrolateralmente.",
+      "detailedDescription": "El proceso transverso consta de dos partes: una lámina cuadrilátera extensa, dirigida ventrolateralmente y con una cresta en su cara medial, y otra corta y roma, dirigida hacia lateral y algo caudal y dorsal.",
+      "landmarks": [
+        "Lamina ventralis [vertebrae cervicalis VI] — lámina ventral de la sexta vértebra cervical",
+        "Processus transversus — proceso transverso",
+        "Processus spinosus — apófisis espinosa"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Processus transversus, Lamina ventralis [vertebrae cervicalis VI]",
+          "claim": "NAV nombra la vértebra solo dentro del término «Lamina ventralis [vertebrae cervicalis VI]»; «Vertebra cervicalis VI» es forma editorial derivada."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Processus transversus, Lamina ventralis [vertebrae cervicalis VI]",
+          "claim": "Traducción editorial al español; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Processus transversus, Lamina ventralis [vertebrae cervicalis VI]",
+          "claim": "Abreviatura y forma de búsqueda editoriales."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.184",
+          "claim": "Proceso transverso de la sexta en dos partes, una lámina cuadrilátera extensa ventrolateral."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.184",
+          "claim": "Dos partes del proceso transverso."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis (Processus spinosus, Processus transversus), Vertebrae cervicales (Lamina ventralis [vertebrae cervicalis VI])",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (craneal o rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ficha de vértebra individual (no de serie). La correspondencia de la «extensive quadrilateral plate» de Sisson con la Lamina ventralis de NAV es editorial. Sisson describe la apófisis espinosa de forma conjunta para las cervicales posteriores a la tercera («in the remainder»), sin aclarar si incluye la sexta; no se ha trasladado a esta ficha."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:cervical-vertebra-7",
+      "speciesId": "canine",
+      "regionId": "neck",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Vertebra cervicalis VII",
+      "spanishName": "Séptima vértebra cervical",
+      "aliases": [
+        "c7",
+        "septima vertebra cervical"
+      ],
+      "summary": "Séptima vértebra cervical del perro, que se distingue por su cuerpo corto, su apófisis espinosa larga y su proceso transverso simple.",
+      "detailedDescription": "Se reconoce con facilidad por su brevedad, la longitud de su apófisis espinosa y su proceso transverso único (no dividido). La figura de la fuente rotula en ella una carilla costal en el cuerpo, además del proceso transverso, la incisura, los procesos articulares y la apófisis espinosa.",
+      "landmarks": [
+        "Fovea costalis caudalis [vertebrae cervicalis VII] — fóvea costal caudal",
+        "Processus transversus — proceso transverso",
+        "Processus spinosus — apófisis espinosa",
+        "Processus articularis cranialis — proceso articular craneal",
+        "Processus articularis caudalis — proceso articular caudal"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Fovea costalis caudalis [vertebrae cervicalis VII]",
+          "claim": "NAV nombra la vértebra solo dentro de «Fovea costalis caudalis [vertebrae cervicalis VII]»; «Vertebra cervicalis VII» es forma editorial derivada."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Fovea costalis caudalis [vertebrae cervicalis VII]",
+          "claim": "Traducción editorial al español; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Vertebrae cervicales, Fovea costalis caudalis [vertebrae cervicalis VII]",
+          "claim": "Abreviatura y forma de búsqueda editoriales."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.184",
+          "claim": "«readily distinguished by its shortness, the length of its spine, and the single transverse process»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.184",
+          "claim": "Rasgos distintivos de la séptima."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Fig. 202 (Seventh cervical vertebra of dog; posterior view), p.186",
+          "claim": "Cuerpo, carilla costal, proceso transverso, incisura, procesos articulares y apófisis espinosa rotulados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis (Processus spinosus, Processus transversus, Processus articularis cranialis/caudalis), Vertebrae cervicales (Fovea costalis caudalis [vertebrae cervicalis VII])",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (craneal o rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ficha de vértebra individual (no de serie). La «costal facet» rotulada en la Fig. 202 se asocia editorialmente a la Fovea costalis caudalis de NAV; su relación con la primera costilla no se afirma porque la fuente no la describe."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:sacrum",
+      "speciesId": "canine",
+      "regionId": "pelvis",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os sacrum",
+      "spanishName": "Hueso sacro",
+      "aliases": [
+        "sacro",
+        "os sacrum",
+        "vertebrae sacrales"
+      ],
+      "summary": "Hueso del perro formado, según Sisson, por la fusión temprana de tres vértebras sacras; es corto, ancho y cuadrangular.",
+      "detailedDescription": "Las apófisis espinosas se fusionan en una cresta media, escotada entre sus vértices; a cada lado hay dos tubérculos, vestigios de los procesos articulares fusionados. La cara pélvica es muy cóncava y presenta dos pares de forámenes. Las alas son prismáticas y muy altas; sus caras laterales, extensas, miran casi directamente hacia lateral y llevan la superficie auricular en su parte ventral. La cara craneal del cuerpo de la primera vértebra es extensa, deprimida en el centro, y tiene ventralmente un labio prominente. Los procesos articulares craneales son grandes, con carillas extensas, ligeramente cóncavas, que miran dorsomedialmente; los caudales son pequeños. Los procesos transversos de la última vértebra se proyectan caudalmente y pueden articularse o fusionarse con los de la primera caudal (coccígea). El conducto sacro está muy comprimido dorsoventralmente. El promontorio sacro está bien marcado. En ocasiones la primera vértebra caudal se une al sacro.",
+      "morphology": "Corto, ancho y cuadrangular, con cara pélvica muy cóncava y alas prismáticas muy altas.",
+      "landmarks": [
+        "Basis ossis sacri — base del sacro",
+        "Promontorium — promontorio",
+        "Processus articularis cranialis — proceso articular craneal",
+        "Ala sacralis — ala del sacro",
+        "Facies auricularis — cara auricular",
+        "Crista sacralis mediana — cresta sacra media",
+        "Facies pelvina — cara pélvica",
+        "Foramina sacralia ventralia — forámenes sacros ventrales",
+        "Foramina sacralia dorsalia — forámenes sacros dorsales",
+        "Lineae transversae — líneas transversas",
+        "Apex ossis sacri — vértice del sacro",
+        "Processus articularis caudalis — proceso articular caudal",
+        "Canalis sacralis — conducto sacro"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Os sacrum [Vertebrae sacrales]",
+          "claim": "Término NAV «Os sacrum»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Os sacrum [Vertebrae sacrales]",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Os sacrum [Vertebrae sacrales]",
+          "claim": "Término latino y sinónimo entre corchetes «Vertebrae sacrales»."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.187",
+          "claim": "«results from the early fusion of three vertebrae. It is short, wide, and quadrangular»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.187",
+          "claim": "Cresta media, tubérculos, cara pélvica, alas, superficie auricular, cuerpo, procesos articulares y transversos, conducto sacro."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, Curves y Variations, p.188",
+          "claim": "Promontorio sacro bien marcado; unión ocasional de la primera coccígea al sacro."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.187",
+          "claim": "Forma corta, ancha y cuadrangular; cara pélvica cóncava; alas prismáticas."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.17–18; Os sacrum [Vertebrae sacrales]",
+          "claim": "Nombres latinos de los accidentes."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Fig. 207 (Sacrum of dog; ventral view), p.187",
+          "claim": "Cuerpos, forámenes sacros ventrales, líneas transversas, procesos articulares, alas, conducto sacro, apófisis espinosa, procesos transversos y superficie auricular rotulados."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (craneal o rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Los dos pares de forámenes de la cara pélvica se rotulan «ventral sacral foramina» en la Fig. 207. Los «two tubercles» laterales a la cresta no se han asignado a Crista sacralis intermedia hasta cotejo. Las «linea transversae» de la figura se asocian editorialmente a Lineae transversae (NAV). La articulación con el ilion (cara auricular) no se detalla aquí. Sisson («coccygeal») = Vertebrae caudales [coccygeae] de NAV."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:sternum",
+      "speciesId": "canine",
+      "regionId": "thorax",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Sternum",
+      "spanishName": "Esternón",
+      "aliases": [
+        "esternon",
+        "sternum",
+        "esternebras"
+      ],
+      "summary": "Conjunto óseo, no un hueso único: el esternón del perro es largo, comprimido lateralmente y, según Sisson, consta de ocho esternebras que solo se fusionan excepcionalmente o en la vejez extrema.",
+      "detailedDescription": "Sisson describe ocho esternebras (segmentos), que se fusionan solo en casos excepcionales y en la vejez extrema. El primer segmento es el más largo; su extremo craneal es romo y puntiagudo y lleva un cartílago corto y cónico; se ensancha donde se articula el primer par de cartílagos costales. El último segmento también es largo, más delgado que los anteriores, ancho cranealmente y estrecho caudalmente, donde lleva un cartílago xifoides estrecho. NAV introduce el término Sternebrae porque estos segmentos permanecen separados en algunas especies domésticas.",
+      "morphology": "Largo y comprimido lateralmente.",
+      "landmarks": [
+        "Manubrium sterni — manubrio del esternón",
+        "Cartilago manubrii — cartílago del manubrio",
+        "Corpus sterni — cuerpo del esternón",
+        "Sternebrae — esternebras",
+        "Processus xiphoideus — proceso xifoides",
+        "Cartilago xiphoidea — cartílago xifoides",
+        "Incisurae costales — incisuras costales"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Sternum",
+          "claim": "Término NAV «Sternum»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Sternum",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Sternum, Sternebrae",
+          "claim": "Término latino y nombre de sus segmentos (Sternebrae)."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The sternum, p.188",
+          "claim": "«long, laterally compressed, and consists of eight sternebrae, which fuse only in exceptional cases and in extreme old age»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The sternum, p.188",
+          "claim": "Número y fusión de las esternebras; primer y último segmentos; cartílagos craneal y xifoides."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 43, p.27 (Sternebrae)",
+          "claim": "Término introducido porque las esternebras permanecen separadas en algunas especies domésticas."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The sternum, p.188",
+          "claim": "Largo y comprimido lateralmente."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Sternum",
+          "claim": "Nombres latinos de las partes del esternón."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (craneal o rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ficha de conjunto rotulada según la decisión «Fichas de conjunto» (DECISIONES, 2026-10-31): el esternón es un término NAV único pero formado por esternebras separadas. El número ocho procede de Sisson y no se ha cotejado con fuente moderna; no se presenta como universal. La correspondencia del «first segment» con Manubrium sterni, del «short conical cartilage» con Cartilago manubrii y del «last segment» con Processus xiphoideus es editorial."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:ribs",
+      "speciesId": "canine",
+      "regionId": "thorax",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Costae",
+      "spanishName": "Costillas",
+      "aliases": [
+        "costillas",
+        "costae",
+        "parrilla costal"
+      ],
+      "summary": "Conjunto óseo, no un hueso único: las costillas del perro, que Sisson describe como trece pares (nueve esternales y cuatro asternales), muy curvadas, estrechas y gruesas.",
+      "detailedDescription": "Sisson describe trece pares de costillas, nueve esternales y cuatro asternales; la última suele ser flotante. Son muy curvadas, estrechas y gruesas; las de la mitad de la serie son las más largas y las ocho o nueve primeras se ensanchan en su parte ventral. Los cartílagos costales son largos y se curvan ventral y cranealmente; la longitud y la curvatura del primer par son rasgos llamativos. La abertura craneal del tórax es oval y relativamente ancha por la marcada curvatura del primer par de costillas y cartílagos. En las vértebras torácicas, las carillas caudales para las cabezas costales faltan en las tres o cuatro últimas, y las carillas para los tubérculos costales son grandes y cóncavas en la parte craneal de la serie y se hacen menores y algo convexas hacia caudal. Sisson señala que el número de vértebras torácicas puede ser doce o catorce; no detalla el efecto de esa variación en las costillas.",
+      "morphology": "Muy curvadas, estrechas y gruesas; las de la mitad de la serie son las más largas.",
+      "landmarks": [
+        "Costae verae [sternales] — costillas verdaderas (esternales)",
+        "Costae spuriae [asternales] — costillas falsas (asternales)",
+        "Costae fluctuantes — costillas flotantes",
+        "Cartilago costalis — cartílago costal",
+        "Os costale — hueso costal",
+        "Caput costae — cabeza de la costilla",
+        "Facies articularis capitis costae — cara articular de la cabeza",
+        "Collum costae — cuello de la costilla",
+        "Corpus costae — cuerpo de la costilla",
+        "Tuberculum costae — tubérculo de la costilla",
+        "Facies articularis tuberculi costae — cara articular del tubérculo",
+        "Angulus costae — ángulo de la costilla",
+        "Apertura thoracis cranialis — abertura craneal del tórax"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Costae",
+          "claim": "Término NAV «Costae»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Costae",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Costae",
+          "claim": "Término latino; «parrilla costal» es alias coloquial editorial."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The ribs, p.188",
+          "claim": "«Thirteen pairs of ribs are present, of which nine are sternal and four asternal… strongly curved, narrow, and thick»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The ribs y The sternum, p.188",
+          "claim": "Número, longitud, ensanchamiento ventral, costilla flotante, cartílagos costales y abertura torácica."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, p.186",
+          "claim": "Carillas de las vértebras torácicas para cabezas y tubérculos costales."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Vertebral column, Variations, p.188",
+          "claim": "Doce o catorce vértebras torácicas como variación."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The ribs, p.188",
+          "claim": "Forma y longitud relativa."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Skeleton thoracis, Costae, Cavum thoracis",
+          "claim": "Nombres latinos de las partes de la costilla y de la abertura torácica."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (craneal o rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ficha de conjunto rotulada según la decisión «Fichas de conjunto» (DECISIONES, 2026-10-31); las costillas individuales no tienen ficha. Los trece pares son la descripción de Sisson, no un número universal. Se omiten Tuberculum m. scaleni ventralis y Tuberositas m. longissimi/iliocostalis de NAV porque sus notas (41, 42, p.27) los describen sobre todo en cerdo y caballo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    }
+  ],
+  "relations": [],
+  "sources": []
+}

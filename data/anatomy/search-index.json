@@ -1,5 +1,29 @@
 [
   {
+    "id": "canine:atlas",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "neck",
+    "regionSpanish": "Cuello",
+    "kind": "bone",
+    "canonicalLatinName": "Atlas",
+    "spanishName": "Atlas",
+    "aliases": [
+      "atlas",
+      "primera vertebra cervical"
+    ],
+    "summary": "Vértebra cervical modificada del perro, con alas anchas, aplanadas y casi horizontales y una incisura alar en lugar del foramen alar.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "atlas",
+      "cervical",
+      "primera",
+      "primera vertebra cervical",
+      "vertebra"
+    ]
+  },
+  {
     "id": "canine:axillary-nerve",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -26,6 +50,59 @@
     ]
   },
   {
+    "id": "canine:axis",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "neck",
+    "regionSpanish": "Cuello",
+    "kind": "bone",
+    "canonicalLatinName": "Axis",
+    "spanishName": "Axis",
+    "aliases": [
+      "axis",
+      "segunda vertebra cervical"
+    ],
+    "summary": "Vértebra cervical del perro con un diente redondeado y relativamente largo y una apófisis espinosa muy larga que se prolonga cranealmente sobre el arco dorsal del atlas.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "axis",
+      "cervical",
+      "segunda",
+      "segunda vertebra cervical",
+      "vertebra"
+    ]
+  },
+  {
+    "id": "canine:basisphenoid",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os basisphenoidale",
+    "spanishName": "Hueso basiesfenoides",
+    "aliases": [
+      "basiesfenoides",
+      "esfenoides caudal",
+      "postesfenoides"
+    ],
+    "summary": "Parte caudal del esfenoides del perro (postesfenoides en la fuente), con fosa hipofisaria poco profunda, dorso de la silla bien desarrollado y alas temporales extensas.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "basiesfenoides",
+      "basisphenoidale",
+      "caudal",
+      "esfenoides",
+      "esfenoides caudal",
+      "hueso",
+      "hueso basiesfenoides",
+      "os basisphenoidale",
+      "postesfenoides"
+    ]
+  },
+  {
     "id": "canine:biceps-brachii",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -35,7 +112,7 @@
     "canonicalLatinName": "Musculus biceps brachii",
     "spanishName": "Bíceps braquial",
     "aliases": [],
-    "summary": "Músculo craneomedial del brazo con una cabeza.",
+    "summary": "Músculo craneomedial del brazo.",
     "has3DModel": false,
     "modelIds": [
       "canine:thoracic-limb-model"
@@ -314,6 +391,59 @@
     ]
   },
   {
+    "id": "canine:cervical-vertebra-6",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "neck",
+    "regionSpanish": "Cuello",
+    "kind": "bone",
+    "canonicalLatinName": "Vertebra cervicalis VI",
+    "spanishName": "Sexta vértebra cervical",
+    "aliases": [
+      "c6",
+      "sexta vertebra cervical"
+    ],
+    "summary": "Sexta vértebra cervical del perro; su proceso transverso tiene dos partes, una de ellas una lámina cuadrilátera extensa dirigida ventrolateralmente.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "c6",
+      "cervical",
+      "cervicalis",
+      "sexta",
+      "sexta vertebra cervical",
+      "vertebra",
+      "vertebra cervicalis vi"
+    ]
+  },
+  {
+    "id": "canine:cervical-vertebra-7",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "neck",
+    "regionSpanish": "Cuello",
+    "kind": "bone",
+    "canonicalLatinName": "Vertebra cervicalis VII",
+    "spanishName": "Séptima vértebra cervical",
+    "aliases": [
+      "c7",
+      "septima vertebra cervical"
+    ],
+    "summary": "Séptima vértebra cervical del perro, que se distingue por su cuerpo corto, su apófisis espinosa larga y su proceso transverso simple.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "c7",
+      "cervical",
+      "cervicalis",
+      "septima",
+      "septima vertebra cervical",
+      "vertebra",
+      "vertebra cervicalis vii",
+      "vii"
+    ]
+  },
+  {
     "id": "canine:common-digital-extensor",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -535,6 +665,30 @@
     ]
   },
   {
+    "id": "canine:frontal",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os frontale",
+    "spanishName": "Hueso frontal",
+    "aliases": [
+      "frontal",
+      "os frontale"
+    ],
+    "summary": "Hueso par del cráneo canino con proceso supraorbitario muy corto, sin foramen supraorbitario y con el seno frontal confinado a él.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "frontal",
+      "frontale",
+      "hueso",
+      "hueso frontal",
+      "os frontale"
+    ]
+  },
+  {
     "id": "canine:humerus",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -555,6 +709,63 @@
     "searchTokens": [
       "humero",
       "humerus"
+    ]
+  },
+  {
+    "id": "canine:hyoid-apparatus",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Apparatus hyoideus",
+    "spanishName": "Aparato hioideo",
+    "aliases": [
+      "aparato hioideo",
+      "hioides",
+      "os hyoideum"
+    ],
+    "summary": "Conjunto óseo, no un hueso único: el aparato hioideo del perro, con un cuerpo transversal sin proceso lingual y varios pares de astas unidas por cartílago.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "aparato",
+      "aparato hioideo",
+      "apparatus",
+      "apparatus hyoideus",
+      "hioideo",
+      "hioides",
+      "hyoideum",
+      "hyoideus",
+      "os hyoideum"
+    ]
+  },
+  {
+    "id": "canine:incisive",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os incisivum",
+    "spanishName": "Hueso incisivo",
+    "aliases": [
+      "incisivo",
+      "os incisivum",
+      "premaxila",
+      "premaxilar"
+    ],
+    "summary": "Hueso par rostral de la cara del perro (premaxila en la fuente), con tres alveolos incisivos y un largo proceso nasal.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso incisivo",
+      "incisivo",
+      "incisivum",
+      "os incisivum",
+      "premaxila",
+      "premaxilar"
     ]
   },
   {
@@ -614,6 +825,31 @@
     ]
   },
   {
+    "id": "canine:mandible",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Mandibula",
+    "spanishName": "Mandíbula",
+    "aliases": [
+      "hemimandibula",
+      "mandibula",
+      "maxilar inferior"
+    ],
+    "summary": "Hueso de la mandíbula del perro, formado por dos mitades que no se fusionan por completo ni siquiera en la vejez, de modo que la sínfisis mandibular es permanente.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hemimandibula",
+      "inferior",
+      "mandibula",
+      "maxilar",
+      "maxilar inferior"
+    ]
+  },
+  {
     "id": "canine:manus",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -640,6 +876,30 @@
       "manus",
       "skeleton",
       "skeleton manus"
+    ]
+  },
+  {
+    "id": "canine:maxilla",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Maxilla",
+    "spanishName": "Maxilar",
+    "aliases": [
+      "maxilar",
+      "maxilar superior",
+      "maxilla"
+    ],
+    "summary": "Hueso par de la cara del perro, corto pero muy alto caudalmente, sin cresta facial, con el foramen infraorbitario sobre el alveolo del tercer premolar.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "maxilar",
+      "maxilar superior",
+      "maxilla",
+      "superior"
     ]
   },
   {
@@ -698,6 +958,102 @@
     ]
   },
   {
+    "id": "canine:nasal",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os nasale",
+    "spanishName": "Hueso nasal",
+    "aliases": [
+      "nasal",
+      "os nasale"
+    ],
+    "summary": "Hueso par del dorso de la nariz del perro; en la mayoría de las razas es largo y más ancho rostral que caudalmente.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso nasal",
+      "nasal",
+      "nasale",
+      "os nasale"
+    ]
+  },
+  {
+    "id": "canine:occipital",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os occipitale",
+    "spanishName": "Hueso occipital",
+    "aliases": [
+      "occipital",
+      "os occipitale"
+    ],
+    "summary": "Hueso caudal del cráneo canino, con cresta nucal prominente y angulosa dirigida caudalmente; incorpora el interparietal, que se fusiona con él antes del nacimiento.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso occipital",
+      "occipital",
+      "occipitale",
+      "os occipitale"
+    ]
+  },
+  {
+    "id": "canine:palatine",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os palatinum",
+    "spanishName": "Hueso palatino",
+    "aliases": [
+      "os palatinum",
+      "palatino"
+    ],
+    "summary": "Hueso par del paladar y la pared de la fosa pterigopalatina del perro; su lámina horizontal forma cerca de un tercio del paladar duro.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso palatino",
+      "os palatinum",
+      "palatino",
+      "palatinum"
+    ]
+  },
+  {
+    "id": "canine:parietal",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os parietale",
+    "spanishName": "Hueso parietal",
+    "aliases": [
+      "os parietale",
+      "parietal"
+    ],
+    "summary": "Hueso par del techo craneal del perro, de contorno romboidal y muy curvado, que forma la mayor parte del techo de la cavidad craneal.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso parietal",
+      "os parietale",
+      "parietal",
+      "parietale"
+    ]
+  },
+  {
     "id": "canine:patella",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -718,6 +1074,36 @@
       "patela",
       "patella",
       "rotula"
+    ]
+  },
+  {
+    "id": "canine:presphenoid",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os presphenoidale",
+    "spanishName": "Hueso presfenoides",
+    "aliases": [
+      "esfenoides rostral",
+      "os praesphenoidale",
+      "presfenoides"
+    ],
+    "summary": "Parte rostral del esfenoides del perro, con alas orbitarias relativamente pequeñas atravesadas por el conducto óptico y procesos clinoides rostrales.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "esfenoides",
+      "esfenoides rostral",
+      "hueso",
+      "hueso presfenoides",
+      "os praesphenoidale",
+      "os presphenoidale",
+      "praesphenoidale",
+      "presfenoides",
+      "presphenoidale",
+      "rostral"
     ]
   },
   {
@@ -769,6 +1155,59 @@
     ]
   },
   {
+    "id": "canine:ribs",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thorax",
+    "regionSpanish": "Tórax",
+    "kind": "bone",
+    "canonicalLatinName": "Costae",
+    "spanishName": "Costillas",
+    "aliases": [
+      "costae",
+      "costillas",
+      "parrilla costal"
+    ],
+    "summary": "Conjunto óseo, no un hueso único: las costillas del perro, que Sisson describe como trece pares (nueve esternales y cuatro asternales), muy curvadas, estrechas y gruesas.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "costae",
+      "costal",
+      "costillas",
+      "parrilla",
+      "parrilla costal"
+    ]
+  },
+  {
+    "id": "canine:sacrum",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "pelvis",
+    "regionSpanish": "Pelvis",
+    "kind": "bone",
+    "canonicalLatinName": "Os sacrum",
+    "spanishName": "Hueso sacro",
+    "aliases": [
+      "os sacrum",
+      "sacro",
+      "vertebrae sacrales"
+    ],
+    "summary": "Hueso del perro formado, según Sisson, por la fusión temprana de tres vértebras sacras; es corto, ancho y cuadrangular.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso sacro",
+      "os sacrum",
+      "sacrales",
+      "sacro",
+      "sacrum",
+      "vertebrae",
+      "vertebrae sacrales"
+    ]
+  },
+  {
     "id": "canine:scapula",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -807,7 +1246,7 @@
       "calavera canina",
       "esqueleto cefálico canino"
     ],
-    "summary": "Esqueleto de la cabeza canina; su forma y tamaño varían mucho entre razas dolicocéfalas, mesaticéfalas y braquicéfalas.",
+    "summary": "Conjunto óseo, no un hueso único: esqueleto de la cabeza canina; su forma y tamaño varían mucho entre razas dolicocéfalas, mesaticéfalas y braquicéfalas.",
     "has3DModel": false,
     "modelIds": [
       "canine:skull-model"
@@ -825,6 +1264,29 @@
       "esqueleto",
       "esqueleto cefalico canino",
       "osea"
+    ]
+  },
+  {
+    "id": "canine:sternum",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "thorax",
+    "regionSpanish": "Tórax",
+    "kind": "bone",
+    "canonicalLatinName": "Sternum",
+    "spanishName": "Esternón",
+    "aliases": [
+      "esternebras",
+      "esternon",
+      "sternum"
+    ],
+    "summary": "Conjunto óseo, no un hueso único: el esternón del perro es largo, comprimido lateralmente y, según Sisson, consta de ocho esternebras que solo se fusionan excepcionalmente o en la vejez extrema.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "esternebras",
+      "esternon",
+      "sternum"
     ]
   },
   {
@@ -1119,6 +1581,30 @@
     ]
   },
   {
+    "id": "canine:temporal",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os temporale",
+    "spanishName": "Hueso temporal",
+    "aliases": [
+      "os temporale",
+      "temporal"
+    ],
+    "summary": "Hueso par del cráneo canino cuyas partes se fusionan pronto; tiene una bulla timpánica muy grande, redondeada y lisa y un meato acústico externo ancho y muy corto.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso temporal",
+      "os temporale",
+      "temporal",
+      "temporale"
+    ]
+  },
+  {
     "id": "canine:teres-major",
     "speciesId": "canine",
     "speciesSpanish": "Perro",
@@ -1348,6 +1834,34 @@
     ]
   },
   {
+    "id": "canine:zygomatic",
+    "speciesId": "canine",
+    "speciesSpanish": "Perro",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os zygomaticum",
+    "spanishName": "Hueso cigomático",
+    "aliases": [
+      "cigomatico",
+      "hueso malar",
+      "malar",
+      "os zygomaticum"
+    ],
+    "summary": "Hueso par de la cara del perro (malar en la fuente), cuyo largo proceso, muy curvado, forma la mayor parte del hueso y del arco cigomático rostral.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "cigomatico",
+      "hueso",
+      "hueso cigomatico",
+      "hueso malar",
+      "malar",
+      "os zygomaticum",
+      "zygomaticum"
+    ]
+  },
+  {
     "id": "feline:atlas",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -1401,6 +1915,37 @@
       "segunda",
       "segunda vertebra cervical",
       "vertebra"
+    ]
+  },
+  {
+    "id": "feline:basisphenoid",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os basisphenoidale",
+    "spanishName": "Hueso basisfenoides",
+    "aliases": [
+      "basisfenoides",
+      "basisphenoid",
+      "esfenoides",
+      "sphenoid bone"
+    ],
+    "summary": "Hueso impar de la base del cráneo, caudal al presfenoides; corresponde al «esfenoides propiamente dicho» de Reighard y Jennings, con cuerpo, dos alas y procesos pterigoideos.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "basisfenoides",
+      "basisphenoid",
+      "basisphenoidale",
+      "bone",
+      "esfenoides",
+      "hueso",
+      "hueso basisfenoides",
+      "os basisphenoidale",
+      "sphenoid",
+      "sphenoid bone"
     ]
   },
   {
@@ -1554,6 +2099,33 @@
     ]
   },
   {
+    "id": "feline:frontal",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os frontale",
+    "spanishName": "Hueso frontal",
+    "aliases": [
+      "frontal",
+      "frontal bone",
+      "hueso frontal"
+    ],
+    "summary": "Hueso par que, con el opuesto, forma el techo del cráneo entre parietales y nasales y desciende a la órbita para formar gran parte de su pared medial.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "frontal",
+      "frontal bone",
+      "frontale",
+      "hueso",
+      "hueso frontal",
+      "os frontale"
+    ]
+  },
+  {
     "id": "feline:humerus",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -1578,6 +2150,41 @@
     ]
   },
   {
+    "id": "feline:hyoid-apparatus",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Apparatus hyoideus",
+    "spanishName": "Aparato hioideo",
+    "aliases": [
+      "hioides",
+      "hueso hioides",
+      "hyoid bone",
+      "os hyoideum"
+    ],
+    "summary": "Conjunto óseo, no un hueso único: aparato hioideo formado por un cuerpo transverso y dos pares de astas, que sostiene la lengua y el cartílago tiroides.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "aparato",
+      "aparato hioideo",
+      "apparatus",
+      "apparatus hyoideus",
+      "bone",
+      "hioideo",
+      "hioides",
+      "hueso",
+      "hueso hioides",
+      "hyoid",
+      "hyoid bone",
+      "hyoideum",
+      "hyoideus",
+      "os hyoideum"
+    ]
+  },
+  {
     "id": "feline:mandible",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -1587,9 +2194,12 @@
     "canonicalLatinName": "Mandibula",
     "spanishName": "Mandíbula",
     "aliases": [
-      "mandíbula inferior felina"
+      "lower jaw",
+      "mandibula",
+      "mandíbula inferior felina",
+      "maxilar inferior"
     ],
-    "summary": "Mandíbula felina corta y robusta con cóndilos orientados para movimientos bisagra potentes durante la masticación.",
+    "summary": "Mandíbula felina formada por dos mitades, cada una con un cuerpo que lleva los dientes y una rama; se unen cranealmente en la sínfisis y articulan caudalmente con el temporal.",
     "has3DModel": false,
     "modelIds": [
       "feline:skull-model"
@@ -1597,8 +2207,42 @@
     "searchTokens": [
       "felina",
       "inferior",
+      "jaw",
+      "lower",
+      "lower jaw",
       "mandibula",
-      "mandibula inferior felina"
+      "mandibula inferior felina",
+      "maxilar",
+      "maxilar inferior"
+    ]
+  },
+  {
+    "id": "feline:maxilla",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Maxilla",
+    "spanishName": "Maxilar",
+    "aliases": [
+      "maxila",
+      "maxilar superior",
+      "maxilla",
+      "maxillary bone"
+    ],
+    "summary": "Hueso par que forma las porciones craneal y lateral del techo de la boca felina y aloja el canino, los premolares y el molar superiores.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "maxila",
+      "maxilar",
+      "maxilar superior",
+      "maxilla",
+      "maxillary",
+      "maxillary bone",
+      "superior"
     ]
   },
   {
@@ -1686,6 +2330,60 @@
     ]
   },
   {
+    "id": "feline:nasal",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os nasale",
+    "spanishName": "Hueso nasal",
+    "aliases": [
+      "hueso nasal",
+      "nasal",
+      "nasal bone"
+    ],
+    "summary": "Hueso par, alargado, que forma parte de la pared dorsal de la cavidad nasal felina cerca de la línea media.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "hueso",
+      "hueso nasal",
+      "nasal",
+      "nasal bone",
+      "nasale",
+      "os nasale"
+    ]
+  },
+  {
+    "id": "feline:occipital",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os occipitale",
+    "spanishName": "Hueso occipital",
+    "aliases": [
+      "hueso occipital",
+      "occipital",
+      "occipital bone"
+    ],
+    "summary": "Hueso impar que forma la parte más caudal del cráneo felino (pared caudal y parte de la base), une el cráneo con la columna vertebral y rodea el foramen magno.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "hueso",
+      "hueso occipital",
+      "occipital",
+      "occipital bone",
+      "occipitale",
+      "os occipitale"
+    ]
+  },
+  {
     "id": "feline:os-coxae",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -1719,6 +2417,61 @@
       "os coxae",
       "ossa",
       "ossa innominata"
+    ]
+  },
+  {
+    "id": "feline:palatine",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os palatinum",
+    "spanishName": "Hueso palatino",
+    "aliases": [
+      "hueso palatino",
+      "palatine bone",
+      "palatino"
+    ],
+    "summary": "Hueso par con una porción horizontal (palatina) y otra perpendicular (nasal), unidas en ángulo de unos 45°; forma la parte caudal y medial del techo de la boca.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "hueso",
+      "hueso palatino",
+      "os palatinum",
+      "palatine",
+      "palatine bone",
+      "palatino",
+      "palatinum"
+    ]
+  },
+  {
+    "id": "feline:parietal",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os parietale",
+    "spanishName": "Hueso parietal",
+    "aliases": [
+      "hueso parietal",
+      "parietal",
+      "parietal bone"
+    ],
+    "summary": "Hueso par, delgado y rectangular, que forma la mayor parte de los límites lateral y dorsal de la cavidad craneal felina.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "hueso",
+      "hueso parietal",
+      "os parietale",
+      "parietal",
+      "parietal bone",
+      "parietale"
     ]
   },
   {
@@ -1839,6 +2592,35 @@
     ]
   },
   {
+    "id": "feline:presphenoid",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os presphenoidale",
+    "spanishName": "Hueso presfenoides",
+    "aliases": [
+      "orbitosfenoides",
+      "presfenoides",
+      "presphenoid bone"
+    ],
+    "summary": "Hueso impar de la base del cráneo, craneal al basisfenoides; en el adulto lo forman un cuerpo y dos alas (orbitosfenoides) fusionados.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "hueso",
+      "hueso presfenoides",
+      "orbitosfenoides",
+      "os presphenoidale",
+      "presfenoides",
+      "presphenoid",
+      "presphenoid bone",
+      "presphenoidale"
+    ]
+  },
+  {
     "id": "feline:radius",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -1861,6 +2643,62 @@
       "radio",
       "radio felino",
       "radius"
+    ]
+  },
+  {
+    "id": "feline:ribs",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "thorax",
+    "regionSpanish": "Tórax",
+    "kind": "bone",
+    "canonicalLatinName": "Costae",
+    "spanishName": "Costillas",
+    "aliases": [
+      "costae",
+      "costillas",
+      "parrilla costal",
+      "ribs"
+    ],
+    "summary": "Conjunto de las costillas felinas, no un hueso único: arcos óseos pares articulados dorsalmente con las vértebras torácicas y unidos ventralmente a cartílagos costales; Reighard y Jennings describen trece pares y el recuento puede variar entre individuos.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "costae",
+      "costal",
+      "costillas",
+      "parrilla",
+      "parrilla costal",
+      "ribs"
+    ]
+  },
+  {
+    "id": "feline:sacrum",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvis",
+    "regionSpanish": "Pelvis",
+    "kind": "bone",
+    "canonicalLatinName": "Os sacrum",
+    "spanishName": "Sacro",
+    "aliases": [
+      "hueso sacro",
+      "sacro",
+      "sacrum",
+      "vertebras sacras"
+    ],
+    "summary": "Hueso único formado en el adulto por la fusión de las vértebras sacras (tres en la descripción de Reighard y Jennings), entre la última lumbar y la primera caudal, articulado lateralmente con los coxales.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "hueso",
+      "hueso sacro",
+      "os sacrum",
+      "sacras",
+      "sacro",
+      "sacrum",
+      "vertebras",
+      "vertebras sacras"
     ]
   },
   {
@@ -1898,9 +2736,11 @@
     "spanishName": "Cráneo",
     "aliases": [
       "cabeza ósea",
-      "calavera felina"
+      "calavera felina",
+      "craneo",
+      "skull"
     ],
-    "summary": "Cráneo felino redondeado caracterizado por órbitas oculares muy amplias y crestas reducidas.",
+    "summary": "Conjunto óseo de la cabeza felina, no un hueso único: caja que contiene el encéfalo y porción facial que encierra la cavidad nasal; según Reighard y Jennings excluye mandíbula, hioides y huesecillos del oído.",
     "has3DModel": true,
     "modelIds": [
       "feline:skull-model",
@@ -1914,7 +2754,33 @@
       "craneo",
       "cranium",
       "felina",
-      "osea"
+      "osea",
+      "skull"
+    ]
+  },
+  {
+    "id": "feline:sternum",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "thorax",
+    "regionSpanish": "Tórax",
+    "kind": "bone",
+    "canonicalLatinName": "Sternum",
+    "spanishName": "Esternón",
+    "aliases": [
+      "esternebras",
+      "esternon",
+      "sternebrae",
+      "sternum"
+    ],
+    "summary": "Conjunto óseo, no un hueso único: esternón felino formado por manubrio, cuerpo dividido en segmentos (esternebras) y proceso xifoides; forma el límite ventral medio del tórax.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "esternebras",
+      "esternon",
+      "sternebrae",
+      "sternum"
     ]
   },
   {
@@ -1959,10 +2825,12 @@
     "canonicalLatinName": "Dentes",
     "spanishName": "Dientes",
     "aliases": [
+      "dentes",
       "dentición felina",
-      "dientes y muelas"
+      "dientes y muelas",
+      "teeth"
     ],
-    "summary": "Dentadura carnívora altamente especializada de 30 dientes en el adulto, con colmillos prensiles y muelas carniceras afiladas.",
+    "summary": "Conjunto de los dientes felinos, no un hueso: según Reighard y Jennings, el gato adulto tiene 30 dientes (16 en la arcada superior y 14 en la inferior), implantados en premaxilares, maxilares y mandíbula.",
     "has3DModel": false,
     "modelIds": [
       "feline:skull-model"
@@ -1974,7 +2842,39 @@
       "dientes",
       "dientes y muelas",
       "felina",
-      "muelas"
+      "muelas",
+      "teeth"
+    ]
+  },
+  {
+    "id": "feline:temporal",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os temporale",
+    "spanishName": "Hueso temporal",
+    "aliases": [
+      "bulla timpanica",
+      "hueso temporal",
+      "temporal",
+      "temporal bone"
+    ],
+    "summary": "Hueso par de la pared lateral del cráneo felino, entre los segmentos occipital y esfenoidal; reúne las porciones escamosa, petrosa y timpánica y contiene el órgano auditivo.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "bulla",
+      "bulla timpanica",
+      "hueso",
+      "hueso temporal",
+      "os temporale",
+      "temporal",
+      "temporal bone",
+      "temporale",
+      "timpanica"
     ]
   },
   {
@@ -2020,6 +2920,41 @@
       "felina",
       "ulna",
       "ulna felina"
+    ]
+  },
+  {
+    "id": "feline:zygomatic",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "head",
+    "regionSpanish": "Cabeza",
+    "kind": "bone",
+    "canonicalLatinName": "Os zygomaticum",
+    "spanishName": "Hueso cigomático",
+    "aliases": [
+      "cigomatico",
+      "hueso malar",
+      "jugal",
+      "malar",
+      "malar bone",
+      "zygomatic bone"
+    ],
+    "summary": "Hueso par, en lámina plana y curva, que forma la pared lateral de la órbita y, con el proceso cigomático del temporal, el arco cigomático.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "cigomatico",
+      "hueso",
+      "hueso cigomatico",
+      "hueso malar",
+      "jugal",
+      "malar",
+      "malar bone",
+      "os zygomaticum",
+      "zygomatic",
+      "zygomatic bone",
+      "zygomaticum"
     ]
   }
 ]

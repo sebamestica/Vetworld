@@ -1,0 +1,494 @@
+{
+  "batchId": "canine-L-C5",
+  "speciesId": "canine",
+  "author": "A4",
+  "structures": [
+    {
+      "id": "canine:supraspinatus",
+      "speciesId": "canine",
+      "regionId": "shoulder",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus supraspinatus",
+      "spanishName": "Músculo supraespinoso",
+      "aliases": [
+        "supraespinoso"
+      ],
+      "summary": "Músculo que ocupa la fosa supraespinosa de la escápula y extiende la articulación del hombro.",
+      "origin": [
+        "Fosa supraespinosa de la escápula"
+      ],
+      "insertion": [
+        "Tubérculo mayor del húmero",
+        "Pequeña fijación en el tubérculo menor (Sisson)"
+      ],
+      "action": [
+        "Extensión y fijación de la articulación del hombro"
+      ],
+      "innervation": [
+        "Nervio supraescapular"
+      ],
+      "sourceIds": [
+        "innervate-vr-canine-limb",
+        "nav-6th-edition",
+        "umn-proximal-thoracic-limb",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo. Sisson añade una pequeña fijación al tubérculo menor que el campo insertion actual no recoge."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks",
+        "attachments"
+      ],
+      "detailedDescription": "Según Sisson, en el perro es grande y termina sobre todo en el tubérculo mayor («lateral tuberosity») del húmero, con una pequeña fijación también en el tubérculo menor («medial tuberosity»).",
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.371",
+          "claim": "«large; it ends chiefly on the lateral tuberosity of the humerus, but has a small attachment to the medial tuberosity also»."
+        },
+        {
+          "field": "insertion",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Muscles of the dog, Supraspinatus, p.371",
+          "claim": "Inserción en el tubérculo mayor con una pequeña fijación en el menor."
+        }
+      ]
+    },
+    {
+      "id": "canine:infraspinatus",
+      "speciesId": "canine",
+      "regionId": "shoulder",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus infraspinatus",
+      "spanishName": "Músculo infraespinoso",
+      "aliases": [
+        "infraespinoso"
+      ],
+      "summary": "Músculo que ocupa la fosa infraespinosa; actúa como ligamento colateral lateral funcional del hombro y abduce el brazo.",
+      "origin": [
+        "Fosa infraespinosa de la escápula"
+      ],
+      "insertion": [
+        "Área muscular sobre el tubérculo mayor del húmero"
+      ],
+      "action": [
+        "Abducción y rotación externa del brazo"
+      ],
+      "innervation": [
+        "Nervio supraescapular"
+      ],
+      "sourceIds": [
+        "innervate-vr-canine-limb",
+        "nav-6th-edition",
+        "umn-proximal-thoracic-limb",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks",
+        "attachments"
+      ],
+      "detailedDescription": "Según Sisson, en el perro es bipenniforme; su tendón de inserción pasa por un surco del tubérculo mayor («lateral tuberosity») del húmero y termina en una impresión bien definida del mismo; bajo el tendón hay una bolsa sinovial grande.",
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.371",
+          "claim": "Bipenniforme; trayecto e inserción del tendón en el tubérculo mayor; bolsa subtendinosa grande."
+        }
+      ]
+    },
+    {
+      "id": "canine:subscapularis",
+      "speciesId": "canine",
+      "regionId": "shoulder",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus subscapularis",
+      "spanishName": "Músculo subescapular",
+      "aliases": [
+        "subescapular"
+      ],
+      "summary": "Músculo medial ancho que ocupa la fosa subescapular y aduce el brazo.",
+      "origin": [
+        "Fosa subescapular de la escápula"
+      ],
+      "insertion": [
+        "Tubérculo menor del húmero"
+      ],
+      "action": [
+        "Aducción, extensión y rotación medial del hombro"
+      ],
+      "innervation": [
+        "Nervios subescapulares"
+      ],
+      "sourceIds": [
+        "innervate-vr-canine-limb",
+        "nav-6th-edition",
+        "umn-proximal-thoracic-limb",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks",
+        "attachments"
+      ],
+      "detailedDescription": "Según Sisson, en el perro es ancho y multipenniforme, atravesado por tabiques fibrosos que se fijan en las líneas rugosas de la cara costal de la escápula; se inserta en el tubérculo menor («medial tuberosity») del húmero.",
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.371",
+          "claim": "Estructura multipenniforme, tabiques fijados en las líneas rugosas de la cara costal e inserción en el tubérculo menor."
+        }
+      ]
+    },
+    {
+      "id": "canine:teres-major",
+      "speciesId": "canine",
+      "regionId": "shoulder",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus teres major",
+      "spanishName": "Músculo redondo mayor",
+      "aliases": [
+        "redondo mayor"
+      ],
+      "summary": "Músculo ubicado en el borde caudal de la escápula que flexiona el hombro.",
+      "origin": [
+        "Borde caudal proximal de la escápula"
+      ],
+      "insertion": [
+        "Tuberosidad del redondo mayor en el húmero medial"
+      ],
+      "action": [
+        "Flexión de la articulación del hombro"
+      ],
+      "innervation": [
+        "Nervio axilar"
+      ],
+      "sourceIds": [
+        "innervate-vr-canine-limb",
+        "nav-6th-edition",
+        "umn-proximal-thoracic-limb",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo. Sisson añade el origen sobre el subescapular y el tendón común con el dorsal ancho."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks",
+        "attachments"
+      ],
+      "detailedDescription": "Según Sisson, en el perro es grueso; se origina en la parte proximal del borde caudal de la escápula y sobre el subescapular, y se inserta, mediante un tendón común con el dorsal ancho, en una eminencia (tuberositas teres) del tercio proximal de la cara medial del húmero.",
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.371",
+          "claim": "Origen en el borde caudal proximal y en el subescapular; inserción en la tuberositas teres con tendón común con el dorsal ancho."
+        }
+      ]
+    },
+    {
+      "id": "canine:biceps-brachii",
+      "speciesId": "canine",
+      "regionId": "brachium",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus biceps brachii",
+      "spanishName": "Bíceps braquial",
+      "aliases": [],
+      "summary": "Músculo craneomedial del brazo.",
+      "sourceIds": [
+        "umn-proximal-thoracic-limb",
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Requiere revisión veterinaria humana; nombres latinos normalizados pendientes de cotejo NAV. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo. El campo insertion se rellena con lo que dice Sisson (pp.372–373); el esquema no admite insertion como campo de fieldEvidence, por lo que la cita figura en detailedDescription. Afirmación dudosa: Sisson escribe «lateral surface of the ulna» para la rama ulnar; debe cotejarse con literatura canina moderna antes de aceptarla."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks"
+      ],
+      "origin": [
+        "Tubérculo supraglenoideo de la escápula"
+      ],
+      "action": [
+        "Flexión del codo",
+        "Extensión del hombro"
+      ],
+      "innervation": [
+        "Nervio musculocutáneo"
+      ],
+      "detailedDescription": "Según Sisson, en el perro está situado casi por completo en la cara medial del húmero; es largo y fusiforme. El tendón de origen es redondo, está sujeto en el surco intertubercular por un ligamento anular y envuelto por una extensión de la membrana sinovial de la articulación del hombro. El tendón de inserción es bífido: una rama se fija en una impresión rugosa de la cara lateral de la ulna («lateral surface of the ulna», según el texto), justo distal a la incisura troclear («semilunar notch»), y la otra termina en una impresión distinta de la cara caudomedial de la parte proximal de la diáfisis del radio, a una o dos pulgadas de la cabeza. El tendón del bíceps forma una vaina parcial para el del braquial.",
+      "insertion": [
+        "Rama ulnar: impresión rugosa de la cara lateral de la ulna (pendiente de cotejo moderno) justo distal a la incisura troclear (Sisson)",
+        "Rama radial: cara caudomedial de la parte proximal de la diáfisis del radio (Sisson)"
+      ],
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.372",
+          "claim": "Posición medial, forma, tendón de origen en el surco intertubercular y tendón de inserción bífido en ulna y radio (texto comprobado en la imagen de la página)."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.373",
+          "claim": "Vaina parcial del tendón del bíceps para el del braquial."
+        },
+        {
+          "field": "insertion",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Muscles of the dog, Biceps brachii, p.372",
+          "claim": "Ramas de inserción radial y ulnar; Sisson cita la cara lateral de la ulna."
+        }
+      ]
+    },
+    {
+      "id": "canine:brachialis",
+      "speciesId": "canine",
+      "regionId": "brachium",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus brachialis",
+      "spanishName": "Músculo braquial",
+      "aliases": [
+        "braquial anterior"
+      ],
+      "summary": "Músculo flexor del codo que se origina en la cara caudal del húmero y rodea el surco del músculo braquial.",
+      "origin": [
+        "Surco del húmero proximal caudal"
+      ],
+      "insertion": [
+        "Cúbito, justo proximal al tendón ulnar del bíceps (Sisson)"
+      ],
+      "action": [
+        "Flexión de la articulación del codo"
+      ],
+      "innervation": [
+        "Nervio musculocutáneo"
+      ],
+      "sourceIds": [
+        "innervate-vr-canine-limb",
+        "nav-6th-edition",
+        "umn-proximal-thoracic-limb",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo. Según Sisson la inserción es junto a la del tendón ulnar del bíceps; el campo insertion actual («Tuberosidad del radio y cúbito») no se modifica hasta cotejo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks",
+        "attachments"
+      ],
+      "detailedDescription": "Según Sisson, en el perro está muy poco curvado; su tendón de inserción pasa sobre el ligamento colateral medial del codo y bajo el tendón ulnar del bíceps, y termina justo proximal a éste. El tendón del bíceps forma una vaina parcial para el del braquial.",
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.373",
+          "claim": "Curvatura, trayecto del tendón de inserción y relación con el tendón ulnar del bíceps."
+        },
+        {
+          "field": "insertion",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Muscles of the dog, Brachialis, p.373",
+          "claim": "Inserción en el cúbito, proximal al tendón ulnar del bíceps."
+        }
+      ]
+    },
+    {
+      "id": "canine:triceps-brachii-accessory-head",
+      "speciesId": "canine",
+      "regionId": "brachium",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus triceps brachii, caput accessorium",
+      "spanishName": "Cabeza accesoria del tríceps braquial",
+      "aliases": [
+        "cabeza accesoria del tríceps"
+      ],
+      "summary": "Pequeña cabeza profunda del tríceps situada entre las cabezas medial y lateral.",
+      "origin": [
+        "Cuello del húmero caudal"
+      ],
+      "insertion": [
+        "Tuberosidad del olécranon"
+      ],
+      "action": [
+        "Extensión del codo"
+      ],
+      "innervation": [
+        "Nervio radial"
+      ],
+      "sourceIds": [
+        "innervate-vr-canine-limb",
+        "nav-6th-edition",
+        "umn-proximal-thoracic-limb",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks",
+        "attachments"
+      ],
+      "detailedDescription": "Según Sisson, el tríceps del perro tiene una cabeza profunda adicional (caput accessorium) que se origina justo distal a la cabeza del húmero. Sobre el olécranon, craneal al tendón común de inserción, hay una bolsa sinovial.",
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.373",
+          "claim": "Cabeza accesoria profunda con origen justo distal a la cabeza del húmero; bolsa en el olécranon."
+        }
+      ]
+    },
+    {
+      "id": "canine:triceps-brachii-medial-head",
+      "speciesId": "canine",
+      "regionId": "brachium",
+      "systemId": "muscular",
+      "kind": "muscle",
+      "canonicalLatinName": "Musculus triceps brachii, caput mediale",
+      "spanishName": "Cabeza medial del tríceps braquial",
+      "aliases": [
+        "cabeza medial del tríceps"
+      ],
+      "summary": "Cabeza medial profunda del tríceps braquial situada en la cara interna del húmero.",
+      "origin": [
+        "Cuarto proximal de la cara medial del húmero, caudal a la tuberosidad redonda (Sisson)"
+      ],
+      "insertion": [
+        "Tuberosidad del olécranon"
+      ],
+      "action": [
+        "Extensión del codo"
+      ],
+      "innervation": [
+        "Nervio radial"
+      ],
+      "sourceIds": [
+        "innervate-vr-canine-limb",
+        "nav-6th-edition",
+        "umn-proximal-thoracic-limb",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [
+        "canine:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "review": {
+        "status": "pending",
+        "notes": "Estructura incorporada por pipeline de conciliación 3D; requiere revisión veterinaria humana. L-C5: detailedDescription según Sisson 1914 («The muscles of the dog»), fuente histórica; «lateral/medial tuberosity» normalizados a tubérculo mayor/menor. El esquema no admite origin, insertion ni action en fieldEvidence: la cita de origen e inserción figura en detailedDescription; los campos origin/insertion/action previos conservan sus fuentes originales sin evidencia por campo. Discrepancia: Sisson sitúa el origen en una impresión del cuarto proximal de la cara medial, caudal a la tuberositas teres; el campo origin actual («Cresta del tubérculo menor del húmero») no se modifica hasta cotejo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences",
+        "morphology",
+        "location",
+        "landmarks",
+        "attachments"
+      ],
+      "detailedDescription": "Según Sisson, la cabeza medial es muy larga y se origina en una impresión del cuarto proximal de la cara medial del húmero, justo caudal a la inserción del redondo mayor y del dorsal ancho.",
+      "fieldEvidence": [
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "The muscles of the dog, Muscles of the thoracic limb, p.373",
+          "claim": "Cabeza medial muy larga; origen en el cuarto proximal de la cara medial del húmero, caudal a la inserción del redondo mayor y dorsal ancho."
+        },
+        {
+          "field": "origin",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Muscles of the dog, Triceps brachii caput mediale, p.373",
+          "claim": "Origen en el cuarto proximal de la cara medial, caudal a la tuberositas teres."
+        }
+      ]
+    }
+  ],
+  "relations": [],
+  "sources": []
+}

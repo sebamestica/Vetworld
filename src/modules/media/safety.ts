@@ -1,4 +1,4 @@
-const academicHosts = new Set(['open.lib.umn.edu', 'www.cvmbs.colostate.edu', 'wava-amav.org', 'www.wava-amav.org', 'www.digimorph.org', 'www.morphosource.org', 'www.gutenberg.org', 'pmc.ncbi.nlm.nih.gov', 'bdvets.org']);
+const academicHosts = new Set(['open.lib.umn.edu', 'www.cvmbs.colostate.edu', 'wava-amav.org', 'www.wava-amav.org', 'www.digimorph.org', 'www.morphosource.org', 'www.gutenberg.org', 'pmc.ncbi.nlm.nih.gov', 'bdvets.org', 'commons.wikimedia.org', 'archive.org']);
 
 export function isSafeExternalUrl(value: string): boolean {
   if (!value.startsWith('https://') || /[\s\\]/.test(value)) return false;
@@ -9,5 +9,6 @@ export function isSafeExternalUrl(value: string): boolean {
 }
 
 export function safeLocalImagePath(value: string): boolean {
-  return /^\/reference-images\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.(?:png|jpe?g|webp)$/.test(value);
+  return /^\/reference-images\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_-]+\.(?:png|jpe?g|webp)$/.test(value)
+    || /^\/media\/(?:canine|feline)\/(?:thumbs\/)?[a-z0-9][a-z0-9-]*\.(?:png|jpe?g|webp)$/.test(value);
 }

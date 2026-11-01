@@ -4277,7 +4277,10 @@
                           "attachments",
                           "vascularSupply",
                           "innervation",
-                          "speciesDifferences"
+                          "speciesDifferences",
+                          "origin",
+                          "insertion",
+                          "action"
                         ]
                       },
                       "sourceId": {
@@ -4641,7 +4644,10 @@
                         "attachments",
                         "vascularSupply",
                         "innervation",
-                        "speciesDifferences"
+                        "speciesDifferences",
+                        "origin",
+                        "insertion",
+                        "action"
                       ]
                     },
                     "sourceId": {
@@ -5085,7 +5091,10 @@
                               "attachments",
                               "vascularSupply",
                               "innervation",
-                              "speciesDifferences"
+                              "speciesDifferences",
+                              "origin",
+                              "insertion",
+                              "action"
                             ]
                           },
                           "sourceId": {

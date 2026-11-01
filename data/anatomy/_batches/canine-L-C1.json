@@ -587,8 +587,8 @@
         "cabeza ósea",
         "esqueleto cefálico canino"
       ],
-      "summary": "Esqueleto de la cabeza canina; su forma y tamaño varían mucho entre razas dolicocéfalas, mesaticéfalas y braquicéfalas.",
-      "detailedDescription": "Las razas de cráneo largo y estrecho (p. ej., galgo, collie) se denominan dolicocéfalas; las de cráneo ancho y corto (p. ej., bulldog, pequeños spaniels, pug), braquicéfalas; y las intermedias (p. ej., fox terrier, teckel), mesaticéfalas. El índice cefálico (anchura × 100 / longitud) es de aproximadamente 50 en dolicocéfalos extremos, puede llegar a 90 en braquicéfalos y ronda 70 en el fox terrier. La fosa temporal es muy extensa y la órbita comunica libremente con ella porque falta la parte caudal del margen orbitario en el cráneo seco. El foramen infraorbitario se abre sobre el tercer diente yugal. La bulla timpánica es grande y redondeada, los procesos paracondilares son pequeños y el paladar duro mide aproximadamente la mitad de la longitud del cráneo. El seno frontal está confinado al hueso frontal y es muy pequeño en los braquicéfalos extremos.",
+      "summary": "Conjunto óseo, no un hueso único: esqueleto de la cabeza canina; su forma y tamaño varían mucho entre razas dolicocéfalas, mesaticéfalas y braquicéfalas.",
+      "detailedDescription": "Las razas de cráneo largo y estrecho (p. ej., galgo, collie) se denominan dolicocéfalas; las de cráneo ancho y corto (p. ej., bulldog, pequeños spaniels, pug), braquicéfalas; y las intermedias (p. ej., fox terrier, teckel), mesaticéfalas. El índice cefálico (anchura × 100 / longitud) es de aproximadamente 50 en dolicocéfalos extremos, puede llegar a 90 en braquicéfalos y ronda 70 en el fox terrier. La fosa temporal es muy extensa y la órbita comunica libremente con ella porque falta la parte caudal del margen orbitario en el cráneo seco. El foramen infraorbitario se abre sobre el tercer diente yugal. La bulla timpánica es grande y redondeada, los procesos paracondilares son pequeños y el paladar duro mide aproximadamente la mitad de la longitud del cráneo. El seno frontal está confinado al hueso frontal y es muy pequeño en los braquicéfalos extremos. El índice craneofacial (distancia de la cresta nucal a la sutura frontonasal respecto de la que va de ésta a la incisura nasal) varía de 10:3 en braquicéfalos extremos a 10:7 en dolicocéfalos extremos. En los braquicéfalos extremos el neurocráneo es muy convexo y bastante más largo que la cara, la región frontal es ancha y convexa, la región nasal muy corta, y hay una marcada depresión frontonasal («stop»); la órbita es relativamente muy grande. En el bulldog la mandíbula sobresale de la maxila (prognatismo); en el teckel se observa la condición opuesta (braquignatismo). Según Sisson (p.493), la dentición permanente del perro tiene la fórmula 2 × (I 3/3, C 1/1, P 4/4, M 2/3) = 42. El cuarto premolar superior y el primer molar inferior son los dientes sectoriales (carniceros). Sisson (p.494) señala variación: en braquicéfalos los yugales suelen reducirse, puede haber dientes supernumerarios y un tercer molar superior no es raro. La equivalencia «primer molar inferior» para el «fifth of the lower row» de Sisson es editorial.",
       "landmarks": [
         "Fossa temporalis — fosa temporal",
         "Arcus zygomaticus — arco cigomático",
@@ -653,11 +653,35 @@
           "sourceId": "sisson-dog-1914",
           "locator": "Skeleton of the Dog, Bones of the skull, pp.188–197",
           "claim": "Accidentes descritos en cráneo de perro (cresta nucal, cresta parietal, bulla, foramen infraorbitario, procesos paramastoideos)."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The skull as a whole, pp.195–196",
+          "claim": "Índice craneofacial, rasgos de los braquicéfalos extremos, «stop», prognatismo del bulldog y braquignatismo del teckel."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Digestive system of the dog, The teeth, p.493",
+          "claim": "Fórmula de la dentición permanente 2(I 3/3 C 1/1 P 4/4 M 2/3) = 42 (comprobada en la imagen de la página)."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Digestive system of the dog, The teeth, pp.494–495",
+          "claim": "El cuarto premolar superior y el primer molar inferior como Dens sectorius."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "SPLANCHNOLOGIA, p.50; Dentes, Dens sectorius (Car)",
+          "claim": "Término «Dens sectorius» marcado (Car)."
         }
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El resumen anterior describía el modelo NIH (derivado de TC) y no el hueso; esa procedencia corresponde al registro del modelo y su licencia por archivo sigue sin comprobar. Alias coloquiales conservados sin fuente. «Paramastoid process» de la fuente normalizado a Processus paracondylaris (NAV). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El resumen anterior describía el modelo NIH (derivado de TC) y no el hueso; esa procedencia corresponde al registro del modelo y su licencia por archivo sigue sin comprobar. Alias coloquiales conservados sin fuente. «Paramastoid process» de la fuente normalizado a Processus paracondylaris (NAV). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ampliación L-C4: índice craneofacial, rasgos braquicéfalos y fórmula dentaria (Sisson, Digestive system of the dog, p.493; leída en la imagen de la página porque el OCR de la fórmula es ilegible). El registro de fuente sisson-dog-1914 se titula «Skeleton of the Dog», pero la cita de la dentición procede del capítulo digestivo del perro de la misma obra. La dentición no tiene ficha propia. El modelo fotogramétrico canine:agancz-skull-scan no se enlaza en modelIds: requiere revisión humana. Las fichas de huesos craneales individuales (L-C4) no sustituyen esta ficha de conjunto. Fórmula dentaria leída en OCR parcial de p.493: confirmar en la imagen de página."
       },
       "completeness": "partial",
       "missingFields": [

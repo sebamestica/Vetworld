@@ -1,0 +1,358 @@
+[
+  {
+    "referenceId": "commons-canine-skull-mwnh",
+    "speciesId": "canine",
+    "repository": "Wikimedia Commons",
+    "commonsTitle": "File:Canis lupus familiaris 01 MWNH 788.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Canis_lupus_familiaris_01_MWNH_788.jpg",
+    "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csha1%7Csize&titles=File%3ACanis+lupus+familiaris+01+MWNH+788.jpg&format=json",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Canis_lupus_familiaris_01_MWNH_788.jpg",
+    "author": "Klaus Rassinger und Gerhard Cammerer, Museum Wiesbaden",
+    "attribution": "«Canis lupus familiaris 01 MWNH 788.jpg», Klaus Rassinger und Gerhard Cammerer, Museum Wiesbaden, Wikimedia Commons, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Copia redimensionada.",
+    "license": {
+      "shortName": "CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attributionRequired": true,
+      "shareAlike": true,
+      "redistributionAllowed": true,
+      "modificationAllowed": true,
+      "commercialUseAllowed": true,
+      "evidence": "LicenseShortName «CC BY-SA 3.0» en extmetadata de la API de Commons y plantilla de licencia en la página File: (consultadas 2026-11-01)."
+    },
+    "speciesEvidence": "Descripción de la página: «Dog Canis lupus familiaris, skull, Coll. Museum Wiesbaden» (ejemplar MWNH 788); categorías «Dog skulls in anterior aspect» y «Carnivora skulls of the Natural History Collections of the Museum Wiesbaden».",
+    "depictedStructureIds": [
+      "canine:skull"
+    ],
+    "verifiedAt": "2026-11-01",
+    "original": {
+      "path": "workbench/incoming/media/commons-canine-skull-mwnh/original-Canis_lupus_familiaris_01_MWNH_788.jpg",
+      "commonsSha1": "f14490a95ec890d2cba995fbb0109d7f348298f6",
+      "sha256": "360d0067ad34e4ad610e53597b62da71f9e6bf3c6ba0fe6930b5af1653a8f07f",
+      "byteSize": 4746925,
+      "width": 4288,
+      "height": 2848
+    },
+    "published": {
+      "path": "/media/canine/commons-canine-skull-mwnh.jpg",
+      "sha256": "6f5c8a7141de54f37203058169d8f06206125768ad6bbe447cb9e253ff1a4b1a",
+      "byteSize": 67024,
+      "width": 1600,
+      "height": 1063
+    },
+    "thumbnail": {
+      "path": "/media/canine/thumbs/commons-canine-skull-mwnh.jpg",
+      "sha256": "dd2f2798b28c6e0f0e793bec0a0ab5ab54c2c55ed83b25dde84ed767b3c49ffa",
+      "byteSize": 9113,
+      "width": 480,
+      "height": 319
+    },
+    "transformation": "Copia derivada con sharp 0.35.5: orientación EXIF aplicada, reducción proporcional a 1600 px (miniatura 480 px) en el lado mayor, JPEG calidad 82 (mozjpeg) y metadatos EXIF/XMP eliminados. Sin recorte, retoque ni anotaciones."
+  },
+  {
+    "referenceId": "commons-feline-skull-lateral-fmvz",
+    "speciesId": "feline",
+    "repository": "Wikimedia Commons",
+    "commonsTitle": "File:Cat skull. Felis catus 01.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Cat_skull._Felis_catus_01.jpg",
+    "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csha1%7Csize&titles=File%3ACat+skull.+Felis+catus+01.jpg&format=json",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Cat_skull._Felis_catus_01.jpg",
+    "author": "Wagner Souza e Silva / Museum of Veterinary Anatomy FMVZ USP",
+    "attribution": "«Cat skull. Felis catus 01.jpg», Wagner Souza e Silva / Museum of Veterinary Anatomy FMVZ USP, Wikimedia Commons, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Copia redimensionada.",
+    "license": {
+      "shortName": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionRequired": true,
+      "shareAlike": true,
+      "redistributionAllowed": true,
+      "modificationAllowed": true,
+      "commercialUseAllowed": true,
+      "evidence": "LicenseShortName «CC BY-SA 4.0» en extmetadata de la API de Commons y plantilla de licencia en la página File: (consultadas 2026-11-01)."
+    },
+    "speciesEvidence": "Descripción de la página: «Specimen of cat skull prepared by the bone maceration technique and on display at the Museum of Veterinary Anatomy, FMVZ USP»; título «Cat skull. Felis catus»; categoría «Cat skulls».",
+    "depictedStructureIds": [
+      "feline:skull",
+      "feline:mandible",
+      "feline:teeth"
+    ],
+    "verifiedAt": "2026-11-01",
+    "original": {
+      "path": "workbench/incoming/media/commons-feline-skull-lateral-fmvz/original-Cat_skull._Felis_catus_01.jpg",
+      "commonsSha1": "1073eabb67ea971db2f64da3181a40dae4a3a6b9",
+      "sha256": "8b7f52457a84013ec11a2a7f1c792aed41d2f895aabc17d8119cf643580c2d6f",
+      "byteSize": 3420811,
+      "width": 3274,
+      "height": 2592
+    },
+    "published": {
+      "path": "/media/feline/commons-feline-skull-lateral-fmvz.jpg",
+      "sha256": "187e7a3099a0f1d67c13c557441f104fe61568f93eac65d5cb2ef48c8e94649a",
+      "byteSize": 99996,
+      "width": 1600,
+      "height": 1267
+    },
+    "thumbnail": {
+      "path": "/media/feline/thumbs/commons-feline-skull-lateral-fmvz.jpg",
+      "sha256": "5c2d93fbdcd1cdea112f24b6663f8db92b8e0c4bd0103c0d63131376cfa97856",
+      "byteSize": 14401,
+      "width": 480,
+      "height": 380
+    },
+    "permission": "Permiso VRTS confirmado en la página del archivo (ticket 2016071210013681; alianza Museum of Veterinary Anatomy FMVZ USP – RIDC NeuroMat – Wikimedia Community User Group Brasil).",
+    "transformation": "Copia derivada con sharp 0.35.5: orientación EXIF aplicada, reducción proporcional a 1600 px (miniatura 480 px) en el lado mayor, JPEG calidad 82 (mozjpeg) y metadatos EXIF/XMP eliminados. Sin recorte, retoque ni anotaciones."
+  },
+  {
+    "referenceId": "commons-feline-skull-gape",
+    "speciesId": "feline",
+    "repository": "Wikimedia Commons",
+    "commonsTitle": "File:Felis catus gaping skull and mandible.jpg",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Felis_catus_gaping_skull_and_mandible.jpg",
+    "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csha1%7Csize&titles=File%3AFelis+catus+gaping+skull+and+mandible.jpg&format=json",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Felis_catus_gaping_skull_and_mandible.jpg",
+    "author": "Coluberssymbol",
+    "attribution": "«Felis catus gaping skull and mandible.jpg», Coluberssymbol, Wikimedia Commons, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/). Copia redimensionada.",
+    "license": {
+      "shortName": "CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attributionRequired": true,
+      "shareAlike": true,
+      "redistributionAllowed": true,
+      "modificationAllowed": true,
+      "commercialUseAllowed": true,
+      "evidence": "LicenseShortName «CC BY-SA 3.0» en extmetadata de la API de Commons y plantilla de licencia en la página File: (consultadas 2026-11-01)."
+    },
+    "speciesEvidence": "Descripción de la página: «a profile of felis catus, the common domestic cat, at a maximum gape»; obra propia del autor; categoría «Cat skulls».",
+    "depictedStructureIds": [
+      "feline:skull",
+      "feline:mandible",
+      "feline:teeth"
+    ],
+    "verifiedAt": "2026-11-01",
+    "original": {
+      "path": "workbench/incoming/media/commons-feline-skull-gape/original-Felis_catus_gaping_skull_and_mandible.jpg",
+      "commonsSha1": "f34ffcc94d79459012ca949db4094600046ba65f",
+      "sha256": "430db06ee29bac607d872ea2a57c24959067f3f3337459f340b73194711dec1e",
+      "byteSize": 543783,
+      "width": 1981,
+      "height": 1710
+    },
+    "published": {
+      "path": "/media/feline/commons-feline-skull-gape.jpg",
+      "sha256": "4c73cacf03fb52598ea67e2ed28a71102ce573f7b8aa610133018fbd5d50ec1c",
+      "byteSize": 77710,
+      "width": 1600,
+      "height": 1381
+    },
+    "thumbnail": {
+      "path": "/media/feline/thumbs/commons-feline-skull-gape.jpg",
+      "sha256": "2f02864c2d8f979dd18c67ab4e1ef5e7e54e3c16076ba55296b00f8ae7260dc3",
+      "byteSize": 11702,
+      "width": 480,
+      "height": 415
+    },
+    "transformation": "Copia derivada con sharp 0.35.5: orientación EXIF aplicada, reducción proporcional a 1600 px (miniatura 480 px) en el lado mayor, JPEG calidad 82 (mozjpeg) y metadatos EXIF/XMP eliminados. Sin recorte, retoque ni anotaciones."
+  },
+  {
+    "referenceId": "commons-canine-forelimb-msu",
+    "speciesId": "canine",
+    "repository": "Wikimedia Commons",
+    "commonsTitle": "File:Dog fore limb 1.JPG",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Dog_fore_limb_1.JPG",
+    "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csha1%7Csize&titles=File%3ADog+fore+limb+1.JPG&format=json",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Dog_fore_limb_1.JPG",
+    "author": "Kirill Tsukanov",
+    "attribution": "«Dog fore limb 1.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+    "license": {
+      "shortName": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false,
+      "shareAlike": false,
+      "redistributionAllowed": true,
+      "modificationAllowed": true,
+      "commercialUseAllowed": true,
+      "evidence": "LicenseShortName «CC0 1.0» en extmetadata de la API de Commons y plantilla de licencia en la página File: (consultadas 2026-11-01)."
+    },
+    "speciesEvidence": "Descripción de la página: «Dog fore limb from the collection of Moscow State University Department of Biology»; obra propia; categoría «Dog leg bones».",
+    "depictedStructureIds": [
+      "canine:scapula",
+      "canine:humerus",
+      "canine:radius",
+      "canine:ulna",
+      "canine:manus"
+    ],
+    "verifiedAt": "2026-11-01",
+    "original": {
+      "path": "workbench/incoming/media/commons-canine-forelimb-msu/original-Dog_fore_limb_1.JPG",
+      "commonsSha1": "21b47b3cc273bfe24f8a839571e46d1e4558797f",
+      "sha256": "78f76039c8bf8798d1a5a02fc8ad4594d45ae9104f8f9c7cea54ebd759c85825",
+      "byteSize": 3276800,
+      "width": 4912,
+      "height": 2760
+    },
+    "published": {
+      "path": "/media/canine/commons-canine-forelimb-msu.jpg",
+      "sha256": "ece76bf082d1739f35c9b44fe0d49e42f82e2321e990e8dee1b83e732086cfb6",
+      "byteSize": 98530,
+      "width": 1600,
+      "height": 899
+    },
+    "thumbnail": {
+      "path": "/media/canine/thumbs/commons-canine-forelimb-msu.jpg",
+      "sha256": "9e3b32d9e4bff761bfa7ea1238db977c6416f3ae82b9306c0374332fb47f0e1a",
+      "byteSize": 10505,
+      "width": 480,
+      "height": 270
+    },
+    "transformation": "Copia derivada con sharp 0.35.5: orientación EXIF aplicada, reducción proporcional a 1600 px (miniatura 480 px) en el lado mayor, JPEG calidad 82 (mozjpeg) y metadatos EXIF/XMP eliminados. Sin recorte, retoque ni anotaciones."
+  },
+  {
+    "referenceId": "commons-canine-hindlimb-msu",
+    "speciesId": "canine",
+    "repository": "Wikimedia Commons",
+    "commonsTitle": "File:Dog hind limb 1.JPG",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Dog_hind_limb_1.JPG",
+    "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csha1%7Csize&titles=File%3ADog+hind+limb+1.JPG&format=json",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Dog_hind_limb_1.JPG",
+    "author": "Kirill Tsukanov",
+    "attribution": "«Dog hind limb 1.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+    "license": {
+      "shortName": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false,
+      "shareAlike": false,
+      "redistributionAllowed": true,
+      "modificationAllowed": true,
+      "commercialUseAllowed": true,
+      "evidence": "LicenseShortName «CC0 1.0» en extmetadata de la API de Commons y plantilla de licencia en la página File: (consultadas 2026-11-01)."
+    },
+    "speciesEvidence": "Descripción de la página: «Dog hind limb from the collection of Moscow State University Department of Biology»; obra propia; categoría «Dog leg bones».",
+    "depictedStructureIds": [
+      "canine:femur",
+      "canine:tibia",
+      "canine:fibula"
+    ],
+    "verifiedAt": "2026-11-01",
+    "original": {
+      "path": "workbench/incoming/media/commons-canine-hindlimb-msu/original-Dog_hind_limb_1.JPG",
+      "commonsSha1": "59ef3228a819dee30778fab760fda0c5406a861c",
+      "sha256": "8d29c80804d0ef46eb18a0243ce651805e86278d3e0bfd409b4c934a8dcce0e9",
+      "byteSize": 4653056,
+      "width": 4912,
+      "height": 2760
+    },
+    "published": {
+      "path": "/media/canine/commons-canine-hindlimb-msu.jpg",
+      "sha256": "3fb9b437dd26558be7471b096b1444317ae7f272be9a80e23ab9ed1d000f7481",
+      "byteSize": 179067,
+      "width": 1600,
+      "height": 899
+    },
+    "thumbnail": {
+      "path": "/media/canine/thumbs/commons-canine-hindlimb-msu.jpg",
+      "sha256": "90f045409ffc4664a893d0c7203d0173ab0462594c9dec21c5e4c31e501804d9",
+      "byteSize": 17477,
+      "width": 480,
+      "height": 270
+    },
+    "transformation": "Copia derivada con sharp 0.35.5: orientación EXIF aplicada, reducción proporcional a 1600 px (miniatura 480 px) en el lado mayor, JPEG calidad 82 (mozjpeg) y metadatos EXIF/XMP eliminados. Sin recorte, retoque ni anotaciones."
+  },
+  {
+    "referenceId": "commons-canine-pelvis-msu",
+    "speciesId": "canine",
+    "repository": "Wikimedia Commons",
+    "commonsTitle": "File:Dog pelvis.JPG",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Dog_pelvis.JPG",
+    "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csha1%7Csize&titles=File%3ADog+pelvis.JPG&format=json",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Dog_pelvis.JPG",
+    "author": "Kirill Tsukanov",
+    "attribution": "«Dog pelvis.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+    "license": {
+      "shortName": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false,
+      "shareAlike": false,
+      "redistributionAllowed": true,
+      "modificationAllowed": true,
+      "commercialUseAllowed": true,
+      "evidence": "LicenseShortName «CC0 1.0» en extmetadata de la API de Commons y plantilla de licencia en la página File: (consultadas 2026-11-01)."
+    },
+    "speciesEvidence": "Descripción de la página: «Dog pelvis from the collection of Moscow State University Department of Biology»; obra propia; categoría «Dog bones».",
+    "depictedStructureIds": [
+      "canine:coxal"
+    ],
+    "verifiedAt": "2026-11-01",
+    "original": {
+      "path": "workbench/incoming/media/commons-canine-pelvis-msu/original-Dog_pelvis.JPG",
+      "commonsSha1": "a8bb08042ba848b971cdf7fd241aa6da57a7d509",
+      "sha256": "7f5125bb32de547b188af2dd6639bdc20dabe8c79fe9e2bd57539afd35def45c",
+      "byteSize": 1504875,
+      "width": 2680,
+      "height": 3728
+    },
+    "published": {
+      "path": "/media/canine/commons-canine-pelvis-msu.jpg",
+      "sha256": "9a4059abe52d1d5de3fcbd722c373c83f6b04d8374dec151f3ea7920aa416c28",
+      "byteSize": 152899,
+      "width": 1150,
+      "height": 1600
+    },
+    "thumbnail": {
+      "path": "/media/canine/thumbs/commons-canine-pelvis-msu.jpg",
+      "sha256": "8b03b960cb1c3c449f608a8f87dec50ad593b69c07ca3909efb1d439bcb26396",
+      "byteSize": 24033,
+      "width": 345,
+      "height": 480
+    },
+    "transformation": "Copia derivada con sharp 0.35.5: orientación EXIF aplicada, reducción proporcional a 1600 px (miniatura 480 px) en el lado mayor, JPEG calidad 82 (mozjpeg) y metadatos EXIF/XMP eliminados. Sin recorte, retoque ni anotaciones."
+  },
+  {
+    "referenceId": "commons-feline-skeleton-msu",
+    "speciesId": "feline",
+    "repository": "Wikimedia Commons",
+    "commonsTitle": "File:Felis catus skeleton.JPG",
+    "filePageUrl": "https://commons.wikimedia.org/wiki/File:Felis_catus_skeleton.JPG",
+    "apiUrl": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Cextmetadata%7Csha1%7Csize&titles=File%3AFelis+catus+skeleton.JPG&format=json",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Felis_catus_skeleton.JPG",
+    "author": "Kirill Tsukanov",
+    "attribution": "«Felis catus skeleton.JPG», Kirill Tsukanov, Wikimedia Commons, dedicada al dominio público (CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/). Copia redimensionada.",
+    "license": {
+      "shortName": "CC0 1.0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attributionRequired": false,
+      "shareAlike": false,
+      "redistributionAllowed": true,
+      "modificationAllowed": true,
+      "commercialUseAllowed": true,
+      "evidence": "LicenseShortName «CC0 1.0» en extmetadata de la API de Commons y plantilla de licencia en la página File: (consultadas 2026-11-01)."
+    },
+    "speciesEvidence": "Descripción de la página: «Cat (Felis catus) skeleton from the collection of Moscow State University Department of Biology»; obra propia; categoría «Cat skeletons».",
+    "depictedStructureIds": [
+      "feline:femur",
+      "feline:tibia",
+      "feline:os-coxae"
+    ],
+    "verifiedAt": "2026-11-01",
+    "original": {
+      "path": "workbench/incoming/media/commons-feline-skeleton-msu/original-Felis_catus_skeleton.JPG",
+      "commonsSha1": "de3c953aec9e96b33d80f442491fff61b43d9ca3",
+      "sha256": "1262bfcedda3f9f56eec1242c98c3dd73ec79e2f06604678fac5198db69066bf",
+      "byteSize": 3899392,
+      "width": 4912,
+      "height": 2760
+    },
+    "published": {
+      "path": "/media/feline/commons-feline-skeleton-msu.jpg",
+      "sha256": "b33b9f48ea9415b7036fb3c1ee7553443d63fffcfb8c3c9ac9e3bd758cd50bfe",
+      "byteSize": 116856,
+      "width": 1600,
+      "height": 899
+    },
+    "thumbnail": {
+      "path": "/media/feline/thumbs/commons-feline-skeleton-msu.jpg",
+      "sha256": "63c128b3b87c093eea21ec1569c4a16540bd9632e1ea394153f12db559fe400d",
+      "byteSize": 18807,
+      "width": 480,
+      "height": 270
+    },
+    "transformation": "Copia derivada con sharp 0.35.5: orientación EXIF aplicada, reducción proporcional a 1600 px (miniatura 480 px) en el lado mayor, JPEG calidad 82 (mozjpeg) y metadatos EXIF/XMP eliminados. Sin recorte, retoque ni anotaciones."
+  }
+]

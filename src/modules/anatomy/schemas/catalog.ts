@@ -14,7 +14,7 @@ export const regionSchema = z.strictObject({id:idSchema,spanishName:text,parentI
 export const systemSchema = z.strictObject({id:idSchema,spanishName:text});
 export const layerSchema = z.strictObject({id:idSchema,spanishName:text,kinds:z.array(structureKindSchema)});
 export const photoRefSchema = z.strictObject({id:idSchema,url:z.url(),sourceId:idSchema,license:licenseSchema});
-export const fieldEvidenceSchema = z.strictObject({field:z.enum(['canonicalLatinName','spanishName','aliases','summary','detailedDescription','morphology','location','landmarks','function','attachments','vascularSupply','innervation','speciesDifferences']),sourceId:idSchema,locator:text,claim:text});
+export const fieldEvidenceSchema = z.strictObject({field:z.enum(['canonicalLatinName','spanishName','aliases','summary','detailedDescription','morphology','location','landmarks','function','attachments','vascularSupply','innervation','speciesDifferences','origin','insertion','action']),sourceId:idSchema,locator:text,claim:text});
 export const structureSchema = z.strictObject({
  id:idSchema,speciesId:idSchema,regionId:idSchema,systemId:idSchema,kind:structureKindSchema,canonicalLatinName:text,spanishName:text,aliases:texts,summary:text,
  detailedDescription:text.optional(),morphology:text.optional(),location:text.optional(),origin:texts.optional(),insertion:texts.optional(),action:texts.optional(),function:texts.optional(),innervation:texts.optional(),vascularSupply:texts.optional(),attachments:texts.optional(),landmarks:texts.optional(),speciesDifferences:texts.optional(),

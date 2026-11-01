@@ -1,0 +1,1176 @@
+{
+  "batchId": "canine-L-C4",
+  "speciesId": "canine",
+  "author": "A4",
+  "structures": [
+    {
+      "id": "canine:occipital",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os occipitale",
+      "spanishName": "Hueso occipital",
+      "aliases": [
+        "occipital",
+        "os occipitale"
+      ],
+      "summary": "Hueso caudal del cráneo canino, con cresta nucal prominente y angulosa dirigida caudalmente; incorpora el interparietal, que se fusiona con él antes del nacimiento.",
+      "detailedDescription": "La cresta nucal es prominente, angulosa y dirigida caudalmente; justo ventral a ella hay dos impresiones o tubérculos rugosos para fijación muscular. La superficie ventral a ellos es convexa transversalmente y cóncava dorsoventralmente. A cada lado, en la unión con la escama del temporal, está el foramen mastoideo, que se abre en la cavidad craneal. Los cóndilos están algo aplanados y muy separados dorsalmente; medial a cada uno hay un conducto condilar corto que se abre en el conducto temporal. Los procesos paracondilares son muy cortos. La parte basilar es ancha y se une a cada lado con la bulla timpánica; su cara ventral es plana y lleva tubérculos en la unión con la bulla. El foramen del hipogloso es pequeño y está cerca del «foramen lacerum posterius», limitado rostralmente por la bulla y caudal y medialmente por el occipital. El interparietal se fusiona con el occipital antes del nacimiento, lleva la parte caudal alta de la cresta parietal, se encaja entre los dos parietales y forma la parte central de la tienda ósea, delgada, curvada y cóncava ventralmente. La superficie nucal es más o menos triangular, de base ventral; en algunos cráneos hay una cresta occipital media delgada y en otros una elevación redondeada. El foramen magno varía mucho de forma; lo más frecuente es que predomine el diámetro transversal.",
+      "attachments": [
+        "Dos impresiones o tubérculos rugosos ventrales a la cresta nucal, para fijación muscular (la fuente no precisa los músculos)"
+      ],
+      "landmarks": [
+        "Squama occipitalis — escama occipital",
+        "Crista nuchae — cresta nucal",
+        "Crista occipitalis externa — cresta occipital externa",
+        "Processus interparietalis — proceso interparietal",
+        "Processus tentoricus — proceso tentorial",
+        "Pars lateralis — parte lateral",
+        "Condylus occipitalis — cóndilo occipital",
+        "Canalis condylaris — conducto condilar",
+        "Processus paracondylaris — proceso paracondilar",
+        "Canalis n. hypoglossi — conducto del nervio hipogloso",
+        "Pars basilaris — parte basilar",
+        "Foramen magnum — foramen magno"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Ossa cranii, Os occipitale",
+          "claim": "Término NAV «Os occipitale»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Ossa cranii, Os occipitale",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Os occipitale",
+          "claim": "Término latino y forma abreviada."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.188",
+          "claim": "Cresta nucal prominente, angulosa y dirigida caudalmente."
+        },
+        {
+          "field": "summary",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 13, p.25 (Processus interparietalis)",
+          "claim": "Proceso formado por la fusión prenatal del interparietal con la escama occipital «in the dog»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.188",
+          "claim": "Cresta e impresiones nucales, foramen mastoideo, cóndilos, conducto condilar, procesos paracondilares, parte basilar, foramen del hipogloso."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.189 (interparietal bone)",
+          "claim": "Fusión prenatal del interparietal, cresta parietal caudal y tienda ósea."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The skull as a whole, pp.196–197",
+          "claim": "Superficie nucal triangular, cresta occipital media variable y forma del foramen magno."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.188",
+          "claim": "«two rough imprints or tubercles for muscular attachment»."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Os occipitale; nota 14, p.25 (Crista nuchae en Carnivora)",
+          "claim": "Nombres latinos de los accidentes; la nota 14 atribuye la Crista nuchae afilada a Carnivora."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Paramastoid process» → Processus paracondylaris y «tentorium osseum» → Processus tentoricus son normalizaciones editoriales. «Foramen lacerum posterius», «conducto temporal» y «foramen mastoideo» se conservan como términos de la fuente sin correspondencia NAV comprobada. Los tubérculos de la parte basilar no se han asignado al Tuberculum musculare de NAV hasta cotejo. El interparietal no tiene ficha propia por su fusión prenatal."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:parietal",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os parietale",
+      "spanishName": "Hueso parietal",
+      "aliases": [
+        "parietal",
+        "os parietale"
+      ],
+      "summary": "Hueso par del techo craneal del perro, de contorno romboidal y muy curvado, que forma la mayor parte del techo de la cavidad craneal.",
+      "detailedDescription": "Es extenso, de contorno romboidal y muy curvado. En la unión de los huesos derecho e izquierdo hay una cresta parietal prominente que continúa sobre los frontales. El borde ventral se articula por su parte rostral con el ala temporal del esfenoides y en el resto con la escama del temporal. La cara externa participa en la fosa temporal; la cerebral presenta impresiones digitales y surcos para la arteria meníngea media y sus ramas. En las razas grandes la cresta parietal es muy fuerte y prominente; en los braquicéfalos extremos se borra más o menos caudalmente y la forma solo el interparietal.",
+      "landmarks": [
+        "Facies externa — cara externa",
+        "Facies interna — cara interna",
+        "Crista sagittalis externa — cresta sagital externa",
+        "Linea temporalis — línea temporal",
+        "Margo sagittalis — borde sagital",
+        "Margo squamosus — borde escamoso",
+        "Margo frontalis — borde frontal",
+        "Margo occipitalis — borde occipital",
+        "Margo interparietalis — borde interparietal"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Ossa cranii, Os parietale",
+          "claim": "Término NAV «Os parietale»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Ossa cranii, Os parietale",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Os parietale",
+          "claim": "Término latino y forma abreviada."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.189",
+          "claim": "«rhomboid in outline and is strongly curved… forms the greater part of the roof of the cranial cavity»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.189",
+          "claim": "Cresta parietal, articulaciones del borde ventral, caras externa y cerebral."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The skull as a whole, p.195",
+          "claim": "Cresta parietal fuerte en razas grandes y borrada caudalmente en braquicéfalos extremos."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Os parietale",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Parietal crest» de la fuente → Crista sagittalis externa (normalización editorial, como en canine:skull). Los surcos de la arteria meníngea media son accidentes de la cara cerebral, no irrigación del hueso, y por eso vascularSupply queda pendiente."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:frontal",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os frontale",
+      "spanishName": "Hueso frontal",
+      "aliases": [
+        "frontal",
+        "os frontale"
+      ],
+      "summary": "Hueso par del cráneo canino con proceso supraorbitario muy corto, sin foramen supraorbitario y con el seno frontal confinado a él.",
+      "detailedDescription": "La cara externa está cruzada por una cresta frontal que se extiende en curva desde la cresta parietal hasta el proceso supraorbitario y separa las partes frontal y temporal. Las partes frontales de ambos huesos forman una depresión central y descienden rostralmente. El proceso supraorbitario es muy corto, por lo que el margen supraorbitario es incompleto, y falta el foramen supraorbitario. Rostralmente hay una parte nasal estrecha y puntiaguda que se encaja entre el nasal y el maxilar. Las partes orbitaria y temporal son relativamente extensas. Suelen existir dos forámenes etmoidales. El seno frontal está confinado al hueso frontal.",
+      "landmarks": [
+        "Squama frontalis — escama frontal",
+        "Margo supraorbitalis — margen supraorbitario",
+        "Facies temporalis — cara temporal",
+        "Processus zygomaticus — proceso cigomático (proceso supraorbitario de la fuente)",
+        "Pars nasalis — parte nasal",
+        "Pars orbitalis — parte orbitaria",
+        "Foramina ethmoidalia — forámenes etmoidales",
+        "Sinus frontalis — seno frontal"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Ossa cranii, Os frontale",
+          "claim": "Término NAV «Os frontale»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Ossa cranii, Os frontale",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.14; Os frontale",
+          "claim": "Término latino y forma abreviada."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.189",
+          "claim": "Proceso supraorbitario muy corto, ausencia de foramen supraorbitario y seno frontal confinado al frontal."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, p.189",
+          "claim": "Cresta frontal, depresión central, proceso supraorbitario, parte nasal, partes orbitaria y temporal, forámenes etmoidales y seno."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.14–15; Os frontale",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Supraorbital process» → Processus zygomaticus del frontal es normalización editorial pendiente de cotejo. La «frontal crest» externa de Sisson NO se asigna a la Crista frontalis de NAV (que está en la Facies interna); queda como término de la fuente. La comparación de Sisson con el cerdo (margen incompleto) se omite."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:temporal",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os temporale",
+      "spanishName": "Hueso temporal",
+      "aliases": [
+        "temporal",
+        "os temporale"
+      ],
+      "summary": "Hueso par del cráneo canino cuyas partes se fusionan pronto; tiene una bulla timpánica muy grande, redondeada y lisa y un meato acústico externo ancho y muy corto.",
+      "detailedDescription": "Las partes del temporal se fusionan pronto. El proceso cigomático se curva ampliamente hacia lateral y rostral; su parte rostral está biselada ventralmente y se articula extensamente con el proceso correspondiente del cigomático. La superficie articular para el cóndilo de la mandíbula es un surco transversal que continúa sobre la cara rostral de un gran proceso retroarticular («postglenoid process»); caudal a él está la abertura ventral del conducto temporal. No hay tubérculo articular («there is no condyle»). La parte mastoidea es pequeña, pero tiene un proceso mastoideo distinto. El meato acústico externo es ancho y muy corto, de modo que en el cráneo seco puede verse el interior de la cavidad timpánica. La bulla timpánica es muy grande, redondeada y lisa; su lado medial se une a la parte basilar del occipital. Por encima de esa unión, cubierto por la unión de la parte petrosa y el basioccipital, está el conducto petrobasilar, que transmite una vena desde el suelo del cráneo hasta el «foramen lacerum posterius»; este transmite los nervios craneales IX, X y XI. El conducto carotídeo se separa del petrobasilar, pasa rostralmente por la parte medial de la bulla y se abre en el foramen carotídeo; transmite la arteria carótida interna. La abertura de la tuba auditiva está inmediatamente lateral al foramen carotídeo. Los procesos muscular e hioideo son muy rudimentarios. La parte petrosa sobresale en la cavidad craneal y forma una cresta petrosa aguda; su cara medial tiene una fosa flocular profunda dorsal al meato acústico interno, y su ángulo rostral está perforado por el conducto del nervio trigémino.",
+      "landmarks": [
+        "Pars squamosa — parte escamosa",
+        "Processus zygomaticus — proceso cigomático",
+        "Fossa mandibularis — fosa mandibular",
+        "Processus retroarticularis — proceso retroarticular",
+        "Pars petrosa — parte petrosa",
+        "Processus mastoideus — proceso mastoideo",
+        "Crista partis petrosae — cresta de la parte petrosa",
+        "Meatus acusticus internus — meato acústico interno",
+        "Canalis n. trigemini — conducto del nervio trigémino",
+        "Pars tympanica — parte timpánica",
+        "Meatus acusticus externus — meato acústico externo",
+        "Bulla tympanica — bulla timpánica",
+        "Canalis caroticus — conducto carotídeo",
+        "Processus muscularis — proceso muscular"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Ossa cranii, Os temporale",
+          "claim": "Término NAV «Os temporale»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Ossa cranii, Os temporale",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Os temporale",
+          "claim": "Término latino y forma abreviada."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, pp.189–190",
+          "claim": "Fusión temprana de las partes; bulla muy grande, redondeada y lisa; meato externo ancho y muy corto."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, pp.189–190",
+          "claim": "Proceso cigomático, superficie articular, proceso postglenoideo, parte mastoidea, meatos, bulla, conductos petrobasilar y carotídeo, parte petrosa."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Fig. 208 (Skull of dog; lateral view), p.189",
+          "claim": "Bulla, meato acústico externo, abertura externa del conducto temporal, proceso postglenoideo y proceso cigomático del temporal rotulados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.13–14; Os temporale (Pars petrosa, Pars tympanica, Pars squamosa)",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Postglenoid process» → Processus retroarticularis, «condyle» del temporal → Tuberculum articulare (ausente), «Eustachian opening» → abertura de la tuba auditiva y «petrosal crest» → Crista partis petrosae son normalizaciones editoriales. «Petro-basilar canal», «foramen lacerum posterius», «floccular fossa» y «temporal canal» se conservan como términos de la fuente sin correspondencia NAV comprobada. Los nervios y vasos citados atraviesan conductos del hueso; no son su irrigación (vascularSupply pendiente)."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:basisphenoid",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os basisphenoidale",
+      "spanishName": "Hueso basiesfenoides",
+      "aliases": [
+        "basiesfenoides",
+        "esfenoides caudal",
+        "postesfenoides"
+      ],
+      "summary": "Parte caudal del esfenoides del perro (postesfenoides en la fuente), con fosa hipofisaria poco profunda, dorso de la silla bien desarrollado y alas temporales extensas.",
+      "detailedDescription": "La fosa hipofisaria es poco profunda, pero el dorso de la silla está bien desarrollado y lleva procesos clinoides caudales. Las alas temporales son extensas y se articulan dorsalmente con los parietales. El foramen redondo se abre en el conducto alar, que atraviesa la raíz del proceso pterigoideo, corto pero ancho. El foramen oval está cerca del borde caudal del ala temporal. No hay seno esfenoidal. NAV lista el basiesfenoides y el presfenoides como huesos separados porque, en los mamíferos domésticos salvo el cerdo, permanecen separados por la sincondrosis intraesfenoidal.",
+      "landmarks": [
+        "Corpus — cuerpo",
+        "Fossa hypophysialis — fosa hipofisaria",
+        "Dorsum sellae — dorso de la silla",
+        "Processus clinoideus caudalis — proceso clinoides caudal",
+        "Ala — ala (ala temporal de la fuente)",
+        "Foramen rotundum — foramen redondo",
+        "Foramen ovale — foramen oval",
+        "Processus pterygoideus — proceso pterigoideo",
+        "Canalis alaris — conducto alar"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Ossa cranii, Os basisphenoidale",
+          "claim": "Término NAV «Os basisphenoidale»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.12; Ossa cranii, Os basisphenoidale",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Fig. 212 (Sagittal section of skull of dog), p.193, leyenda B′ «postsphenoid»",
+          "claim": "Término histórico «postsphenoid» de la fuente."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, pp.190–191",
+          "claim": "Fosa hipofisaria poco profunda, dorso de la silla desarrollado y alas temporales extensas."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, pp.190–191",
+          "claim": "Dorso de la silla y procesos clinoides caudales, alas temporales, foramen redondo y conducto alar, foramen oval, ausencia de seno esfenoidal."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, nota 18, p.25 (Os basisphenoidale, Os presphenoidale)",
+          "claim": "Huesos separados por la sincondrosis intraesfenoidal en mamíferos domésticos salvo el cerdo."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.12–13; Os basisphenoidale",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). Sisson describe el «sphenoid bone» de forma conjunta; la asignación al basiesfenoides de las alas temporales, el dorso de la silla, el foramen redondo, el oval y el proceso pterigoideo sigue la lista NAV y es editorial. La frase de Sisson «the body of the sphenoid bone is flattened dorso-ventrally» no se asigna a ninguno de los dos huesos. Sisson dice «there is no sphenoidal sinus» del esfenoides en conjunto. La edad de fusión con el occipital y el presfenoides en el perro no está documentada aquí."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:presphenoid",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os presphenoidale",
+      "spanishName": "Hueso presfenoides",
+      "aliases": [
+        "presfenoides",
+        "esfenoides rostral",
+        "os praesphenoidale"
+      ],
+      "summary": "Parte rostral del esfenoides del perro, con alas orbitarias relativamente pequeñas atravesadas por el conducto óptico y procesos clinoides rostrales.",
+      "detailedDescription": "De las raíces de las alas orbitarias se proyectan caudalmente un par de procesos clinoides rostrales («orales» en la fuente). Las alas orbitarias son relativamente pequeñas y están cruzadas lateralmente por una cresta que continúa rostralmente sobre el palatino. El foramen óptico atraviesa el ala orbitaria; el «foramen orbitale» está algo más ventral, en la unión de las alas. No hay seno esfenoidal.",
+      "landmarks": [
+        "Corpus — cuerpo",
+        "Ala — ala (ala orbitaria de la fuente)",
+        "Canalis opticus — conducto óptico",
+        "Processus clinoideus rostralis — proceso clinoides rostral"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Ossa cranii, Os presphenoidale [prae-]",
+          "claim": "Término NAV «Os presphenoidale»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Ossa cranii, Os presphenoidale [prae-]",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Os presphenoidale [prae-]",
+          "claim": "Grafía alternativa «prae-» indicada por NAV."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, pp.190–191",
+          "claim": "Alas orbitarias relativamente pequeñas, foramen óptico y procesos clinoides rostrales."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Bones of the skull, Cranium, pp.190–191",
+          "claim": "Procesos clinoides orales, alas orbitarias con cresta, foramen óptico, foramen orbital y ausencia de seno esfenoidal."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.13; Os presphenoidale [prae-]",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). Asignación editorial al presfenoides de los rasgos que Sisson describe para el «sphenoid bone» (alas orbitarias, procesos clinoides orales, foramen óptico), siguiendo la lista NAV. «Optic foramen» → Canalis opticus es normalización editorial. El «foramen orbitale» de Sisson no se asigna a la Fissura orbitalis ni al Foramen orbitorotundum de NAV (este último marcado or, su, Ru). La cresta lateral de las alas no se ha asignado a la Crista orbitosphenoidalis hasta cotejo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:maxilla",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Maxilla",
+      "spanishName": "Maxilar",
+      "aliases": [
+        "maxilar",
+        "maxilla",
+        "maxilar superior"
+      ],
+      "summary": "Hueso par de la cara del perro, corto pero muy alto caudalmente, sin cresta facial, con el foramen infraorbitario sobre el alveolo del tercer premolar.",
+      "detailedDescription": "Falta la cresta facial. El foramen infraorbitario está sobre el alveolo del tercer premolar y el conducto infraorbitario es corto. El proceso frontal se encaja en una escotadura profunda entre las partes nasal y orbitaria del frontal, y la parte media del borde caudal sigue el margen orbitario. Hay yugos alveolares más o menos marcados sobre los dientes canino y molares. El proceso cigomático es corto y delgado, queda completamente cubierto lateralmente por el cigomático y está perforado por varios forámenes alveolares. En el adulto no hay tuberosidad maxilar, pero detrás del último alveolo existe una proyección puntiaguda («pterygoid process» en la fuente). La cara nasal lleva rostralmente una cresta conchal corta, detrás de la cual es muy cóncava y forma la pared lateral del receso maxilar. El proceso palatino es corto, ancho caudalmente y moderadamente arqueado. El surco palatino es distinto. El gran alveolo del canino se completa con el incisivo. El alveolo del primer premolar es pequeño y está separado del canino por un pequeño intervalo; los dos siguientes tienen partes rostral y caudal para las raíces; el cuarto y el quinto son mucho mayores y tienen tres partes; el último es pequeño y tiene tres divisiones.",
+      "morphology": "Corto, pero muy alto caudalmente.",
+      "landmarks": [
+        "Corpus maxillae — cuerpo del maxilar",
+        "Facies facialis — cara facial",
+        "Foramen infraorbitale — foramen infraorbitario",
+        "Canalis infraorbitalis — conducto infraorbitario",
+        "Juga alveolaria — yugos alveolares",
+        "Foramina alveolaria — forámenes alveolares",
+        "Facies nasalis — cara nasal",
+        "Crista conchalis — cresta conchal",
+        "Recessus maxillaris — receso maxilar",
+        "Processus frontalis — proceso frontal",
+        "Processus zygomaticus — proceso cigomático",
+        "Processus palatinus — proceso palatino",
+        "Sulcus palatinus — surco palatino",
+        "Processus alveolaris — proceso alveolar",
+        "Alveoli dentales — alveolos dentarios"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Ossa faciei, Maxilla",
+          "claim": "Término NAV «Maxilla»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Ossa faciei, Maxilla",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Maxilla",
+          "claim": "Término latino; «maxilar superior» es alias coloquial editorial."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.191",
+          "claim": "«short, but very high posteriorly. The facial crest is absent. The infraorbital foramen is over the alveolus for the third premolar»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, pp.191–193",
+          "claim": "Proceso frontal, yugos, proceso cigomático, proyección caudal, cara nasal y seno, proceso palatino, surco palatino, alveolos y conducto infraorbitario."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.191",
+          "claim": "Corto y muy alto caudalmente."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.15–16; Maxilla; Processus frontalis (Car)",
+          "claim": "Nombres latinos de los accidentes; Processus frontalis marcado (Car)."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "Notes to Osteologia, nota 7, p.24",
+          "claim": "En Carnivora no existe seno maxilar: Recessus maxillaris."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Turbinate crest» → Crista conchalis y «palatine groove» → Sulcus palatinus son normalizaciones editoriales. El «anterior palatine foramen» de Sisson (en o junto a la sutura palatina transversa) no se asigna a un término NAV hasta cotejo. La «pointed projection, the pterygoid process» tras el último alveolo no se traslada a NAV. Se omite la Crista facialis por estar ausente según la fuente."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:incisive",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os incisivum",
+      "spanishName": "Hueso incisivo",
+      "aliases": [
+        "incisivo",
+        "premaxilar",
+        "premaxila",
+        "os incisivum"
+      ],
+      "summary": "Hueso par rostral de la cara del perro (premaxila en la fuente), con tres alveolos incisivos y un largo proceso nasal.",
+      "detailedDescription": "El cuerpo está comprimido dorsoventralmente y contiene tres alveolos para los dientes incisivos, que aumentan de tamaño del primero al tercero; también completa la pared medial del gran alveolo del canino. El foramen incisivo es muy pequeño salvo en cráneos grandes. El borde interalveolar es ancho y muy corto. El proceso nasal es ancho en su origen y se afila caudalmente: su parte rostral se curva dorsal, caudal y algo medialmente y forma el margen lateral de la abertura nasal ósea; su parte caudal se extiende largamente entre el nasal y el maxilar. El proceso palatino se dirige dorsal y lateralmente y forma con el del lado opuesto un surco ancho para el cartílago septal; su extremo caudal es puntiagudo, se encaja en una escotadura entre los procesos palatinos de los maxilares y sostiene el extremo del vómer. La fisura palatina es corta pero ancha.",
+      "landmarks": [
+        "Corpus ossis incisivi — cuerpo del incisivo",
+        "Processus alveolaris — proceso alveolar",
+        "Alveoli dentales — alveolos dentarios",
+        "Margo interalveolaris — borde interalveolar",
+        "Processus nasalis — proceso nasal",
+        "Processus palatinus — proceso palatino"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os incisivum",
+          "claim": "Término NAV «Os incisivum»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os incisivum",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.193 (premaxilla)",
+          "claim": "Término histórico «premaxilla» de la fuente."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.193",
+          "claim": "Tres alveolos incisivos; proceso nasal largo."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.193",
+          "claim": "Cuerpo, alveolos, foramen incisivo, borde interalveolar, procesos nasal y palatino, fisura palatina."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os incisivum",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Foramen incisivum» y «palatine fissure» se conservan con los nombres de la fuente; no se han cotejado con NAV."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:nasal",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os nasale",
+      "spanishName": "Hueso nasal",
+      "aliases": [
+        "nasal",
+        "os nasale"
+      ],
+      "summary": "Hueso par del dorso de la nariz del perro; en la mayoría de las razas es largo y más ancho rostral que caudalmente.",
+      "detailedDescription": "En la mayoría de las razas los nasales son largos y más anchos rostral que caudalmente. La cara facial es más o menos cóncava en su longitud y se inclina hacia la sutura media, formando un surco central. Los bordes mediales se dirigen ventralmente y forman una cresta nasal interna que se hace muy prominente caudalmente. Las partes caudales se encajan en una escotadura formada por los frontales. Los extremos rostrales forman una incisura nasal casi semicircular. La región nasal es estrecha en el cráneo en general y, en los braquicéfalos extremos, muy corta, relativamente ancha y deprimida en el centro.",
+      "landmarks": [
+        "Facies externa — cara externa",
+        "Facies interna — cara interna"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Ossa faciei, Os nasale",
+          "claim": "Término NAV «Os nasale»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Ossa faciei, Os nasale",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Os nasale",
+          "claim": "Término latino y forma abreviada."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.194",
+          "claim": "«(in most breeds) long and wider in front than behind»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.194",
+          "claim": "Cara facial, cresta nasal interna, relación con los frontales e incisura nasal."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The skull as a whole, p.195",
+          "claim": "Región nasal estrecha; muy corta y ancha en braquicéfalos extremos."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.15; Os nasale",
+          "claim": "Nombres latinos de las caras."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). La «internal nasal crest» de Sisson no se ha asignado a un término NAV (Processus septalis o Crista ethmoidalis) hasta cotejo."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:zygomatic",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os zygomaticum",
+      "spanishName": "Hueso cigomático",
+      "aliases": [
+        "cigomatico",
+        "malar",
+        "hueso malar",
+        "os zygomaticum"
+      ],
+      "summary": "Hueso par de la cara del perro (malar en la fuente), cuyo largo proceso, muy curvado, forma la mayor parte del hueso y del arco cigomático rostral.",
+      "detailedDescription": "El gran proceso cigomático de la fuente (proceso temporal en NAV) constituye la mayor parte del hueso; es muy largo y está muy curvado. Su borde dorsal es convexo, libre rostralmente, donde forma parte del margen orbitario, y biselado caudalmente para articularse con el proceso cigomático del temporal. Entre ambos lleva una eminencia, el proceso frontal, en la que se fija el ligamento orbitario. El cuerpo puede considerarse formado por un proceso lagrimal dirigido dorsalmente, que se encaja entre el lagrimal y el maxilar, y un proceso maxilar dirigido ventralmente. La cara facial es convexa.",
+      "attachments": [
+        "Proceso frontal: fijación del ligamento orbitario"
+      ],
+      "landmarks": [
+        "Facies lateralis — cara lateral",
+        "Facies orbitalis — cara orbitaria",
+        "Processus temporalis — proceso temporal",
+        "Processus frontalis — proceso frontal",
+        "Margo infraorbitalis — margen infraorbitario"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os zygomaticum",
+          "claim": "Término NAV «Os zygomaticum»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os zygomaticum",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.194 (malar bone)",
+          "claim": "Término histórico «malar bone» de la fuente."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.194",
+          "claim": "«The large zygomatic process constitutes the bulk of the malar bone. It is very long and is strongly curved»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.194",
+          "claim": "Borde dorsal, articulación con el temporal, processus frontalis, procesos lagrimal y maxilar, cara facial."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.194",
+          "claim": "«the processus frontalis, to which the orbital ligament is attached»."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os zygomaticum",
+          "claim": "Nombres latinos de los accidentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Zygomatic process of the malar» → Processus temporalis (NAV) es normalización editorial. Los «lacrimal process» y «maxillary process» de la fuente no tienen término NAV en Os zygomaticum y se conservan como descripción."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:palatine",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os palatinum",
+      "spanishName": "Hueso palatino",
+      "aliases": [
+        "palatino",
+        "os palatinum"
+      ],
+      "summary": "Hueso par del paladar y la pared de la fosa pterigopalatina del perro; su lámina horizontal forma cerca de un tercio del paladar duro.",
+      "detailedDescription": "La parte horizontal es extensa y forma aproximadamente un tercio del paladar duro; presenta un número variable de forámenes palatinos accesorios y suele haber una espina nasal caudal puntiaguda al final de la sutura media. El conducto palatino se forma a veces enteramente en este hueso. La parte perpendicular es aún más extensa; su cara lateral es en su mayoría libre y forma la mayor parte de la pared medial de la gran fosa pterigopalatina. El foramen maxilar está en un receso profundo entre este hueso y el proceso cigomático del maxilar; justo dorsal a él suele haber otro foramen que se abre en la cavidad nasal. Los forámenes palatino caudal y esfenopalatino están más caudales y algo más ventrales, el primero ventral al segundo. Una lámina horizontal de la cara nasal se une con la del lado opuesto y completa la «lamina transversalis». No hay seno palatino.",
+      "landmarks": [
+        "Lamina horizontalis — lámina horizontal",
+        "Spina nasalis caudalis — espina nasal caudal",
+        "Lamina perpendicularis — lámina perpendicular",
+        "Foramen sphenopalatinum — foramen esfenopalatino"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os palatinum",
+          "claim": "Término NAV «Os palatinum»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Ossa faciei, Os palatinum",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os palatinum",
+          "claim": "Término latino y forma abreviada."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.193",
+          "claim": "La parte horizontal forma «about one-third of the hard palate»; la perpendicular forma la mayor parte de la pared medial de la fosa pterigopalatina."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.193",
+          "claim": "Partes horizontal y perpendicular, forámenes, espina nasal caudal, lamina transversalis y ausencia de seno palatino."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Os palatinum",
+          "claim": "Nombres latinos de los accidentes."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.193",
+          "claim": "«posterior nasal spine (Spina nasalis aboralis)», normalizada a Spina nasalis caudalis."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). «Horizontal/perpendicular part» → Lamina horizontalis/perpendicularis, «Spina nasalis aboralis» → Spina nasalis caudalis: normalizaciones editoriales. «Accessory palatine foramina», «palatine canal» y «posterior palatine foramen» no se han asignado a Foramina palatina minora, Canalis palatinus major ni Foramen palatinum majus hasta cotejo. «Lamina transversalis» es término de la fuente."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:mandible",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Mandibula",
+      "spanishName": "Mandíbula",
+      "aliases": [
+        "mandibula",
+        "maxilar inferior",
+        "hemimandibula"
+      ],
+      "summary": "Hueso de la mandíbula del perro, formado por dos mitades que no se fusionan por completo ni siquiera en la vejez, de modo que la sínfisis mandibular es permanente.",
+      "detailedDescription": "Las dos mitades no se fusionan por completo ni en la vejez, por lo que hay una sínfisis mandibular permanente. El cuerpo presenta seis alveolos para los incisivos, que aumentan de tamaño del primero al tercero, y dos para los caninos, que se extienden profundamente en dirección ventral y caudal. El borde ventral de la parte horizontal es convexo en su longitud, grueso y redondeado. El borde alveolar es algo cóncavo en su longitud y ligeramente evertido, sobre todo en su parte media, y presenta siete alveolos para los dientes yugales inferiores. El espacio interalveolar es muy corto o falta. Hay dos o tres forámenes mentonianos a cada lado. La rama (parte vertical) es relativamente pequeña; su cara lateral presenta una fosa maseterina profunda que invade el proceso coronoides y está limitada por crestas rostral y ventralmente. La cara medial es convexa y tiene el foramen mandibular. Aproximadamente a su altura está el proceso angular, rugoso, que se proyecta caudalmente desde el borde caudal. El cóndilo está muy bajo, no mucho más alto que el vértice del canino cuando el hueso reposa sobre una superficie plana; es largo transversalmente y la parte medial de su superficie articular es mucho más ancha y se extiende sobre la cara caudal. El proceso coronoides es muy extenso y está algo inclinado hacia lateral y caudal. El ángulo de divergencia de las ramas varía de 25 a 30 grados; es menor en el galgo y mayor en braquicéfalos extremos.",
+      "landmarks": [
+        "Corpus mandibulae — cuerpo de la mandíbula",
+        "Pars incisiva — parte incisiva",
+        "Pars molaris — parte molar",
+        "Margo alveolaris — borde alveolar",
+        "Margo ventralis — borde ventral",
+        "Foramina mentalia — forámenes mentonianos",
+        "Alveoli dentales — alveolos dentarios",
+        "Margo interalveolaris — borde interalveolar",
+        "Ramus mandibulae — rama de la mandíbula",
+        "Processus angularis — proceso angular",
+        "Fossa masseterica — fosa maseterina",
+        "Foramen mandibulae — foramen mandibular",
+        "Processus coronoideus — proceso coronoides",
+        "Incisura mandibulae — incisura mandibular",
+        "Processus condylaris — proceso condilar"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.16–17; Ossa faciei, Mandibula",
+          "claim": "Término NAV «Mandibula»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.16–17; Ossa faciei, Mandibula",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.16; Mandibula",
+          "claim": "Término latino; «maxilar inferior» y «hemimandíbula» son alias editoriales."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.194",
+          "claim": "«The two halves of the mandible do not fuse completely even in old age… permanent symphysis mandibulae»."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, pp.194–195",
+          "claim": "Sínfisis, alveolos incisivos, caninos y yugales, bordes, forámenes mentonianos, fosa maseterina, foramen mandibular, proceso angular, cóndilo y proceso coronoides."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, The skull as a whole, p.196",
+          "claim": "Divergencia de las ramas de 25 a 30 grados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.16–17; Mandibula",
+          "claim": "Nombres latinos de los accidentes."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Fig. 213 (Right half of mandible of dog; medial view), p.194",
+          "claim": "Proceso coronoides, incisura mandibular, cóndilo, proceso angular, superficie sinfisaria y foramen mandibular rotulados."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal en la cabeza, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson describe un tipo intermedio (p. ej., fox terrier) y deja las diferencias de braquicéfalos y dolicocéfalos para «The skull as a whole» (nota al pie, p.188). Ficha de un término NAV único (Mandibula) que en el perro conserva dos mitades unidas por sínfisis. La comparación de Sisson con el cerdo (divergencia de las ramas) se omite. Las fijaciones musculares (masetero, pterigoideos) no se incluyen: la sección osteológica de Sisson no las atribuye, y las notas NAV 35 (Fossa/Fovea pterygoidea) no tienen marca de especie."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "canine:hyoid-apparatus",
+      "speciesId": "canine",
+      "regionId": "head",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Apparatus hyoideus",
+      "spanishName": "Aparato hioideo",
+      "aliases": [
+        "hioides",
+        "aparato hioideo",
+        "os hyoideum"
+      ],
+      "summary": "Conjunto óseo, no un hueso único: el aparato hioideo del perro, con un cuerpo transversal sin proceso lingual y varios pares de astas unidas por cartílago.",
+      "detailedDescription": "El cuerpo es una barra transversal ligeramente curvada, comprimida rostrocaudalmente, sin proceso lingual. Las astas tiroideas están unidas permanentemente al cuerpo por cartílago, divergen mucho, se curvan hacia medial y están comprimidas lateralmente. Las astas pequeñas son cortas, prismáticas y fuertes. Las astas medias suelen ser algo más largas que las grandes; están comprimidas lateralmente y algo ensanchadas en los extremos, que se unen por cartílago a las astas adyacentes. Las astas grandes están dobladas hacia lateral y algo retorcidas. (Nombres de las astas según la fuente; ver notas para su correspondencia con NAV.)",
+      "landmarks": [
+        "Basihyoideum [Corpus] — basihioides (cuerpo)",
+        "Thyrohyoideum — tirohioides (astas tiroideas de la fuente)",
+        "Ceratohyoideum — ceratohioides",
+        "Epihyoideum — epihioides",
+        "Stylohyoideum — estilohioides"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "sisson-dog-1914"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Apparatus hyoideus [Os hyoideum]",
+          "claim": "Término NAV «Apparatus hyoideus»."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Apparatus hyoideus [Os hyoideum]",
+          "claim": "Traducción editorial al español del término NAV; NAV no contiene el nombre español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Apparatus hyoideus [Os hyoideum]; nota 36, p.26",
+          "claim": "Sinónimo NAV entre corchetes «Os hyoideum»."
+        },
+        {
+          "field": "summary",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.195 (hyoid bone)",
+          "claim": "Cuerpo sin proceso lingual; astas unidas por cartílago."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "sisson-dog-1914",
+          "locator": "Skeleton of the Dog, Face, p.195 (hyoid bone)",
+          "claim": "Cuerpo, astas tiroideas, pequeñas, medias y grandes."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Apparatus hyoideus [Os hyoideum]; nota 36, p.26",
+          "claim": "Nombres latinos comparativos de los componentes."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «upward/downward», «outward») normalizados editorialmente a NAV 6.ª (rostral/caudal, dorsal/ventral, lateral); cotejo con literatura canina moderna pendiente. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ficha de conjunto rotulada según la decisión «Fichas de conjunto» (DECISIONES, 2026-10-31). Correspondencias editoriales pendientes de cotejo: «body» → Basihyoideum; «thyroid cornua» → Thyrohyoideum; «small cornua» → Ceratohyoideum; «middle cornua» → Epihyoideum; «great cornua» → Stylohyoideum. Atención: el «great cornua» de Sisson NO equivale al «Cornu majus» que NAV da como sinónimo de Thyrohyoideum, porque Sisson describe las astas tiroideas aparte. Se omite el Tympanohyoideum de NAV porque Sisson no lo describe en el perro. El número de piezas no se fija."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "morphology",
+        "location",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    }
+  ],
+  "relations": [],
+  "sources": []
+}

@@ -278,5 +278,32 @@
     "sourceIds": [
       "reighard-jennings-cat-1901"
     ]
+  },
+  {
+    "id": "rel:feline:sacrum-articulates-os-coxae",
+    "fromId": "feline:sacrum",
+    "toId": "feline:os-coxae",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:occipital-articulates-atlas",
+    "fromId": "feline:occipital",
+    "toId": "feline:atlas",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:temporal-articulates-mandible",
+    "fromId": "feline:temporal",
+    "toId": "feline:mandible",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
   }
 ]

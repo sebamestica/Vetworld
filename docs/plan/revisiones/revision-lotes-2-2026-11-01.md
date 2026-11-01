@@ -17,7 +17,7 @@ Revisor: A7, agente de IA. Esta es una revisión de integridad documental y de l
   - Kim 2026 (PMC13280130), Covasa 2024 (PMC11148713), Tagliavia 2026 (PMC13359505), Requicha 2026 (PMC12784816) y Delibaş 2026 (PMC13663499): `fullTextXML` de Europe PMC, HTTP 200 en los cinco.
   - Página web de la AVDC (`avdc.org/avdc-nomenclature/`): una sola petición, HTTP 200.
 - No obtuve ningún 401/403/500 y no repetí peticiones fallidas.
-- Muestreo: 64 evidencias repartidas entre los 5 lotes y `canine:skull` (tabla 1). Fuera de la muestra leí además el texto de varios campos frente a las mismas páginas: de ahí salen algunos hallazgos, que se indican como tales.
+- Muestreo: 98 evidencias (97 filas) repartidas entre los 5 lotes y `canine:skull` (tabla 1). Fuera de la muestra leí además el texto de varios campos frente a las mismas páginas: de ahí salen algunos hallazgos, que se indican como tales.
 
 ## 1. Evidencias muestreadas
 
@@ -141,7 +141,7 @@ La columna # da el índice de la evidencia dentro de la ficha (orden de `fieldEv
 | 9 | canine:skull | detailedDescription | Sisson | pp.494–495 | CONFIRMADO (con inferencia) | Sisson: «The fourth tooth of the upper row and the fifth of the lower row… sectorial or carnassial» y «upper fourth premolar (Dens sectorius)». «Primer molar inferior» = quinto yugal inferior: deducción editorial correcta, pero sin rotular como deducción. |
 | 10 | canine:skull | detailedDescription | NAV | SPLANCHNOLOGIA p.50 | CONFIRMADO | Dens sectorius (Car), línea 5237. |
 
-**Total muestreado:** 64 evidencias: 18 de L-F4, 38 de L-F5 y 8 de cada uno de los grupos caninos. Algunas filas reúnen dos índices. Resultado: 57 CONFIRMADO (incluidos los parciales), 5 DÉBIL, 1 INCORRECTO parcial y 0 NO VERIFICABLE.
+**Total muestreado:** 98 evidencias en 97 filas: 19 de L-F4, 39 de L-F5, 14 de L-C3, 13 de L-C4, 7 de L-C5 y 6 de `canine:skull`. Resultado por fila: 93 CONFIRMADO (4 de ellos con matiz: parcial, OCR o inferencia), 2 CONFIRMADO/DÉBIL, 1 DÉBIL, 1 INCORRECTO parcial y 0 NO VERIFICABLE.
 
 **No verificado por lectura:**
 - Imágenes de página de Sisson.
@@ -168,3 +168,74 @@ No hay relaciones sin fuente para ambos extremos.
 | requicha-feline-orbit-ct-2026 | CC BY 4.0; Animals 16(1):147 | Igual; vol. 16, núm. 1, e147. | CORRECTO. |
 | delibas-van-cat-mandibular-canal-2026 | CC BY 4.0; Animals 16(19):3073 | Igual; vol. 16, núm. 19, e3073. | CORRECTO. |
 | avdc-nomenclature | © AVDC, sin licencia abierta del texto; permiso solo para imágenes con cita; `verified:false`; `redistributionAllowed:false` | La página dice: «Copyright of these images is owned by AVDC. Download of these images and use in printed materials or presentations is permitted without charge provided that the source is cited». No hay declaración de licencia para el texto. | CORRECTO. Citar la AVDC como fuente bibliográfica es adecuado: citar no es redistribuir. Las fichas parafrasean frases sueltas (numeración 206/407/408 y oclusión) y no copian texto extenso. El permiso para imágenes no autoriza a incorporarlas a la galería sin decisión aparte. |
+
+## 4. Comprobaciones transversales
+
+- **`review.status`:** las 46 fichas tienen `pending`. Ningún texto afirma validación científica: busqué «validad/verificad/confirmad/aprobad/revisad» en los cinco lotes nuevos sin resultados. Dos claims dicen «comprobado/a en la imagen de la página» (`canine:biceps-brachii` y `canine:skull`). Es una afirmación de lectura del autor del lote, no de validación; yo no la reproduje (ver tabla 1.3).
+- **Especie y muestra:**
+  - No hay traslado perro↔gato.
+  - Los datos de raza están rotulados con su muestra: persas y domésticos de pelo corto (Tagliavia), European Shorthair (Requicha), gatos Van (Delibaş). En `feline:skull` las notas aclaran que la variación entre razas no es diferencia de especie.
+  - Las comparaciones con el hombre (R&J) y con otras especies (NAV notas 18 y 30; Covasa, Tabla 2) están atribuidas.
+- **Recuentos:**
+  - Gato: 13 pares de costillas, 6 piezas del cuerpo esternal, 3 sacras, 30 dientes y 11 + 13 huesos del cráneo. Todos se atribuyen a R&J y no se presentan como universales; costillas y sacro llevan la variación de Kim y Covasa.
+  - Perro: 8 esternebras y 13 pares de costillas atribuidos a Sisson. Las excepciones son el sacro (N4) y la fórmula dentaria (N3).
+- **Fichas de conjunto (decisión 2026-10-31):**
+  - Rotuladas en el texto como varios huesos: feline:sternum, feline:ribs, feline:skull, feline:teeth, feline:hyoid-apparatus, canine:sternum, canine:ribs y canine:hyoid-apparatus.
+  - `canine:skull` **no** lo dice en su texto (B1).
+  - Las series vertebrales siguen sin ficha. C6, C7, atlas y axis son vértebras individuales y el sacro es un hueso fusionado, lo que es compatible con la decisión.
+- **Músculos (L-C5):** el esquema no admite `origin`, `insertion`, `action` ni `innervation` en `fieldEvidence.field`. Esos campos solo tienen respaldo por `sourceIds` de nivel de ficha (innervate-vr-canine-limb, umn-proximal-thoracic-limb, nav-6th-edition, sisson-dog-1914), que yo no comprobé salvo en Sisson. Ver N5.
+
+## 5. Hallazgos bloqueantes
+
+Hay que corregirlos antes de fusionar.
+
+**B1. `canine:skull` (canine-L-C1.json) no se rotula como ficha de conjunto en el texto visible.** La decisión «Fichas de conjunto» (DECISIONES, 2026-10-31) exige «que el texto diga explícitamente que son varios huesos». El `summary` («Esqueleto de la cabeza canina; su forma y tamaño varían…») y el `detailedDescription` no lo dicen; solo `review.notes` habla de «ficha de conjunto». La ficha felina equivalente sí lo dice («Conjunto óseo de la cabeza felina, no un hueso único»).
+Corrección: `summary` → «Conjunto óseo, no un hueso único: esqueleto de la cabeza canina; según Sisson, su forma y tamaño varían mucho entre razas dolicocéfalas, mesaticéfalas y braquicéfalas.» Sin cambios en `fieldEvidence` (#2 sigue siendo válida).
+
+**B2. `canine:maxilla` (canine-L-C4.json): término NAV mal aplicado a Carnivora.** El landmark «Sinus maxillaris — seno maxilar» y la frase «forma la pared lateral del seno maxilar» de `detailedDescription` contradicen NAV, OSTEOLOGIA, nota 7, p.24: «In Carnivora there is no Sinus maxillaris enclosed in the Maxilla; the Recessus is bounded… and in the dog also by the Os lacrimale». Sisson, p.197, coincide en el fondo: «rather a recess than a true sinus». La ficha felina de L-F5 lo hace bien.
+Corrección:
+- `landmarks`: sustituir por «Recessus maxillaris — receso maxilar (NAV, nota 7: en Carnivora no hay Sinus maxillaris)».
+- `detailedDescription`: «…forma la pared lateral del receso maxilar («maxillary sinus» en Sisson, que lo describe como receso más que seno verdadero, p.197)».
+- Añadir `fieldEvidence` `{field: "landmarks", sourceId: "nav-6th-edition", locator: "OSTEOLOGIA, nota 7, p.24; Facies, Recessus maxillaris", claim: "Ausencia de Sinus maxillaris en Carnivora; receso limitado también por el lagrimal en el perro"}`.
+
+## 6. Hallazgos no bloqueantes, con corrección propuesta
+
+- **N1. Dientes como `kind: "bone"` (decisión de esquema).** `feline:teeth` (L-F5) es dentición, no hueso. Las notas lo reconocen y lo remiten a A0. En el perro, la dentición vive dentro de `canine:skull` y no tiene ficha propia, así que las especies no son simétricas.
+  Corrección: registrar una decisión en `DECISIONES.md`, sea añadir un `kind` (p. ej. `tooth`) al esquema, sea aceptar `bone` con rótulo «Conjunto dentario, no hueso». Hasta entonces, mantener el rótulo «Conjunto de los dientes felinos, no un hueso» en la UI.
+
+- **N2. `feline:mandible` (L-F5), evidencia AVDC #5: lectura excesiva.** La página de la AVDC es un glosario («Rostral, middle or caudal mental foramina in the dog and cat»). No dice que existan siempre los tres.
+  Corrección: en `detailedDescription`, «La AVDC nombra forámenes mentonianos rostral, medio y caudal en el perro y el gato; Reighard y Jennings describen uno o dos: discrepancia pendiente». Ajustar el `claim` de #5 a «Nomenclatura de los forámenes mentonianos rostral, medio y caudal».
+
+- **N3. `canine:skull` (L-C1): fórmula dentaria sin atribución ni variación.** «La dentición permanente del perro tiene la fórmula… = 42» se enuncia como universal. Sisson, p.494, añade que en los braquicéfalos los yugales suelen reducirse, que puede haber dientes supernumerarios y que «a third upper molar is not rare». Además, «primer molar inferior» es la equivalencia editorial del «fifth of the lower row» de Sisson.
+  Corrección:
+  - Texto: «Según Sisson, la fórmula de la dentición permanente es 2 × (I 3/3, C 1/1, P 4/4, M 2/3) = 42; en razas braquicéfalas el número de yugales suele reducirse y pueden aparecer dientes supernumerarios (p.494). Sisson llama sectoriales al cuarto yugal superior (P4, Dens sectorius) y al quinto inferior (equivalencia editorial: primer molar).»
+  - Añadir el localizador p.494 a la evidencia #8.
+  - Recomendado: que una persona confirme la fórmula en la imagen de p.493, porque el OCR de los numeradores es ilegible y yo no abrí la imagen.
+  - El desajuste de título del registro `sisson-dog-1914` («Skeleton of the Dog») frente al capítulo digestivo ya está anotado. Conviene generalizar el título del registro o citar la obra completa.
+
+- **N4. `canine:sacrum` (L-C3): recuento sin atribuir en el `summary`.** «formado por la fusión temprana de tres vértebras sacras».
+  Corrección: «…de tres vértebras sacras según Sisson; la primera caudal se une a veces al sacro (p.188)». Así queda alineado con `feline:sacrum`.
+
+- **N5. Músculos de L-C5: campos previos sin evidencia por campo y en conflicto con Sisson.** Las notas documentan bien los conflictos, pero la ficha visible sigue mostrando valores que la única fuente leída contradice o completa:
+  - `canine:brachialis.insertion` («Tuberosidad del radio y cúbito») frente a Sisson p.373 (ulna, justo proximal al tendón ulnar del bíceps).
+  - `canine:triceps-brachii-medial-head.origin` («Cresta del tubérculo menor») frente a Sisson p.373 (cuarto proximal de la cara medial, caudal a la tuberositas teres).
+  - `canine:supraspinatus.insertion` no recoge la pequeña fijación en el tubérculo menor (p.371).
+  - En `canine:biceps-brachii.insertion` la rama ulnar omite «lateral surface» sin marcarlo como duda en el propio campo.
+  - `canine:biceps-brachii.summary` («con una cabeza») no tiene evidencia.
+
+  Corrección:
+  - Decisión de esquema: añadir `origin`, `insertion`, `action` e `innervation` al enum de `fieldEvidence.field` para que cada valor muscular cite su fuente. Mientras no exista, pasar los valores en conflicto a `missingFields`, o anteponer «Pendiente de cotejo:» en el propio valor.
+  - Cotejar `action` e `innervation` con umn-proximal-thoracic-limb o con NAV (yo no abrí esas fuentes).
+
+- **N6. Covasa (L-F4): localizador y muestra.** El artículo no tiene una sección «Carnivores»: la evidencia está en el párrafo «In the cats…» de Results y en la Tabla 3. Además, los gatos del estudio eran en parte animales viejos o enfermos («the specimens represented old or sick animals»).
+  Corrección: localizador #5 de `feline:sacrum` → «Results (párrafo de gatos); Table 3». En el texto, «en una serie de gatos (en parte animales viejos o enfermos; 48 o 57 según la sección)», manteniendo la nota de discrepancia ya existente.
+
+- **N7. `feline:teeth` (L-F5), landmark «Cuspis dentis».** NAV, p.50, escribe «Cuspis [coronae] dentis». Corrección: usar la grafía NAV.
+
+- **N8. Requicha (L-F5), `feline:skull.morphology` y `feline:maxilla`: muestra incompleta.** Corrección: «24 gatos European Shorthair castrados, de 4 a 17 años (TC retrospectiva)».
+
+- **N9. `canine:skull`, sectoriales.** Incluido en N3: rotular «primer molar inferior» como equivalencia editorial.
+
+## 7. Conclusión
+
+Los lotes tienen en general muy buen respaldo: 93 de 97 filas muestreadas están confirmadas en la fuente y localizador citados. Las licencias de las seis fuentes nuevas están descritas correctamente, incluido el conflicto de Covasa y el uso de la AVDC solo como cita. Las tres relaciones tienen fuente para ambos extremos. Antes de fusionar hay que corregir dos bloqueantes: rotular `canine:skull` como conjunto (B1) y sustituir el Sinus maxillaris por el Recessus maxillaris en `canine:maxilla` (B2). Todas las fichas deben seguir en `pending` hasta la revisión veterinaria humana.
