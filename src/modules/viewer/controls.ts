@@ -1,4 +1,4 @@
-import { Box3, Plane, Vector3 } from "three";
+import { Box3, Plane, Vector3, type Mesh } from "three";
 
 export type ViewPreset = "left" | "right" | "front" | "back" | "dorsal" | "ventral" | "free";
 export type CutPlane = "none" | "sagittal" | "median" | "transverse" | "dorsal";
@@ -26,4 +26,22 @@ export function clippingPlane(plane: CutPlane, box: Box3, offset: number): Plane
   const fraction = plane === "median" ? 0 : Number.isFinite(offset) ? Math.max(-1, Math.min(1, offset)) : 0;
   const normal = new Vector3(); normal[axis] = 1;
   return [new Plane(normal, -(center[axis] + size[axis] * fraction / 2))];
+}
+
+/**
+ * Amplía `box` con los vértices realmente referenciados por los índices de la malla, en coordenadas de mundo.
+ * Necesario en el derivado particionado: todas las piezas comparten el búfer de posiciones completo, de modo
+ * que `Box3.expandByObject` devolvería la caja del animal entero.
+ */
+export function expandByIndexedVertices(box: Box3, mesh: Mesh): Box3 {
+  const position = mesh.geometry.getAttribute("position"), index = mesh.geometry.index;
+  if (!position) return box;
+  mesh.updateWorldMatrix(true, false);
+  const point = new Vector3();
+  const count = index ? index.count : position.count;
+  for (let i = 0; i < count; i++) {
+    point.fromBufferAttribute(position, index ? index.getX(i) : i).applyMatrix4(mesh.matrixWorld);
+    box.expandByPoint(point);
+  }
+  return box;
 }

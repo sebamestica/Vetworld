@@ -23,7 +23,8 @@ describe('Fichas científicas independientes de la disponibilidad geométrica', 
   });
   it('busca huesos nuevos sin asignarles una malla ficticia', () => {
     expect(catalogService.search({q:'femur',species:'feline'}).some(entry => entry.structure.id === 'feline:femur')).toBe(true);
-    expect(catalogService.structure('feline:femur').modelIds).toEqual([]);
+    // Único modelo: derivado de superficies parciales (admission partial-surface), no hueso completo.
+    expect(catalogService.structure('feline:femur').modelIds).toEqual(['feline:tavernier-partial-surfaces']);
     expect(catalogService.structure('feline:tibia').modelIds).toEqual([]);
   });
   it('permite bibliografía curada y bloquea orígenes parecidos o credenciales', () => {

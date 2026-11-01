@@ -11,7 +11,9 @@ import { isSafeExternalUrl } from '@/modules/media/safety';
 import ReferenceGallery from '@/components/media/ReferenceGallery';
 import styles from './StructurePanel.module.css';
 
-export interface StructurePanelProps { language?: Language; structureId: string | null; speciesName: string; regionName: string; scientificSpeciesName?: string; regionNames?: Record<string, string>; onClose: () => void; onSelectRelated: (id: string) => void; relatedNames?: Record<string, string> }
+export interface StructurePanelProps { language?: Language; structureId: string | null; speciesName: string; regionName: string; scientificSpeciesName?: string; regionNames?: Record<string, string>; onClose: () => void; onSelectRelated: (id: string) => void; relatedNames?: Record<string, string>;
+  /** Nivel de admisión de la malla seleccionada en el visor; `null`/ausente si la ficha no tiene pieza o no declara nivel. */
+  admission?: { level: 'partial-surface'; sides: number | null; includes: string[] } | null }
 type PanelData = { structure: Structure; relations: Relation[]; sources: Source[]; references: VisualReference[] };
 const fields = { detailedDescription: 'fieldDetailedDescription', morphology: 'fieldMorphology', location: 'fieldLocation', origin: 'fieldOrigin', insertion: 'fieldInsertion', action: 'fieldAction', function: 'fieldFunction', innervation: 'fieldInnervation', vascularSupply: 'fieldVascularSupply', attachments: 'fieldAttachments', landmarks: 'fieldLandmarks', speciesDifferences: 'fieldSpeciesDifferences' } as const satisfies Record<string, UiKey>;
 const evidenceLabels: Record<string, UiKey> = { canonicalLatinName: 'fieldCanonicalLatinName', spanishName: 'fieldSpanishName', aliases: 'fieldAliases', summary: 'fieldSummary', ...fields };
@@ -24,7 +26,7 @@ export default function StructurePanel(props: StructurePanelProps) {
   return <SelectedStructurePanel key={props.structureId ?? 'no-selection'} {...props} />;
 }
 
-function SelectedStructurePanel({ structureId, speciesName, regionName, scientificSpeciesName, regionNames, onClose, onSelectRelated, relatedNames, language = 'es' }: StructurePanelProps) {
+function SelectedStructurePanel({ structureId, speciesName, regionName, scientificSpeciesName, regionNames, onClose, onSelectRelated, relatedNames, admission, language = 'es' }: StructurePanelProps) {
   const [result, setResult] = useState<{ id: string; data?: PanelData; error?: string; errorKey?: UiKey } | null>(null);
   const tx = (key: UiKey) => t(language, key);
   const [retry, setRetry] = useState(0);
@@ -66,6 +68,7 @@ function SelectedStructurePanel({ structureId, speciesName, regionName, scientif
       {structureId && !current && <p role="status">{tx('loadingRecord')}</p>}
       {current && !current.data && <div role="alert"><p>{current.errorKey ? tx(current.errorKey) : current.error}</p><button type="button" className={styles.retry} onClick={() => { setResult(null); setRetry(value => value + 1); }}>{tx('retry')}</button></div>}
       {structure && data && <>
+        {admission?.level === 'partial-surface' && <div className={styles.notice} data-testid="partial-surface-notice"><strong>{tx('partialSurfaceNotice')}</strong>{admission.includes.length > 0 && <><br/>{t(language, 'partialSurfaceIncludes', { names: admission.includes.join(', ') })}</>}{admission.sides && <><br/>{t(language, 'partialSurfaceSides', { count: String(admission.sides) })}</>}</div>}
         {language === 'en' && <p className={styles.notice}>{tx('translationNotice')}</p>}
         <section role="tabpanel" id="structure-page-detail" aria-labelledby="structure-tab-detail" hidden={tab !== 'detail'}>
         {structure.aliases.length > 0 && <p className={styles.aliases}>{tx('synonyms')}: {structure.aliases.join(', ')}</p>}

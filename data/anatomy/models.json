@@ -479,6 +479,108 @@
     "notes": "Disponible para visualización no comercial bajo NC-SA; sin huesos identificados individualmente. No acredita esqueleto íntegro científicamente validado."
   },
   {
+    "id": "feline:tavernier-partial-surfaces",
+    "speciesId": "feline",
+    "regionId": null,
+    "scope": "whole-body",
+    "format": "glb",
+    "resourceUrl": "/models/feline/tavernier-partial-surfaces.glb",
+    "landingPageUrl": "https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602",
+    "structureIds": [
+      "feline:scapula",
+      "feline:humerus",
+      "feline:femur",
+      "feline:os-coxae",
+      "feline:skull"
+    ],
+    "meshMappings": [
+      {
+        "nodeId": "proposal-scapula-surface-yneg",
+        "structureId": "feline:scapula",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-scapula-surface-ypos",
+        "structureId": "feline:scapula",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-humerus-surface-yneg",
+        "structureId": "feline:humerus",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-humerus-surface-ypos",
+        "structureId": "feline:humerus",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-femur-surface-yneg",
+        "structureId": "feline:femur",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-femur-surface-ypos",
+        "structureId": "feline:femur",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-os-coxae-surface-yneg",
+        "structureId": "feline:os-coxae",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-os-coxae-surface-ypos",
+        "structureId": "feline:os-coxae",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-head-skeleton-surface-midline",
+        "structureId": "feline:skull",
+        "layerId": "skeleton",
+        "admission": "partial-surface",
+        "includesStructureIds": [
+          "feline:mandible"
+        ]
+      }
+    ],
+    "layerIds": [
+      "skeleton"
+    ],
+    "lod": "original",
+    "evidenceType": "photogrammetry-derived-partial-surfaces",
+    "license": {
+      "label": "CC BY-NC-SA 4.0 — atribución, uso no comercial, compartir igual e indicar cambios",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "authors": [
+      "Tavernier Amaury"
+    ],
+    "sourceIds": [
+      "tavernier-cat-skeleton"
+    ],
+    "review": {
+      "status": "pending",
+      "notes": "Superficies parciales propuestas por geometría (segmentación privada 2026-10-31); límites aproximados, lado no asignado y escala desconocida. Pendiente de revisión anatómica humana cualificada."
+    },
+    "availability": "available",
+    "fileEvidence": {
+      "sha256": "06904650fb10da7089a3b123dec2ed4bc5746e5deb40f51613282b2af1514cea",
+      "byteSize": 4662896,
+      "verifiedAt": "2026-10-31T23:30:00.000Z"
+    },
+    "notes": "Derivado CC BY-NC-SA 4.0 de Cat Skeleton (Tavernier Amaury): partición por caras en superficies parciales, sin geometría añadida. Seleccionables: escápula, húmero, fémur, coxal (dos semiespacios de escena cada uno, sin lado) y cabeza como superficie del cráneo que incluye la mandíbula sin separar. Radio+cúbito y tibia+fíbula: superficies conjuntas visibles, no seleccionables. Remanente sin identificar visible."
+  },
+  {
     "id": "canine:agancz-skull-scan",
     "speciesId": "canine",
     "regionId": "head",

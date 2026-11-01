@@ -119,6 +119,8 @@ export function validateCatalog(catalog: Catalog): { errors: string[]; warnings:
       check(!!structure, `${model.id}: malla con estructura inexistente`);
       check(layers.has(mapping.layerId), `${model.id}: malla con capa inexistente`);
       if (structure) check(layers.get(mapping.layerId)?.kinds.includes(structure.kind) ?? false, `${model.id}: tipo incompatible con capa`);
+      for (const id of mapping.includesStructureIds ?? []) check(mapping.admission === 'partial-surface' && id !== mapping.structureId && structures.get(id)?.speciesId === model.speciesId, `${model.id}: estructura incluida inválida ${id}`);
+      if (mapping.admission === 'partial-surface') check(model.review.status === 'pending', `${model.id}: superficie parcial con revisión no pendiente`);
     }
     if (model.availability === 'available') {
       check(!!model.resourceUrl && !!model.format && !!model.fileEvidence, `${model.id}: disponible sin evidencia de archivo`);

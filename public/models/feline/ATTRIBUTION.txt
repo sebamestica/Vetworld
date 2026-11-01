@@ -2,3 +2,11 @@ Cat Skeleton — Tavernier Amaury — CC BY-NC-SA 4.0 — Sketchfab
 https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 Archivo GLB original sin cambios geométricos. Escala, cobertura e identificación anatómica pendientes.
+
+tavernier-partial-surfaces.glb
+Derivado de «Cat Skeleton» — Tavernier Amaury — https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602
+Licencia del derivado: CC BY-NC-SA 4.0 (misma licencia, ShareAlike) — https://creativecommons.org/licenses/by-nc-sa/4.0/
+Uso no comercial. Sin garantías. El autor original no respalda este derivado.
+Derivado: partición por caras en superficies parciales, sin geometría añadida.
+Cambios (2026-10-31): la única malla original (74.235 triángulos, SHA-256 c570679a…220783) se reparte por índices de caras en 13 superficies parciales propuestas + 1 remanente sin identificar (suma 74.235). Posiciones, normales, UV, material y textura sin cambios; se omite el nodo vacío «Light». Las superficies son propuestas pendientes de revisión anatómica humana; «yneg/ypos» son semiespacios de escena, no lados anatómicos.
+SHA-256 del derivado: 06904650fb10da7089a3b123dec2ed4bc5746e5deb40f51613282b2af1514cea (4.662.896 B).

@@ -5,6 +5,9 @@ const provenanceUrl = z.url().refine(value => {
   const url = new URL(value);
   return url.protocol === 'https:' && !url.username && !url.password;
 }, 'Referencia debe usar HTTPS sin credenciales');
+/** Estados de admisión por pieza; hoy solo «superficie identificada parcial». Ver docs/phase3/feline-partial-selection-2026-10-31.md. */
+export const meshAdmissionSchema = z.enum(["partial-surface"]);
+export type MeshAdmission = z.infer<typeof meshAdmissionSchema>;
 export const viewerAssetSchema = z.object({
   id: z.string().min(1), speciesId: z.enum(["canine", "feline"]), regionId: z.string().min(1),
   title: z.string().min(1), purpose: z.enum(["technical_demo", "scientific"]),
@@ -22,7 +25,13 @@ export const viewerAssetSchema = z.object({
   sha256: z.string().regex(/^[a-f0-9]{64}$/),
   license: z.object({ label: z.string().min(1), verified: z.boolean(), redistributionAllowed: z.boolean() }).strict(),
   reviewStatus: z.enum(["pending", "validated", "rejected"]), availability: z.enum(["available", "pending"]),
-  meshMappings: z.array(z.object({ nodeId: z.string().min(1), structureId: z.string().min(1), layerId: z.string().min(1) }).strict()),
+  meshMappings: z.array(z.object({
+    nodeId: z.string().min(1), structureId: z.string().min(1), layerId: z.string().min(1),
+    /** Nivel de admisión explícito. Ausente: semántica previa (nodo = estructura). `partial-surface`: superficie parcial identificada, límites aproximados. */
+    admission: meshAdmissionSchema.optional(),
+    /** Estructuras incluidas en la misma superficie sin separación geométrica (p. ej. mandíbula en la cabeza). */
+    includesStructureIds: z.array(z.string().min(1)).min(1).optional(),
+  }).strict()),
   layers: z.array(z.object({ id: z.string().min(1), label: z.string().min(1) }).strict()).min(1),
   specimen: z.object({ breed: z.string().optional(), sex: z.string().optional(), age: z.string().optional() }).strict().nullable(),
 }).strict().superRefine((asset, ctx) => {
@@ -38,6 +47,10 @@ export const viewerAssetSchema = z.object({
   for (const mapping of asset.meshMappings) {
     if (nodes.has(mapping.nodeId) || !layers.has(mapping.layerId) || !mapping.structureId.startsWith(`${asset.speciesId}:`)) ctx.addIssue({ code: "custom", message: "Mapping duplicado, capa ausente o especie incompatible" });
     nodes.add(mapping.nodeId);
+    if (visual.has(mapping.nodeId)) ctx.addIssue({ code: "custom", message: "Nodo a la vez seleccionable y visual" });
+    if (mapping.includesStructureIds?.some(id => id === mapping.structureId || !id.startsWith(`${asset.speciesId}:`)) || new Set(mapping.includesStructureIds).size !== (mapping.includesStructureIds?.length ?? 0)) ctx.addIssue({ code: "custom", message: "Estructuras incluidas inválidas" });
+    if (mapping.includesStructureIds && mapping.admission !== "partial-surface") ctx.addIssue({ code: "custom", message: "Estructuras incluidas solo en superficies parciales" });
+    if (mapping.admission === "partial-surface" && asset.reviewStatus !== "pending") ctx.addIssue({ code: "custom", message: "Una superficie parcial no admite revisión validada en el manifiesto" });
   }
   if (asset.availability === "available" && (!asset.license.verified || !asset.license.redistributionAllowed)) ctx.addIssue({ code: "custom", message: "Activo disponible sin derechos verificados" });
   if (asset.purpose === "scientific" && asset.availability === "available" && (!asset.attribution || !asset.sourceUrl || !asset.licenseUrl || !asset.credit)) ctx.addIssue({ code: "custom", message: "Activo científico disponible sin atribución completa" });

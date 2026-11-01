@@ -1522,8 +1522,10 @@
       "femur"
     ],
     "summary": "Hueso del muslo felino.",
-    "has3DModel": false,
-    "modelIds": [],
+    "has3DModel": true,
+    "modelIds": [
+      "feline:tavernier-partial-surfaces"
+    ],
     "searchTokens": [
       "femoris",
       "femur",
@@ -1565,8 +1567,9 @@
       "humerus"
     ],
     "summary": "Hueso del brazo felino, entre escápula y antebrazo.",
-    "has3DModel": false,
+    "has3DModel": true,
     "modelIds": [
+      "feline:tavernier-partial-surfaces",
       "feline:thoracic-limb-model"
     ],
     "searchTokens": [
@@ -1698,8 +1701,10 @@
       "ossa innominata"
     ],
     "summary": "Hueso de la cintura pélvica felina formado por la unión de ilion, isquion y pubis; articula con el sacro y aloja el acetábulo.",
-    "has3DModel": false,
-    "modelIds": [],
+    "has3DModel": true,
+    "modelIds": [
+      "feline:tavernier-partial-surfaces"
+    ],
     "searchTokens": [
       "bone",
       "coxae",
@@ -1872,8 +1877,9 @@
       "scapula"
     ],
     "summary": "Hueso plano de la cintura torácica felina.",
-    "has3DModel": false,
+    "has3DModel": true,
     "modelIds": [
+      "feline:tavernier-partial-surfaces",
       "feline:thoracic-limb-model"
     ],
     "searchTokens": [
@@ -1895,9 +1901,10 @@
       "calavera felina"
     ],
     "summary": "Cráneo felino redondeado caracterizado por órbitas oculares muy amplias y crestas reducidas.",
-    "has3DModel": false,
+    "has3DModel": true,
     "modelIds": [
-      "feline:skull-model"
+      "feline:skull-model",
+      "feline:tavernier-partial-surfaces"
     ],
     "searchTokens": [
       "cabeza",

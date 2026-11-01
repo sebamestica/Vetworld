@@ -2043,7 +2043,8 @@
       "mahoney-feline-imaging-2012"
     ],
     "modelIds": [
-      "feline:thoracic-limb-model"
+      "feline:thoracic-limb-model",
+      "feline:tavernier-partial-surfaces"
     ],
     "photoRefs": [],
     "fieldEvidence": [
@@ -2622,7 +2623,8 @@
       "umn-proximal-thoracic-limb"
     ],
     "modelIds": [
-      "feline:thoracic-limb-model"
+      "feline:thoracic-limb-model",
+      "feline:tavernier-partial-surfaces"
     ],
     "photoRefs": [],
     "fieldEvidence": [
@@ -2723,7 +2725,8 @@
       "nav-6th-edition"
     ],
     "modelIds": [
-      "feline:skull-model"
+      "feline:skull-model",
+      "feline:tavernier-partial-surfaces"
     ],
     "photoRefs": [],
     "review": {
@@ -2967,7 +2970,9 @@
       "reighard-jennings-cat-1901",
       "el-ghazali-el-behery-pelvic-2018"
     ],
-    "modelIds": [],
+    "modelIds": [
+      "feline:tavernier-partial-surfaces"
+    ],
     "photoRefs": [],
     "fieldEvidence": [
       {
@@ -3331,7 +3336,9 @@
       "reighard-jennings-cat-1901",
       "el-ghazali-el-behery-pelvic-2018"
     ],
-    "modelIds": [],
+    "modelIds": [
+      "feline:tavernier-partial-surfaces"
+    ],
     "photoRefs": [],
     "fieldEvidence": [
       {

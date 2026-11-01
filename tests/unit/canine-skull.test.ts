@@ -43,7 +43,7 @@ describe('Cráneo canino fotogramétrico CC BY 4.0 (Zenodo 10327538)', () => {
     expect(workspaceAsset(viewerAssets, 'canine', 'head', available)).toEqual({ asset, coverage: 'region' });
     expect(workspaceAsset(viewerAssets, 'canine', 'thoracic-limb', available)).toBeNull();
     expect(workspaceAsset(viewerAssets, 'canine', 'all', new Set())).toBeNull();
-    expect(workspaceAsset(viewerAssets, 'feline', 'all', available)?.asset.id).toBe('feline:tavernier-skeleton');
+    expect(workspaceAsset(viewerAssets, 'feline', 'all', available)?.asset.id).toBe('feline:tavernier-partial-surfaces');
     expect(workspaceAsset(viewerAssets, 'feline', 'head', available)?.coverage).toBe('whole-body');
   });
 });

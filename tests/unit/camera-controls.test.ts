@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { Box3, Vector3 } from "three";
-import { cameraFrame, clippingPlane, viewDirection, zoomDistance } from "../../src/modules/viewer/controls";
+import { Box3, BufferAttribute, BufferGeometry, Mesh, Vector3 } from "three";
+import { cameraFrame, clippingPlane, expandByIndexedVertices, viewDirection, zoomDistance } from "../../src/modules/viewer/controls";
 
 const box = new Box3(new Vector3(-2, -1, -3), new Vector3(2, 1, 3));
 describe("Controles cartesianos de la demostración técnica", () => {
@@ -34,5 +34,19 @@ describe("Controles cartesianos de la demostración técnica", () => {
     expect(clippingPlane("transverse", box, 0.5)[0].distanceToPoint(new Vector3(0, 0, 1.5))).toBe(0);
     expect(clippingPlane("dorsal", box, 0.5)[0].distanceToPoint(new Vector3(0, 0.5, 0))).toBe(0);
     expect(Number.isFinite(clippingPlane("sagittal", box, Number.NaN)[0].constant)).toBe(true);
+  });
+});
+
+describe("encuadre de piezas con búfer de posiciones compartido", () => {
+  it("usa solo los vértices indexados y la transformación de mundo", () => {
+    // Geometría sintética: dos triángulos en un búfer compartido; la pieza indexa solo el segundo.
+    const geometry = new BufferGeometry();
+    geometry.setAttribute("position", new BufferAttribute(new Float32Array([-10, 0, 0, -9, 0, 0, -10, 1, 0, 1, 0, 0, 2, 0, 0, 1, 1, 0]), 3));
+    geometry.setIndex([3, 4, 5]);
+    const mesh = new Mesh(geometry); mesh.position.set(0, 0, 5);
+    const piece = expandByIndexedVertices(new Box3(), mesh);
+    expect(piece.min.toArray()).toEqual([1, 0, 5]); expect(piece.max.toArray()).toEqual([2, 1, 5]);
+    expect(new Box3().setFromObject(mesh).min.x).toBe(-10);
+    geometry.dispose();
   });
 });

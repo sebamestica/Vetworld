@@ -6,7 +6,7 @@ import { fetchApi } from '@/lib/client/api';
 import { viewerAssets } from '@/modules/viewer/assets';
 import { workspaceAsset } from '@/modules/viewer/selection';
 import type { Structure } from '@/modules/anatomy/schemas/catalog';
-import type { ViewerLayers } from '@/modules/viewer/visibility';
+import type { ViewerLayers, ViewerPieces } from '@/modules/viewer/visibility';
 import type { CutPlane, ViewPreset } from '@/modules/viewer/controls';
 
 function useApi<T extends z.ZodType>(path: string, schema: T, retry: number) {
@@ -29,6 +29,9 @@ export function useAnatomyWorkspace(technicalDemo = false) {
   const [zoomRequest, setZoomRequest] = useState({ token: 0, delta: 0 });
   const [cutPlane, setCutPlane] = useState<CutPlane>('none'), [clipOffset, setClipOffset] = useState(0);
   const [navigationError, setNavigationError] = useState('');
+  const [pieces, setPieces] = useState<ViewerPieces>({});
+  /** Petición de encuadre de una pieza mapeada (búsqueda/lista de fichas); token 0 = ninguna. */
+  const [focusRequest, setFocusRequest] = useState<{ token: number; structureId: string | null }>({ token: 0, structureId: null });
   const speciesQuery = useApi('/api/v1/species?limit=100', responseSchemas.species, retry);
   const regionQuery = useApi(`/api/v1/regions?species=${encodeURIComponent(speciesId)}&limit=100`, responseSchemas.regions, retry);
   const params = new URLSearchParams({ species: speciesId, limit: '100' });
@@ -47,22 +50,27 @@ export function useAnatomyWorkspace(technicalDemo = false) {
   const activeLayers: ViewerLayers = Object.fromEntries((asset?.layers ?? []).map(l => [l.id, layers[l.id] ?? { visible: true, opacity: 1 }]));
   function reset() {
     if (!technicalDemo) setRegion('all');
-    setLayers({}); setIsolatedId(null); setSelectedId(null); setPanelOpen(false); setPreset('free'); setCutPlane('none'); setClipOffset(0); setResetToken(n => n + 1);
+    setLayers({}); setPieces({}); setIsolatedId(null); setSelectedId(null); setPanelOpen(false); setPreset('free'); setCutPlane('none'); setClipOffset(0); setResetToken(n => n + 1);
   }
   function changeSpecies(id: string) { if (id !== speciesId) { reset(); setSpecies(id); setRegion('all'); } }
   function changeRegion(id: string) { if (id !== regionId) { reset(); setRegion(id); } }
-  function selectKnown(id: string) {
+  function selectKnown(id: string, focus = false) {
     const mapping = asset?.meshMappings.find(m => m.structureId === id);
-    if (mapping) setLayers(current => ({ ...current, [mapping.layerId]: { visible: true, opacity: current[mapping.layerId]?.opacity || 1 } }));
+    if (mapping) {
+      setLayers(current => ({ ...current, [mapping.layerId]: { visible: true, opacity: current[mapping.layerId]?.opacity || 1 } }));
+      setPieces(current => current[id] && !current[id].visible ? { ...current, [id]: { ...current[id], visible: true } } : current);
+    }
+    // Sin malla mapeada no hay nada que encuadrar: el foco solo se pide para piezas reales.
+    if (focus && mapping) setFocusRequest(current => ({ token: current.token + 1, structureId: id }));
     setSelectedId(id); setPanelOpen(true); setIsolatedId(current => current === id ? current : null);
   }
-  function selectStructure(s: Structure) {
+  function selectStructure(s: Structure, focus = false) {
     if (s.speciesId !== speciesId || !knownIds.has(s.id)) { reset(); setSpecies(s.speciesId); setRegion(['shoulder', 'brachium'].includes(s.regionId) ? 'thoracic-limb' : s.regionId); }
-    selectKnown(s.id);
+    selectKnown(s.id, focus);
   }
-  async function selectId(id: string) {
-    if (knownIds.has(id)) { selectKnown(id); return; }
-    try { selectStructure((await fetchApi(`/api/v1/structures/${encodeURIComponent(id)}`, responseSchemas.structure)).data); }
+  async function selectId(id: string, focus = false) {
+    if (knownIds.has(id)) { selectKnown(id, focus); return; }
+    try { selectStructure((await fetchApi(`/api/v1/structures/${encodeURIComponent(id)}`, responseSchemas.structure)).data, focus); }
     catch { setNavigationError('No se pudo abrir la estructura relacionada.'); }
   }
   function toggleLayer(id: string) {
@@ -74,8 +82,17 @@ export function useAnatomyWorkspace(technicalDemo = false) {
     const amount = Math.min(1, Math.max(0, value)); setLayers(current => ({ ...current, [id]: { visible: amount > 0, opacity: amount } }));
     if (amount === 0 && asset?.meshMappings.some(m => m.layerId === id && m.structureId === selectedId)) { setSelectedId(null); setPanelOpen(false); setIsolatedId(null); }
   }
-  return { species, regions, speciesId, regionId, currentSpecies, currentRegion, structures, models: modelQuery?.data?.data ?? [], asset, coverage, activeLayers,
-    selectedId, panelOpen, closePanel: () => setPanelOpen(false), selectId, selectStructure, changeSpecies, changeRegion, isolatedId, toggleIsolation: () => setIsolatedId(v => v ? null : selectedId), reset, resetToken, toggleLayer, opacity,
+  function togglePiece(id: string) {
+    const current = pieces[id] ?? { visible: true, opacity: 1 };
+    setPieces(values => ({ ...values, [id]: { ...current, visible: !current.visible } }));
+    if (current.visible && id === selectedId) { setSelectedId(null); setPanelOpen(false); setIsolatedId(null); }
+  }
+  function pieceOpacity(id: string, value: number) {
+    const amount = Math.min(1, Math.max(0, value)); setPieces(values => ({ ...values, [id]: { visible: amount > 0, opacity: amount } }));
+    if (amount === 0 && id === selectedId) { setSelectedId(null); setPanelOpen(false); setIsolatedId(null); }
+  }
+  return { pieces, togglePiece, pieceOpacity, focusRequest, species, regions, speciesId, regionId, currentSpecies, currentRegion, structures, models: modelQuery?.data?.data ?? [], asset, coverage, activeLayers,
+    selectedId, panelOpen, closePanel: () => setPanelOpen(false), selectId, selectStructure, changeSpecies, changeRegion, isolatedId, toggleIsolation: () => { if (!isolatedId && selectedId && asset?.meshMappings.some(m => m.structureId === selectedId)) setFocusRequest(current => ({ token: current.token + 1, structureId: selectedId })); setIsolatedId(v => v ? null : selectedId); }, reset, resetToken, toggleLayer, opacity,
     viewPreset, viewToken, setViewPreset: (view: ViewPreset) => { setPreset(view); setViewToken(n => n + 1); }, zoomRequest, zoom: (delta: number) => setZoomRequest(v => ({ token: v.token + 1, delta })), cutPlane, setCutPlane, clipOffset, setClipOffset,
     loading: !structureQuery?.data || !modelQuery?.data, error: navigationError || speciesQuery?.error || regionQuery?.error || structureQuery?.error || modelQuery?.error,
     retry: () => { setNavigationError(''); setRetry(n => n + 1); },

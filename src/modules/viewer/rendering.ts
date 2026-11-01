@@ -14,6 +14,12 @@ export function updateRendererExposure(renderer: WebGLRenderer, exposure: number
   if (memory) { renderer.domElement.dataset.geometries = String(memory.geometries); renderer.domElement.dataset.textures = String(memory.textures); }
 }
 
+/** Marca en el canvas la pieza encuadrada (`data-focus`) y la distancia cámara-objetivo (`data-camera-distance`) para pruebas. */
+export function markFocusedPiece(renderer: WebGLRenderer, structureId: string | null, distance: number) {
+  if (structureId) renderer.domElement.dataset.focus = structureId; else delete renderer.domElement.dataset.focus;
+  renderer.domElement.dataset.cameraDistance = distance.toFixed(3);
+}
+
 export type ViewerQuality = "balanced" | "low" | "high";
 /** Límite superior de DPR por calidad (sin factor adaptativo). */
 export function dprLimit(quality: ViewerQuality) { return quality === "low" ? 1 : quality === "high" ? 2 : 1.5; }

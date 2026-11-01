@@ -24,6 +24,9 @@ export interface ToolsPanelProps {
   /** Fichas de la región actual (tengan o no malla) y filtro por sistema/tejido. */
   records?: { id: string; spanishName: string; canonicalLatinName: string; kind: StructureKind; systemId: string }[];
   recordFilter?: RecordFilter; onRecordFilter?: (filter: RecordFilter) => void; onOpenRecord?: (id: string) => void;
+  /** Piezas seleccionables del modelo (una por ficha) con visibilidad y opacidad propias. */
+  pieces?: { id: string; label: string; visible: boolean; opacity: number }[];
+  onTogglePiece?: (id: string) => void; onPieceOpacity?: (id: string, value: number) => void;
 }
 const layerColors = ['#bd9e8e', '#bd7b72', '#ddccb3', '#ccb47b', '#ba6672', '#dab66d', '#e8dccc', '#ac667f'];
 const views: ViewPreset[] = ['left', 'right', 'front', 'back', 'dorsal', 'ventral', 'free'];
@@ -51,6 +54,7 @@ export function ToolsPanel(p: ToolsPanelProps) {
         <p className={styles.label}>{tx('section')}</p>
         {LAYER_ROWS.map(({ id: key }, index) => { const layer = p.layers.find(l => l.id === key); const available = layer?.available ?? false; const reasonId = `layer-reason-${key}`; return <div key={key}><label className={`${styles.toggleRow} ${!available ? styles.unavailable : ''}`}><span className={styles.toggleLabel}><i style={{ background: layerColors[index] }} />{tx(key)}</span><span className={styles.toggle}><input type="checkbox" checked={layer?.visible ?? false} disabled={!available} aria-describedby={available ? undefined : reasonId} onChange={() => p.onToggleLayer(key)} /><span className={styles.switch} /></span></label>{!available && <p id={reasonId} className={styles.reason}>{tx(p.modelAvailable === false ? 'noModel' : 'unavailable')}</p>}{available && layer?.visible && <label className={styles.range}>{tx('opacity')}<input aria-label={`${tx('opacity')} · ${tx(key)}`} type="range" min="0" max="1" step="0.05" value={layer.opacity} onChange={e => p.onOpacity(key, Number(e.target.value))} /><output>{Math.round(layer.opacity * 100)}%</output></label>}</div>; })}
         <div className={styles.rule} /><p className={styles.help}>{tx('layerNotice')}</p>
+        {Boolean(p.pieces?.length) && <><p className={`${styles.label} ${styles.heading}`}>{tx('modelPieces')}</p>{p.pieces!.map(piece => <div key={piece.id}><label className={styles.toggleRow}><span className={styles.toggleLabel}><i style={{ background: layerColors[LAYER_ROWS.findIndex(row => row.id === 'bones')] }} />{piece.label}</span><span className={styles.toggle}><input type="checkbox" checked={piece.visible} onChange={() => p.onTogglePiece?.(piece.id)} /><span className={styles.switch} /></span></label>{piece.visible && <label className={styles.range}>{tx('opacity')}<input aria-label={`${tx('opacity')} · ${piece.label}`} type="range" min="0" max="1" step="0.05" value={piece.opacity} onChange={e => p.onPieceOpacity?.(piece.id, Number(e.target.value))} /><output>{Math.round(piece.opacity * 100)}%</output></label>}</div>)}<p className={styles.help}>{tx('modelPiecesNotice')}</p></>}
         {p.regionOptions && p.onRegionChange && <label className={styles.box}>{tx('region')}<select aria-label={tx('region')} value={p.regionId} onChange={e => p.onRegionChange?.(e.target.value)}>{p.regionOptions.map(region => <option key={region.id} value={region.id}>{region.label}</option>)}</select></label>}
         {p.records && p.recordFilter && p.onRecordFilter && <RecordFilterSection {...p} records={p.records} recordFilter={p.recordFilter} onRecordFilter={p.onRecordFilter} tx={tx} />}
       </section>

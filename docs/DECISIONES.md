@@ -69,3 +69,11 @@ Se publica un derivado decimado (no el original) porque el original excede 12 Mi
 - **Selección de activo en la home:** prioridad corporal → regional exacto → único regional con «Todo el animal», marcado como cobertura parcial.
 - **Convención de lado:** derecha anatómica = craneal × dorsal; sin evidencia de no-reflexión, el lado queda `unknown`.
 - **Licencias:** Europe PMC y PMC (API oficial) se aceptan como canal legítimo para leer artículos CC BY; no cuentan como eludir barreras.
+
+## F5 — selección felina por superficies parciales, 2026-10-31
+
+- **Derivado separado, no sustitución:** el original `feline:tavernier-skeleton` se conserva (0 mappings); el derivado es un activo/modelo nuevo `feline:tavernier-partial-surfaces` con la misma licencia CC BY-NC-SA 4.0 (ShareAlike) y aviso de cambios. La home prefiere el corporal con piezas seleccionables.
+- **Nivel de admisión explícito y aditivo:** `admission: "partial-surface"` por mapping (ausente = semántica previa) e `includesStructureIds` para lo contenido sin separar; exige revisión `pending`. API v1 intacta; OpenAPI 1.4.0.
+- **Conjuntos no seleccionables:** radio+cúbito y tibia+fíbula quedan como `visualNodes`: mapearlos a la ficha de un solo hueso afirmaría una identidad que la segmentación niega. La cabeza se mapea a `feline:skull` (ficha de grupo Cranium) con la mandíbula declarada como incluida.
+- **Sin lado:** los dos semiespacios de escena de una estructura abren la misma ficha y se resaltan, aíslan y ocultan juntos.
+- **Encuadre por vértices indexados:** las piezas comparten el búfer de posiciones completo, por lo que la caja de cada pieza se calcula sobre sus índices.

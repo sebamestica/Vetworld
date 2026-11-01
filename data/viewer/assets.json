@@ -531,6 +531,128 @@
     "specimen": null
   },
   {
+    "id": "feline:tavernier-partial-surfaces",
+    "speciesId": "feline",
+    "regionId": "all",
+    "title": "Esqueleto felino — superficies parciales identificadas (derivado)",
+    "purpose": "scientific",
+    "scope": "whole-body",
+    "format": "glb",
+    "resourceUrl": "/models/feline/tavernier-partial-surfaces.glb",
+    "unit": "source-unverified",
+    "scaleToMeters": 1,
+    "physicalScaleVerified": false,
+    "orientation": "Orientación fuente conservada; ejes anatómicos pendientes; yneg/ypos son semiespacios de escena, no lados",
+    "byteSize": 4662896,
+    "triangleCount": 74235,
+    "estimatedGpuBytes": 4654644,
+    "sha256": "06904650fb10da7089a3b123dec2ed4bc5746e5deb40f51613282b2af1514cea",
+    "license": {
+      "label": "CC BY-NC-SA 4.0 — atribución, uso no comercial, compartir igual e indicar cambios",
+      "verified": true,
+      "redistributionAllowed": true
+    },
+    "attribution": "Cat Skeleton — Tavernier Amaury — CC BY-NC-SA 4.0 — Sketchfab. Derivado: partición por caras en superficies parciales, sin geometría añadida.",
+    "sourceUrl": "https://sketchfab.com/3d-models/cat-skeleton-7106115b299649e992476f2d3b4fc602",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "credit": {
+      "work": "Cat Skeleton",
+      "author": "Tavernier Amaury",
+      "licenseName": "CC BY-NC-SA 4.0",
+      "changes": "Derivado: partición por caras en superficies parciales, sin geometría añadida"
+    },
+    "reviewStatus": "pending",
+    "availability": "available",
+    "meshMappings": [
+      {
+        "nodeId": "proposal-scapula-surface-yneg",
+        "structureId": "feline:scapula",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-scapula-surface-ypos",
+        "structureId": "feline:scapula",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-humerus-surface-yneg",
+        "structureId": "feline:humerus",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-humerus-surface-ypos",
+        "structureId": "feline:humerus",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-femur-surface-yneg",
+        "structureId": "feline:femur",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-femur-surface-ypos",
+        "structureId": "feline:femur",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-os-coxae-surface-yneg",
+        "structureId": "feline:os-coxae",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-os-coxae-surface-ypos",
+        "structureId": "feline:os-coxae",
+        "layerId": "skeleton",
+        "admission": "partial-surface"
+      },
+      {
+        "nodeId": "proposal-head-skeleton-surface-midline",
+        "structureId": "feline:skull",
+        "layerId": "skeleton",
+        "admission": "partial-surface",
+        "includesStructureIds": [
+          "feline:mandible"
+        ]
+      }
+    ],
+    "visualNodes": [
+      {
+        "nodeId": "proposal-antebrachium-radius-ulna-surface-yneg",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "proposal-antebrachium-radius-ulna-surface-ypos",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "proposal-crus-tibia-fibula-surface-yneg",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "proposal-crus-tibia-fibula-surface-ypos",
+        "layerId": "skeleton"
+      },
+      {
+        "nodeId": "unidentified-remainder",
+        "layerId": "skeleton"
+      }
+    ],
+    "layers": [
+      {
+        "id": "skeleton",
+        "label": "Esqueleto"
+      }
+    ],
+    "specimen": null
+  },
+  {
     "id": "canine:agancz-skull-scan",
     "speciesId": "canine",
     "regionId": "head",

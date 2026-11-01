@@ -35,6 +35,6 @@ describe('Conjunto felino sin identificación ósea ficticia', () => {
     expect(catalogService.model('canine:skull-model').availability).not.toBe('available');
     expect(catalogService.model('canine:thoracic-limb-model').availability).not.toBe('available');
     expect(catalogService.models({species: 'feline', region: 'head'}).some(entry => entry.id === asset.id)).toBe(false);
-    expect(catalogService.models({species: 'feline'}).filter(entry => entry.availability === 'available').map(entry => entry.id)).toEqual([asset.id]);
+    expect(catalogService.models({species: 'feline'}).filter(entry => entry.availability === 'available').map(entry => entry.id).sort()).toEqual(['feline:tavernier-partial-surfaces', asset.id]);
   });
 });

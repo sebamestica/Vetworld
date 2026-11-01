@@ -7,10 +7,11 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { LoadingManager, Mesh, MeshStandardMaterial, Object3D, Color, Box3, Texture, PerspectiveCamera, type Material, type Plane } from "three";
 import type { OrbitControls as Controls } from "three-stdlib";
 import { viewerAssetSchema, type ViewerAsset } from "@/modules/viewer/manifest";
-import { meshPresentation, type ViewerLayers } from "@/modules/viewer/visibility";
+import { meshPresentation, type ViewerLayers, type ViewerPieces } from "@/modules/viewer/visibility";
+import { selectablePieces } from "@/modules/viewer/selection";
 import { readBoundedBody, safeResourceUri, validateLoadedScene } from "@/modules/viewer/loading";
-import { cameraFrame, clippingPlane, viewDirection, zoomDistance, type CutPlane, type ViewPreset } from "@/modules/viewer/controls";
-import { adaptiveDpr, dprLimit, updateCameraRange, updateRendererExposure } from "@/modules/viewer/rendering";
+import { cameraFrame, clippingPlane, expandByIndexedVertices, viewDirection, zoomDistance, type CutPlane, type ViewPreset } from "@/modules/viewer/controls";
+import { adaptiveDpr, dprLimit, markFocusedPiece, updateCameraRange, updateRendererExposure } from "@/modules/viewer/rendering";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 import { t, type Language, type UiKey } from "@/lib/ui/i18n";
 import styles from "./AnatomyViewer.module.css";
@@ -25,6 +26,10 @@ export interface AnatomyViewerProps {
   onRenderMetrics?: (info: { dpr: number; exposure: number; shadowMapSize: number }) => void;
   /** Nombres del catálogo por `structureId` para etiquetar la alternativa textual del canvas. */
   structureNames?: Record<string, { spanishName: string; canonicalLatinName: string }>;
+  /** Visibilidad/opacidad por pieza (`structureId`), combinada con la de su capa. */
+  pieces?: ViewerPieces;
+  /** Encuadra las mallas visibles de `structureId` cuando cambia `token` (> 0). */
+  focusRequest?: { token: number; structureId: string | null };
 }
 /** Factor de rendimiento de R3F: baja a 0,5 durante la interacción (`OrbitControls regress`) y vuelve a 1 tras 200 ms. Constante para no reconfigurar en cada render. */
 const PERFORMANCE = { min: 0.5, debounce: 200 } as const;
@@ -90,7 +95,7 @@ function Scene({ scene, onSceneReady, onContextLost, onDpr, ...props }: AnatomyV
     const asset = props.asset!;
     scene.traverse((object) => {
       if (!(object instanceof Mesh)) return;
-      const presentation = meshPresentation(asset, object.name, props.layers, props.isolatedId);
+      const presentation = meshPresentation(asset, object.name, props.layers, props.isolatedId, props.pieces);
       object.visible = presentation.visible;
       object.castShadow = props.quality !== "low"; object.receiveShadow = props.quality !== "low";
       for (const material of Array.isArray(object.material) ? object.material : [object.material]) {
@@ -103,19 +108,48 @@ function Scene({ scene, onSceneReady, onContextLost, onDpr, ...props }: AnatomyV
       }
     });
     invalidate();
-  }, [scene, props.asset, props.layers, props.isolatedId, props.selectedId, props.quality, invalidate]);
+  }, [scene, props.asset, props.layers, props.pieces, props.isolatedId, props.selectedId, props.quality, invalidate]);
+  const focusToken = props.focusRequest?.token ?? 0, focusId = props.focusRequest?.structureId ?? null;
+  /** Pieza encuadrada vigente: sobrevive a cambios de tamaño (p. ej. al abrir la ficha) y se anula con Restaurar o una vista. */
+  const focused = useRef<string | null>(null);
+  const framing = useRef({ resetToken: props.resetToken, viewToken: props.viewToken, focusToken: 0, scene });
   useEffect(() => {
+    const last = framing.current;
+    if (last.resetToken !== props.resetToken || last.viewToken !== props.viewToken || last.scene !== scene) focused.current = null;
+    if (focusToken && focusToken !== last.focusToken) focused.current = focusId;
+    framing.current = { resetToken: props.resetToken, viewToken: props.viewToken, focusToken, scene };
     scene.scale.setScalar(scaleToMeters);
-    const frame = cameraFrame(new Box3().setFromObject(scene), camera instanceof PerspectiveCamera ? camera.fov : 40, size.width / Math.max(size.height, 1));
+    scene.updateMatrixWorld(true);
+    const aspect = size.width / Math.max(size.height, 1), fov = camera instanceof PerspectiveCamera ? camera.fov : 40;
+    const frame = cameraFrame(new Box3().setFromObject(scene), fov, aspect);
+    // Caja de la pieza enfocada: solo sus mallas visibles; sin ellas se vuelve al encuadre completo.
+    const pieceBox = new Box3(), asset = props.asset!, target = focused.current;
+    if (target) scene.traverse((object) => { if (object instanceof Mesh && object.visible && asset.meshMappings.some(m => m.nodeId === object.name && m.structureId === target)) expandByIndexedVertices(pieceBox, object); });
     const preset = props.asset?.purpose === "technical_demo" ? props.viewPreset ?? "free" : "free";
-    camera.up.set(0, 1, 0); if (preset === "dorsal" || preset === "ventral") camera.up.set(0, 0, -1);
-    camera.position.copy(frame.center).addScaledVector(viewDirection(preset), frame.distance);
     updateCameraRange(camera, frame.radius / 100, frame.maxDistance * 4);
-    camera.lookAt(frame.center);
-    if (controls.current) { controls.current.target.copy(frame.center); controls.current.minDistance = frame.minDistance; controls.current.maxDistance = frame.maxDistance; controls.current.update(); }
+    if (controls.current) { controls.current.minDistance = frame.minDistance; controls.current.maxDistance = frame.maxDistance; }
+    if (target && !pieceBox.isEmpty() && controls.current) {
+      // Encuadre de la pieza: misma dirección de cámara; salto inmediato (sin animación).
+      const piece = cameraFrame(pieceBox, fov, aspect);
+      const direction = camera.position.clone().sub(controls.current.target).normalize();
+      if (direction.lengthSq() === 0) direction.set(0, 0, 1);
+      controls.current.minDistance = Math.min(frame.minDistance, piece.minDistance);
+      controls.current.target.copy(piece.center);
+      camera.position.copy(piece.center).addScaledVector(direction, Math.max(piece.distance, controls.current.minDistance));
+      markFocusedPiece(gl, target, camera.position.distanceTo(piece.center));
+    } else {
+      camera.up.set(0, 1, 0); if (preset === "dorsal" || preset === "ventral") camera.up.set(0, 0, -1);
+      camera.position.copy(frame.center).addScaledVector(viewDirection(preset), frame.distance);
+      camera.lookAt(frame.center);
+      controls.current?.target.copy(frame.center);
+      markFocusedPiece(gl, null, frame.distance);
+    }
+    controls.current?.update();
     cameraFitted.current = true;
     invalidate();
-  }, [scene, props.resetToken, props.viewPreset, props.viewToken, props.asset?.purpose, scaleToMeters, camera, size.width, size.height, invalidate]);
+    // La visibilidad/selección no reencuadra: solo tamaño, restauración, vista o una nueva petición de foco.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scene, props.resetToken, props.viewPreset, props.viewToken, props.asset?.purpose, scaleToMeters, camera, size.width, size.height, invalidate, focusToken]);
   useEffect(() => {
     if (!props.zoomRequest || !controls.current) return;
     const target = controls.current.target;
@@ -143,7 +177,7 @@ function Scene({ scene, onSceneReady, onContextLost, onDpr, ...props }: AnatomyV
   }, [scene, gl]);
   function select(event: ThreeEvent<MouseEvent>) {
     if (event.delta > 5 || !(event.object instanceof Mesh)) return;
-    const state = meshPresentation(props.asset!, event.object.name, props.layers, props.isolatedId);
+    const state = meshPresentation(props.asset!, event.object.name, props.layers, props.isolatedId, props.pieces);
     if (!state.visible || !state.mapping) return;
     const materials = Array.isArray(event.object.material) ? event.object.material : [event.object.material];
     if (materials.some((material: Material) => material.clippingPlanes?.some((plane: Plane) => plane.distanceToPoint(event.point) < 0))) return;
@@ -217,7 +251,7 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
   }, [resourceUrl, expectedBytes, expectedHash, retry]);
   function fail() { setFailed(true); setStatus("viewerContextLost"); }
   const selectedName = structureLabel(props.structureNames, props.selectedId, language);
-  const mappings = props.asset?.meshMappings ?? [];
+  const pieces = selectablePieces(props.asset);
   const technical = props.asset?.purpose === "technical_demo";
   return <section className={`${styles.viewer} ${props.variant === "immersive" ? styles.immersive : ""}`} style={{ backgroundColor: props.backgroundColor }} aria-label={t(language, "viewerLabel")}>
     {props.variant !== "immersive" && <div className={styles.notice}>{t(language, technical ? "technicalNotice" : "scientificNotice")}</div>}
@@ -227,8 +261,15 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
       {failed && <button className={styles.retry} onClick={() => setRetry((value) => value + 1)}>{t(language, "retryViewer")}</button>}
     </div>
     {scene && !failed && props.asset && <div className={styles.meshButtons} role="group" aria-label={t(language, technical ? "shapeSelection" : "pieceSelection")} data-testid="viewer-pieces">
-      {mappings.length === 0 && <p className={styles.emptyPieces}>{t(language, "noSelectablePieces")}</p>}
-      {mappings.map((mapping) => { const state = meshPresentation(props.asset!, mapping.nodeId, props.layers, props.isolatedId); const label = technical ? (technicalLabels[mapping.nodeId] ? t(language, technicalLabels[mapping.nodeId]) : mapping.nodeId) : structureLabel(props.structureNames, mapping.structureId, language) ?? mapping.nodeId; return <button key={mapping.nodeId} type="button" disabled={!state.visible} aria-pressed={mapping.structureId === props.selectedId} onClick={() => props.onSelect(mapping.structureId)}>{label}</button>; })}
+      {pieces.length === 0 && <p className={styles.emptyPieces}>{t(language, "noSelectablePieces")}</p>}
+      {pieces.map((piece) => {
+        // Una entrada por ficha: los semiespacios de escena de una misma estructura no se presentan como lados.
+        const visible = piece.nodeIds.some(nodeId => meshPresentation(props.asset!, nodeId, props.layers, props.isolatedId, props.pieces).visible);
+        const nodeId = piece.nodeIds[0];
+        const name = technical ? (technicalLabels[nodeId] ? t(language, technicalLabels[nodeId]) : nodeId) : structureLabel(props.structureNames, piece.structureId, language) ?? nodeId;
+        const label = piece.admission === "partial-surface" ? t(language, "pieceLabelPartial", { name }) : name;
+        return <button key={piece.structureId} type="button" disabled={!visible} aria-pressed={piece.structureId === props.selectedId} onClick={() => props.onSelect(piece.structureId)}>{label}</button>;
+      })}
     </div>}
     <p className={styles.srOnly} aria-live="polite" aria-atomic="true" data-testid="viewer-selection">{selectedName ? t(language, "selectedStructure", { name: selectedName }) : ""}</p>
     {props.variant !== "immersive" && <p className={styles.help}>{t(language, "viewerHelp")}</p>}

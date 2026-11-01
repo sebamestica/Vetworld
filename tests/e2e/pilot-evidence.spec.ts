@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('ficha felina nueva muestra evidencia sin simular geometría admitida', async ({page}) => {
+test('ficha felina nueva muestra evidencia y aviso de superficie parcial sin simular hueso completo', async ({page}) => {
   await page.goto('/');
   await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
   const portrait=page.getByRole('button',{name:'Continuar en vertical'});
@@ -11,7 +11,9 @@ test('ficha felina nueva muestra evidencia sin simular geometría admitida', asy
   const panel=page.getByTestId('detail-panel');
   await expect(panel.getByRole('heading',{name:'Fémur',exact:true})).toBeVisible();
   await expect(panel.getByText('Os femoris',{exact:true})).toBeVisible();
-  await expect(page.getByRole('button',{name:'Aislar',exact:true})).toBeDisabled();
+  // El fémur tiene ahora una superficie parcial mapeada (derivado Tavernier): aislable y con aviso visible.
+  await expect(page.getByRole('button',{name:'Aislar',exact:true})).toBeEnabled();
+  await expect(panel.getByTestId('partial-surface-notice')).toContainText('Superficie parcial identificada');
   await panel.getByRole('tab',{name:'Fuentes',exact:true}).click();
   await expect(panel.getByTestId('field-evidence')).toContainText('Evidencia por campo');
   await expect(panel.getByTestId('field-evidence')).toContainText('pp.79–80');

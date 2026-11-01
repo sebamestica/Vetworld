@@ -1,33 +1,87 @@
 import { test, expect } from '@playwright/test';
 
-test('felino corporal: carga, capas, ficha sin selección falsa y canino no disponible', async ({page}) => {
+test('felino corporal: superficies parciales seleccionables con aviso, capas, piezas, búsqueda con foco y canino', async ({page}) => {
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => { if (message.type() === 'error' && /GLTFLoader|Content Security Policy|Fetch API cannot load blob/.test(message.text())) errors.push(message.text()); });
   await page.goto('/');
   await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo');
+  const fullDistance = Number(await page.locator('canvas[data-camera-distance]').getAttribute('data-camera-distance'));
+  expect(fullDistance).toBeGreaterThan(0);
   const portrait = page.getByRole('button', {name: 'Continuar en vertical'});
   if (await portrait.isVisible()) await portrait.click();
   await expect(page.getByLabel('Especie', {exact: true})).toHaveValue('feline');
-  await expect(page.getByTestId('asset-attribution')).toContainText('CC BY-NC-SA 4.0');
+  const attribution = page.getByTestId('asset-attribution');
+  await expect(attribution).toContainText('CC BY-NC-SA 4.0');
+  await expect(attribution).toContainText('Derivado: partición por caras en superficies parciales, sin geometría añadida');
+  await expect(attribution).toContainText('Superficies parciales seleccionables: límites aproximados, sin lado asignado.');
+  await expect(attribution.getByRole('link', {name: 'CC BY-NC-SA 4.0'})).toHaveAttribute('href', /creativecommons\.org\/licenses\/by-nc-sa\/4\.0/);
   await expect(page.getByRole('button', {name: 'Aislar', exact: true})).toBeDisabled();
   const modelResponse = await page.request.get('/api/v1/models/feline:tavernier-skeleton');
   expect(modelResponse.status()).toBe(200);
   expect((await modelResponse.json()).data.structureIds).toEqual([]);
+  const derived = (await (await page.request.get('/api/v1/models/feline:tavernier-partial-surfaces')).json()).data;
+  expect(derived.meshMappings.every((m: {admission?: string}) => m.admission === 'partial-surface')).toBe(true);
+  expect(derived.review.status).toBe('pending');
+
+  // Lista accesible de piezas (una por ficha; los dos semiespacios de escena no se presentan como lados).
+  const pieces = page.getByRole('group', {name: 'Piezas seleccionables del modelo'});
+  await expect(pieces.getByRole('button')).toHaveCount(5);
+  const scapulaPiece = pieces.getByRole('button', {name: 'Escápula · superficie parcial'});
+  await scapulaPiece.focus(); await scapulaPiece.press('Enter');
+  const panel = page.getByTestId('detail-panel');
+  await expect(panel.getByRole('heading', {name: 'Escápula', exact: true})).toBeVisible();
+  const notice = panel.getByTestId('partial-surface-notice');
+  await expect(notice).toContainText('Superficie parcial identificada · límites aproximados · revisión pendiente');
+  await expect(notice).toContainText('no se asigna lado izquierdo ni derecho');
+  await expect(page.getByTestId('viewer-selection')).toHaveText('Estructura seleccionada: Escápula');
+  await expect(scapulaPiece).toHaveAttribute('aria-pressed', 'true');
+  const isolate = page.getByRole('button', {name: 'Aislar', exact: true});
+  // En tablet/móvil la ficha cubre la barra inferior (diseño UI V2): se cierra antes de aislar, como en atlas.spec.ts.
+  await page.getByRole('button', {name: 'Cerrar ficha'}).click();
+  await expect(isolate).toBeEnabled(); await isolate.click(); await expect(isolate).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('canvas[data-focus]')).toHaveAttribute('data-focus', 'feline:scapula');
+  await page.screenshot({path: `docs/phase3/screenshots/feline-partial-isolated-${test.info().project.name}.png`});
+  await isolate.click(); await expect(isolate).toHaveAttribute('aria-pressed', 'false');
+  const skullPiece = pieces.getByRole('button', {name: 'Cráneo · superficie parcial'});
+  await skullPiece.focus(); await skullPiece.press('Enter');
+  await expect(panel.getByRole('heading', {name: 'Cráneo', exact: true})).toBeVisible();
+  await expect(panel.getByTestId('partial-surface-notice')).toContainText('Incluye Mandíbula sin separar.');
+  await page.getByRole('button', {name: 'Cerrar ficha'}).click();
   await page.getByRole('button', {name: 'Abrir herramientas'}).click();
   const bones = page.getByRole('checkbox', {name: 'Huesos', exact: true});
   await expect(bones).toBeChecked(); await bones.uncheck(); await bones.check();
   const opacity = page.getByLabel('Opacidad · Huesos');
   await opacity.focus(); await opacity.press('End');
   for (let i = 0; i < 10; i++) await opacity.press('ArrowLeft');
+  // Ocultar y opacidad por pieza: el fémur se oculta sin afectar al resto.
+  const femurToggle = page.getByRole('checkbox', {name: 'Fémur · superficie parcial', exact: true});
+  await expect(femurToggle).toBeChecked(); await femurToggle.uncheck();
+  await expect(pieces.getByRole('button', {name: 'Fémur · superficie parcial'})).toBeDisabled();
+  await expect(pieces.getByRole('button', {name: 'Húmero · superficie parcial'})).toBeEnabled();
+  await femurToggle.check();
+  const pieceOpacity = page.getByLabel('Opacidad · Húmero · superficie parcial');
+  await pieceOpacity.focus(); await pieceOpacity.press('Home');
+  await expect(page.getByRole('checkbox', {name: 'Húmero · superficie parcial', exact: true})).not.toBeChecked();
+  await page.getByRole('checkbox', {name: 'Húmero · superficie parcial', exact: true}).check();
+  // Vistas y cortes anatómicos siguen deshabilitados para el activo científico.
+  await page.getByRole('tab', {name: 'Vistas', exact: true}).click();
+  await expect(page.getByRole('button', {name: 'Izquierda', exact: true})).toBeDisabled();
+  await expect(page.getByRole('button', {name: 'Sagital', exact: true})).toBeDisabled();
   await page.getByRole('button', {name: 'Cerrar herramientas'}).click();
   const search = page.getByRole('combobox', {name: 'Buscar estructuras anatómicas'});
-  await search.fill('scapula');
+  await search.fill('femur');
   await page.getByRole('group', {name: 'Felino', exact: true}).getByRole('option').click();
-  await expect(page.getByTestId('detail-panel')).toBeVisible();
-  await expect(page.getByRole('button', {name: 'Aislar', exact: true})).toBeDisabled();
+  await expect(panel.getByRole('heading', {name: 'Fémur', exact: true})).toBeVisible();
+  await expect(panel.getByTestId('partial-surface-notice')).toContainText('Superficie parcial identificada');
+  await expect(page.locator('canvas[data-focus]')).toHaveAttribute('data-focus', 'feline:femur');
+  // El encuadre de la pieza acerca la cámara respecto del encuadre completo inicial.
+  expect(Number(await page.locator('canvas[data-focus]').getAttribute('data-camera-distance'))).toBeLessThan(fullDistance * 0.6);
+  await expect(page.getByRole('button', {name: 'Aislar', exact: true})).toBeEnabled();
+  await page.screenshot({path: `docs/phase3/screenshots/feline-partial-search-focus-${test.info().project.name}.png`});
   await page.getByRole('button', {name: 'Cerrar ficha'}).click();
   await page.getByRole('button', {name: 'Restaurar', exact: true}).click();
+  await expect(page.locator('canvas[data-focus]')).toHaveCount(0);
   await page.screenshot({path: `workbench/inspection/feline-viewer-${test.info().project.name}.png`});
   await page.getByLabel('Especie', {exact: true}).selectOption('canine');
   await expect(page.getByTestId('viewer-status')).toHaveText('Visor listo', {timeout: 60_000});
