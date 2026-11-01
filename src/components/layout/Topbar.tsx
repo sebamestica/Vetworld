@@ -3,11 +3,12 @@ import { ChevronDown, Dog, Layers } from 'lucide-react';
 import type { Species, Structure } from '@/modules/anatomy/schemas/catalog';
 import { t, type Language } from '@/lib/ui/i18n';
 import { GlobalSearch } from '@/components/search/GlobalSearch';
+import type { RecordFilter } from '@/lib/ui/tissue-filters';
 import styles from './AppShell.module.css';
 
-export function Topbar({ species, regions, speciesId, regionId, onSpecies, onRegion, onSelect, language }: {
+export function Topbar({ species, regions, speciesId, regionId, onSpecies, onRegion, onSelect, language, recordFilter }: {
   species: Species[]; regions: { id: string; spanishName: string }[]; speciesId: string; regionId: string;
-  onSpecies: (id: string) => void; onRegion: (id: string) => void; onSelect: (s: Structure) => void; language: Language;
+  onSpecies: (id: string) => void; onRegion: (id: string) => void; onSelect: (s: Structure) => void; language: Language; recordFilter?: RecordFilter;
 }) {
   const label = (s: Species) => s.id === 'canine' ? t(language, 'dog') : s.id === 'feline' ? t(language, 'cat') : s.spanishName;
   return <header className={styles.topbar}>
@@ -16,7 +17,7 @@ export function Topbar({ species, regions, speciesId, regionId, onSpecies, onReg
       <label className={styles.pill}><Layers size={15} aria-hidden="true"/><select aria-label={t(language, 'species')} value={speciesId} onChange={e => onSpecies(e.target.value)} disabled={!species.length}>{species.map(s => <option value={s.id} key={s.id}>{label(s)}</option>)}</select><ChevronDown size={15} aria-hidden="true"/></label>
       <label className={`${styles.pill} ${styles.regionPill}`}><select aria-label={t(language, 'region')} value={regionId} onChange={e => onRegion(e.target.value)} disabled={!regions.length}><option value="all">{t(language, 'wholeAnimal')}</option>{regions.map(r => <option key={r.id} value={r.id}>{r.spanishName}</option>)}</select><ChevronDown size={15} aria-hidden="true"/></label>
     </div>
-    <GlobalSearch onSelect={onSelect} language={language} speciesNames={Object.fromEntries(species.map(s => [s.id, label(s)]))}/>
+    <GlobalSearch onSelect={onSelect} language={language} recordFilter={recordFilter} speciesNames={Object.fromEntries(species.map(s => [s.id, label(s)]))}/>
     <div className={styles.topStatus}><i/>{t(language, 'status')}</div>
   </header>;
 }

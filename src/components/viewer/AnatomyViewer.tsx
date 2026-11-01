@@ -10,7 +10,7 @@ import { viewerAssetSchema, type ViewerAsset } from "@/modules/viewer/manifest";
 import { meshPresentation, type ViewerLayers } from "@/modules/viewer/visibility";
 import { readBoundedBody, safeResourceUri, validateLoadedScene } from "@/modules/viewer/loading";
 import { cameraFrame, clippingPlane, viewDirection, zoomDistance, type CutPlane, type ViewPreset } from "@/modules/viewer/controls";
-import { updateCameraRange, updateRendererExposure } from "@/modules/viewer/rendering";
+import { adaptiveDpr, dprLimit, updateCameraRange, updateRendererExposure } from "@/modules/viewer/rendering";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
 import { t, type Language, type UiKey } from "@/lib/ui/i18n";
 import styles from "./AnatomyViewer.module.css";
@@ -26,6 +26,8 @@ export interface AnatomyViewerProps {
   /** Nombres del catálogo por `structureId` para etiquetar la alternativa textual del canvas. */
   structureNames?: Record<string, { spanishName: string; canonicalLatinName: string }>;
 }
+/** Factor de rendimiento de R3F: baja a 0,5 durante la interacción (`OrbitControls regress`) y vuelve a 1 tras 200 ms. Constante para no reconfigurar en cada render. */
+const PERFORMANCE = { min: 0.5, debounce: 200 } as const;
 const technicalLabels: Record<string, UiKey> = { "demo-sphere": "shapeSphere", "demo-box": "shapeBox", "demo-torus": "shapeTorus", "demo-cone": "shapeCone" };
 /** Español muestra el nombre común; inglés el latino NAV (invariable), porque el nombre común no tiene traducción revisada. */
 function structureLabel(names: AnatomyViewerProps["structureNames"], id: string | null, language: Language): string | null {
@@ -36,7 +38,11 @@ function structureLabel(names: AnatomyViewerProps["structureNames"], id: string 
 function dispose(scene: Object3D) {
   const textures = new Set<Texture>();
   scene.traverse((object) => { if (object instanceof Mesh) { object.geometry.dispose(); const materials = Array.isArray(object.material) ? object.material : [object.material]; materials.forEach((material) => { for (const value of Object.values(material)) { if (value instanceof Texture) textures.add(value); } material.dispose(); }); } });
-  textures.forEach((texture) => texture.dispose());
+  textures.forEach((texture) => {
+    texture.dispose();
+    // ImageBitmapLoader decodifica fuera del montón JS: cerrar el bitmap libera su memoria sin esperar al GC.
+    if (typeof ImageBitmap !== "undefined" && texture.image instanceof ImageBitmap) texture.image.close();
+  });
 }
 class CanvasBoundary extends Component<{ children: ReactNode; onError: () => void }, { failed: boolean }> {
   state = { failed: false };
@@ -44,8 +50,10 @@ class CanvasBoundary extends Component<{ children: ReactNode; onError: () => voi
   componentDidCatch() { this.props.onError(); }
   render() { return this.state.failed ? null : this.props.children; }
 }
-function Scene({ scene, onSceneReady, onContextLost, ...props }: AnatomyViewerProps & { scene: Object3D; onSceneReady: () => void; onContextLost: () => void }) {
+function Scene({ scene, onSceneReady, onContextLost, onDpr, ...props }: AnatomyViewerProps & { scene: Object3D; onSceneReady: () => void; onContextLost: () => void; onDpr: (dpr: number) => void }) {
   const { invalidate, camera, gl, size, setDpr } = useThree();
+  const performanceFactor = useThree((state) => state.performance.current);
+  const viewportDpr = useThree((state) => state.viewport.dpr);
   const controls = useRef<Controls>(null);
   const reducedMotion = usePrefersReducedMotion();
   const language = props.language ?? "es";
@@ -71,10 +79,13 @@ function Scene({ scene, onSceneReady, onContextLost, ...props }: AnatomyViewerPr
   });
   useEffect(() => { ready.current = props.onReady; }, [props.onReady]);
   const scaleToMeters = props.asset!.scaleToMeters;
+  const reportDpr = useRef(onDpr);
+  useEffect(() => { reportDpr.current = onDpr; }, [onDpr]);
   useEffect(() => {
-    const limit = props.quality === "low" ? 1 : props.quality === "high" ? 2 : 1.5;
-    setDpr(Math.min(window.devicePixelRatio || 1, limit, Math.sqrt(4_000_000 / Math.max(1, size.width * size.height))));
-  }, [props.quality, size.width, size.height, setDpr]);
+    // El DPR se informa también al Canvas: R3F restablece `dpr` desde su prop en cada render, de modo que un setDpr aislado se perdería.
+    const target = adaptiveDpr({ devicePixelRatio: window.devicePixelRatio, quality: props.quality, width: size.width, height: size.height, performance: performanceFactor });
+    setDpr(target); reportDpr.current(target); invalidate();
+  }, [props.quality, size.width, size.height, performanceFactor, setDpr, invalidate]);
   useEffect(() => {
     const asset = props.asset!;
     scene.traverse((object) => {
@@ -121,7 +132,7 @@ function Scene({ scene, onSceneReady, onContextLost, ...props }: AnatomyViewerPr
     updateRendererExposure(gl, props.exposure ?? 1, props.quality);
     metrics.current?.({ dpr: gl.getPixelRatio(), exposure: gl.toneMappingExposure, shadowMapSize: props.quality === "low" ? 0 : props.quality === "high" ? 1024 : 512 });
     invalidate();
-  }, [gl, props.exposure, props.quality, size.width, size.height, invalidate]);
+  }, [gl, props.exposure, props.quality, size.width, size.height, viewportDpr, invalidate]);
   useEffect(() => {
     const context = gl.getContext();
     const debug = context.getExtension("WEBGL_debug_renderer_info");
@@ -143,7 +154,7 @@ function Scene({ scene, onSceneReady, onContextLost, ...props }: AnatomyViewerPr
     <directionalLight position={[3, 5, 6]} intensity={2.8} castShadow={props.quality !== "low"} shadow-mapSize-width={props.quality === "high" ? 1024 : 512} shadow-mapSize-height={props.quality === "high" ? 1024 : 512} shadow-bias={-0.0005} />
     <directionalLight position={[-4, 1, 2]} intensity={0.6} />
     <primitive object={scene} onClick={select} dispose={null} />
-    <OrbitControls ref={controls} makeDefault enableDamping={!reducedMotion} />
+    <OrbitControls ref={controls} makeDefault enableDamping={!reducedMotion} regress />
   </>;
 }
 export default function AnatomyViewer(props: AnatomyViewerProps) {
@@ -152,6 +163,7 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
   const language = props.language ?? "es";
   const [failed, setFailed] = useState(false);
   const [retry, setRetry] = useState(0);
+  const [dpr, setDprState] = useState<{ quality: AnatomyViewerProps["quality"]; value: number } | null>(null);
   const resourceUrl = props.asset?.resourceUrl;
   const expectedBytes = props.asset?.byteSize;
   const expectedHash = props.asset?.sha256;
@@ -211,7 +223,7 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
     {props.variant !== "immersive" && <div className={styles.notice}>{t(language, technical ? "technicalNotice" : "scientificNotice")}</div>}
     <div data-testid="viewer-status" role="status" aria-live="polite" aria-atomic="true" className={`${styles.status} ${props.variant === 'immersive' && status === 'viewerReady' ? styles.readyStatus : ''}`}>{t(language, status)}</div>
     <div data-testid="viewer-canvas" className={styles.canvas}>
-      {scene && !failed && <CanvasBoundary key={retry} onError={fail}><Canvas key={props.quality} shadows={props.quality === "low" ? false : "soft"} frameloop="demand" dpr={[1, props.quality === "low" ? 1 : props.quality === "high" ? 2 : 1.5]} camera={{ position: [0, 0, 7], fov: 40, near: 0.01, far: 100 }} gl={{ alpha: true, antialias: props.quality !== "low", powerPreference: "low-power", localClippingEnabled: true }} fallback={<span>{t(language, "webglFallback")}</span>}><Scene scene={scene} {...props} onSceneReady={() => setStatus("viewerReady")} onContextLost={fail} /></Canvas></CanvasBoundary>}
+      {scene && !failed && <CanvasBoundary key={retry} onError={fail}><Canvas key={props.quality} shadows={props.quality === "low" ? false : "soft"} frameloop="demand" performance={PERFORMANCE} dpr={dpr?.quality === props.quality ? dpr.value : [1, dprLimit(props.quality)]} camera={{ position: [0, 0, 7], fov: 40, near: 0.01, far: 100 }} gl={{ alpha: true, antialias: props.quality !== "low", powerPreference: "low-power", localClippingEnabled: true }} fallback={<span>{t(language, "webglFallback")}</span>}><Scene scene={scene} {...props} onSceneReady={() => setStatus("viewerReady")} onContextLost={fail} onDpr={(value) => setDprState((current) => current?.quality === props.quality && current.value === value ? current : { quality: props.quality, value })} /></Canvas></CanvasBoundary>}
       {failed && <button className={styles.retry} onClick={() => setRetry((value) => value + 1)}>{t(language, "retryViewer")}</button>}
     </div>
     {scene && !failed && props.asset && <div className={styles.meshButtons} role="group" aria-label={t(language, technical ? "shapeSelection" : "pieceSelection")} data-testid="viewer-pieces">

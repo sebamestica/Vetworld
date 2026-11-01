@@ -5,6 +5,8 @@ import { Eye, Layers, Settings2, X } from 'lucide-react';
 import type { CutPlane, ViewPreset } from '@/modules/viewer/controls';
 import { THEME_PRESETS, type UISettings } from '@/lib/theme/settings';
 import { t, type Language, type UiKey } from '@/lib/ui/i18n';
+import { LAYER_ROWS, SYSTEM_IDS, TISSUE_GROUPS, matchesRecordFilter, systemKey, type RecordFilter, type TissueGroupId } from '@/lib/ui/tissue-filters';
+import type { StructureKind } from '@/modules/anatomy/schemas/catalog';
 import styles from './ToolsPanel.module.css';
 
 export type ToolsTab = 'layers' | 'views' | 'settings';
@@ -17,8 +19,12 @@ export interface ToolsPanelProps {
   settings: UISettings; onSettingsChange: (settings: Partial<UISettings>) => void; onResetSettings: () => void;
   regionOptions?: { id: string; label: string }[]; regionId?: string; onRegionChange?: (id: string) => void;
   anatomicalViewsAvailable?: boolean;
+  /** `false` cuando no hay modelo 3D cargado: el motivo de las capas deshabilitadas pasa a «Modelo 3D no disponible». */
+  modelAvailable?: boolean;
+  /** Fichas de la región actual (tengan o no malla) y filtro por sistema/tejido. */
+  records?: { id: string; spanishName: string; canonicalLatinName: string; kind: StructureKind; systemId: string }[];
+  recordFilter?: RecordFilter; onRecordFilter?: (filter: RecordFilter) => void; onOpenRecord?: (id: string) => void;
 }
-const layerKeys = ['skin', 'muscles', 'tendons', 'ligaments', 'vessels', 'nerves', 'bones', 'organs'] as const;
 const layerColors = ['#bd9e8e', '#bd7b72', '#ddccb3', '#ccb47b', '#ba6672', '#dab66d', '#e8dccc', '#ac667f'];
 const views: ViewPreset[] = ['left', 'right', 'front', 'back', 'dorsal', 'ventral', 'free'];
 const planes: CutPlane[] = ['none', 'sagittal', 'median', 'transverse', 'dorsal'];
@@ -43,9 +49,10 @@ export function ToolsPanel(p: ToolsPanelProps) {
     <div className={styles.body}>
       <section role="tabpanel" id="tools-page-layers" aria-labelledby="tools-tab-layers" hidden={p.tab !== 'layers'}>
         <p className={styles.label}>{tx('section')}</p>
-        {layerKeys.map((key, index) => { const layer = p.layers.find(l => l.id === key); const available = layer?.available ?? false; return <div key={key}><label className={`${styles.toggleRow} ${!available ? styles.unavailable : ''}`} title={!available ? tx('unavailable') : undefined}><span className={styles.toggleLabel}><i style={{ background: layerColors[index] }} />{tx(key)}</span><span className={styles.toggle}><input type="checkbox" checked={layer?.visible ?? false} disabled={!available} onChange={() => p.onToggleLayer(key)} /><span className={styles.switch} /></span></label>{available && layer?.visible && <label className={styles.range}>{tx('opacity')}<input aria-label={`${tx('opacity')} · ${tx(key)}`} type="range" min="0" max="1" step="0.05" value={layer.opacity} onChange={e => p.onOpacity(key, Number(e.target.value))} /><output>{Math.round(layer.opacity * 100)}%</output></label>}</div>; })}
+        {LAYER_ROWS.map(({ id: key }, index) => { const layer = p.layers.find(l => l.id === key); const available = layer?.available ?? false; const reasonId = `layer-reason-${key}`; return <div key={key}><label className={`${styles.toggleRow} ${!available ? styles.unavailable : ''}`}><span className={styles.toggleLabel}><i style={{ background: layerColors[index] }} />{tx(key)}</span><span className={styles.toggle}><input type="checkbox" checked={layer?.visible ?? false} disabled={!available} aria-describedby={available ? undefined : reasonId} onChange={() => p.onToggleLayer(key)} /><span className={styles.switch} /></span></label>{!available && <p id={reasonId} className={styles.reason}>{tx(p.modelAvailable === false ? 'noModel' : 'unavailable')}</p>}{available && layer?.visible && <label className={styles.range}>{tx('opacity')}<input aria-label={`${tx('opacity')} · ${tx(key)}`} type="range" min="0" max="1" step="0.05" value={layer.opacity} onChange={e => p.onOpacity(key, Number(e.target.value))} /><output>{Math.round(layer.opacity * 100)}%</output></label>}</div>; })}
         <div className={styles.rule} /><p className={styles.help}>{tx('layerNotice')}</p>
         {p.regionOptions && p.onRegionChange && <label className={styles.box}>{tx('region')}<select aria-label={tx('region')} value={p.regionId} onChange={e => p.onRegionChange?.(e.target.value)}>{p.regionOptions.map(region => <option key={region.id} value={region.id}>{region.label}</option>)}</select></label>}
+        {p.records && p.recordFilter && p.onRecordFilter && <RecordFilterSection {...p} records={p.records} recordFilter={p.recordFilter} onRecordFilter={p.onRecordFilter} tx={tx} />}
       </section>
       <section role="tabpanel" id="tools-page-views" aria-labelledby="tools-tab-views" hidden={p.tab !== 'views'}>
         <p className={styles.label}>{tx('perspective')}</p><div className={styles.segment}>{views.map(view => <button key={view} type="button" disabled={p.anatomicalViewsAvailable === false && view !== 'free'} aria-pressed={p.viewPreset === view} className={p.viewPreset === view ? styles.active : ''} onClick={() => p.onViewPreset(view)}>{tx(view)}</button>)}</div>
@@ -63,4 +70,19 @@ export function ToolsPanel(p: ToolsPanelProps) {
       </section>
     </div>
   </aside>;
+}
+
+function RecordFilterSection(p: ToolsPanelProps & { records: NonNullable<ToolsPanelProps['records']>; recordFilter: RecordFilter; onRecordFilter: (filter: RecordFilter) => void; tx: (key: UiKey) => string }) {
+  const { tx, records, recordFilter: filter } = p;
+  const visible = records.filter(record => matchesRecordFilter(record, filter));
+  const count = (next: RecordFilter) => records.filter(record => matchesRecordFilter(record, next)).length;
+  const systemLabel = (id: string) => { const key = systemKey(id); return key ? tx(key) : id; };
+  return <>
+    <p className={`${styles.label} ${styles.heading}`}>{tx('recordFilter')}</p>
+    <label className={styles.box}>{tx('filterSystem')}<select aria-label={tx('filterSystem')} value={filter.system} onChange={e => p.onRecordFilter({ ...filter, system: e.target.value })}><option value="all">{tx('allSystems')} ({count({ ...filter, system: 'all' })})</option>{SYSTEM_IDS.map(id => <option key={id} value={id}>{systemLabel(id)} ({count({ ...filter, system: id })})</option>)}</select></label>
+    <label className={styles.box}>{tx('filterTissue')}<select aria-label={tx('filterTissue')} value={filter.tissue} onChange={e => p.onRecordFilter({ ...filter, tissue: e.target.value as TissueGroupId | 'all' })}><option value="all">{tx('allTissues')} ({count({ ...filter, tissue: 'all' })})</option>{TISSUE_GROUPS.map(group => <option key={group.id} value={group.id}>{tx(group.id)} ({count({ ...filter, tissue: group.id })})</option>)}</select></label>
+    <p className={styles.help}>{tx('recordFilterNotice')}</p>
+    <p className={`${styles.label} ${styles.heading}`} id="tools-record-list">{t(p.language, 'filteredRecords', { count: String(visible.length) })}</p>
+    {visible.length ? <ul className={styles.records} aria-labelledby="tools-record-list">{visible.map(record => <li key={record.id}><button type="button" className={styles.record} onClick={() => p.onOpenRecord?.(record.id)}><span>{record.spanishName}</span><small lang="la">{record.canonicalLatinName}</small></button></li>)}</ul> : <p className={styles.help} role="status">{tx('noFilteredRecords')}</p>}
+  </>;
 }

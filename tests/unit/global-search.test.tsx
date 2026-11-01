@@ -42,4 +42,15 @@ describe('Búsqueda global de catálogo', () => {
     await waitFor(() => expect(signals[0].aborted).toBe(true));
     await screen.findByText('Búsqueda no disponible. Inténtalo de nuevo.');
   });
+  it('aplica el filtro de fichas a los resultados y lo comunica', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => api()));
+    const rendered = render(<GlobalSearch onSelect={vi.fn()} recordFilter={{ system: 'all', tissue: 'nerves' }} />);
+    fireEvent.change(screen.getByRole('combobox'), { target: { value: 'scapula' } });
+    await screen.findByText('Hay resultados fuera del filtro activo.');
+    expect(screen.queryAllByRole('option')).toHaveLength(0);
+    expect(screen.getByText('Filtro de fichas activo: Nervios')).toBeTruthy();
+    rendered.rerender(<GlobalSearch onSelect={vi.fn()} recordFilter={{ system: 'skeletal', tissue: 'bones' }} />);
+    expect(screen.getAllByRole('option').length).toBe(2);
+    expect(screen.getByText('Filtro de fichas activo: Esquelético · Huesos')).toBeTruthy();
+  });
 });

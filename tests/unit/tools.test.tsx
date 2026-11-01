@@ -35,4 +35,29 @@ describe('Herramientas accesibles', () => {
     fireEvent.change(screen.getByLabelText('Tamaño de letra'), { target: { value: '1.3' } }); expect(p.onSettingsChange).toHaveBeenCalledWith({ fontScale: 1.3 });
     fireEvent.click(screen.getByRole('button', { name: 'Baja' })); expect(p.onSettingsChange).toHaveBeenCalledWith({ quality: 'low' });
   });
+  it('expone el motivo de las capas sin geometría y filtra fichas aun sin malla', () => {
+    const onRecordFilter = vi.fn(), onOpenRecord = vi.fn();
+    const records = [
+      { id: 'feline-scapula', spanishName: 'Escápula', canonicalLatinName: 'Scapula', kind: 'bone' as const, systemId: 'skeletal' },
+      { id: 'feline-n-radialis', spanishName: 'Nervio radial', canonicalLatinName: 'Nervus radialis', kind: 'nerve' as const, systemId: 'nervous' },
+    ];
+    const p = props({ records, recordFilter: { system: 'all', tissue: 'nerves' }, onRecordFilter, onOpenRecord });
+    render(createElement(ToolsPanel, p));
+    const skin = screen.getByRole('checkbox', { name: 'Piel' });
+    expect(skin.getAttribute('aria-describedby')).toBe('layer-reason-skin');
+    expect(document.getElementById('layer-reason-skin')?.textContent).toBe('Sin geometría en este modelo');
+    expect(screen.getByRole('checkbox', { name: 'Músculos' }).getAttribute('aria-describedby')).toBeNull();
+    expect(screen.getAllByRole('checkbox')).toHaveLength(8);
+    expect(screen.queryByRole('button', { name: /Escápula/ })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: /Nervio radial/ })); expect(onOpenRecord).toHaveBeenCalledWith('feline-n-radialis');
+    expect(screen.getByText('Fichas de la región (1)')).toBeTruthy();
+    fireEvent.change(screen.getByLabelText('Tejido o capa'), { target: { value: 'bones' } }); expect(onRecordFilter).toHaveBeenCalledWith({ system: 'all', tissue: 'bones' });
+    fireEvent.change(screen.getByLabelText('Sistema'), { target: { value: 'skeletal' } }); expect(onRecordFilter).toHaveBeenCalledWith({ system: 'skeletal', tissue: 'nerves' });
+    expect((screen.getByRole('option', { name: 'Vasos (0)' }) as HTMLOptionElement)).toBeTruthy();
+  });
+  it('indica «Modelo 3D no disponible» cuando no hay modelo y avisa si el filtro vacía la lista', () => {
+    render(createElement(ToolsPanel, props({ layers: [], modelAvailable: false, records: [], recordFilter: { system: 'all', tissue: 'all' }, onRecordFilter: vi.fn() })));
+    expect(document.getElementById('layer-reason-bones')?.textContent).toBe('Modelo 3D no disponible');
+    expect(screen.getByRole('status').textContent).toBe('Ninguna ficha registrada coincide con el filtro.');
+  });
 });

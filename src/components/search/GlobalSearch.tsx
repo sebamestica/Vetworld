@@ -6,14 +6,19 @@ import { useAnatomySearch } from '@/hooks/useAnatomySearch';
 import type { Structure } from '@/modules/anatomy/schemas/catalog';
 import { t, type Language } from '@/lib/ui/i18n';
 import { VoiceSearch } from './VoiceSearch';
+import { isFiltering, matchesRecordFilter, systemKey, type RecordFilter } from '@/lib/ui/tissue-filters';
 import styles from './search.module.css';
 
-export function GlobalSearch({ onSelect, language = 'es', speciesNames = {} }: { onSelect: (structure: Structure) => void; language?: Language; speciesNames?: Record<string, string> }) {
+export function GlobalSearch({ onSelect, language = 'es', speciesNames = {}, recordFilter }: { onSelect: (structure: Structure) => void; language?: Language; speciesNames?: Record<string, string>; recordFilter?: RecordFilter }) {
   const id = useId();
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(-1);
-  const { structures, status } = useAnatomySearch(query);
+  const { structures: found, status } = useAnatomySearch(query);
+  // El filtro de fichas (sistema/tejido) se aplica en cliente sobre los resultados devueltos por /api/v1/search.
+  const filtering = !!recordFilter && isFiltering(recordFilter);
+  const structures = filtering ? found.filter(item => matchesRecordFilter(item, recordFilter)) : found;
+  const filterLabel = filtering ? [recordFilter.system !== 'all' ? t(language, systemKey(recordFilter.system) ?? 'filterSystem') : '', recordFilter.tissue !== 'all' ? t(language, recordFilter.tissue) : ''].filter(Boolean).join(' · ') : '';
   const groups = [...new Set(structures.map(item => item.speciesId))];
   const ordered = groups.flatMap(species => structures.filter(item => item.speciesId === species));
   const expanded = open && !!query.trim();
@@ -42,7 +47,8 @@ export function GlobalSearch({ onSelect, language = 'es', speciesNames = {} }: {
           {ordered.filter(item => item.speciesId === species).map(item => <button type="button" role="option" id={`${id}-${item.id}`} aria-selected={current?.id === item.id} tabIndex={-1} className={styles.option} key={item.id} onPointerDown={event => event.preventDefault()} onClick={() => select(item)}><strong>{item.spanishName}</strong><small>{item.canonicalLatinName}</small></button>)}
         </div>)}
       </div>
-      {!structures.length && <p role="status" className={styles.message}>{t(language, status === 'loading' ? 'searching' : status === 'error' ? 'searchError' : 'noResults')}</p>}
+      {!structures.length && <p role="status" className={styles.message}>{t(language, status === 'loading' ? 'searching' : status === 'error' ? 'searchError' : found.length ? 'searchFilteredOut' : 'noResults')}</p>}
+      {filtering && <p className={styles.message}>{t(language, 'searchFilterActive', { filter: filterLabel })}</p>}
     </div>}
   </div>;
 }
