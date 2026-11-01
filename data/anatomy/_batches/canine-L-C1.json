@@ -136,7 +136,7 @@
         "humero"
       ],
       "summary": "Hueso largo del brazo canino que articula proximalmente con la escápula y distalmente con el radio y cúbito.",
-      "detailedDescription": "Hueso relativamente muy largo y algo delgado, con ligera torsión espiral. La cabeza es larga y fuertemente curvada en sentido craneocaudal; el cuello está mejor marcado que en el caballo. El tubérculo mayor, no dividido, se sitúa muy craneal y sobresale poco por encima de la cabeza; el tubérculo menor es pequeño y el surco intertubercular, no dividido, queda desplazado hacia medial. La tuberosidad deltoidea es una cresta baja; el surco del m. braquial es muy poco profundo; una ligera elevación en el tercio proximal de la cara medial representa la tuberosidad del redondo mayor. El foramen nutricio está hacia la mitad de la cara caudal. Distalmente presenta una superficie articular troclear oblicua para el radio y el cúbito, con la parte lateral más extensa; los epicóndilos son prominentes. Las fosas coronoidea y del olécranon suelen comunicar mediante un foramen supratroclear grande. En 123 húmeros de perros actuales, el foramen supratroclear apareció en el 73,17 %, más próximo al epicóndilo lateral y de forma predominantemente alargada en sentido transversal. El extremo proximal se une al cuerpo hacia el año de edad y el distal a los seis a ocho meses.",
+      "detailedDescription": "Hueso relativamente muy largo y algo delgado, con ligera torsión espiral. La cabeza es larga y fuertemente curvada en sentido craneocaudal. El tubérculo mayor, no dividido, se sitúa muy craneal y sobresale poco por encima de la cabeza; el tubérculo menor es pequeño y el surco intertubercular, no dividido, queda desplazado hacia medial. La tuberosidad deltoidea es una cresta baja; el surco del m. braquial es muy poco profundo; una ligera elevación en el tercio proximal de la cara medial representa la tuberosidad del redondo mayor. El foramen nutricio está hacia la mitad de la cara caudal. Distalmente presenta una superficie articular troclear oblicua para el radio y el cúbito, con la parte lateral más extensa; los epicóndilos son prominentes. Las fosas coronoidea y del olécranon suelen comunicar mediante un foramen supratroclear grande. En 123 húmeros de perros actuales, el foramen supratroclear apareció en el 73,17 %, más próximo al epicóndilo lateral y de forma predominantemente alargada en sentido transversal. El extremo proximal se une al cuerpo hacia el año de edad y el distal a los seis a ocho meses.",
       "morphology": "Cuerpo comprimido lateralmente, sobre todo en sus dos tercios proximales, que se curvan en grado variable con convexidad craneal.",
       "location": "Esqueleto del brazo, entre la articulación del hombro y la del codo.",
       "attachments": [
@@ -160,7 +160,7 @@
         "Epicondylus lateralis — epicóndilo lateral"
       ],
       "speciesDifferences": [
-        "NAV restringe Foramen supratrochleare a (ca) y Foramen supracondylare a (fe); su nota 46 indica que el Capitulum humeri está presente en carnívoros, más diferenciado en el gato que en el perro."
+        "NAV marca Foramen supratrochleare con (ca) y Foramen supracondylare con (fe), pero su nota 46 indica que el foramen supratroclear «occurs in Carnivora and occasionally in pig», por lo que no es exclusivo del perro; la misma nota indica que el Capitulum humeri está presente en carnívoros, más diferenciado en el gato que en el perro."
       ],
       "sourceIds": [
         "innervate-vr-canine-limb",
@@ -250,12 +250,12 @@
           "field": "speciesDifferences",
           "sourceId": "nav-6th-edition",
           "locator": "OSTEOLOGIA, p.19 (Foramen supratrochleare (ca), Foramen supracondylare (fe)); nota 46, p.27",
-          "claim": "Comparación nomenclatural explícita perro/gato."
+          "claim": "Marcas de especie, foramen supratroclear en Carnivora y ocasionalmente en el cerdo, y capítulo humeral."
         }
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El foramen supratroclear es variable (estudio moderno: 73,17 % en perros actuales); no afirmar su presencia en un espécimen concreto. Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El foramen supratroclear es variable (estudio moderno: 73,17 % en perros actuales); no afirmar su presencia en un espécimen concreto. Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró del texto la comparación del cuello con el caballo (regla de especies separadas)."
       },
       "completeness": "partial",
       "missingFields": [
@@ -488,7 +488,7 @@
         "mano canina",
         "skeleton manus"
       ],
-      "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
+      "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
       "detailedDescription": "El carpo comprende siete huesos, tres en la fila proximal y cuatro en la distal; la reducción de la fila proximal se atribuye a la fusión de los huesos radial e intermedio en el intermediorradial. Hay cinco metacarpianos: el primero es con mucho el más corto y el tercero y cuarto los más largos. Los cinco dedos tienen tres falanges, excepto el primero, que tiene dos; el primer dedo es muy corto y no toca el suelo al caminar. Suelen existir nueve sesamoideos palmares: dos en cada articulación metacarpofalangiana de los dedos principales y habitualmente uno, a veces dos, en la del primer dedo. La osificación de metacarpianos y falanges se completa a los cinco o seis meses.",
       "morphology": "Los metacarpianos, juntos proximalmente y algo divergentes distalmente, forman una cara dorsal convexa y una palmar cóncava.",
       "landmarks": [
@@ -563,7 +563,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Registro de grupo heredado (no un hueso único); los recuentos de sesamoideos y del dedo I son variables según la fuente. Se retiró el alias inexacto «huesos del carpo y metacarpo». Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Registro de grupo heredado (no un hueso único); los recuentos de sesamoideos y del dedo I son variables según la fuente. Se retiró el alias inexacto «huesos del carpo y metacarpo». Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único. Los huesos carpianos tienen ahora fichas individuales (canine:carpal-intermedioradial, -ulnar, -accessory, -1 a -4); el enlace entre esta ficha de conjunto y las individuales queda pendiente de decisión."
       },
       "completeness": "partial",
       "missingFields": [
@@ -681,7 +681,7 @@
         "Os scapholunatum",
         "escafolunar"
       ],
-      "summary": "Hueso mayor de la fila proximal del carpo canino, resultado de la fusión de los huesos radial e intermedio.",
+      "summary": "Hueso mayor de la fila proximal del carpo canino que, según Sisson, parece resultar de la fusión de los huesos radial e intermedio.",
       "detailedDescription": "Articula con casi toda la superficie distal del radio y con los huesos de la fila distal; sobresale de forma prominente en la cara palmar del carpo.",
       "sourceIds": [
         "nav-6th-edition",
@@ -712,7 +712,7 @@
           "field": "summary",
           "sourceId": "sisson-dog-1914",
           "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
-          "claim": "Posición en el carpo de perro."
+          "claim": "Posición en el carpo de perro; fusión radial-intermedio presentada como aparente («apparently»)."
         },
         {
           "field": "detailedDescription",
@@ -723,7 +723,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. La posible inclusión del hueso central en el perro queda pendiente de una fuente canina moderna."
       },
       "completeness": "partial",
       "missingFields": [
@@ -747,7 +747,7 @@
       "aliases": [
         "Os triquetrum"
       ],
-      "summary": "Hueso de la fila proximal del carpo canino, lateral al intermediorradial.",
+      "summary": "Hueso de la fila proximal del carpo canino.",
       "detailedDescription": "Articula proximalmente con el radio y el cúbito y palmarmente con el accesorio; distalmente descansa sobre el carpiano IV y se prolonga para articular también con el metacarpiano V.",
       "morphology": "Largo.",
       "sourceIds": [
@@ -796,7 +796,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró «lateral al intermediorradial»: no figura en el texto citado."
       },
       "completeness": "partial",
       "missingFields": [

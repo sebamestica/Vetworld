@@ -279,7 +279,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Las dos descripciones de forma (piriforme/piramidal) proceden de fuentes distintas y se conservan ambas."
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Las dos descripciones de forma (piriforme/piramidal) proceden de fuentes distintas y se conservan ambas. Discrepancia no resuelta sobre la cara craneal (externa): convexa y rugosa según El-Ghazali y El-behery (2018); «rough and concave» según Reighard/Jennings (p.80)."
       },
       "completeness": "partial",
       "missingFields": [
@@ -366,7 +366,7 @@
         "fibula",
         "perone"
       ],
-      "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y separado de ella en toda su longitud.",
+      "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y no fusionado con ella; el espacio interóseo se extiende a lo largo de toda la pierna, aunque articula con la tibia en sus extremos proximal y distal.",
       "detailedDescription": "La cabeza, aplanada, articula con la tibia por una carilla proximomedial (Reighard/Jennings); el estudio de 2018 describe en el gato dos carillas para la tibia y una cabeza dividida caudolateralmente por un surco en dos áreas triangulares. El borde medial, muy agudo, da inserción a la membrana interósea entre tibia y peroné. El extremo distal se ensancha formando el maléolo lateral, con carillas para la tibia y el talus y surcos para tendones. En el gato el espacio interóseo se extiende a lo largo de toda la pierna.",
       "morphology": "Hueso delgado y triangular con extremos proximal y distal ensanchados; en el gato, hueso largo completo.",
       "location": "Pierna (Skeleton cruris), en el lado lateral de la tibia.",
@@ -422,7 +422,7 @@
           "field": "summary",
           "sourceId": "el-ghazali-el-behery-pelvic-2018",
           "locator": "p.415, Tibia and fibula; Fig. 4E (gato)",
-          "claim": "Separación completa en el gato."
+          "claim": "Fíbula no fusionada con la tibia en el gato («completely separated along its length»); dos carillas tibiales."
         },
         {
           "field": "detailedDescription",
@@ -514,9 +514,9 @@
         "tarsus",
         "huesos tarsianos"
       ],
-      "summary": "Conjunto de siete huesos tarsianos del pie felino: talus, calcáneo, central y tarsianos I–IV.",
-      "detailedDescription": "El calcáneo, el más largo, se sitúa en el lado lateral y forma el soporte del talón; articula distalmente con el cuboides, que lleva los metatarsianos IV y V. El talus (astrágalo), entre calcáneo y tibia, tiene cuerpo, cuello y cabeza; su tróclea articula con la tibia y los maléolos y su cabeza con el navicular. El navicular lleva los tres cuneiformes, que a su vez llevan el metatarsiano I rudimentario y los II y III. En terminología NAV: Talus, Calcaneus, Os tarsi centrale [Os naviculare] y Os tarsale I–IV [Os cuneiforme mediale, intermedium, laterale; Os cuboideum]. El estudio de 2018 describe en el gato una fila proximal (talus medial y calcáneo lateral), el central intermedio y una fila distal de cuatro huesos.",
-      "morphology": "Calcáneo cilíndrico, de longitud doble que la del talus, con sustentáculo del talus y tubérculo peroneo; central oval con superficie proximal cóncava; tarsianos I y IV cuadriláteros, el I más pequeño; II semilunar y aplanado; III piramidal.",
+      "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos tarsianos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen siete en el gato: talus, calcáneo, central y tarsianos I–IV.",
+      "detailedDescription": "Ficha de conjunto que agrupa varios huesos tarsianos; no describe un hueso único. El calcáneo, el más largo, se sitúa en el lado lateral y forma el soporte del talón; articula distalmente con el cuboides, que lleva los metatarsianos IV y V. El talus (astrágalo), entre calcáneo y tibia, tiene cuerpo, cuello y cabeza; su tróclea articula con la tibia y los maléolos y su cabeza con el navicular. El navicular lleva los tres cuneiformes, que a su vez llevan el metatarsiano I rudimentario y los II y III. En terminología NAV: Talus, Calcaneus, Os tarsi centrale [Os naviculare] y Os tarsale I–IV [Os cuneiforme mediale, intermedium, laterale; Os cuboideum]. El estudio de 2018 describe en el gato una fila proximal (talus medial y calcáneo lateral), el central intermedio y una fila distal de cuatro huesos.",
+      "morphology": "Calcáneo cilíndrico, con sustentáculo del talus y tubérculo peroneo; central oval con superficie proximal cóncava. El-Ghazali y El-behery describen los tarsianos I y IV como cuadriláteros (el I el más pequeño), el II semilunar y aplanado y el III piramidal.",
       "location": "Esqueleto del pie (Skeleton pedis), entre tibia y peroné proximalmente y metatarsianos distalmente.",
       "function": [
         "El calcáneo forma el soporte del talón."
@@ -600,7 +600,7 @@
           "field": "morphology",
           "sourceId": "el-ghazali-el-behery-pelvic-2018",
           "locator": "p.415, Tarsal bones; Fig. 5B–C",
-          "claim": "Forma de los huesos; la proporción calcáneo/talus se enuncia sin distinguir especie."
+          "claim": "Forma de los huesos tarsianos descrita en el estudio comparativo."
         },
         {
           "field": "morphology",
@@ -653,7 +653,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los siete tarsianos no tienen fichas individuales. Reighard/Jennings usan astragalus, scaphoid/navicular y cuneiformes (BNA); las correspondencias NAV se basan en los sinónimos entre corchetes de NAV."
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los siete tarsianos no tienen fichas individuales. Reighard/Jennings usan astragalus, scaphoid/navicular y cuneiformes (BNA); las correspondencias NAV se basan en los sinónimos entre corchetes de NAV. Se retiró la proporción calcáneo/talus («longitud doble»): El-Ghazali y El-behery la enuncian sin distinguir especie. Discrepancia no resuelta sobre los cuneiformes: El-Ghazali y El-behery describen los tarsianos I y IV cuadriláteros y el I como el más pequeño; Reighard/Jennings (pp.84–85) describen el cuneiforme medial «flat triangular» y el intermedio «small». Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
       },
       "completeness": "partial",
       "missingFields": [
@@ -673,8 +673,8 @@
         "metatarsus",
         "metatarsianos"
       ],
-      "summary": "Cinco metatarsianos felinos: el I rudimentario y los II–V desarrollados.",
-      "detailedDescription": "Se parecen a los metacarpianos y se distinguen por sus bases (Reighard/Jennings). El I es rudimentario y cónico y su base articula con el cuneiforme medial (tarsiano I). La base del II corresponde al cuneiforme intermedio, la del III al lateral, la del IV al cuboides, y la base del V, en cuña, también articula con el cuboides. El estudio de 2018 describe cinco metatarsianos en el gato, bien desarrollados del II al V y el I no desarrollado; en las articulaciones metatarsofalangianas hay sesamoideos proximales pares.",
+      "summary": "Ficha de conjunto (varios huesos, no un hueso único): metatarsianos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen cinco, el I rudimentario y los II–V desarrollados.",
+      "detailedDescription": "Ficha de conjunto que agrupa los metatarsianos; no describe un hueso único. Se parecen a los metacarpianos y se distinguen por sus bases (Reighard/Jennings). El I es rudimentario y cónico y su base articula con el cuneiforme medial (tarsiano I). La base del II corresponde al cuneiforme intermedio, la del III al lateral, la del IV al cuboides, y la base del V, en cuña, también articula con el cuboides. El estudio de 2018 describe cinco metatarsianos en el gato, bien desarrollados del II al V y el I no desarrollado; en las articulaciones metatarsofalangianas hay sesamoideos proximales pares.",
       "morphology": "Huesos largos con base, cuerpo y cabeza, semejantes a los metacarpianos; el I es rudimentario y cónico.",
       "location": "Esqueleto del pie (Skeleton pedis), entre tarso y falanges.",
       "attachments": [
@@ -786,7 +786,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. Un metatarsiano I rudimentario no implica un dedo I funcional. Reighard/Jennings escriben «first metacarpal» en el párrafo de metatarsianos (p.85), probable errata por metatarsal."
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. Un metatarsiano I rudimentario no implica un dedo I funcional. Reighard/Jennings escriben «first metacarpal» en el párrafo de metatarsianos (p.85), probable errata por metatarsal. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
       },
       "completeness": "partial",
       "missingFields": [
@@ -806,8 +806,8 @@
         "falanges del pie felino",
         "phalanges pedis"
       ],
-      "summary": "Falanges de los cuatro dedos del pie felino (II–V), con tres falanges en cada dedo.",
-      "detailedDescription": "Reighard y Jennings describen tres falanges en cada uno de los cuatro dedos, casi idénticas a las de la mano. El estudio de 2018 registra en el gato cuatro dedos (II–V), cada uno con tres falanges; los dedos II y V son los más cortos y los III y IV los más largos. La tercera falange queda encerrada en la garra y es triangular, con base proximal y vértice distal (proceso ungueal). Hay dos sesamoideos proximales por dedo y no se observaron sesamoideos distales en la muestra felina.",
+      "summary": "Ficha de conjunto (varios huesos, no un hueso único): falanges de los dedos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen cuatro dedos (II–V) con tres falanges cada uno.",
+      "detailedDescription": "Ficha de conjunto que agrupa las falanges del pie; no describe un hueso único. Reighard y Jennings describen tres falanges en cada uno de los cuatro dedos, casi idénticas a las de la mano. El estudio de 2018 registra en el gato cuatro dedos (II–V), cada uno con tres falanges; los dedos II y V son los más cortos y los III y IV los más largos. La tercera falange queda encerrada en la garra y es triangular, con base proximal y vértice distal (proceso ungueal). Hay dos sesamoideos proximales por dedo y no se observaron sesamoideos distales en la muestra felina.",
       "morphology": "Tres filas de falanges similares a las de la mano; falange distal triangular con proceso ungueal puntiagudo.",
       "location": "Esqueleto del pie (Skeleton pedis), distal a los metatarsianos II–V.",
       "landmarks": [
@@ -902,7 +902,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. La ausencia de sesamoideo distal se refiere a la muestra del estudio de 2018, no a todo gato."
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. La ausencia de sesamoideo distal se refiere a la muestra del estudio de 2018, no a todo gato. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
       },
       "completeness": "partial",
       "missingFields": [

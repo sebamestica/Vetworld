@@ -104,7 +104,7 @@
         {
           "field": "attachments",
           "sourceId": "reighard-jennings-cat-1901",
-          "locator": "p.117, M. clavotrapezius, Insertion",
+          "locator": "p.118, M. clavotrapezius, Insertion",
           "claim": "Inserción en la clavícula y en un rafe con el clavobraquial."
         },
         {
@@ -332,7 +332,7 @@
         "Processus styloideus — apófisis estiloides"
       ],
       "speciesDifferences": [
-        "En el gato la articulación radioulnar distal presenta un verdadero ligamento radioulnar y no un disco fibrocartilaginoso, a diferencia de lo descrito en el perro, y sin islotes fibrocartilaginosos en el ligamento (Basa et al., 2023)."
+        "En el gato la articulación radioulnar distal presenta un verdadero ligamento radioulnar y no un disco fibrocartilaginoso (Basa et al., 2023); en el perro el ligamento se ha descrito con porciones interósea proximal y articular distal y con islotes fibrocartilaginosos. El disco fibrocartilaginoso solo se atribuye explícitamente al guepardo."
       ],
       "sourceIds": [
         "feline-skeletal-3d",
@@ -439,7 +439,7 @@
           "field": "speciesDifferences",
           "sourceId": "basa-feline-radioulnar-ligament-2023",
           "locator": "Discussion, primer y tercer párrafos",
-          "claim": "Comparación explícita gato/perro."
+          "claim": "Ligamento verdadero en el gato; islotes fibrocartilaginosos en el perro; disco fibrocartilaginoso atribuido al guepardo."
         }
       ],
       "review": {
@@ -465,8 +465,8 @@
         "carpus",
         "huesos carpianos"
       ],
-      "summary": "Conjunto de siete huesos carpianos dispuestos en dos filas en el carpo felino.",
-      "detailedDescription": "Reighard y Jennings describen siete huesos: en la fila proximal, escafolunar, cuneiforme y pisiforme; en la distal, trapecio, trapezoide, hueso grande (os magnum) y unciforme. Sus equivalencias BNA y los términos NAV son Os carpi intermedioradiale [Os scapholunatum], Os carpi ulnare [Os triquetrum], Os carpi accessorium [Os pisiforme] y Os carpale I–IV [Os trapezium, Os trapezoideum, Os capitatum, Os hamatum]. En el gatito el escafolunar está representado por tres huesos: escafoides, semilunar y un central. Un sesamoideo radial se aplica al extremo radial del escafolunar. Un estudio micro-CT de 2026 incluyó en gatos los siete huesos: intermediorradial, ulnar, accesorio y carpales I–IV.",
+      "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos carpianos del carpo felino; Reighard/Jennings y Goldstein et al. describen siete, dispuestos en dos filas.",
+      "detailedDescription": "Reighard y Jennings describen siete huesos: en la fila proximal, escafolunar, cuneiforme y pisiforme; en la distal, trapecio, trapezoide, hueso grande (os magnum) y unciforme. Reighard y Jennings dan los equivalentes BNA Os triquetrum, Os hamatum, Os capitatum, Os multangulum minus y Os multangulum majus. NAV (p.19) usa Os carpi intermedioradiale [Os scapholunatum], Os carpi ulnare [Os triquetrum], Os carpi accessorium [Os pisiforme] y Os carpale I–IV [Os trapezium, Os trapezoideum, Os capitatum, Os hamatum]. En el gatito el escafolunar está representado por tres huesos: escafoides, semilunar y un central. Un sesamoideo radial se aplica al extremo radial del escafolunar. Un estudio micro-CT de 2026 incluyó en gatos los siete huesos: intermediorradial, ulnar, accesorio y carpales I–IV.",
       "morphology": "Escafolunar cuadrangular con un proceso romo; cuneiforme en pirámide aplanada; pisiforme unas dos veces más largo que ancho, con extremos ensanchados; unciforme y trapezoide en cuña; hueso grande en placa oblonga; trapecio en prisma triangular curvado.",
       "location": "Esqueleto de la mano (Skeleton manus), entre radio y ulna proximalmente y metacarpianos distalmente.",
       "function": [
@@ -584,7 +584,7 @@
         {
           "field": "landmarks",
           "sourceId": "goldstein-feline-carpus-microct-2026",
-          "locator": "Methods, Micro CT; Table 1",
+          "locator": "Methods, Micro CT",
           "claim": "Siete unidades felinas identificadas."
         },
         {
@@ -626,7 +626,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La ficha agrupa siete huesos que el catálogo aún no separa en fichas individuales. Reighard/Jennings llaman «extensor brevis pollicis» al músculo del sesamoideo radial; su posible correspondencia con Os sesamoideum m. abductoris digiti I longi de NAV no está comprobada."
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La ficha agrupa siete huesos que el catálogo aún no separa en fichas individuales. Reighard/Jennings llaman «extensor brevis pollicis» al músculo del sesamoideo radial; su posible correspondencia con Os sesamoideum m. abductoris digiti I longi de NAV no está comprobada. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
       },
       "completeness": "partial",
       "missingFields": [
@@ -646,7 +646,7 @@
         "metacarpus",
         "metacarpianos"
       ],
-      "summary": "Cinco huesos metacarpianos alargados y cilíndricos de la mano felina, numerados del I al V desde el dedo I.",
+      "summary": "Ficha de conjunto (varios huesos, no un hueso único): metacarpianos alargados y cilíndricos de la mano felina; Reighard/Jennings describen cinco, numerados del I al V desde el dedo I.",
       "detailedDescription": "El metacarpiano I es el más corto y articula con el trapecio y con el sesamoideo radial. La base del II articula con trapezoide, trapecio, hueso grande y metacarpiano III. El III es el más largo y articula con el hueso grande. Las bases del IV y V forman juntas una carilla que articula con el unciforme y el hueso grande. Cada cabeza presenta una carilla hemisférica con una cresta en su mitad palmar (ventral en Reighard/Jennings), en relación con un par de sesamoideos.",
       "morphology": "Huesos cilíndricos y alargados con extremos ensanchados: base proximal y cabeza distal.",
       "location": "Esqueleto de la mano (Skeleton manus), entre la fila distal del carpo y las falanges proximales.",
@@ -734,7 +734,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los cinco metacarpianos no tienen fichas individuales. Palmar sustituye al «ventral» de Reighard/Jennings según NAV."
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los cinco metacarpianos no tienen fichas individuales. Palmar sustituye al «ventral» de Reighard/Jennings según NAV. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
       },
       "completeness": "partial",
       "missingFields": [
@@ -756,7 +756,7 @@
         "falanges de la mano",
         "phalanges"
       ],
-      "summary": "Falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
+      "summary": "Ficha de conjunto (varios huesos, no un hueso único): falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
       "detailedDescription": "Reighard y Jennings describen dos falanges en el dedo I y tres en cada uno de los dedos II–V. Las proximales son alargadas, aplanadas y convexas longitudinalmente en su cara dorsal, con extremo distal en polea. Las medias son más cortas, con extremo distal cilíndrico que se proyecta más hacia el lado ulnar; por ello, en extensión completa, la falange distal queda al lado ulnar de la media. La falange distal tiene forma de prisma cuadrangular, con una excavación que recibe la base de la garra y una lámina ósea en forma de pico que la sostiene. NAV ofrece Os unguiculare como término alternativo de la falange distal en Carnivora.",
       "morphology": "Proximales alargadas y aplanadas dorsopalmarmente, con extremos engrosados; medias más cortas; distales en prisma cuadrangular con lámina en forma de pico.",
       "location": "Esqueleto de la mano (Skeleton manus), distal a los metacarpianos.",
@@ -768,8 +768,8 @@
         "Tubérculo flexor de la falange distal: terminación del tendón del M. flexor digitorum profundus (NAV, Carnivora)"
       ],
       "landmarks": [
-        "Phalanx proximalis [Os compedale] — falange proximal",
-        "Phalanx media [Os coronale] — falange media",
+        "Phalanx proximalis — falange proximal",
+        "Phalanx media — falange media",
         "Phalanx distalis [Os unguiculare] — falange distal",
         "Tuberculum flexorium — tubérculo flexor de la falange distal (NAV: presente en Carnivora)"
       ],
@@ -834,8 +834,8 @@
         {
           "field": "landmarks",
           "sourceId": "nav-6th-edition",
-          "locator": "OSTEOLOGIA, p.20; Ossa digitorum manus; nota 51, p.28",
-          "claim": "Nombres latinos y tubérculo flexor en Carnivora."
+          "locator": "OSTEOLOGIA, p.20; Ossa digitorum manus; Notes to Osteologia, notas 50 y 51, p.28",
+          "claim": "Nombres latinos de las falanges; Os unguiculare para Carnivora (nota 50, términos admitidos para Carnivora) y tubérculo flexor en Carnivora (nota 51)."
         },
         {
           "field": "attachments",
@@ -858,7 +858,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La afirmación sobre el tubérculo flexor procede de NAV para Carnivora, no de una descripción felina específica. La retractilidad de la garra no se incluye por falta de fuente leída en este lote. Los once sesamoideos de la mano (Reighard/Jennings, p.73) no tienen ficha."
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La afirmación sobre el tubérculo flexor procede de NAV para Carnivora, no de una descripción felina específica. La retractilidad de la garra no se incluye por falta de fuente leída en este lote. Los once sesamoideos de la mano (Reighard/Jennings, p.73) no tienen ficha. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
       },
       "completeness": "partial",
       "missingFields": [

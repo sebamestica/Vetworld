@@ -118,7 +118,7 @@
       "calcaneo",
       "calcaneus"
     ],
-    "summary": "Hueso proximal del tarso canino, plantar y lateral al talus, con la tuberosidad calcánea.",
+    "summary": "Hueso proximal del tarso canino, con la tuberosidad calcánea.",
     "has3DModel": false,
     "modelIds": [],
     "searchTokens": [
@@ -268,7 +268,7 @@
       "Os scapholunatum",
       "escafolunar"
     ],
-    "summary": "Hueso mayor de la fila proximal del carpo canino, resultado de la fusión de los huesos radial e intermedio.",
+    "summary": "Hueso mayor de la fila proximal del carpo canino que, según Sisson, parece resultar de la fusión de los huesos radial e intermedio.",
     "has3DModel": false,
     "modelIds": [],
     "searchTokens": [
@@ -297,7 +297,7 @@
     "aliases": [
       "Os triquetrum"
     ],
-    "summary": "Hueso de la fila proximal del carpo canino, lateral al intermediorradial.",
+    "summary": "Hueso de la fila proximal del carpo canino.",
     "has3DModel": false,
     "modelIds": [],
     "searchTokens": [
@@ -626,7 +626,7 @@
       "mano canina",
       "skeleton manus"
     ],
-    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
     "has3DModel": false,
     "modelIds": [
       "canine:thoracic-limb-model"
@@ -1467,7 +1467,7 @@
       "carpus",
       "huesos carpianos"
     ],
-    "summary": "Conjunto de siete huesos carpianos dispuestos en dos filas en el carpo felino.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos carpianos del carpo felino; Reighard/Jennings y Goldstein et al. describen siete, dispuestos en dos filas.",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"
@@ -1543,7 +1543,7 @@
       "fibula",
       "perone"
     ],
-    "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y separado de ella en toda su longitud.",
+    "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y no fusionado con ella; el espacio interóseo se extiende a lo largo de toda la pierna, aunque articula con la tibia en sus extremos proximal y distal.",
     "has3DModel": false,
     "modelIds": [],
     "searchTokens": [
@@ -1612,7 +1612,7 @@
       "metacarpo felino",
       "metacarpus"
     ],
-    "summary": "Cinco huesos metacarpianos alargados y cilíndricos de la mano felina, numerados del I al V desde el dedo I.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): metacarpianos alargados y cilíndricos de la mano felina; Reighard/Jennings describen cinco, numerados del I al V desde el dedo I.",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"
@@ -1644,7 +1644,7 @@
       "metatarso felino",
       "metatarsus"
     ],
-    "summary": "Cinco metatarsianos felinos: el I rudimentario y los II–V desarrollados.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): metatarsianos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen cinco, el I rudimentario y los II–V desarrollados.",
     "has3DModel": false,
     "modelIds": [],
     "searchTokens": [
@@ -1750,7 +1750,7 @@
       "falanges del pie felino",
       "phalanges pedis"
     ],
-    "summary": "Falanges de los cuatro dedos del pie felino (II–V), con tres falanges en cada dedo.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): falanges de los dedos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen cuatro dedos (II–V) con tres falanges cada uno.",
     "has3DModel": false,
     "modelIds": [],
     "searchTokens": [
@@ -1782,7 +1782,7 @@
       "falanges de los dedos felinos",
       "phalanges"
     ],
-    "summary": "Falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"
@@ -1924,7 +1924,7 @@
       "tarso felino",
       "tarsus"
     ],
-    "summary": "Conjunto de siete huesos tarsianos del pie felino: talus, calcáneo, central y tarsianos I–IV.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos tarsianos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen siete en el gato: talus, calcáneo, central y tarsianos I–IV.",
     "has3DModel": false,
     "modelIds": [],
     "searchTokens": [

@@ -127,9 +127,9 @@
       "doi": "10.5455/javar.2018.e292",
       "publicationType": "primary-comparative-anatomical-study",
       "license": {
-        "label": "CC BY 4.0 explícita en p.410 del PDF editorial; requiere atribución y declaración de modificaciones",
-        "verified": true,
-        "redistributionAllowed": true
+        "label": "Conflicto de licencias sin resolver: el PDF editorial (JAVAR, bdvets.org, p.410) enlaza CC BY 4.0, mientras que el depósito de PMC (PMC6702901) declara CC BY-NC 4.0 (by-nc/4.0, con texto «Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported»). Hasta su resolución humana se aplica la más restrictiva: no incorporar figuras ni redistribuir; solo hechos parafraseados con cita.",
+        "verified": false,
+        "redistributionAllowed": false
       },
       "supportedStructureIds": [
         "feline:femur",

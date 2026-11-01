@@ -406,7 +406,7 @@
       "humero"
     ],
     "summary": "Hueso largo del brazo canino que articula proximalmente con la escápula y distalmente con el radio y cúbito.",
-    "detailedDescription": "Hueso relativamente muy largo y algo delgado, con ligera torsión espiral. La cabeza es larga y fuertemente curvada en sentido craneocaudal; el cuello está mejor marcado que en el caballo. El tubérculo mayor, no dividido, se sitúa muy craneal y sobresale poco por encima de la cabeza; el tubérculo menor es pequeño y el surco intertubercular, no dividido, queda desplazado hacia medial. La tuberosidad deltoidea es una cresta baja; el surco del m. braquial es muy poco profundo; una ligera elevación en el tercio proximal de la cara medial representa la tuberosidad del redondo mayor. El foramen nutricio está hacia la mitad de la cara caudal. Distalmente presenta una superficie articular troclear oblicua para el radio y el cúbito, con la parte lateral más extensa; los epicóndilos son prominentes. Las fosas coronoidea y del olécranon suelen comunicar mediante un foramen supratroclear grande. En 123 húmeros de perros actuales, el foramen supratroclear apareció en el 73,17 %, más próximo al epicóndilo lateral y de forma predominantemente alargada en sentido transversal. El extremo proximal se une al cuerpo hacia el año de edad y el distal a los seis a ocho meses.",
+    "detailedDescription": "Hueso relativamente muy largo y algo delgado, con ligera torsión espiral. La cabeza es larga y fuertemente curvada en sentido craneocaudal. El tubérculo mayor, no dividido, se sitúa muy craneal y sobresale poco por encima de la cabeza; el tubérculo menor es pequeño y el surco intertubercular, no dividido, queda desplazado hacia medial. La tuberosidad deltoidea es una cresta baja; el surco del m. braquial es muy poco profundo; una ligera elevación en el tercio proximal de la cara medial representa la tuberosidad del redondo mayor. El foramen nutricio está hacia la mitad de la cara caudal. Distalmente presenta una superficie articular troclear oblicua para el radio y el cúbito, con la parte lateral más extensa; los epicóndilos son prominentes. Las fosas coronoidea y del olécranon suelen comunicar mediante un foramen supratroclear grande. En 123 húmeros de perros actuales, el foramen supratroclear apareció en el 73,17 %, más próximo al epicóndilo lateral y de forma predominantemente alargada en sentido transversal. El extremo proximal se une al cuerpo hacia el año de edad y el distal a los seis a ocho meses.",
     "morphology": "Cuerpo comprimido lateralmente, sobre todo en sus dos tercios proximales, que se curvan en grado variable con convexidad craneal.",
     "location": "Esqueleto del brazo, entre la articulación del hombro y la del codo.",
     "attachments": [
@@ -430,7 +430,7 @@
       "Epicondylus lateralis — epicóndilo lateral"
     ],
     "speciesDifferences": [
-      "NAV restringe Foramen supratrochleare a (ca) y Foramen supracondylare a (fe); su nota 46 indica que el Capitulum humeri está presente en carnívoros, más diferenciado en el gato que en el perro."
+      "NAV marca Foramen supratrochleare con (ca) y Foramen supracondylare con (fe), pero su nota 46 indica que el foramen supratroclear «occurs in Carnivora and occasionally in pig», por lo que no es exclusivo del perro; la misma nota indica que el Capitulum humeri está presente en carnívoros, más diferenciado en el gato que en el perro."
     ],
     "sourceIds": [
       "innervate-vr-canine-limb",
@@ -520,12 +520,12 @@
         "field": "speciesDifferences",
         "sourceId": "nav-6th-edition",
         "locator": "OSTEOLOGIA, p.19 (Foramen supratrochleare (ca), Foramen supracondylare (fe)); nota 46, p.27",
-        "claim": "Comparación nomenclatural explícita perro/gato."
+        "claim": "Marcas de especie, foramen supratroclear en Carnivora y ocasionalmente en el cerdo, y capítulo humeral."
       }
     ],
     "review": {
       "status": "pending",
-      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El foramen supratroclear es variable (estudio moderno: 73,17 % en perros actuales); no afirmar su presencia en un espécimen concreto. Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. El foramen supratroclear es variable (estudio moderno: 73,17 % en perros actuales); no afirmar su presencia en un espécimen concreto. Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró del texto la comparación del cuello con el caballo (regla de especies separadas)."
     },
     "completeness": "partial",
     "missingFields": [
@@ -640,7 +640,7 @@
       "mano canina",
       "skeleton manus"
     ],
-    "summary": "Conjunto óseo distal formado por huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos carpianos, metacarpianos y falanges de los cinco dedos del miembro torácico canino.",
     "detailedDescription": "El carpo comprende siete huesos, tres en la fila proximal y cuatro en la distal; la reducción de la fila proximal se atribuye a la fusión de los huesos radial e intermedio en el intermediorradial. Hay cinco metacarpianos: el primero es con mucho el más corto y el tercero y cuarto los más largos. Los cinco dedos tienen tres falanges, excepto el primero, que tiene dos; el primer dedo es muy corto y no toca el suelo al caminar. Suelen existir nueve sesamoideos palmares: dos en cada articulación metacarpofalangiana de los dedos principales y habitualmente uno, a veces dos, en la del primer dedo. La osificación de metacarpianos y falanges se completa a los cinco o seis meses.",
     "morphology": "Los metacarpianos, juntos proximalmente y algo divergentes distalmente, forman una cara dorsal convexa y una palmar cóncava.",
     "landmarks": [
@@ -715,7 +715,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Registro de grupo heredado (no un hueso único); los recuentos de sesamoideos y del dedo I son variables según la fuente. Se retiró el alias inexacto «huesos del carpo y metacarpo». Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Registro de grupo heredado (no un hueso único); los recuentos de sesamoideos y del dedo I son variables según la fuente. Se retiró el alias inexacto «huesos del carpo y metacarpo». Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único. Los huesos carpianos tienen ahora fichas individuales (canine:carpal-intermedioradial, -ulnar, -accessory, -1 a -4); el enlace entre esta ficha de conjunto y las individuales queda pendiente de decisión."
     },
     "completeness": "partial",
     "missingFields": [
@@ -1841,8 +1841,8 @@
       "carpus",
       "huesos carpianos"
     ],
-    "summary": "Conjunto de siete huesos carpianos dispuestos en dos filas en el carpo felino.",
-    "detailedDescription": "Reighard y Jennings describen siete huesos: en la fila proximal, escafolunar, cuneiforme y pisiforme; en la distal, trapecio, trapezoide, hueso grande (os magnum) y unciforme. Sus equivalencias BNA y los términos NAV son Os carpi intermedioradiale [Os scapholunatum], Os carpi ulnare [Os triquetrum], Os carpi accessorium [Os pisiforme] y Os carpale I–IV [Os trapezium, Os trapezoideum, Os capitatum, Os hamatum]. En el gatito el escafolunar está representado por tres huesos: escafoides, semilunar y un central. Un sesamoideo radial se aplica al extremo radial del escafolunar. Un estudio micro-CT de 2026 incluyó en gatos los siete huesos: intermediorradial, ulnar, accesorio y carpales I–IV.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos carpianos del carpo felino; Reighard/Jennings y Goldstein et al. describen siete, dispuestos en dos filas.",
+    "detailedDescription": "Reighard y Jennings describen siete huesos: en la fila proximal, escafolunar, cuneiforme y pisiforme; en la distal, trapecio, trapezoide, hueso grande (os magnum) y unciforme. Reighard y Jennings dan los equivalentes BNA Os triquetrum, Os hamatum, Os capitatum, Os multangulum minus y Os multangulum majus. NAV (p.19) usa Os carpi intermedioradiale [Os scapholunatum], Os carpi ulnare [Os triquetrum], Os carpi accessorium [Os pisiforme] y Os carpale I–IV [Os trapezium, Os trapezoideum, Os capitatum, Os hamatum]. En el gatito el escafolunar está representado por tres huesos: escafoides, semilunar y un central. Un sesamoideo radial se aplica al extremo radial del escafolunar. Un estudio micro-CT de 2026 incluyó en gatos los siete huesos: intermediorradial, ulnar, accesorio y carpales I–IV.",
     "morphology": "Escafolunar cuadrangular con un proceso romo; cuneiforme en pirámide aplanada; pisiforme unas dos veces más largo que ancho, con extremos ensanchados; unciforme y trapezoide en cuña; hueso grande en placa oblonga; trapecio en prisma triangular curvado.",
     "location": "Esqueleto de la mano (Skeleton manus), entre radio y ulna proximalmente y metacarpianos distalmente.",
     "function": [
@@ -1960,7 +1960,7 @@
       {
         "field": "landmarks",
         "sourceId": "goldstein-feline-carpus-microct-2026",
-        "locator": "Methods, Micro CT; Table 1",
+        "locator": "Methods, Micro CT",
         "claim": "Siete unidades felinas identificadas."
       },
       {
@@ -2002,7 +2002,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La ficha agrupa siete huesos que el catálogo aún no separa en fichas individuales. Reighard/Jennings llaman «extensor brevis pollicis» al músculo del sesamoideo radial; su posible correspondencia con Os sesamoideum m. abductoris digiti I longi de NAV no está comprobada."
+      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La ficha agrupa siete huesos que el catálogo aún no separa en fichas individuales. Reighard/Jennings llaman «extensor brevis pollicis» al músculo del sesamoideo radial; su posible correspondencia con Os sesamoideum m. abductoris digiti I longi de NAV no está comprobada. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
     },
     "completeness": "partial",
     "missingFields": [
@@ -2173,7 +2173,7 @@
       "metacarpus",
       "metacarpianos"
     ],
-    "summary": "Cinco huesos metacarpianos alargados y cilíndricos de la mano felina, numerados del I al V desde el dedo I.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): metacarpianos alargados y cilíndricos de la mano felina; Reighard/Jennings describen cinco, numerados del I al V desde el dedo I.",
     "detailedDescription": "El metacarpiano I es el más corto y articula con el trapecio y con el sesamoideo radial. La base del II articula con trapezoide, trapecio, hueso grande y metacarpiano III. El III es el más largo y articula con el hueso grande. Las bases del IV y V forman juntas una carilla que articula con el unciforme y el hueso grande. Cada cabeza presenta una carilla hemisférica con una cresta en su mitad palmar (ventral en Reighard/Jennings), en relación con un par de sesamoideos.",
     "morphology": "Huesos cilíndricos y alargados con extremos ensanchados: base proximal y cabeza distal.",
     "location": "Esqueleto de la mano (Skeleton manus), entre la fila distal del carpo y las falanges proximales.",
@@ -2261,7 +2261,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los cinco metacarpianos no tienen fichas individuales. Palmar sustituye al «ventral» de Reighard/Jennings según NAV."
+      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los cinco metacarpianos no tienen fichas individuales. Palmar sustituye al «ventral» de Reighard/Jennings según NAV. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
     },
     "completeness": "partial",
     "missingFields": [
@@ -2313,7 +2313,7 @@
       "falanges de la mano",
       "phalanges"
     ],
-    "summary": "Falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
     "detailedDescription": "Reighard y Jennings describen dos falanges en el dedo I y tres en cada uno de los dedos II–V. Las proximales son alargadas, aplanadas y convexas longitudinalmente en su cara dorsal, con extremo distal en polea. Las medias son más cortas, con extremo distal cilíndrico que se proyecta más hacia el lado ulnar; por ello, en extensión completa, la falange distal queda al lado ulnar de la media. La falange distal tiene forma de prisma cuadrangular, con una excavación que recibe la base de la garra y una lámina ósea en forma de pico que la sostiene. NAV ofrece Os unguiculare como término alternativo de la falange distal en Carnivora.",
     "morphology": "Proximales alargadas y aplanadas dorsopalmarmente, con extremos engrosados; medias más cortas; distales en prisma cuadrangular con lámina en forma de pico.",
     "location": "Esqueleto de la mano (Skeleton manus), distal a los metacarpianos.",
@@ -2325,8 +2325,8 @@
       "Tubérculo flexor de la falange distal: terminación del tendón del M. flexor digitorum profundus (NAV, Carnivora)"
     ],
     "landmarks": [
-      "Phalanx proximalis [Os compedale] — falange proximal",
-      "Phalanx media [Os coronale] — falange media",
+      "Phalanx proximalis — falange proximal",
+      "Phalanx media — falange media",
       "Phalanx distalis [Os unguiculare] — falange distal",
       "Tuberculum flexorium — tubérculo flexor de la falange distal (NAV: presente en Carnivora)"
     ],
@@ -2391,8 +2391,8 @@
       {
         "field": "landmarks",
         "sourceId": "nav-6th-edition",
-        "locator": "OSTEOLOGIA, p.20; Ossa digitorum manus; nota 51, p.28",
-        "claim": "Nombres latinos y tubérculo flexor en Carnivora."
+        "locator": "OSTEOLOGIA, p.20; Ossa digitorum manus; Notes to Osteologia, notas 50 y 51, p.28",
+        "claim": "Nombres latinos de las falanges; Os unguiculare para Carnivora (nota 50, términos admitidos para Carnivora) y tubérculo flexor en Carnivora (nota 51)."
       },
       {
         "field": "attachments",
@@ -2415,7 +2415,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La afirmación sobre el tubérculo flexor procede de NAV para Carnivora, no de una descripción felina específica. La retractilidad de la garra no se incluye por falta de fuente leída en este lote. Los once sesamoideos de la mano (Reighard/Jennings, p.73) no tienen ficha."
+      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La afirmación sobre el tubérculo flexor procede de NAV para Carnivora, no de una descripción felina específica. La retractilidad de la garra no se incluye por falta de fuente leída en este lote. Los once sesamoideos de la mano (Reighard/Jennings, p.73) no tienen ficha. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
     },
     "completeness": "partial",
     "missingFields": [
@@ -2812,7 +2812,7 @@
       "Processus styloideus — apófisis estiloides"
     ],
     "speciesDifferences": [
-      "En el gato la articulación radioulnar distal presenta un verdadero ligamento radioulnar y no un disco fibrocartilaginoso, a diferencia de lo descrito en el perro, y sin islotes fibrocartilaginosos en el ligamento (Basa et al., 2023)."
+      "En el gato la articulación radioulnar distal presenta un verdadero ligamento radioulnar y no un disco fibrocartilaginoso (Basa et al., 2023); en el perro el ligamento se ha descrito con porciones interósea proximal y articular distal y con islotes fibrocartilaginosos. El disco fibrocartilaginoso solo se atribuye explícitamente al guepardo."
     ],
     "sourceIds": [
       "feline-skeletal-3d",
@@ -2919,7 +2919,7 @@
         "field": "speciesDifferences",
         "sourceId": "basa-feline-radioulnar-ligament-2023",
         "locator": "Discussion, primer y tercer párrafos",
-        "claim": "Comparación explícita gato/perro."
+        "claim": "Ligamento verdadero en el gato; islotes fibrocartilaginosos en el perro; disco fibrocartilaginoso atribuido al guepardo."
       }
     ],
     "review": {
@@ -3249,7 +3249,7 @@
       {
         "field": "attachments",
         "sourceId": "reighard-jennings-cat-1901",
-        "locator": "p.117, M. clavotrapezius, Insertion",
+        "locator": "p.118, M. clavotrapezius, Insertion",
         "claim": "Inserción en la clavícula y en un rafe con el clavobraquial."
       },
       {
@@ -3552,7 +3552,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Las dos descripciones de forma (piriforme/piramidal) proceden de fuentes distintas y se conservan ambas."
+      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Las dos descripciones de forma (piriforme/piramidal) proceden de fuentes distintas y se conservan ambas. Discrepancia no resuelta sobre la cara craneal (externa): convexa y rugosa según El-Ghazali y El-behery (2018); «rough and concave» según Reighard/Jennings (p.80)."
     },
     "completeness": "partial",
     "missingFields": [
@@ -3639,7 +3639,7 @@
       "fibula",
       "perone"
     ],
-    "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y separado de ella en toda su longitud.",
+    "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y no fusionado con ella; el espacio interóseo se extiende a lo largo de toda la pierna, aunque articula con la tibia en sus extremos proximal y distal.",
     "detailedDescription": "La cabeza, aplanada, articula con la tibia por una carilla proximomedial (Reighard/Jennings); el estudio de 2018 describe en el gato dos carillas para la tibia y una cabeza dividida caudolateralmente por un surco en dos áreas triangulares. El borde medial, muy agudo, da inserción a la membrana interósea entre tibia y peroné. El extremo distal se ensancha formando el maléolo lateral, con carillas para la tibia y el talus y surcos para tendones. En el gato el espacio interóseo se extiende a lo largo de toda la pierna.",
     "morphology": "Hueso delgado y triangular con extremos proximal y distal ensanchados; en el gato, hueso largo completo.",
     "location": "Pierna (Skeleton cruris), en el lado lateral de la tibia.",
@@ -3695,7 +3695,7 @@
         "field": "summary",
         "sourceId": "el-ghazali-el-behery-pelvic-2018",
         "locator": "p.415, Tibia and fibula; Fig. 4E (gato)",
-        "claim": "Separación completa en el gato."
+        "claim": "Fíbula no fusionada con la tibia en el gato («completely separated along its length»); dos carillas tibiales."
       },
       {
         "field": "detailedDescription",
@@ -3787,9 +3787,9 @@
       "tarsus",
       "huesos tarsianos"
     ],
-    "summary": "Conjunto de siete huesos tarsianos del pie felino: talus, calcáneo, central y tarsianos I–IV.",
-    "detailedDescription": "El calcáneo, el más largo, se sitúa en el lado lateral y forma el soporte del talón; articula distalmente con el cuboides, que lleva los metatarsianos IV y V. El talus (astrágalo), entre calcáneo y tibia, tiene cuerpo, cuello y cabeza; su tróclea articula con la tibia y los maléolos y su cabeza con el navicular. El navicular lleva los tres cuneiformes, que a su vez llevan el metatarsiano I rudimentario y los II y III. En terminología NAV: Talus, Calcaneus, Os tarsi centrale [Os naviculare] y Os tarsale I–IV [Os cuneiforme mediale, intermedium, laterale; Os cuboideum]. El estudio de 2018 describe en el gato una fila proximal (talus medial y calcáneo lateral), el central intermedio y una fila distal de cuatro huesos.",
-    "morphology": "Calcáneo cilíndrico, de longitud doble que la del talus, con sustentáculo del talus y tubérculo peroneo; central oval con superficie proximal cóncava; tarsianos I y IV cuadriláteros, el I más pequeño; II semilunar y aplanado; III piramidal.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): huesos tarsianos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen siete en el gato: talus, calcáneo, central y tarsianos I–IV.",
+    "detailedDescription": "Ficha de conjunto que agrupa varios huesos tarsianos; no describe un hueso único. El calcáneo, el más largo, se sitúa en el lado lateral y forma el soporte del talón; articula distalmente con el cuboides, que lleva los metatarsianos IV y V. El talus (astrágalo), entre calcáneo y tibia, tiene cuerpo, cuello y cabeza; su tróclea articula con la tibia y los maléolos y su cabeza con el navicular. El navicular lleva los tres cuneiformes, que a su vez llevan el metatarsiano I rudimentario y los II y III. En terminología NAV: Talus, Calcaneus, Os tarsi centrale [Os naviculare] y Os tarsale I–IV [Os cuneiforme mediale, intermedium, laterale; Os cuboideum]. El estudio de 2018 describe en el gato una fila proximal (talus medial y calcáneo lateral), el central intermedio y una fila distal de cuatro huesos.",
+    "morphology": "Calcáneo cilíndrico, con sustentáculo del talus y tubérculo peroneo; central oval con superficie proximal cóncava. El-Ghazali y El-behery describen los tarsianos I y IV como cuadriláteros (el I el más pequeño), el II semilunar y aplanado y el III piramidal.",
     "location": "Esqueleto del pie (Skeleton pedis), entre tibia y peroné proximalmente y metatarsianos distalmente.",
     "function": [
       "El calcáneo forma el soporte del talón."
@@ -3873,7 +3873,7 @@
         "field": "morphology",
         "sourceId": "el-ghazali-el-behery-pelvic-2018",
         "locator": "p.415, Tarsal bones; Fig. 5B–C",
-        "claim": "Forma de los huesos; la proporción calcáneo/talus se enuncia sin distinguir especie."
+        "claim": "Forma de los huesos tarsianos descrita en el estudio comparativo."
       },
       {
         "field": "morphology",
@@ -3926,7 +3926,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los siete tarsianos no tienen fichas individuales. Reighard/Jennings usan astragalus, scaphoid/navicular y cuneiformes (BNA); las correspondencias NAV se basan en los sinónimos entre corchetes de NAV."
+      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los siete tarsianos no tienen fichas individuales. Reighard/Jennings usan astragalus, scaphoid/navicular y cuneiformes (BNA); las correspondencias NAV se basan en los sinónimos entre corchetes de NAV. Se retiró la proporción calcáneo/talus («longitud doble»): El-Ghazali y El-behery la enuncian sin distinguir especie. Discrepancia no resuelta sobre los cuneiformes: El-Ghazali y El-behery describen los tarsianos I y IV cuadriláteros y el I como el más pequeño; Reighard/Jennings (pp.84–85) describen el cuneiforme medial «flat triangular» y el intermedio «small». Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
     },
     "completeness": "partial",
     "missingFields": [
@@ -3946,8 +3946,8 @@
       "metatarsus",
       "metatarsianos"
     ],
-    "summary": "Cinco metatarsianos felinos: el I rudimentario y los II–V desarrollados.",
-    "detailedDescription": "Se parecen a los metacarpianos y se distinguen por sus bases (Reighard/Jennings). El I es rudimentario y cónico y su base articula con el cuneiforme medial (tarsiano I). La base del II corresponde al cuneiforme intermedio, la del III al lateral, la del IV al cuboides, y la base del V, en cuña, también articula con el cuboides. El estudio de 2018 describe cinco metatarsianos en el gato, bien desarrollados del II al V y el I no desarrollado; en las articulaciones metatarsofalangianas hay sesamoideos proximales pares.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): metatarsianos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen cinco, el I rudimentario y los II–V desarrollados.",
+    "detailedDescription": "Ficha de conjunto que agrupa los metatarsianos; no describe un hueso único. Se parecen a los metacarpianos y se distinguen por sus bases (Reighard/Jennings). El I es rudimentario y cónico y su base articula con el cuneiforme medial (tarsiano I). La base del II corresponde al cuneiforme intermedio, la del III al lateral, la del IV al cuboides, y la base del V, en cuña, también articula con el cuboides. El estudio de 2018 describe cinco metatarsianos en el gato, bien desarrollados del II al V y el I no desarrollado; en las articulaciones metatarsofalangianas hay sesamoideos proximales pares.",
     "morphology": "Huesos largos con base, cuerpo y cabeza, semejantes a los metacarpianos; el I es rudimentario y cónico.",
     "location": "Esqueleto del pie (Skeleton pedis), entre tarso y falanges.",
     "attachments": [
@@ -4059,7 +4059,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. Un metatarsiano I rudimentario no implica un dedo I funcional. Reighard/Jennings escriben «first metacarpal» en el párrafo de metatarsianos (p.85), probable errata por metatarsal."
+      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. Un metatarsiano I rudimentario no implica un dedo I funcional. Reighard/Jennings escriben «first metacarpal» en el párrafo de metatarsianos (p.85), probable errata por metatarsal. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
     },
     "completeness": "partial",
     "missingFields": [
@@ -4079,8 +4079,8 @@
       "falanges del pie felino",
       "phalanges pedis"
     ],
-    "summary": "Falanges de los cuatro dedos del pie felino (II–V), con tres falanges en cada dedo.",
-    "detailedDescription": "Reighard y Jennings describen tres falanges en cada uno de los cuatro dedos, casi idénticas a las de la mano. El estudio de 2018 registra en el gato cuatro dedos (II–V), cada uno con tres falanges; los dedos II y V son los más cortos y los III y IV los más largos. La tercera falange queda encerrada en la garra y es triangular, con base proximal y vértice distal (proceso ungueal). Hay dos sesamoideos proximales por dedo y no se observaron sesamoideos distales en la muestra felina.",
+    "summary": "Ficha de conjunto (varios huesos, no un hueso único): falanges de los dedos del pie felino; Reighard/Jennings y El-Ghazali y El-behery describen cuatro dedos (II–V) con tres falanges cada uno.",
+    "detailedDescription": "Ficha de conjunto que agrupa las falanges del pie; no describe un hueso único. Reighard y Jennings describen tres falanges en cada uno de los cuatro dedos, casi idénticas a las de la mano. El estudio de 2018 registra en el gato cuatro dedos (II–V), cada uno con tres falanges; los dedos II y V son los más cortos y los III y IV los más largos. La tercera falange queda encerrada en la garra y es triangular, con base proximal y vértice distal (proceso ungueal). Hay dos sesamoideos proximales por dedo y no se observaron sesamoideos distales en la muestra felina.",
     "morphology": "Tres filas de falanges similares a las de la mano; falange distal triangular con proceso ungueal puntiagudo.",
     "location": "Esqueleto del pie (Skeleton pedis), distal a los metatarsianos II–V.",
     "landmarks": [
@@ -4175,7 +4175,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. La ausencia de sesamoideo distal se refiere a la muestra del estudio de 2018, no a todo gato."
+      "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. La ausencia de sesamoideo distal se refiere a la muestra del estudio de 2018, no a todo gato. Ficha de conjunto (decisión 2026-10-31): representa varios huesos, no un hueso único."
     },
     "completeness": "partial",
     "missingFields": [
@@ -4421,7 +4421,7 @@
       "Os scapholunatum",
       "escafolunar"
     ],
-    "summary": "Hueso mayor de la fila proximal del carpo canino, resultado de la fusión de los huesos radial e intermedio.",
+    "summary": "Hueso mayor de la fila proximal del carpo canino que, según Sisson, parece resultar de la fusión de los huesos radial e intermedio.",
     "detailedDescription": "Articula con casi toda la superficie distal del radio y con los huesos de la fila distal; sobresale de forma prominente en la cara palmar del carpo.",
     "sourceIds": [
       "nav-6th-edition",
@@ -4452,7 +4452,7 @@
         "field": "summary",
         "sourceId": "sisson-dog-1914",
         "locator": "Skeleton of the Dog, Bones of the thoracic limb, p.200",
-        "claim": "Posición en el carpo de perro."
+        "claim": "Posición en el carpo de perro; fusión radial-intermedio presentada como aparente («apparently»)."
       },
       {
         "field": "detailedDescription",
@@ -4463,7 +4463,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. La posible inclusión del hueso central en el perro queda pendiente de una fuente canina moderna."
     },
     "completeness": "partial",
     "missingFields": [
@@ -4487,7 +4487,7 @@
     "aliases": [
       "Os triquetrum"
     ],
-    "summary": "Hueso de la fila proximal del carpo canino, lateral al intermediorradial.",
+    "summary": "Hueso de la fila proximal del carpo canino.",
     "detailedDescription": "Articula proximalmente con el radio y el cúbito y palmarmente con el accesorio; distalmente descansa sobre el carpiano IV y se prolonga para articular también con el metacarpiano V.",
     "morphology": "Largo.",
     "sourceIds": [
@@ -4536,7 +4536,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró «lateral al intermediorradial»: no figura en el texto citado."
     },
     "completeness": "partial",
     "missingFields": [
@@ -4913,7 +4913,7 @@
     "morphology": "El isquion tiene aspecto torcido: su parte acetabular es casi sagital y la caudal casi horizontal.",
     "location": "Cintura pélvica; el acetábulo está aproximadamente el doble de lejos de la tuberosidad coxal que de la tuberosidad isquiática.",
     "attachments": [
-      "Tubérculo craneal al acetábulo, al final de la línea glútea ventral: inserción del m. recto femoral (rotulado en la figura de la fuente)"
+      "Tubérculo craneal al acetábulo, al final de la línea glútea ventral: fijación del m. recto femoral (rotulado en la figura de la fuente)"
     ],
     "landmarks": [
       "Acetabulum — acetábulo",
@@ -4988,7 +4988,7 @@
         "field": "attachments",
         "sourceId": "sisson-dog-1914",
         "locator": "Skeleton of the Dog, Bones of the pelvic limb, Fig.222, leyenda 9 (p.202)",
-        "claim": "Tubérculo para el recto femoral."
+        "claim": "Tubérculo «to which rectus femoris is attached»; la fuente no precisa origen o inserción."
       },
       {
         "field": "landmarks",
@@ -5005,7 +5005,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada.Sisson indica en el texto que no hay incisura isquiática menor, pero la leyenda de su Fig.222 rotula «lesser sciatic notch» (15): no incluida hasta cotejo. Ilion, isquion y pubis siguen como componentes del inventario, sin fichas propias."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson indica en el texto que no hay incisura isquiática menor, pero la leyenda de su Fig.222 rotula «lesser sciatic notch» (15): no incluida hasta cotejo. Ilion, isquion y pubis siguen como componentes del inventario, sin fichas propias."
     },
     "completeness": "partial",
     "missingFields": [
@@ -5028,10 +5028,7 @@
     ],
     "summary": "Hueso del muslo canino, entre la articulación de la cadera y la de la rodilla.",
     "detailedDescription": "La cabeza es algo más que una semiesfera y tiene una fóvea poco profunda caudal y lateral a su centro; el cuello está bien definido. El trocánter mayor no alcanza la altura de la cabeza y una cresta gruesa va de su cara craneal al cuello; el trocánter menor es una tuberosidad roma y la fosa trocantérica es redonda y profunda. La cara caudal del cuerpo está limitada por dos líneas rugosas (labios lateral y medial) que divergen hacia los extremos; el foramen nutricio está en su tercio proximal. Faltan el tercer trocánter y la fosa supracondílea; hay dos crestas supracondíleas, la medial pequeña. Los labios de la tróclea son prácticamente sagitales y casi iguales, y la fosa intercondílea es ancha. Sobre cada cóndilo, caudalmente, hay una carilla para el sesamoideo del origen del m. gastrocnemio. Cuerpo y extremos se unen hacia el año y medio.",
-    "morphology": "Relativamente mucho más largo que en el caballo o el bovino. Cuerpo regularmente cilíndrico salvo cerca de los extremos, más anchos y comprimidos craneocaudalmente; fuertemente curvado en sus dos tercios distales, con convexidad craneal.",
-    "attachments": [
-      "Carillas caudales supracondíleas: articulación con los sesamoideos del m. gastrocnemio"
-    ],
+    "morphology": "Cuerpo regularmente cilíndrico salvo cerca de los extremos, más anchos y comprimidos craneocaudalmente; fuertemente curvado en sus dos tercios distales, con convexidad craneal.",
     "landmarks": [
       "Caput ossis femoris — cabeza del fémur",
       "Fovea capitis — fóvea de la cabeza",
@@ -5092,12 +5089,6 @@
         "claim": "Cuerpo cilíndrico curvado de convexidad craneal."
       },
       {
-        "field": "attachments",
-        "sourceId": "sisson-dog-1914",
-        "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203",
-        "claim": "Carillas para los sesamoideos del origen del gastrocnemio."
-      },
-      {
         "field": "landmarks",
         "sourceId": "nav-6th-edition",
         "locator": "OSTEOLOGIA, p.21; Os femoris",
@@ -5112,14 +5103,15 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró de morphology la comparación con el caballo y el bovino (regla de especies separadas). Las carillas para los sesamoideos del m. gastrocnemio son superficies articulares, no fijaciones: figuran solo en detailedDescription y attachments queda pendiente."
     },
     "completeness": "partial",
     "missingFields": [
       "location",
       "function",
       "vascularSupply",
-      "speciesDifferences"
+      "speciesDifferences",
+      "attachments"
     ]
   },
   {
@@ -5503,7 +5495,7 @@
       "calcaneo",
       "calcaneus"
     ],
-    "summary": "Hueso proximal del tarso canino, plantar y lateral al talus, con la tuberosidad calcánea.",
+    "summary": "Hueso proximal del tarso canino, con la tuberosidad calcánea.",
     "detailedDescription": "Presenta un proceso craneal largo («pico» en la fuente) y un sustentáculo del talus corto. La tuberosidad calcánea tiene un surco sagital y se fusiona con el cuerpo del hueso a los catorce o quince meses. Articula con el talus mediante tres carillas y distalmente con el tarsiano IV.",
     "landmarks": [
       "Tuber calcanei — tuberosidad calcánea",
@@ -5561,7 +5553,7 @@
     ],
     "review": {
       "status": "pending",
-      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+      "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró «plantar y lateral al talus»: no figura en la p.205 citada."
     },
     "completeness": "partial",
     "missingFields": [

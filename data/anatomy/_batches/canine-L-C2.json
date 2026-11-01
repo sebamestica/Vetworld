@@ -20,7 +20,7 @@
       "morphology": "El isquion tiene aspecto torcido: su parte acetabular es casi sagital y la caudal casi horizontal.",
       "location": "Cintura pélvica; el acetábulo está aproximadamente el doble de lejos de la tuberosidad coxal que de la tuberosidad isquiática.",
       "attachments": [
-        "Tubérculo craneal al acetábulo, al final de la línea glútea ventral: inserción del m. recto femoral (rotulado en la figura de la fuente)"
+        "Tubérculo craneal al acetábulo, al final de la línea glútea ventral: fijación del m. recto femoral (rotulado en la figura de la fuente)"
       ],
       "landmarks": [
         "Acetabulum — acetábulo",
@@ -95,7 +95,7 @@
           "field": "attachments",
           "sourceId": "sisson-dog-1914",
           "locator": "Skeleton of the Dog, Bones of the pelvic limb, Fig.222, leyenda 9 (p.202)",
-          "claim": "Tubérculo para el recto femoral."
+          "claim": "Tubérculo «to which rectus femoris is attached»; la fuente no precisa origen o inserción."
         },
         {
           "field": "landmarks",
@@ -112,7 +112,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada.Sisson indica en el texto que no hay incisura isquiática menor, pero la leyenda de su Fig.222 rotula «lesser sciatic notch» (15): no incluida hasta cotejo. Ilion, isquion y pubis siguen como componentes del inventario, sin fichas propias."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Sisson indica en el texto que no hay incisura isquiática menor, pero la leyenda de su Fig.222 rotula «lesser sciatic notch» (15): no incluida hasta cotejo. Ilion, isquion y pubis siguen como componentes del inventario, sin fichas propias."
       },
       "completeness": "partial",
       "missingFields": [
@@ -135,10 +135,7 @@
       ],
       "summary": "Hueso del muslo canino, entre la articulación de la cadera y la de la rodilla.",
       "detailedDescription": "La cabeza es algo más que una semiesfera y tiene una fóvea poco profunda caudal y lateral a su centro; el cuello está bien definido. El trocánter mayor no alcanza la altura de la cabeza y una cresta gruesa va de su cara craneal al cuello; el trocánter menor es una tuberosidad roma y la fosa trocantérica es redonda y profunda. La cara caudal del cuerpo está limitada por dos líneas rugosas (labios lateral y medial) que divergen hacia los extremos; el foramen nutricio está en su tercio proximal. Faltan el tercer trocánter y la fosa supracondílea; hay dos crestas supracondíleas, la medial pequeña. Los labios de la tróclea son prácticamente sagitales y casi iguales, y la fosa intercondílea es ancha. Sobre cada cóndilo, caudalmente, hay una carilla para el sesamoideo del origen del m. gastrocnemio. Cuerpo y extremos se unen hacia el año y medio.",
-      "morphology": "Relativamente mucho más largo que en el caballo o el bovino. Cuerpo regularmente cilíndrico salvo cerca de los extremos, más anchos y comprimidos craneocaudalmente; fuertemente curvado en sus dos tercios distales, con convexidad craneal.",
-      "attachments": [
-        "Carillas caudales supracondíleas: articulación con los sesamoideos del m. gastrocnemio"
-      ],
+      "morphology": "Cuerpo regularmente cilíndrico salvo cerca de los extremos, más anchos y comprimidos craneocaudalmente; fuertemente curvado en sus dos tercios distales, con convexidad craneal.",
       "landmarks": [
         "Caput ossis femoris — cabeza del fémur",
         "Fovea capitis — fóvea de la cabeza",
@@ -199,12 +196,6 @@
           "claim": "Cuerpo cilíndrico curvado de convexidad craneal."
         },
         {
-          "field": "attachments",
-          "sourceId": "sisson-dog-1914",
-          "locator": "Skeleton of the Dog, Bones of the pelvic limb, p.203",
-          "claim": "Carillas para los sesamoideos del origen del gastrocnemio."
-        },
-        {
           "field": "landmarks",
           "sourceId": "nav-6th-edition",
           "locator": "OSTEOLOGIA, p.21; Os femoris",
@@ -219,14 +210,15 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró de morphology la comparación con el caballo y el bovino (regla de especies separadas). Las carillas para los sesamoideos del m. gastrocnemio son superficies articulares, no fijaciones: figuran solo en detailedDescription y attachments queda pendiente."
       },
       "completeness": "partial",
       "missingFields": [
         "location",
         "function",
         "vascularSupply",
-        "speciesDifferences"
+        "speciesDifferences",
+        "attachments"
       ]
     },
     {
@@ -610,7 +602,7 @@
         "calcaneo",
         "calcaneus"
       ],
-      "summary": "Hueso proximal del tarso canino, plantar y lateral al talus, con la tuberosidad calcánea.",
+      "summary": "Hueso proximal del tarso canino, con la tuberosidad calcánea.",
       "detailedDescription": "Presenta un proceso craneal largo («pico» en la fuente) y un sustentáculo del talus corto. La tuberosidad calcánea tiene un surco sagital y se fusiona con el cuerpo del hueso a los catorce o quince meses. Articula con el talus mediante tres carillas y distalmente con el tarsiano IV.",
       "landmarks": [
         "Tuber calcanei — tuberosidad calcánea",
@@ -668,7 +660,7 @@
       ],
       "review": {
         "status": "pending",
-        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada."
+        "notes": "Fuente histórica (Sisson 1914, 2.ª ed.) con términos antiguos («anterior/posterior», «volar», «tibial/fibular tarsal») normalizados editorialmente a NAV 6.ª (craneal/caudal, palmar, Talus/Calcaneus); cotejo con literatura moderna canina pendiente salvo donde se cita. Ficha bibliográfica sin geometría identificada (Modelo 3D no disponible). Revisión veterinaria humana pendiente; no hay lateralidad de espécimen asignada. Se retiró «plantar y lateral al talus»: no figura en la p.205 citada."
       },
       "completeness": "partial",
       "missingFields": [
