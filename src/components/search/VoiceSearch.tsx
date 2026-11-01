@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Mic, Square } from 'lucide-react';
+import { t, type Language } from '@/lib/ui/i18n';
 import styles from './search.module.css';
 
 interface Recognition {
@@ -13,8 +14,9 @@ interface Recognition {
 }
 type VoiceWindow = Window & { SpeechRecognition?: new () => Recognition; webkitSpeechRecognition?: new () => Recognition };
 
-export function VoiceSearch({ onTranscript, language = 'es' }: { onTranscript: (text: string) => void; language?: 'es' | 'en' }) {
+export function VoiceSearch({ onTranscript, language = 'es' }: { onTranscript: (text: string) => void; language?: Language }) {
   const en = language === 'en';
+  const tx = (key: Parameters<typeof t>[1]) => t(language, key);
   const [notice, setNotice] = useState(false);
   const [listening, setListening] = useState(false);
   const [message, setMessage] = useState('');
@@ -29,7 +31,7 @@ export function VoiceSearch({ onTranscript, language = 'es' }: { onTranscript: (
     if (previous) { previous.onend = null; previous.onerror = null; previous.onresult = null; previous.abort(); recognition.current = null; }
     const Constructor = (window as VoiceWindow).SpeechRecognition ?? (window as VoiceWindow).webkitSpeechRecognition;
     if (!Constructor || !window.isSecureContext) {
-      setMessage(en ? 'Voice search is unavailable. Use the text field; a supported browser and secure connection are required.' : 'La búsqueda por voz no está disponible. Usa el campo escrito; requiere un navegador compatible y conexión segura.');
+      setMessage(tx('voiceUnavailable'));
       return;
     }
     const current = new Constructor();
@@ -42,21 +44,20 @@ export function VoiceSearch({ onTranscript, language = 'es' }: { onTranscript: (
     current.onerror = event => {
       setListening(false);
       setMessage(event.error === 'not-allowed'
-        ? (en ? 'Microphone permission denied. You can type your search.' : 'Permiso de micrófono rechazado. Puedes escribir tu búsqueda.')
-        : (en ? 'Voice recognition failed. You can type your search.' : 'No se pudo reconocer la voz. Puedes escribir tu búsqueda.'));
+        ? tx('micDenied') : tx('voiceFailed'));
     };
     current.onend = () => { recognition.current = null; setListening(false); };
-    try { current.start(); setListening(true); } catch { recognition.current = null; setListening(false); setMessage(en ? 'Unable to start the microphone.' : 'No se pudo iniciar el micrófono.'); }
+    try { current.start(); setListening(true); } catch { recognition.current = null; setListening(false); setMessage(tx('micStartFailed')); }
   }
   return <div className={styles.voice}>
-    <button type="button" className={styles.mic} aria-label={listening ? (en ? 'Stop listening' : 'Detener escucha') : (en ? 'Search by voice' : 'Buscar por voz')} aria-pressed={listening} onClick={() => {
+    <button type="button" className={styles.mic} aria-label={tx(listening ? 'stopListening' : 'searchVoice')} aria-pressed={listening} onClick={() => {
       if (listening) { recognition.current?.stop(); setListening(false); } else { setNotice(value => !value); setMessage(''); }
-    }}>{listening ? <Square size={17} /> : <Mic size={18} />}</button>
+    }}>{listening ? <Square size={17} aria-hidden="true" /> : <Mic size={18} aria-hidden="true" />}</button>
     {notice && <div className={styles.voiceNotice}>
-      <p>{en ? 'Your browser may send audio to its voice recognition service. This atlas does not record or store audio. You can also type your search.' : 'Tu navegador puede enviar audio a su servicio de reconocimiento de voz. Este atlas no graba ni almacena audio. También puedes escribir tu búsqueda.'}</p>
-      <button type="button" onClick={start}>{en ? 'Start listening' : 'Iniciar escucha'}</button>
-      <button type="button" onClick={() => setNotice(false)}>{en ? 'Cancel' : 'Cancelar'}</button>
+      <p>{tx('voicePrivacy')}</p>
+      <button type="button" onClick={start}>{tx('startListening')}</button>
+      <button type="button" onClick={() => setNotice(false)}>{tx('cancel')}</button>
     </div>}
-    {(message || listening) && <div className={styles.voiceMessage} role="status">{message || (en ? 'Listening… Review the transcript before choosing a result.' : 'Escuchando… Revisa la transcripción antes de elegir un resultado.')}</div>}
+    {(message || listening) && <div className={styles.voiceMessage} role="status">{message || tx('listeningReview')}</div>}
   </div>;
 }

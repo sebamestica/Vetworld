@@ -11,16 +11,27 @@ import { meshPresentation, type ViewerLayers } from "@/modules/viewer/visibility
 import { readBoundedBody, safeResourceUri, validateLoadedScene } from "@/modules/viewer/loading";
 import { cameraFrame, clippingPlane, viewDirection, zoomDistance, type CutPlane, type ViewPreset } from "@/modules/viewer/controls";
 import { updateCameraRange, updateRendererExposure } from "@/modules/viewer/rendering";
+import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
+import { t, type Language, type UiKey } from "@/lib/ui/i18n";
 import styles from "./AnatomyViewer.module.css";
 
 export interface AnatomyViewerProps {
   asset: ViewerAsset | null; selectedId: string | null; onSelect: (id: string) => void;
   layers: ViewerLayers; isolatedId: string | null; resetToken: number; quality: "balanced" | "low" | "high";
   onReady?: (info: { triangles: number; renderer: string }) => void;
-  variant?: "classic" | "immersive"; language?: "es" | "en"; backgroundColor?: string; exposure?: number;
+  variant?: "classic" | "immersive"; language?: Language; backgroundColor?: string; exposure?: number;
   viewPreset?: ViewPreset; viewToken?: number; zoomRequest?: { token: number; delta: number };
   cutPlane?: CutPlane; clipOffset?: number;
   onRenderMetrics?: (info: { dpr: number; exposure: number; shadowMapSize: number }) => void;
+  /** Nombres del catálogo por `structureId` para etiquetar la alternativa textual del canvas. */
+  structureNames?: Record<string, { spanishName: string; canonicalLatinName: string }>;
+}
+const technicalLabels: Record<string, UiKey> = { "demo-sphere": "shapeSphere", "demo-box": "shapeBox", "demo-torus": "shapeTorus", "demo-cone": "shapeCone" };
+/** Español muestra el nombre común; inglés el latino NAV (invariable), porque el nombre común no tiene traducción revisada. */
+function structureLabel(names: AnatomyViewerProps["structureNames"], id: string | null, language: Language): string | null {
+  const entry = id ? names?.[id] : undefined;
+  if (!entry) return null;
+  return language === "en" ? entry.canonicalLatinName : entry.spanishName;
 }
 function dispose(scene: Object3D) {
   const textures = new Set<Texture>();
@@ -36,6 +47,9 @@ class CanvasBoundary extends Component<{ children: ReactNode; onError: () => voi
 function Scene({ scene, onSceneReady, onContextLost, ...props }: AnatomyViewerProps & { scene: Object3D; onSceneReady: () => void; onContextLost: () => void }) {
   const { invalidate, camera, gl, size, setDpr } = useThree();
   const controls = useRef<Controls>(null);
+  const reducedMotion = usePrefersReducedMotion();
+  const language = props.language ?? "es";
+  useEffect(() => { gl.domElement.setAttribute("aria-label", t(language, "canvasLabel")); }, [gl, language]);
   const metrics = useRef(props.onRenderMetrics);
   useEffect(() => { metrics.current = props.onRenderMetrics; }, [props.onRenderMetrics]);
   const ready = useRef(props.onReady);
@@ -129,12 +143,13 @@ function Scene({ scene, onSceneReady, onContextLost, ...props }: AnatomyViewerPr
     <directionalLight position={[3, 5, 6]} intensity={2.8} castShadow={props.quality !== "low"} shadow-mapSize-width={props.quality === "high" ? 1024 : 512} shadow-mapSize-height={props.quality === "high" ? 1024 : 512} shadow-bias={-0.0005} />
     <directionalLight position={[-4, 1, 2]} intensity={0.6} />
     <primitive object={scene} onClick={select} dispose={null} />
-    <OrbitControls ref={controls} makeDefault enableDamping />
+    <OrbitControls ref={controls} makeDefault enableDamping={!reducedMotion} />
   </>;
 }
 export default function AnatomyViewer(props: AnatomyViewerProps) {
   const [scene, setScene] = useState<Object3D | null>(null);
-  const [status, setStatus] = useState("Cargando demostración técnica…");
+  const [status, setStatus] = useState<UiKey>("viewerLoadingDemo");
+  const language = props.language ?? "es";
   const [failed, setFailed] = useState(false);
   const [retry, setRetry] = useState(0);
   const resourceUrl = props.asset?.resourceUrl;
@@ -144,14 +159,14 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
     let loaded: Object3D | null = null, cancelled = false;
     const controller = new AbortController();
     if (!props.asset || props.asset.availability !== "available") {
-      void Promise.resolve().then(() => { if (!cancelled) { setScene(null); setStatus("Modelo 3D no disponible"); } });
+      void Promise.resolve().then(() => { if (!cancelled) { setScene(null); setStatus("noModel"); } });
       return () => { cancelled = true; };
     }
     async function load() {
       try {
         await Promise.resolve();
         if (cancelled) return;
-        setScene(null); setFailed(false); setStatus(props.asset?.purpose === "technical_demo" ? "Cargando demostración técnica…" : "Cargando modelo 3D…");
+        setScene(null); setFailed(false); setStatus(props.asset?.purpose === "technical_demo" ? "viewerLoadingDemo" : "viewerLoadingModel");
         const asset = viewerAssetSchema.parse(props.asset);
         const response = await fetch(`${asset.resourceUrl}?v=${asset.sha256}`, { cache: "force-cache", signal: AbortSignal.any([controller.signal, AbortSignal.timeout(15_000)]) });
         if (!response.ok) throw new Error("Archivo no disponible");
@@ -180,7 +195,7 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
         setScene(loaded);
       } catch {
         if (loaded) { dispose(loaded); loaded = null; }
-        if (!cancelled) { setFailed(true); setStatus("No se pudo abrir el visor 3D. Las fichas siguen disponibles en la lista."); }
+        if (!cancelled) { setFailed(true); setStatus("viewerLoadFailed"); }
       }
     }
     void load();
@@ -188,15 +203,22 @@ export default function AnatomyViewer(props: AnatomyViewerProps) {
     // La misma URL compartida por las especies se carga una vez; el mapping cambia por props.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resourceUrl, expectedBytes, expectedHash, retry]);
-  function fail() { setFailed(true); setStatus("WebGL no disponible o contexto perdido. Las fichas siguen disponibles en la lista."); }
-  return <section className={`${styles.viewer} ${props.variant === "immersive" ? styles.immersive : ""}`} style={{ backgroundColor: props.backgroundColor }} aria-label={props.language === "en" ? "Three-dimensional viewer" : "Visor tridimensional"}>
-    {props.variant !== "immersive" && <div className={styles.notice}>{props.asset?.purpose === "technical_demo" ? "Demostración técnica · formas geométricas, sin representación anatómica" : "Visor de activo científico · revisión indicada en su ficha"}</div>}
-    <div data-testid="viewer-status" role="status" className={`${styles.status} ${props.variant === 'immersive' && status === 'Visor listo' ? styles.readyStatus : ''}`}>{status}</div>
+  function fail() { setFailed(true); setStatus("viewerContextLost"); }
+  const selectedName = structureLabel(props.structureNames, props.selectedId, language);
+  const mappings = props.asset?.meshMappings ?? [];
+  const technical = props.asset?.purpose === "technical_demo";
+  return <section className={`${styles.viewer} ${props.variant === "immersive" ? styles.immersive : ""}`} style={{ backgroundColor: props.backgroundColor }} aria-label={t(language, "viewerLabel")}>
+    {props.variant !== "immersive" && <div className={styles.notice}>{t(language, technical ? "technicalNotice" : "scientificNotice")}</div>}
+    <div data-testid="viewer-status" role="status" aria-live="polite" aria-atomic="true" className={`${styles.status} ${props.variant === 'immersive' && status === 'viewerReady' ? styles.readyStatus : ''}`}>{t(language, status)}</div>
     <div data-testid="viewer-canvas" className={styles.canvas}>
-      {scene && !failed && <CanvasBoundary key={retry} onError={fail}><Canvas key={props.quality} shadows={props.quality === "low" ? false : "soft"} frameloop="demand" dpr={[1, props.quality === "low" ? 1 : props.quality === "high" ? 2 : 1.5]} camera={{ position: [0, 0, 7], fov: 40, near: 0.01, far: 100 }} gl={{ alpha: true, antialias: props.quality !== "low", powerPreference: "low-power", localClippingEnabled: true }} onCreated={({ gl }) => { gl.domElement.setAttribute("aria-label", "Escena 3D: arrastre para girar, rueda para acercar; selección alternativa mediante botones"); }} fallback={<span>WebGL no disponible. Consulte las fichas mediante la lista.</span>}><Scene scene={scene} {...props} onSceneReady={() => setStatus("Visor listo")} onContextLost={fail} /></Canvas></CanvasBoundary>}
-      {failed && <button className={styles.retry} onClick={() => setRetry((value) => value + 1)}>Reintentar visor</button>}
+      {scene && !failed && <CanvasBoundary key={retry} onError={fail}><Canvas key={props.quality} shadows={props.quality === "low" ? false : "soft"} frameloop="demand" dpr={[1, props.quality === "low" ? 1 : props.quality === "high" ? 2 : 1.5]} camera={{ position: [0, 0, 7], fov: 40, near: 0.01, far: 100 }} gl={{ alpha: true, antialias: props.quality !== "low", powerPreference: "low-power", localClippingEnabled: true }} fallback={<span>{t(language, "webglFallback")}</span>}><Scene scene={scene} {...props} onSceneReady={() => setStatus("viewerReady")} onContextLost={fail} /></Canvas></CanvasBoundary>}
+      {failed && <button className={styles.retry} onClick={() => setRetry((value) => value + 1)}>{t(language, "retryViewer")}</button>}
     </div>
-    {scene && !failed && props.asset && <div className={styles.meshButtons} aria-label="Selección de formas por teclado">{props.asset.meshMappings.map((mapping) => { const state = meshPresentation(props.asset!, mapping.nodeId, props.layers, props.isolatedId); const technicalLabels: Record<string, string> = { "demo-sphere": "Esfera", "demo-box": "Cubo", "demo-torus": "Toro", "demo-cone": "Cono" }; return <button key={mapping.nodeId} disabled={!state.visible} aria-pressed={mapping.structureId === props.selectedId} onClick={() => props.onSelect(mapping.structureId)}>{props.asset?.purpose === "technical_demo" ? technicalLabels[mapping.nodeId] ?? mapping.nodeId : mapping.nodeId}</button>; })}</div>}
-    {props.variant !== "immersive" && <p className={styles.help}>Arrastre para girar · rueda o gesto para acercar · clic o toque para seleccionar</p>}
+    {scene && !failed && props.asset && <div className={styles.meshButtons} role="group" aria-label={t(language, technical ? "shapeSelection" : "pieceSelection")} data-testid="viewer-pieces">
+      {mappings.length === 0 && <p className={styles.emptyPieces}>{t(language, "noSelectablePieces")}</p>}
+      {mappings.map((mapping) => { const state = meshPresentation(props.asset!, mapping.nodeId, props.layers, props.isolatedId); const label = technical ? (technicalLabels[mapping.nodeId] ? t(language, technicalLabels[mapping.nodeId]) : mapping.nodeId) : structureLabel(props.structureNames, mapping.structureId, language) ?? mapping.nodeId; return <button key={mapping.nodeId} type="button" disabled={!state.visible} aria-pressed={mapping.structureId === props.selectedId} onClick={() => props.onSelect(mapping.structureId)}>{label}</button>; })}
+    </div>}
+    <p className={styles.srOnly} aria-live="polite" aria-atomic="true" data-testid="viewer-selection">{selectedName ? t(language, "selectedStructure", { name: selectedName }) : ""}</p>
+    {props.variant !== "immersive" && <p className={styles.help}>{t(language, "viewerHelp")}</p>}
   </section>;
 }

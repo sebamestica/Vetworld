@@ -8,6 +8,8 @@
 .meshButtons button[aria-pressed="true"] { border: 2px solid #087e83; background: #d7eeed; }
 .meshButtons button:disabled { opacity: .45; cursor: default; }
 .meshButtons button:focus-visible,.retry:focus-visible { outline: 3px solid #087e83; outline-offset: 2px; }
+.emptyPieces { margin: 0; padding: 8px 4px; color: #183d57; font-size: 12px; }
+.srOnly { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 .help { margin: 0; padding: 8px 12px 14px; text-align: center; color: #465e6c; font-size: 12px; }
 .immersive { border-radius: 0; background: transparent; }
 .immersive .status { position: absolute; bottom: 12px; left: 12px; z-index: 1; color: inherit; pointer-events: none; padding: 0; font-size: 11px; }
@@ -15,3 +17,4 @@
 .immersive .meshButtons { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); }
 .immersive .meshButtons:focus-within { width: auto; height: auto; padding: 8px; clip-path: none; bottom: 32px; left: 8px; right: 8px; z-index: 5; background: #f4f7fa; border-radius: 8px; }
 @media(max-width: 640px) { .notice { font-size: 11px; padding: 8px 12px; } .status { padding: 5px 12px; }.meshButtons { gap: 5px; padding: 5px; }.meshButtons button { padding: 8px 11px; }.help { font-size: 10px; padding: 5px 10px 8px; } }
+@media(forced-colors: active) { .meshButtons button[aria-pressed="true"] { border: 2px solid Highlight; } .meshButtons button:focus-visible,.retry:focus-visible { outline-color: Highlight; } }
