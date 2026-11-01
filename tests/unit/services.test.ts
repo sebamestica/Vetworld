@@ -9,7 +9,7 @@ describe('Servicios del catálogo real', () => {
     expect(rows.length).toBeGreaterThan(0);
     expect(rows.every(row => row.speciesId === 'canine' && row.kind === 'muscle')).toBe(true);
     expect(catalogService.regions({species:'feline'}).every(row => row.speciesIds.includes('feline'))).toBe(true);
-    expect(catalogService.structures({species:'feline',region:'pelvic-limb'}).map(row => row.id)).toEqual(['feline:femur','feline:tibia']);
+    expect(catalogService.structures({species:'feline',region:'pelvic-limb'}).map(row => row.id).sort()).toEqual(['feline:femur','feline:fibula','feline:metatarsus','feline:os-coxae','feline:patella','feline:pes-phalanges','feline:popliteal-sesamoid','feline:tarsus','feline:tibia']);
   });
   it('rechaza filtros desconocidos y distingue recurso inexistente', () => {
     expect(() => catalogService.structures({species:'missing'})).toThrow('Filtro species desconocido');
@@ -38,7 +38,8 @@ describe('Servicios del catálogo real', () => {
     expect(stats.structuresScientificallyVerified).toBe(0);
     expect(stats.modelsAvailable).toBe(1);
     expect(catalog.models.filter(model => model.availability === 'available').map(model => model.id)).toEqual(['feline:tavernier-skeleton']);
-    expect(catalogService.region('neck').contentAvailability).toBe('pending');
+    expect(catalogService.region('neck').contentAvailability).toBe('partial');
+    expect(catalogService.region('abdomen').contentAvailability).toBe('pending');
     expect(catalogService.layers().some(row => row.available)).toBe(true);
     expect(catalogService.layers().some(row => !row.available)).toBe(true);
     expect(catalogService.layers().filter(row => ['ligaments', 'fascias'].includes(row.id)).every(row => row.structureIds.length === 0)).toBe(true);

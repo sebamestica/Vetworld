@@ -1,0 +1,973 @@
+{
+  "batchId": "feline-L-F2",
+  "speciesId": "feline",
+  "author": "A3",
+  "structures": [
+    {
+      "id": "feline:os-coxae",
+      "speciesId": "feline",
+      "regionId": "pelvic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os coxae",
+      "spanishName": "Hueso coxal",
+      "aliases": [
+        "coxal",
+        "hueso innominado",
+        "ossa innominata",
+        "innominate bone"
+      ],
+      "summary": "Hueso de la cintura pélvica felina formado por la unión de ilion, isquion y pubis; articula con el sacro y aloja el acetábulo.",
+      "detailedDescription": "Los dos coxales articulan con el sacro y se unen ventralmente en la sínfisis, formando la cintura pélvica, cerrada dorsalmente por el sacro. En el gatito cada coxal consta de ilion, isquion y pubis unidos por suturas, y de un pequeño hueso acetabular; en el adulto forman un solo hueso. El acetábulo, en la cara lateral, recibe la cabeza femoral; su incisura acetabular está cerrada por un ligamento. Las fuentes difieren sobre la participación del pubis en el acetábulo: según Reighard/Jennings, en el gatito el pubis no entra en el acetábulo y en el adulto el pubis, con el hueso acetabular incluido, constituye cerca de un sexto de su contorno; El-Ghazali y El-behery observan que ilion, isquion y pubis lo forman en su muestra y discrepan de otra obra que excluye al pubis.",
+      "morphology": "En el gato, el ala del ilion tiene forma de espátula, con cara glútea profundamente cóncava y cara pélvica plana, y cresta ilíaca gruesa. El isquion es cuadrilátero y el pubis en L invertida. El agujero obturado es elíptico, con un borde medial pequeño y grueso; el arco isquiático es una concavidad poco profunda y la espina isquiática es baja y evertida.",
+      "location": "Cintura del miembro pélvico (Cingulum membri pelvini), entre el sacro y el fémur.",
+      "function": [
+        "Articula con el sacro y con la cabeza del fémur y forma la cintura pélvica."
+      ],
+      "attachments": [
+        "Cara medial del ilion: impresión auricular de la articulación con el sacro y ligamentos iliosacros",
+        "Cara lateral del ilion: superficie cóncava para inserciones musculares",
+        "Tubérculo púbico: origen del M. rectus abdominis",
+        "Surco acetabular: origen del ligamento de la cabeza femoral (ligamentum teres)"
+      ],
+      "landmarks": [
+        "Acetabulum — acetábulo",
+        "Fossa acetabuli — fosa acetabular",
+        "Incisura acetabuli — incisura acetabular",
+        "Foramen obturatum — agujero obturado",
+        "Ala ossis ilii — ala del ilion",
+        "Crista iliaca — cresta ilíaca",
+        "Tuber coxae — tuberosidad coxal",
+        "Tuber sacrale — tuberosidad sacra",
+        "Facies glutea — cara glútea",
+        "Facies auricularis — superficie auricular",
+        "Sulcus obturatorius — surco obturador",
+        "Tuberculum m. psoas minoris — tubérculo del psoas menor",
+        "Incisura ischiadica major — incisura isquiática mayor",
+        "Spina ischiadica — espina isquiática",
+        "Incisura ischiadica minor — incisura isquiática menor",
+        "Tuber ischiadicum — tuberosidad isquiática",
+        "Arcus ischiadicus — arco isquiático"
+      ],
+      "speciesDifferences": [
+        "Frente al conejo (El-Ghazali y El-behery, 2018): el gato carece de tuberosidad ilíaca y conserva abierta la incisura acetabular, que en el conejo se convierte en foramen.",
+        "Frente al conejo: ala ilíaca en espátula en el gato y en pala en el conejo; cresta ilíaca gruesa en el gato y fina en el conejo; agujero obturado elíptico en el gato y oval grande en el conejo."
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "el-ghazali-el-behery-pelvic-2018"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Cingulum membri pelvini, Os coxae",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Os coxae",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.76, Innominate Bones. Ossa innominata (Os coxae BNA)",
+          "claim": "Términos históricos felinos."
+        },
+        {
+          "field": "summary",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.412, Os coxae; Fig. 2",
+          "claim": "Unión de ilion, isquion y pubis en el gato."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.76, Innominate Bones",
+          "claim": "Articulación con el sacro y acetábulo."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.76–79, Innominate Bones, Figs. 54–55",
+          "claim": "Cintura pélvica, composición en el gatito y en el adulto, acetábulo."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.412, Os coxae; p.418, Discussion, primer párrafo",
+          "claim": "Los tres huesos forman el acetábulo; discrepancia bibliográfica."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.412, Os coxae; Fig. 2B, D (gato)",
+          "claim": "Forma de ala, isquion, pubis, agujero obturado y arco."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Cingulum membri pelvini",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.20–21; Os coxae, Os ilium, Os ischii, Os pubis",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.412, Os coxae; leyenda Fig. 2, p.413 (gato: B, D)",
+          "claim": "Accidentes descritos en el gato con nomenclatura NAV."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.77–79, ilium, pubis, acetabulum",
+          "claim": "Superficies y relieves de inserción descritos."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.76, Innominate Bones",
+          "claim": "Articulaciones y formación de la cintura pélvica."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "Abstract, Results; p.412, Os coxae",
+          "claim": "Comparación explícita gato/conejo."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La participación del pubis en el acetábulo es discrepante entre fuentes. La región se asigna a pelvic-limb según la jerarquía NAV (Ossa membri pelvini); revisar si debe colgar de pelvis en la UI."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:patella",
+      "speciesId": "feline",
+      "regionId": "pelvic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Patella",
+      "spanishName": "Rótula",
+      "aliases": [
+        "rotula",
+        "patella"
+      ],
+      "summary": "Hueso sesamoideo de la rodilla felina, incluido en el tendón del M. quadriceps femoris.",
+      "detailedDescription": "Reighard y Jennings la describen como un hueso pequeño y plano, de contorno piriforme con el vértice distal, apoyado contra la superficie articular del extremo distal del fémur, de modo que cubre la articulación de la rodilla. El-Ghazali y El-behery la describen piramidal en el gato, con vértice distal puntiagudo, base proximal redondeada, cara craneal convexa, rugosa y no articular, y cara caudal articular cóncava.",
+      "morphology": "Pequeña y plana, piriforme según la obra histórica y piramidal según el estudio moderno, con vértice distal y bordes redondeados.",
+      "location": "Rodilla, sobre la superficie troclear del extremo distal del fémur (Skeleton femoris en NAV).",
+      "attachments": [
+        "Incluida en el tendón del M. quadriceps femoris",
+        "Ligamento rotuliano hasta el tubérculo de la tibia"
+      ],
+      "landmarks": [
+        "Basis patellae — base de la rótula",
+        "Apex patellae — vértice de la rótula",
+        "Facies articularis — cara articular",
+        "Facies cranialis — cara craneal"
+      ],
+      "speciesDifferences": [
+        "Frente al conejo (El-Ghazali y El-behery, 2018): la cara caudal articular es cóncava en el gato y está dividida por una cresta en el conejo; los bordes son redondeados en el gato y el lateral presenta una pequeña escotadura distal en el conejo."
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "el-ghazali-el-behery-pelvic-2018"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Skeleton femoris, Patella",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Patella",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Patella",
+          "claim": "Variantes de búsqueda."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, Patella",
+          "claim": "Sesamoideo en el tendón del cuádriceps femoral."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, Patella",
+          "claim": "Forma y relación con el fémur."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Patella and fabellae; Fig. 3P (gato)",
+          "claim": "Forma y caras en el gato."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, Patella",
+          "claim": "Contorno piriforme."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Patella and fabellae",
+          "claim": "Forma piramidal felina."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, Patella",
+          "claim": "Apoyo sobre el extremo distal del fémur."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Skeleton femoris",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Patella",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Patella and fabellae",
+          "claim": "Base, vértice y caras descritas en el gato."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, Patella; p.81, Tibia (tubercle for ligamentum patellae)",
+          "claim": "Tendón del cuádriceps y ligamento rotuliano."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Patella and fabellae; Fig. 3O–P",
+          "claim": "Comparación explícita gato/conejo."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Las dos descripciones de forma (piriforme/piramidal) proceden de fuentes distintas y se conservan ambas."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:popliteal-sesamoid",
+      "speciesId": "feline",
+      "regionId": "pelvic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Os sesamoideum m. poplitei",
+      "spanishName": "Sesamoideo del músculo poplíteo",
+      "aliases": [
+        "sesamoideo popliteo",
+        "popliteal sesamoid"
+      ],
+      "summary": "Hueso sesamoideo situado en el tendón del M. popliteus, lateral al cóndilo lateral del fémur.",
+      "location": "Región de la rodilla, en el tendón del M. popliteus, justo lateral al cóndilo lateral del fémur.",
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Os sesamoideum m. poplitei",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Os sesamoideum m. poplitei",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, Patella, párrafo sobre sesamoideos de la rodilla",
+          "claim": "Variantes de búsqueda derivadas de la descripción del sesamoideo en el tendón del poplíteo."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, sesamoideos de la rodilla (Fig. 61, p.89)",
+          "claim": "Sesamoideo en el tendón del poplíteo."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.80, sesamoideos de la rodilla",
+          "claim": "Posición lateral al cóndilo lateral del fémur."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Solo la obra histórica describe este sesamoideo en el gato entre las fuentes leídas; el estudio de 2018 no lo menciona. Presencia en el espécimen no comprobada."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "detailedDescription",
+        "morphology",
+        "landmarks",
+        "function",
+        "attachments",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:fibula",
+      "speciesId": "feline",
+      "regionId": "pelvic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Fibula",
+      "spanishName": "Peroné",
+      "aliases": [
+        "fibula",
+        "perone"
+      ],
+      "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y separado de ella en toda su longitud.",
+      "detailedDescription": "La cabeza, aplanada, articula con la tibia por una carilla proximomedial (Reighard/Jennings); el estudio de 2018 describe en el gato dos carillas para la tibia y una cabeza dividida caudolateralmente por un surco en dos áreas triangulares. El borde medial, muy agudo, da inserción a la membrana interósea entre tibia y peroné. El extremo distal se ensancha formando el maléolo lateral, con carillas para la tibia y el talus y surcos para tendones. En el gato el espacio interóseo se extiende a lo largo de toda la pierna.",
+      "morphology": "Hueso delgado y triangular con extremos proximal y distal ensanchados; en el gato, hueso largo completo.",
+      "location": "Pierna (Skeleton cruris), en el lado lateral de la tibia.",
+      "attachments": [
+        "Borde medial: membrana interósea entre tibia y peroné",
+        "Maléolo lateral: en Carnivora, dos surcos, uno para el tendón del M. fibularis longus y otro para los tendones de los Mm. extensor digitorum lateralis y fibularis brevis (NAV)"
+      ],
+      "landmarks": [
+        "Caput fibulae — cabeza del peroné",
+        "Facies articularis capitis fibulae — carilla articular de la cabeza",
+        "Corpus fibulae — cuerpo del peroné",
+        "Margo interosseus — borde interóseo",
+        "Malleolus lateralis — maléolo lateral",
+        "Sulcus tendinis m. fibularis longi — surco del tendón del M. fibularis longus"
+      ],
+      "speciesDifferences": [
+        "Frente al conejo (El-Ghazali y El-behery, 2018): en el gato tibia y peroné están completamente separados y el peroné es un hueso largo completo; en el conejo se fusionan en los dos tercios distales y el peroné está reducido.",
+        "El espacio interóseo de la pierna se extiende a lo largo de toda la región en el gato y queda limitado al tercio proximal en el conejo."
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "el-ghazali-el-behery-pelvic-2018"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Skeleton cruris, Fibula",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Fibula",
+          "claim": "Traducción editorial al español (peroné)."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Fibula",
+          "claim": "Variantes de búsqueda."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Fibula, Fig. 57",
+          "claim": "Hueso delgado lateral a la tibia."
+        },
+        {
+          "field": "summary",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tibia and fibula; Fig. 4E (gato)",
+          "claim": "Separación completa en el gato."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Fibula, Fig. 57",
+          "claim": "Cabeza, borde medial y maléolo lateral."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tibia and fibula; Fig. 4E, I, J",
+          "claim": "Carillas, surco de la cabeza y espacio interóseo felinos."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Fibula",
+          "claim": "Forma general."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tibia and fibula",
+          "claim": "Hueso largo completo en el gato."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Skeleton cruris",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Fibula",
+          "claim": "Lado lateral de la tibia."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Fibula; Malleolus lateralis (Car, su)",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tibia and fibula; leyenda Fig. 4, p.416",
+          "claim": "Cabeza, carillas y maléolo en el gato."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Fibula (shaft)",
+          "claim": "Membrana interósea en el borde medial."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "nav-6th-edition",
+          "locator": "Notes to Osteologia, nota 63, p.29",
+          "claim": "Dos surcos maleolares en Carnivora."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "Abstract, Results; p.415, Tibia and fibula",
+          "claim": "Comparación explícita gato/conejo."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La disposición de los surcos maleolares procede de NAV para Carnivora; Reighard/Jennings solo indican superficies ventral y lateral surcadas para tendones."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:tarsus",
+      "speciesId": "feline",
+      "regionId": "pelvic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Ossa tarsi",
+      "spanishName": "Huesos del tarso",
+      "aliases": [
+        "tarso felino",
+        "tarsus",
+        "huesos tarsianos"
+      ],
+      "summary": "Conjunto de siete huesos tarsianos del pie felino: talus, calcáneo, central y tarsianos I–IV.",
+      "detailedDescription": "El calcáneo, el más largo, se sitúa en el lado lateral y forma el soporte del talón; articula distalmente con el cuboides, que lleva los metatarsianos IV y V. El talus (astrágalo), entre calcáneo y tibia, tiene cuerpo, cuello y cabeza; su tróclea articula con la tibia y los maléolos y su cabeza con el navicular. El navicular lleva los tres cuneiformes, que a su vez llevan el metatarsiano I rudimentario y los II y III. En terminología NAV: Talus, Calcaneus, Os tarsi centrale [Os naviculare] y Os tarsale I–IV [Os cuneiforme mediale, intermedium, laterale; Os cuboideum]. El estudio de 2018 describe en el gato una fila proximal (talus medial y calcáneo lateral), el central intermedio y una fila distal de cuatro huesos.",
+      "morphology": "Calcáneo cilíndrico, de longitud doble que la del talus, con sustentáculo del talus y tubérculo peroneo; central oval con superficie proximal cóncava; tarsianos I y IV cuadriláteros, el I más pequeño; II semilunar y aplanado; III piramidal.",
+      "location": "Esqueleto del pie (Skeleton pedis), entre tibia y peroné proximalmente y metatarsianos distalmente.",
+      "function": [
+        "El calcáneo forma el soporte del talón."
+      ],
+      "attachments": [
+        "Extremo proximal del calcáneo: surco para el tendón de Aquiles",
+        "Tarsiano IV (cuboides): surco para el tendón del M. peroneus (fibularis) longus"
+      ],
+      "landmarks": [
+        "Talus — talus (astrágalo)",
+        "Trochlea tali — tróclea del talus",
+        "Calcaneus — calcáneo",
+        "Sustentaculum tali — sustentáculo del talus",
+        "Os tarsi centrale [Os naviculare] — tarsiano central (navicular)",
+        "Os tarsale I [Os cuneiforme mediale] — tarsiano I (cuneiforme medial)",
+        "Os tarsale II [Os cuneiforme intermedium] — tarsiano II (cuneiforme intermedio)",
+        "Os tarsale III [Os cuneiforme laterale] — tarsiano III (cuneiforme lateral)",
+        "Os tarsale IV [Os cuboideum] — tarsiano IV (cuboides)",
+        "Sulcus tendinis m. fibularis longi — surco del tendón del M. fibularis longus (en el tarsiano IV)"
+      ],
+      "speciesDifferences": [
+        "Frente al conejo (El-Ghazali y El-behery, 2018): el gato presenta siete huesos tarsianos, con fila distal I–IV; el conejo, seis, con fila distal II–IV."
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "el-ghazali-el-behery-pelvic-2018"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Skeleton pedis, Ossa tarsi",
+          "claim": "Nombre del conjunto."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Ossa tarsi",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Tarsus",
+          "claim": "Término de la obra felina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Tarsus, Fig. 58",
+          "claim": "Siete huesos."
+        },
+        {
+          "field": "summary",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tarsal bones; Fig. 5B–C; Table 1, p.418",
+          "claim": "Siete huesos felinos con nomenclatura NAV."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.82–85, Tarsus y descripciones por hueso, Figs. 58–59",
+          "claim": "Disposición y articulaciones; equivalencias BNA."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Ossa tarsi",
+          "claim": "Términos NAV con sinónimos entre corchetes."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tarsal bones",
+          "claim": "Filas en el gato."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tarsal bones; Fig. 5B–C",
+          "claim": "Forma de los huesos; la proporción calcáneo/talus se enuncia sin distinguir especie."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.83–84, Calcaneus, Fig. 59",
+          "claim": "Sustentáculo y tubérculo peroneo."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Skeleton pedis",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Tarsus",
+          "claim": "Relación con pierna y metatarsianos."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.22; Ossa tarsi",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.82–84, Astragalus, Calcaneus, Cuboid, Figs. 58–59",
+          "claim": "Tróclea, sustentáculo y surco peroneo en el gato."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.84, Calcaneus y Cuboid",
+          "claim": "Surcos tendinosos."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.82, Tarsus",
+          "claim": "Soporte del talón."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.415, Tarsal bones; Table 1, p.418",
+          "claim": "Comparación explícita gato/conejo."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los siete tarsianos no tienen fichas individuales. Reighard/Jennings usan astragalus, scaphoid/navicular y cuneiformes (BNA); las correspondencias NAV se basan en los sinónimos entre corchetes de NAV."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:metatarsus",
+      "speciesId": "feline",
+      "regionId": "pelvic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Ossa metatarsalia",
+      "spanishName": "Huesos metatarsianos",
+      "aliases": [
+        "metatarso felino",
+        "metatarsus",
+        "metatarsianos"
+      ],
+      "summary": "Cinco metatarsianos felinos: el I rudimentario y los II–V desarrollados.",
+      "detailedDescription": "Se parecen a los metacarpianos y se distinguen por sus bases (Reighard/Jennings). El I es rudimentario y cónico y su base articula con el cuneiforme medial (tarsiano I). La base del II corresponde al cuneiforme intermedio, la del III al lateral, la del IV al cuboides, y la base del V, en cuña, también articula con el cuboides. El estudio de 2018 describe cinco metatarsianos en el gato, bien desarrollados del II al V y el I no desarrollado; en las articulaciones metatarsofalangianas hay sesamoideos proximales pares.",
+      "morphology": "Huesos largos con base, cuerpo y cabeza, semejantes a los metacarpianos; el I es rudimentario y cónico.",
+      "location": "Esqueleto del pie (Skeleton pedis), entre tarso y falanges.",
+      "attachments": [
+        "Sesamoideos proximales pares en la cara plantar de las articulaciones metatarsofalangianas, como en la mano"
+      ],
+      "landmarks": [
+        "Basis — base",
+        "Facies articularis tarsea — superficie articular tarsiana",
+        "Corpus — cuerpo",
+        "Facies dorsalis — cara dorsal",
+        "Facies plantaris — cara plantar",
+        "Caput — cabeza"
+      ],
+      "speciesDifferences": [
+        "Frente al conejo (El-Ghazali y El-behery, 2018): cinco metatarsianos en el gato, con el I reducido, y cuatro en el conejo, que carece del I."
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "el-ghazali-el-behery-pelvic-2018"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.23; Skeleton pedis, Ossa metatarsalia I-V",
+          "claim": "Nombre del conjunto."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.23; Ossa metatarsalia I-V",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.85, Metatarsals. Metatarsus",
+          "claim": "Término de la obra felina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.85, Metatarsals, Fig. 58",
+          "claim": "Cinco metatarsianos; el primero rudimentario."
+        },
+        {
+          "field": "summary",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "pp.415 y 418, Metatarsals and digits; Table 1",
+          "claim": "I no desarrollado; II–V desarrollados."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.85–86, Metatarsals 1–5, Fig. 58",
+          "claim": "Articulaciones de cada base."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "pp.415 y 418, Metatarsals and digits; p.418, Sesamoid bones",
+          "claim": "Número, desarrollo y sesamoideos proximales."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.85, Metatarsals",
+          "claim": "Semejanza con metacarpianos; I cónico."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.418, Metatarsals and digits",
+          "claim": "Huesos largos con dos extremos y cuerpo."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.23; Skeleton pedis",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.23; Ossa metatarsalia I-V",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.86, Sesamoid Bones. Ossa sesamoidea, Fig. 58 l",
+          "claim": "Sesamoideos metatarsofalangianos como en la mano."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.418, Sesamoid bones",
+          "claim": "Sesamoideos proximales pares plantares en el gato."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "Abstract, Results; p.415; Table 1, p.418",
+          "claim": "Comparación explícita gato/conejo."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. Un metatarsiano I rudimentario no implica un dedo I funcional. Reighard/Jennings escriben «first metacarpal» en el párrafo de metatarsianos (p.85), probable errata por metatarsal."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:pes-phalanges",
+      "speciesId": "feline",
+      "regionId": "pelvic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Ossa digitorum pedis",
+      "spanishName": "Falanges del pie",
+      "aliases": [
+        "falanges del pie felino",
+        "phalanges pedis"
+      ],
+      "summary": "Falanges de los cuatro dedos del pie felino (II–V), con tres falanges en cada dedo.",
+      "detailedDescription": "Reighard y Jennings describen tres falanges en cada uno de los cuatro dedos, casi idénticas a las de la mano. El estudio de 2018 registra en el gato cuatro dedos (II–V), cada uno con tres falanges; los dedos II y V son los más cortos y los III y IV los más largos. La tercera falange queda encerrada en la garra y es triangular, con base proximal y vértice distal (proceso ungueal). Hay dos sesamoideos proximales por dedo y no se observaron sesamoideos distales en la muestra felina.",
+      "morphology": "Tres filas de falanges similares a las de la mano; falange distal triangular con proceso ungueal puntiagudo.",
+      "location": "Esqueleto del pie (Skeleton pedis), distal a los metatarsianos II–V.",
+      "landmarks": [
+        "Phalanx proximalis — falange proximal",
+        "Phalanx media — falange media",
+        "Phalanx distalis [Os unguiculare] — falange distal",
+        "Processus unguicularis — proceso ungueal"
+      ],
+      "speciesDifferences": [
+        "Frente al conejo (El-Ghazali y El-behery, 2018): proceso ungueal más puntiagudo en el gato y ancho en el conejo; sesamoideo distal ausente en el gato y presente en el conejo; dedos II y V más cortos en el gato y dedo V más corto en el conejo."
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "el-ghazali-el-behery-pelvic-2018"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.23; Skeleton pedis, Ossa digitorum pedis",
+          "claim": "Nombre del conjunto."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.23; Ossa digitorum pedis",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.86, Phalanges (pes)",
+          "claim": "Variantes de búsqueda."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.86, Phalanges, Fig. 58 (i, j, k)",
+          "claim": "Tres falanges en cada uno de cuatro dedos."
+        },
+        {
+          "field": "summary",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.418, Metatarsals and digits; Table 1",
+          "claim": "Dedos II–V con tres falanges."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.86, Phalanges",
+          "claim": "Semejanza con las de la mano."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.418, Metatarsals and digits; Sesamoid bones; Fig. 5G, K",
+          "claim": "Longitud relativa, falange distal y sesamoideos."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.418, Metatarsals and digits; Fig. 5K",
+          "claim": "Falange distal triangular."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.23; Skeleton pedis",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.20 y 23; Ossa digitorum manus/pedis (vide manus)",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "p.418, Metatarsals and digits (unguicular process)",
+          "claim": "Proceso ungueal en el gato."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "el-ghazali-el-behery-pelvic-2018",
+          "locator": "Abstract, Results; p.418; Table 1",
+          "claim": "Comparación explícita gato/conejo."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto. La ausencia de sesamoideo distal se refiere a la muestra del estudio de 2018, no a todo gato."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "attachments",
+        "vascularSupply"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel:feline:os-coxae-articulates-femur",
+      "fromId": "feline:os-coxae",
+      "toId": "feline:femur",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:femur-articulates-patella",
+      "fromId": "feline:femur",
+      "toId": "feline:patella",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:tibia-articulates-fibula",
+      "fromId": "feline:tibia",
+      "toId": "feline:fibula",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901",
+        "el-ghazali-el-behery-pelvic-2018"
+      ]
+    },
+    {
+      "id": "rel:feline:tibia-articulates-tarsus",
+      "fromId": "feline:tibia",
+      "toId": "feline:tarsus",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:fibula-articulates-tarsus",
+      "fromId": "feline:fibula",
+      "toId": "feline:tarsus",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:tarsus-articulates-metatarsus",
+      "fromId": "feline:tarsus",
+      "toId": "feline:metatarsus",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    }
+  ],
+  "sources": []
+}

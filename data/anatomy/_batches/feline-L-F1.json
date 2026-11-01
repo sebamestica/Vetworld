@@ -1,0 +1,967 @@
+{
+  "batchId": "feline-L-F1",
+  "speciesId": "feline",
+  "author": "A3",
+  "structures": [
+    {
+      "id": "feline:clavicle",
+      "speciesId": "feline",
+      "regionId": "shoulder",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Clavicula",
+      "spanishName": "Clavícula",
+      "aliases": [
+        "clavicula",
+        "clavicle"
+      ],
+      "summary": "Clavícula felina muy reducida, unida por tejido fibroso al vértice del acromion.",
+      "detailedDescription": "Reighard y Jennings describen la clavícula del gato como muy reducida: una varilla ósea delgada y curva, incluida en la musculatura del hombro y conectada por tejido fibroso al vértice del acromion. NAV registra el término Clavicula con indicación de especie para conejo y gato.",
+      "morphology": "Varilla ósea delgada y curva, con el extremo lateral ligeramente ensanchado.",
+      "location": "Cintura del miembro torácico, incluida en los músculos del hombro, junto al vértice del acromion.",
+      "attachments": [
+        "Inserción del M. clavotrapezius (nomenclatura de Reighard/Jennings)",
+        "Inserción del M. cleidomastoideus en sus cuatro quintos laterales (nomenclatura de Reighard/Jennings)",
+        "Unión fibrosa con el vértice del acromion"
+      ],
+      "landmarks": [
+        "Extremo medial (Reighard/Jennings, Fig. 46 a)",
+        "Extremo lateral, ligeramente ensanchado (Reighard/Jennings, Fig. 46 b)"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Cingulum membri thoracici, Clavicula (or, fe)",
+          "claim": "Término NAV con marca de especie felina."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Clavicula",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Clavicula",
+          "claim": "Variante latina sin tilde para búsqueda."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.64, Clavicle. Clavicula, Fig. 46",
+          "claim": "Término inglés de la obra felina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.64, Clavicle. Clavicula, Fig. 46",
+          "claim": "Clavícula muy reducida unida al acromion."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.64, Clavicle. Clavicula, Fig. 46; también p.64, acromion",
+          "claim": "Varilla delgada y curva incluida en músculos, unida por tejido fibroso al acromion."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Clavicula (or, fe); abreviaturas de especie en TERMINI GENERALES, nota 1, p.9",
+          "claim": "Marca de especie (or, fe)."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.64, Clavicle, Fig. 46",
+          "claim": "Varilla curva; extremo lateral algo ensanchado."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.18; Cingulum membri thoracici",
+          "claim": "Pertenencia a la cintura torácica."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.64, Clavicle",
+          "claim": "Incluida en la musculatura del hombro, unida al acromion."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.64, Fig. 46 (a, extremo medial; b, extremo lateral)",
+          "claim": "Extremos rotulados en la figura."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.117, M. clavotrapezius, Insertion",
+          "claim": "Inserción en la clavícula y en un rafe con el clavobraquial."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.120, M. cleidomastoideus, Insertion",
+          "claim": "Inserción en los cuatro quintos laterales de la clavícula."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.64, Clavicle; acromion",
+          "claim": "Unión fibrosa al vértice del acromion."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Presencia y posición de la clavícula en Tavernier no comprobadas: una vista general no acredita presencia ni ausencia. Los nombres musculares (clavotrapezius, cleidomastoideus) son de Reighard/Jennings y requieren correspondencia NAV."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:radius",
+      "speciesId": "feline",
+      "regionId": "thoracic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Radius",
+      "spanishName": "Radio",
+      "aliases": [
+        "radio felino",
+        "radius"
+      ],
+      "summary": "Hueso del antebrazo felino que, junto con la ulna, permite una amplia rotación antebraquial (pronación y supinación).",
+      "detailedDescription": "Su extremo proximal articula con el capítulo humeral y queda lateral al extremo proximal de la ulna; el extremo distal queda medial a la ulna, de modo que en posición natural el radio cruza ventralmente a la ulna (orientación de Reighard/Jennings). La circunferencia articular de la cabeza articula con la incisura radial de la ulna y una carilla cóncava distal con la ulna. La cavidad articular distal se apoya en el hueso escafolunar (Os carpi intermedioradiale en NAV). Radio y ulna están unidos en su tercio medio por la membrana interósea. Un estudio moderno describe en el gato un ligamento radioulnar distal triangular entre las caras dorsales del radio y la ulna distales.",
+      "morphology": "Hueso curvo, ligeramente aplanado dorsoventralmente, con extremos ensanchados; cuerpo convexo dorsalmente y cóncavo ventralmente; extremo distal algo piramidal, con surcos longitudinales dorsales para tendones.",
+      "location": "Antebrazo (Skeleton antebrachii) del miembro torácico, entre húmero y carpo.",
+      "function": [
+        "Participa con la ulna en la rotación antebraquial (pronación y supinación); el estudio de 2023 interpreta que la composición del ligamento radioulnar distal felino permitiría mayor rotación del radio distal alrededor de la ulna."
+      ],
+      "attachments": [
+        "Tuberosidad del radio: inserción del tendón del M. biceps brachii",
+        "Ligamento anular del radio, que rodea la cabeza radial",
+        "Ligamento colateral lateral ventral del codo, en la cara lateral del extremo proximal",
+        "Membrana interósea en el tercio medio, entre radio y ulna",
+        "Ligamento radioulnar distal, triangular, entre las caras dorsales del radio y la ulna distales"
+      ],
+      "landmarks": [
+        "Caput radii — cabeza del radio",
+        "Fovea capitis radii — fóvea de la cabeza (carilla para el capítulo humeral)",
+        "Circumferentia articularis — circunferencia articular",
+        "Collum radii — cuello del radio",
+        "Tuberositas radii — tuberosidad del radio (bicipital en Reighard/Jennings)",
+        "Corpus radii — cuerpo del radio",
+        "Processus styloideus — apófisis estiloides",
+        "Facies articularis carpea — superficie articular carpiana",
+        "Incisura ulnaris — incisura ulnar (carilla para la ulna)"
+      ],
+      "speciesDifferences": [
+        "Los gatos presentan mayor rotación antebraquial que los perros (Basa et al., 2023).",
+        "En el gato el ligamento radioulnar distal tiene un componente interóseo menos extenso que en perro y guepardo y sigue las superficies articulares del radio y la ulna distales (Basa et al., 2023)."
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "basa-feline-radioulnar-ligament-2023",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [
+        "feline:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii, Radius",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Radius",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Radius",
+          "claim": "Variantes de búsqueda."
+        },
+        {
+          "field": "summary",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Introduction, primer párrafo; Discussion",
+          "claim": "Mayor rotación antebraquial felina y papel del radio distal."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.67–68, Radius, Figs. 49–50",
+          "claim": "Hueso del antebrazo."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.67–68, Radius, Figs. 49–50",
+          "claim": "Posición cruzada respecto de la ulna y superficies articulares."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.75, Articulations of Radius and Ulna",
+          "claim": "Membrana interósea en el tercio medio."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Results, Macroscopic description; Figure 3",
+          "claim": "Ligamento radioulnar distal triangular dorsal."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.67–68, Radius",
+          "claim": "Forma, curvatura y surcos tendinosos."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Radius",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.67–68, Radius, Figs. 49–50 (a–g)",
+          "claim": "Accidentes felinos descritos; correspondencia con NAV pendiente de revisión."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.67, Radius (tuberosidad bicipital)",
+          "claim": "Inserción del tendón del bíceps."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.75, ligamentos colaterales laterales y ligamento anular; membrana interósea",
+          "claim": "Ligamentos del codo y membrana interósea."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Results, Macroscopic description",
+          "claim": "Ligamento radioulnar distal entre radio y ulna dorsales."
+        },
+        {
+          "field": "function",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Introduction; Discussion, segundo párrafo",
+          "claim": "Rotación antebraquial e interpretación del ligamento."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Introduction; Discussion; Conclusions and relevance",
+          "claim": "Comparación explícita gato/perro/guepardo."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Las direcciones ventral/dorsal del antebrazo siguen la orientación de Reighard/Jennings. Rótulos de la malla Tavernier sin comprobar."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:ulna",
+      "speciesId": "feline",
+      "regionId": "thoracic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Ulna",
+      "spanishName": "Cúbito",
+      "aliases": [
+        "ulna felina",
+        "ulna",
+        "cubito"
+      ],
+      "summary": "Hueso largo y delgado del antebrazo felino, con una profunda incisura troclear para la tróclea humeral.",
+      "detailedDescription": "La incisura troclear (incisura semilunar o gran cavidad sigmoidea en Reighard/Jennings) articula con la tróclea humeral; su superficie, en forma de silla de montar, está dividida por una zona transversal no articular. El proceso coronoides, en el límite distal de la incisura, lleva lateralmente la incisura radial para la cabeza del radio. El olécranon, proximal a la incisura, encaja en la fosa del olécranon con el codo extendido. Distalmente, una cabeza hemisférica articula con el radio y la apófisis estiloides con el hueso cuneiforme (Os carpi ulnare [Os triquetrum] en NAV). Un estudio moderno describe en el gato un verdadero ligamento radioulnar distal y un ligamento desde la apófisis estiloides hasta la base del hueso carpiano accesorio.",
+      "morphology": "Larga y delgada, aplanada mediolateralmente; ensanchada proximalmente y adelgazada hacia distal; el cuerpo se vuelve triangular distalmente.",
+      "location": "Antebrazo (Skeleton antebrachii) del miembro torácico, junto al radio.",
+      "attachments": [
+        "Área de inserción de los músculos braquial y clavobraquial (nomenclatura de Reighard/Jennings)",
+        "Área rugosa para la membrana interósea",
+        "Olécranon: extremo rugoso para la inserción de tendones",
+        "Ligamento anular del radio, fijado al borde de la incisura radial y al proceso coronoides",
+        "Ligamentos colaterales medial y lateral del codo en los bordes de la incisura troclear",
+        "Ligamento radioulnar distal, con entesis fibrocartilaginosa ulnar",
+        "Ligamento compatible con el accesorioulnar, desde la cara axial de la apófisis estiloides hasta la base del hueso carpiano accesorio"
+      ],
+      "landmarks": [
+        "Olecranon — olécranon",
+        "Incisura trochlearis — incisura troclear",
+        "Processus coronoideus — proceso coronoides (Reighard/Jennings describen uno; NAV distingue medial y lateral)",
+        "Incisura radialis — incisura radial",
+        "Corpus ulnae — cuerpo de la ulna",
+        "Margo interosseus — borde interóseo (NAV: término propio de Carnivora)",
+        "Caput ulnae — cabeza de la ulna",
+        "Processus styloideus — apófisis estiloides"
+      ],
+      "speciesDifferences": [
+        "En el gato la articulación radioulnar distal presenta un verdadero ligamento radioulnar y no un disco fibrocartilaginoso, a diferencia de lo descrito en el perro, y sin islotes fibrocartilaginosos en el ligamento (Basa et al., 2023)."
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "basa-feline-radioulnar-ligament-2023"
+      ],
+      "modelIds": [
+        "feline:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii, Ulna",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Ulna",
+          "claim": "Traducción editorial al español (cúbito)."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Ulna",
+          "claim": "Variantes de búsqueda."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.68–69, Ulna, Figs. 49–50",
+          "claim": "Hueso largo y delgado con incisura profunda."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.69, Ulna, Figs. 49–50 (h, i, j, m)",
+          "claim": "Superficies articulares y procesos."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.70, Cuneiform Bone (Os triquetrum BNA)",
+          "claim": "Equivalencia BNA del cuneiforme."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Os carpi ulnare [Os triquetrum]",
+          "claim": "Término NAV correspondiente."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Results, Macroscopic description; Discussion",
+          "claim": "Ligamento radioulnar distal y ligamento estiloides-accesorio."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.68–69, Ulna",
+          "claim": "Forma y aplanamiento."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton antebrachii",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Ulna; Notes to Osteologia, nota 49, p.28",
+          "claim": "Nombres latinos; Margo interosseus en Carnivora."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.69, Ulna, Figs. 49–50",
+          "claim": "Accidentes felinos; correspondencia con NAV pendiente de revisión."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.68, leyenda Figs. 49–50 (k, l); p.69, olécranon",
+          "claim": "Áreas de inserción muscular y de la membrana interósea."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.74–75, elbow-joint y Articulations of Radius and Ulna, Figs. 52–53",
+          "claim": "Ligamentos colaterales y anular."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Results, Macroscopic description; Discussion, entesis",
+          "claim": "Ligamento radioulnar distal y ligamento accesorioulnar."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Discussion, primer y tercer párrafos",
+          "claim": "Comparación explícita gato/perro."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Rótulos de la malla Tavernier sin comprobar."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:carpus",
+      "speciesId": "feline",
+      "regionId": "thoracic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Ossa carpi",
+      "spanishName": "Huesos del carpo",
+      "aliases": [
+        "carpo felino",
+        "carpus",
+        "huesos carpianos"
+      ],
+      "summary": "Conjunto de siete huesos carpianos dispuestos en dos filas en el carpo felino.",
+      "detailedDescription": "Reighard y Jennings describen siete huesos: en la fila proximal, escafolunar, cuneiforme y pisiforme; en la distal, trapecio, trapezoide, hueso grande (os magnum) y unciforme. Sus equivalencias BNA y los términos NAV son Os carpi intermedioradiale [Os scapholunatum], Os carpi ulnare [Os triquetrum], Os carpi accessorium [Os pisiforme] y Os carpale I–IV [Os trapezium, Os trapezoideum, Os capitatum, Os hamatum]. En el gatito el escafolunar está representado por tres huesos: escafoides, semilunar y un central. Un sesamoideo radial se aplica al extremo radial del escafolunar. Un estudio micro-CT de 2026 incluyó en gatos los siete huesos: intermediorradial, ulnar, accesorio y carpales I–IV.",
+      "morphology": "Escafolunar cuadrangular con un proceso romo; cuneiforme en pirámide aplanada; pisiforme unas dos veces más largo que ancho, con extremos ensanchados; unciforme y trapezoide en cuña; hueso grande en placa oblonga; trapecio en prisma triangular curvado.",
+      "location": "Esqueleto de la mano (Skeleton manus), entre radio y ulna proximalmente y metacarpianos distalmente.",
+      "function": [
+        "Forma tres articulaciones: antebraquiocarpiana y entre las dos filas, descritas como móviles, y carpometacarpiana, descrita como no móvil por Reighard/Jennings.",
+        "El carpo felino no actúa solo como gínglimo: permite movimiento en otros planos (Goldstein et al., 2026)."
+      ],
+      "attachments": [
+        "Ligamentos interóseos e intercarpianos dorsales, ventrales y laterales, nombrados por los huesos que unen",
+        "Base del hueso carpiano accesorio: ligamento compatible con el accesorioulnar desde la apófisis estiloides de la ulna",
+        "Hueso carpiano accesorio: cortical marcada en el punto de inserción de tejidos blandos"
+      ],
+      "landmarks": [
+        "Os carpi intermedioradiale [Os scapholunatum] — hueso intermediorradial (escafolunar)",
+        "Os carpi ulnare [Os triquetrum] — hueso carpiano ulnar (cuneiforme)",
+        "Os carpi accessorium [Os pisiforme] — hueso carpiano accesorio (pisiforme)",
+        "Os carpale I [Os trapezium] — carpiano I (trapecio)",
+        "Os carpale II [Os trapezoideum] — carpiano II (trapezoide)",
+        "Os carpale III [Os capitatum] — carpiano III (hueso grande)",
+        "Os carpale IV [Os hamatum] — carpiano IV (unciforme)"
+      ],
+      "speciesDifferences": [
+        "En gatos y perros toy de peso similar, los gatos mostraron mayor fracción de volumen óseo (BV/TV), trabéculas más gruesas, menos trabéculas y cortical más desarrollada en los siete huesos carpianos (Goldstein et al., 2026).",
+        "En gatos, el hueso carpiano ulnar presentó el mayor BV/TV y las trabéculas más gruesas; los autores señalan que estas características no se observaron en perros y las relacionan con una pronación-supinación felina citada de ≈115° frente a ≈50° en el perro (Goldstein et al., 2026, citando bibliografía previa)."
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901",
+        "goldstein-feline-carpus-microct-2026",
+        "basa-feline-radioulnar-ligament-2023"
+      ],
+      "modelIds": [
+        "feline:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa carpi",
+          "claim": "Nombre del conjunto."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Ossa carpi",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.69, Carpus",
+          "claim": "Término inglés de la obra felina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.69, Carpus, Fig. 51",
+          "claim": "Siete huesos en dos filas (tres y cuatro)."
+        },
+        {
+          "field": "summary",
+          "sourceId": "goldstein-feline-carpus-microct-2026",
+          "locator": "Methods, Micro CT",
+          "claim": "Siete huesos carpianos felinos analizados."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.69–71, Carpus y descripciones por hueso, Fig. 51",
+          "claim": "Composición, nombres BNA y composición en el gatito."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.73, Sesamoid Bones of the Hand",
+          "claim": "Sesamoideo radial junto al escafolunar."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Ossa carpi",
+          "claim": "Términos NAV con sinónimos entre corchetes."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "goldstein-feline-carpus-microct-2026",
+          "locator": "Methods, Micro CT",
+          "claim": "Siete huesos con nomenclatura moderna."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.70–71, descripciones por hueso, Fig. 51",
+          "claim": "Forma de cada hueso."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton manus",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.69, Carpus",
+          "claim": "Articulación con radio, ulna y metacarpianos."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Ossa carpi",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "goldstein-feline-carpus-microct-2026",
+          "locator": "Methods, Micro CT; Table 1",
+          "claim": "Siete unidades felinas identificadas."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.75, The Wrist",
+          "claim": "Tres articulaciones y su movilidad."
+        },
+        {
+          "field": "function",
+          "sourceId": "goldstein-feline-carpus-microct-2026",
+          "locator": "Discussion, párrafo sobre el hueso carpiano ulnar",
+          "claim": "Movimiento en más de un plano."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.75, The Wrist",
+          "claim": "Denominación y posición de los ligamentos carpianos."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "basa-feline-radioulnar-ligament-2023",
+          "locator": "Results, Macroscopic description",
+          "claim": "Ligamento hasta la base del accesorio."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "goldstein-feline-carpus-microct-2026",
+          "locator": "Results, Cortical analysis",
+          "claim": "Cortical del accesorio en inserciones blandas."
+        },
+        {
+          "field": "speciesDifferences",
+          "sourceId": "goldstein-feline-carpus-microct-2026",
+          "locator": "Results; Cortical analysis; Discussion",
+          "claim": "Comparación explícita gato/perro toy."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La ficha agrupa siete huesos que el catálogo aún no separa en fichas individuales. Reighard/Jennings llaman «extensor brevis pollicis» al músculo del sesamoideo radial; su posible correspondencia con Os sesamoideum m. abductoris digiti I longi de NAV no está comprobada."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply"
+      ]
+    },
+    {
+      "id": "feline:metacarpus",
+      "speciesId": "feline",
+      "regionId": "thoracic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Ossa metacarpalia",
+      "spanishName": "Huesos metacarpianos",
+      "aliases": [
+        "metacarpo felino",
+        "metacarpus",
+        "metacarpianos"
+      ],
+      "summary": "Cinco huesos metacarpianos alargados y cilíndricos de la mano felina, numerados del I al V desde el dedo I.",
+      "detailedDescription": "El metacarpiano I es el más corto y articula con el trapecio y con el sesamoideo radial. La base del II articula con trapezoide, trapecio, hueso grande y metacarpiano III. El III es el más largo y articula con el hueso grande. Las bases del IV y V forman juntas una carilla que articula con el unciforme y el hueso grande. Cada cabeza presenta una carilla hemisférica con una cresta en su mitad palmar (ventral en Reighard/Jennings), en relación con un par de sesamoideos.",
+      "morphology": "Huesos cilíndricos y alargados con extremos ensanchados: base proximal y cabeza distal.",
+      "location": "Esqueleto de la mano (Skeleton manus), entre la fila distal del carpo y las falanges proximales.",
+      "attachments": [
+        "Cápsula metacarpofalangiana reforzada por un doble ligamento lateral a cada lado",
+        "Par de sesamoideos palmares por articulación, unidos por un ligamento transversal y conectados por ligamentos laterales con la cabeza del metacarpiano y la base de la falange proximal"
+      ],
+      "landmarks": [
+        "Basis — base",
+        "Corpus — cuerpo",
+        "Facies dorsalis — cara dorsal",
+        "Facies palmaris — cara palmar",
+        "Caput — cabeza"
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [
+        "feline:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton manus, Ossa metacarpalia I-V",
+          "claim": "Nombre del conjunto."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Ossa metacarpalia I-V",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.71, Metacarpus",
+          "claim": "Término de la obra felina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.71, Bones of the Hand, Metacarpus, Fig. 51",
+          "claim": "Cinco huesos cilíndricos numerados desde el pulgar."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.71–72, metacarpianos 1–5, Fig. 51",
+          "claim": "Articulaciones de cada base y cresta de la cabeza."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.71, Metacarpus",
+          "claim": "Forma, base y cabeza."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.19; Skeleton manus",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, pp.19–20; Ossa metacarpalia I-V",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.71, Metacarpus (head, base)",
+          "claim": "Base y cabeza descritas en el gato."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.75–76, Metacarpals (articulaciones)",
+          "claim": "Cápsula, ligamentos laterales y ligamentos de los sesamoideos."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Ficha de conjunto; los cinco metacarpianos no tienen fichas individuales. Palmar sustituye al «ventral» de Reighard/Jennings según NAV."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:phalanges",
+      "speciesId": "feline",
+      "regionId": "thoracic-limb",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Ossa digitorum manus",
+      "spanishName": "Falanges de la mano",
+      "aliases": [
+        "falanges de los dedos felinos",
+        "falanges de la mano",
+        "phalanges"
+      ],
+      "summary": "Falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
+      "detailedDescription": "Reighard y Jennings describen dos falanges en el dedo I y tres en cada uno de los dedos II–V. Las proximales son alargadas, aplanadas y convexas longitudinalmente en su cara dorsal, con extremo distal en polea. Las medias son más cortas, con extremo distal cilíndrico que se proyecta más hacia el lado ulnar; por ello, en extensión completa, la falange distal queda al lado ulnar de la media. La falange distal tiene forma de prisma cuadrangular, con una excavación que recibe la base de la garra y una lámina ósea en forma de pico que la sostiene. NAV ofrece Os unguiculare como término alternativo de la falange distal en Carnivora.",
+      "morphology": "Proximales alargadas y aplanadas dorsopalmarmente, con extremos engrosados; medias más cortas; distales en prisma cuadrangular con lámina en forma de pico.",
+      "location": "Esqueleto de la mano (Skeleton manus), distal a los metacarpianos.",
+      "function": [
+        "La falange distal recibe la base de la garra y la sostiene."
+      ],
+      "attachments": [
+        "Articulaciones interfalangianas con cápsula y ligamentos laterales radial y ulnar",
+        "Tubérculo flexor de la falange distal: terminación del tendón del M. flexor digitorum profundus (NAV, Carnivora)"
+      ],
+      "landmarks": [
+        "Phalanx proximalis [Os compedale] — falange proximal",
+        "Phalanx media [Os coronale] — falange media",
+        "Phalanx distalis [Os unguiculare] — falange distal",
+        "Tuberculum flexorium — tubérculo flexor de la falange distal (NAV: presente en Carnivora)"
+      ],
+      "sourceIds": [
+        "feline-skeletal-3d",
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [
+        "feline:thoracic-limb-model"
+      ],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Ossa digitorum manus",
+          "claim": "Nombre del conjunto."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Ossa digitorum manus",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.72, Phalanges",
+          "claim": "Término de la obra felina."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.72–73, Phalanges, Fig. 51 (i, j, k)",
+          "claim": "Tres filas y soporte de la garra."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.72–73, Digits y Phalanges, Fig. 51",
+          "claim": "Número por dedo y forma de cada fila."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Phalanx distalis; Notes to Osteologia, nota 50, p.28",
+          "claim": "Os unguiculare en Carnivora."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.72–73, Phalanges",
+          "claim": "Forma de las tres filas."
+        },
+        {
+          "field": "location",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Skeleton manus",
+          "claim": "Jerarquía regional."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.20; Ossa digitorum manus; nota 51, p.28",
+          "claim": "Nombres latinos y tubérculo flexor en Carnivora."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.76, Phalanges (articulaciones)",
+          "claim": "Cápsulas y ligamentos laterales."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "nav-6th-edition",
+          "locator": "Notes to Osteologia, nota 51, p.28",
+          "claim": "Terminación del flexor digital profundo en Carnivora."
+        },
+        {
+          "field": "function",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.73, distal phalanx",
+          "claim": "Recepción y soporte de la garra."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. La afirmación sobre el tubérculo flexor procede de NAV para Carnivora, no de una descripción felina específica. La retractilidad de la garra no se incluye por falta de fuente leída en este lote. Los once sesamoideos de la mano (Reighard/Jennings, p.73) no tienen ficha."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel:feline:radius-articulates-ulna",
+      "fromId": "feline:radius",
+      "toId": "feline:ulna",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:radius-articulates-carpus",
+      "fromId": "feline:radius",
+      "toId": "feline:carpus",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:ulna-articulates-carpus",
+      "fromId": "feline:ulna",
+      "toId": "feline:carpus",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:carpus-articulates-metacarpus",
+      "fromId": "feline:carpus",
+      "toId": "feline:metacarpus",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    },
+    {
+      "id": "rel:feline:metacarpus-articulates-phalanges",
+      "fromId": "feline:metacarpus",
+      "toId": "feline:phalanges",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "goldstein-feline-carpus-microct-2026",
+      "title": "Microcomputed tomographic comparison of the bony structure of the canine and feline carpus",
+      "authors": [
+        "Leo Goldstein",
+        "Anja-Christina Waselau",
+        "Yury Zablotski",
+        "Andrea Meyer-Lindenberg"
+      ],
+      "institution": "LMU München, Clinic for Small Animal Surgery and Reproduction",
+      "year": 2026,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13281358/",
+      "doi": "10.1186/s13028-026-00871-8",
+      "publicationType": "primary-comparative-microct-study",
+      "license": {
+        "label": "CC BY 4.0 declarada en el texto completo (Acta Veterinaria Scandinavica, BMC; leído vía API de Europe PMC); requiere atribución e indicación de cambios. No se incorporan figuras.",
+        "verified": true,
+        "redistributionAllowed": true
+      },
+      "supportedStructureIds": [
+        "feline:carpus"
+      ]
+    },
+    {
+      "id": "basa-feline-radioulnar-ligament-2023",
+      "title": "Anatomy of the distal radioulnar ligament in cats",
+      "authors": [
+        "Rachel M Basa",
+        "Paul J Canfield",
+        "William R Walsh",
+        "Kenneth A Johnson"
+      ],
+      "institution": "University of Sydney",
+      "year": 2023,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10812075/",
+      "doi": "10.1177/1098612X221149382",
+      "publicationType": "primary-anatomical-histological-study",
+      "license": {
+        "label": "CC BY 4.0 declarada en el texto completo (Journal of Feline Medicine and Surgery; leído vía API de Europe PMC); requiere atribución. No se incorporan figuras.",
+        "verified": true,
+        "redistributionAllowed": true
+      },
+      "supportedStructureIds": [
+        "feline:carpus",
+        "feline:radius",
+        "feline:ulna"
+      ]
+    }
+  ]
+}

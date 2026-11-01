@@ -1,0 +1,146 @@
+{
+  "batchId": "feline-L-F0-sources",
+  "speciesId": "feline",
+  "author": "A3",
+  "structures": [],
+  "relations": [],
+  "sources": [
+    {
+      "id": "nav-6th-edition",
+      "title": "Nomina Anatomica Veterinaria (NAV), 6th Edition",
+      "authors": [
+        "International Committee on Veterinary Gross Anatomical Nomenclature (ICVGAN)"
+      ],
+      "institution": "World Association of Veterinary Anatomists (WAVA)",
+      "url": "https://wava-amav.org/wava-documents/",
+      "publicationType": "international-standard-nomenclature",
+      "license": {
+        "label": "Redistribución del PDF no comprobada; referencia terminológica conservada",
+        "verified": false,
+        "redistributionAllowed": false
+      },
+      "supportedStructureIds": [
+        "canine:axillary-nerve",
+        "canine:biceps-brachii",
+        "canine:biceps-origin-tendon",
+        "canine:brachialis",
+        "canine:common-digital-extensor",
+        "canine:deep-digital-flexor",
+        "canine:extensor-carpi-radialis",
+        "canine:flexor-carpi-radialis",
+        "canine:flexor-carpi-ulnaris",
+        "canine:humerus",
+        "canine:infraspinatus",
+        "canine:lateral-digital-extensor",
+        "canine:manus",
+        "canine:median-ulnar-nerve",
+        "canine:musculocutaneous-nerve",
+        "canine:radial-nerve",
+        "canine:radius",
+        "canine:scapula",
+        "canine:skull",
+        "canine:subscapular-nerve",
+        "canine:subscapularis",
+        "canine:superficial-digital-flexor",
+        "canine:suprascapular-nerve",
+        "canine:supraspinatus",
+        "canine:teres-major",
+        "canine:triceps-brachii-accessory-head",
+        "canine:triceps-brachii-lateral-head",
+        "canine:triceps-brachii-long-head",
+        "canine:triceps-brachii-medial-head",
+        "canine:ulna",
+        "canine:ulnaris-lateralis",
+        "feline:biceps-brachii",
+        "feline:biceps-origin-tendon",
+        "feline:carpus",
+        "feline:humerus",
+        "feline:mandible",
+        "feline:metacarpus",
+        "feline:musculocutaneous-nerve",
+        "feline:phalanges",
+        "feline:radius",
+        "feline:scapula",
+        "feline:skull",
+        "feline:teeth",
+        "feline:ulna",
+        "feline:femur",
+        "feline:tibia",
+        "feline:clavicle",
+        "feline:os-coxae",
+        "feline:patella",
+        "feline:popliteal-sesamoid",
+        "feline:fibula",
+        "feline:tarsus",
+        "feline:metatarsus",
+        "feline:pes-phalanges",
+        "feline:atlas",
+        "feline:axis"
+      ]
+    },
+    {
+      "id": "reighard-jennings-cat-1901",
+      "title": "Anatomy of the Cat",
+      "authors": [
+        "Jacob Reighard",
+        "H. S. Jennings"
+      ],
+      "year": 1901,
+      "url": "https://www.gutenberg.org/cache/epub/58394/pg58394-images.html",
+      "publicationType": "historical-primary-anatomical-monograph",
+      "license": {
+        "label": "Project Gutenberg: uso bajo sus términos; comprobar jurisdicción antes de redistribuir edición o figuras",
+        "verified": false,
+        "redistributionAllowed": false
+      },
+      "supportedStructureIds": [
+        "feline:humerus",
+        "feline:scapula",
+        "feline:femur",
+        "feline:tibia",
+        "feline:clavicle",
+        "feline:radius",
+        "feline:ulna",
+        "feline:carpus",
+        "feline:metacarpus",
+        "feline:phalanges",
+        "feline:os-coxae",
+        "feline:patella",
+        "feline:popliteal-sesamoid",
+        "feline:fibula",
+        "feline:tarsus",
+        "feline:metatarsus",
+        "feline:pes-phalanges",
+        "feline:atlas",
+        "feline:axis"
+      ]
+    },
+    {
+      "id": "el-ghazali-el-behery-pelvic-2018",
+      "title": "Comparative morphological interpretations on the bones of the pelvic limb of New Zealand rabbit (Oryctolagus cuniculus) and domestic cat (Felis domestica)",
+      "authors": [
+        "Hanaa Mohamed El-Ghazali",
+        "Eman Ismail El-behery"
+      ],
+      "year": 2018,
+      "url": "https://bdvets.org/JAVAR/V5I4/e292_pp410-419.pdf",
+      "doi": "10.5455/javar.2018.e292",
+      "publicationType": "primary-comparative-anatomical-study",
+      "license": {
+        "label": "CC BY 4.0 explícita en p.410 del PDF editorial; requiere atribución y declaración de modificaciones",
+        "verified": true,
+        "redistributionAllowed": true
+      },
+      "supportedStructureIds": [
+        "feline:femur",
+        "feline:tibia",
+        "feline:os-coxae",
+        "feline:patella",
+        "feline:fibula",
+        "feline:tarsus",
+        "feline:metatarsus",
+        "feline:pes-phalanges"
+      ]
+    }
+  ]
+}

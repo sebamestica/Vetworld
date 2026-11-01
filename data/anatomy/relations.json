@@ -169,5 +169,114 @@
     "sourceIds": [
       "nav-6th-edition"
     ]
+  },
+  {
+    "id": "rel:feline:radius-articulates-ulna",
+    "fromId": "feline:radius",
+    "toId": "feline:ulna",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:radius-articulates-carpus",
+    "fromId": "feline:radius",
+    "toId": "feline:carpus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:ulna-articulates-carpus",
+    "fromId": "feline:ulna",
+    "toId": "feline:carpus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:carpus-articulates-metacarpus",
+    "fromId": "feline:carpus",
+    "toId": "feline:metacarpus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:metacarpus-articulates-phalanges",
+    "fromId": "feline:metacarpus",
+    "toId": "feline:phalanges",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:os-coxae-articulates-femur",
+    "fromId": "feline:os-coxae",
+    "toId": "feline:femur",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:femur-articulates-patella",
+    "fromId": "feline:femur",
+    "toId": "feline:patella",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:tibia-articulates-fibula",
+    "fromId": "feline:tibia",
+    "toId": "feline:fibula",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901",
+      "el-ghazali-el-behery-pelvic-2018"
+    ]
+  },
+  {
+    "id": "rel:feline:tibia-articulates-tarsus",
+    "fromId": "feline:tibia",
+    "toId": "feline:tarsus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:fibula-articulates-tarsus",
+    "fromId": "feline:fibula",
+    "toId": "feline:tarsus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:tarsus-articulates-metatarsus",
+    "fromId": "feline:tarsus",
+    "toId": "feline:metatarsus",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
+  },
+  {
+    "id": "rel:feline:atlas-articulates-axis",
+    "fromId": "feline:atlas",
+    "toId": "feline:axis",
+    "type": "articulates_with",
+    "sourceIds": [
+      "reighard-jennings-cat-1901"
+    ]
   }
 ]

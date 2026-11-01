@@ -882,6 +882,62 @@
     ]
   },
   {
+    "id": "feline:atlas",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "neck",
+    "regionSpanish": "Cuello",
+    "kind": "bone",
+    "canonicalLatinName": "Atlas",
+    "spanishName": "Atlas",
+    "aliases": [
+      "atlas",
+      "c1",
+      "primera vertebra cervical"
+    ],
+    "summary": "Primera vértebra cervical felina, en forma de anillo y sin cuerpo vertebral.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "atlas",
+      "c1",
+      "cervical",
+      "primera",
+      "primera vertebra cervical",
+      "vertebra"
+    ]
+  },
+  {
+    "id": "feline:axis",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "neck",
+    "regionSpanish": "Cuello",
+    "kind": "bone",
+    "canonicalLatinName": "Axis",
+    "spanishName": "Axis",
+    "aliases": [
+      "axis",
+      "c2",
+      "epistrofeo",
+      "epistropheus",
+      "segunda vertebra cervical"
+    ],
+    "summary": "Segunda vértebra cervical felina, con un diente (dens) que representa el cuerpo del atlas.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "axis",
+      "c2",
+      "cervical",
+      "epistrofeo",
+      "epistropheus",
+      "segunda",
+      "segunda vertebra cervical",
+      "vertebra"
+    ]
+  },
+  {
     "id": "feline:biceps-brachii",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -941,23 +997,49 @@
     "canonicalLatinName": "Ossa carpi",
     "spanishName": "Huesos del carpo",
     "aliases": [
-      "carpo felino"
+      "carpo felino",
+      "carpus",
+      "huesos carpianos"
     ],
-    "summary": "Conjunto de siete pequeños huesos carpianos dispuestos en dos filas en la muñeca felina.",
+    "summary": "Conjunto de siete huesos carpianos dispuestos en dos filas en el carpo felino.",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"
     ],
     "searchTokens": [
       "carpi",
+      "carpianos",
       "carpo",
       "carpo felino",
+      "carpus",
       "del",
       "felino",
       "huesos",
+      "huesos carpianos",
       "huesos del carpo",
       "ossa",
       "ossa carpi"
+    ]
+  },
+  {
+    "id": "feline:clavicle",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "shoulder",
+    "regionSpanish": "Hombro",
+    "kind": "bone",
+    "canonicalLatinName": "Clavicula",
+    "spanishName": "Clavícula",
+    "aliases": [
+      "clavicle",
+      "clavicula"
+    ],
+    "summary": "Clavícula felina muy reducida, unida por tejido fibroso al vértice del acromion.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "clavicle",
+      "clavicula"
     ]
   },
   {
@@ -980,6 +1062,27 @@
       "femoris",
       "femur",
       "os femoris"
+    ]
+  },
+  {
+    "id": "feline:fibula",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Fibula",
+    "spanishName": "Peroné",
+    "aliases": [
+      "fibula",
+      "perone"
+    ],
+    "summary": "Hueso largo y delgado de la pierna felina, lateral a la tibia y separado de ella en toda su longitud.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "fibula",
+      "perone"
     ]
   },
   {
@@ -1039,9 +1142,11 @@
     "canonicalLatinName": "Ossa metacarpalia",
     "spanishName": "Huesos metacarpianos",
     "aliases": [
-      "metacarpo felino"
+      "metacarpianos",
+      "metacarpo felino",
+      "metacarpus"
     ],
-    "summary": "Cinco huesos metacarpianos cilíndricos del miembro anterior del gato.",
+    "summary": "Cinco huesos metacarpianos alargados y cilíndricos de la mano felina, numerados del I al V desde el dedo I.",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"
@@ -1054,8 +1159,39 @@
       "metacarpianos",
       "metacarpo",
       "metacarpo felino",
+      "metacarpus",
       "ossa",
       "ossa metacarpalia"
+    ]
+  },
+  {
+    "id": "feline:metatarsus",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa metatarsalia",
+    "spanishName": "Huesos metatarsianos",
+    "aliases": [
+      "metatarsianos",
+      "metatarso felino",
+      "metatarsus"
+    ],
+    "summary": "Cinco metatarsianos felinos: el I rudimentario y los II–V desarrollados.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "felino",
+      "huesos",
+      "huesos metatarsianos",
+      "metatarsalia",
+      "metatarsianos",
+      "metatarso",
+      "metatarso felino",
+      "metatarsus",
+      "ossa",
+      "ossa metatarsalia"
     ]
   },
   {
@@ -1081,6 +1217,92 @@
     ]
   },
   {
+    "id": "feline:os-coxae",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os coxae",
+    "spanishName": "Hueso coxal",
+    "aliases": [
+      "coxal",
+      "hueso innominado",
+      "innominate bone",
+      "ossa innominata"
+    ],
+    "summary": "Hueso de la cintura pélvica felina formado por la unión de ilion, isquion y pubis; articula con el sacro y aloja el acetábulo.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "bone",
+      "coxae",
+      "coxal",
+      "hueso",
+      "hueso coxal",
+      "hueso innominado",
+      "innominado",
+      "innominata",
+      "innominate",
+      "innominate bone",
+      "os coxae",
+      "ossa",
+      "ossa innominata"
+    ]
+  },
+  {
+    "id": "feline:patella",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Patella",
+    "spanishName": "Rótula",
+    "aliases": [
+      "patella",
+      "rotula"
+    ],
+    "summary": "Hueso sesamoideo de la rodilla felina, incluido en el tendón del M. quadriceps femoris.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "patella",
+      "rotula"
+    ]
+  },
+  {
+    "id": "feline:pes-phalanges",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa digitorum pedis",
+    "spanishName": "Falanges del pie",
+    "aliases": [
+      "falanges del pie felino",
+      "phalanges pedis"
+    ],
+    "summary": "Falanges de los cuatro dedos del pie felino (II–V), con tres falanges en cada dedo.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "del",
+      "digitorum",
+      "falanges",
+      "falanges del pie",
+      "falanges del pie felino",
+      "felino",
+      "ossa",
+      "ossa digitorum pedis",
+      "pedis",
+      "phalanges",
+      "phalanges pedis",
+      "pie"
+    ]
+  },
+  {
     "id": "feline:phalanges",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -1090,9 +1312,11 @@
     "canonicalLatinName": "Ossa digitorum manus",
     "spanishName": "Falanges de la mano",
     "aliases": [
-      "falanges de los dedos felinos"
+      "falanges de la mano",
+      "falanges de los dedos felinos",
+      "phalanges"
     ],
-    "summary": "Falanges proximales, medias y distales de los dedos felinos; las distales alojan las garras retráctiles.",
+    "summary": "Falanges proximales, medias y distales de los dedos de la mano felina; las distales sostienen la garra.",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"
@@ -1108,7 +1332,39 @@
       "mano",
       "manus",
       "ossa",
-      "ossa digitorum manus"
+      "ossa digitorum manus",
+      "phalanges"
+    ]
+  },
+  {
+    "id": "feline:popliteal-sesamoid",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Os sesamoideum m. poplitei",
+    "spanishName": "Sesamoideo del músculo poplíteo",
+    "aliases": [
+      "popliteal sesamoid",
+      "sesamoideo popliteo"
+    ],
+    "summary": "Hueso sesamoideo situado en el tendón del M. popliteus, lateral al cóndilo lateral del fémur.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "del",
+      "musculo",
+      "os sesamoideum m. poplitei",
+      "popliteal",
+      "popliteal sesamoid",
+      "poplitei",
+      "popliteo",
+      "sesamoid",
+      "sesamoideo",
+      "sesamoideo del musculo popliteo",
+      "sesamoideo popliteo",
+      "sesamoideum"
     ]
   },
   {
@@ -1121,9 +1377,10 @@
     "canonicalLatinName": "Radius",
     "spanishName": "Radio",
     "aliases": [
-      "radio felino"
+      "radio felino",
+      "radius"
     ],
-    "summary": "Hueso del antebrazo felino que permite una amplia pronación y supinación de la mano.",
+    "summary": "Hueso del antebrazo felino que, junto con la ulna, permite una amplia rotación antebraquial (pronación y supinación).",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"
@@ -1188,6 +1445,38 @@
     ]
   },
   {
+    "id": "feline:tarsus",
+    "speciesId": "feline",
+    "speciesSpanish": "Gato",
+    "regionId": "pelvic-limb",
+    "regionSpanish": "Extremidad pélvica",
+    "kind": "bone",
+    "canonicalLatinName": "Ossa tarsi",
+    "spanishName": "Huesos del tarso",
+    "aliases": [
+      "huesos tarsianos",
+      "tarso felino",
+      "tarsus"
+    ],
+    "summary": "Conjunto de siete huesos tarsianos del pie felino: talus, calcáneo, central y tarsianos I–IV.",
+    "has3DModel": false,
+    "modelIds": [],
+    "searchTokens": [
+      "del",
+      "felino",
+      "huesos",
+      "huesos del tarso",
+      "huesos tarsianos",
+      "ossa",
+      "ossa tarsi",
+      "tarsi",
+      "tarsianos",
+      "tarso",
+      "tarso felino",
+      "tarsus"
+    ]
+  },
+  {
     "id": "feline:teeth",
     "speciesId": "feline",
     "speciesSpanish": "Gato",
@@ -1244,9 +1533,11 @@
     "canonicalLatinName": "Ulna",
     "spanishName": "Cúbito",
     "aliases": [
+      "cubito",
+      "ulna",
       "ulna felina"
     ],
-    "summary": "Hueso caudal del antebrazo felino con escotadura troclear amplia para la articulación del codo.",
+    "summary": "Hueso largo y delgado del antebrazo felino, con una profunda incisura troclear para la tróclea humeral.",
     "has3DModel": false,
     "modelIds": [
       "feline:thoracic-limb-model"

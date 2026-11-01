@@ -1,0 +1,244 @@
+{
+  "batchId": "feline-L-F3",
+  "speciesId": "feline",
+  "author": "A3",
+  "structures": [
+    {
+      "id": "feline:atlas",
+      "speciesId": "feline",
+      "regionId": "neck",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Atlas",
+      "spanishName": "Atlas",
+      "aliases": [
+        "atlas",
+        "primera vertebra cervical",
+        "c1"
+      ],
+      "summary": "Primera vértebra cervical felina, en forma de anillo y sin cuerpo vertebral.",
+      "detailedDescription": "El cuerpo falta: se ha unido a la segunda vértebra formando el diente del axis. Lo sustituye un arco ventral estrecho y plano, con un tubérculo romo en su borde caudal. Lateralmente, el anillo se engrosa en masas laterales que continúan en procesos transversos (alas) anchos y delgados. Cada masa lateral lleva cranealmente una carilla cóncava, piriforme, para los cóndilos occipitales y caudalmente una carilla para el axis. Dorsal a cada carilla craneal, un agujero perfora el arco dorsal (foramen atlantal en Reighard/Jennings). Un surco une el agujero transverso con ese foramen y aloja la arteria vertebral. El arco dorsal es dos a tres veces más ancho que el ventral.",
+      "morphology": "Forma de anillo de sello; arco dorsal dos a tres veces más ancho que el ventral; alas anchas, delgadas y dirigidas lateralmente.",
+      "location": "Primera vértebra cervical; articula cranealmente con los cóndilos occipitales y caudalmente con el axis.",
+      "attachments": [
+        "Tubérculos de la cara medial de las masas laterales: ligamento transverso del atlas, que sujeta el diente del axis",
+        "Cápsula atlantooccipital y membranas atlantooccipitales ventral y dorsal",
+        "Ligamentos laterales del atlas hacia los procesos yugulares",
+        "Banda ligamentosa entre el borde caudal del arco dorsal y la proyección craneal del proceso espinoso del axis"
+      ],
+      "landmarks": [
+        "Massa lateralis — masa lateral",
+        "Processus transversus [Ala atlantis] — ala del atlas",
+        "Fovea articularis cranialis — fóvea articular craneal",
+        "Fovea articularis caudalis — fóvea articular caudal",
+        "Arcus ventralis — arco ventral",
+        "Fovea dentis — fóvea del diente",
+        "Arcus dorsalis — arco dorsal",
+        "Foramen transversarium — agujero transverso",
+        "Foramen atlantal — término de Reighard/Jennings; correspondencia NAV pendiente"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Vertebrae cervicales, Atlas",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Atlas",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.14, The Atlas (first cervical vertebra)",
+          "claim": "Ordinal como variante de búsqueda."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.14, The Atlas, Figs. 10 y 12",
+          "claim": "Primera cervical en anillo, sin cuerpo."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.14–15, The Atlas, Figs. 10 y 12",
+          "claim": "Arcos, masas laterales, carillas, forámenes y surco arterial."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.14–15, The Atlas",
+          "claim": "Forma de anillo y proporciones de los arcos."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.14, The Atlas; p.17, Atlanto-occipital Articulation y Articulation between the Axis and Atlas",
+          "claim": "Posición y articulaciones."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Atlas; Vertebrae cervicales (Foramen transversarium)",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.14–15, The Atlas, Fig. 12 (a–h); p.15, dens articulado con el arco ventral",
+          "claim": "Accidentes felinos; correspondencia con NAV pendiente de revisión."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.14, tubérculos de las masas laterales; pp.17–18, ligamentos atlantooccipitales y atlantoaxiales, Fig. 14",
+          "claim": "Ligamentos y membranas."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Vértebra individual; las series cervicales C3–C7, torácicas, lumbares, sacras y caudales no reciben ficha bone en este lote. «Foramen atlantal» se conserva con el término histórico."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    },
+    {
+      "id": "feline:axis",
+      "speciesId": "feline",
+      "regionId": "neck",
+      "systemId": "skeletal",
+      "kind": "bone",
+      "canonicalLatinName": "Axis",
+      "spanishName": "Axis",
+      "aliases": [
+        "axis",
+        "epistropheus",
+        "epistrofeo",
+        "segunda vertebra cervical",
+        "c2"
+      ],
+      "summary": "Segunda vértebra cervical felina, con un diente (dens) que representa el cuerpo del atlas.",
+      "detailedDescription": "Es menos ancha que el atlas, pero mucho más larga. Cranealmente el cuerpo continúa en el diente (apófisis odontoides), delgado y cónico, liso ventralmente para articular con el arco ventral del atlas. A los lados del diente hay dos grandes carillas articulares craneales. El proceso espinoso recorre todo el arco: se proyecta cranealmente casi hasta el diente y caudalmente como una espina triangular robusta. Las carillas articulares caudales miran casi ventralmente. El proceso transverso es delgado, triangular, dirigido casi caudalmente, y su base está atravesada por el agujero transverso.",
+      "morphology": "Vértebra alargada, con diente cónico y un proceso espinoso que ocupa toda la longitud del arco.",
+      "location": "Segunda vértebra cervical, entre el atlas y la tercera cervical.",
+      "attachments": [
+        "Diente: ligamento transverso del atlas, que lo cruza dentro del canal vertebral",
+        "Extremo craneal del diente: ligamentos alares hacia los cóndilos occipitales",
+        "Extremo caudal del proceso espinoso: ligamento nucal (ligamento supraespinoso cervical) desde la primera torácica",
+        "Proyección craneal del proceso espinoso: banda ligamentosa desde el arco dorsal del atlas"
+      ],
+      "landmarks": [
+        "Dens — diente (apófisis odontoides)",
+        "Facies articularis ventralis — cara articular ventral del diente",
+        "Processus spinosus — proceso espinoso",
+        "Processus articularis caudalis — proceso articular caudal",
+        "Processus transversus — proceso transverso",
+        "Foramen transversarium — agujero transverso"
+      ],
+      "sourceIds": [
+        "nav-6th-edition",
+        "reighard-jennings-cat-1901"
+      ],
+      "modelIds": [],
+      "photoRefs": [],
+      "fieldEvidence": [
+        {
+          "field": "canonicalLatinName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Columna vertebralis, Vertebrae cervicales, Axis",
+          "claim": "Nombre canónico."
+        },
+        {
+          "field": "spanishName",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Axis",
+          "claim": "Traducción editorial al español."
+        },
+        {
+          "field": "aliases",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.15, Epistropheus or Axis",
+          "claim": "Sinónimo histórico y ordinal."
+        },
+        {
+          "field": "summary",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.15, Epistropheus or Axis, Fig. 13; p.14, The Atlas",
+          "claim": "Segunda cervical; dens como cuerpo del atlas."
+        },
+        {
+          "field": "detailedDescription",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.15, Epistropheus or Axis, Figs. 10 y 13",
+          "claim": "Diente, carillas, proceso espinoso y transverso."
+        },
+        {
+          "field": "morphology",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.15, Epistropheus or Axis",
+          "claim": "Proporciones y diente."
+        },
+        {
+          "field": "location",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.11 y 15, Cervical Vertebrae; Epistropheus or Axis",
+          "claim": "Posición en la serie cervical."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "nav-6th-edition",
+          "locator": "OSTEOLOGIA, p.17; Axis (Dens, Facies articularis ventralis); Columna vertebralis",
+          "claim": "Nombres latinos normalizados."
+        },
+        {
+          "field": "landmarks",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "p.15, Fig. 13 (a–f)",
+          "claim": "Accidentes felinos; correspondencia con NAV pendiente de revisión."
+        },
+        {
+          "field": "attachments",
+          "sourceId": "reighard-jennings-cat-1901",
+          "locator": "pp.16–18, Ligamentum supraspinale, Articulation between the Axis and Atlas, Fig. 14",
+          "claim": "Ligamentos del diente, nucal y atlantoaxial."
+        }
+      ],
+      "review": {
+        "status": "pending",
+        "notes": "Ficha bibliográfica; no hueso identificado en Tavernier ni lateralidad de espécimen asignada. Fuente histórica (Reighard/Jennings 1901) cotejada con NAV y, donde existe, literatura moderna; las correspondencias entre términos históricos y NAV requieren revisión humana. Vértebra individual; no se crean fichas de series vertebrales."
+      },
+      "completeness": "partial",
+      "missingFields": [
+        "function",
+        "vascularSupply",
+        "speciesDifferences"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel:feline:atlas-articulates-axis",
+      "fromId": "feline:atlas",
+      "toId": "feline:axis",
+      "type": "articulates_with",
+      "sourceIds": [
+        "reighard-jennings-cat-1901"
+      ]
+    }
+  ],
+  "sources": []
+}

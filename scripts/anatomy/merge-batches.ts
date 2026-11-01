@@ -6,8 +6,11 @@
  *   "structures": [...], "relations": [...], "sources": [...] }
  *
  * Reglas: cada entrada del lote sustituye o agrega por id; la especie de una estructura
- * debe coincidir con la del lote y con el prefijo del id; reviewStatus siempre "pending";
- * no se permiten ids duplicados dentro de un lote ni lotes que reclamen el mismo id.
+ * debe coincidir con la del lote y con el prefijo del id; review.status siempre "pending";
+ * no se permiten ids duplicados dentro de un lote ni lotes que reclamen la misma estructura
+ * o relación. Una fuente puede aparecer en varios lotes si sus campos coinciden (salvo
+ * supportedStructureIds). Tras fusionar, supportedStructureIds se recalcula de forma
+ * recíproca: estructuras existentes que citan la fuente en sourceIds.
  * El resultado se valida con catalogSchema antes de escribir. Uso:
  *   tsx scripts/anatomy/merge-batches.ts [--dry-run] [--batches <dir>] [--data <dir>]
  */
@@ -42,12 +45,13 @@ export function mergeBatches(base: MergeInput, batches: Batch[]): { result: Merg
         seen.add(entry.id);
         const claimKey = `${key}:${entry.id}`;
         const owner = claimed.get(claimKey);
-        if (owner && owner !== batch.batchId) throw new Error(`${entry.id} reclamado por ${owner} y ${batch.batchId}`);
+        if (owner && owner !== batch.batchId && key !== 'sources') throw new Error(`${entry.id} reclamado por ${owner} y ${batch.batchId}`);
         claimed.set(claimKey, batch.batchId);
         if (key === 'structures') {
           if (entry.speciesId !== batch.speciesId) throw new Error(`${entry.id}: especie distinta del lote ${batch.batchId}`);
           if (!entry.id.startsWith(`${batch.speciesId}:`)) throw new Error(`${entry.id}: prefijo de especie incorrecto`);
-          if (entry.reviewStatus !== 'pending') throw new Error(`${entry.id}: reviewStatus debe ser pending`);
+          const review = entry.review as { status?: unknown } | undefined;
+          if (review?.status !== 'pending') throw new Error(`${entry.id}: review.status debe ser pending`);
         }
         if (key === 'relations') {
           for (const end of ['fromId', 'toId']) {
@@ -59,6 +63,7 @@ export function mergeBatches(base: MergeInput, batches: Batch[]): { result: Merg
         const index = list.findIndex((item) => item.id === entry.id);
         if (index >= 0) {
           if (key === 'structures' && list[index].speciesId !== entry.speciesId) throw new Error(`${entry.id}: cambio de especie`);
+          if (key === 'sources' && owner && owner !== batch.batchId && sourceBody(list[index]) !== sourceBody(entry)) throw new Error(`${entry.id}: fuente modificada de forma distinta por ${owner} y ${batch.batchId}`);
           list[index] = entry;
           report.push(`${batch.batchId}: actualiza ${key} ${entry.id}`);
         } else {
@@ -68,7 +73,21 @@ export function mergeBatches(base: MergeInput, batches: Batch[]): { result: Merg
       }
     }
   }
+  const structureIds = new Set(result.structures.map((s) => s.id));
+  result.sources = result.sources.map((source) => {
+    if (!Array.isArray(source.supportedStructureIds)) return source;
+    const citing = result.structures.filter((s) => Array.isArray(s.sourceIds) && (s.sourceIds as unknown[]).includes(source.id)).map((s) => s.id);
+    const previous = (source.supportedStructureIds as string[]).filter((id) => structureIds.has(id) && citing.includes(id));
+    const merged = [...previous, ...citing.filter((id) => !previous.includes(id))];
+    return { ...source, supportedStructureIds: merged };
+  });
   return { result, report };
+}
+
+function sourceBody(source: Entry): string {
+  const { supportedStructureIds: _ignored, ...rest } = source;
+  void _ignored;
+  return JSON.stringify(rest);
 }
 
 function readJson<T>(path: string): T {
