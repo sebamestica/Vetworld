@@ -32,6 +32,12 @@ describe('mergeBatches (fixture técnica)', () => {
     expect(result.sources[0].supportedStructureIds).toEqual(['feline:femur', 'feline:tibia']);
   });
 
+  it('conserva modelIds y photoRefs del catálogo en estructuras existentes', () => {
+    const input = { structures: [{ id: 'feline:femur', speciesId: 'feline', review: { status: 'pending' }, modelIds: ['m1'], photoRefs: ['p1'] }], relations: [], sources: [] };
+    const { result } = mergeBatches(input, [{ batchId: 'x', speciesId: 'feline', structures: [{ id: 'feline:femur', speciesId: 'feline', review: { status: 'pending' }, modelIds: [], photoRefs: [], summary: 'nuevo' }] }]);
+    expect(result.structures[0]).toMatchObject({ modelIds: ['m1'], photoRefs: ['p1'], summary: 'nuevo' });
+  });
+
   it('rechaza ids duplicados y reclamados por dos lotes', () => {
     const s = { id: 'feline:tibia', speciesId: 'feline', review: { status: 'pending' } };
     expect(() => mergeBatches(base(), [{ batchId: 'x', speciesId: 'feline', structures: [s, s] }])).toThrow(/duplicado/);

@@ -10,7 +10,8 @@
  * no se permiten ids duplicados dentro de un lote ni lotes que reclamen la misma estructura
  * o relación. Una fuente puede aparecer en varios lotes si sus campos coinciden (salvo
  * supportedStructureIds). Tras fusionar, supportedStructureIds se recalcula de forma
- * recíproca: estructuras existentes que citan la fuente en sourceIds.
+ * recíproca: estructuras existentes que citan la fuente en sourceIds. En estructuras ya
+ * existentes se conservan modelIds y photoRefs del catálogo (los gestiona la integración).
  * El resultado se valida con catalogSchema antes de escribir. Uso:
  *   tsx scripts/anatomy/merge-batches.ts [--dry-run] [--batches <dir>] [--data <dir>]
  */
@@ -64,7 +65,10 @@ export function mergeBatches(base: MergeInput, batches: Batch[]): { result: Merg
         if (index >= 0) {
           if (key === 'structures' && list[index].speciesId !== entry.speciesId) throw new Error(`${entry.id}: cambio de especie`);
           if (key === 'sources' && owner && owner !== batch.batchId && sourceBody(list[index]) !== sourceBody(entry)) throw new Error(`${entry.id}: fuente modificada de forma distinta por ${owner} y ${batch.batchId}`);
-          list[index] = entry;
+          // modelIds/photoRefs pertenecen a la integración de activos y medios: un lote no los pisa.
+          list[index] = key === 'structures'
+            ? { ...entry, ...(list[index].modelIds !== undefined ? { modelIds: list[index].modelIds } : {}), ...(list[index].photoRefs !== undefined ? { photoRefs: list[index].photoRefs } : {}) }
+            : entry;
           report.push(`${batch.batchId}: actualiza ${key} ${entry.id}`);
         } else {
           list.push(entry);
