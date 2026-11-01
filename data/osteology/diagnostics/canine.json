@@ -1,0 +1,6252 @@
+{
+  "assetId": "canine:3dexport-285869",
+  "speciesId": "canine",
+  "sourceProduct": {
+    "url": "https://3dexport.com/3d-model-esqueleto-de-perro-dog-skeleton-285869",
+    "author": "hidden.art8",
+    "declaredScan": false,
+    "declaredModifiedForPrinting": true,
+    "declaredMirroring": true
+  },
+  "privacy": {
+    "webAvailable": false,
+    "licenseStatus": "no_web_license",
+    "publicDerivatives": 0,
+    "note": "Resultado privado: sin licencia web. Nada en public/, data/viewer ni mappings."
+  },
+  "generatedBy": [
+    "scripts/osteology/diagnose-canine.py",
+    "scripts/osteology/build-canine-diagnostics.py"
+  ],
+  "method": "STL binario leído sin importador (sin fusión ni limpieza). Componentes: unión de vértices por coordenadas coincidentes, exactas (0) o cuantizadas (1e-6, 1e-5 unidades fuente), y unión por triángulo, como en el diagnóstico felino.",
+  "geometryModified": false,
+  "reviewStatus": "pending",
+  "totals": {
+    "triangles": 179813,
+    "componentsTolerance0": 169
+  },
+  "pieces": [
+    {
+      "pieceId": "skull",
+      "sourceFile": "workbench/incoming/canine/originals/craneo_dog_skeleton.stl",
+      "sourceSha256": "7a2d498293ed84dce2e039cf239b11fbe0f406ba1a69fc3bf0a3c80922c529d2",
+      "bytes": 1733084,
+      "format": "binary_stl",
+      "headerAllZeroBytes": true,
+      "nonZeroAttributeWords": 0,
+      "triangles": 34660,
+      "uniqueVertexPositions": 17378,
+      "boundsMin": [
+        -161.1740264892578,
+        -216.2925262451172,
+        0.03049468994140625
+      ],
+      "boundsMax": [
+        -131.9019317626953,
+        -183.41827392578125,
+        34.93164825439453
+      ],
+      "extent": [
+        29.2720947265625,
+        32.87425231933594,
+        34.901153564453125
+      ],
+      "units": "unknown",
+      "unitsEvidence": "STL binario sin unidades en el formato; cabecera de 80 bytes en cero; la página del producto no declara unidades (registro 2026-10-08).",
+      "defects": {
+        "degenerateRepeatedVertex": 0,
+        "degenerateZeroAreaDistinctVertices": 0,
+        "duplicateTrianglePairs": 0,
+        "storedNormalZero": 0,
+        "storedNormalAgreesWithWinding": 34660,
+        "storedNormalOpposesWinding": 0,
+        "edges": 51976,
+        "boundaryEdges": 0,
+        "manifoldEdges": 51958,
+        "nonManifoldEdges": 18,
+        "inconsistentlyOrientedManifoldEdges": 0
+      },
+      "connectivity": [
+        {
+          "toleranceNative": 0,
+          "componentCount": 32,
+          "largestFaceCounts": [
+            9020,
+            5024,
+            836,
+            836,
+            836,
+            836,
+            832,
+            824,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768
+          ]
+        },
+        {
+          "toleranceNative": 1e-06,
+          "componentCount": 32,
+          "largestFaceCounts": [
+            9020,
+            5024,
+            836,
+            836,
+            836,
+            836,
+            832,
+            824,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768
+          ]
+        },
+        {
+          "toleranceNative": 1e-05,
+          "componentCount": 32,
+          "largestFaceCounts": [
+            9020,
+            5024,
+            836,
+            836,
+            836,
+            836,
+            832,
+            824,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768
+          ]
+        }
+      ],
+      "totalSurfaceArea": 4248.770048886436,
+      "planarSectionsOnBoundingPlanes": {
+        "distanceTolerance": 0.05,
+        "normalAlignment": 0.99,
+        "sections": [
+          {
+            "axis": "z",
+            "side": "min",
+            "planeValue": 0.03049468994140625,
+            "faceCount": 180,
+            "area": 177.85753777038167,
+            "componentRanks": [
+              0
+            ]
+          }
+        ]
+      },
+      "componentProximity": {
+        "maxDistanceNative": 0.5,
+        "pairsWithin": 68,
+        "coincidentPairs": 0,
+        "minimumDistance": 0.018464231852574488
+      },
+      "componentsTolerance0": [
+        {
+          "rank": 0,
+          "faceCount": 9020,
+          "boundsMin": [
+            -161.1740264892578,
+            -211.74688720703125,
+            0.03049468994140625
+          ],
+          "boundsMax": [
+            -131.9019317626953,
+            -183.41827392578125,
+            34.93164825439453
+          ],
+          "extent": [
+            29.2720947265625,
+            28.32861328125,
+            34.901153564453125
+          ],
+          "surfaceArea": 2663.3748488927567,
+          "signedVolume": 5544.897791912445,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 1,
+          "faceCount": 5024,
+          "boundsMin": [
+            -158.698974609375,
+            -216.2925262451172,
+            0.5736923217773438
+          ],
+          "boundsMax": [
+            -134.26492309570312,
+            -192.28305053710938,
+            32.22357940673828
+          ],
+          "extent": [
+            24.434051513671875,
+            24.009475708007812,
+            31.649887084960938
+          ],
+          "surfaceArea": 1018.9044754298485,
+          "signedVolume": 737.1232411065081,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 2,
+          "faceCount": 836,
+          "boundsMin": [
+            -144.568603515625,
+            -214.2430419921875,
+            28.622764587402344
+          ],
+          "boundsMax": [
+            -142.2542724609375,
+            -210.01084899902344,
+            32.42951202392578
+          ],
+          "extent": [
+            2.3143310546875,
+            4.2321929931640625,
+            3.8067474365234375
+          ],
+          "surfaceArea": 25.38309297171588,
+          "signedVolume": 8.476512420318715,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 3,
+          "faceCount": 836,
+          "boundsMin": [
+            -143.1279296875,
+            -214.34442138671875,
+            26.289695739746094
+          ],
+          "boundsMax": [
+            -140.9395294189453,
+            -208.85562133789062,
+            30.42919158935547
+          ],
+          "extent": [
+            2.1884002685546875,
+            5.488800048828125,
+            4.139495849609375
+          ],
+          "surfaceArea": 36.51733895994345,
+          "signedVolume": 15.042237537302142,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 4,
+          "faceCount": 836,
+          "boundsMin": [
+            -150.50608825683594,
+            -214.2958984375,
+            28.62682342529297
+          ],
+          "boundsMax": [
+            -148.17141723632812,
+            -210.07252502441406,
+            32.436180114746094
+          ],
+          "extent": [
+            2.3346710205078125,
+            4.2233734130859375,
+            3.809356689453125
+          ],
+          "surfaceArea": 25.383238965376684,
+          "signedVolume": 8.476703995442097,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 5,
+          "faceCount": 836,
+          "boundsMin": [
+            -151.85438537597656,
+            -214.41343688964844,
+            26.296714782714844
+          ],
+          "boundsMax": [
+            -149.67129516601562,
+            -208.92037963867188,
+            30.43653106689453
+          ],
+          "extent": [
+            2.1830902099609375,
+            5.4930572509765625,
+            4.1398162841796875
+          ],
+          "surfaceArea": 36.51748956303405,
+          "signedVolume": 15.042266368400488,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 6,
+          "faceCount": 832,
+          "boundsMin": [
+            -147.607177734375,
+            -213.51760864257812,
+            33.104286193847656
+          ],
+          "boundsMax": [
+            -145.13735961914062,
+            -211.36669921875,
+            34.615074157714844
+          ],
+          "extent": [
+            2.469818115234375,
+            2.150909423828125,
+            1.5107879638671875
+          ],
+          "surfaceArea": 14.376747503012508,
+          "signedVolume": 2.726360609105944,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 6,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 7,
+          "faceCount": 824,
+          "boundsMin": [
+            -147.18182373046875,
+            -214.1914520263672,
+            31.69530487060547
+          ],
+          "boundsMax": [
+            -145.55377197265625,
+            -212.4825439453125,
+            33.86095428466797
+          ],
+          "extent": [
+            1.6280517578125,
+            1.7089080810546875,
+            2.1656494140625
+          ],
+          "surfaceArea": 11.15271659677426,
+          "signedVolume": -6.517970564148276,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 12,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 8,
+          "faceCount": 768,
+          "boundsMin": [
+            -142.24220275878906,
+            -210.68421936035156,
+            21.487220764160156
+          ],
+          "boundsMax": [
+            -140.8023681640625,
+            -208.22581481933594,
+            24.886329650878906
+          ],
+          "extent": [
+            1.4398345947265625,
+            2.458404541015625,
+            3.39910888671875
+          ],
+          "surfaceArea": 14.309075790102145,
+          "signedVolume": 3.3199585922583417,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 9,
+          "faceCount": 768,
+          "boundsMin": [
+            -140.8206024169922,
+            -210.44114685058594,
+            10.902580261230469
+          ],
+          "boundsMax": [
+            -138.3267059326172,
+            -206.423095703125,
+            15.207847595214844
+          ],
+          "extent": [
+            2.493896484375,
+            4.0180511474609375,
+            4.305267333984375
+          ],
+          "surfaceArea": 29.82588128633096,
+          "signedVolume": 8.37565766447824,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 10,
+          "faceCount": 768,
+          "boundsMin": [
+            -141.6590576171875,
+            -210.09100341796875,
+            16.93462371826172
+          ],
+          "boundsMax": [
+            -139.55506896972656,
+            -206.15997314453125,
+            21.38306427001953
+          ],
+          "extent": [
+            2.1039886474609375,
+            3.9310302734375,
+            4.4484405517578125
+          ],
+          "surfaceArea": 29.55650792058891,
+          "signedVolume": 9.918908623923814,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 11,
+          "faceCount": 768,
+          "boundsMin": [
+            -140.04547119140625,
+            -208.284912109375,
+            12.134803771972656
+          ],
+          "boundsMax": [
+            -137.70263671875,
+            -204.12228393554688,
+            16.68463897705078
+          ],
+          "extent": [
+            2.34283447265625,
+            4.162628173828125,
+            4.549835205078125
+          ],
+          "surfaceArea": 31.217526493785165,
+          "signedVolume": 9.836914533369052,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 12,
+          "faceCount": 768,
+          "boundsMin": [
+            -143.7723846435547,
+            -214.0828857421875,
+            19.973350524902344
+          ],
+          "boundsMax": [
+            -141.4319610595703,
+            -210.68634033203125,
+            23.42382049560547
+          ],
+          "extent": [
+            2.340423583984375,
+            3.39654541015625,
+            3.450469970703125
+          ],
+          "surfaceArea": 23.09245869283227,
+          "signedVolume": 6.487468382428436,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 13,
+          "faceCount": 768,
+          "boundsMin": [
+            -142.62351989746094,
+            -212.95449829101562,
+            16.030052185058594
+          ],
+          "boundsMax": [
+            -139.517333984375,
+            -209.05636596679688,
+            19.74864959716797
+          ],
+          "extent": [
+            3.1061859130859375,
+            3.89813232421875,
+            3.718597412109375
+          ],
+          "surfaceArea": 29.15626461814581,
+          "signedVolume": 9.149834781261715,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 14,
+          "faceCount": 768,
+          "boundsMin": [
+            -144.49612426757812,
+            -213.98033142089844,
+            23.963829040527344
+          ],
+          "boundsMax": [
+            -142.84327697753906,
+            -211.88278198242188,
+            27.25774383544922
+          ],
+          "extent": [
+            1.6528472900390625,
+            2.0975494384765625,
+            3.293914794921875
+          ],
+          "surfaceArea": 12.677479757529209,
+          "signedVolume": 2.4972828291732587,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 15,
+          "faceCount": 768,
+          "boundsMin": [
+            -142.62315368652344,
+            -211.14041137695312,
+            24.658241271972656
+          ],
+          "boundsMax": [
+            -141.65806579589844,
+            -208.91012573242188,
+            27.30767059326172
+          ],
+          "extent": [
+            0.965087890625,
+            2.23028564453125,
+            2.6494293212890625
+          ],
+          "surfaceArea": 9.016621919663672,
+          "signedVolume": 1.5482654417521353,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 16,
+          "faceCount": 768,
+          "boundsMin": [
+            -152.02098083496094,
+            -210.77056884765625,
+            21.49639129638672
+          ],
+          "boundsMax": [
+            -150.56332397460938,
+            -208.31173706054688,
+            24.89427947998047
+          ],
+          "extent": [
+            1.4576568603515625,
+            2.458831787109375,
+            3.39788818359375
+          ],
+          "surfaceArea": 14.309093610425982,
+          "signedVolume": 3.319966912952971,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 17,
+          "faceCount": 768,
+          "boundsMin": [
+            -154.54757690429688,
+            -210.54058837890625,
+            10.915275573730469
+          ],
+          "boundsMax": [
+            -151.9967498779297,
+            -206.55316162109375,
+            15.219093322753906
+          ],
+          "extent": [
+            2.5508270263671875,
+            3.9874267578125,
+            4.3038177490234375
+          ],
+          "surfaceArea": 29.826004495481307,
+          "signedVolume": 8.375743946582586,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 18,
+          "faceCount": 768,
+          "boundsMin": [
+            -153.3095245361328,
+            -210.18838500976562,
+            16.94585418701172
+          ],
+          "boundsMax": [
+            -151.1774139404297,
+            -206.25711059570312,
+            21.39252471923828
+          ],
+          "extent": [
+            2.132110595703125,
+            3.9312744140625,
+            4.4466705322265625
+          ],
+          "surfaceArea": 29.556297333705434,
+          "signedVolume": 9.91884167845148,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 19,
+          "faceCount": 768,
+          "boundsMin": [
+            -155.194580078125,
+            -208.41543579101562,
+            12.149253845214844
+          ],
+          "boundsMax": [
+            -152.82395935058594,
+            -204.25393676757812,
+            16.69666290283203
+          ],
+          "extent": [
+            2.3706207275390625,
+            4.1614990234375,
+            4.5474090576171875
+          ],
+          "surfaceArea": 31.217122430630134,
+          "signedVolume": 9.836722458314005,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 20,
+          "faceCount": 768,
+          "boundsMin": [
+            -151.34597778320312,
+            -214.14292907714844,
+            19.981361389160156
+          ],
+          "boundsMax": [
+            -148.98548889160156,
+            -210.75869750976562,
+            23.42938995361328
+          ],
+          "extent": [
+            2.3604888916015625,
+            3.3842315673828125,
+            3.448028564453125
+          ],
+          "surfaceArea": 23.092426059809238,
+          "signedVolume": 6.487468104101758,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 21,
+          "faceCount": 768,
+          "boundsMin": [
+            -153.30392456054688,
+            -213.03289794921875,
+            16.041419982910156
+          ],
+          "boundsMax": [
+            -150.16053771972656,
+            -209.16305541992188,
+            19.75617218017578
+          ],
+          "extent": [
+            3.1433868408203125,
+            3.869842529296875,
+            3.714752197265625
+          ],
+          "surfaceArea": 29.156039706920748,
+          "signedVolume": 9.14975238041709,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 22,
+          "faceCount": 768,
+          "boundsMin": [
+            -149.90834045410156,
+            -214.0201416015625,
+            23.969581604003906
+          ],
+          "boundsMax": [
+            -148.2511444091797,
+            -211.92922973632812,
+            27.26165008544922
+          ],
+          "extent": [
+            1.657196044921875,
+            2.090911865234375,
+            3.2920684814453125
+          ],
+          "surfaceArea": 12.677469887850686,
+          "signedVolume": 2.497254405409069,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 23,
+          "faceCount": 768,
+          "boundsMin": [
+            -151.14846801757812,
+            -211.21353149414062,
+            24.665611267089844
+          ],
+          "boundsMax": [
+            -150.17837524414062,
+            -208.98373413085938,
+            27.315040588378906
+          ],
+          "extent": [
+            0.9700927734375,
+            2.22979736328125,
+            2.6494293212890625
+          ],
+          "surfaceArea": 9.016585171641948,
+          "signedVolume": 1.5482801504684478,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 24,
+          "faceCount": 416,
+          "boundsMin": [
+            -144.6832275390625,
+            -214.14483642578125,
+            30.43689727783203
+          ],
+          "boundsMax": [
+            -143.58364868164062,
+            -212.0407257080078,
+            32.888465881347656
+          ],
+          "extent": [
+            1.099578857421875,
+            2.1041107177734375,
+            2.451568603515625
+          ],
+          "surfaceArea": 7.9929069274840066,
+          "signedVolume": 1.4069092488077075,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 25,
+          "faceCount": 416,
+          "boundsMin": [
+            -145.5468292236328,
+            -214.16098022460938,
+            31.176185607910156
+          ],
+          "boundsMax": [
+            -144.52757263183594,
+            -212.46810913085938,
+            33.631141662597656
+          ],
+          "extent": [
+            1.019256591796875,
+            1.69287109375,
+            2.4549560546875
+          ],
+          "surfaceArea": 6.394600421846674,
+          "signedVolume": 1.0038583176409859,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 26,
+          "faceCount": 416,
+          "boundsMin": [
+            -145.15237426757812,
+            -213.50326538085938,
+            32.95140838623047
+          ],
+          "boundsMax": [
+            -143.9254913330078,
+            -211.03195190429688,
+            34.300376892089844
+          ],
+          "extent": [
+            1.2268829345703125,
+            2.4713134765625,
+            1.348968505859375
+          ],
+          "surfaceArea": 7.477736573855723,
+          "signedVolume": 1.3936710197403823,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 27,
+          "faceCount": 416,
+          "boundsMin": [
+            -144.23397827148438,
+            -213.32583618164062,
+            32.411903381347656
+          ],
+          "boundsMax": [
+            -142.8540496826172,
+            -210.76983642578125,
+            33.679710388183594
+          ],
+          "extent": [
+            1.3799285888671875,
+            2.555999755859375,
+            1.2678070068359375
+          ],
+          "surfaceArea": 7.8635174891294435,
+          "signedVolume": 1.5302164475780895,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 28,
+          "faceCount": 416,
+          "boundsMin": [
+            -149.14830017089844,
+            -214.1876220703125,
+            30.44017791748047
+          ],
+          "boundsMax": [
+            -148.0449676513672,
+            -212.08277893066406,
+            32.89197540283203
+          ],
+          "extent": [
+            1.10333251953125,
+            2.1048431396484375,
+            2.4517974853515625
+          ],
+          "surfaceArea": 7.992796133066872,
+          "signedVolume": 1.4069040803839623,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 29,
+          "faceCount": 416,
+          "boundsMin": [
+            -148.2128448486328,
+            -214.1812286376953,
+            31.178138732910156
+          ],
+          "boundsMax": [
+            -147.1781463623047,
+            -212.4905548095703,
+            33.633262634277344
+          ],
+          "extent": [
+            1.034698486328125,
+            1.690673828125,
+            2.4551239013671875
+          ],
+          "surfaceArea": 6.394742626456334,
+          "signedVolume": 1.0038754313587421,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 30,
+          "faceCount": 416,
+          "boundsMin": [
+            -148.8148651123047,
+            -213.5312957763672,
+            32.954246520996094
+          ],
+          "boundsMax": [
+            -147.6089324951172,
+            -211.0611572265625,
+            34.303443908691406
+          ],
+          "extent": [
+            1.2059326171875,
+            2.4701385498046875,
+            1.3491973876953125
+          ],
+          "surfaceArea": 7.477553209757845,
+          "signedVolume": 1.393686093990624,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 31,
+          "faceCount": 416,
+          "boundsMin": [
+            -149.89682006835938,
+            -213.3789520263672,
+            32.41777801513672
+          ],
+          "boundsMax": [
+            -148.5390625,
+            -210.81336975097656,
+            33.68437957763672
+          ],
+          "extent": [
+            1.357757568359375,
+            2.565582275390625,
+            1.2666015625
+          ],
+          "surfaceArea": 7.863391446932909,
+          "signedVolume": 1.5301615994021927,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        }
+      ]
+    },
+    {
+      "pieceId": "vertebral-column",
+      "sourceFile": "workbench/incoming/canine/originals/espina dorsal_dog_skeleton.stl",
+      "sourceSha256": "a4b9d4e7503651e7c3bbb79b65e157cbd6633c7d982ad32c3a7b2d140e654f48",
+      "bytes": 4904134,
+      "format": "binary_stl",
+      "headerAllZeroBytes": true,
+      "nonZeroAttributeWords": 0,
+      "triangles": 98081,
+      "uniqueVertexPositions": 48730,
+      "boundsMin": [
+        -384.9905090332031,
+        -299.2926025390625,
+        -0.004807606339454651
+      ],
+      "boundsMax": [
+        -306.697509765625,
+        -100.41812133789062,
+        21.276626586914062
+      ],
+      "extent": [
+        78.29299926757812,
+        198.87448120117188,
+        21.281434193253517
+      ],
+      "units": "unknown",
+      "unitsEvidence": "STL binario sin unidades en el formato; cabecera de 80 bytes en cero; la página del producto no declara unidades (registro 2026-10-08).",
+      "defects": {
+        "degenerateRepeatedVertex": 3,
+        "degenerateZeroAreaDistinctVertices": 0,
+        "duplicateTrianglePairs": 177,
+        "storedNormalZero": 3,
+        "storedNormalAgreesWithWinding": 98078,
+        "storedNormalOpposesWinding": 0,
+        "edges": 146438,
+        "boundaryEdges": 367,
+        "manifoldEdges": 145194,
+        "nonManifoldEdges": 877,
+        "inconsistentlyOrientedManifoldEdges": 48
+      },
+      "connectivity": [
+        {
+          "toleranceNative": 0,
+          "componentCount": 79,
+          "largestFaceCounts": [
+            29166,
+            4816,
+            4816,
+            2370,
+            2358,
+            2268,
+            2038,
+            1694,
+            1264,
+            1223,
+            1211,
+            1211,
+            1152,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134
+          ]
+        },
+        {
+          "toleranceNative": 1e-06,
+          "componentCount": 79,
+          "largestFaceCounts": [
+            29166,
+            4816,
+            4816,
+            2370,
+            2358,
+            2268,
+            2038,
+            1694,
+            1264,
+            1223,
+            1211,
+            1211,
+            1152,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134
+          ]
+        },
+        {
+          "toleranceNative": 1e-05,
+          "componentCount": 79,
+          "largestFaceCounts": [
+            29166,
+            4816,
+            4816,
+            2370,
+            2358,
+            2268,
+            2038,
+            1694,
+            1264,
+            1223,
+            1211,
+            1211,
+            1152,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134,
+            1134
+          ]
+        }
+      ],
+      "totalSurfaceArea": 8496.958992888969,
+      "planarSectionsOnBoundingPlanes": {
+        "distanceTolerance": 0.05,
+        "normalAlignment": 0.99,
+        "sections": [
+          {
+            "axis": "y",
+            "side": "max",
+            "planeValue": -100.41812133789062,
+            "faceCount": 5,
+            "area": 0.00533754704790647,
+            "componentRanks": [
+              23
+            ]
+          },
+          {
+            "axis": "z",
+            "side": "min",
+            "planeValue": -0.004807606339454651,
+            "faceCount": 7664,
+            "area": 1397.2201524169723,
+            "componentRanks": [
+              0,
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              35,
+              36,
+              44,
+              45,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              69,
+              75
+            ]
+          }
+        ]
+      },
+      "componentProximity": {
+        "maxDistanceNative": 0.5,
+        "pairsWithin": 108,
+        "coincidentPairs": 0,
+        "minimumDistance": 0.0009926425761285762
+      },
+      "componentsTolerance0": [
+        {
+          "rank": 0,
+          "faceCount": 29166,
+          "boundsMin": [
+            -335.2177429199219,
+            -241.7801513671875,
+            0.03568267822265625
+          ],
+          "boundsMax": [
+            -314.739990234375,
+            -131.88153076171875,
+            7.722785949707031
+          ],
+          "extent": [
+            20.477752685546875,
+            109.89862060546875,
+            7.687103271484375
+          ],
+          "surfaceArea": 2980.052771324518,
+          "signedVolume": 1896.0729314271439,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 1,
+          "faceCount": 4816,
+          "boundsMin": [
+            -315.63128662109375,
+            -297.87152099609375,
+            0.03830718994140625
+          ],
+          "boundsMax": [
+            -311.6526184082031,
+            -291.5994873046875,
+            5.075340270996094
+          ],
+          "extent": [
+            3.978668212890625,
+            6.27203369140625,
+            5.0370330810546875
+          ],
+          "surfaceArea": 86.28446413079837,
+          "signedVolume": 71.0712271589893,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 2,
+          "faceCount": 4816,
+          "boundsMin": [
+            -318.5798034667969,
+            -294.7767639160156,
+            1.2985687255859375
+          ],
+          "boundsMax": [
+            -317.57452392578125,
+            -293.96270751953125,
+            2.7108383178710938
+          ],
+          "extent": [
+            1.005279541015625,
+            0.814056396484375,
+            1.4122695922851562
+          ],
+          "surfaceArea": 3.2528733426397713,
+          "signedVolume": 0.29435448001409154,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 3,
+          "faceCount": 2370,
+          "boundsMin": [
+            -326.94378662109375,
+            -291.06573486328125,
+            0.0292816162109375
+          ],
+          "boundsMax": [
+            -319.7996826171875,
+            -284.4540710449219,
+            3.8815078735351562
+          ],
+          "extent": [
+            7.14410400390625,
+            6.611663818359375,
+            3.8522262573242188
+          ],
+          "surfaceArea": 128.1707701921635,
+          "signedVolume": 39.47553697749058,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 264,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 4,
+          "faceCount": 2358,
+          "boundsMin": [
+            -323.7442932128906,
+            -295.1077880859375,
+            0.0292510986328125
+          ],
+          "boundsMax": [
+            -314.16717529296875,
+            -285.6756286621094,
+            3.7788543701171875
+          ],
+          "extent": [
+            9.577117919921875,
+            9.432159423828125,
+            3.749603271484375
+          ],
+          "surfaceArea": 183.10354430950736,
+          "signedVolume": 56.22454254852329,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 256,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 5,
+          "faceCount": 2268,
+          "boundsMin": [
+            -382.3910827636719,
+            -112.62139892578125,
+            0.028228759765625
+          ],
+          "boundsMax": [
+            -378.38385009765625,
+            -106.42764282226562,
+            0.855316162109375
+          ],
+          "extent": [
+            4.007232666015625,
+            6.193756103515625,
+            0.82708740234375
+          ],
+          "surfaceArea": 17.542316588045953,
+          "signedVolume": 2.084646597458495,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 6,
+          "faceCount": 2038,
+          "boundsMin": [
+            -328.476806640625,
+            -289.6354675292969,
+            0.02927398681640625
+          ],
+          "boundsMax": [
+            -322.2189636230469,
+            -282.2707214355469,
+            4.187995910644531
+          ],
+          "extent": [
+            6.257843017578125,
+            7.36474609375,
+            4.158721923828125
+          ],
+          "surfaceArea": 103.10936405611875,
+          "signedVolume": 33.4703510681247,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 138,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 7,
+          "faceCount": 1694,
+          "boundsMin": [
+            -330.8056335449219,
+            -286.21466064453125,
+            0.029266357421875
+          ],
+          "boundsMax": [
+            -323.62579345703125,
+            -279.6416931152344,
+            3.8776473999023438
+          ],
+          "extent": [
+            7.179840087890625,
+            6.572967529296875,
+            3.8483810424804688
+          ],
+          "surfaceArea": 93.028712327673,
+          "signedVolume": 28.952686258504084,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 8,
+          "faceCount": 1264,
+          "boundsMin": [
+            -333.4483337402344,
+            -283.87652587890625,
+            0.02924346923828125
+          ],
+          "boundsMax": [
+            -325.54345703125,
+            -276.82501220703125,
+            4.817901611328125
+          ],
+          "extent": [
+            7.904876708984375,
+            7.051513671875,
+            4.788658142089844
+          ],
+          "surfaceArea": 107.11228908707352,
+          "signedVolume": 46.21245585543797,
+          "closed": false,
+          "boundaryEdges": 4,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 1,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 9,
+          "faceCount": 1223,
+          "boundsMin": [
+            -334.59674072265625,
+            -131.8495330810547,
+            0.02799224853515625
+          ],
+          "boundsMax": [
+            -326.8871154785156,
+            -125.34577941894531,
+            3.718231201171875
+          ],
+          "extent": [
+            7.709625244140625,
+            6.503753662109375,
+            3.6902389526367188
+          ],
+          "surfaceArea": 48.22778548145019,
+          "signedVolume": -69.95329651351564,
+          "closed": false,
+          "boundaryEdges": 104,
+          "nonManifoldEdges": 9,
+          "inconsistentlyOrientedManifoldEdges": 6,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 10,
+          "faceCount": 1211,
+          "boundsMin": [
+            -341.7279052734375,
+            -125.4290771484375,
+            0.02802276611328125
+          ],
+          "boundsMax": [
+            -335.35821533203125,
+            -121.48684692382812,
+            2.6726455688476562
+          ],
+          "extent": [
+            6.36968994140625,
+            3.942230224609375,
+            2.644622802734375
+          ],
+          "surfaceArea": 26.56238851532767,
+          "signedVolume": -49.421505238974675,
+          "closed": false,
+          "boundaryEdges": 103,
+          "nonManifoldEdges": 8,
+          "inconsistentlyOrientedManifoldEdges": 6,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 11,
+          "faceCount": 1211,
+          "boundsMin": [
+            -338.5790100097656,
+            -128.26295471191406,
+            0.0279998779296875
+          ],
+          "boundsMax": [
+            -331.03961181640625,
+            -123.31971740722656,
+            3.0817413330078125
+          ],
+          "extent": [
+            7.539398193359375,
+            4.9432373046875,
+            3.053741455078125
+          ],
+          "surfaceArea": 36.57997477688244,
+          "signedVolume": -76.9515926830671,
+          "closed": false,
+          "boundaryEdges": 103,
+          "nonManifoldEdges": 8,
+          "inconsistentlyOrientedManifoldEdges": 6,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 12,
+          "faceCount": 1152,
+          "boundsMin": [
+            -318.2911071777344,
+            -296.1365966796875,
+            0.0292510986328125
+          ],
+          "boundsMax": [
+            -308.97125244140625,
+            -291.11346435546875,
+            8.617698669433594
+          ],
+          "extent": [
+            9.319854736328125,
+            5.02313232421875,
+            8.588447570800781
+          ],
+          "surfaceArea": 152.73417074924322,
+          "signedVolume": 65.3381396291875,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 13,
+          "faceCount": 1134,
+          "boundsMin": [
+            -356.02813720703125,
+            -120.66510009765625,
+            0.0280914306640625
+          ],
+          "boundsMax": [
+            -350.305908203125,
+            -118.58888244628906,
+            1.3856048583984375
+          ],
+          "extent": [
+            5.72222900390625,
+            2.0762176513671875,
+            1.357513427734375
+          ],
+          "surfaceArea": 19.788790626999464,
+          "signedVolume": 2.8553575071817137,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 14,
+          "faceCount": 1134,
+          "boundsMin": [
+            -350.654541015625,
+            -121.94921875,
+            0.02806854248046875
+          ],
+          "boundsMax": [
+            -345.2440185546875,
+            -119.28636169433594,
+            1.6181259155273438
+          ],
+          "extent": [
+            5.4105224609375,
+            2.6628570556640625,
+            1.590057373046875
+          ],
+          "surfaceArea": 20.938065733945937,
+          "signedVolume": 3.359142189596644,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 15,
+          "faceCount": 1134,
+          "boundsMin": [
+            -345.7913818359375,
+            -123.41539001464844,
+            0.028045654296875
+          ],
+          "boundsMax": [
+            -340.54193115234375,
+            -120.25485229492188,
+            1.7203521728515625
+          ],
+          "extent": [
+            5.24945068359375,
+            3.1605377197265625,
+            1.6923065185546875
+          ],
+          "surfaceArea": 21.030169981357737,
+          "signedVolume": 3.452199265713519,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 16,
+          "faceCount": 1134,
+          "boundsMin": [
+            -383.75927734375,
+            -107.09957885742188,
+            0.02822113037109375
+          ],
+          "boundsMax": [
+            -381.91925048828125,
+            -103.39935302734375,
+            0.8359146118164062
+          ],
+          "extent": [
+            1.84002685546875,
+            3.700225830078125,
+            0.8076934814453125
+          ],
+          "surfaceArea": 8.35723800359275,
+          "signedVolume": 0.9352003001531308,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 17,
+          "faceCount": 1134,
+          "boundsMin": [
+            -378.77911376953125,
+            -115.08711242675781,
+            0.02825164794921875
+          ],
+          "boundsMax": [
+            -375.991455078125,
+            -111.8604736328125,
+            0.8784255981445312
+          ],
+          "extent": [
+            2.78765869140625,
+            3.2266387939453125,
+            0.8501739501953125
+          ],
+          "surfaceArea": 9.689353972827016,
+          "signedVolume": 1.24085801556725,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 18,
+          "faceCount": 1134,
+          "boundsMin": [
+            -376.3670654296875,
+            -116.86776733398438,
+            0.0282440185546875
+          ],
+          "boundsMax": [
+            -373.1477966308594,
+            -114.1092529296875,
+            0.8950042724609375
+          ],
+          "extent": [
+            3.219268798828125,
+            2.758514404296875,
+            0.86676025390625
+          ],
+          "surfaceArea": 10.237794211578903,
+          "signedVolume": 1.368598952605863,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 19,
+          "faceCount": 1134,
+          "boundsMin": [
+            -373.4232482910156,
+            -118.47129821777344,
+            0.02823638916015625
+          ],
+          "boundsMax": [
+            -369.65655517578125,
+            -115.81814575195312,
+            0.9377899169921875
+          ],
+          "extent": [
+            3.766693115234375,
+            2.6531524658203125,
+            0.9095535278320312
+          ],
+          "surfaceArea": 12.071000812087675,
+          "signedVolume": 1.7263082708484134,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 20,
+          "faceCount": 1134,
+          "boundsMin": [
+            -369.9237365722656,
+            -119.35748291015625,
+            0.02820587158203125
+          ],
+          "boundsMax": [
+            -365.5993347167969,
+            -117.32637023925781,
+            0.9717559814453125
+          ],
+          "extent": [
+            4.32440185546875,
+            2.0311126708984375,
+            0.9435501098632812
+          ],
+          "surfaceArea": 13.569893552074408,
+          "signedVolume": 2.023721184042556,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 21,
+          "faceCount": 1134,
+          "boundsMin": [
+            -365.82708740234375,
+            -119.97169494628906,
+            0.02817535400390625
+          ],
+          "boundsMax": [
+            -361.01458740234375,
+            -118.11483764648438,
+            0.9964065551757812
+          ],
+          "extent": [
+            4.8125,
+            1.8568572998046875,
+            0.968231201171875
+          ],
+          "surfaceArea": 15.515415530873359,
+          "signedVolume": 2.427997408368467,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 22,
+          "faceCount": 1134,
+          "boundsMin": [
+            -361.1912536621094,
+            -120.10633850097656,
+            0.02813720703125
+          ],
+          "boundsMax": [
+            -355.897705078125,
+            -118.69038391113281,
+            1.0000991821289062
+          ],
+          "extent": [
+            5.293548583984375,
+            1.41595458984375,
+            0.9719619750976562
+          ],
+          "surfaceArea": 16.81794588796979,
+          "signedVolume": 2.616475770079823,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 23,
+          "faceCount": 1134,
+          "boundsMin": [
+            -384.9905090332031,
+            -103.80303955078125,
+            0.02820587158203125
+          ],
+          "boundsMax": [
+            -383.2342224121094,
+            -100.41812133789062,
+            0.8264694213867188
+          ],
+          "extent": [
+            1.75628662109375,
+            3.384918212890625,
+            0.7982635498046875
+          ],
+          "surfaceArea": 7.695635045920271,
+          "signedVolume": 0.8451109897017292,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 24,
+          "faceCount": 1126,
+          "boundsMin": [
+            -335.0124206542969,
+            -280.1493225097656,
+            0.02923583984375
+          ],
+          "boundsMax": [
+            -326.5434265136719,
+            -273.6663513183594,
+            5.213539123535156
+          ],
+          "extent": [
+            8.468994140625,
+            6.48297119140625,
+            5.184303283691406
+          ],
+          "surfaceArea": 106.4521606150974,
+          "signedVolume": 48.8523695548067,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 25,
+          "faceCount": 1120,
+          "boundsMin": [
+            -337.47967529296875,
+            -262.1978454589844,
+            0.02901458740234375
+          ],
+          "boundsMax": [
+            -320.7936706542969,
+            -254.7914276123047,
+            4.565605163574219
+          ],
+          "extent": [
+            16.686004638671875,
+            7.4064178466796875,
+            4.536590576171875
+          ],
+          "surfaceArea": 158.36892424049833,
+          "signedVolume": 64.5704159971986,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 26,
+          "faceCount": 1120,
+          "boundsMin": [
+            -337.54022216796875,
+            -267.1983337402344,
+            0.02906036376953125
+          ],
+          "boundsMax": [
+            -320.9240417480469,
+            -259.992919921875,
+            4.567146301269531
+          ],
+          "extent": [
+            16.616180419921875,
+            7.205413818359375,
+            4.5380859375
+          ],
+          "surfaceArea": 155.98139385264133,
+          "signedVolume": 62.75044450375338,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 27,
+          "faceCount": 1119,
+          "boundsMin": [
+            -337.3154296875,
+            -271.95562744140625,
+            0.02912139892578125
+          ],
+          "boundsMax": [
+            -323.35321044921875,
+            -264.5677185058594,
+            4.642723083496094
+          ],
+          "extent": [
+            13.96221923828125,
+            7.387908935546875,
+            4.6136016845703125
+          ],
+          "surfaceArea": 141.64185043530105,
+          "signedVolume": 58.84623549004468,
+          "closed": false,
+          "boundaryEdges": 3,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 3,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 28,
+          "faceCount": 1118,
+          "boundsMin": [
+            -336.578125,
+            -276.3375244140625,
+            0.02916717529296875
+          ],
+          "boundsMax": [
+            -323.8760986328125,
+            -269.04095458984375,
+            4.7703704833984375
+          ],
+          "extent": [
+            12.7020263671875,
+            7.29656982421875,
+            4.741203308105469
+          ],
+          "surfaceArea": 133.7012012737381,
+          "signedVolume": 57.97676148489836,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 29,
+          "faceCount": 1104,
+          "boundsMin": [
+            -336.57269287109375,
+            -252.14141845703125,
+            0.02892303466796875
+          ],
+          "boundsMax": [
+            -321.0878601074219,
+            -243.63157653808594,
+            4.791038513183594
+          ],
+          "extent": [
+            15.484832763671875,
+            8.509841918945312,
+            4.762115478515625
+          ],
+          "surfaceArea": 146.65977869669842,
+          "signedVolume": 54.03713475179697,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 30,
+          "faceCount": 1096,
+          "boundsMin": [
+            -337.0441589355469,
+            -256.7667236328125,
+            0.0289764404296875
+          ],
+          "boundsMax": [
+            -321.13812255859375,
+            -249.62667846679688,
+            4.626800537109375
+          ],
+          "extent": [
+            15.906036376953125,
+            7.140045166015625,
+            4.5978240966796875
+          ],
+          "surfaceArea": 147.90834046256165,
+          "signedVolume": 54.19138928632582,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 31,
+          "faceCount": 1046,
+          "boundsMin": [
+            -336.02484130859375,
+            -247.22238159179688,
+            0.02892303466796875
+          ],
+          "boundsMax": [
+            -324.1024169921875,
+            -241.78451538085938,
+            4.670051574707031
+          ],
+          "extent": [
+            11.92242431640625,
+            5.4378662109375,
+            4.6411285400390625
+          ],
+          "surfaceArea": 121.331050347948,
+          "signedVolume": 54.95848502338314,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 32,
+          "faceCount": 742,
+          "boundsMin": [
+            -317.84967041015625,
+            -299.2926025390625,
+            0.029266357421875
+          ],
+          "boundsMax": [
+            -306.697509765625,
+            -294.9217529296875,
+            9.535118103027344
+          ],
+          "extent": [
+            11.15216064453125,
+            4.370849609375,
+            9.505851745605469
+          ],
+          "surfaceArea": 208.78533142588256,
+          "signedVolume": 127.3577035807288,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 33,
+          "faceCount": 708,
+          "boundsMin": [
+            -359.1199951171875,
+            -246.5260772705078,
+            1.494171142578125
+          ],
+          "boundsMax": [
+            -333.53680419921875,
+            -235.74725341796875,
+            19.321456909179688
+          ],
+          "extent": [
+            25.58319091796875,
+            10.778823852539062,
+            17.827285766601562
+          ],
+          "surfaceArea": 140.15342198815165,
+          "signedVolume": 31.535049277100345,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 51,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 34,
+          "faceCount": 708,
+          "boundsMin": [
+            -372.355224609375,
+            -243.9869842529297,
+            0.36128997802734375
+          ],
+          "boundsMax": [
+            -358.888916015625,
+            -235.42434692382812,
+            18.781143188476562
+          ],
+          "extent": [
+            13.46630859375,
+            8.562637329101562,
+            18.41985321044922
+          ],
+          "surfaceArea": 97.59899034818834,
+          "signedVolume": 20.78788711936545,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 51,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 35,
+          "faceCount": 667,
+          "boundsMin": [
+            -329.82061767578125,
+            -132.8185577392578,
+            0.0279998779296875
+          ],
+          "boundsMax": [
+            -326.4891357421875,
+            -130.051025390625,
+            3.1275253295898438
+          ],
+          "extent": [
+            3.33148193359375,
+            2.7675323486328125,
+            3.0995254516601562
+          ],
+          "surfaceArea": 18.42120845290539,
+          "signedVolume": -55.213438254735365,
+          "closed": false,
+          "boundaryEdges": 50,
+          "nonManifoldEdges": 11,
+          "inconsistentlyOrientedManifoldEdges": 5,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 36,
+          "faceCount": 622,
+          "boundsMin": [
+            -373.54425048828125,
+            -243.8768768310547,
+            0.029266357421875
+          ],
+          "boundsMax": [
+            -371.4712829589844,
+            -236.60293579101562,
+            0.986114501953125
+          ],
+          "extent": [
+            2.072967529296875,
+            7.2739410400390625,
+            0.95684814453125
+          ],
+          "surfaceArea": 29.845190665073503,
+          "signedVolume": 6.069272349428712,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 81,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 37,
+          "faceCount": 576,
+          "boundsMin": [
+            -359.71697998046875,
+            -251.31414794921875,
+            1.416107177734375
+          ],
+          "boundsMax": [
+            -333.97760009765625,
+            -243.28567504882812,
+            17.894683837890625
+          ],
+          "extent": [
+            25.7393798828125,
+            8.028472900390625,
+            16.47857666015625
+          ],
+          "surfaceArea": 128.22859932538591,
+          "signedVolume": 29.739765446349768,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 38,
+          "faceCount": 576,
+          "boundsMin": [
+            -371.6873474121094,
+            -250.38925170898438,
+            0.34454345703125
+          ],
+          "boundsMax": [
+            -359.35784912109375,
+            -243.12945556640625,
+            17.287338256835938
+          ],
+          "extent": [
+            12.329498291015625,
+            7.259796142578125,
+            16.942794799804688
+          ],
+          "surfaceArea": 81.54167992831871,
+          "signedVolume": 17.976682156270297,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 39,
+          "faceCount": 576,
+          "boundsMin": [
+            -359.29217529296875,
+            -255.6970672607422,
+            1.4082565307617188
+          ],
+          "boundsMax": [
+            -334.6087646484375,
+            -248.9226531982422,
+            16.696319580078125
+          ],
+          "extent": [
+            24.68341064453125,
+            6.7744140625,
+            15.288063049316406
+          ],
+          "surfaceArea": 123.6792099939288,
+          "signedVolume": 29.435660586656397,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 40,
+          "faceCount": 576,
+          "boundsMin": [
+            -356.607421875,
+            -265.53656005859375,
+            1.6108016967773438
+          ],
+          "boundsMax": [
+            -334.6295471191406,
+            -261.2876892089844,
+            13.701530456542969
+          ],
+          "extent": [
+            21.977874755859375,
+            4.248870849609375,
+            12.090728759765625
+          ],
+          "surfaceArea": 122.87088148075728,
+          "signedVolume": 30.63209224324535,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 41,
+          "faceCount": 576,
+          "boundsMin": [
+            -365.04840087890625,
+            -266.374755859375,
+            0.30142974853515625
+          ],
+          "boundsMax": [
+            -356.51220703125,
+            -261.44683837890625,
+            11.13250732421875
+          ],
+          "extent": [
+            8.53619384765625,
+            4.92791748046875,
+            10.831077575683594
+          ],
+          "surfaceArea": 53.907496837326896,
+          "signedVolume": 10.914729417708239,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 42,
+          "faceCount": 576,
+          "boundsMin": [
+            -354.35113525390625,
+            -270.81024169921875,
+            1.7701492309570312
+          ],
+          "boundsMax": [
+            -335.0992431640625,
+            -266.380615234375,
+            12.175651550292969
+          ],
+          "extent": [
+            19.25189208984375,
+            4.42962646484375,
+            10.405502319335938
+          ],
+          "surfaceArea": 108.92870027825008,
+          "signedVolume": 24.28106793130996,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 43,
+          "faceCount": 576,
+          "boundsMin": [
+            -351.62213134765625,
+            -275.4217834472656,
+            1.4781875610351562
+          ],
+          "boundsMax": [
+            -334.493896484375,
+            -272.1982421875,
+            10.300872802734375
+          ],
+          "extent": [
+            17.12823486328125,
+            3.223541259765625,
+            8.822685241699219
+          ],
+          "surfaceArea": 84.24121086125797,
+          "signedVolume": 20.827006607521422,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 44,
+          "faceCount": 544,
+          "boundsMin": [
+            -367.9500732421875,
+            -261.4341735839844,
+            0.0294342041015625
+          ],
+          "boundsMax": [
+            -357.6465148925781,
+            -255.9561004638672,
+            13.367233276367188
+          ],
+          "extent": [
+            10.303558349609375,
+            5.4780731201171875,
+            13.337799072265625
+          ],
+          "surfaceArea": 63.770772241081055,
+          "signedVolume": 41.17063839672827,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 21,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 45,
+          "faceCount": 512,
+          "boundsMin": [
+            -360.24212646484375,
+            -276.3481750488281,
+            0.02944183349609375
+          ],
+          "boundsMax": [
+            -352.7651672363281,
+            -269.8826599121094,
+            1.9972610473632812
+          ],
+          "extent": [
+            7.476959228515625,
+            6.46551513671875,
+            1.9678192138671875
+          ],
+          "surfaceArea": 41.119537445818935,
+          "signedVolume": 11.397629470475977,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 46,
+          "faceCount": 512,
+          "boundsMin": [
+            -370.3893737792969,
+            -256.4851379394531,
+            0.489776611328125
+          ],
+          "boundsMax": [
+            -359.093017578125,
+            -249.27725219726562,
+            16.15074920654297
+          ],
+          "extent": [
+            11.296356201171875,
+            7.2078857421875,
+            15.660972595214844
+          ],
+          "surfaceArea": 69.21817513089941,
+          "signedVolume": 14.785022034635924,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 47,
+          "faceCount": 512,
+          "boundsMin": [
+            -357.6148986816406,
+            -260.6985168457031,
+            1.668548583984375
+          ],
+          "boundsMax": [
+            -335.5531921386719,
+            -255.66978454589844,
+            14.784103393554688
+          ],
+          "extent": [
+            22.06170654296875,
+            5.0287322998046875,
+            13.115554809570312
+          ],
+          "surfaceArea": 122.657520860833,
+          "signedVolume": 29.076584633897152,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 48,
+          "faceCount": 512,
+          "boundsMin": [
+            -361.055419921875,
+            -270.29632568359375,
+            0.5726165771484375
+          ],
+          "boundsMax": [
+            -354.1707763671875,
+            -266.47381591796875,
+            10.496376037597656
+          ],
+          "extent": [
+            6.8846435546875,
+            3.822509765625,
+            9.923759460449219
+          ],
+          "surfaceArea": 43.62215297076141,
+          "signedVolume": 8.992272478914225,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 49,
+          "faceCount": 512,
+          "boundsMin": [
+            -372.5747985839844,
+            -236.81857299804688,
+            0.5722274780273438
+          ],
+          "boundsMax": [
+            -357.50830078125,
+            -227.04254150390625,
+            19.514015197753906
+          ],
+          "extent": [
+            15.066497802734375,
+            9.776031494140625,
+            18.941787719726562
+          ],
+          "surfaceArea": 99.43884668016436,
+          "signedVolume": 20.32526637790188,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 50,
+          "faceCount": 512,
+          "boundsMin": [
+            -372.4461975097656,
+            -234.99920654296875,
+            1.3304519653320312
+          ],
+          "boundsMax": [
+            -356.8389587402344,
+            -220.53858947753906,
+            21.109848022460938
+          ],
+          "extent": [
+            15.60723876953125,
+            14.460617065429688,
+            19.779396057128906
+          ],
+          "surfaceArea": 104.52969857394402,
+          "signedVolume": 19.65947398333105,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 51,
+          "faceCount": 512,
+          "boundsMin": [
+            -371.15069580078125,
+            -232.68856811523438,
+            1.977569580078125
+          ],
+          "boundsMax": [
+            -353.2475280761719,
+            -216.2816162109375,
+            20.48058319091797
+          ],
+          "extent": [
+            17.903167724609375,
+            16.406951904296875,
+            18.503013610839844
+          ],
+          "surfaceArea": 107.56066219161606,
+          "signedVolume": 19.75655257526414,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 52,
+          "faceCount": 512,
+          "boundsMin": [
+            -372.56939697265625,
+            -236.25833129882812,
+            0.6915512084960938
+          ],
+          "boundsMax": [
+            -344.5011901855469,
+            -205.16232299804688,
+            19.408828735351562
+          ],
+          "extent": [
+            28.068206787109375,
+            31.09600830078125,
+            18.71727752685547
+          ],
+          "surfaceArea": 186.33995126310347,
+          "signedVolume": 43.4474050624007,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 53,
+          "faceCount": 512,
+          "boundsMin": [
+            -370.9516296386719,
+            -231.3792266845703,
+            1.3966522216796875
+          ],
+          "boundsMax": [
+            -349.69696044921875,
+            -210.23019409179688,
+            20.080238342285156
+          ],
+          "extent": [
+            21.254669189453125,
+            21.149032592773438,
+            18.68358612060547
+          ],
+          "surfaceArea": 125.89066629690068,
+          "signedVolume": 25.84973967846935,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 54,
+          "faceCount": 494,
+          "boundsMin": [
+            -357.6798400878906,
+            -240.99490356445312,
+            5.073295593261719
+          ],
+          "boundsMax": [
+            -332.5328063964844,
+            -227.25042724609375,
+            20.1116943359375
+          ],
+          "extent": [
+            25.14703369140625,
+            13.744476318359375,
+            15.038398742675781
+          ],
+          "surfaceArea": 137.2241254039726,
+          "signedVolume": 35.586443903022975,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 55,
+          "faceCount": 494,
+          "boundsMin": [
+            -357.0956115722656,
+            -235.47244262695312,
+            5.557426452636719
+          ],
+          "boundsMax": [
+            -330.72454833984375,
+            -220.413330078125,
+            21.276626586914062
+          ],
+          "extent": [
+            26.371063232421875,
+            15.059112548828125,
+            15.719200134277344
+          ],
+          "surfaceArea": 144.68588746751382,
+          "signedVolume": 37.2690641774024,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 56,
+          "faceCount": 494,
+          "boundsMin": [
+            -353.70147705078125,
+            -229.98635864257812,
+            5.604179382324219
+          ],
+          "boundsMax": [
+            -330.4056091308594,
+            -216.17459106445312,
+            20.8934326171875
+          ],
+          "extent": [
+            23.295867919921875,
+            13.811767578125,
+            15.289253234863281
+          ],
+          "surfaceArea": 138.77833583776228,
+          "signedVolume": 36.67089540272769,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 57,
+          "faceCount": 494,
+          "boundsMin": [
+            -350.0902099609375,
+            -224.02264404296875,
+            5.716606140136719
+          ],
+          "boundsMax": [
+            -329.66845703125,
+            -210.00408935546875,
+            20.657554626464844
+          ],
+          "extent": [
+            20.4217529296875,
+            14.0185546875,
+            14.940948486328125
+          ],
+          "surfaceArea": 136.25150858318273,
+          "signedVolume": 36.114578790129464,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 58,
+          "faceCount": 470,
+          "boundsMin": [
+            -344.64044189453125,
+            -217.42257690429688,
+            5.813468933105469
+          ],
+          "boundsMax": [
+            -329.3561096191406,
+            -205.08380126953125,
+            20.01514434814453
+          ],
+          "extent": [
+            15.284332275390625,
+            12.338775634765625,
+            14.201675415039062
+          ],
+          "surfaceArea": 97.69789771129714,
+          "signedVolume": 25.43687753790975,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 59,
+          "faceCount": 470,
+          "boundsMin": [
+            -340.15740966796875,
+            -211.6706085205078,
+            5.7027435302734375
+          ],
+          "boundsMax": [
+            -329.0855407714844,
+            -200.5965576171875,
+            19.365684509277344
+          ],
+          "extent": [
+            11.071868896484375,
+            11.074050903320312,
+            13.662940979003906
+          ],
+          "surfaceArea": 68.6850219318733,
+          "signedVolume": 15.396715288550638,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 60,
+          "faceCount": 448,
+          "boundsMin": [
+            -356.46710205078125,
+            -274.182373046875,
+            0.6331558227539062
+          ],
+          "boundsMax": [
+            -351.32952880859375,
+            -271.89007568359375,
+            8.609901428222656
+          ],
+          "extent": [
+            5.1375732421875,
+            2.29229736328125,
+            7.97674560546875
+          ],
+          "surfaceArea": 26.150781580003972,
+          "signedVolume": 3.454052691285957,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 61,
+          "faceCount": 440,
+          "boundsMin": [
+            -331.6144714355469,
+            -243.22015380859375,
+            -0.004807606339454651
+          ],
+          "boundsMax": [
+            -321.81646728515625,
+            -238.73779296875,
+            1.0858042240142822
+          ],
+          "extent": [
+            9.798004150390625,
+            4.48236083984375,
+            1.0906118303537369
+          ],
+          "surfaceArea": 49.12003715807889,
+          "signedVolume": 8.877709397328385,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 62,
+          "faceCount": 396,
+          "boundsMin": [
+            -373.25262451171875,
+            -249.60205078125,
+            0.029327392578125
+          ],
+          "boundsMax": [
+            -370.47265625,
+            -243.65298461914062,
+            0.9714126586914062
+          ],
+          "extent": [
+            2.77996826171875,
+            5.949066162109375,
+            0.9420852661132812
+          ],
+          "surfaceArea": 25.259813746940484,
+          "signedVolume": 5.605631428182607,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 63,
+          "faceCount": 396,
+          "boundsMin": [
+            -372.0855712890625,
+            -256.081298828125,
+            0.02936553955078125
+          ],
+          "boundsMax": [
+            -369.31475830078125,
+            -249.65786743164062,
+            0.948089599609375
+          ],
+          "extent": [
+            2.77081298828125,
+            6.423431396484375,
+            0.9187240600585938
+          ],
+          "surfaceArea": 25.491973140136352,
+          "signedVolume": 5.449048776330412,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 64,
+          "faceCount": 390,
+          "boundsMin": [
+            -370.3853454589844,
+            -261.4081115722656,
+            0.02941131591796875
+          ],
+          "boundsMax": [
+            -366.93585205078125,
+            -255.95257568359375,
+            0.9306640625
+          ],
+          "extent": [
+            3.449493408203125,
+            5.455535888671875,
+            0.9012527465820312
+          ],
+          "surfaceArea": 18.002966796515047,
+          "signedVolume": 3.2906958945262788,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 65,
+          "faceCount": 390,
+          "boundsMin": [
+            -367.609619140625,
+            -266.20013427734375,
+            0.02942657470703125
+          ],
+          "boundsMax": [
+            -363.5619201660156,
+            -260.6875305175781,
+            1.1151580810546875
+          ],
+          "extent": [
+            4.047698974609375,
+            5.512603759765625,
+            1.0857315063476562
+          ],
+          "surfaceArea": 23.873811802054604,
+          "signedVolume": 5.494171378419053,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 66,
+          "faceCount": 390,
+          "boundsMin": [
+            -364.2493896484375,
+            -270.84381103515625,
+            0.029449462890625
+          ],
+          "boundsMax": [
+            -360.0302429199219,
+            -265.73345947265625,
+            1.01141357421875
+          ],
+          "extent": [
+            4.219146728515625,
+            5.1103515625,
+            0.981964111328125
+          ],
+          "surfaceArea": 21.627893079878145,
+          "signedVolume": 4.645256210386594,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 67,
+          "faceCount": 390,
+          "boundsMin": [
+            -373.7578125,
+            -236.77317810058594,
+            0.0291748046875
+          ],
+          "boundsMax": [
+            -371.5380554199219,
+            -225.02243041992188,
+            0.753204345703125
+          ],
+          "extent": [
+            2.219757080078125,
+            11.750747680664062,
+            0.724029541015625
+          ],
+          "surfaceArea": 41.661940412745146,
+          "signedVolume": 8.449875894408168,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 68,
+          "faceCount": 320,
+          "boundsMin": [
+            -347.65863037109375,
+            -202.32679748535156,
+            17.35100555419922
+          ],
+          "boundsMax": [
+            -340.256103515625,
+            -200.6165008544922,
+            19.235977172851562
+          ],
+          "extent": [
+            7.40252685546875,
+            1.710296630859375,
+            1.8849716186523438
+          ],
+          "surfaceArea": 24.880147807761514,
+          "signedVolume": 5.633067129989606,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 69,
+          "faceCount": 288,
+          "boundsMin": [
+            -335.1939697265625,
+            -242.3956298828125,
+            0.0289764404296875
+          ],
+          "boundsMax": [
+            -330.2608947753906,
+            -241.47628784179688,
+            2.6178436279296875
+          ],
+          "extent": [
+            4.933074951171875,
+            0.919342041015625,
+            2.5888671875
+          ],
+          "surfaceArea": 19.491616602078068,
+          "signedVolume": 3.164165377846844,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 70,
+          "faceCount": 282,
+          "boundsMin": [
+            -327.6319274902344,
+            -176.81781005859375,
+            6.217674255371094
+          ],
+          "boundsMax": [
+            -325.12384033203125,
+            -171.2075653076172,
+            9.771034240722656
+          ],
+          "extent": [
+            2.508087158203125,
+            5.6102447509765625,
+            3.5533599853515625
+          ],
+          "surfaceArea": 26.74287286785302,
+          "signedVolume": 5.31513085588623,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 71,
+          "faceCount": 276,
+          "boundsMin": [
+            -327.68670654296875,
+            -191.3148193359375,
+            6.3217620849609375
+          ],
+          "boundsMax": [
+            -326.0786437988281,
+            -187.714599609375,
+            8.845169067382812
+          ],
+          "extent": [
+            1.608062744140625,
+            3.6002197265625,
+            2.523406982421875
+          ],
+          "surfaceArea": 13.684201196988004,
+          "signedVolume": 2.5443600246988303,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 72,
+          "faceCount": 272,
+          "boundsMin": [
+            -327.30560302734375,
+            -186.53665161132812,
+            6.487693786621094
+          ],
+          "boundsMax": [
+            -325.30499267578125,
+            -181.89663696289062,
+            9.093620300292969
+          ],
+          "extent": [
+            2.0006103515625,
+            4.6400146484375,
+            2.605926513671875
+          ],
+          "surfaceArea": 18.486691929410817,
+          "signedVolume": 3.749844726427059,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 73,
+          "faceCount": 270,
+          "boundsMin": [
+            -327.260009765625,
+            -182.0443115234375,
+            6.4228668212890625
+          ],
+          "boundsMax": [
+            -325.1082763671875,
+            -176.87103271484375,
+            9.680351257324219
+          ],
+          "extent": [
+            2.1517333984375,
+            5.17327880859375,
+            3.2574844360351562
+          ],
+          "surfaceArea": 21.77386913046606,
+          "signedVolume": 4.055727780449013,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 74,
+          "faceCount": 248,
+          "boundsMin": [
+            -328.8889465332031,
+            -196.51417541503906,
+            6.054046630859375
+          ],
+          "boundsMax": [
+            -327.08416748046875,
+            -193.52731323242188,
+            7.4387359619140625
+          ],
+          "extent": [
+            1.804779052734375,
+            2.9868621826171875,
+            1.3846893310546875
+          ],
+          "surfaceArea": 8.756315025234837,
+          "signedVolume": 1.2871781454675364,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 75,
+          "faceCount": 156,
+          "boundsMin": [
+            -331.9243469238281,
+            -242.59634399414062,
+            -0.004807606339454651
+          ],
+          "boundsMax": [
+            -329.257080078125,
+            -241.19100952148438,
+            1.0858042240142822
+          ],
+          "extent": [
+            2.667266845703125,
+            1.40533447265625,
+            1.0906118303537369
+          ],
+          "surfaceArea": 4.561132853462811,
+          "signedVolume": 0.3363188554435546,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": true
+        },
+        {
+          "rank": 76,
+          "faceCount": 120,
+          "boundsMin": [
+            -333.2046813964844,
+            -242.266845703125,
+            2.710723876953125
+          ],
+          "boundsMax": [
+            -330.7908020019531,
+            -241.5987548828125,
+            4.3816070556640625
+          ],
+          "extent": [
+            2.41387939453125,
+            0.6680908203125,
+            1.6708831787109375
+          ],
+          "surfaceArea": 7.188898220473098,
+          "signedVolume": 0.889062655604358,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 77,
+          "faceCount": 78,
+          "boundsMin": [
+            -333.18603515625,
+            -243.22015380859375,
+            0.4021628499031067
+          ],
+          "boundsMax": [
+            -332.64453125,
+            -242.94264221191406,
+            1.0858041048049927
+          ],
+          "extent": [
+            0.54150390625,
+            0.2775115966796875,
+            0.683641254901886
+          ],
+          "surfaceArea": 0.5123082097375569,
+          "signedVolume": 0.014016510638831997,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 78,
+          "faceCount": 74,
+          "boundsMin": [
+            -328.70428466796875,
+            -201.1500244140625,
+            5.968238830566406
+          ],
+          "boundsMax": [
+            -328.3542175292969,
+            -200.33058166503906,
+            6.21148681640625
+          ],
+          "extent": [
+            0.350067138671875,
+            0.8194427490234375,
+            0.24324798583984375
+          ],
+          "surfaceArea": 0.5016109878454579,
+          "signedVolume": 0.012499269124848075,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        }
+      ]
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "sourceFile": "workbench/incoming/canine/originals/pata delantera_dog_skeleton.stl",
+      "sourceSha256": "14f3ba51632f405159d754a8f5c21c1eb22beacfc34835e69a7a9d1641ae2498",
+      "bytes": 1082884,
+      "format": "binary_stl",
+      "headerAllZeroBytes": true,
+      "nonZeroAttributeWords": 0,
+      "triangles": 21656,
+      "uniqueVertexPositions": 10748,
+      "boundsMin": [
+        -255.4534454345703,
+        -269.827392578125,
+        0.20479583740234375
+      ],
+      "boundsMax": [
+        -234.93174743652344,
+        -149.29946899414062,
+        78.99868774414062
+      ],
+      "extent": [
+        20.521697998046875,
+        120.52792358398438,
+        78.79389190673828
+      ],
+      "units": "unknown",
+      "unitsEvidence": "STL binario sin unidades en el formato; cabecera de 80 bytes en cero; la página del producto no declara unidades (registro 2026-10-08).",
+      "defects": {
+        "degenerateRepeatedVertex": 0,
+        "degenerateZeroAreaDistinctVertices": 0,
+        "duplicateTrianglePairs": 42,
+        "storedNormalZero": 0,
+        "storedNormalAgreesWithWinding": 21656,
+        "storedNormalOpposesWinding": 0,
+        "edges": 32265,
+        "boundaryEdges": 0,
+        "manifoldEdges": 32046,
+        "nonManifoldEdges": 219,
+        "inconsistentlyOrientedManifoldEdges": 0
+      },
+      "connectivity": [
+        {
+          "toleranceNative": 0,
+          "componentCount": 30,
+          "largestFaceCounts": [
+            3024,
+            2804,
+            2480,
+            1024,
+            752,
+            752,
+            752,
+            752,
+            752,
+            560,
+            560,
+            560,
+            560,
+            512,
+            416,
+            416,
+            416,
+            416,
+            416,
+            416
+          ]
+        },
+        {
+          "toleranceNative": 1e-06,
+          "componentCount": 30,
+          "largestFaceCounts": [
+            3024,
+            2804,
+            2480,
+            1024,
+            752,
+            752,
+            752,
+            752,
+            752,
+            560,
+            560,
+            560,
+            560,
+            512,
+            416,
+            416,
+            416,
+            416,
+            416,
+            416
+          ]
+        },
+        {
+          "toleranceNative": 1e-05,
+          "componentCount": 30,
+          "largestFaceCounts": [
+            3024,
+            2804,
+            2480,
+            1024,
+            752,
+            752,
+            752,
+            752,
+            752,
+            560,
+            560,
+            560,
+            560,
+            512,
+            416,
+            416,
+            416,
+            416,
+            416,
+            416
+          ]
+        }
+      ],
+      "totalSurfaceArea": 4092.547001318182,
+      "planarSectionsOnBoundingPlanes": {
+        "distanceTolerance": 0.05,
+        "normalAlignment": 0.99,
+        "sections": [
+          {
+            "axis": "x",
+            "side": "max",
+            "planeValue": -234.93174743652344,
+            "faceCount": 1,
+            "area": 0.01542839288547893,
+            "componentRanks": [
+              29
+            ]
+          }
+        ]
+      },
+      "componentProximity": {
+        "maxDistanceNative": 0.5,
+        "pairsWithin": 35,
+        "coincidentPairs": 0,
+        "minimumDistance": 0.020661932974337407
+      },
+      "componentsTolerance0": [
+        {
+          "rank": 0,
+          "faceCount": 3024,
+          "boundsMin": [
+            -254.6224822998047,
+            -182.2701416015625,
+            34.153350830078125
+          ],
+          "boundsMax": [
+            -240.2824249267578,
+            -149.29946899414062,
+            54.329898834228516
+          ],
+          "extent": [
+            14.340057373046875,
+            32.970672607421875,
+            20.17654800415039
+          ],
+          "surfaceArea": 1434.0991873936248,
+          "signedVolume": 993.836602645608,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 136,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 1,
+          "faceCount": 2804,
+          "boundsMin": [
+            -255.4534454345703,
+            -210.81300354003906,
+            18.995079040527344
+          ],
+          "boundsMax": [
+            -243.40101623535156,
+            -181.76168823242188,
+            52.92586898803711
+          ],
+          "extent": [
+            12.05242919921875,
+            29.051315307617188,
+            33.930789947509766
+          ],
+          "surfaceArea": 860.9292260590358,
+          "signedVolume": 906.693779373826,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 83,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 2,
+          "faceCount": 2480,
+          "boundsMin": [
+            -251.7725830078125,
+            -237.32443237304688,
+            4.746570587158203
+          ],
+          "boundsMax": [
+            -245.67019653320312,
+            -197.43788146972656,
+            21.687143325805664
+          ],
+          "extent": [
+            6.102386474609375,
+            39.88655090332031,
+            16.94057273864746
+          ],
+          "surfaceArea": 432.322476331272,
+          "signedVolume": 340.85938419742405,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 3,
+          "faceCount": 1024,
+          "boundsMin": [
+            -251.98895263671875,
+            -238.78955078125,
+            6.0560760498046875
+          ],
+          "boundsMax": [
+            -241.80450439453125,
+            -209.76092529296875,
+            23.296283721923828
+          ],
+          "extent": [
+            10.1844482421875,
+            29.02862548828125,
+            17.24020767211914
+          ],
+          "surfaceArea": 415.0142953561313,
+          "signedVolume": 326.2195863936294,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 4,
+          "faceCount": 752,
+          "boundsMin": [
+            -240.3208770751953,
+            -247.11476135253906,
+            0.3731422424316406
+          ],
+          "boundsMax": [
+            -238.68609619140625,
+            -244.5546417236328,
+            3.2934303283691406
+          ],
+          "extent": [
+            1.6347808837890625,
+            2.56011962890625,
+            2.9202880859375
+          ],
+          "surfaceArea": 11.889377428151658,
+          "signedVolume": 2.584810450489849,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 5,
+          "faceCount": 752,
+          "boundsMin": [
+            -254.48927307128906,
+            -267.7808837890625,
+            7.02740478515625
+          ],
+          "boundsMax": [
+            -252.5565185546875,
+            -264.3196716308594,
+            10.523231506347656
+          ],
+          "extent": [
+            1.9327545166015625,
+            3.461212158203125,
+            3.4958267211914062
+          ],
+          "surfaceArea": 19.709606990392153,
+          "signedVolume": 5.342964988979201,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 6,
+          "faceCount": 752,
+          "boundsMin": [
+            -250.8740692138672,
+            -268.5833740234375,
+            8.811103820800781
+          ],
+          "boundsMax": [
+            -249.459228515625,
+            -265.2597351074219,
+            12.441452026367188
+          ],
+          "extent": [
+            1.4148406982421875,
+            3.323638916015625,
+            3.6303482055664062
+          ],
+          "surfaceArea": 19.708299089068973,
+          "signedVolume": 5.362598207832648,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 7,
+          "faceCount": 752,
+          "boundsMin": [
+            -246.67691040039062,
+            -269.827392578125,
+            9.581306457519531
+          ],
+          "boundsMax": [
+            -245.33673095703125,
+            -266.1671447753906,
+            13.279712677001953
+          ],
+          "extent": [
+            1.340179443359375,
+            3.660247802734375,
+            3.698406219482422
+          ],
+          "surfaceArea": 19.74988972893664,
+          "signedVolume": 5.378784228459139,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 8,
+          "faceCount": 752,
+          "boundsMin": [
+            -242.8542022705078,
+            -269.66033935546875,
+            8.517536163330078
+          ],
+          "boundsMax": [
+            -241.52366638183594,
+            -265.95166015625,
+            12.208080291748047
+          ],
+          "extent": [
+            1.330535888671875,
+            3.70867919921875,
+            3.6905441284179688
+          ],
+          "surfaceArea": 19.710143258949046,
+          "signedVolume": 5.361696150157774,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 9,
+          "faceCount": 560,
+          "boundsMin": [
+            -246.77101135253906,
+            -259.4504089355469,
+            1.8979110717773438
+          ],
+          "boundsMax": [
+            -244.11923217773438,
+            -241.96580505371094,
+            8.301769256591797
+          ],
+          "extent": [
+            2.6517791748046875,
+            17.484603881835938,
+            6.403858184814453
+          ],
+          "surfaceArea": 117.94908206609398,
+          "signedVolume": 52.26266874527474,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 10,
+          "faceCount": 560,
+          "boundsMin": [
+            -244.24851989746094,
+            -258.02783203125,
+            2.04473876953125
+          ],
+          "boundsMax": [
+            -241.9319305419922,
+            -241.08901977539062,
+            7.9540252685546875
+          ],
+          "extent": [
+            2.31658935546875,
+            16.938812255859375,
+            5.9092864990234375
+          ],
+          "surfaceArea": 116.28074014127226,
+          "signedVolume": 51.48735453822274,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 11,
+          "faceCount": 560,
+          "boundsMin": [
+            -249.17483520507812,
+            -259.5534973144531,
+            1.6312484741210938
+          ],
+          "boundsMax": [
+            -245.85743713378906,
+            -241.30340576171875,
+            7.8632965087890625
+          ],
+          "extent": [
+            3.3173980712890625,
+            18.250091552734375,
+            6.232048034667969
+          ],
+          "surfaceArea": 114.97513166105296,
+          "signedVolume": 49.375810594669055,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 12,
+          "faceCount": 560,
+          "boundsMin": [
+            -251.04849243164062,
+            -258.2894592285156,
+            0.20479583740234375
+          ],
+          "boundsMax": [
+            -247.8709716796875,
+            -240.45152282714844,
+            6.792877197265625
+          ],
+          "extent": [
+            3.177520751953125,
+            17.837936401367188,
+            6.588081359863281
+          ],
+          "surfaceArea": 122.89909576582004,
+          "signedVolume": 56.658766664255864,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 13,
+          "faceCount": 512,
+          "boundsMin": [
+            -248.36737060546875,
+            -241.18426513671875,
+            5.441703796386719
+          ],
+          "boundsMax": [
+            -241.805419921875,
+            -237.6513671875,
+            8.974254608154297
+          ],
+          "extent": [
+            6.56195068359375,
+            3.53289794921875,
+            3.532550811767578
+          ],
+          "surfaceArea": 60.78851138830413,
+          "signedVolume": 31.64920135091334,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 14,
+          "faceCount": 416,
+          "boundsMin": [
+            -249.9267578125,
+            -263.5566711425781,
+            2.7671585083007812
+          ],
+          "boundsMax": [
+            -247.48434448242188,
+            -259.47357177734375,
+            9.270755767822266
+          ],
+          "extent": [
+            2.442413330078125,
+            4.083099365234375,
+            6.503597259521484
+          ],
+          "surfaceArea": 34.29996017977083,
+          "signedVolume": 11.399813863580874,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 15,
+          "faceCount": 416,
+          "boundsMin": [
+            -243.8501739501953,
+            -263.01580810546875,
+            2.8495559692382812
+          ],
+          "boundsMax": [
+            -241.62730407714844,
+            -258.2042541503906,
+            8.728713989257812
+          ],
+          "extent": [
+            2.222869873046875,
+            4.811553955078125,
+            5.879158020019531
+          ],
+          "surfaceArea": 33.48303287329102,
+          "signedVolume": 10.523006404463672,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 16,
+          "faceCount": 416,
+          "boundsMin": [
+            -243.26951599121094,
+            -267.6455383300781,
+            7.450923919677734
+          ],
+          "boundsMax": [
+            -241.37741088867188,
+            -262.4185791015625,
+            9.457611083984375
+          ],
+          "extent": [
+            1.8921051025390625,
+            5.226959228515625,
+            2.0066871643066406
+          ],
+          "surfaceArea": 21.73552808172789,
+          "signedVolume": 5.654225667789933,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 17,
+          "faceCount": 416,
+          "boundsMin": [
+            -246.6505126953125,
+            -267.9798583984375,
+            8.399192810058594
+          ],
+          "boundsMax": [
+            -244.92401123046875,
+            -263.55206298828125,
+            10.350719451904297
+          ],
+          "extent": [
+            1.72650146484375,
+            4.42779541015625,
+            1.9515266418457031
+          ],
+          "surfaceArea": 20.421570528272394,
+          "signedVolume": 5.595103675284527,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 18,
+          "faceCount": 416,
+          "boundsMin": [
+            -250.83506774902344,
+            -267.0646057128906,
+            7.777553558349609
+          ],
+          "boundsMax": [
+            -248.35218811035156,
+            -263.0702819824219,
+            9.64333724975586
+          ],
+          "extent": [
+            2.482879638671875,
+            3.99432373046875,
+            1.86578369140625
+          ],
+          "surfaceArea": 19.02620248521543,
+          "signedVolume": 5.184542159284457,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 19,
+          "faceCount": 416,
+          "boundsMin": [
+            -253.50265502929688,
+            -266.2581787109375,
+            5.850254058837891
+          ],
+          "boundsMax": [
+            -251.3489532470703,
+            -262.29779052734375,
+            7.6619720458984375
+          ],
+          "extent": [
+            2.1537017822265625,
+            3.96038818359375,
+            1.8117179870605469
+          ],
+          "surfaceArea": 15.044335098848824,
+          "signedVolume": 3.5242723867589896,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 20,
+          "faceCount": 416,
+          "boundsMin": [
+            -242.8782501220703,
+            -242.86135864257812,
+            3.9781150817871094
+          ],
+          "boundsMax": [
+            -239.97427368164062,
+            -238.85586547851562,
+            6.656700134277344
+          ],
+          "extent": [
+            2.9039764404296875,
+            4.0054931640625,
+            2.6785850524902344
+          ],
+          "surfaceArea": 18.944885998308116,
+          "signedVolume": 4.969332815388447,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 21,
+          "faceCount": 416,
+          "boundsMin": [
+            -241.00885009765625,
+            -245.13555908203125,
+            2.2035064697265625
+          ],
+          "boundsMax": [
+            -239.39048767089844,
+            -242.12472534179688,
+            5.0193328857421875
+          ],
+          "extent": [
+            1.6183624267578125,
+            3.010833740234375,
+            2.815826416015625
+          ],
+          "surfaceArea": 12.329298820199735,
+          "signedVolume": 2.6550461460225745,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 22,
+          "faceCount": 416,
+          "boundsMin": [
+            -252.47537231445312,
+            -262.5007629394531,
+            1.2284088134765625
+          ],
+          "boundsMax": [
+            -249.4598388671875,
+            -258.3280029296875,
+            6.775245666503906
+          ],
+          "extent": [
+            3.015533447265625,
+            4.172760009765625,
+            5.546836853027344
+          ],
+          "surfaceArea": 29.074037943586507,
+          "signedVolume": 8.896522225087947,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 23,
+          "faceCount": 416,
+          "boundsMin": [
+            -246.68751525878906,
+            -264.1784362792969,
+            2.99774169921875
+          ],
+          "boundsMax": [
+            -244.81932067871094,
+            -259.3955993652344,
+            9.703533172607422
+          ],
+          "extent": [
+            1.868194580078125,
+            4.7828369140625,
+            6.705791473388672
+          ],
+          "surfaceArea": 36.858776321417515,
+          "signedVolume": 12.238819196932111,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 24,
+          "faceCount": 368,
+          "boundsMin": [
+            -250.60116577148438,
+            -239.26443481445312,
+            0.8703994750976562
+          ],
+          "boundsMax": [
+            -248.4918212890625,
+            -235.9110107421875,
+            4.797515869140625
+          ],
+          "extent": [
+            2.109344482421875,
+            3.353424072265625,
+            3.9271163940429688
+          ],
+          "surfaceArea": 25.409907753798503,
+          "signedVolume": 8.557295379547385,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 25,
+          "faceCount": 320,
+          "boundsMin": [
+            -245.5106658935547,
+            -241.9630889892578,
+            6.940608978271484
+          ],
+          "boundsMax": [
+            -242.83035278320312,
+            -240.430908203125,
+            8.959911346435547
+          ],
+          "extent": [
+            2.6803131103515625,
+            1.5321807861328125,
+            2.0193023681640625
+          ],
+          "surfaceArea": 12.882208439883199,
+          "signedVolume": 3.741142490124276,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 26,
+          "faceCount": 320,
+          "boundsMin": [
+            -247.65567016601562,
+            -242.16104125976562,
+            6.745941162109375
+          ],
+          "boundsMax": [
+            -245.20111083984375,
+            -240.58531188964844,
+            9.071640014648438
+          ],
+          "extent": [
+            2.454559326171875,
+            1.5757293701171875,
+            2.3256988525390625
+          ],
+          "surfaceArea": 14.192339047711584,
+          "signedVolume": 4.259826948894779,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 27,
+          "faceCount": 320,
+          "boundsMin": [
+            -249.36988830566406,
+            -241.55484008789062,
+            6.220500946044922
+          ],
+          "boundsMax": [
+            -247.1562957763672,
+            -239.4251251220703,
+            8.795211791992188
+          ],
+          "extent": [
+            2.213592529296875,
+            2.1297149658203125,
+            2.5747108459472656
+          ],
+          "surfaceArea": 16.38322769684598,
+          "signedVolume": 5.500649956866905,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 28,
+          "faceCount": 320,
+          "boundsMin": [
+            -250.12718200683594,
+            -240.42276000976562,
+            4.171573638916016
+          ],
+          "boundsMax": [
+            -248.45919799804688,
+            -237.64471435546875,
+            6.7359771728515625
+          ],
+          "extent": [
+            1.6679840087890625,
+            2.778045654296875,
+            2.564403533935547
+          ],
+          "surfaceArea": 16.37294493038319,
+          "signedVolume": 4.964576341912502,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 29,
+          "faceCount": 4,
+          "boundsMin": [
+            -235.00146484375,
+            -156.47950744628906,
+            78.70835876464844
+          ],
+          "boundsMax": [
+            -234.93174743652344,
+            -156.30145263671875,
+            78.99868774414062
+          ],
+          "extent": [
+            0.0697174072265625,
+            0.1780548095703125,
+            0.2903289794921875
+          ],
+          "surfaceArea": 0.06368246081555164,
+          "signedVolume": 0.00024515443792931063,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        }
+      ]
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "sourceFile": "workbench/incoming/canine/originals/pata trasera_dog_skeleton.stl",
+      "sourceSha256": "6ba7a11ae2874af14972bb2fd4b4ba37de92631fb3ac01bda42958350294fe99",
+      "bytes": 1270884,
+      "format": "binary_stl",
+      "headerAllZeroBytes": true,
+      "nonZeroAttributeWords": 0,
+      "triangles": 25416,
+      "uniqueVertexPositions": 12716,
+      "boundsMin": [
+        -448.34588623046875,
+        -56.383628845214844,
+        0.0283203125
+      ],
+      "boundsMax": [
+        -419.5692443847656,
+        63.729278564453125,
+        65.80752563476562
+      ],
+      "extent": [
+        28.776641845703125,
+        120.11290740966797,
+        65.77920532226562
+      ],
+      "units": "unknown",
+      "unitsEvidence": "STL binario sin unidades en el formato; cabecera de 80 bytes en cero; la página del producto no declara unidades (registro 2026-10-08).",
+      "defects": {
+        "degenerateRepeatedVertex": 0,
+        "degenerateZeroAreaDistinctVertices": 0,
+        "duplicateTrianglePairs": 1,
+        "storedNormalZero": 0,
+        "storedNormalAgreesWithWinding": 25416,
+        "storedNormalOpposesWinding": 0,
+        "edges": 38075,
+        "boundaryEdges": 0,
+        "manifoldEdges": 38026,
+        "nonManifoldEdges": 49,
+        "inconsistentlyOrientedManifoldEdges": 0
+      },
+      "connectivity": [
+        {
+          "toleranceNative": 0,
+          "componentCount": 28,
+          "largestFaceCounts": [
+            6724,
+            2504,
+            1840,
+            1152,
+            1064,
+            912,
+            752,
+            752,
+            752,
+            752,
+            664,
+            576,
+            512,
+            512,
+            512,
+            512,
+            428,
+            416,
+            416,
+            416
+          ]
+        },
+        {
+          "toleranceNative": 1e-06,
+          "componentCount": 28,
+          "largestFaceCounts": [
+            6724,
+            2504,
+            1840,
+            1152,
+            1064,
+            912,
+            752,
+            752,
+            752,
+            752,
+            664,
+            576,
+            512,
+            512,
+            512,
+            512,
+            428,
+            416,
+            416,
+            416
+          ]
+        },
+        {
+          "toleranceNative": 1e-05,
+          "componentCount": 28,
+          "largestFaceCounts": [
+            6724,
+            2504,
+            1840,
+            1152,
+            1064,
+            912,
+            752,
+            752,
+            752,
+            752,
+            664,
+            576,
+            512,
+            512,
+            512,
+            512,
+            428,
+            416,
+            416,
+            416
+          ]
+        }
+      ],
+      "totalSurfaceArea": 4214.333580860626,
+      "planarSectionsOnBoundingPlanes": {
+        "distanceTolerance": 0.05,
+        "normalAlignment": 0.99,
+        "sections": [
+          {
+            "axis": "x",
+            "side": "min",
+            "planeValue": -448.34588623046875,
+            "faceCount": 2,
+            "area": 0.060287742722181695,
+            "componentRanks": [
+              9
+            ]
+          }
+        ]
+      },
+      "componentProximity": {
+        "maxDistanceNative": 0.5,
+        "pairsWithin": 39,
+        "coincidentPairs": 0,
+        "minimumDistance": 0.023557823800788878
+      },
+      "componentsTolerance0": [
+        {
+          "rank": 0,
+          "faceCount": 6724,
+          "boundsMin": [
+            -437.61309814453125,
+            31.840789794921875,
+            19.558090209960938
+          ],
+          "boundsMax": [
+            -419.5692443847656,
+            63.729278564453125,
+            65.80752563476562
+          ],
+          "extent": [
+            18.043853759765625,
+            31.88848876953125,
+            46.24943542480469
+          ],
+          "surfaceArea": 1401.1232579326054,
+          "signedVolume": 1378.203961681971,
+          "closed": false,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 49,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 1,
+          "faceCount": 2504,
+          "boundsMin": [
+            -444.340087890625,
+            -23.361000061035156,
+            2.4669342041015625
+          ],
+          "boundsMax": [
+            -433.89642333984375,
+            0.04888153076171875,
+            34.40763854980469
+          ],
+          "extent": [
+            10.44366455078125,
+            23.409881591796875,
+            31.940704345703125
+          ],
+          "surfaceArea": 584.7260535452274,
+          "signedVolume": 538.7914217541284,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 2,
+          "faceCount": 1840,
+          "boundsMin": [
+            -443.1156005859375,
+            -3.4421157836914062,
+            29.828758239746094
+          ],
+          "boundsMax": [
+            -428.7366943359375,
+            42.993507385253906,
+            41.44817352294922
+          ],
+          "extent": [
+            14.37890625,
+            46.43562316894531,
+            11.619415283203125
+          ],
+          "surfaceArea": 1012.9780376124714,
+          "signedVolume": 1215.5930850793368,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 3,
+          "faceCount": 1152,
+          "boundsMin": [
+            -445.9045715332031,
+            -28.12464141845703,
+            0.335479736328125
+          ],
+          "boundsMax": [
+            -442.2325439453125,
+            -23.639915466308594,
+            4.73870849609375
+          ],
+          "extent": [
+            3.672027587890625,
+            4.4847259521484375,
+            4.403228759765625
+          ],
+          "surfaceArea": 52.73728652037732,
+          "signedVolume": 29.67125774041031,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 4,
+          "faceCount": 1064,
+          "boundsMin": [
+            -444.6849365234375,
+            -26.119178771972656,
+            1.4138031005859375
+          ],
+          "boundsMax": [
+            -438.21307373046875,
+            -20.59705352783203,
+            6.5216064453125
+          ],
+          "extent": [
+            6.47186279296875,
+            5.522125244140625,
+            5.1078033447265625
+          ],
+          "surfaceArea": 78.21056211697757,
+          "signedVolume": 38.4950882151611,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 5,
+          "faceCount": 912,
+          "boundsMin": [
+            -445.35321044921875,
+            -22.88341522216797,
+            2.230377197265625
+          ],
+          "boundsMax": [
+            -441.4329833984375,
+            -1.5419540405273438,
+            28.812576293945312
+          ],
+          "extent": [
+            3.92022705078125,
+            21.341461181640625,
+            26.582199096679688
+          ],
+          "surfaceArea": 112.225420137194,
+          "signedVolume": 26.928098635973882,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 6,
+          "faceCount": 752,
+          "boundsMin": [
+            -437.35791015625,
+            -56.18635940551758,
+            8.769683837890625
+          ],
+          "boundsMax": [
+            -436.0981750488281,
+            -52.78492736816406,
+            12.397186279296875
+          ],
+          "extent": [
+            1.259735107421875,
+            3.4014320373535156,
+            3.62750244140625
+          ],
+          "surfaceArea": 18.232524508120274,
+          "signedVolume": 4.556374221661696,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 7,
+          "faceCount": 752,
+          "boundsMin": [
+            -441.4439392089844,
+            -56.383628845214844,
+            9.73187255859375
+          ],
+          "boundsMax": [
+            -440.187255859375,
+            -53.466373443603516,
+            13.695480346679688
+          ],
+          "extent": [
+            1.256683349609375,
+            2.917255401611328,
+            3.9636077880859375
+          ],
+          "surfaceArea": 18.30863765982549,
+          "signedVolume": 4.610536734338541,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 8,
+          "faceCount": 752,
+          "boundsMin": [
+            -445.0243835449219,
+            -56.336822509765625,
+            9.18695068359375
+          ],
+          "boundsMax": [
+            -443.81280517578125,
+            -53.44920349121094,
+            13.223876953125
+          ],
+          "extent": [
+            1.211578369140625,
+            2.8876190185546875,
+            4.03692626953125
+          ],
+          "surfaceArea": 18.35386992796704,
+          "signedVolume": 4.639130205015723,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 9,
+          "faceCount": 752,
+          "boundsMin": [
+            -448.34588623046875,
+            -56.082496643066406,
+            8.02056884765625
+          ],
+          "boundsMax": [
+            -447.10748291015625,
+            -52.87519073486328,
+            11.798629760742188
+          ],
+          "extent": [
+            1.2384033203125,
+            3.207305908203125,
+            3.7780609130859375
+          ],
+          "surfaceArea": 18.426440739214392,
+          "signedVolume": 4.648631470753501,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 10,
+          "faceCount": 664,
+          "boundsMin": [
+            -444.8145751953125,
+            -24.18505859375,
+            0.044891357421875
+          ],
+          "boundsMax": [
+            -440.4298095703125,
+            -16.81397247314453,
+            4.317840576171875
+          ],
+          "extent": [
+            4.384765625,
+            7.371086120605469,
+            4.27294921875
+          ],
+          "surfaceArea": 76.92541731610089,
+          "signedVolume": 38.57281033053137,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 11,
+          "faceCount": 576,
+          "boundsMin": [
+            -442.8800354003906,
+            -26.511165618896484,
+            0.3473052978515625
+          ],
+          "boundsMax": [
+            -439.3067626953125,
+            -23.486480712890625,
+            4.811676025390625
+          ],
+          "extent": [
+            3.573272705078125,
+            3.0246849060058594,
+            4.4643707275390625
+          ],
+          "surfaceArea": 41.828925618204124,
+          "signedVolume": 21.21033805822462,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 12,
+          "faceCount": 512,
+          "boundsMin": [
+            -440.41668701171875,
+            -46.328731536865234,
+            0.22052001953125
+          ],
+          "boundsMax": [
+            -437.830810546875,
+            -27.710525512695312,
+            2.868896484375
+          ],
+          "extent": [
+            2.58587646484375,
+            18.618206024169922,
+            2.64837646484375
+          ],
+          "surfaceArea": 96.27912191695263,
+          "signedVolume": 34.97943899056465,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 13,
+          "faceCount": 512,
+          "boundsMin": [
+            -442.1075439453125,
+            -46.76072692871094,
+            1.11029052734375
+          ],
+          "boundsMax": [
+            -440.15753173828125,
+            -27.778480529785156,
+            3.7891693115234375
+          ],
+          "extent": [
+            1.95001220703125,
+            18.98224639892578,
+            2.6788787841796875
+          ],
+          "surfaceArea": 108.4315919960255,
+          "signedVolume": 43.4235625688893,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 14,
+          "faceCount": 512,
+          "boundsMin": [
+            -444.4920654296875,
+            -46.87250518798828,
+            0.09027099609375
+          ],
+          "boundsMax": [
+            -441.67138671875,
+            -27.382205963134766,
+            3.00848388671875
+          ],
+          "extent": [
+            2.8206787109375,
+            19.490299224853516,
+            2.918212890625
+          ],
+          "surfaceArea": 119.67520124152814,
+          "signedVolume": 50.8974698912626,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 15,
+          "faceCount": 512,
+          "boundsMin": [
+            -447.13555908203125,
+            -46.84651565551758,
+            0.0283203125
+          ],
+          "boundsMax": [
+            -443.2442932128906,
+            -27.309402465820312,
+            3.074920654296875
+          ],
+          "extent": [
+            3.891265869140625,
+            19.537113189697266,
+            3.046600341796875
+          ],
+          "surfaceArea": 114.65683060209315,
+          "signedVolume": 46.78469522723476,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 16,
+          "faceCount": 428,
+          "boundsMin": [
+            -425.4229736328125,
+            49.338905334472656,
+            46.79335021972656
+          ],
+          "boundsMax": [
+            -423.2799987792969,
+            55.23658752441406,
+            55.04914855957031
+          ],
+          "extent": [
+            2.142974853515625,
+            5.897682189941406,
+            8.25579833984375
+          ],
+          "surfaceArea": 67.24551923621425,
+          "signedVolume": 20.21038362919677,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 17,
+          "faceCount": 416,
+          "boundsMin": [
+            -440.67266845703125,
+            -28.01141357421875,
+            0.867095947265625
+          ],
+          "boundsMax": [
+            -438.6616516113281,
+            -25.859962463378906,
+            3.7111663818359375
+          ],
+          "extent": [
+            2.011016845703125,
+            2.1514511108398438,
+            2.8440704345703125
+          ],
+          "surfaceArea": 16.40833197486767,
+          "signedVolume": 4.868512607564324,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 18,
+          "faceCount": 416,
+          "boundsMin": [
+            -442.640869140625,
+            -28.30242156982422,
+            1.098236083984375
+          ],
+          "boundsMax": [
+            -440.33624267578125,
+            -25.744735717773438,
+            4.3754119873046875
+          ],
+          "extent": [
+            2.30462646484375,
+            2.5576858520507812,
+            3.2771759033203125
+          ],
+          "surfaceArea": 21.60443549992264,
+          "signedVolume": 6.963108530757633,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 19,
+          "faceCount": 416,
+          "boundsMin": [
+            -444.74267578125,
+            -51.94574737548828,
+            0.9076080322265625
+          ],
+          "boundsMax": [
+            -442.9888916015625,
+            -47.192169189453125,
+            7.6274566650390625
+          ],
+          "extent": [
+            1.7537841796875,
+            4.753578186035156,
+            6.7198486328125
+          ],
+          "surfaceArea": 35.65943567339693,
+          "signedVolume": 11.459913350550773,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 20,
+          "faceCount": 416,
+          "boundsMin": [
+            -439.602294921875,
+            -50.979270935058594,
+            0.8740386962890625
+          ],
+          "boundsMax": [
+            -436.9635925292969,
+            -46.343929290771484,
+            6.595794677734375
+          ],
+          "extent": [
+            2.638702392578125,
+            4.635341644287109,
+            5.7217559814453125
+          ],
+          "surfaceArea": 31.524591681266884,
+          "signedVolume": 9.778267576352784,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 21,
+          "faceCount": 416,
+          "boundsMin": [
+            -448.3082580566406,
+            -54.676513671875,
+            5.7354583740234375
+          ],
+          "boundsMax": [
+            -446.7761535644531,
+            -50.287445068359375,
+            8.620559692382812
+          ],
+          "extent": [
+            1.5321044921875,
+            4.389068603515625,
+            2.885101318359375
+          ],
+          "surfaceArea": 18.634558733339524,
+          "signedVolume": 4.689473496730639,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 22,
+          "faceCount": 416,
+          "boundsMin": [
+            -445.07855224609375,
+            -55.89158630371094,
+            6.685638427734375
+          ],
+          "boundsMax": [
+            -443.2699890136719,
+            -50.87361145019531,
+            9.577651977539062
+          ],
+          "extent": [
+            1.808563232421875,
+            5.017974853515625,
+            2.8920135498046875
+          ],
+          "surfaceArea": 22.393019828817852,
+          "signedVolume": 5.985558529926678,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 23,
+          "faceCount": 416,
+          "boundsMin": [
+            -442.1248779296875,
+            -55.75665283203125,
+            6.8807220458984375
+          ],
+          "boundsMax": [
+            -440.01263427734375,
+            -50.76933670043945,
+            9.924224853515625
+          ],
+          "extent": [
+            2.11224365234375,
+            4.987316131591797,
+            3.0435028076171875
+          ],
+          "surfaceArea": 24.4720397233021,
+          "signedVolume": 7.140364303759216,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 24,
+          "faceCount": 416,
+          "boundsMin": [
+            -438.1843566894531,
+            -54.79582977294922,
+            5.8938446044921875
+          ],
+          "boundsMax": [
+            -436.41680908203125,
+            -50.08506393432617,
+            8.901840209960938
+          ],
+          "extent": [
+            1.767547607421875,
+            4.710765838623047,
+            3.00799560546875
+          ],
+          "surfaceArea": 21.055867206254543,
+          "signedVolume": 5.611070872417582,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 25,
+          "faceCount": 416,
+          "boundsMin": [
+            -442.1484680175781,
+            -51.6409912109375,
+            1.3709564208984375
+          ],
+          "boundsMax": [
+            -440.35479736328125,
+            -46.71171569824219,
+            7.7949981689453125
+          ],
+          "extent": [
+            1.793670654296875,
+            4.9292755126953125,
+            6.424041748046875
+          ],
+          "surfaceArea": 33.59328170856634,
+          "signedVolume": 10.394557365983312,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 26,
+          "faceCount": 416,
+          "boundsMin": [
+            -447.906005859375,
+            -51.099151611328125,
+            0.7122344970703125
+          ],
+          "boundsMax": [
+            -445.72607421875,
+            -47.00066375732422,
+            6.556915283203125
+          ],
+          "extent": [
+            2.179931640625,
+            4.098487854003906,
+            5.8446807861328125
+          ],
+          "surfaceArea": 27.96864573317134,
+          "signedVolume": 8.14134424951226,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        },
+        {
+          "rank": 27,
+          "faceCount": 336,
+          "boundsMin": [
+            -438.4793395996094,
+            -3.7284469604492188,
+            37.60833740234375
+          ],
+          "boundsMax": [
+            -435.168701171875,
+            -1.298583984375,
+            40.018310546875
+          ],
+          "extent": [
+            3.310638427734375,
+            2.4298629760742188,
+            2.40997314453125
+          ],
+          "surfaceArea": 20.654674470621657,
+          "signedVolume": 5.9922597469073535,
+          "closed": true,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "inconsistentlyOrientedManifoldEdges": 0,
+          "touchesPlanarSection": false
+        }
+      ]
+    }
+  ],
+  "interPiece": [
+    {
+      "pieceA": "skull",
+      "pieceB": "vertebral-column",
+      "boundingBoxGap": 145.5234832763672,
+      "nearestVertexDistanceWithin1Unit": null,
+      "coincidentVertices": null
+    },
+    {
+      "pieceA": "skull",
+      "pieceB": "thoracic-limb",
+      "boundingBoxGap": 73.75772094726562,
+      "nearestVertexDistanceWithin1Unit": null,
+      "coincidentVertices": null
+    },
+    {
+      "pieceA": "skull",
+      "pieceB": "pelvic-limb",
+      "boundingBoxGap": 287.9338286516755,
+      "nearestVertexDistanceWithin1Unit": null,
+      "coincidentVertices": null
+    },
+    {
+      "pieceA": "vertebral-column",
+      "pieceB": "thoracic-limb",
+      "boundingBoxGap": 51.24406433105469,
+      "nearestVertexDistanceWithin1Unit": null,
+      "coincidentVertices": null
+    },
+    {
+      "pieceA": "vertebral-column",
+      "pieceB": "pelvic-limb",
+      "boundingBoxGap": 55.98861908996254,
+      "nearestVertexDistanceWithin1Unit": null,
+      "coincidentVertices": null
+    },
+    {
+      "pieceA": "thoracic-limb",
+      "pieceB": "pelvic-limb",
+      "boundingBoxGap": 188.59307732693068,
+      "nearestVertexDistanceWithin1Unit": null,
+      "coincidentVertices": null
+    }
+  ],
+  "registration": {
+    "status": "not_registered",
+    "transformsApplied": [],
+    "reasons": [
+      "Las cajas envolventes de las cuatro piezas están separadas entre 51,2 y 287,9 unidades fuente; no hay vértices de piezas distintas a menos de 1 unidad.",
+      "Cada pieza apoya su mínimo Z en ≈0 con orientaciones distintas (columna tumbada sobre su plano de corte, cráneo sobre su cara plana caudal): es una disposición de impresión, no un animal articulado.",
+      "El extremo caudal del cráneo es una cara plana y no se identifican cóndilos occipitales. El extremo craneal de la columna está seccionado por el plano Z≈0, así que no hay dos superficies articulares completas que comparar.",
+      "Coxal y miembro torácico son de un solo lado, y la columna es una hemisección; un ajuste exigiría reflejar o inventar geometría (no permitido).",
+      "Las unidades son desconocidas y no se comprobó que las cuatro piezas compartan escala."
+    ]
+  },
+  "identificationProposals": [
+    {
+      "pieceId": "skull",
+      "componentRanks": [
+        0
+      ],
+      "proposedLabel": "Cráneo sin mandíbula, en una sola malla",
+      "canonicalLatinName": "Cranium",
+      "candidateReferenceIds": [
+        "canine:reference:head:midline:skull"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/skull-side-x.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/skull-bottom-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/skull-c00-c07.png"
+        }
+      ],
+      "notes": "Una malla cerrada reúne neurocráneo y esplacnocráneo: no hay límites entre huesos individuales. El extremo de menor Z es una cara plana (180 triángulos coplanares); en las capturas no se identifican cóndilos occipitales.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "skull",
+      "componentRanks": [
+        1
+      ],
+      "proposedLabel": "Mandíbulas derecha e izquierda unidas en una malla",
+      "canonicalLatinName": "Mandibula",
+      "candidateReferenceIds": [
+        "canine:reference:head:left:mandible",
+        "canine:reference:head:right:mandible"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/skull-side-x.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/skull-c00-c07.png"
+        }
+      ],
+      "notes": "Ambas hemimandíbulas forman un único componente continuo. No se separan ni se asigna lado.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "skull",
+      "componentRanks": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "proposedLabel": "Coronas de dientes caninos (cuatro componentes cónicos mayores)",
+      "canonicalLatinName": "Dens caninus",
+      "candidateReferenceIds": [
+        "canine:reference:head:left:maxillary-canine-1",
+        "canine:reference:head:right:maxillary-canine-1",
+        "canine:reference:head:left:mandibular-canine-1",
+        "canine:reference:head:right:mandibular-canine-1"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/skull-side-x.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/skull-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/skull-labels-side-x.png"
+        }
+      ],
+      "notes": "Se reconocen por su forma y posición en la arcada. No se asignan a una arcada o lado, y no hay raíces modeladas.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "skull",
+      "componentRanks": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "proposedLabel": "Dientes incisivos, premolares y molares (26 componentes)",
+      "canonicalLatinName": "Dentes permanentes",
+      "candidateReferenceIds": [
+        "canine:reference:head:midline:adult-teeth"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/skull-side-x.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/skull-bottom-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/skull-c08-c15.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/skull-c16-c23.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/skull-c24-c31.png"
+        }
+      ],
+      "notes": "Hay coronas a lo largo de las arcadas. Algunos componentes reúnen dos coronas (c06, c07: con aristas no variedad). No hay correspondencia 1:1 con las 42 posiciones de referencia ni asignación por diente.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        0
+      ],
+      "proposedLabel": "Escápula",
+      "canonicalLatinName": "Scapula",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:scapula",
+        "canine:reference:thoracic-limb:right:scapula"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/thoracic-limb-side-x.png"
+        }
+      ],
+      "notes": "Malla individual con espina y acromion visibles. Tiene 136 aristas no variedad. Es un modelo no escaneado y modificado para impresión, así que la forma no acredita exactitud.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        1
+      ],
+      "proposedLabel": "Húmero",
+      "canonicalLatinName": "Humerus",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:humerus",
+        "canine:reference:thoracic-limb:right:humerus"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/thoracic-limb-side-x.png"
+        }
+      ],
+      "notes": "Malla individual. Tiene 83 aristas no variedad.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        2
+      ],
+      "proposedLabel": "Cúbito",
+      "canonicalLatinName": "Ulna",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:ulna",
+        "canine:reference:thoracic-limb:right:ulna"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/thoracic-limb-side-x.png"
+        }
+      ],
+      "notes": "Malla cerrada con olécranon proximal y diáfisis que se afina en sentido distal.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        3
+      ],
+      "proposedLabel": "Radio",
+      "canonicalLatinName": "Radius",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:radius",
+        "canine:reference:thoracic-limb:right:radius"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/thoracic-limb-side-x.png"
+        }
+      ],
+      "notes": "Malla cerrada paralela al cúbito, con extremo distal ensanchado.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "proposedLabel": "Metacarpianos largos (cuatro)",
+      "canonicalLatinName": "Os metacarpale",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:metacarpal-2",
+        "canine:reference:thoracic-limb:right:metacarpal-2",
+        "canine:reference:thoracic-limb:left:metacarpal-3",
+        "canine:reference:thoracic-limb:right:metacarpal-3",
+        "canine:reference:thoracic-limb:left:metacarpal-4",
+        "canine:reference:thoracic-limb:right:metacarpal-4",
+        "canine:reference:thoracic-limb:left:metacarpal-5",
+        "canine:reference:thoracic-limb:right:metacarpal-5"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c08-c15.png"
+        }
+      ],
+      "notes": "Hay cuatro huesos largos de igual número de caras (560). No se asigna numeral II–V a cada componente.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "proposedLabel": "Falanges distales (cinco, en forma de garra)",
+      "canonicalLatinName": "Phalanx distalis",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:digit-1-distal",
+        "canine:reference:thoracic-limb:right:digit-1-distal",
+        "canine:reference:thoracic-limb:left:digit-2-distal",
+        "canine:reference:thoracic-limb:right:digit-2-distal",
+        "canine:reference:thoracic-limb:left:digit-3-distal",
+        "canine:reference:thoracic-limb:right:digit-3-distal",
+        "canine:reference:thoracic-limb:left:digit-4-distal",
+        "canine:reference:thoracic-limb:right:digit-4-distal",
+        "canine:reference:thoracic-limb:left:digit-5-distal",
+        "canine:reference:thoracic-limb:right:digit-5-distal"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c08-c15.png"
+        }
+      ],
+      "notes": "c04 es menor que las demás. No se asigna dedo.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "proposedLabel": "Falanges proximales y medias (diez componentes)",
+      "canonicalLatinName": "Phalanges",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:digit-1-proximal",
+        "canine:reference:thoracic-limb:right:digit-1-proximal",
+        "canine:reference:thoracic-limb:left:digit-2-proximal",
+        "canine:reference:thoracic-limb:right:digit-2-proximal",
+        "canine:reference:thoracic-limb:left:digit-3-proximal",
+        "canine:reference:thoracic-limb:right:digit-3-proximal",
+        "canine:reference:thoracic-limb:left:digit-4-proximal",
+        "canine:reference:thoracic-limb:right:digit-4-proximal",
+        "canine:reference:thoracic-limb:left:digit-5-proximal",
+        "canine:reference:thoracic-limb:right:digit-5-proximal"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c08-c15.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c16-c23.png"
+        }
+      ],
+      "notes": "Hay diez componentes de 416 caras. La referencia esperaría 9 falanges proximales y medias (I con dos falanges). La discrepancia queda sin resolver y no se asignan dedos.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        13,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "proposedLabel": "Huesos del carpo (seis componentes)",
+      "canonicalLatinName": "Ossa carpi",
+      "candidateReferenceIds": [
+        "canine:reference:thoracic-limb:left:carpal-intermedioradial",
+        "canine:reference:thoracic-limb:right:carpal-intermedioradial",
+        "canine:reference:thoracic-limb:left:carpal-ulnar",
+        "canine:reference:thoracic-limb:right:carpal-ulnar",
+        "canine:reference:thoracic-limb:left:carpal-accessory",
+        "canine:reference:thoracic-limb:right:carpal-accessory",
+        "canine:reference:thoracic-limb:left:carpal-1",
+        "canine:reference:thoracic-limb:right:carpal-1",
+        "canine:reference:thoracic-limb:left:carpal-2",
+        "canine:reference:thoracic-limb:right:carpal-2",
+        "canine:reference:thoracic-limb:left:carpal-3",
+        "canine:reference:thoracic-limb:right:carpal-3",
+        "canine:reference:thoracic-limb:left:carpal-4",
+        "canine:reference:thoracic-limb:right:carpal-4"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c08-c15.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c24-c29.png"
+        }
+      ],
+      "notes": "Son seis bloques en la región carpiana, frente a siete unidades de referencia. c24 tiene forma alargada con cintura, pero no se identifica individualmente.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "thoracic-limb",
+      "componentRanks": [
+        29
+      ],
+      "proposedLabel": "Tetraedro aislado de 4 caras",
+      "canonicalLatinName": null,
+      "candidateReferenceIds": [],
+      "admissionState": "unidentified_or_non_anatomical",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/thoracic-limb-c24-c29.png"
+        }
+      ],
+      "notes": "Artefacto geométrico aislado (extensión 0,1×0,2×0,3) junto al borde de la escápula. No es anatomía.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        0
+      ],
+      "proposedLabel": "Hueso coxal de un lado (ilion, isquion y pubis en una malla)",
+      "canonicalLatinName": "Os coxae",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:coxal",
+        "canine:reference:pelvic-limb:right:coxal"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/pelvic-limb-side-x.png"
+        }
+      ],
+      "notes": "Una malla con agujero obturado visible. Sus componentes (ilion, isquion y pubis) no se separan. Tiene 49 aristas no variedad.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        2
+      ],
+      "proposedLabel": "Fémur",
+      "canonicalLatinName": "Femur",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:femur",
+        "canine:reference:pelvic-limb:right:femur"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/pelvic-limb-side-x.png"
+        }
+      ],
+      "notes": "Malla cerrada con cabeza y cóndilos.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        1
+      ],
+      "proposedLabel": "Tibia",
+      "canonicalLatinName": "Tibia",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:tibia",
+        "canine:reference:pelvic-limb:right:tibia"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/pelvic-limb-side-x.png"
+        }
+      ],
+      "notes": "Malla cerrada con cresta proximal.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        5
+      ],
+      "proposedLabel": "Peroné",
+      "canonicalLatinName": "Fibula",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:fibula",
+        "canine:reference:pelvic-limb:right:fibula"
+      ],
+      "admissionState": "geometric_bone_sufficient_proposal",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/pelvic-limb-side-x.png"
+        }
+      ],
+      "notes": "Hueso largo delgado paralelo a la tibia.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        27
+      ],
+      "proposedLabel": "Rótula (candidata)",
+      "canonicalLatinName": "Patella",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:patella",
+        "canine:reference:pelvic-limb:right:patella"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c24-c27.png"
+        }
+      ],
+      "notes": "Componente ovoide en la región femorotibial. Se identifica por su posición, sin superficie articular verificada.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "proposedLabel": "Metatarsianos largos (cuatro)",
+      "canonicalLatinName": "Os metatarsale",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:metatarsal-2",
+        "canine:reference:pelvic-limb:right:metatarsal-2",
+        "canine:reference:pelvic-limb:left:metatarsal-3",
+        "canine:reference:pelvic-limb:right:metatarsal-3",
+        "canine:reference:pelvic-limb:left:metatarsal-4",
+        "canine:reference:pelvic-limb:right:metatarsal-4",
+        "canine:reference:pelvic-limb:left:metatarsal-5",
+        "canine:reference:pelvic-limb:right:metatarsal-5"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c08-c15.png"
+        }
+      ],
+      "notes": "Cuatro huesos largos de 512 caras. No se asigna numeral.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "proposedLabel": "Falanges distales (cuatro)",
+      "canonicalLatinName": "Phalanx distalis",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:digit-2-distal",
+        "canine:reference:pelvic-limb:right:digit-2-distal",
+        "canine:reference:pelvic-limb:left:digit-3-distal",
+        "canine:reference:pelvic-limb:right:digit-3-distal",
+        "canine:reference:pelvic-limb:left:digit-4-distal",
+        "canine:reference:pelvic-limb:right:digit-4-distal",
+        "canine:reference:pelvic-limb:left:digit-5-distal",
+        "canine:reference:pelvic-limb:right:digit-5-distal"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c08-c15.png"
+        }
+      ],
+      "notes": "Cuatro garras. No se asigna dedo.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "proposedLabel": "Falanges proximales y medias (ocho)",
+      "canonicalLatinName": "Phalanges",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:digit-2-proximal",
+        "canine:reference:pelvic-limb:right:digit-2-proximal",
+        "canine:reference:pelvic-limb:left:digit-2-middle",
+        "canine:reference:pelvic-limb:right:digit-2-middle",
+        "canine:reference:pelvic-limb:left:digit-3-proximal",
+        "canine:reference:pelvic-limb:right:digit-3-proximal",
+        "canine:reference:pelvic-limb:left:digit-3-middle",
+        "canine:reference:pelvic-limb:right:digit-3-middle",
+        "canine:reference:pelvic-limb:left:digit-4-proximal",
+        "canine:reference:pelvic-limb:right:digit-4-proximal",
+        "canine:reference:pelvic-limb:left:digit-4-middle",
+        "canine:reference:pelvic-limb:right:digit-4-middle",
+        "canine:reference:pelvic-limb:left:digit-5-proximal",
+        "canine:reference:pelvic-limb:right:digit-5-proximal",
+        "canine:reference:pelvic-limb:left:digit-5-middle",
+        "canine:reference:pelvic-limb:right:digit-5-middle"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c16-c23.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c24-c27.png"
+        }
+      ],
+      "notes": "Ocho componentes de 416 caras. No se asigna dedo ni posición.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        3,
+        4,
+        10,
+        11,
+        17,
+        18
+      ],
+      "proposedLabel": "Huesos del tarso (seis componentes)",
+      "canonicalLatinName": "Ossa tarsi",
+      "candidateReferenceIds": [
+        "canine:reference:pelvic-limb:left:tarsal-talus",
+        "canine:reference:pelvic-limb:right:tarsal-talus",
+        "canine:reference:pelvic-limb:left:tarsal-calcaneus",
+        "canine:reference:pelvic-limb:right:tarsal-calcaneus",
+        "canine:reference:pelvic-limb:left:tarsal-central",
+        "canine:reference:pelvic-limb:right:tarsal-central",
+        "canine:reference:pelvic-limb:left:tarsal-1",
+        "canine:reference:pelvic-limb:right:tarsal-1",
+        "canine:reference:pelvic-limb:left:tarsal-2",
+        "canine:reference:pelvic-limb:right:tarsal-2",
+        "canine:reference:pelvic-limb:left:tarsal-3",
+        "canine:reference:pelvic-limb:right:tarsal-3",
+        "canine:reference:pelvic-limb:left:tarsal-4",
+        "canine:reference:pelvic-limb:right:tarsal-4"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c08-c15.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c16-c23.png"
+        }
+      ],
+      "notes": "Seis bloques en la región tarsiana, frente a siete unidades de referencia. No se identifican individualmente (ni calcáneo ni talus).",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "pelvic-limb",
+      "componentRanks": [
+        16
+      ],
+      "proposedLabel": "Lámina sobre la cara del ilion",
+      "canonicalLatinName": null,
+      "candidateReferenceIds": [],
+      "admissionState": "unidentified_or_non_anatomical",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/pelvic-limb-c16-c23.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/pelvic-limb-side-x.png"
+        }
+      ],
+      "notes": "Componente laminar de 428 caras apoyado en el ala del coxal. Su identidad no es defendible.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        0
+      ],
+      "proposedLabel": "Varias vértebras consecutivas fusionadas en una malla (región media y caudal del tronco)",
+      "canonicalLatinName": "Columna vertebralis",
+      "candidateReferenceIds": [
+        "canine:reference:axial:midline:thoracic-vertebrae",
+        "canine:reference:axial:midline:lumbar-vertebrae",
+        "canine:reference:axial:midline:sacral-region"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c00-c07.png"
+        }
+      ],
+      "notes": "El componente está cortado por el plano Z≈0 de la pieza (hemisección); solo hay media superficie. Hay una única malla de 29.166 caras sin límites intervertebrales, así que el número y el tipo de vértebras no se determinan.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        12,
+        24,
+        32
+      ],
+      "proposedLabel": "Vértebras del extremo craneal de la serie (ocho componentes, mitades)",
+      "canonicalLatinName": "Vertebrae cervicales",
+      "candidateReferenceIds": [
+        "canine:reference:axial:midline:cervical-vertebrae"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c08-c15.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c24-c31.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c32-c39.png"
+        }
+      ],
+      "notes": "El componente está cortado por el plano Z≈0 de la pieza (hemisección); solo hay media superficie. Están en el extremo opuesto a la cola. No se asigna atlas, axis ni numeral, y no se verifica el límite cervicotorácico.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        61
+      ],
+      "proposedLabel": "Vértebras con apófisis espinosas junto a las costillas (ocho componentes, mitades)",
+      "canonicalLatinName": "Vertebrae thoracicae",
+      "candidateReferenceIds": [
+        "canine:reference:axial:midline:thoracic-vertebrae"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c24-c31.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c56-c63.png"
+        }
+      ],
+      "notes": "El componente está cortado por el plano Z≈0 de la pieza (hemisección); solo hay media superficie. Se infiere por la vecindad con las costillas; no se asigna numeral.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        5,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        35
+      ],
+      "proposedLabel": "Vértebras caudales (16 componentes, mitades)",
+      "canonicalLatinName": "Vertebrae caudales",
+      "candidateReferenceIds": [
+        "canine:reference:axial:midline:caudal-series"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c00-c07.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c08-c15.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c16-c23.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c32-c39.png"
+        }
+      ],
+      "notes": "El componente está cortado por el plano Z≈0 de la pieza (hemisección); solo hay media superficie. c05 reúne dos vértebras. c09, c10, c11 y c35 son mallas abiertas (aristas de borde). Es una serie variable, sin total universal.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        33,
+        37,
+        39,
+        40,
+        42,
+        43,
+        47,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "proposedLabel": "Segmentos dorsales de costilla de un solo lado (13)",
+      "canonicalLatinName": "Costa",
+      "candidateReferenceIds": [
+        "canine:reference:axial:midline:thorax"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/vertebral-column-front-y.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c32-c39.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c40-c47.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c48-c55.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c56-c63.png"
+        }
+      ],
+      "notes": "No están cortadas por el plano Z≈0. Solo está representado un lado: el autor declara reflejo para completar el otro lado. No se asigna numeral ni lado; se enlaza solo al grupo del esqueleto torácico.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        34,
+        38,
+        41,
+        44,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        60,
+        68
+      ],
+      "proposedLabel": "Segmentos ventrales de costilla (14 componentes)",
+      "canonicalLatinName": null,
+      "candidateReferenceIds": [],
+      "admissionState": "unidentified_or_non_anatomical",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c32-c39.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c40-c47.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c48-c55.png"
+        }
+      ],
+      "notes": "Son segmentos continuos con los dorsales. La geometría no distingue cartílago costal de hueso. c44 y c45 tocan el plano Z≈0. No se identifican.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        36,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "proposedLabel": "Elementos medianos ventrales donde convergen las costillas (siete, mitades)",
+      "canonicalLatinName": "Sternum",
+      "candidateReferenceIds": [
+        "canine:reference:axial:midline:sternebra-1",
+        "canine:reference:axial:midline:sternebra-2",
+        "canine:reference:axial:midline:sternebra-3",
+        "canine:reference:axial:midline:sternebra-4",
+        "canine:reference:axial:midline:sternebra-5",
+        "canine:reference:axial:midline:sternebra-6",
+        "canine:reference:axial:midline:sternebra-7",
+        "canine:reference:axial:midline:sternebra-8"
+      ],
+      "admissionState": "partial_surface_identified",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/pieces/vertebral-column-bottom-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c32-c39.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c56-c63.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c64-c71.png"
+        }
+      ],
+      "notes": "El componente está cortado por el plano Z≈0 de la pieza (hemisección); solo hay media superficie. Hay 7 componentes frente a 8 segmentos de referencia. No se asigna numeral.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        1,
+        2
+      ],
+      "proposedLabel": "Elipsoides lisos junto al extremo craneal",
+      "canonicalLatinName": null,
+      "candidateReferenceIds": [],
+      "admissionState": "unidentified_or_non_anatomical",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c00-c07.png"
+        }
+      ],
+      "notes": "c01 (4.816 caras, cortado) y c02 (4.816 caras) son superficies elipsoidales regulares sin rasgos óseos. Son probables auxiliares de impresión o volúmenes no anatómicos; no se interpretan.",
+      "reviewStatus": "pending"
+    },
+    {
+      "pieceId": "vertebral-column",
+      "componentRanks": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "proposedLabel": "Fragmentos pequeños adyacentes a la malla fusionada (diez)",
+      "canonicalLatinName": null,
+      "candidateReferenceIds": [],
+      "admissionState": "unidentified_or_non_anatomical",
+      "side": "unknown",
+      "serial": null,
+      "evidence": [
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/labels/vertebral-column-labels-top-z.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c64-c71.png"
+        },
+        {
+          "kind": "render",
+          "path": "workbench/inspection/canine-oct31/sheets/vertebral-column-c72-c78.png"
+        }
+      ],
+      "notes": "Su identidad no es defendible con la geometría disponible.",
+      "reviewStatus": "pending"
+    }
+  ]
+}
